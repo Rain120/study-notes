@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime: 2019-01-20 16:52:42
+ * @LastEditTime: 2019-01-20 18:30:29
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -20,12 +20,22 @@
 </head>
 <body>
   <div id="app"></div>
+  <script src="./config.js"></script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/ga.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
   <script>
     window.$docsify = {
       el: '#app',
       name: 'Study Notes',
       repo: 'https://github.com/Rain120/study-notes',
-      ga: '',
+      ga: GOOGLE_ANALYTICS_ID,
       search: {
         noData: {
           '/': '找不到结果!'
@@ -60,31 +70,23 @@
             divEle.className = "gitalk-container";
             divEle.style = `width: ${main.clientWidth}px; margin: 0 auto 20px;`;
             domObj.appendTo(domObj.find(".content"), divEle);
-            const gitalk = new Gitalk({
-              clientID: 'f0d924a27274378ef2a3',
-              clientSecret: '41718ded9b3115824be3e162439ce43f736be645',
-              repo: 'study-notes',
-              owner: 'Rain120',
-              admin: ['Rain20'],
-              // facebook-like distraction free mode
-              distractionFreeMode: true
-            })
+            const gitalk = new Gitalk(GIT_TALK_CONFIG);
             gitalk.render(`gitalk-container-${path}`);
           })
         },
         // footer
-        function (hook) {
-          let footer = [
-            '<hr/>',
-            '<footer style="text-align: center;">',
-            '<span><a href="https://github.com/Rain120">Rain120</a> &copy; 2019.</span>',
-            '</footer>'
-          ].join('')
+        // function (hook) {
+        //   let footer = [
+        //     '<hr/>',
+        //     '<footer style="text-align: center;">',
+        //     '<span><a href="https://github.com/Rain120">Rain120</a> &copy; 2019.</span>',
+        //     '</footer>'
+        //   ].join('')
 
-          hook.afterEach(function (html) {
-            return html + footer
-          })
-        },
+        //   hook.afterEach(function (html) {
+        //     return html + footer
+        //   })
+        // },
         // Goto the document
         function(hook, vm) {
           hook.beforeEach(function (html) {
@@ -97,14 +99,5 @@
       ]
     }
   </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/ga.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
-  <script src="//unpkg.com/docsify-copy-code"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
 </body>
 </html>
