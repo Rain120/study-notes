@@ -1,0 +1,24 @@
+{
+  "name": "study-notes",
+  "version": "1.0.0",
+  "description": "Daily study notes, some useful bookmarking resources, and resources for friends.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "docsify serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rain120/study-notes.git"
+  },
+  "keywords": ["Web", "Notes"],
+  "author": "Rain120",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rain120/study-notes/issues"
+  },
+  "homepage": "https://github.com/Rain120/study-notes#readme"
+}

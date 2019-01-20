@@ -1,0 +1,110 @@
+<!--
+ * @Author: Rainy
+ * @Github: https://github.com/Rain120
+ * @Date: 2019-01-20 10:59:41
+ * @LastEditTime: 2019-01-20 16:52:42
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>小超子的笔记</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" href="./logo.png">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="./style/docs.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      el: '#app',
+      name: 'Study Notes',
+      repo: 'https://github.com/Rain120/study-notes',
+      ga: '',
+      search: {
+        noData: {
+          '/': '找不到结果!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/': '搜索'
+        }
+      },
+      autoHeader: true,
+      formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
+      coverpage: true,
+      loadNavbar: true,
+      loadSidebar: true,
+      pagination: {
+        previousText: 'Prev',
+        nextText: 'Next',
+      },
+      plugins: [
+        // git talk
+        function (hook, vm) {
+          hook.doneEach(function(){
+            let path = vm.route.path.split('/').join('');
+            let domObj = Docsify.dom;
+            let main = domObj.getNode("#main");
+            Array.apply(null,document.querySelectorAll("div.gitalk-container")).forEach(function(ele){
+              ele.remove();
+            });
+            
+            let divEle = domObj.create("div");
+            divEle.id = `gitalk-container-${path}`;
+            divEle.className = "gitalk-container";
+            divEle.style = `width: ${main.clientWidth}px; margin: 0 auto 20px;`;
+            domObj.appendTo(domObj.find(".content"), divEle);
+            const gitalk = new Gitalk({
+              clientID: 'f0d924a27274378ef2a3',
+              clientSecret: '41718ded9b3115824be3e162439ce43f736be645',
+              repo: 'study-notes',
+              owner: 'Rain120',
+              admin: ['Rain20'],
+              // facebook-like distraction free mode
+              distractionFreeMode: true
+            })
+            gitalk.render(`gitalk-container-${path}`);
+          })
+        },
+        // footer
+        function (hook) {
+          let footer = [
+            '<hr/>',
+            '<footer style="text-align: center;">',
+            '<span><a href="https://github.com/Rain120">Rain120</a> &copy; 2019.</span>',
+            '</footer>'
+          ].join('')
+
+          hook.afterEach(function (html) {
+            return html + footer
+          })
+        },
+        // Goto the document
+        function(hook, vm) {
+          hook.beforeEach(function (html) {
+            var url = `https://github.com/rain120/study-notes/docs/${vm.route.file}`;
+            var gotoHTML = `[📝 GOTO DOCUMENT](${url})\n`;
+
+            return gotoHTML + html + '\n----\n' + 'Last modified <strong>{docsify-updated}</strong>';
+          })
+        }
+      ]
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/ga.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
+</body>
+</html>
