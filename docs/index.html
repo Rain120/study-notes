@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime: 2019-01-20 18:30:29
+ * @LastEditTime: 2019-01-20 18:37:17
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +35,7 @@
       el: '#app',
       name: 'Study Notes',
       repo: 'https://github.com/Rain120/study-notes',
-      ga: GOOGLE_ANALYTICS_ID,
+      ga: 'UA-132840488-1',
       search: {
         noData: {
           '/': '找不到结果!'
@@ -70,7 +70,15 @@
             divEle.className = "gitalk-container";
             divEle.style = `width: ${main.clientWidth}px; margin: 0 auto 20px;`;
             domObj.appendTo(domObj.find(".content"), divEle);
-            const gitalk = new Gitalk(GIT_TALK_CONFIG);
+            const gitalk = new Gitalk({
+              clientID: 'f0d924a27274378ef2a3',
+              clientSecret: '41718ded9b3115824be3e162439ce43f736be645',
+              repo: 'study-notes',
+              owner: 'Rain120',
+              admin: ['Rain20'],
+              // facebook-like distraction free mode
+              distractionFreeMode: true
+            });
             gitalk.render(`gitalk-container-${path}`);
           })
         },
