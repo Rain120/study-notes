@@ -6,3 +6,6 @@
  -->
 * <i class="profile-icon vuejs iconfont icon-vuejs"></i>[Vue](notes/vue/guide.md)
    * <i class="profile-icon iconfont icon-note"></i>[Vue实现左右菜单联动实现](notes/vue/cascade-menu.md)
+
+* <i class="profile-icon vuejs iconfont icon-note"></i>[Nginx](notes/nginx/guide.md)
+   * <i class="profile-icon iconfont icon-note"></i>[Nginx笔记](notes/nginx/nginx/note.md)
