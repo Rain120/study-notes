@@ -18,10 +18,16 @@
 
 .zh {
   font-size: 26px;
+  color: #348bee;
 }
 
 .jj {
   font-size: 22px;
+  color: #1977ee;
+}
+
+.sf {
+  color: #5a9565;
 }
 
 .csdn {
