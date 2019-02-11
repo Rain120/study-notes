@@ -164,7 +164,7 @@ console.timeEnd('process');
 
 ![timeLog](./timeLog.png)
 
-##### `console.table`
+##### 5. `console.table`
 
 `console.table() `方法用于在控制台输出表格信息。
 
@@ -196,5 +196,73 @@ console.table([profile], ['github'])
 
 ![table-columns](./table-columns.png)
 
+##### 6. `console.count()`
+
+`console.count() `在调用时会将数字（调用次数）写入到控制台。
+
+`console.count() `方法可以添加标签。
+
+```javascript
+for (i = 0; i < 5; i++) {
+    console.count('Count time(s): ');
+}
+```
+
+![console.count](./console.count.png)
+
+```javascript
+console.count("Rainy");
+console.count("Rain120");
+console.count("Rainy");
+console.count("Rain120");
+console.count("Rainy");
+console.count("Test");
+```
+
+`console.count() `每次调用，如果标签一样数字会增加 1，如果不一样则重新开始计数。
+
+![console.count-lable](./console.count-lable.png)
+
+##### 7. `console.trace() `
+
+`console.trace() `方法用于显示当前执行的代码在堆栈中的调用路径。
+
+```javascript
+function first() {
+  second();
+}
+ 
+function second() {
+  console.trace();
+}
+first();
+```
+
+一个函数会被执行，该函数还会执行另外一个包含 `console.trace() `方法的喊，调用轨迹会显示在控制台上。
+
+![console.trace](./console.trace.png)
+
+##### 8. `console.assert()`
+
+`console.assert()` 方法在第一个参数为 false 的情况下会在控制台输出信息。
+
+```javascript
+console.assert(true, 'does nothing');
+console.assert(false, 'Whoops %s work', 'didn\'t');
+```
+
+一个简单的`assert`测试，用于验证值是否真实。如果不是，则记录`Assertion failed`。
+
+![console.assert](./console.assert.png)
+
+##### 9. `console.clear()`
+
+`console.clear()` 方法用于清除控制台所有信息。
+
+`console.clear()` 方法在执行成功后，会在控制台输出: `Console was cleared`。
 
 
+
+以上就是关于`console`系列的我使用的所有方法了。
+
+[`Google Chrome - Tools for Web Developers`](https://developers.google.com/web/tools/chrome-devtools/console/?hl=zh-cn)
