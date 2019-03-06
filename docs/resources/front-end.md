@@ -13,6 +13,12 @@
 
 ![react-antd](./fe/react-antd.png)
 
+[UxCore](http://uxco.re/)
+
+![uxcore](./fe/uxcore.png)
+
+
+
 [ZanUI](https://www.youzanyun.com/zanui): PC、移动、小程序
 
 ![zanui](./fe/zanui.png)
@@ -51,7 +57,31 @@
 
 [文档](https://elemefe.github.io/vue-amap/#/)
 
+![vue-amap](./fe/vue-amap.png)
+
+
+
 ##### [Nodejs](https://nodejs.org/zh-cn/)
+
+[Express](https://expressjs.com/)： 高度包容、快速而极简的 [Node.js](http://nodejs.org/) Web 框架
+
+![express](./fe/express.png)
+
+[koa](https://koajs.com/)
+
+![koa](./fe/koa.png)
+
+[egg](https://eggjs.org/): 为企业级框架和应用而生
+
+![egg](./fe/egg.png)
+
+
+
+##### [Javascript](https://www.javascript.com/)
+
+[现代 Javascript 教程](https://zh.javascript.info/)
+
+![js-info](./fe/js-info.png)
 
 
 
@@ -75,6 +105,58 @@
 
 
 
+##### 开发资源
+
+[Awesomes前端开发资源](https://www.awesomes.cn/)
+
+![awesomes-web-resource](./fe/awesomes-web-resource.png)
+
+
+
+##### 算法学习
+
+[Rappid算法学习](http://resources.jointjs.com/)
+
+![rappid-ast](./fe/rappid-ast.png)
+
+
+
+[机器深度学习](http://redstonewill.com/)
+
+![depp-ast-redstone](/./fe/depp-ast-redstone.png)
+
+
+
+##### 数学知识学习
+
+> 微积分
+>
+> 线性代数
+>
+> 概率论
+>
+> 最优化方法
+
+[Math ∩ Programming](https://jeremykun.com/)
+
+![Math ∩ Programming](./fe/Math ∩ Programming.png)
+
+
+
+[Linear algebra](http://immersivemath.com/ila/ch00_preface/preface.html):  一本会动的线代书，O(∩_∩)O哈哈~
+
+![linear-algebra](./fe/linear-algebra.png)
+
+
+
+##### [Linux](https://en.wikipedia.org/wiki/Linux)
+
+[Linux命令大全](http://man.linuxde.net/)
+
+![linuxde](/fe/linuxde.png)
+
+
+
 ##### 开发社区
 
 [Vue.js 社区](https://www.vue-js.com/)
@@ -92,3 +174,12 @@
 [开源中国](https://www.oschina.net/)
 
 [segmentfault](https://segmentfault.com/)
+
+##### 路径
+
+[程序员不能错过的28份技术知识图谱，你的进阶路上必备](https://cloud.tencent.com/developer/article/1135231)
+
+[学好机器学习需要哪些数学知识?](https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247483713&idx=1&sn=1e7c81381d16806ac73e15691fe17aec&chksm=fdb69cd6cac115c05f1f90b0407e3f8ae9be8719e454f908074ac0d079885b5c134e2d60fd64&scene=21#wechat_redirect)
+
+
+
