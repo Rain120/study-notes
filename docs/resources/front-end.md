@@ -1,4 +1,5 @@
 <!--
+
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 15:41:18
@@ -137,7 +138,25 @@
 
 
 
-##### 插件库
+##### 优秀项目 & 插件
+
+[Webpack](https://webpack.js.org/)
+
+![webpack](./fe/webpack.png)
+
+
+
+[BootCDN](https://www.bootcdn.cn/): 稳定、快速、免费的前端开源项目 CDN 加速服务
+
+![bootcdn](./fe/bootcdn.png)
+
+[BootStrap](https://v4.bootcss.com/)
+
+![bootstrap](./fe/bootstrap.png)
+
+[BootsWatch](https://bootswatch.com/): Free themes for Bootstrap
+
+![bootswatch](./fe/bootswatch.png)
 
 
 
@@ -201,7 +220,43 @@
 
 [Linux命令大全](http://man.linuxde.net/)
 
-![linuxde](/fe/linuxde.png)
+![linuxde](./fe/linuxde.png)
+
+
+
+##### Icon & 设计
+
+[Iconfont](https://iconfont.cn)
+
+![iconfont](./fe/iconfont.png)
+
+[FontAwesome](https://fontawesome.com/)
+
+![fontawesome](./fe/fontawesome.png)
+
+[Ionicons](https://ionicons.com/)
+
+![ionicons](./fe/ionicons.png)
+
+
+
+[Icomoon](https://icomoon.io/)
+
+![icomoon](./fe/icomoon.png)
+
+
+
+[Mobiriseicons](https://mobiriseicons.com/)
+
+![mobiriseicons](./fe/mobiriseicons.png)
+
+[unDraw](https://undraw.co/)
+
+![undraw](./fe/undraw.png)
+
+[优设](https://uiiiuiii.com/)
+
+![uiiiuiii](./fe/uiiiuiii.png)
 
 
 
@@ -242,6 +297,8 @@
 [淘宝前端团队FED](http://taobaofed.org/)
 
 [奇舞团](https://75team.com/)
+
+[腾讯互娱](https://tgideas.qq.com/)
 
 
 
