@@ -15,6 +15,8 @@
      * [<i class="profile-icon iconfont icon-note"></i>Vue 生命周期笔记](notes/vue/vue-lifecycle/vue-lifecycle.md)
    * [<i class="profile-icon vuejs iconfont icon-nginx"></i>Nginx](notes/nginx/guide.md)
      * [<i class="profile-icon vuejs iconfont icon-note"></i>Nginx笔记](notes/nginx/nginx/note.md)
+   * [<i class="profile-icon iconfont icon-error"></i>日常错误笔记](notes/error-qa/guide.md)
+      * [<i class="profile-icon iconfont icon-mysql"></i>Mysql错误笔记](notes/error-qa/mysql/note-qa.md)
 
 <!--  资源集合 -->
 

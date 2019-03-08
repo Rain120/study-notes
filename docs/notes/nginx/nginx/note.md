@@ -1,4 +1,4 @@
-### [`Nginx`](https://www.nginx.com/) + [`Node`](https://nodejs.org/zh-cn/) + [`Vue`](https://vuefe.cn/) 部署初试
+### [`Nginx`](https://www.nginx.com/) + [`Node`](https://nodejs.org/zh-cn/) + [`Vue`](https://vuefe.cn/) 部署初试(2019-03-08更新)
 
 ##### **`Nginx`**
 
@@ -288,6 +288,68 @@ ps -aux | grep nginx
 
 然后配置`nginx.conf`文件即可
 
+```nginx
+http {	
+	upstream add-news {
+        server 127.0.0.1:9527;
+    }
+
+    server {
+        listen       8080;
+        server_name  localhost;
+
+        #charset koi8-r;
+
+        #access_log  logs/host.access.log  main;
+        root   /Users/rainy/Desktop/MyWork/Work/website/dist;
+        index index.html index.htm;
+
+        location / {
+            # root   html;
+            try_files $uri $uri/ @router;
+            index  index.html index.htm;
+        }
+
+        location @router {
+            rewrite ^.*$ /index.html last;
+        }
+
+        location ~ /api/ {
+            proxy_pass http://127.0.0.1:9527;
+        }
+		# 我的图片存放在本地服务器上的路径👇
+        location /news-images/ {
+            expires 24h;
+            root /Users/rainy/Desktop/MyWork/Work/website/server/;
+            autoindex on;
+        }
+        # 通过转发某服务器上的图片 -> https://localhost:9527/*/*.png
+        location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$ {
+            expires 24h;
+            proxy_pass https://localhost:9527;
+            access_log /root/nginx/logs/images.log;
+            proxy_store on;
+            proxy_store_access user:rw group:rw all:rw;
+            proxy_redirect          off;
+            proxy_set_header        Host 127.0.0.1;
+            proxy_set_header        X-Real-IP $remote_addr;
+            proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+            client_max_body_size    10m;
+            client_body_buffer_size 1280k;
+            proxy_connect_timeout   900;
+            proxy_send_timeout      900;
+            proxy_read_timeout      900;
+            proxy_buffer_size       40k;
+            proxy_buffers           40 320k;
+            proxy_busy_buffers_size 640k;
+            proxy_temp_file_write_size 640k;
+        }
+	}
+}
+```
+
+
+
 ###### `Docker`安装`Nginx`
 
 1. 查找 [Docker Hub](https://hub.docker.com/r/library/nginx/) 上的 `nginx`镜像
@@ -427,14 +489,19 @@ npm install express mysql body-parser -S
    }
    ```
 
-3. `news.js`
+5. `news.js`
 
    ```javascript
    const mysql = require('mysql')
+   const formidable = require('formidable')
+   const fs = require('fs')
+   const path = require('path')
    const db = require('../db/db')
    const $newsSql = require('../db/newsSql')
    
    let pool = mysql.createPool(db.mysql)
+   
+   let NEWS_IMAGES_PATH = 'news-images'
    
    let queryAll = (req, res, next) => {
      pool.getConnection((error, connect) => {
@@ -539,12 +606,50 @@ npm install express mysql body-parser -S
      })
    }
    
+   let mkdirSync = dirname => {
+     if (fs.existsSync(dirname)) {
+       return true
+     } else {
+       if (mkdirSync(path.dirname(dirname))) {
+         fs.mkdirSync(dirname)
+         return true
+       }
+     }
+     return false
+   }
+   
+   let uploadImg = (req, res, next) => {
+     const form = new formidable.IncomingForm()
+     form.encoding = 'utf-8'
+     form.keepExtensions = true
+     form.parse(req, (err, fileds, files) => {
+       if (err) {
+         console.log(err)
+       }
+       let imgPath = fs.readFileSync(files.file.path)
+       let filename = path.resolve(__dirname, `../${NEWS_IMAGES_PATH}/${files.file.name}`)
+       if (mkdirSync(NEWS_IMAGES_PATH)) {
+         fs.writeFile(filename, imgPath, (err) => {
+           if (err) {
+             console.log(err)
+           }
+           res.json({
+             code: '200',
+             msg: 'success',
+             files: files.file
+           })
+         })
+       }
+     })
+   }
+   
    module.exports = {
      queryAll,
      queryById,
      add,
      update,
-     deleteNews
+     deleteNews,
+     uploadImg
    }
    ```
 
