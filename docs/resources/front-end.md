@@ -184,6 +184,12 @@
 
 ![visualgo](./fe/visualgo.png)
 
+[Algorithm Visualizer](https://algorithm-visualizer.org/) 
+
+[Github](https://github.com/algorithm-visualizer/algorithm-visualizer)
+
+![algorithm-visualizer](./fe/algorithm-visualizer.png)
+
 [Papers With Code : the latest in machine learning](https://paperswithcode.com/)
 
 ![paperswithcode](./fe/paperswithcode.png)
@@ -249,6 +255,10 @@
 [Mobiriseicons](https://mobiriseicons.com/)
 
 ![mobiriseicons](./fe/mobiriseicons.png)
+
+[zwicon](https://www.zwicon.com/cheatsheet.html)
+
+![zwicon](./fe/zwicon.png)
 
 [unDraw](https://undraw.co/)
 
