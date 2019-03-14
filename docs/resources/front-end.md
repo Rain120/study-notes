@@ -1,4 +1,5 @@
 <!--
+
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 15:41:18
@@ -87,6 +88,22 @@
 
 ![js-info](./fe/js-info.png)
 
+[Philip Roberts](http://latentflip.com/): **Visualizing the javascript runtime at runtime**
+
+[Github](https://github.com/latentflip/loupe) -> [Demo](http://latentflip.com/loupe)
+
+![philip-roberts](./fe/philip-roberts.png)
+
+[Lodash](https://lodash.com/)
+
+![lodash](./fe/lodash.png)
+
+[Ramda](https://ramdajs.com/)
+
+![ramda](./fe/ramda.png)
+
+[Underscore](https://underscorejs.org/)
+
 
 
 ##### `Mock`
@@ -99,13 +116,51 @@
 
 ![mock-js](./fe/mockjs.png)
 
+[Rapid-Api](https://rapidapi.com/)
+
+![rapidapi](./fe/rapidapi.png)
+
 
 
 ##### 动画库
 
+[Animate.css](https://daneden.github.io/animate.css/)
+
+![animate-css](./fe/animate-css.png)
+
+[Animejs](https://animejs.com/)
+
+![animejs](./fe/animejs.png)
+
+[TweenMax.js](https://www.tweenmax.com.cn/)
+
+![tweenmaxjs](./fe/tweenmaxjs.png)
+
+[GreenSock](https://greensock.com/)
+
+![greensock](./fe/greensock.png)
 
 
-##### 插件库
+
+##### 优秀项目 & 插件
+
+[Webpack](https://webpack.js.org/)
+
+![webpack](./fe/webpack.png)
+
+
+
+[BootCDN](https://www.bootcdn.cn/): 稳定、快速、免费的前端开源项目 CDN 加速服务
+
+![bootcdn](./fe/bootcdn.png)
+
+[BootStrap](https://v4.bootcss.com/)
+
+![bootstrap](./fe/bootstrap.png)
+
+[BootsWatch](https://bootswatch.com/): Free themes for Bootstrap
+
+![bootswatch](./fe/bootswatch.png)
 
 
 
@@ -127,7 +182,25 @@
 
 [机器深度学习](http://redstonewill.com/)
 
-![depp-ast-redstone](/./fe/depp-ast-redstone.png)
+![depp-ast-redstone](./fe/depp-ast-redstone.png)
+
+[VisuAlgo - 数据结构和算法动态可视化 (Chinese)](https://visualgo.net/zh)
+
+![visualgo](./fe/visualgo.png)
+
+[Algorithm Visualizer](https://algorithm-visualizer.org/) 
+
+[Github](https://github.com/algorithm-visualizer/algorithm-visualizer)
+
+![algorithm-visualizer](./fe/algorithm-visualizer.png)
+
+[Papers With Code : the latest in machine learning](https://paperswithcode.com/)
+
+![paperswithcode](./fe/paperswithcode.png)
+
+[Data Structure Visualizations]https://www.cs.usfca.edu/~galles/visualization/Algorithms.html): 旧金山大学CS Data Structure
+
+![visualization](./fe/visualization.png)
 
 
 
@@ -147,7 +220,7 @@
 
 
 
-[Linear algebra](http://immersivemath.com/ila/ch00_preface/preface.html):  一本会动的线代书，O(∩_∩)O哈哈~
+[Immersive Linear Algebra](http://immersivemath.com/ila/index.html):  一本会动的线代书，O(∩_∩)O哈哈~
 
 ![linear-algebra](./fe/linear-algebra.png)
 
@@ -157,11 +230,51 @@
 
 [Linux命令大全](http://man.linuxde.net/)
 
-![linuxde](/fe/linuxde.png)
+![linuxde](./fe/linuxde.png)
 
 
 
-##### 开发社区
+##### Icon & 设计
+
+[Iconfont](https://iconfont.cn)
+
+![iconfont](./fe/iconfont.png)
+
+[FontAwesome](https://fontawesome.com/)
+
+![fontawesome](./fe/fontawesome.png)
+
+[Ionicons](https://ionicons.com/)
+
+![ionicons](./fe/ionicons.png)
+
+
+
+[Icomoon](https://icomoon.io/)
+
+![icomoon](./fe/icomoon.png)
+
+
+
+[Mobiriseicons](https://mobiriseicons.com/)
+
+![mobiriseicons](./fe/mobiriseicons.png)
+
+[zwicon](https://www.zwicon.com/cheatsheet.html)
+
+![zwicon](./fe/zwicon.png)
+
+[unDraw](https://undraw.co/)
+
+![undraw](./fe/undraw.png)
+
+[优设](https://uiiiuiii.com/)
+
+![uiiiuiii](./fe/uiiiuiii.png)
+
+
+
+##### 开发社区 & 学习社区
 
 [Vue.js 社区](https://www.vue-js.com/)
 
@@ -184,6 +297,31 @@
 [softnshare](https://softnshare.com/)
 
 ##### 路径及文章
+[众成翻译](https://www.zcfy.cc/)
+
+[Fly63前端](http://www.fly63.com/)
+
+
+
+##### 博客 & 团队
+
+[阮一峰ES6入门](http://es6.ruanyifeng.com/)
+
+[廖雪峰官网](https://www.liaoxuefeng.com/)
+
+[AlloyTeam - 腾讯Web前端团队](http://www.alloyteam.com/)
+
+[凹凸实验室](https://aotu.io/)
+
+[淘宝前端团队FED](http://taobaofed.org/)
+
+[奇舞团](https://75team.com/)
+
+[腾讯互娱](https://tgideas.qq.com/)
+
+
+
+##### 路径
 
 [程序员不能错过的28份技术知识图谱，你的进阶路上必备](https://cloud.tencent.com/developer/article/1135231)
 
