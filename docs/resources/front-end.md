@@ -158,6 +158,20 @@
 
 ![bootswatch](./fe/bootswatch.png)
 
+[RxJS](https://rxjs.dev/): 使用` Observables` 的响应式编程的库，它使编写异步或基于回调的代码更容易。
+
+[Github](https://github.com/ReactiveX/RxJS)
+
+[中文文档](https://cn.rx.js.org/)
+
+![rxjs](./fe/rxjs.png)
+
+[Layui](https://www.layui.com/)
+
+[Github](https://github.com/sentsin/layui/)
+
+![layui](./fe/layui.png)
+
 
 
 ##### 开发资源
@@ -227,6 +241,12 @@
 [Linux命令大全](http://man.linuxde.net/)
 
 ![linuxde](./fe/linuxde.png)
+
+[Iodide](https://alpha.iodide.io/): `Mozilla `支持的在 `Web `中实现各种数据科学的效果
+
+[Github](https://github.com/iodide-project/iodide)
+
+![Iodide](./fe/Iodide.png)
 
 
 
