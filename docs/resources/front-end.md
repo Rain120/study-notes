@@ -78,9 +78,13 @@
 
 
 
+[Nodejs学习笔记](https://github.com/chyingp/nodejs-learning-guide)
+
+
+
 ##### [Javascript](https://www.javascript.com/)
 
-[现代 Javascript 教程](https://zh.javascript.info/)
+[现代 Javascript 教程](https://zh.javascript.info/): 从基础知识到高阶主题，只需既简单又详细的解释。
 
 ![js-info](./fe/js-info.png)
 
@@ -308,6 +312,11 @@
 
 [segmentfault](https://segmentfault.com/)
 
+[best-chinese-front-end-blogs](https://github.com/FrankFang/best-chinese-front-end-blogs): 收集优质的中文前端博客
+
+[softnshare](https://softnshare.com/)
+
+##### 路径及文章
 [众成翻译](https://www.zcfy.cc/)
 
 [Fly63前端](http://www.fly63.com/)
@@ -337,6 +346,10 @@
 [程序员不能错过的28份技术知识图谱，你的进阶路上必备](https://cloud.tencent.com/developer/article/1135231)
 
 [学好机器学习需要哪些数学知识?](https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247483713&idx=1&sn=1e7c81381d16806ac73e15691fe17aec&chksm=fdb69cd6cac115c05f1f90b0407e3f8ae9be8719e454f908074ac0d079885b5c134e2d60fd64&scene=21#wechat_redirect)
+
+[浏览器的工作原理](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
+
+
 
 
 
