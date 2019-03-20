@@ -142,6 +142,34 @@
 
 
 
+##### 测试框架
+
+[Mocha](<https://mochajs.org/>)
+
+[Mocha GitHub](<https://github.com/mochajs/mocha>)
+
+![mocha](./fe/mocha.png)
+
+
+
+[Chai](<https://www.chaijs.com/>)
+
+[Chai Github](<https://github.com/chaijs/chai>)
+
+![chai](./fe/chai.png)
+
+[Jest](<https://jestjs.io/>)
+
+[Jest Github](<https://github.com/facebook/jest>)
+
+![jest](./fe/jest.png)
+
+[**jsPerf** — JavaScript performance playground](https://jsperf.com/)
+
+[GitHub](https://github.com/jsperf/jsperf.com)
+
+
+
 ##### 优秀项目 & 插件
 
 [Webpack](https://webpack.js.org/)
@@ -238,6 +266,12 @@
 
 ![linear-algebra](./fe/linear-algebra.png)
 
+[机器学习的数学基础知识](<https://mml-book.github.io/>)
+
+[Github](<https://github.com/mml-book/mml-book.github.io>)
+
+[Download](<https://mml-book.github.io/book/mml-book.pdf>)
+
 
 
 ##### [Linux](https://en.wikipedia.org/wiki/Linux)
@@ -298,11 +332,19 @@
 
 [Vue.js 社区](https://www.vue-js.com/)
 
+![vue-js-club](./fe/vue-js-club.png)
+
 [React.js社区](http://react-china.org/)
+
+![react-china](./fe/react-china.png)
 
 [掘金](https://juejin.im/timeline)
 
+![juejin](./fe/juejin.png)
+
 [InfoQ](https://www.infoq.cn/): *InfoQ* 是一个实践驱动的社区资讯站点，致力于促进软件开发领域知识与创新的传播。
+
+[w3cplus](<https://www.w3cplus.com/>)
 
 [V2EX](https://www.v2ex.com/)
 

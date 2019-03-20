@@ -67,8 +67,6 @@ vim nginx.conf
 `Nginx`是以`event`（事件）处理模型为基础的模块。它为了支持跨平台，抽象出了`event`模块。它支持的`event`处理类型有：`AIO`（异步`IO`），`/dev/poll`（`Solaris` 和`Unix`特有），`epoll`（`Linux`特有），`eventport`（`Solaris` 10特有），`kqueue`（`BSD`特有），`poll`，`rtsig`（实时信号），`select`等。
 它的作用是监听`accept`后建立的连接，对读写事件进行添加删除。事件处理模型和`Nginx`的非阻塞IO模型结合在一起使用。当`IO`可读可写的时候，相应的读写事件就会被唤醒，此时就会去处理事件的回调函数。
 
-
-
 | 配置参数属性       | 解释说明                                                     | 参数列表                                                     |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | worker_connections | 定义每个进程的最大连接数,受系统进程的最大打开文件数量限制    | 单个后台worker process进程的最大并发链接数 （最大连接数= worker_processes * worker_connections）<br />在反向代理环境下：<br/>最大连接数 = worker_processes * worker_connections / 4 |
@@ -102,8 +100,6 @@ vim nginx.conf
 #### **`Upstream`**
 
 它的作用是实现在轮询和客户端IP之间的后端服务器负荷平衡。
-
-
 
 | 配置参数属性       | 解释说明                                                     |
 | ------------------ | ------------------------------------------------------------ |
@@ -257,11 +253,16 @@ nginx
 ps -ef | grep nginx
 ```
 
-重启`Nginx`
+新加载修改后的`Nginx`配置文件
 
 ```shell
 nginx -s reload
 ```
+
+**`reload`和`resatrt`是两个不同的概念。**
+
+1. `reload` 重新加载`conf`文件，不中断`Nginx`服务，`conf`文件有问题则加载上一次的`conf`.
+2. `restart` 会根据配置文件，重启整个`Nginx`服务，造成服务器中断一段时间，当然会因为`conf`文件问题报错。
 
 关闭`Nginx`
 
