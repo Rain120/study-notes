@@ -104,7 +104,17 @@
 
 [Underscore](https://underscorejs.org/)
 
+[Github](<https://github.com/jashkenas/underscore>)
 
+![underscorejs](./fe/underscorejs.png)
+
+ [30 seconds of code](https://30secondsofcode.org/index)
+
+[Github](<https://github.com/30-seconds/30-seconds-of-code>)
+
+![30secondsofcode](./fe/30secondsofcode.png)
+
+[AST Explorer](<https://astexplorer.net/>)
 
 ##### `Mock`
 
@@ -175,6 +185,10 @@
 [Webpack](https://webpack.js.org/)
 
 ![webpack](./fe/webpack.png)
+
+[Webpack config tool](<https://createapp.dev/>): webpack 配置工具
+
+![createappdev](./fe/createappdev.png)
 
 
 
@@ -288,7 +302,7 @@
 
 
 
-##### Icon & 设计
+##### Icon & 设计 & 网页
 
 [Iconfont](https://iconfont.cn)
 
@@ -325,6 +339,14 @@
 [优设](https://uiiiuiii.com/)
 
 ![uiiiuiii](./fe/uiiiuiii.png)
+
+[Can I Use](<https://caniuse.com/>): 查询浏览器的特性支持情况
+
+![caniuse](./fe/caniuse.png)
+
+[Package Different](<https://diff.intrinsic.com/>)
+
+[查询 NodeJS 的 ES2018 特性支持情况](<https://node.green/>)
 
 
 
@@ -390,6 +412,30 @@
 [学好机器学习需要哪些数学知识?](https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247483713&idx=1&sn=1e7c81381d16806ac73e15691fe17aec&chksm=fdb69cd6cac115c05f1f90b0407e3f8ae9be8719e454f908074ac0d079885b5c134e2d60fd64&scene=21#wechat_redirect)
 
 [浏览器的工作原理](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
+
+##### 工具
+
+[Codesanbox](<https://codesandbox.io/>)
+
+![codesandbox](./fe/codesandbox.png)
+
+[Codepen](<https://codepen.io/>)
+
+![codepen](./fe/codepen.png)
+
+
+
+[Repl.it](<https://repl.it/>)
+
+![repl-it](./fe/repl-it.png)
+
+[Glitch](<https://glitch.com/>)
+
+![glitch](./fe/glitch.png)
+
+
+
+
 
 
 

@@ -12,6 +12,8 @@
 
 [爱软客](http://www.bokeboke.net/)
 
+[少数派](<https://sspai.com/>)
+
 
 #### 2、Mac软件相关
 
