@@ -228,7 +228,7 @@
 
 
 
-##### 算法学习
+##### 算法学习 & 机器学习
 
 [Rappid算法学习](http://resources.jointjs.com/)
 
@@ -257,6 +257,12 @@
 [Data Structure Visualizations]https://www.cs.usfca.edu/~galles/visualization/Algorithms.html): 旧金山大学CS Data Structure
 
 ![visualization](./fe/visualization.png)
+
+[BestofML](<https://bestofml.com/>):  收集汇总了机器学习相关的资源，包括书籍、课程、博客、论文等
+
+[Github](<https://github.com/RemoteML/bestofml>)
+
+![bestofml](./fe/bestofml.png)
 
 
 
