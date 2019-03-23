@@ -12,6 +12,8 @@
 
 [爱软客](http://www.bokeboke.net/)
 
+[小众软件](https://www.appinn.com/)
+
 
 #### 2、Mac软件相关
 
