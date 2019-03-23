@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 16:02:18
- * @LastEditTime: 2019-01-20 17:36:56
+ * @LastEditTime: 2019-03-23 20:03:42
  -->
 
 #### 1、Windows软件相关
@@ -13,6 +13,8 @@
 [爱软客](http://www.bokeboke.net/)
 
 [小众软件](https://www.appinn.com/)
+
+[少数派](<https://sspai.com/>)
 
 
 #### 2、Mac软件相关

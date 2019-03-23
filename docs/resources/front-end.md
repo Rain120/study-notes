@@ -104,7 +104,17 @@
 
 [Underscore](https://underscorejs.org/)
 
+[Github](<https://github.com/jashkenas/underscore>)
 
+![underscorejs](./fe/underscorejs.png)
+
+ [30 seconds of code](https://30secondsofcode.org/index)
+
+[Github](<https://github.com/30-seconds/30-seconds-of-code>)
+
+![30secondsofcode](./fe/30secondsofcode.png)
+
+[AST Explorer](<https://astexplorer.net/>)
 
 ##### `Mock`
 
@@ -142,11 +152,43 @@
 
 
 
+##### 测试框架
+
+[Mocha](<https://mochajs.org/>)
+
+[Mocha GitHub](<https://github.com/mochajs/mocha>)
+
+![mocha](./fe/mocha.png)
+
+
+
+[Chai](<https://www.chaijs.com/>)
+
+[Chai Github](<https://github.com/chaijs/chai>)
+
+![chai](./fe/chai.png)
+
+[Jest](<https://jestjs.io/>)
+
+[Jest Github](<https://github.com/facebook/jest>)
+
+![jest](./fe/jest.png)
+
+[**jsPerf** — JavaScript performance playground](https://jsperf.com/)
+
+[GitHub](https://github.com/jsperf/jsperf.com)
+
+
+
 ##### 优秀项目 & 插件
 
 [Webpack](https://webpack.js.org/)
 
 ![webpack](./fe/webpack.png)
+
+[Webpack config tool](<https://createapp.dev/>): webpack 配置工具
+
+![createappdev](./fe/createappdev.png)
 
 
 
@@ -161,6 +203,20 @@
 [BootsWatch](https://bootswatch.com/): Free themes for Bootstrap
 
 ![bootswatch](./fe/bootswatch.png)
+
+[RxJS](https://rxjs.dev/): 使用` Observables` 的响应式编程的库，它使编写异步或基于回调的代码更容易。
+
+[Github](https://github.com/ReactiveX/RxJS)
+
+[中文文档](https://cn.rx.js.org/)
+
+![rxjs](./fe/rxjs.png)
+
+[Layui](https://www.layui.com/)
+
+[Github](https://github.com/sentsin/layui/)
+
+![layui](./fe/layui.png)
 
 
 
@@ -224,6 +280,12 @@
 
 ![linear-algebra](./fe/linear-algebra.png)
 
+[机器学习的数学基础知识](<https://mml-book.github.io/>)
+
+[Github](<https://github.com/mml-book/mml-book.github.io>)
+
+[Download](<https://mml-book.github.io/book/mml-book.pdf>)
+
 
 
 ##### [Linux](https://en.wikipedia.org/wiki/Linux)
@@ -232,9 +294,15 @@
 
 ![linuxde](./fe/linuxde.png)
 
+[Iodide](https://alpha.iodide.io/): `Mozilla `支持的在 `Web `中实现各种数据科学的效果
+
+[Github](https://github.com/iodide-project/iodide)
+
+![Iodide](./fe/Iodide.png)
 
 
-##### Icon & 设计
+
+##### Icon & 设计 & 网页
 
 [Iconfont](https://iconfont.cn)
 
@@ -272,17 +340,33 @@
 
 ![uiiiuiii](./fe/uiiiuiii.png)
 
+[Can I Use](<https://caniuse.com/>): 查询浏览器的特性支持情况
+
+![caniuse](./fe/caniuse.png)
+
+[Package Different](<https://diff.intrinsic.com/>)
+
+[查询 NodeJS 的 ES2018 特性支持情况](<https://node.green/>)
+
 
 
 ##### 开发社区 & 学习社区
 
 [Vue.js 社区](https://www.vue-js.com/)
 
+![vue-js-club](./fe/vue-js-club.png)
+
 [React.js社区](http://react-china.org/)
+
+![react-china](./fe/react-china.png)
 
 [掘金](https://juejin.im/timeline)
 
+![juejin](./fe/juejin.png)
+
 [InfoQ](https://www.infoq.cn/): *InfoQ* 是一个实践驱动的社区资讯站点，致力于促进软件开发领域知识与创新的传播。
+
+[w3cplus](<https://www.w3cplus.com/>)
 
 [V2EX](https://www.v2ex.com/)
 
@@ -328,6 +412,30 @@
 [学好机器学习需要哪些数学知识?](https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247483713&idx=1&sn=1e7c81381d16806ac73e15691fe17aec&chksm=fdb69cd6cac115c05f1f90b0407e3f8ae9be8719e454f908074ac0d079885b5c134e2d60fd64&scene=21#wechat_redirect)
 
 [浏览器的工作原理](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
+
+##### 工具
+
+[Codesanbox](<https://codesandbox.io/>)
+
+![codesandbox](./fe/codesandbox.png)
+
+[Codepen](<https://codepen.io/>)
+
+![codepen](./fe/codepen.png)
+
+
+
+[Repl.it](<https://repl.it/>)
+
+![repl-it](./fe/repl-it.png)
+
+[Glitch](<https://glitch.com/>)
+
+![glitch](./fe/glitch.png)
+
+
+
+
 
 
 
