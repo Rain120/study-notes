@@ -62,7 +62,7 @@
 
 ![drawio](./wf/drawio.png)
 
-[Notion](<https://www.notion.so/>)
+[Notion](https://www.notion.so/?r=a8b6e24bd86f4597a0b26266f6f8aee9)
 
 ![notion](./wf/notion.png)
 
