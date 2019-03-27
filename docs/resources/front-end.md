@@ -6,6 +6,8 @@
  * @LastEditTime: 2019-01-20 15:41:23
     -->
 
+[![juejin-likes](https://badge.juejin.im/entry/5c9b0218e51d45098b6af58f/likes.svg?style=plastic)](https://juejin.im/post/5c9af362e51d453d6a35a9c1)
+
 ##### [React](https://react.docschina.org/)
 
 ![reactjs](./fe/reactjs.png)
@@ -132,7 +134,13 @@
 
 
 
-##### 动画库
+##### 动画库(Javascript & CSS)
+
+[Three](<https://threejs.org/>)
+
+[Github](<https://github.com/mrdoob/three.js/>)
+
+![threejs](./fe/threejs.png)
 
 [Animate.css](https://daneden.github.io/animate.css/)
 
@@ -150,7 +158,17 @@
 
 ![greensock](./fe/greensock.png)
 
+Notes: [11 JavaScript Animation Libraries For 2019](<https://blog.bitsrc.io/11-javascript-animation-libraries-for-2018-9d7ac93a2c59>)
 
+[Kubt.js](<http://thednp.github.io/kute.js/>)
+
+[Github](<https://github.com/thednp/kute.js/>)
+
+![kutejs](./fe/kutejs.png)
+
+[Hover](<http://ianlunn.github.io/Hover/>)
+
+[Github](<https://github.com/IanLunn/Hover>)
 
 ##### 测试框架
 
@@ -174,7 +192,13 @@
 
 ![jest](./fe/jest.png)
 
-[**jsPerf** — JavaScript performance playground](https://jsperf.com/)
+[Karma](<http://karma-runner.github.io/latest/index.html>)
+
+[Github](<https://github.com/karma-runner/karma>)
+
+[Tape Github](<https://github.com/substack/tape>)
+
+[jsPerf — JavaScript performance playground](https://jsperf.com/)
 
 [GitHub](https://github.com/jsperf/jsperf.com)
 
@@ -278,7 +302,7 @@
 
 [Math ∩ Programming](https://jeremykun.com/)
 
-![Math ∩ Programming](./fe/Math ∩ Programming.png)
+![Math ∩ Programming](./fe/Math-Programming.png)
 
 
 
@@ -400,6 +424,8 @@
 [廖雪峰官网](https://www.liaoxuefeng.com/)
 
 [AlloyTeam - 腾讯Web前端团队](http://www.alloyteam.com/)
+
+[IMWeb前端社区](<https://imweb.io/>)
 
 [凹凸实验室](https://aotu.io/)
 

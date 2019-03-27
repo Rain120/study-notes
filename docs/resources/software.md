@@ -16,6 +16,8 @@
 
 [少数派](<https://sspai.com/>)
 
+[藏宝图](<https://www.xjcbt.com/>)
+
 
 #### 2、Mac软件相关
 
