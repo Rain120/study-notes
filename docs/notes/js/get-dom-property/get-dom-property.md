@@ -17,6 +17,21 @@
     * 返回`Number`表示该元素纵向滚动条距离
   * `scrollLeft` : 可读可写
     * 返回`Number`表示该元素横向滚动条距离最左的位移.
+
+**判定元素是否滚动到底**
+
+如果元素滚动到底，下面等式返回true，没有则返回false.
+
+```
+element.scrollHeight - element.scrollTop === element.clientHeight
+```
+
+当容器不滚动但有溢出的子容器时，这些检查可以确定容器能否滚动：
+
+```html
+window.getComputedStyle(element).overflowY === 'visible' window.getComputedStyle(element).overflowY !== 'hidden'
+```
+
 * `client`
   * `clientHeight`: 只读
     * 返回`Number`表示内部相对于外层元素的高度.
