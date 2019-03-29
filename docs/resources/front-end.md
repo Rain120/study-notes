@@ -244,6 +244,50 @@ Notes: [11 JavaScript Animation Libraries For 2019](<https://blog.bitsrc.io/11-j
 
 
 
+##### 图表库
+
+[Echarts](<https://echarts.baidu.com/>)
+
+[Github](<https://github.com/apache/incubator-echarts>)
+
+![echarts](./fe/echarts.png)
+
+[AntV](<https://antv.alipay.com/zh-cn/index.html>)
+
+[Github](<https://github.com/antvis/>)
+
+![antv](./fe/antv.png)
+
+[G2](<https://antv.alipay.com/zh-cn/g2/3.x/index.html>)
+
+G2 是一套基于可视化编码的图形语法，以数据驱动，具有高度的易用性和扩展性，用户无需关注各种繁琐的实现细节，一条语句即可构建出各种各样的可交互的统计图表。
+
+[G6](<https://antv.alipay.com/zh-cn/g6/3.x/index.html>)
+
+G6 是一个简单、易用、完备的图可视化引擎，它在高定制能力的基础上，提供了一系列设计优雅、便于使用的图可视化解决方案。能帮助开发者搭建属于自己的图 图分析 应用或是 图编辑器 应用。
+
+[F2](<https://antv.alipay.com/zh-cn/f2/3.x/index.html>)
+
+F2 是一个专注于移动，开箱即用的可视化解决方案，完美支持 H5 环境同时兼容多种环境（Node, 小程序，Weex），完备的图形语法理论，满足你的各种可视化需求，专业的移动设计指引为你带来最佳的移动端图表体验。
+
+[L7](<https://antv.alipay.com/zh-cn/l7/1.x/index.html>)
+
+L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置数据提供可视化能力。L7 的目标是提供一套地理空间数据可视化框架，易用易扩展，支持海量数据的高性能和 3D 高质量渲染，安全可靠（无地图法务风险）的地理空间数据可视化解决方案。
+
+[Recharts](<http://recharts.org/>)
+
+[Github](<https://github.com/recharts/recharts/>)
+
+![recharts](./fe/recharts.png)
+
+
+
+[Datamatic](<https://datamatic.io/>)
+
+![datamatic](./fe/datamatic.png)
+
+
+
 ##### 开发资源
 
 [Awesomes前端开发资源](https://www.awesomes.cn/)
