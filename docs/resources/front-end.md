@@ -242,6 +242,10 @@ Notes: [11 JavaScript Animation Libraries For 2019](<https://blog.bitsrc.io/11-j
 
 ![layui](./fe/layui.png)
 
+[Awesome Lists](<https://www.prettyawesomelists.com/lists>)
+
+![awesomelists](./fe/awesomelists.png)
+
 
 
 ##### 图表库
