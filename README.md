@@ -8,7 +8,7 @@ Daily study notes, some useful bookmarking resources, and resources for friends.
   - [<i class="profile-icon vuejs iconfont icon-js"></i>`js`](./docs/notes/js/guide.md)
     - [<i class="profile-icon vuejs iconfont icon-note"></i>`console`全家桶](./docs/notes/js/console/console-related-note.md)
     - [<i class="profile-icon vuejs iconfont icon-note"></i>`JavaScript`常见运算符](./docs/notes/js/common-operator/common-operator.md)
-    - [<i class="profile-icon vuejs iconfont icon-note"></i>`JavaScript`获取`DOM`元素的位置和尺寸](./docs/notes/js/get-dom-property/get-dom-property.md)
+    - [<i class="profile-icon vuejs iconfont icon-note"></i>获取`DOM`元素的位置和尺寸](./docs/notes/js/get-dom-property/get-dom-property.md)
   - [<i class="profile-icon vuejs iconfont icon-vuejs"></i>Vue](./docs/notes/vue/guide.md)
     - [<i class="profile-icon iconfont icon-note"></i>Vue实现左右菜单联动实现](./docs/notes/vue/cascade-menu.md)
     - [<i class="profile-icon iconfont icon-note"></i>Vue 生命周期笔记](./docs/notes/vue/vue-lifecycle/vue-lifecycle.md)
