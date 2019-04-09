@@ -156,12 +156,7 @@ function getPosition(el) {
       _y += (el.offsetTop - el.scrollTop + el.clientTop);
     }
  
-    if ($.browser.webkit) {
-      el = el.parentNode;
-    } else {
-      // firefox/IE
-      el = el.offsetParent;
-    }
+    el = el.offsetParent;
   }
   return {
     x: _x,
