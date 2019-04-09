@@ -107,7 +107,7 @@ window.getComputedStyle(element).overflowY === 'visible' window.getComputedStyle
 
     ![display-none-offsetParent](./images/display-none-offsetParent.png)
 
-  - 2 父元素是根据其父元素定位后元素，当前元素无定位 -> `offsetParent = current dom`
+  - 2 父元素是根据其父元素定位后元素，当前元素无定位 -> `offsetParent = current parent dom`
 
     ![parent-position-dom](./images/parent-position-dom.png)
 

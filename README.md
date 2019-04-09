@@ -5,10 +5,10 @@ Daily study notes, some useful bookmarking resources, and resources for friends.
 <!-- 学习笔记 -->
 
 - [<i class="profile-icon iconfont icon-note"></i>学习笔记](./docs/notes/guide.md)
-  - [<i class="profile-icon vuejs iconfont icon-js"></i>`js`](./docs/notes/js/guide.md)
-    - [<i class="profile-icon vuejs iconfont icon-note"></i>`console`全家桶](./docs/notes/js/console/console-related-note.md)
-    - [<i class="profile-icon vuejs iconfont icon-note"></i>`JavaScript`常见运算符](./docs/notes/js/common-operator/common-operator.md)
-    - [<i class="profile-icon vuejs iconfont icon-note"></i>获取`DOM`元素的位置和尺寸](./docs/notes/js/get-dom-property/get-dom-property.md)
+  - [<i class="profile-icon vuejs iconfont icon-js"></i>`HTML + CSS + Javascript`](./docs/notes/HTML_CSS_Javascript/guide.md)
+    - [<i class="profile-icon vuejs iconfont icon-note"></i>`console`全家桶](./docs/notes/HTML_CSS_Javascript/console/console-related-note.md)
+    - [<i class="profile-icon vuejs iconfont icon-note"></i>`JavaScript`常见运算符](./docs/notes/HTML_CSS_Javascript/common-operator/common-operator.md)
+    - [<i class="profile-icon vuejs iconfont icon-note"></i>获取`DOM`元素的位置和尺寸](./docs/notes/HTML_CSS_Javascript/get-dom-property/get-dom-property.md)
   - [<i class="profile-icon vuejs iconfont icon-vuejs"></i>Vue](./docs/notes/vue/guide.md)
     - [<i class="profile-icon iconfont icon-note"></i>Vue实现左右菜单联动实现](./docs/notes/vue/cascade-menu.md)
     - [<i class="profile-icon iconfont icon-note"></i>Vue 生命周期笔记](./docs/notes/vue/vue-lifecycle/vue-lifecycle.md)
@@ -22,7 +22,7 @@ Daily study notes, some useful bookmarking resources, and resources for friends.
 - [<i class="profile-icon iconfont icon-resources"></i>资源集合](./docs/resources/guide.md)
   - [<i class="profile-icon iconfont icon-web"></i>前端](./docs/resources/front-end.md)
   - [<i class="profile-icon iconfont icon-website"></i>网站](./docs/resources/website.md)
-  - [<i class="profile-icon iconfont icon-broken"></i>软件](./docs/resources/software.md)
+  - [<i class="profile-icon iconfont icon-broken"></i>软件(Win10 + Mac)](./docs/resources/software.md)
   - [<i class="profile-icon iconfont icon-others"></i>其他](./docs/resources/others.md)
 
 <!-- About Me -->

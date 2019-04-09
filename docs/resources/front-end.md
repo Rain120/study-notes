@@ -513,11 +513,23 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 ![glitch](./fe/glitch.png)
 
+正则表达式可视化工具
 
+[Regulex]()
 
+Regulex是一个JavaScript正则表达式可视化工具，由纯JavaScript实现，源码托管在[Github](https://github.com/JexCheng/regulex)上。
 
+![regulex](./fe/regulex.png)
 
+[Regexper](<https://regexper.com/>)
 
+`Regexper`是由`Jeff Avallone`开发的一款`JavaScript`正则表达式可视化工具，源码托管在[Github](https://github.com/javallone/regexper)上。它能够让正则表达式字符串以 `Railroad `形式图形化，便于阅读和理解。同时推荐一款 `JavaScript` 正则在线测试工具——[Regexpal](http://regexpal.com/)，可以和` Regexper` 配合使用。
 
+![regexper](./fe/regexper.png)
 
+[Debuggex]()(<https://www.debuggex.com/>)
+
+`Debuggex`是一个测试正则表达式的`Web`应用，它支持`JavaScript`、`Python`以及`PCRE`。
+
+![debuggex](./fe/debuggex.png)
 
