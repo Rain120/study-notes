@@ -515,7 +515,7 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 正则表达式可视化工具
 
-[Regulex]()
+[Regulex](<https://jex.im/regulex/>)
 
 Regulex是一个JavaScript正则表达式可视化工具，由纯JavaScript实现，源码托管在[Github](https://github.com/JexCheng/regulex)上。
 
@@ -527,7 +527,7 @@ Regulex是一个JavaScript正则表达式可视化工具，由纯JavaScript实�
 
 ![regexper](./fe/regexper.png)
 
-[Debuggex]()(<https://www.debuggex.com/>)
+[Debuggex](<https://www.debuggex.com/>)
 
 `Debuggex`是一个测试正则表达式的`Web`应用，它支持`JavaScript`、`Python`以及`PCRE`。
 
