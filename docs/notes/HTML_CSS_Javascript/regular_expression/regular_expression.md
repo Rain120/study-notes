@@ -12,9 +12,9 @@
 |                           \b                           | 匹配一个单词边界，也就是指单词和空格间的位置。一个匹配的词的边界的内容的长度是0。（不要和[\b]混淆了） |                            blank                             |
 |                           \B                           | 匹配非单词边界。一个字符串的开始和结尾都被认为不是“字”字符，或者空字符串 |                       Blank，b与B相反                        |
 |                           \d                           | 匹配一个数字字符。等价于 [0-9]                               |                            digit                             |
-|                           \D                           | 匹配一个非数字字符。等价于 [^0-9]                            |                       Digit，d与D相反                        |
-|                           \s                           | 匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [ \f\n\r\t\v]。 |                            space                             |
-|                           \S                           | 匹配任何非空白字符。等价于 [^ \f\n\r\t\v]()。                |                       Space, s与S相反                        |
+|                           \D                           | 匹配一个非数字字符。等价于 [\^0-9]                           |                       Digit，d与D相反                        |
+|                           \s                           | 匹配任何空白字符，包括空格、制表符、换页符等等。等价于 `[ \f\n\r\t\v]` |                            space                             |
+|                           \S                           | 匹配任何非空白字符。等价于`[^ \f\n\r\t\v]`                   |                       Space, s与S相反                        |
 |                           \w                           | 匹配字母、数字、下划线。等价于'\[A-Za-z0-9_]'                |                             word                             |
 |                           \W                           | 匹配非字母、数字、下划线。等价于 '\[^A-Za-z0-9_]'            |                        Word，w与W相反                        |
 |                      匹配特殊字符                      |                                                              |                                                              |
@@ -91,7 +91,7 @@
 
 下面我们讲上述方法一个一个的测试
 
-#### `test(str)`
+#### 1. `test(str)`
 
 ##### param：`str`
 
@@ -103,7 +103,7 @@
 
 ![test test()](https://user-gold-cdn.xitu.io/2018/10/6/1664509b8840fba4?w=927&h=210&f=png&s=18999)
 
-#### `exec(str)`
+#### 2. `exec(str)`
 
 ##### param：`str`
 
@@ -127,11 +127,66 @@
 
 ![test exec()](https://user-gold-cdn.xitu.io/2018/10/5/16644e4e90587f45?w=930&h=219&f=png&s=23273)
 
-#### `match(pattern)`
+#### 3. `match(pattern)`
 
-#### `search(pattern)`
+##### `param`: 传入一个正则表达式对象, 如果传入一个非正则表达式对象，则会隐式地使用 `new RegExp(obj)` 将其转换为一个 [`RegExp`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/RegExp) 。如果你没有给出任何参数并直接使用match() 方法 ，你将会得到一 个包含空字符串的 [`Array`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Array) ：[""] 。
 
-#### `replace(pattern, obj || callback)`
+##### `return`:  
 
-#### `split`
+- 如果使用`g`标志，则将返回与完整正则表达式匹配的所有结果（`Array`），但不会返回捕获组，或者未匹配 `null`。
+- 如果未使用`g`标志，则仅返回第一个完整匹配及其相关的捕获组（`Array`）。 在这种情况下，返回的项目将具有如下所述的其他属性，或者未匹配 `null`。
+- **匹配成功**
+  - `groups`: 一个捕获组数组 或 `undefined`（如果没有定义命名捕获组）。
+  - `index`: 匹配的结果的开始位置
+  - `input`: 搜索的字符串。
+
+![match](./images/match.png)
+
+`match[0]`: 整条正则表达式匹配结果
+
+`match[1]`: `(\w+)`匹配结果
+
+#### 4. `search(pattern)`
+
+##### `param`: 传入一个正则表达式对象， 如果传入一个非正则表达式对象，则会使用 `new RegExp(obj)` 隐式地将其转换为正则表达式对象。
+
+##### `return`: 如果匹配成功，则 `search()` 返回正则表达式在字符串中首次匹配项的索引。否则，返回 `-1`。
+
+![search](./images/search.png)
+
+很类似`indexof`这个方法
+
+#### 5. `replace(regexp|substr, newSubStr|function)`
+
+##### `param`: 
+
+- 正则表达式`or`字符
+- 字符串或者函数
+
+##### `return`: 一个部分或全部匹配由替代模式所取代的新的字符串。
+
+![replace](./images/replace.png)
+
+
+
+| 变量名 | 代表的值                                                     |
+| ------ | ------------------------------------------------------------ |
+| `$$`   | 插入一个 "$"。                                               |
+| `$&`   | 插入匹配的子串。                                             |
+| `$``   | 插入当前匹配的子串左边的内容。                               |
+| `$'`   | 插入当前匹配的子串右边的内容。                               |
+| `$n`   | 假如第一个参数是 [`RegExp`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/RegExp)对象，并且 n 是个小于100的非负整数，那么插入第 n 个括号匹配的字符串。提示：索引是从1开始 |
+
+
+
+#### 6. `split(pattern， limit？)`
+
+##### `param`:
+
+- `pattern`: 指定表示每个拆分应发生的点的字符串, 可以是一个正则表达式，也可以是字符串。
+- `limit`: 一个整数，限定返回的分割片段数量。
+
+##### `return`: 返回源字符串以分隔符出现位置分隔而成的一个`Array`
+
+![split](./images/split.png)
 
