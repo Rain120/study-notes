@@ -15,6 +15,8 @@
    * [<i class="profile-icon vuejs iconfont icon-vuejs"></i>Vue](notes/vue/guide.md)
      * [<i class="profile-icon iconfont icon-note"></i>Vue实现左右菜单联动实现](notes/vue/cascade-menu.md)
      * [<i class="profile-icon iconfont icon-note"></i>Vue 生命周期笔记](notes/vue/vue-lifecycle/vue-lifecycle.md)
+   * [<i class="profile-icon iconfont icon-note"></i>Linux](notes/linux/guide.md)
+     - [<i class="profile-icon iconfont icon-note"></i>Linux入门学习](notes/linux/initial.md)
    * [<i class="profile-icon vuejs iconfont icon-nginx"></i>Nginx](notes/nginx/guide.md)
      * [<i class="profile-icon vuejs iconfont icon-note"></i>Nginx笔记](notes/nginx/nginx/note.md)
    * [<i class="profile-icon iconfont icon-error"></i>日常错误笔记](notes/error-qa/guide.md)
