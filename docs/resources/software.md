@@ -18,6 +18,7 @@
 
 [藏宝图](<https://www.xjcbt.com/>)
 
+[正版中国](https://getitfree.cn/)
 
 #### 2、Mac软件相关
 
