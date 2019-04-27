@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 16:09:45
- * @LastEditTime: 2019-01-20 17:34:22
+ * @LastEditTime: 2019-04-27 15:11:28
  -->
 
 #### 文献查找
@@ -175,6 +175,7 @@
 13. [dualsub-app](https://dualsub-app.appspot.com/)
 
     下载 `YouTube `双语字幕
+14. [`YouTube `字幕下载](https://zhuwei.me/y2b/)
 
 [gihosoft](https://www.gihosoft.com/)
 
