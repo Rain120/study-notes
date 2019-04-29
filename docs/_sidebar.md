@@ -12,6 +12,7 @@
       - [<i class="profile-icon vuejs iconfont icon-note"></i>`JavaScript`常见运算符](notes/HTML_CSS_Javascript/common-operator/common-operator.md)
       - [<i class="profile-icon vuejs iconfont icon-note"></i>获取`DOM`元素的位置和尺寸](notes/HTML_CSS_Javascript/get-dom-property/get-dom-property.md)
       - [<i class="profile-icon vuejs iconfont icon-note"></i>`Javascript`正则表达式](notes/HTML_CSS_Javascript/regular_expression/regular_expression.md)
+      - [<i class="profile-icon vuejs iconfont icon-note"></i>日常使用的正则表达式](notes/HTML_CSS_Javascript/regular_expression/common_reg_exps.md)
    * [<i class="profile-icon vuejs iconfont icon-vuejs"></i>Vue](notes/vue/guide.md)
      * [<i class="profile-icon iconfont icon-note"></i>Vue实现左右菜单联动实现](notes/vue/cascade-menu.md)
      * [<i class="profile-icon iconfont icon-note"></i>Vue 生命周期笔记](notes/vue/vue-lifecycle/vue-lifecycle.md)
