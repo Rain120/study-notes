@@ -5,6 +5,10 @@
  * @LastEditTime: 2019-01-20 16:29:10
     -->
 
+#### 游戏
+
+[小霸王全集](https://yikm.net/)
+
 #### Github Games
 
 [Github Games](<http://likexia.gitee.io/game/index.html>)
