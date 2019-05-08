@@ -49,6 +49,10 @@ git config --list # 列举所有配置
 
 远程仓库`(Remote)`
 
+![git_infos_repo](./images/git_infos_repo.png)
+
+![git_infos](./images/git_infos.jpg)
+
 忽略文件配置：添加`.gitignore`文件
 
 文件 `.gitignore` 的格式规范如下：
@@ -58,12 +62,6 @@ git config --list # 列举所有配置
 - 匹配模式可以以（`/`）开头防止递归。
 - 匹配模式可以以（`/`）结尾指定目录。
 - 要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（`!`）取反。
-
-![git_infos_repo](./images/git_infos_repo.png)
-
-
-
-![git_infos](./images/git_infos.jpg)
 
 #### 2. 创建版本库
 
