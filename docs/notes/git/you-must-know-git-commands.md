@@ -1,6 +1,6 @@
 >  [Git](https://git-scm.com/) 是一个分布式版本控制软件, 最初目的是为更好地管理`Linux`内核开发而设计。
 >
-> 来源：[维基百科  - Git](https://zh.wikipedia.org/wiki/Git)
+>  来源：[维基百科  - Git](https://zh.wikipedia.org/wiki/Git)
 
 `Git`是一个软件，它允许你通过提交对一个系统（或一组）文件的历史进行注释。这些提交便是在给定时间点对系统做出的差异“快照”。
 
@@ -51,7 +51,11 @@ git config --list # 列举所有配置
 
 ![git_infos_repo](./images/git_infos_repo.png)
 
+<center>阮一峰老师对Git工作区、暂存区、版本库、远程仓库的解释</center>
+
 ![git_infos](./images/git_infos.jpg)
+
+<center>Runoob对Git工作区、暂存区、版本库、远程仓库的解释</center>
 
 忽略文件配置：添加`.gitignore`文件
 

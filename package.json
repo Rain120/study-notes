@@ -14,7 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/Rain120/study-notes.git"
   },
-  "keywords": ["Web", "Notes"],
+  "keywords": [
+    "Web",
+    "Notes"
+  ],
   "author": "Rain120",
   "license": "ISC",
   "bugs": {
