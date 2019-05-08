@@ -29,7 +29,7 @@
 
 * <i class="profile-icon iconfont icon-note"></i>[`Git`学习](notes/git/guide.md)
 
-   * <i class="profile-icon iconfont icon-js"></i>[你必须知道的`Git`命令](notes/git/you-must-to-know-git-commands.md)
+   * <i class="profile-icon iconfont icon-js"></i>[你必须知道的`Git`命令](notes/git/you-must-know-git-commands.md)
 
 * <i class="profile-icon iconfont icon-note"></i>[日常错误笔记](notes/error-qa/guide.md)
 
