@@ -121,11 +121,24 @@ git branch # 查看分支
 
 git branch -r #查看远程分支
 
+# 此命令将显示包含特定提交的所有分支。
+git branch --contains <commit>
+
 git branch <name> # 创建分支
 
 git checkout <name> # 切换分支
 
 git checkout -b <name> # 创建 + 切换分支
+
+# 重命名本地分支
+git branch -m <old-name> <new-name>
+
+# 重命名刚切换的新分支
+git branch -m <new-name>
+
+# 重命名远程分支： 一旦在本地重命名了分支，您需要先远程删除该分支，然后再次推送重命名的分支。
+git push origin :<old-name>
+git push origin <new-name>
 
 git merge <name> # 合并某分支到当前分支
 
@@ -150,7 +163,7 @@ git diff <first_branch>..<second_branch> # 显示两次提交之间的差异
 
 git diff --shortstat "@{n day ago}" # 显示n天的代码数量
 
-git diff --cached # 查看已经暂存起来的变化
+git diff --cached(--staged) # 查看已经暂存起来的变化
 
 git show <commit>:<filename> # 显示某次提交时，某个文件的内容
 
@@ -208,9 +221,15 @@ git checkout [file] # 恢复暂存区的指定文件到工作区
 # --patch还可用于选择性地丢弃每个被跟踪文件的部分。
 git checkout -p
 
+# 此命令允许您快速切换到先前检出的分支。 一般说来 - 是前一个分支的别名。 它也可以与其他命令一起使用。
+git checkout -
+
+# 还原所有本地更改，如果您确定可以丢弃所有本地更改，则可以使用。
+git checkout .
+
 git checkout HEAD <filename> # 取消指定未提交文件的修改内容
 
-git checkout -- <filename> # 撤消对文件的修改
+git checkout --patch <filename> # 撤消对文件的修改
 
 git revert <commit_id> # 撤销指定提交
 ```
@@ -278,6 +297,15 @@ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(
 # 设置git alias
 git config --global alias.slg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 ```
+
+
+
+```shell
+# 显示每个提交在过去两周内引入的差异日志。
+git whatchanged —-since='2 weeks ago'
+```
+
+
 
 #### 9. 标签
 
@@ -389,6 +417,13 @@ git push [remote] --all # 推送所有分支到远程仓库
 git push <remote> :<branch-name/tag-name> # 删除远程分支或标签
 
 git push --tag # 上传所有标签
+```
+
+#### 13. 冲突
+
+```shell
+# 一次打开所有冲突的文件,重新绑定可能会导致冲突，以下命令将打开需要您帮助解决这些冲突的所有文件。
+git diff --name-only --diff-filter=U | uniq  | xargs $EDITOR
 ```
 
 #### 从本地初始化到上传到`GitHub`远程仓库的一般步骤
