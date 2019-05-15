@@ -117,7 +117,7 @@
 
  1. **浏览器的工作原理**
 
-    ![layers](/Users/rainy/Desktop/MyWork/Note/study-notes/docs/notes/knowledge-map/images/layers.png)
+    ![layers](./images/layers.png)
 
     <center>  浏览器结构</center>
 
@@ -135,11 +135,11 @@
 
     **数据存储(Data Persistence)** - 这是持久层。浏览器需要在硬盘上保存各种数据，例如 `Cookie`。新的 `HTML` 规范 `(HTML5)` 定义了“网络数据库”，这是一个完整（但是轻便）的浏览器内数据库。
 
-    ![webkit-dom-render](/Users/rainy/Desktop/MyWork/Note/study-notes/docs/notes/knowledge-map/images/webkit-dom-render.png)
+    ![webkit-dom-render](./images/webkit-dom-render.png)
 
     <center>Webkit Dom Render过程</center>
 
-    ![gecko-dom-render.png](/Users/rainy/Desktop/MyWork/Note/study-notes/docs/notes/knowledge-map/images/gecko-dom-render.png)
+    ![gecko-dom-render.png](./images/gecko-dom-render.png)
 
     <center>Gecko Dom Render过程</center>
 
@@ -166,3 +166,4 @@
 [Back Top](#top)
 
 [How I Started in Web Development](https://codeburst.io/how-i-started-in-web-development-8f61da839e92)
+
