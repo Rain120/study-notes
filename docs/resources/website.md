@@ -60,6 +60,8 @@
 
 #### Office
 
+[声享PPT制作](https://ppt.baomitu.com/)
+
 [PPT制作](<https://slides.com/>)
 
 ![slides](./wf/slides.png)
