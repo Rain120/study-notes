@@ -310,7 +310,7 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 ![rappid-ast](./fe/rappid-ast.png)
 
-
+[AI算法工程师手册](http://www.huaxiaozhuan.com/)
 
 [机器深度学习](http://redstonewill.com/)
 
