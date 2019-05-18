@@ -8,6 +8,10 @@
 
 [![juejin-likes](https://badge.juejin.im/entry/5c9b0218e51d45098b6af58f/likes.svg?style=plastic)](https://juejin.im/post/5c9af362e51d453d6a35a9c1)
 
+[DevDocs: API Documentation Browser](https://devdocs.io/)
+
+[Github](https://github.com/freeCodeCamp/devdocs)
+
 ##### [React](https://react.docschina.org/)
 
 ![reactjs](./fe/reactjs.png)
@@ -306,7 +310,7 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 ![rappid-ast](./fe/rappid-ast.png)
 
-
+[AI算法工程师手册](http://www.huaxiaozhuan.com/)
 
 [机器深度学习](http://redstonewill.com/)
 
@@ -426,7 +430,9 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [查询 NodeJS 的 ES2018 特性支持情况](<https://node.green/>)
 
+[网络安全的教程](https://www.hacksplaining.com/lessons)
 
+以一个黑客的角度将你带入，它配套了十几个小demo，一步一步带你发现各种各样的安全漏洞。因为这些demo都是交互式，玩起来很带感。
 
 ##### 开发社区 & 学习社区
 
