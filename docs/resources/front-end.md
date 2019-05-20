@@ -330,7 +330,7 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 ![paperswithcode](./fe/paperswithcode.png)
 
-[Data Structure Visualizations]https://www.cs.usfca.edu/~galles/visualization/Algorithms.html): 旧金山大学CS Data Structure
+[Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html): 旧金山大学CS Data Structure
 
 ![visualization](./fe/visualization.png)
 
@@ -340,7 +340,7 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 ![bestofml](./fe/bestofml.png)
 
-
+[internetfundamentals](http://internetfundamentals.com/watch/)：了解Web的工作原理，并迈出创建网页的第一步！ 一个完全免费的视频课程，适合初学者
 
 ##### 数学知识学习
 
