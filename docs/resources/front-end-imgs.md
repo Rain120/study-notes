@@ -8,37 +8,71 @@
 
 [![juejin-likes](https://badge.juejin.im/entry/5c9b0218e51d45098b6af58f/likes.svg?style=plastic)](https://juejin.im/post/5c9af362e51d453d6a35a9c1)
 
-#### [带图片的版本](/resources/front-end-imgs.md)
+#### [不带图片的版本](/resources/front-end.md)
 
-[DevDocs: API Documentation Browser](https://devdocs.io/) -> [Github](https://github.com/freeCodeCamp/devdocs)
+[DevDocs: API Documentation Browser](https://devdocs.io/)
+
+[Github](https://github.com/freeCodeCamp/devdocs)
 
 ##### [React](https://react.docschina.org/)
 
 > React是一个为数据提供渲染为HTML视图的开源JavaScript 库。React视图通常采用包含以自定义HTML标记规定的其他组件的组件渲染。React为程序员提供了一种子组件不能直接影响外层组件的模型，数据改变时对HTML文档的有效更新，和现代单页应用中组件之间干净的分离。
 
-[React - Antd](https://ant.design/index-cn): `antd` 是基于 Ant Design 设计体系的 React UI 组件库，主要用于研发企业级中后台产品。
+![reactjs](./fe/reactjs.png)
+
+[React - Antd](https://ant.design/index-cn):  `antd` 是基于 Ant Design 设计体系的 React UI 组件库，主要用于研发企业级中后台产品。
+
+![react-antd](./fe/react-antd.png)
 
 [UxCore](http://uxco.re/): 为企业级后台而生的PC组件库。
 
+![uxcore](./fe/uxcore.png)
+
+
+
 [ZanUI](https://www.youzanyun.com/zanui): PC、移动、小程序
 
+![zanui](./fe/zanui.png)
+
+
+
 [React.part](https://react.parts/): 查找`React`的组件
+
+![react-parts](./fe/react-parts.png)
 
 ##### [Vue](https://vuefe.cn/)
 
 > Vue.js是一个用于创建用户界面的开源JavaScript框架，也是一个创建单页应用的Web应用框架。 2016年一项针对JavaScript的调查表明，Vue有着89%的开发者满意度。 在GitHub上，该项目平均每天能收获95颗星，为Github有史以来星标数第3多的项目。
 
+![vuejs](./fe/vuejs.png)
+
 [Vue - Antd](https://vue.ant.design/docs/vue/introduce/)
+
+![vue-antd](./fe/vue-antd.png)
 
 [IView](https://www.iviewui.com/): 一套基于 Vue.js 的高质量
 
+![iview](./fe/iview.png)
+
 [Element](http://element-cn.eleme.io/#/zh-CN): Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
+
+![element](./fe/element.png)
 
 [Mint UI](https://mint-ui.github.io/#!/zh-cn): 基于 Vue.js 的移动端组件库
 
+![Mint-UI](./fe/Mint-UI.png)
+
 [VUX](https://vux.li/#/?id=%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8): 一个凑合的 Vue.js 移动端 UI 组件库
 
-[Vue-Map](https://github.com/ElemeFE/vue-amap): 基于 Vue 2.x 和高德地图的地图组件, [Vue-Map文档](https://elemefe.github.io/vue-amap/#/)
+![vux](./fe/vux.png)
+
+[Vue-Map](https://github.com/ElemeFE/vue-amap): 基于 Vue 2.x 和高德地图的地图组件
+
+[文档](https://elemefe.github.io/vue-amap/#/)
+
+![vue-amap](./fe/vue-amap.png)
+
+
 
 ##### [Nodejs](https://nodejs.org/zh-cn/)
 
@@ -46,115 +80,201 @@
 
 [Express](https://expressjs.com/)： 高度包容、快速而极简的 [Node.js](http://nodejs.org/) Web 框架
 
+![express](./fe/express.png)
+
 [koa](https://koajs.com/)
 
 > Koa 是一个新的 web 框架，由 Express 幕后的原班人马打造， 致力于成为 web 应用和 API 开发领域中的一个更小、更富有表现力、更健壮的基石。 通过利用 async 函数，Koa 帮你丢弃回调函数，并有力地增强错误处理。 Koa 并没有捆绑任何中间件， 而是提供了一套优雅的方法，帮助您快速而愉快地编写服务端应用程序。
 
+![koa](./fe/koa.png)
+
 [egg](https://eggjs.org/): 为企业级框架和应用而生
 
+![egg](./fe/egg.png)
+
+
+
 [Nodejs学习笔记](https://github.com/chyingp/nodejs-learning-guide)
+
+
 
 ##### [Javascript](https://www.javascript.com/)
 
 [现代 Javascript 教程](https://zh.javascript.info/): 从基础知识到高阶主题，只需既简单又详细的解释。
 
-[Philip Roberts](http://latentflip.com/): `Javascript`可视化运行 -> [Github](https://github.com/latentflip/loupe) -> [Demo](http://latentflip.com/loupe)
+![js-info](./fe/js-info.png)
 
-[Lodash](https://lodash.com/): Lodash是一个JavaScript库，它使用函数式编程范例为常见的编程任务提供实用程序功能。
+[Philip Roberts](http://latentflip.com/): **Visualizing the javascript runtime at runtime**
 
-[Ramda](https://ramdajs.com/): 一款实用的JavaScript 函数式编程库。
+[Github](https://github.com/latentflip/loupe) -> [Demo](http://latentflip.com/loupe)
 
-[Underscore](https://underscorejs.org/) : -> [Github](https://github.com/jashkenas/underscore)
+![philip-roberts](./fe/philip-roberts.png)
 
-> Underscore.js是一个JavaScript库，为常见的编程任务提供实用程序功能。它与Prototype.js和Ruby语言提供的功能相当，但选择功能性编程设计而不是扩展对象原型。
+[Lodash](https://lodash.com/)
 
- [30 seconds of code](https://30secondsofcode.org/index) -> [Github](https://github.com/30-seconds/30-seconds-of-code)
+![lodash](./fe/lodash.png)
 
-> 精心收集的有用的 JavaScript 代码片段，可以让你在 30 秒或更少的时间内理解
+[Ramda](https://ramdajs.com/)
 
-[AST Explorer](https://astexplorer.net/): 用于探索各种解析器生成的AST的Web工具。
+![ramda](./fe/ramda.png)
+
+[Underscore](https://underscorejs.org/)
+
+[Github](<https://github.com/jashkenas/underscore>)
+
+![underscorejs](./fe/underscorejs.png)
+
+ [30 seconds of code](https://30secondsofcode.org/index)
+
+[Github](<https://github.com/30-seconds/30-seconds-of-code>)
+
+![30secondsofcode](./fe/30secondsofcode.png)
+
+[AST Explorer](<https://astexplorer.net/>)
 
 ##### `Mock`
 
 [Easy-Mock](https://easy-mock.com/): 高效伪造数据
 
+![easy-mock](./fe/easy-mock.png)
+
 [Mock.js](http://mockjs.com/):生成随机数据，拦截 Ajax 请求
 
-[Rapid-Api](https://rapidapi.com/): 构建块来增强您的应用程序, 发现并连接世界上最大的API中心的数千个API.
+![mock-js](./fe/mockjs.png)
+
+[Rapid-Api](https://rapidapi.com/)
+
+![rapidapi](./fe/rapidapi.png)
+
+
 
 ##### 动画库(Javascript & CSS)
 
-[Threejs](https://threejs.org/) -> [Github](https://github.com/mrdoob/three.js/)
+[Three](<https://threejs.org/>)
 
-> Three.js是一个跨浏览器的脚本，使用JavaScript函数库或API来在网页浏览器中创建和展示动画的三维计算机图形。Three.js使用WebGL。源代码托管在GitHub
+[Github](<https://github.com/mrdoob/three.js/>)
 
-[Animate.css](https://daneden.github.io/animate.css/): 一个使用CSS3的animation制作的动画效果的CSS集合，里面预设了很多种常用的动画，且使用非常简单。
+![threejs](./fe/threejs.png)
 
-[Animejs](https://animejs.com/): Anime.js是一个轻量级JavaScript动画库，具有简单但功能强大的API。它适用于CSS属性，SVG，DOM属性和JavaScript对象。
+[Animate.css](https://daneden.github.io/animate.css/)
+
+![animate-css](./fe/animate-css.png)
+
+[Animejs](https://animejs.com/)
+
+![animejs](./fe/animejs.png)
 
 [TweenMax.js](https://www.tweenmax.com.cn/)
 
-> 适用于移动端和现代互联网的超高性能专业级动画插件。
->
-> Tweenmax是GreenSock 动画平台的核心，配合其他插件  可动画CSS属性、滤镜效果、 颜色、 声音、 色彩、 帧、 饱和度、 对比度、 色调、 色系、 亮度、 贝塞尔
+![tweenmaxjs](./fe/tweenmaxjs.png)
 
-[GreenSock](https://greensock.com/): 适用于现代网络的超高性能专业级动画
+[GreenSock](https://greensock.com/)
 
-Notes: [11 JavaScript Animation Libraries For 2019](https://blog.bitsrc.io/11-javascript-animation-libraries-for-2018-9d7ac93a2c59)
+![greensock](./fe/greensock.png)
 
-[Kubt.js](http://thednp.github.io/kute.js/) -> [Github](https://github.com/thednp/kute.js/)
+Notes: [11 JavaScript Animation Libraries For 2019](<https://blog.bitsrc.io/11-javascript-animation-libraries-for-2018-9d7ac93a2c59>)
 
-> KUTE.js是一个Javascript动画引擎，具有顶级性能，内存效率和模块化代码。 它提供了大量工具来帮助您创建出色的自定义动画。
+[Kubt.js](<http://thednp.github.io/kute.js/>)
 
-[Hover](http://ianlunn.github.io/Hover/) -> [Github](https://github.com/IanLunn/Hover)
+[Github](<https://github.com/thednp/kute.js/>)
 
-> CSS3动力悬停效果的集合，适用于链接，按钮，徽标，SVG，特色图像等。 轻松应用于您自己的元素，修改或仅用于灵感。 提供CSS，Sass和LESS。
+![kutejs](./fe/kutejs.png)
+
+[Hover](<http://ianlunn.github.io/Hover/>)
+
+[Github](<https://github.com/IanLunn/Hover>)
 
 ##### 测试框架
 
-[Mocha](https://mochajs.org/) -> [Mocha GitHub](https://github.com/mochajs/mocha)
+[Mocha](<https://mochajs.org/>)
 
-> Mocha是Node.js程序的JavaScript测试框架，具有浏览器支持，异步测试，测试覆盖率报告以及任何断言库的使用。
+[Mocha GitHub](<https://github.com/mochajs/mocha>)
 
-[Chai](<https://www.chaijs.com/>) -> [Chai Github](https://github.com/chaijs/chai)
+![mocha](./fe/mocha.png)
 
-> Chai是节点和浏览器的BDD / TDD断言库，可以与任何javascript测试框架愉快地配对。
 
-[Jest](https://jestjs.io/) -> [Jest Github](https://github.com/facebook/jest)
 
-> Jest是一个令人愉快的JavaScript测试框架，专注于简单性。它适用于以下项目：Babel，TypeScript，Node，React，Angular，Vue等等！
+[Chai](<https://www.chaijs.com/>)
 
-[Karma](http://karma-runner.github.io/latest/index.html): 一个 `runner` ， 旨在帮助开发者简单而又快速的进行自动化单元测试 -> [Github](https://github.com/karma-runner/karma)
+[Chai Github](<https://github.com/chaijs/chai>)
 
-> [karma测试框架的前世今生](http://taobaofed.org/blog/2016/01/08/karma-origin/)
+![chai](./fe/chai.png)
+
+[Jest](<https://jestjs.io/>)
+
+[Jest Github](<https://github.com/facebook/jest>)
+
+![jest](./fe/jest.png)
+
+[Karma](<http://karma-runner.github.io/latest/index.html>)
+
+[Github](<https://github.com/karma-runner/karma>)
 
 [Tape Github](<https://github.com/substack/tape>)
 
-[jsPerf — JavaScript performance playground](https://jsperf.com/) -> [GitHub](https://github.com/jsperf/jsperf.com)
+[jsPerf — JavaScript performance playground](https://jsperf.com/)
+
+[GitHub](https://github.com/jsperf/jsperf.com)
+
+
 
 ##### 优秀项目 & 插件
 
 [Webpack](https://webpack.js.org/)
 
+![webpack](./fe/webpack.png)
+
 [Webpack config tool](<https://createapp.dev/>): webpack 配置工具
+
+![createappdev](./fe/createappdev.png)
+
+
 
 [BootCDN](https://www.bootcdn.cn/): 稳定、快速、免费的前端开源项目 CDN 加速服务
 
+![bootcdn](./fe/bootcdn.png)
+
 [BootStrap](https://v4.bootcss.com/)
+
+![bootstrap](./fe/bootstrap.png)
 
 [BootsWatch](https://bootswatch.com/): Free themes for Bootstrap
 
-[RxJS](https://rxjs.dev/): 使用` Observables` 的响应式编程的库，它使编写异步或基于回调的代码更容易。-> [Github](https://github.com/ReactiveX/RxJS) -> [中文文档](https://cn.rx.js.org/)
+![bootswatch](./fe/bootswatch.png)
 
-[Layui](https://www.layui.com/) -> [Github](https://github.com/sentsin/layui/)
+[RxJS](https://rxjs.dev/): 使用` Observables` 的响应式编程的库，它使编写异步或基于回调的代码更容易。
+
+[Github](https://github.com/ReactiveX/RxJS)
+
+[中文文档](https://cn.rx.js.org/)
+
+![rxjs](./fe/rxjs.png)
+
+[Layui](https://www.layui.com/)
+
+[Github](https://github.com/sentsin/layui/)
+
+![layui](./fe/layui.png)
 
 [Awesome Lists](<https://www.prettyawesomelists.com/lists>)
 
+![awesomelists](./fe/awesomelists.png)
+
+
+
 ##### 图表库
 
-[Echarts](https://echarts.baidu.com/) -> [Github](https://github.com/apache/incubator-echarts)
+[Echarts](<https://echarts.baidu.com/>)
 
-[AntV](https://antv.alipay.com/zh-cn/index.html) -> [Github](https://github.com/antvis/)
+[Github](<https://github.com/apache/incubator-echarts>)
+
+![echarts](./fe/echarts.png)
+
+[AntV](<https://antv.alipay.com/zh-cn/index.html>)
+
+[Github](<https://github.com/antvis/>)
+
+![antv](./fe/antv.png)
 
 [G2](<https://antv.alipay.com/zh-cn/g2/3.x/index.html>)
 
@@ -172,31 +292,63 @@ F2 是一个专注于移动，开箱即用的可视化解决方案，完美支�
 
 L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置数据提供可视化能力。L7 的目标是提供一套地理空间数据可视化框架，易用易扩展，支持海量数据的高性能和 3D 高质量渲染，安全可靠（无地图法务风险）的地理空间数据可视化解决方案。
 
-[Recharts](http://recharts.org/) -> [Github](https://github.com/recharts/recharts/)
+[Recharts](<http://recharts.org/>)
 
-[Datamatic](https://datamatic.io/)
+[Github](<https://github.com/recharts/recharts/>)
+
+![recharts](./fe/recharts.png)
+
+
+
+[Datamatic](<https://datamatic.io/>)
+
+![datamatic](./fe/datamatic.png)
+
+
 
 ##### 开发资源
 
 [Awesomes前端开发资源](https://www.awesomes.cn/)
 
+![awesomes-web-resource](./fe/awesomes-web-resource.png)
+
+
+
 ##### 算法学习 & 机器学习
 
 [Rappid算法学习](http://resources.jointjs.com/)
+
+![rappid-ast](./fe/rappid-ast.png)
 
 [AI算法工程师手册](http://www.huaxiaozhuan.com/)
 
 [机器深度学习](http://redstonewill.com/)
 
+![depp-ast-redstone](./fe/depp-ast-redstone.png)
+
 [VisuAlgo - 数据结构和算法动态可视化 (Chinese)](https://visualgo.net/zh)
 
-[Algorithm Visualizer](https://algorithm-visualizer.org/) -> [Github](https://github.com/algorithm-visualizer/algorithm-visualizer)
+![visualgo](./fe/visualgo.png)
+
+[Algorithm Visualizer](https://algorithm-visualizer.org/) 
+
+[Github](https://github.com/algorithm-visualizer/algorithm-visualizer)
+
+![algorithm-visualizer](./fe/algorithm-visualizer.png)
 
 [Papers With Code : the latest in machine learning](https://paperswithcode.com/)
 
+![paperswithcode](./fe/paperswithcode.png)
+
 [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html): 旧金山大学CS Data Structure
 
-[BestofML](https://bestofml.com/):  收集汇总了机器学习相关的资源，包括书籍、课程、博客、论文等 -> [Github](https://github.com/RemoteML/bestofml)
+![visualization](./fe/visualization.png)
+
+[BestofML](<https://bestofml.com/>):  收集汇总了机器学习相关的资源，包括书籍、课程、博客、论文等
+
+[Github](<https://github.com/RemoteML/bestofml>)
+
+![bestofml](./fe/bestofml.png)
 
 [internetfundamentals](http://internetfundamentals.com/watch/)：了解Web的工作原理，并迈出创建网页的第一步！ 一个完全免费的视频课程，适合初学者
 
@@ -212,9 +364,19 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Math ∩ Programming](https://jeremykun.com/)
 
+![Math ∩ Programming](./fe/Math-Programming.png)
+
+
+
 [Immersive Linear Algebra](http://immersivemath.com/ila/index.html):  一本会动的线代书，O(∩_∩)O哈哈~
 
-[机器学习的数学基础知识](https://mml-book.github.io/) ->[Github](https://github.com/mml-book/mml-book.github.io) -> [Download](https://mml-book.github.io/book/mml-book.pdf)
+![linear-algebra](./fe/linear-algebra.png)
+
+[机器学习的数学基础知识](<https://mml-book.github.io/>)
+
+[Github](<https://github.com/mml-book/mml-book.github.io>)
+
+[Download](<https://mml-book.github.io/book/mml-book.pdf>)
 
 [机器学习 - The Hundred-Page Machine Learning Book](http://themlbook.com/wiki/doku.php?id=start)
 
@@ -224,27 +386,57 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Linux命令大全](http://man.linuxde.net/)
 
-[Iodide](https://alpha.iodide.io/): `Mozilla `支持的在 `Web `中实现各种数据科学的效果 -> [Github](https://github.com/iodide-project/iodide)
+![linuxde](./fe/linuxde.png)
+
+[Iodide](https://alpha.iodide.io/): `Mozilla `支持的在 `Web `中实现各种数据科学的效果
+
+[Github](https://github.com/iodide-project/iodide)
+
+![Iodide](./fe/Iodide.png)
+
+
 
 ##### Icon & 设计 & 网页
 
 [Iconfont](https://iconfont.cn)
 
+![iconfont](./fe/iconfont.png)
+
 [FontAwesome](https://fontawesome.com/)
+
+![fontawesome](./fe/fontawesome.png)
 
 [Ionicons](https://ionicons.com/)
 
+![ionicons](./fe/ionicons.png)
+
+
+
 [Icomoon](https://icomoon.io/)
+
+![icomoon](./fe/icomoon.png)
+
+
 
 [Mobiriseicons](https://mobiriseicons.com/)
 
+![mobiriseicons](./fe/mobiriseicons.png)
+
 [zwicon](https://www.zwicon.com/cheatsheet.html)
+
+![zwicon](./fe/zwicon.png)
 
 [unDraw](https://undraw.co/)
 
+![undraw](./fe/undraw.png)
+
 [优设](https://uiiiuiii.com/)
 
+![uiiiuiii](./fe/uiiiuiii.png)
+
 [Can I Use](<https://caniuse.com/>): 查询浏览器的特性支持情况
+
+![caniuse](./fe/caniuse.png)
 
 [Package Different](<https://diff.intrinsic.com/>)
 
@@ -258,9 +450,15 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Vue.js 社区](https://www.vue-js.com/)
 
+![vue-js-club](./fe/vue-js-club.png)
+
 [React.js社区](http://react-china.org/)
 
+![react-china](./fe/react-china.png)
+
 [掘金](https://juejin.im/timeline)
+
+![juejin](./fe/juejin.png)
 
 [InfoQ](https://www.infoq.cn/): *InfoQ* 是一个实践驱动的社区资讯站点，致力于促进软件开发领域知识与创新的传播。
 
@@ -283,6 +481,8 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Fly63前端](http://www.fly63.com/)
 
+
+
 ##### 博客 & 团队
 
 [阮一峰ES6入门](http://es6.ruanyifeng.com/)
@@ -301,6 +501,8 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [腾讯互娱](https://tgideas.qq.com/)
 
+
+
 ##### 路径
 
 [程序员不能错过的28份技术知识图谱，你的进阶路上必备](https://cloud.tencent.com/developer/article/1135231)
@@ -311,27 +513,43 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 ##### 工具
 
-[Codesanbox](https://codesandbox.io/)
+[Codesanbox](<https://codesandbox.io/>)
 
-[Codepen](https://codepen.io/)
+![codesandbox](./fe/codesandbox.png)
 
-[Repl.it](https://repl.it/)
+[Codepen](<https://codepen.io/>)
 
-[Glitch](https://glitch.com/)
+![codepen](./fe/codepen.png)
+
+
+
+[Repl.it](<https://repl.it/>)
+
+![repl-it](./fe/repl-it.png)
+
+[Glitch](<https://glitch.com/>)
+
+![glitch](./fe/glitch.png)
 
 正则表达式可视化工具
 
-[Regulex](https://jex.im/regulex/)
+[Regulex](<https://jex.im/regulex/>)
 
 Regulex是一个JavaScript正则表达式可视化工具，由纯JavaScript实现，源码托管在[Github](https://github.com/JexCheng/regulex)上。
 
-[Regexper](https://regexper.com/)
+![regulex](./fe/regulex.png)
+
+[Regexper](<https://regexper.com/>)
 
 `Regexper`是由`Jeff Avallone`开发的一款`JavaScript`正则表达式可视化工具，源码托管在[Github](https://github.com/javallone/regexper)上。它能够让正则表达式字符串以 `Railroad `形式图形化，便于阅读和理解。同时推荐一款 `JavaScript` 正则在线测试工具——[Regexpal](http://regexpal.com/)，可以和` Regexper` 配合使用。
 
-[Debuggex](https://www.debuggex.com/)
+![regexper](./fe/regexper.png)
+
+[Debuggex](<https://www.debuggex.com/>)
 
 `Debuggex`是一个测试正则表达式的`Web`应用，它支持`JavaScript`、`Python`以及`PCRE`。
+
+![debuggex](./fe/debuggex.png)
 
 [前端网站导航](http://nav.web-hub.cn/)
 
