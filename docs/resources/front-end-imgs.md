@@ -6,7 +6,7 @@
  * @LastEditTime: 2019-01-20 15:41:23
     -->
 
-[![juejin-likes](https://badge.juejin.im/entry/5c9b0218e51d45098b6af58f/likes.svg?style=plastic)](https://juejin.im/post/5c9af362e51d453d6a35a9c1)
+![juejin-likes](https://badge.juejin.im/entry/5c9b0218e51d45098b6af58f/likes.svg?style=plastic)](https://juejin.im/post/5c9af362e51d453d6a35a9c1)
 
 #### [不带图片的版本](/resources/front-end.md)
 

@@ -11,7 +11,9 @@
 
 #### Github Games
 
-[Github Games](<http://likexia.gitee.io/game/index.html>)
+[Github Games](http://likexia.gitee.io/game/index.html)
+
+[在线游戏设计工具](http://diygame.vip/#/): GitHub 上一款在线游戏设计工具，用户在无任何技术背景的情况下，可随意打造一款属于自己的冒险游戏。
 
 #### 临时邮箱、匿名邮箱
 

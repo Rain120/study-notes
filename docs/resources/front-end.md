@@ -6,7 +6,7 @@
  * @LastEditTime: 2019-01-20 15:41:23
     -->
 
-[![juejin-likes](https://badge.juejin.im/entry/5c9b0218e51d45098b6af58f/likes.svg?style=plastic)](https://juejin.im/post/5c9af362e51d453d6a35a9c1)
+![juejin-likes](https://badge.juejin.im/entry/5c9b0218e51d45098b6af58f/likes.svg?style=plastic)](https://juejin.im/post/5c9af362e51d453d6a35a9c1)
 
 #### [带图片的版本](/resources/front-end-imgs.md)
 
@@ -332,6 +332,8 @@ Regulex是一个JavaScript正则表达式可视化工具，由纯JavaScript实�
 [Debuggex](https://www.debuggex.com/)
 
 `Debuggex`是一个测试正则表达式的`Web`应用，它支持`JavaScript`、`Python`以及`PCRE`。
+
+[国际化应用的利器](https://i18ns.com/): 发现一个制作国际化应用的利器。该网站收集各种语言包，你输入中文，它返回各种语言包对这个词的翻译。
 
 [前端网站导航](http://nav.web-hub.cn/)
 
