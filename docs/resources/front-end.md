@@ -224,6 +224,8 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Linux命令大全](http://man.linuxde.net/)
 
+[Explain Shell](https://explainshell.com/) -> [Github](https://github.com/idank/explainshell): 一个解释 `shell` 的网站，你不理解某个命令的时候，在网站输入这个命令，网站会自动帮你分解解释对应参数的意思。
+
 [Iodide](https://alpha.iodide.io/): `Mozilla `支持的在 `Web `中实现各种数据科学的效果 -> [Github](https://github.com/iodide-project/iodide)
 
 ##### Icon & 设计 & 网页

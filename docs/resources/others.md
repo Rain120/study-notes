@@ -17,6 +17,8 @@
 
 #### 临时邮箱、匿名邮箱
 
+[Moakt](https://www.moakt.com/):  一个临时邮箱，可以选择多个邮箱后缀
+
 [Fake Mail Generator](http://www.fakemailgenerator.com/): 打开自动生成邮箱的服务，不需注册，页面基于AJAX，无需刷新。
 
 [MailExpire](http://www.mailexpire.com/)
