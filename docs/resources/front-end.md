@@ -180,6 +180,8 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Awesomes前端开发资源](https://www.awesomes.cn/)
 
+[语雀 IT 百科精品知识库](https://www.yuque.com/yuque/blog/yuque-info-tech-encyclopedia)
+
 ##### 算法学习 & 机器学习
 
 [Rappid算法学习](http://resources.jointjs.com/)
