@@ -6,8 +6,6 @@
  * @LastEditTime: 2019-01-20 15:41:23
     -->
 
-![juejin-likes](https://badge.juejin.im/entry/5c9b0218e51d45098b6af58f/likes.svg?style=plastic)](https://juejin.im/post/5c9af362e51d453d6a35a9c1)
-
 #### [带图片的版本](/resources/front-end-imgs.md)
 
 [DevDocs: API Documentation Browser](https://devdocs.io/) -> [Github](https://github.com/freeCodeCamp/devdocs)
@@ -220,7 +218,7 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [机器学习 - The Hundred-Page Machine Learning Book](http://themlbook.com/wiki/doku.php?id=start)
 
-
+[MIT 的数据结构课程](https://courses.csail.mit.edu/6.851/fall17/)
 
 ##### [Linux](https://en.wikipedia.org/wiki/Linux)
 
@@ -304,6 +302,16 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 [奇舞团](https://75team.com/)
 
 [腾讯互娱](https://tgideas.qq.com/)
+
+[FEX 百度前端研发部](http://fex.baidu.com/)
+
+[JDC 京东设计中心](http://jdc.jd.com/)
+
+[携程UED](http://ued.ctrip.com/)
+
+[饿了么前端](https://zhuanlan.zhihu.com/ElemeFE)
+
+[美团前端](https://tech.meituan.com/)
 
 ##### 路径
 
