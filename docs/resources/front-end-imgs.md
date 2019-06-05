@@ -380,6 +380,8 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [MIT 的数据结构课程](https://courses.csail.mit.edu/6.851/fall17/)
 
+[计算机科学速成课(视频)](https://www.yuque.com/computer/crush-course): Youtube 热门视频课程
+
 
 
 ##### [Linux](https://en.wikipedia.org/wiki/Linux)
