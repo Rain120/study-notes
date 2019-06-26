@@ -49,21 +49,21 @@
 
 元字符`\b`与`\B`
 
-![test \b \B](https://user-gold-cdn.xitu.io/2018/10/5/16644a8f7aaafa76?w=821&h=206&f=png&s=15918)
+![test \b \B](./images/1.png)
 
-![test \b \B](https://user-gold-cdn.xitu.io/2018/10/5/16644aa835ec67a8?w=782&h=219&f=png&s=16767)
+![test \b \B](./images/2.png)
 
-![](https://user-gold-cdn.xitu.io/2018/10/5/16644b5a0a5e99a5?w=933&h=669&f=png&s=68214)
+![\b](./images/3.png)
 从上面结果得知，b匹配的是单词的边界，B匹配的是非单词的边界
 
 元字符`\d`与`\D`
-![test \d \D](https://user-gold-cdn.xitu.io/2018/10/5/16644a2d8c255270?w=767&h=228&f=png&s=20984)
+![test \d \D](./images/4.png)
 
-![](https://user-gold-cdn.xitu.io/2018/10/5/16644b18e0171863?w=930&h=359&f=png&s=40734)
+![test \d \D 1](./images/5.png)
 
-![test \d \D](https://user-gold-cdn.xitu.io/2018/10/5/16644a4edb138309?w=794&h=205&f=png&s=16320)
+![test \d \D](./images/6.png)
 
-![](https://user-gold-cdn.xitu.io/2018/10/5/16644b23db11f7ea?w=914&h=327&f=png&s=32021)
+![](./images/7.png)
 元字符`\s`与`\S`
 
 元字符`\w`与`\W`
@@ -101,7 +101,7 @@
 
 `匹配失败：` false
 
-![test test()](https://user-gold-cdn.xitu.io/2018/10/6/1664509b8840fba4?w=927&h=210&f=png&s=18999)
+![test test](./images/8.png)
 
 #### 2. `exec(str)`
 
@@ -125,7 +125,7 @@
 |        |           | multiline            |
 |        |           | source               |
 
-![test exec()](https://user-gold-cdn.xitu.io/2018/10/5/16644e4e90587f45?w=930&h=219&f=png&s=23273)
+![test exec](./images/9.png)
 
 #### 3. `match(pattern)`
 

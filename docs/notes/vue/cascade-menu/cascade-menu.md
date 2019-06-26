@@ -17,12 +17,13 @@
 
 之前在外卖软件上看到这个左右联动的效果，觉得很有意思，所以就尝试使用`Vue`来实现，将这个联动抽离成为一个单独的组件，废话少说，先来一张效果图。
 
-![Vue实现左右菜单联动效果图](https://user-gold-cdn.xitu.io/2018/8/12/1652d0e19f3f06d4?w=485&h=746&f=gif&s=320229)
+![Vue实现左右菜单联动效果图](1.gif)
 
 这个组件分为两个部分，1、左菜单；2、右菜单。
 
 动态数据结构
-![动态数据结构](https://user-gold-cdn.xitu.io/2018/8/12/1652d0b0b010a260?w=720&h=363&f=jpeg&s=21450)
+![动态数据结构](2.jpeg)
+
 ```
 menus: [
   {
@@ -117,11 +118,12 @@ props: {
   },
 ```
 
-![原理图](https://user-gold-cdn.xitu.io/2018/8/11/1652835acc7225ae?w=720&h=724&f=jpeg&s=30681)
+![原理图](3.jpeg)
 
 在这个业务场景中，我们的实现方式是根据右边菜单滚动的高度来计算左边菜单的位置，当然左边菜单也可以通过点击来确定右边菜单需要滚动多高的距离，那么我们如何获得该容器滚动的距离呢？
 之前一直在使用[better-scroll](https://ustbhuangyi.github.io/better-scroll/doc/zh-hans/)，通过阅读文档，我们知道它有有`scroll`事件，我们可以通过监听这个事件来获取滚动的`pos`
-![scroll事件](https://user-gold-cdn.xitu.io/2018/8/11/1652835acc5580bc?w=665&h=205&f=jpeg&s=13597)
+![scroll事件](4.jpeg)
+
 ```
 if (this.listenScroll) {
   let me = this
@@ -145,11 +147,11 @@ scrollHeight (pos) {
 ```
 
 我们将监听得到的pos打出来看看
-![监听scroll事件，得到pos](https://user-gold-cdn.xitu.io/2018/8/11/1652835acc63a1a4?w=600&h=292&f=gif&s=307964)
+![监听scroll事件，得到pos](5.gif)
 
 我们可以看到控制台打出了当前滚动的pos信息，因为在移动端开发时，坐标轴和我们数学中的坐标轴相反，所以上滑时y轴的值是负数
 
-![移动开发坐标轴](https://user-gold-cdn.xitu.io/2018/8/11/1652835acc65d8b1?w=911&h=834&f=jpeg&s=52870)
+![移动开发坐标轴](6.jpeg)
 
 所以我们要得到每一块`li`的高度,我们可以通过拿到他们的`DOM `
 ```
@@ -179,12 +181,14 @@ console.log(this.rightHeight)
 }
 ```
 
-![得到右边菜单高度](https://user-gold-cdn.xitu.io/2018/8/11/1652835acc8951ee?w=720&h=300&f=jpeg&s=15386)
+![得到右边菜单高度](7.jpeg)
 
 当用户在滚动时，我们需要计算当前滚动距离实在那个区间内，并拿到他的`index`
 
-![找到滚动位置对应的index](https://user-gold-cdn.xitu.io/2018/8/11/1652835ae7533908?w=720&h=342&f=jpeg&s=35354)
-![找到滚动位置对应的index](https://user-gold-cdn.xitu.io/2018/8/11/1652835ae993cc86?w=720&h=349&f=jpeg&s=32129)
+![找到滚动位置对应的index](8.jpeg)
+
+![找到滚动位置对应的index](9.jpeg)
+
 ```
 computed: {
   currentIndex () {
@@ -221,3 +225,6 @@ selectLeft (index, event) {
 ```
 
 到这里我们就基本上完成了这些需求了
+
+
+
