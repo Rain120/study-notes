@@ -37,6 +37,28 @@ git config --list # 列举所有配置
    ssh git@github.com
    ```
 
+4. 配置多个用户
+
+   ```
+   1. ssh-keygen -t rsa -C <youremail@example.com>
+   	改变id_rsa文件的名字
+   2. 配置config(Mac)
+     在~/.ssh中创建新文件config
+     # github
+     Host github.com
+     HostName github.com
+     # PreferredAuthentications publickey
+     User Rain120
+     IdentityFile ~/.ssh/id_rsa_github
+   
+     # xxx
+     Host xxx
+     HostName xxx
+     User xxx
+     PreferredAuthentications publickey
+     IdentityFile ~/.ssh/id_rsa
+   ```
+
    
 
 几个概念：
@@ -51,13 +73,15 @@ git config --list # 列举所有配置
 
 ![git_infos_repo](./images/git_infos_repo.png)
 
+
+
 <center>阮一峰老师对Git工作区、暂存区、版本库、远程仓库的解释</center>
+
 
 ![git_infos](./images/git_infos.jpg)
 
 <center>Runoob对Git工作区、暂存区、版本库、远程仓库的解释</center>
-
-忽略文件配置：添加`.gitignore`文件
+忽略文件配置：添加.gitignore 文件
 
 文件 `.gitignore` 的格式规范如下：
 
