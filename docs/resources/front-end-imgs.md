@@ -564,3 +564,6 @@ Regulex是一个JavaScript正则表达式可视化工具，由纯JavaScript实�
 [前端网站导航](http://nav.web-hub.cn/)
 
 [D2日报](https://daily.fairyever.com/)
+
+[心谭博客](https://xin-tan.com/)
+
