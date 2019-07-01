@@ -45,13 +45,13 @@
 
 [Free Online Phone](https://www.freeonlinephone.org)
 
-[RECEIVE SMS ONLINE](<https://www.receivesmsonline.net/)
+[RECEIVE SMS ONLINE](https://www.receivesmsonline.net/)
 
-[Receive SMS Online](<http://receive-sms-online.com/)
+[Receive SMS Online](http://receive-sms-online.com/)
 
-[TextNow](<https://www.textnow.com/)
+[TextNow](https://www.textnow.com/)
 
-[Textfree](<https://www.pinger.com/text-free/)
+[Textfree](https://www.pinger.com/text-free/)
 
 [Sellaite](http://sms.sellaite.com)
 
