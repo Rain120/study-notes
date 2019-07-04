@@ -6,6 +6,8 @@
 
 [官网下载速度慢，可使用这个链接下载](https://github.com/Rain120/Free-Source/releases/tag/0.0.1) 或者[`Github`下载地址](https://github.com/Rain120/Free-Source/blob/master/Git%20Bash/README.md), 需要其他版本请提`issue`联系我。
 
+![git_operations](./images/git_operations.png)
+
 #### 1. `Git` 配置
 
 ```shell
