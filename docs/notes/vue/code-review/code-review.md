@@ -12,42 +12,14 @@
 
 #### 3. 源码学习路径
 
-1. [数据驱动]()
+​	**预知知识**
 
-   **VDom**
+​		[Proxy](http://es6.ruanyifeng.com/#docs/proxy): 用于修改某些操作的默认行为，等同于在语言层面做出修改，所以属于一种“元编程”(`meta programming`)，即对编程语言进行编程。
 
-   ```
-   create -> diff -> patch
-   ```
-
-   Vue初始化流程
-
-   ```flow
-   st=>start: new Vue()
-   
-   init=>operation: init
-   mount=>operation: $mount
-   render=>operation: render
-   vnode=>operation: vnode
-   patch=>operation: patch
-   
-   cond=>condition: compile
-   
-   e=>end: DOM
-   
-   st->init->mount->cond
-   cond(yes)->render->vnode->patch->e
-   cond(no)->render
-   ```
-
-   
-
+1. [数据驱动](notes/vue/code-review/data-driver.md)
 2. 生命周期
-
 3. 组件注册
-
 4. 响应式
-
 5. 依赖
 
 #### 参考资料
