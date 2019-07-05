@@ -17,10 +17,63 @@
 ​		[Proxy](http://es6.ruanyifeng.com/#docs/proxy): 用于修改某些操作的默认行为，等同于在语言层面做出修改，所以属于一种“元编程”(`meta programming`)，即对编程语言进行编程。
 
 1. [数据驱动](notes/vue/code-review/data-driver.md)
-2. 生命周期
+
+   指视图是由数据驱动生成的，我们对视图的修改，不会直接操作 DOM，而是通过修改数据。
+
+2. [生命周期](notes/vue/code-review/lifecycle.md)
+
 3. 组件注册
+
 4. 响应式
+
 5. 依赖
+
+源码目录
+
+```
+├── src
+│   ├── compiler # 编译相关(ing)
+│   │   ├── codegen
+│   │   ├── create-compiler.js
+│   │   ├── directives
+│   │   ├── error-detector.js
+│   │   ├── helpers.js
+│   │   ├── index.js
+│   │   ├── optimizer.js
+│   │   ├── parser
+│   │   └── to-function.js
+│   ├── core # 核心代码(ing)
+│   │   ├── components
+│   │   ├── config.js
+│   │   ├── global-api
+│   │   ├── index.js
+│   │   ├── instance
+│   │   ├── observer
+│   │   ├── util
+│   │   └── vdom
+│   ├── platforms # 不同平台的支持(❎)
+│   │   ├── web
+│   │   └── weex
+│   ├── server # 服务端渲染(❎)
+│   │   ├── bundle-renderer
+│   │   ├── create-basic-renderer.js
+│   │   ├── create-renderer.js
+│   │   ├── optimizing-compiler
+│   │   ├── render-context.js
+│   │   ├── render-stream.js
+│   │   ├── render.js
+│   │   ├── template-renderer
+│   │   ├── util.js
+│   │   ├── webpack-plugin
+│   │   └── write.js
+│   ├── sfc # .vue 文件解析(❎)
+│   │   └── parser.js
+│   └── shared # 共享代码(✅)
+│       ├── constants.js
+│       └── util.js
+```
+
+
 
 #### 参考资料
 

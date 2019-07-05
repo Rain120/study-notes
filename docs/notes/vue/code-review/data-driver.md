@@ -12,13 +12,13 @@
 create -> diff -> patch
 ```
 
+#### createElement
+
 #### createEmptyVNode
 
 #### createTextVNode
 
 #### createComponent
-
-#### createElement
 
 参考: 
 
@@ -52,7 +52,7 @@ cond(no)->render
 
 2. `init`
 
-执行操作: 合并配置，初始化生命周期，初始化事件中心，初始化渲染，初始化 data、props、computed、watcher 等等。
+干了什么: 合并配置，初始化生命周期，初始化事件中心，初始化渲染，初始化 data、props、computed、watcher 等等。
 
 ```
 initLifecycle(vm)
