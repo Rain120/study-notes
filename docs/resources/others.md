@@ -65,3 +65,7 @@
 
 [sms24](https://sms24.me/)
 
+#### 其他
+
+[IP & Phone等信息](https://www.qqzeng.com/)
+

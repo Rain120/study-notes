@@ -92,7 +92,98 @@ dates.map(date => {
 
 [正则应用之——日期正则表达式](https://blog.csdn.net/lxcnn/article/details/4362500)
 
-#### 3. 邮箱格式验证
+#### 3. 时间格式验证
+
+**匹配规则:**
+
+24小时
+
+12小时
+
+**正则表达式**
+
+```javascript
+// 24h
+/^((?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d$)/
+
+// 12
+/^(1[0-2]|0?[1-9]):[0-5]\d:[0-5]\d$/
+```
+
+**测试**
+
+```javascript
+var reg_12 = /^(1[0-2]|0?[1-9]):[0-5]\d:[0-5]\d$/;
+var reg_24 = /^((?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d$)/;
+var times = [
+	'00:00:00',
+	'0:00:0',
+	'12:12:12',
+	'23:59:59',
+	'24:00:00',
+	'11:59:59',
+	'12:00:00',
+	'12:12:12',
+	'23:59:59',
+	'24:00:00',
+];
+times.map(time => {
+	console.log(time);
+	console.group();
+	console.log('reg_12', reg_12.test(time));
+	console.log('reg_24', reg_24.test(time));
+	console.groupEnd();
+});
+```
+
+**结果**
+
+```javascript
+00:00:00
+console.group
+reg_12 false
+reg_24 true
+0:00:0
+console.group
+reg_12 false
+reg_24 false
+12:12:12
+console.group
+reg_12 true
+reg_24 true
+23:59:59
+console.group
+reg_12 false
+reg_24 true
+24:00:00
+console.group
+reg_12 false
+reg_24 false
+11:59:59
+console.group
+reg_12 true
+reg_24 true
+12:00:00
+console.group
+reg_12 true
+reg_24 true
+12:12:12
+console.group
+reg_12 true
+reg_24 true
+23:59:59
+console.group
+reg_12 false
+reg_24 true
+24:00:00
+console.group
+reg_12 false
+reg_24 false
+```
+
+
+
+#### 4. 邮箱格式验证
 
 **匹配规则:**
 
@@ -140,7 +231,7 @@ Rainy@qq.com.cn true
 _Rainy@qq.com true
 ```
 
-#### 4.手机号码
+#### 5.手机号码
 
 **匹配规则:**
 
@@ -196,16 +287,22 @@ _Rainy@qq.com true
 
 191, 199
 
+![2019_phone_numbers](./images/2019_phone_numbers.png)
+
 **正则表达式**
 
 ```javascript
+//严格模式下
+/^1((3[\d])|(4[5,6,7,9])|(5[0-3,5-9])|(6[5-7])|(7[0-8])|(8[\d])|(9[1,8,9]))\d{8}$/
+// 宽松模式下
 /^1([3-9])\d{9}$/
 ```
 
 **测试**
 
 ```javascript
-var reg = /^1([3-9])\d{9}$/;
+var reg_loose = /^1([3-9])\d{9}$/;
+var reg_strict = /^1((3[\d])|(4[5,6,7,9])|(5[0-3,5-9])|(6[5-7])|(7[0-8])|(8[\d])|(9[1,8,9]))\d{8}$/;
 var phonenumbers = [
 	'10123456775',
 	'11123456775',
@@ -219,32 +316,229 @@ var phonenumbers = [
 	'19123456775',
 ];
 phonenumbers.map(phonenumber => {
-	console.log(phonenumber, reg.test(phonenumber));
+	console.log(phonenumber)
+	console.group();
+	console.log('reg_loose', reg_loose.test(phonenumber));
+	console.log('reg_strict', reg_strict.test(phonenumber));
+	console.groupEnd();
 });
 ```
 
 **结果**
 
 ```javascript
-10123456775 false
-11123456775 false
-12345678910 false
-13123456775 true
-14123456775 true
-15123456775 true
-16123456775 true
-17345678910 true
-18123456775 true
-19123456775 true
+10123456775
+console.group
+reg_loose false
+reg_strict false
+11123456775
+console.group
+reg_loose false
+reg_strict false
+12345678910
+console.group
+reg_loose false
+reg_strict false
+13123456775
+console.group
+reg_loose true
+reg_strict true
+14123456775
+console.group
+reg_loose true
+reg_strict false
+15123456775
+console.group
+reg_loose true
+reg_strict true
+16123456775
+console.group
+reg_loose true
+reg_strict false
+17345678910
+console.group
+reg_loose true
+reg_strict true
+18123456775
+console.group
+reg_loose true
+reg_strict true
+19123456775
+console.group
+reg_loose true
+reg_strict true
 ```
 
-#### 5.
+#### 6. 身份证号
+
+**匹配规则:**
+
+1. 一代 15位: 6位地区码，6位生日，3位顺序码
+
+2. 二代18位，最后一位可能为数字或者`X`: 6位地区码，8位生日，3位顺序码, 1位校验码
+
+3. 同时匹配
+
+**正则表达式**
+
+```javascript
+// 15
+/^\d{8}(0\d|11|12)(0[1-9]|[1-2]\d|30|31)\d{3}$/
+
+// 18
+/^\d{6}(18|19|20)\d{2}(0\d|11|12)(0[1-9]|[1-2]\d|30|31)\d{3}(\d|X|x)$/
+                                                      
+// 15 | 18
+/(^\d{8}(0\d|11|12)(0[1-9]|[1-2]\d|30|31)\d{3}$)|(^\d{6}(18|19|20)\d{2}(0\d|11|12)(0[1-9]|[1-2]\d|30|31)\d{3}(\d|X|x)$)/
+```
+
+**测试**
+
+```javascript
+var reg_15 = /^\d{8}(0\d|11|12)(0[1-9]|[1-2]\d|30|31)\d{3}$/
+var reg_18 = /^\d{6}(18|19|20)\d{2}(0\d|11|12)(0[1-9]|[1-2]\d|30|31)\d{3}(\d|X|x)$/
+var reg_15_18 = /(^\d{8}(0\d|11|12)(0[1-9]|[1-2]\d|30|31)\d{3}$)|(^\d{6}(18|19|20)\d{2}(0\d|11|12)(0[1-9]|[1-2]\d|30|31)\d{3}(\d|X|x)$)/
+var id_numbers = [
+	'345678001100234',
+	'345678991100234',
+	'345678001101234',
+	'345678991101234',
+	'345678991101234',
+	'345678199911002345',
+	'345678119911002345',
+	'345678199911012345',
+	'34567819991101234x',
+	'34567819991101234X',
+];
+id_numbers.map(id_number => {
+	console.log(id_number)
+	console.group();
+	console.log('reg_15', reg_15.test(id_number));
+	console.log('reg_18', reg_18.test(id_number));
+	console.log('reg_15_18', reg_15_18.test(id_number));
+	console.groupEnd();
+});
+```
+
+**结果**
+
+```javascript
+345678001100234
+console.group
+reg_15 false
+reg_18 false
+reg_15_18 false
+345678991100234
+console.group
+reg_15 false
+reg_18 false
+reg_15_18 false
+345678001101234
+console.group
+reg_15 true
+reg_18 false
+reg_15_18 true
+345678991101234
+console.group
+reg_15 true
+reg_18 false
+reg_15_18 true
+345678991101234
+console.group
+reg_15 true
+reg_18 false
+reg_15_18 true
+345678199911002345
+console.group
+reg_15 false
+reg_18 false
+reg_15_18 false
+345678119911002345
+console.group
+reg_15 false
+reg_18 false
+reg_15_18 false
+345678199911012345
+console.group
+reg_15 false
+reg_18 true
+reg_15_18 true
+34567819991101234x
+console.group
+reg_15 false
+reg_18 true
+reg_15_18 true
+34567819991101234X
+console.group
+reg_15 false
+reg_18 true
+reg_15_18 true
+```
+
+#### 7. RGB颜色
+
+**匹配规则:**
+
+1. 16进制
+2. 两两相等可以缩写
+
+**正则表达式**
+
+```javascript
+/^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/
+```
+
+**测试**
+
+```javascript
+var reg = /^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/;
+var colors = [
+	'123',
+	'123456',
+	'#ff00ff',
+	'#f0f',
+	'#FF00FF',
+	'#F0F',
+	'#123456',
+	'#FFFFFG',
+];
+colors.map(color => {
+	console.log(color, reg.test(color));
+});
+```
+
+**结果**
+
+```javascript
+123 true
+123456 true
+#ff00ff true
+#f0f true
+#FF00FF true
+#F0F true
+#123456 true
+#FFFFFG false
+```
+
+#### 8.
 
 **匹配规则:**
 
 **正则表达式**
 
+```javascript
+
+```
+
 **测试**
 
+```javascript
+
+```
+
 **结果**
+
+```javascript
+
+```
 
