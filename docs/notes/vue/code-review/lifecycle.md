@@ -5,6 +5,7 @@
 #### **前置知识**
 
 - [Vue生命周期笔记](notes/vue/vue-lifecycle/vue-lifecycle.md)
+- [测试代码](https://codesandbox.io/s/y0117q1y41)
 
 #### 1. 如何调用生命周期钩子函数`callHook`
 
@@ -68,3 +69,14 @@ callHook(vm, 'created')
 
 #### 4. `beforeMount & mounted`
 
+![lifecycle-1](./images/lifecycle-1.png)
+
+从测试代码我们知道，在`beforeMount`和`mounted`中，我们发现`boforeMount`钩子函数的执行顺序是先父后子，而`mounted`钩子函数的执行顺序是先子后父，这是为什么呢？我们来从代码一探究竟吧。
+
+
+
+#### 5. `beforeUpdate & updated`
+
+
+
+#### 6. `beforeDestroy & destroyed`
