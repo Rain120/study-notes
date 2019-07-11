@@ -17,6 +17,7 @@
       - [获取DOM元素的位置和尺寸](notes/HTML-CSS-Javascript/get-dom-property/get-dom-property.md)
       - [Javascript正则表达式](notes/HTML-CSS-Javascript/regular_expression/regular_expression.md)
       - [日常使用的正则表达式](notes/HTML-CSS-Javascript/regular_expression/common_reg_exps.md)
+      - [ECMAScript学习](notes/HTML-CSS-Javascript/es-study/es-guide.md)
    * [Vue](notes/vue/guide.md)
      * [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
      * [Vue 生命周期笔记](notes/vue/vue-lifecycle/vue-lifecycle.md)
