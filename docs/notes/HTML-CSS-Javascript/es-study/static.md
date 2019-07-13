@@ -1,3 +1,5 @@
+
+
 在`JavaScript` 中，生成实例对象的传统方法是通过构造函数， 对熟悉`OOP`的开发者而言，这很让人困惑。
 
 不过，在`ES6`中新增了`class`的定义方法以及静态方法，使得 JS 开发者终于告别了直接使用原型对象模仿面向对象中的类和类继承时代。`ES7`新增了定义静态属性。
@@ -305,13 +307,20 @@ function () {
 }();
 ```
 
-从上述代码我们发现，静态方法是直接注册在当前类上的，所以静态方法将不在实例化对象的方法中，因此不能在费静态方法中通过`this`来调用静态方法和属性。
+从上述代码我们发现，静态方法是直接注册在当前类上的，所以静态方法将不在实例化对象的方法中，因此不能在静态方法中通过`this`来调用静态方法和属性。
 
-**Note**: 如果静态方法包含`this`关键字，这个`this`指的是类，而不是实例。
+**Note**: 如果静态方法包含`this`关键字，这个`this`指的是当前调用的**类(注意`this`的指向)**，而不是**实例**。
 
 说了这么多，那静态方法和属性的作用是什么呢？
 
+作用:
+
 > 静态方法、属性将被共享，避免全局变量污染，减少所用内存。
+
+使用场景:
+
+> 1. 全局方法、变量
+> 2. 当前属性和方法与其实例无关
 
 ```javascript
 class Foo {
@@ -321,6 +330,7 @@ class Foo {
   }
   static staticMethod2() {
     this.staticMethod();
+    console.log('foo static staticMethod2');
     return 'static method';
   }
   classMethod() {
@@ -328,12 +338,20 @@ class Foo {
   }
 }
 
+class Bar extends Foo {
+  static staticMethod() {
+    console.log('bar static staticMethod2');
+  }
+}
+
 var foo = new Foo();
-console.log(foo);
+var bar = new Bar();
+console.log(foo, bar);
 console.log(foo.constructor === Foo);
+console.log(Bar.staticMethod2()););
 ```
 
-![static-func-property](./images/static-func-property)
+![static-func-property](./images/static-func-property.png)
 
 如上图示，`name`、`staticMethod`、`staticMethod2`都是在`Foo`这个类上，不在`prototype`上，只有`classMethod`在`prototype`上。这就说明访问静态变量和属性只能通过类来访问，不能通过实例来访问。
 
