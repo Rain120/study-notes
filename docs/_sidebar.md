@@ -29,6 +29,7 @@
    * [Git & npm学习](notes/git-npm/guide.md)
       - [你必须知道的Git命令](notes/git-npm/you-must-know-git-commands.md)
       - [Npm Scripts学习](notes/git-npm/npm-scripts.md)
+      - [Npm 包发布笔记](notes/git-npm/npm-publish.md)
    * [日常错误笔记](notes/error-qa/guide.md)
       * [Mysql错误笔记](notes/error-qa/mysql/note-qa.md)
       * [Node & Git错误笔记](notes/error-qa/node-git/note-qa.md)

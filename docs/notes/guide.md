@@ -1,7 +1,7 @@
  * [知识图谱](notes/knowledge-map/guide.md)
-   
+
 * [前端知识图谱](notes/knowledge-map/fe_knowledge_map.md)
-  
+
  * [HTML + CSS + Javascript](notes/HTML-CSS-Javascript/console-related-note.md)
 
     - [console全家桶](notes/HTML-CSS-Javascript/console/console-related-note.md)
@@ -38,8 +38,8 @@
 * [`Git`学习](notes/git-npm/guide.md)
 
    * [你必须知道的`Git`命令](notes/git-npm/you-must-know-git-commands.md)
-
    * [Npm Scripts学习](notes/git-npm/npm-scripts.md)
+   * [Npm 包发布笔记](notes/git-npm/npm-publish.md)
 
 * [日常错误笔记](notes/error-qa/guide.md)
 
