@@ -38,3 +38,12 @@ npm login
 
 ![npm-publish](./images/npm-publish.png)
 
+#### 2. 使用`vue3.x`进行组件库开发
+
+问题:
+
+1. `vue 3.x`学习
+2. 组件库开发
+3. 持续集成学习
+
+待学习ing
