@@ -79,7 +79,6 @@ git config --list # 列举所有配置
 
 <center>阮一峰老师对Git工作区、暂存区、版本库、远程仓库的解释</center>
 
-
 ![git_infos](./images/git_infos.jpg)
 
 <center>Runoob对Git工作区、暂存区、版本库、远程仓库的解释</center>
@@ -237,6 +236,9 @@ git commit --amend -m # 修改最后一次提交，如果代码没有任何新�
 
 ```shell
 git reset --hard HEAD # 撤销工作目录中暂存的所有未提交文件的修改内容
+
+# 只回退了commit的信息，暂存区和工作区与回退之前保持一致。如果还要提交，直接commit即可
+get reset --soft HEAD
 
 git reset --keep [commit] # 重置当前HEAD为指定commit，但保持暂存区和工作区不变
 
@@ -480,6 +482,10 @@ git push -u origin master
 
 ![git_commands](./images/git_commands.png)
 
+![git-command](./images/git.png)
+
+
+
 参考资料
 
 [Git Document](https://git-scm.com/docs)  [中文文档](https://git-scm.com/book/zh/v2)
@@ -493,4 +499,6 @@ git push -u origin master
 [Runoob `Git`教程](https://www.runoob.com/git/git-tutorial.html)
 
 [`Git`入门](https://backlog.com/git-tutorial/cn/)
+
+[Git的奇技淫巧](https://github.com/521xueweihan/git-tips)
 
