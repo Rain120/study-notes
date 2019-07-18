@@ -28,6 +28,9 @@
 
 [xclient](https://xclient.info/): 收集了各种分类的软件，大部分软件都可以在上面找到，再也不用花费大量时间去找那些让你很烦的软件了呢。
 
-
 [奇迹秀](https://www.qijishow.com/): 奇迹秀也有着很多资源哦，设计类的有福利了，嘿嘿。
+
+[知您网](https://www.zhinin.com/)
+
+
 
