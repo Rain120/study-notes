@@ -24,7 +24,7 @@
 
 3. 组件注册
 
-4. 响应式
+4. [响应式原理](notes/vue/code-review/responsive-principle.md)
 
 5. 依赖
 
