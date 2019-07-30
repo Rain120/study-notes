@@ -32,5 +32,15 @@
 
 [知您网](https://www.zhinin.com/)
 
+#### 3、工具
 
+- `Sourcetree`
+
+  `Mac`使用跳过注册
+
+  ```shell
+  defaults write com.torusknot.SourceTreeNotMAS completedWelcomeWizardVersion 3
+  ```
+
+  
 
