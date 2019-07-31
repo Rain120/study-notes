@@ -78,7 +78,6 @@ git config --list # 列举所有配置
 
 
 <center>阮一峰老师对Git工作区、暂存区、版本库、远程仓库的解释</center>
-
 ![git_infos](./images/git_infos.jpg)
 
 <center>Runoob对Git工作区、暂存区、版本库、远程仓库的解释</center>
@@ -263,6 +262,40 @@ git checkout --patch <filename> # 撤消对文件的修改
 
 git revert <commit_id> # 撤销指定提交
 ```
+
+##### `git reset`详解
+
+```shell
+git reset --help
+```
+
+`git reset [<mode>] [<commit>]`
+
+> `reset`将当前分支头重置为<commit>，并可能根据<mode>更新索引（将其重置为<commit>树）和工作树。 如果省略<mode>，则默认为--mixed。 <mode>必须是以下之一：
+
+` —-soft`: `HEAD` != `index` = `work directory`
+
+> 它根本不触及索引文件或工作树(但是将头重置为<commit>，就像所有模式一样)。 这将保留所有已更改的文件“要提交的更改”，因为`git status`会将其设置。
+>
+> 只回退了`commit`的信息，暂存区和工作区与回退之前保持一致。如果还要提交，直接`commit`即可
+
+`—-hard`: `HEAD` = `index` = `work directory`
+
+> 重置索引但不重置工作树（即，保留更改的文件但未标记为提交）并报告尚未更新的内容。 这是默认操作。
+> 如果指定了`-N`，则删除的路径将标记为意向添加。
+
+`—mixed`: `HEAD` = `index` != `work directory`
+
+> 重置索引和工作树。 自<commit>以来对工作树中跟踪文件的任何更改都将被丢弃。
+
+`--merge`
+
+> 重置索引并更新工作树中<commit>和`HEAD`之间不同的文件，但保留索引和工作树之间不同的文件（即具有尚未添加的更改）。 如果<commit>和索引之间不同的文件具有未分阶段的更改，则重置将中止。
+> 换句话说，`--merge `执行类似`git read-tree -u -m <commit>`的操作，但是会继承未合并的索引条目。
+
+`-—keep`
+
+> 重置索引并更新工作树中<commit>和`HEAD`之间不同的文件。 如果<commit>和`HEAD`之间不同的文件具有本地更改，则重置将中止。
 
 #### 8. 提交历史
 
