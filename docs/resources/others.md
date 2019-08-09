@@ -29,6 +29,18 @@
 
 [ChacuoNet](http://24mail.chacuo.net/)
 
+[obagg](http://od.obagg.com/)
+
+[my365](http://my365.tw/)
+
+[odmail](http://t.odmail.cn/)
+
+[office365vip](http://od.office365vip.cn/)
+
+[xkx](http://xkx.me/)
+
+[chacuo.net](http://24mail.chacuo.net/zhtw)
+
 #### 国外短信验证码接收平台
 
 [SMSReceiveFree](https://smsreceivefree.com)
