@@ -21,13 +21,13 @@
 
    * [Vue 源码学习](notes/vue/code-review/code-review.md)
 
-   
+* [React](notes/react/guide.md)
+
+   * [React组件库开发 - 初始化项目](notes/react/Component-library/init.md)
 
 * [Linux](notes/linux/guide.md)
 
    * [Linux入门学习](notes/linux/initial.md)
-
-
 
 * [Nginx](notes/nginx/guide.md)
 
