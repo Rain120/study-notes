@@ -28,6 +28,7 @@
 * [Linux](notes/linux/guide.md)
 
    * [Linux入门学习](notes/linux/initial.md)
+   * [常用命令行快捷键](notes/linux/command-shortcut.md)
 
 * [Nginx](notes/nginx/guide.md)
 
@@ -38,6 +39,7 @@
 * [`Git`学习](notes/git-npm/guide.md)
 
    * [你必须知道的`Git`命令](notes/git-npm/you-must-know-git-commands.md)
+   * [Git配置多个SSH Key](notes/git-npm/git-config-multiple-ssh.md)
    * [Npm Scripts学习](notes/git-npm/npm-scripts.md)
    * [Npm 包发布笔记](notes/git-npm/npm-publish.md)
 

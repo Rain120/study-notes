@@ -33,7 +33,7 @@
 
 >  解决多人多团队协作难， 提高前端开发效率，降低前端维护成本
 
-#### 组件化的原则
+### 组件化的原则
 
 - **标准化**
 
@@ -51,6 +51,10 @@
 
   任何一个组件应该都具有一套自己的完整的稳定的功能，仅包含自身的，与其它组件无关的逻辑，使其更加的容易理解，使其更加的容易理解，同时大大减少发生bug的几率。
 
+### 选择开源组件库还是自己撸？
+
+就目前为止，市面上有很多很优秀的组件库，`Eg`: [Antd -> React](https://ant.design/)、[Material-UI -> React](https://material-ui.com/)、[Antd -> Vue](https://vue.ant.design/)、[Element-UI -> (Vue)](https://element.eleme.io/#/en-US)、[IView -> Vue](https://www.iviewui.com/)。
+
 #### 参考资料
 
 [前端开发的模块化和组件化的定义，以及两者的关系？](https://www.zhihu.com/question/37649318)
@@ -60,3 +64,6 @@
 [前端工程——基础篇](https://github.com/fouber/blog/issues/10)
 
 [前端组件化开发实践](https://tech.meituan.com/2015/07/10/frontend-component-practice.html)
+
+[漫谈 React 组件库开发（二）：组件库最佳实践](https://tech.youzan.com/react-component-library/)
+
