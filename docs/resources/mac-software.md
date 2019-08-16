@@ -67,7 +67,9 @@ defaults write com.torusknot.SourceTreeNotMAS completedWelcomeWizardVersion 3
 
 > `Folx`是一款免费的`macOS`专用的下载器，完全`Mac`风格的用户界面。提供便捷的下载管理、灵活的设置等等。`Folx`拥有强大的排序系统实现下载内容的最佳管理。
 
-[Softorino](https://www.waitsun.com/tag/softorino) YouTube Converter for Mac是一款[视频下载](https://www.waitsun.com/tag/视频下载)和转换工具，可以方便的下载YouTube或Vimeo视频，以便在线下享受它们，并使用这个易用的应用程序将剪辑直接复制到iPhone或iPad上。无论您的互联网连接不可靠，还是只想观看YouTube或Vimeo视频而不会受到刺激性广告的侵扰，您都可以从简单的方法将这些片段保存到本地存储中。
+[Softorino YouTube Converter for Mac](https://github.com/Rain120/Free-Source/blob/master/Mac%20Tools/Softorino%20YouTube%20Converter%202_2.1.7_WaitsUn.com.dmg)
+
+> 是一款视频下载和转换工具，可以方便的下载`YouTube`或`Vimeo`视频，以便在线下享受它们，并使用这个易用的应用程序将剪辑直接复制到`iPhone`或`iPad`上。无论您的互联网连接不可靠，还是只想观看`YouTube`或`Vimeo`视频而不会受到刺激性广告的侵扰，您都可以从简单的方法将这些片段保存到本地存储中。
 
 ### [Charles](https://www.charlesproxy.com/)
 

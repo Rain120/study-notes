@@ -34,6 +34,8 @@
 
 [麦客孤独](http://www.macgudu.net/)
 
+[Waitsun](https://www.waitsun.com/)
+
 #### 3、工具
 
 - `Sourcetree`
