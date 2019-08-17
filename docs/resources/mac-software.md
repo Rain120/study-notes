@@ -89,5 +89,9 @@ defaults write com.torusknot.SourceTreeNotMAS completedWelcomeWizardVersion 3
 
 ![notion](./sw/notion.png)
 
+### 参考
+
+[云谦 - 装了啥 2019 版](https://juejin.im/post/5c9446e36fb9a071082f5118)
+
 
 

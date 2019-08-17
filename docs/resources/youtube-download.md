@@ -2,7 +2,23 @@
 
 #### 视频(2019-07-13更新)
 
-[urlgot](https://www.urlgot.com/): **强烈推荐**, 能翻墙的网络下载老快了
+[Softorino YouTube Converter for Mac](https://github.com/Rain120/Free-Source/blob/master/Mac%20Tools/Softorino%20YouTube%20Converter%202_2.1.7_WaitsUn.com.dmg) 
+
+[Videoder](https://www.videoder.com/zh)
+
+[youtube-dlb](http://ytdl-org.github.io/youtube-dl/index.html)
+
+```bash
+# find the id about type of vedio
+youtube-dl -F [url]
+
+# download the vedio
+youtube-dl -f [code] [url]
+```
+
+![youtube-dl-F](./others/youtube-dl-F.png)
+
+~~[urlgot](https://www.urlgot.com/)~~
 
 [savef.net](https://savef.net/)
 
