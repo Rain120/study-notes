@@ -67,6 +67,10 @@
 
 ![slides](./wf/slides.png)
 
+[方方格子](http://www.ffcell.com/index.aspx)
+
+> 方方格子是一个专注于 Excel 的综合学习网站，它不仅提供实用的 Excel 插件和工具箱，还提供各种 Excel 学习教程。
+
 #### 思维导图
 
 [XMind](<https://www.xmind.cn/>)
@@ -104,4 +108,14 @@
 [汉典](https://www.zdic.net/)
 
 [测试网站网络速度](http://www.17ce.com/site)
+
+[oeasy](http://oeasy.org/)
+
+> 提供的视频教程非常丰富并且质量很高，包括：PS 教程、手机摄影教程、Ai 做图教程、Excel 教程、Word 教程、PPT 教程、Pr 视频剪辑教程、Ae 视频特效教程、Au 音频教程、Flash 教程、做网页教程、css 样式教程、js 教程、Cad 制图教程、电路制作教程、Windows 教程、色彩搭配教程、Prezi 演示教程、Keynote 教程、做图标教程。
+
+[2uts](https://2uts.com/)
+
+> 一个完全免费的视频教程网站，它提供了丰富并且免费的高质量国外视频教程。
+>
+> 它提供的视频教程都是一些专业技能视频教程，包括：3D 和动画、Web 开发、程序设计、移动开发、设计与插图、游戏开发、视觉与视觉特效、音频制作。
 
