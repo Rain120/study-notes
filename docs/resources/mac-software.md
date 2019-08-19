@@ -89,6 +89,20 @@ defaults write com.torusknot.SourceTreeNotMAS completedWelcomeWizardVersion 3
 
 ![notion](./sw/notion.png)
 
+### [Snipaste](https://www.snipaste.com/)
+
+> Snipaste 是一个简单但强大的截图工具，也可以让你将截图贴回到屏幕上！下载并打开 Snipaste，按下 `F1` 来开始截图，再按 `F3`，截图就在桌面置顶显示了。就这么简单！
+>
+> 你还可以将剪贴板里的文字或者颜色信息转化为图片窗口，并且将它们进行缩放、旋转、翻转、设为半透明，甚至让鼠标能穿透它们！如果你是程序员、设计师，或者是大部分工作时间都在电脑前，贴图功能将改变你的工作方式、提升工作效率。
+
+![snipaste](./sw/snipaste.png)
+
+### [Cleanmymac](https://macpaw.com/cleanmymac) 
+
+> 它可以流畅地与系统性能相结合，静默清理、记录更新、清洁缓存、快速和安全删除、卸载应用程序和清空回收站等重要功能。节省硬盘空间，提高电脑的速度，CleanMyMac X 会使您的Mac更出色
+
+![cleanmymac](./sw/cleanmymac.png)
+
 ### 参考
 
 [云谦 - 装了啥 2019 版](https://juejin.im/post/5c9446e36fb9a071082f5118)

@@ -134,5 +134,5 @@
 
 [2018 年了，你还是只会 npm install 吗？](https://juejin.im/post/5ab3f77df265da2392364341)
 
-[ntroducing npx: an npm package runner](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) -> [中文版](https://robin-front.github.io/2017/07/14/introducing-npx-an-npm-package-runner.html)
+[Introducing npx: an npm package runner](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)
 

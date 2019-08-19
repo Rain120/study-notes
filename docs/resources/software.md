@@ -38,8 +38,6 @@
 
 [Waitsun](https://www.waitsun.com/)
 
-[digit77](https://www.digit77.com/)
-
 [macdown](https://www.macdown.com/)
 
 #### 3、工具
