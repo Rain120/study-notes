@@ -9,7 +9,7 @@ npm install package
 `install`之前，`npm install`会先检查，`node_modules`目录之中是否已经存在指定模块。如果存在，就不再重新安装了。
 
 1. 发出`npm install`命令
-2. npm 向 registry 查询模块压缩包的网址
+2. `npm` 向 `registry` 查询模块压缩包的网址
 3. 下载压缩包，存放在`~/.npm`目录
 4. 解压压缩包到当前项目的`node_modules`目录
 
@@ -48,11 +48,11 @@ npm update package
 
 在**[npm](https://www.npmjs.com/)**有以下**5**种依赖:
 
-- [Dependencies](https://docs.npmjs.com/files/package.json#dependencies)
-- [devDependencies](https://docs.npmjs.com/files/package.json#devdependencies)
-- [peerDependencies](https://docs.npmjs.com/files/package.json#peerdependencies)
-- [bundledDependencies](https://docs.npmjs.com/files/package.json#bundleddependencies)
-- [optionalDependencies](https://docs.npmjs.com/files/package.json#optionaldependencies)
+- [dependencies](https://docs.npmjs.com/files/package.json#dependencies): 
+- [devDependencies](https://docs.npmjs.com/files/package.json#devdependencies): 开发依赖
+- [peerDependencies](https://docs.npmjs.com/files/package.json#peerdependencies): 
+- [bundledDependencies](https://docs.npmjs.com/files/package.json#bundleddependencies): 
+- [optionalDependencies](https://docs.npmjs.com/files/package.json#optionaldependencies): 
 
 ### 版本信息
 

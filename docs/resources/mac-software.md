@@ -103,9 +103,23 @@ defaults write com.torusknot.SourceTreeNotMAS completedWelcomeWizardVersion 3
 
 ![cleanmymac](./sw/cleanmymac.png)
 
+### [Mounty](https://mounty.app/)
+
+> Mac OS平台上的一款NTFS格式读写工具，软件虽小小但是功能挺实用的，其主要功能类似Paragon NTFS for mac。当你插入 NTFS 硬盘后会提示是否创新加载成读写模式。大多数情况下 Mac OS X 是默认没有开启 NTFS 的写入模式。所以这样你就这一不在需要安装其他软件就可以对 Windows 的 NTFS 硬盘进行复制文件操作。
+
+### [NTFS 助手](https://apps.apple.com/cn/app/ntfs助手/id1448227400?mt=12)
+
+> 一款读写NTFS磁盘工具, 它能够帮助用户快速稳定以读写方式访问NTFS分区，简单易用，只需一键操作。
+>
+> 1. 以读写模式打开NTFS磁盘
+>
+> 2. 安全传输文件到NTFS磁盘
+
+### [Licecap](https://www.cockos.com/licecap/)
+
+> 屏幕录制工具，支持导出 GIF 动画图片格式，轻量级、使用简单，录制过程中可以随意改变录屏范围。运行后会以窗口的方式显示在桌面，拖动选取一个合适的大小范围，点击 Record 选取保存路径就开始录屏了。**LICEcap** 在录屏过程中可以随时拖动窗口改变录屏范围，Stop 过后自动保存为 GIF 格式。
+
 ### 参考
 
 [云谦 - 装了啥 2019 版](https://juejin.im/post/5c9446e36fb9a071082f5118)
-
-
 
