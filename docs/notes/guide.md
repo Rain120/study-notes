@@ -12,7 +12,9 @@
     - [ECMAScript学习](notes/HTML-CSS-Javascript/es-study/es-guide.md)
     - [与AST的相知相识](notes/HTML-CSS-Javascript/ast/ast.md)
 
-    
+* [Webpack](notes/webpack/guide.md)
+
+   * [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
 
 * [Vue](notes/vue/guide.md)
 
