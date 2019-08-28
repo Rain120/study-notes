@@ -50,5 +50,15 @@
   defaults write com.torusknot.SourceTreeNotMAS completedWelcomeWizardVersion 3
   ```
 
+- `Charles Mac`
+
+  ```
+  Charles激活码：
+  
+  Registered Name: https://zhile.io
+  
+  License Key: 48891cf209c6d32bf4
+  ```
+
   
 
