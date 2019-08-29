@@ -3,6 +3,28 @@
 - 当前工作首次接触移动端
 - 越难受越要死肛
 
+### 代理设置
+
+```
+Proxy
+	-> macOS Proxy
+```
+
+![proxy-setting.png](./images/proxy-setting.png)
+
+![proxy-setting-port.png](./images/proxy-setting-port.png)
+
+![find-ip.png](./images/find-ip.png)
+
+手机
+
+```
+Wifi
+	-> 代理
+	-> 手动
+	-> ip:port(👆设置的)
+```
+
 ### 证书安装
 
 #### 电脑证书安装
@@ -66,8 +88,6 @@ http://chls.pro/ssl
  	-> charles-ssl-proxying-certificate.pem
  	-> 直接安装
 ```
-
-
 
 ### 客户端设置
 
