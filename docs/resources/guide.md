@@ -7,6 +7,7 @@
 * [前端](resources/front-end.md)
 * [网站](resources/website.md)
 * [软件](resources/software.md)
+* [破解软件合集](resources/crack-software-collection.md)
 * [Mac效率神器 - 葵花宝典](resources/mac-software.md)
 * [浏览器插件](resources/browser-plugins.md)
 * [Youtube 1080p 下载(视频 + 字幕)](resources/youtube-download.md)
