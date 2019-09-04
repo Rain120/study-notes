@@ -1,7 +1,13 @@
 ### 缘由
 
 - 当前工作首次接触移动端
-- 越难受越要死肛
+- 为了方便新接触的同学，帮忙填坑
+
+#### Https抓包
+
+![unknown.png](./images/unknown.png)
+
+![https-request.png](./images/https-request.png)
 
 ### 代理设置
 
@@ -16,7 +22,9 @@ Proxy
 
 ![find-ip.png](./images/find-ip.png)
 
-手机
+手机(移动端设备)
+
+**Note:** 下载证书前务必先执行这一步
 
 ```
 Wifi
@@ -62,6 +70,8 @@ help
 
 下载证书
 
+**Note:** 请务必先将你手机(移动端设备)的网络和电脑的网络设置为同一个，而且将你手机(移动端设备)的代理设置为电脑的`ip`: `charles port`(默认为`8888`)，否则没法下载。
+
 ```http
 http://chls.pro/ssl
 ```
@@ -93,6 +103,8 @@ http://chls.pro/ssl
 
 - `Charles`开启`SSL Proxy`
 
+  `port`设置端口是`https`的默认端口，如果你的测试环境是其他端口，需要在此处添加该端口, `eg:https://www.wodeduankouxiugaile.com:9527`，则`SSL Proxying`的可以添加一个`Location`为`*.9527`。
+  
   ```
   Proxy
   	-> SSL Proxy Settings
@@ -101,11 +113,11 @@ http://chls.pro/ssl
   	# https
   	# host: *
   	# port: 443
-  	# or custom port
+	# or custom port
   ```
 
   ![ssl-proxy.png](./images/ssl-proxy.png)
 
   ![ssl-proxy-setting.png](./images/ssl-proxy-setting.png)
-
+  
   
