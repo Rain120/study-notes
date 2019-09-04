@@ -3,9 +3,13 @@
 - 当前工作首次接触移动端
 - 为了方便新接触的同学，帮忙填坑
 
-#### Https抓包
+#### Https抓包结果展示
+
+错误结果
 
 ![unknown.png](./images/unknown.png)
+
+正确结果
 
 ![https-request.png](./images/https-request.png)
 
@@ -121,3 +125,15 @@ http://chls.pro/ssl
   ![ssl-proxy-setting.png](./images/ssl-proxy-setting.png)
   
   
+
+#### 通过`rewrite`将远程代理到本地
+
+[write的作用](https://www.charlesproxy.com/documentation/tools/rewrite/)
+
+> The Rewrite tool enables you to create rules that modify requests and responses as they pass through Charles. Rules such as adding or changing a header or search and replace some text in the response body.
+
+通过`rewrite`工具，您可以创建在通过`Charles`时修改请求和响应的规则。 添加或更改`header`或搜索和替换响应正文中的某些文本等规则。
+
+![rewrite.png](./images/rewrite.png)
+
+![rewrite-setting.png](./images/rewrite-setting.png)
