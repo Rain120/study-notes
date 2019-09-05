@@ -128,7 +128,7 @@ http://chls.pro/ssl
 
 #### 通过`rewrite`将远程代理到本地
 
-[write的作用](https://www.charlesproxy.com/documentation/tools/rewrite/)
+[rewrite的作用](https://www.charlesproxy.com/documentation/tools/rewrite/)
 
 > The Rewrite tool enables you to create rules that modify requests and responses as they pass through Charles. Rules such as adding or changing a header or search and replace some text in the response body.
 
