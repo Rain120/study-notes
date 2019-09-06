@@ -331,10 +331,6 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 ##### 工具
 
-[Codesanbox](https://codesandbox.io/)
-
-[Codepen](https://codepen.io/)
-
 [Repl.it](https://repl.it/)
 
 [Glitch](https://glitch.com/)
