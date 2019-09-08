@@ -1,7 +1,7 @@
 <!--
  * @Author: Rain120
  * @Date: 2019-07-11 22:33:37
- * @LastEditTime: 2019-09-08 16:28:55
+ * @LastEditTime: 2019-09-08 16:45:19
  -->
 <h1 align="center">
 <a href="https://rain120.github.io/study-notes">Study Notes Template</a>
@@ -21,7 +21,7 @@
 
 <h3 align="center">❓ How to use it to configure your own notes</h3>
 
-#### 📋FIle floder
+#### 📋FIle folder
 
 ```shell
 $ tree -L 5 .
@@ -68,8 +68,10 @@ $ tree -L 5 .
   **How to get Gittalk's clientID and clientSecret?**
 
   1. Register the Github OAuth Application
-    1.1 Click [Github OAuth Application](https://github.com/settings/applications/new) to register.
-    1.2 Github profile path to **User -> settings ->  Developer settings -> OAuth Apps -> New OAuth Apps** to register
+  
+        1.1 Click [Github OAuth Application](https://github.com/settings/applications/new) to register.
+  
+        1.2 Github profile path to **User -> settings ->  Developer settings -> OAuth Apps -> New OAuth Apps** to register
 
   **Application name**: repo-name or what you want to named
   **Homepage URL**: blog address, yourname.github.io/repo-name
@@ -106,13 +108,19 @@ $ tree -L 5 .
 
   Please use the [Docsify Documentation](https://docsify.js.org) to configure other content in your document.
 
+#### 📡Deploy
+
+  1. Go your repository settings
+  2. GitHub Pages
+  3. Source: master branch / docs folder
+  4. go https://yourname.github.io/your-repository/
+
 #### 🤝 Contributions PR
   We welcome all contributions. You can submit any ideas as [pull requests](https://github.com/Rain120/study-notes/pulls) or as a GitHub [issue](https://github.com/Rain120/study-notes/issues).
 
 #### 👨‍🏭 [About Me](https://rain120.github.io/study-notes/#/profile/profile.md)
 
   > Front-End development engineer, technology stack: React + Typescript + Mobx, also used Vue + Vuex for a while
-
 
 #### 📝 License
 
