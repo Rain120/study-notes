@@ -1,7 +1,7 @@
 <!--
  * @Author: Rain120
  * @Date: 2019-07-11 22:33:37
- * @LastEditTime: 2019-09-08 15:50:22
+ * @LastEditTime: 2019-09-08 15:59:37
  -->
 <h1 align="center">
 <a href="https://rain120.github.io/study-notes">Study Notes Template</a>
@@ -10,13 +10,14 @@
 <div align="center">
 
   <p align="center">
-  ![GitHub](https://img.shields.io/github/license/rain120/study-notes?style=flat-square)
-  ![GitHub last commit](https://img.shields.io/github/last-commit/rain120/study-notes?style=flat-square)
-  ![docsify-cli](https://img.shields.io/badge/docsify--cli-v4.3.0-green?style=flat-square&logo=appveyor)
+  <img src="https://img.shields.io/github/license/rain120/study-notes?style=flat-square" alt="github" /> 
+  <img src="https://img.shields.io/github/last-commit/rain120/study-notes?style=flat-square" alt="github last commit" /> 
+  <img src="https://img.shields.io/badge/docsify--cli-v4.3.0-green?style=flat-square&logo=appveyor" alt="docsify-cli" />
   </p>
 
-  <p align="center">A note-taking template out of the box, just configure your own github, logo and profile.</p>
 </div>
+
+!> A note-taking template out of the box, just configure your own github, logo and profile.
 
 ### How to use it to configure your own notes
 
