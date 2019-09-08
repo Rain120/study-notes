@@ -1,9 +1,8 @@
-* [console全家桶](notes/HTML-CSS-Javascript/console/console-related-note.md)
-* [JavaScript常见运算符](notes/HTML-CSS-Javascript/common-operator/common-operator.md)
-* [获取DOM元素的位置和尺寸](notes/HTML-CSS-Javascript/get-dom-property/get-dom-property.md)
-* [Javascript正则表达式](notes/HTML-CSS-Javascript/regular_expression/regular_expression.md)
-* [日常使用的正则表达式](notes/HTML-CSS-Javascript/regular_expression/common_reg_exps.md)
-* [ECMAScript学习](notes/HTML-CSS-Javascript/es-study/es-guide.md)
-* [与AST的相知相识](notes/HTML-CSS-Javascript/ast/ast.md)
-* [css tips总结收录](notes/HTML-CSS-Javascript/tips/css-tips.md)
-* [js tips总结收录](notes/HTML-CSS-Javascript/tips/js-tips.md)
+<!--
+ * @Author: Rain120
+ * @Date: 2019-09-08 12:33:31
+ * @LastEditTime: 2019-09-08 15:01:09
+ -->
+* [css tips](notes/HTML-CSS-Javascript/tips/css-tips.md)
+
+* [js tips](notes/HTML-CSS-Javascript/tips/js-tips.md)

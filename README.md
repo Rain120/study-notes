@@ -1,51 +1,109 @@
-### [study-notes](<https://rain120.github.io/study-notes>)
+<!--
+ * @Author: Rain120
+ * @Date: 2019-07-11 22:33:37
+ * @LastEditTime: 2019-09-08 15:50:22
+ -->
+<h1 align="center">
+<a href="https://rain120.github.io/study-notes">Study Notes Template</a>
+</h1>
 
-Daily study notes, some useful bookmarking https://rain120.github.io/study-notes/#/resources, and https://rain120.github.io/study-notes/#/resources for friends.
+<div align="center">
 
-<!-- 学习笔记 -->
+  <p align="center">
+  ![GitHub](https://img.shields.io/github/license/rain120/study-notes?style=flat-square)
+  ![GitHub last commit](https://img.shields.io/github/last-commit/rain120/study-notes?style=flat-square)
+  ![docsify-cli](https://img.shields.io/badge/docsify--cli-v4.3.0-green?style=flat-square&logo=appveyor)
+  </p>
 
-- [知识图谱](https://rain120.github.io/study-notes/#/notes/knowledge-map/guide.md)
-  - [前端知识图谱](https://rain120.github.io/study-notes/#/notes/knowledge-map/fe_knowledge_map.md)
+  <p align="center">A note-taking template out of the box, just configure your own github, logo and profile.</p>
+</div>
 
-- [学习笔记](https://rain120.github.io/study-notes/#/notes/guide.md)
-  - [HTML + CSS + Javascript](https://rain120.github.io/study-notes/#/notes/HTML-CSS-Javascript/guide.md)
-    - [console全家桶](https://rain120.github.io/study-notes/#/notes/HTML-CSS-Javascript/console/console-related-note.md)
-    - [JavaScript常见运算符](https://rain120.github.io/study-notes/#/notes/HTML-CSS-Javascript/common-operator/common-operator.md)
-    - [获取DOM元素的位置和尺寸](https://rain120.github.io/study-notes/#/notes/HTML-CSS-Javascript/get-dom-property/get-dom-property.md)
-    - [Javascript正则表达式](https://rain120.github.io/study-notes/#/notes/HTML-CSS-Javascript/regular_expression/regular_expression.md)
-    - [日常使用的正则表达式](https://rain120.github.io/study-notes/#/notes/HTML-CSS-Javascript/regular_expression/common_reg_exps.md)
-    - [ECMAScript学习](https://rain120.github.io/study-notes/#/notes/HTML-CSS-Javascript/es-study/es-guide.md)
-  - [Vue](https://rain120.github.io/study-notes/#/notes/vue/guide.md)
-    - [Vue实现左右菜单联动实现](https://rain120.github.io/study-notes/#/notes/vue/cascade-menu/cascade-menu.md)
-    - [Vue 生命周期笔记](https://rain120.github.io/study-notes/#/notes/vue/vue-lifecycle/vue-lifecycle.md)
-    - [Vue 源码学习](https://rain120.github.io/study-notes/#/notes/vue/code-review/code-review.md)
-  - [Linux](https://rain120.github.io/study-notes/#/notes/linux/guide.md)
-    - [Linux入门学习](https://rain120.github.io/study-notes/#/notes/linux/initial.md)
-  - [Nginx](https://rain120.github.io/study-notes/#/notes/nginx/guide.md)
-    - [Nginx笔记](https://rain120.github.io/study-notes/#/notes/nginx/nginx/note.md)
-  - [Git & npm学习](https://rain120.github.io/study-notes/#/notes/git-npm/guide.md)
-    - [你必须知道的Git命令](https://rain120.github.io/study-notes/#/notes/git-npm/you-must-know-git-commands.md)
-    - [Npm Scripts学习](https://rain120.github.io/study-notes/#/notes/git-npm/npm-scripts.md)
-  - [日常错误笔记](https://rain120.github.io/study-notes/#/notes/error-qa/guide.md)
-    - [Mysql错误笔记](https://rain120.github.io/study-notes/#/notes/error-qa/mysql/note-qa.md)
-    - [Node & Git错误笔记](https://rain120.github.io/study-notes/#/notes/error-qa/node-git/note-qa.md)
+### How to use it to configure your own notes
 
-<!--  资源集合 -->
+#### 📋FIle floder
 
-- [资源集合](https://rain120.github.io/study-notes/#/resources/guide.md)
-  - [前端](https://rain120.github.io/study-notes/#/resources/front-end.md)
-  - [网站](https://rain120.github.io/study-notes/#/resources/website.md)
-  - [软件(Win10 + Mac)](https://rain120.github.io/study-notes/#/resources/software.md)
-  - [其他](https://rain120.github.io/study-notes/#/resources/others.md)
-- [About Me](https://rain120.github.io/study-notes/#/profile/profile.md)
+```shell
+$ tree -L 5 .
+.
+|-- LICENSE
+|-- README.md
+|-- docs
+|   |-- README.md
+|   |-- _coverpage.md
+|   |-- _navbar.md
+|   |-- _sidebar.md
+|   |-- chao.png // coverpage img
+|   |-- index.html // the notes configure, eg: repo, footer, search, gittalk, etc...
+|   |-- logo.png // logo
+|   |-- notes // your notes where you write it
+|   |   |-- HTML-CSS-Javascript
+|   |   |   |-- guide.md
+|   |   |   `-- tips
+|   |   |       |-- css-tips.md
+|   |   |       `-- js-tips.md
+|   |   `-- guide.md
+|   |-- profile
+|   |   `-- profile.md
+|   `-- style // don't mind it, just jump it
+|       |-- docs.css
+|       `-- font
+|           |-- iconfont.css
+|           |-- iconfont.eot
+|           |-- iconfont.svg
+|           |-- iconfont.ttf
+|           `-- iconfont.woff
+|-- package-lock.json
+`-- package.json
+```
 
-<!-- About Me -->
-<!-- ---
+#### Docsify Configure
 
-- [<i class="profile-icon gh iconfont icon-github"></i>Github](https://github.com/Rain120)
-- [<i class="profile-icon zh iconfont icon-zhihu"></i>知乎](https://www.zhihu.com/people/yan-yang-nian-hua-120/activities)
-- [<i class="profile-icon jj iconfont icon-juejin"></i>掘金](https://juejin.im/user/57c616496be3ff00584f54db)
-- [<i class="profile-icon bk iconfont icon-blog"></i>个人博客](https://rain120.github.io/)
-- [<i class="profile-icon sf iconfont icon-sf"></i>SegmentFault](https://segmentfault.com/u/rainyk1/articles)
-- [<i class="profile-icon csdn iconfont icon-csdn"></i>CSDN](https://blog.csdn.net/ZC_XY) -->
+- Repository Settings
+
+Go [docs/index.html](./docs/index.html) scripts for setting the repo param to your github repository.
+
+- Gittalk Comment
+
+**How to get Gittalk's clientID and clientSecret?**
+
+1. Register the Github OAuth Application
+1.1 Click [Github OAuth Application](https://github.com/settings/applications/new) to register.
+1.2 GIthub profile path to **User -> settings ->  Developer settings -> OAuth Apps -> New OAuth Apps** to register
+
+**Application name**: repo-name or what you want to named
+**Homepage URL**: blog address, yourname.github.io/repo-name
+**Application description**: some description
+**Authorization callback URL**: same as Homepage URL
+
+2. After register, you can get your Gittalk's clientID and clientSecret.
+
+3. Copy the Gittalk's clientID and clientSecret, and then go [docs/index.html](./docs/index.html) scripts for setting the gitalk params.
+
+* Goto Documentation
+
+Just need to modify my repo-name
+
+#### 📙 Coverpage
+
+path: [_coverpage.md](./docs/_coverpage.md)
+
+> Configure the homepage full screen cover content
+
+#### 📙 Navbar
+
+path: [_navbar.md](./docs/_navbar.md)
+
+> Configure the contents of the upper menu bar
+
+#### 📙 Sidebar
+
+path: [_sidebar.md](./docs/_sidebar.md)
+
+> Configure the contents of the side menu bar
+
+#### Others Configure
+
+Please use the [Docsify Documentation](https://docsify.js.org) to configure other content in your document.
+
+#### [About Me](https://rain120.github.io/study-notes/#/profile/profile.md)
 

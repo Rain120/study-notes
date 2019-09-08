@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime: 2019-05-29 15:10:02
+ * @LastEditTime: 2019-09-08 13:45:43
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@
 </head>
 <body>
   <div id="app"></div>
-  <script src="./config.js"></script>
+  <!-- <script src="./config.js"></script> -->
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
@@ -34,8 +34,7 @@
     window.$docsify = {
       el: '#app',
       name: 'Study Notes',
-      repo: 'https://github.com/Rain120/study-notes',
-      ga: 'UA-132840488-1',
+      repo: 'https://github.com/rain120/study-notes',
       search: {
         noData: {
           '/': '找不到结果!'
@@ -70,9 +69,16 @@
             divEle.className = "gitalk-container";
             divEle.style = `width: ${main.clientWidth}px; margin: 0 auto 20px;`;
             domObj.appendTo(domObj.find(".content"), divEle);
+            /**
+             * clientID: 'your gitalk clientID',
+             * clientSecret: 'your gitalk clientSecret',
+             * repo: 'your repo',
+             * owner: 'your user name',
+             * admin: ['your user name or other admin if you want to setting'],
+             **/
             const gitalk = new Gitalk({
-              clientID: 'f0d924a27274378ef2a3',
-              clientSecret: '41718ded9b3115824be3e162439ce43f736be645',
+              clientID: '',
+              clientSecret: '',
               repo: 'study-notes',
               owner: 'Rain120',
               admin: ['Rain120'],
@@ -82,20 +88,8 @@
             gitalk.render(`gitalk-container-${path}`);
           })
         },
-        // footer
-        // function (hook) {
-        //   let footer = [
-        //     '<hr/>',
-        //     '<footer style="text-align: center;">',
-        //     '<span><a href="https://github.com/Rain120">Rain120</a> &copy; 2019.</span>',
-        //     '</footer>'
-        //   ].join('')
-
-        //   hook.afterEach(function (html) {
-        //     return html + footer
-        //   })
-        // },
         // Goto the document
+        // url = which file floder you want to jump
         function(hook, vm) {
           hook.beforeEach(function (html) {
             var url = `https://github.com/rain120/study-notes/docs/${vm.route.file}`;
