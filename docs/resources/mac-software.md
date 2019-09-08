@@ -97,6 +97,92 @@ defaults write com.torusknot.SourceTreeNotMAS completedWelcomeWizardVersion 3
 
 ![snipaste](./sw/snipaste.png)
 
+#### 网页截屏
+
+![chrome-capture.png](./sw/chrome-capture.png)
+
+`chrome 59版本+` 
+
+`chrome`支持截取网页长屏，网页可视区域截屏，网页区域截屏
+
+1. 截取网页长屏
+
+```shell
+Mac:
+
+⌘ Command + ⌥ Option + I
+	(1)
+ 	-> ⌘ Command + ⇧ Shift + P
+ 	-> Capture full size screenshot
+ 	(2)
+ 	-> ⌘ Command + P
+ 	-> >Capture full size screenshot
+ 
+Windows:
+F12 / Shift + Ctrl + I
+	(1)
+	-> Ctrl + Shift + P
+	-> Capture full size screenshot
+	(2)
+	-> Ctrl + P
+	-> >Capture full size screenshot
+
+```
+
+2. 网页可视区域截屏
+
+   ```shell
+   Mac:
+   
+   ⌘ Command + ⌥ Option + I
+   	(1)
+    	-> ⌘ Command + ⇧ Shift + P
+    	-> Capture screenshot
+    	(2)
+    	-> ⌘ Command + P
+    	-> > Capture screenshot
+    
+   Windows:
+   F12 / Shift + Ctrl + I
+   	(1)
+   	-> Ctrl + Shift + P
+   	-> Capture screenshot
+   	(2)
+   	-> Ctrl + P
+   	-> >Capture screenshot
+   ```
+
+   
+
+3. 网页区域截屏
+
+   ```shell
+   Mac:
+   
+   ⌘ Command + ⌥ Option + I
+   	(1)
+   	-> ⌘ Command + ⇧ Shift + C 选取元素
+    	-> ⌘ Command + ⇧ Shift + P
+    	-> Capture node screenshot
+    	(2)
+    	-> ⌘ Command + ⇧ Shift + C 选取元素
+    	-> ⌘ Command + P
+    	-> >Capture node screenshot
+    
+   Windows:
+   F12 / Shift + Ctrl + I
+   	(1)
+   	-> Ctrl + Shift + C 选取元素
+   	-> Ctrl + Shift + P
+   	-> Capture node screenshot
+   	(2)
+   	-> Ctrl + Shift + C 选取元素
+   	-> Ctrl + P
+   	-> >Capture node screenshot
+   ```
+
+   
+
 ### [Cleanmymac](https://macpaw.com/cleanmymac) 
 
 > 它可以流畅地与系统性能相结合，静默清理、记录更新、清洁缓存、快速和安全删除、卸载应用程序和清空回收站等重要功能。节省硬盘空间，提高电脑的速度，CleanMyMac X 会使您的Mac更出色

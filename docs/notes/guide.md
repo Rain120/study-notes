@@ -1,4 +1,10 @@
- * [知识图谱](notes/knowledge-map/guide.md)
+
+
+!> Add a note-taking template out of the box, just configure your own github, logo and profile.
+
+!> [How to Usage](https://github.com/Rain120/study-notes/tree/note-template)
+
+* [知识图谱](notes/knowledge-map/guide.md)
 
 * [前端知识图谱](notes/knowledge-map/fe_knowledge_map.md)
 
@@ -46,6 +52,7 @@
 * [`Git`学习](notes/git-npm/guide.md)
 
    * [你必须知道的`Git`命令](notes/git-npm/you-must-know-git-commands.md)
+   * [Github Actions](notes/git-npm/github-action.md)
    * [Git配置多个SSH Key](notes/git-npm/git-config-multiple-ssh.md)
    * [Npm Scripts](notes/git-npm/npm-scripts.md)
    * [Npm 包发布笔记](notes/git-npm/npm-publish.md)

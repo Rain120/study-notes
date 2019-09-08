@@ -1,9 +1,8 @@
-<!--
- * @Author: Rainy
- * @Github: https://github.com/Rain120
- * @Date: 2019-01-20 11:31:51
- * @LastEditTime: 2019-07-04 21:43:04
-    -->
+
+!> Add a note-taking template out of the box, just configure your own github, logo and profile.
+
+!> [How to Usage](https://github.com/Rain120/study-notes/tree/note-template)
+
 * [前端](resources/front-end.md)
 * [网站](resources/website.md)
 * [软件](resources/software.md)
