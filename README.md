@@ -19,6 +19,12 @@
 
 > A note-taking template out of the box, just configure your own github, logo and profile.
 
+#### 📦 Install
+
+```shell
+git clone -b node-template git@github.com:Rain120/study-notes.git
+```
+
 <h3 align="center">❓ How to use it to configure your own notes</h3>
 
 #### 📋FIle folder
