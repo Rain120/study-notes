@@ -1,7 +1,7 @@
 <!--
  * @Author: Rain120
  * @Date: 2019-07-11 22:33:37
- * @LastEditTime: 2019-09-08 15:59:37
+ * @LastEditTime: 2019-09-08 16:00:46
  -->
 <h1 align="center">
 <a href="https://rain120.github.io/study-notes">Study Notes Template</a>
@@ -17,7 +17,7 @@
 
 </div>
 
-!> A note-taking template out of the box, just configure your own github, logo and profile.
+> A note-taking template out of the box, just configure your own github, logo and profile.
 
 ### How to use it to configure your own notes
 
