@@ -68,8 +68,10 @@ $ tree -L 5 .
   **How to get Gittalk's clientID and clientSecret?**
 
   1. Register the Github OAuth Application
-  1.1 Click [Github OAuth Application](https://github.com/settings/applications/new) to register.
-  1.2 Github profile path to **User -> settings ->  Developer settings -> OAuth Apps -> New OAuth Apps** to register
+  
+        1.1 Click [Github OAuth Application](https://github.com/settings/applications/new) to register.
+  
+        1.2 Github profile path to **User -> settings ->  Developer settings -> OAuth Apps -> New OAuth Apps** to register
 
   **Application name**: repo-name or what you want to named
   **Homepage URL**: blog address, yourname.github.io/repo-name
