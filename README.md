@@ -1,7 +1,7 @@
 <!--
  * @Author: Rain120
  * @Date: 2019-07-11 22:33:37
- * @LastEditTime: 2019-09-08 16:00:46
+ * @LastEditTime: 2019-09-08 16:26:10
  -->
 <h1 align="center">
 <a href="https://rain120.github.io/study-notes">Study Notes Template</a>
@@ -19,7 +19,7 @@
 
 > A note-taking template out of the box, just configure your own github, logo and profile.
 
-### How to use it to configure your own notes
+<h3 align="center">❓ How to use it to configure your own notes</h3>
 
 #### 📋FIle floder
 
@@ -57,54 +57,65 @@ $ tree -L 5 .
 `-- package.json
 ```
 
-#### Docsify Configure
+#### [Docsify Configure](./docs/index.html)
 
 - Repository Settings
 
-Go [docs/index.html](./docs/index.html) scripts for setting the repo param to your github repository.
+  Go [docs/index.html](./docs/index.html) scripts for setting the repo param to your github repository.
 
 - Gittalk Comment
 
-**How to get Gittalk's clientID and clientSecret?**
+  **How to get Gittalk's clientID and clientSecret?**
 
-1. Register the Github OAuth Application
-1.1 Click [Github OAuth Application](https://github.com/settings/applications/new) to register.
-1.2 GIthub profile path to **User -> settings ->  Developer settings -> OAuth Apps -> New OAuth Apps** to register
+  1. Register the Github OAuth Application
+  1.1 Click [Github OAuth Application](https://github.com/settings/applications/new) to register.
+  1.2 Github profile path to **User -> settings ->  Developer settings -> OAuth Apps -> New OAuth Apps** to register
 
-**Application name**: repo-name or what you want to named
-**Homepage URL**: blog address, yourname.github.io/repo-name
-**Application description**: some description
-**Authorization callback URL**: same as Homepage URL
+  **Application name**: repo-name or what you want to named
+  **Homepage URL**: blog address, yourname.github.io/repo-name
+  **Application description**: some description
+  **Authorization callback URL**: same as Homepage URL
 
-2. After register, you can get your Gittalk's clientID and clientSecret.
+  2. After register, you can get your Gittalk's clientID and clientSecret.
 
-3. Copy the Gittalk's clientID and clientSecret, and then go [docs/index.html](./docs/index.html) scripts for setting the gitalk params.
+  3. Copy the Gittalk's clientID and clientSecret, and then go [docs/index.html](./docs/index.html) scripts for setting the gitalk params.
 
 * Goto Documentation
 
-Just need to modify my repo-name
+  Just need to modify my repo-name
 
 #### 📙 Coverpage
 
-path: [_coverpage.md](./docs/_coverpage.md)
+  path: [_coverpage.md](./docs/_coverpage.md)
 
-> Configure the homepage full screen cover content
+  > Configure the homepage full screen cover content
 
 #### 📙 Navbar
 
-path: [_navbar.md](./docs/_navbar.md)
+  path: [_navbar.md](./docs/_navbar.md)
 
-> Configure the contents of the upper menu bar
+  > Configure the contents of the upper menu bar
 
 #### 📙 Sidebar
 
-path: [_sidebar.md](./docs/_sidebar.md)
+  path: [_sidebar.md](./docs/_sidebar.md)
 
-> Configure the contents of the side menu bar
+  > Configure the contents of the side menu bar
 
-#### Others Configure
+#### 🔨 Others Configure
 
-Please use the [Docsify Documentation](https://docsify.js.org) to configure other content in your document.
+  Please use the [Docsify Documentation](https://docsify.js.org) to configure other content in your document.
 
-#### [About Me](https://rain120.github.io/study-notes/#/profile/profile.md)
+#### 🤝 Contributions PR
+  We welcome all contributions. You can submit any ideas as [pull requests](https://github.com/Rain120/study-notes/pulls) or as a GitHub [issue](https://github.com/Rain120/study-notes/issues).
 
+#### 👨‍🏭 [About Me](https://rain120.github.io/study-notes/#/profile/profile.md)
+
+  > Front-End development engineer, technology stack: React + Typescript + Mobx, also used Vue + Vuex for a while
+
+
+#### 📝 License
+
+  [MIT](https://github.com/Rain120/study-notes/blob/note-template/LICENSE)
+
+  Copyright © 2019-present [Rain120](https://github.com/Rain120).
