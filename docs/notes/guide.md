@@ -35,6 +35,9 @@
 * [React](notes/react/guide.md)
 
    * [React组件库开发 - 初始化项目](notes/react/Component-library/init.md)
+   * [React better-scroll移动端实践](notes/react/better-scroll/better-scroll.md)
+     * [Slider 组件开发](notes/react/better-scroll/slider.md)
+     * [Sticky 组件开发](notes/react/better-scroll/sticky.md)
    * [移动端相关问题](notes/react/mobile/guide.md)
      - [Charles抓包https手机配置](notes/react/mobile/charles-https.md)
 
