@@ -1,6 +1,6 @@
 ### [study-notes](<https://rain120.github.io/study-notes>)
 
-Daily study notes, some useful bookmarking https://rain120.github.io/study-notes/#/resources, and https://rain120.github.io/study-notes/#/resources for friends.
+Daily study notes, some useful [bookmarking resources](https://rain120.github.io/study-notes/#/resources), and [resources](https://rain120.github.io/study-notes/#/resources) for friends.
 
 <!-- 学习笔记 -->
 
