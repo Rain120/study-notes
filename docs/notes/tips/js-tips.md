@@ -3,26 +3,42 @@
 ##### 原理: 监听`touchstart`到`touchend`的时间差
 
 ```javascript
-let imgs = document.querySelectorAll('img')
+let imgs = document.querySelectorAll('img');
+let timeout = 0;
 this.longPress({
   ctx: imgs,
   () => {}
 })
   
-longPress({
+export function longPress({
   ctx = [],
-  cb,
+  logpressCallback = () => null,
+  clickCallback = () => null,
   time = 500
 }) {
   let timeout = null;
   for (let i = 0; i < ctx.length; i++) {
-    if (ctx[i] && cb) {
-      ctx[i].addEventListener('touchstart', () => {
-        timeout = setTimeout(cb, time);
+    if (ctx[i] && logpressCallback) {
+      ctx[i].addEventListener('touchstart', e => {
+        console.log('touchstart')
+        timeout = setTimeout(logpressCallback, time);
+        return false;
       }, false);
       
-      ctx[i].addEventListener('touchend', () => {
-        clearTimeout(timeout);
+      ctx[i].addEventListener('touchmove', e => {
+        e.preventDefault()
+        console.log('touchmove')
+        clearTimeout(this.imgTouchTimer)
+				timeout = 0;
+      }
+      
+      ctx[i].addEventListener('touchend', e => {
+        console.log('touchend')
+        clearTimeout(this.imgTouchTimer)
+        if (timeout !== 0) {
+          clickCallback && clickCallback();
+        }
+        return false;
       }, false);
     }
   }
