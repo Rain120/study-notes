@@ -12,7 +12,7 @@ plugins: [
 ]
 ```
 
-<img src="./images/moment.png" alt="moment" style="zoom: 33%;" />
+![moment](./images/moment.png)
 
 #### Usage
 
@@ -45,29 +45,11 @@ import get from 'lodash/get'
      "env": {
        "development": {
          plugins: [
-           [
-             "import", [
-               {
-                 "libraryName": "lodash",
-                 "libraryDirectory": "",
-                 "camel2DashComponentName": false
-               }
-             ]
-           ],
            "lodash"
          ]  
        },
        "production": {
          plugins: [
-           [
-             "import", [
-               {
-                 "libraryName": "lodash",
-                 "libraryDirectory": "",
-                 "camel2DashComponentName": false
-               }
-             ]
-           ],
            "lodash"
          ]  
        }
@@ -79,5 +61,5 @@ import get from 'lodash/get'
 
    [babel-plugin-import](https://github.com/ant-design/babel-plugin-import#options)
 
-<img src="./images/lodash.png" alt="lodash" style="zoom:33%;" />
+![lodash](./images/lodash.png)
 
