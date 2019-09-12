@@ -63,3 +63,38 @@ import get from 'lodash/get'
 
 ![lodash](./images/lodash.png)
 
+### Webpack DefinePlugin 相关问题
+
+`DefinePlugin` 允许创建一个在**编译**时可以配置的全局常量。这可能会对开发模式和生产模式的构建允许不同的行为非常有用。如果在开发构建中，而不在发布构建中执行日志记录，则可以使用全局常量来决定是否记录日志。这就是 `DefinePlugin` 的用处，设置它，就可以忘记开发环境和生产环境构建的规则。
+
+```javascript
+if (process.env.NODE_ENV !== 'production') {
+ 	require('moment')   
+ }
+
+const env = process.env;
+
+if (env.NODE_ENV !== 'production') {
+ 	require('moment')   
+ }
+
+// webpack 转换成 => 
+if (false) {}
+
+// env.js
+module.export = process.env;
+if (require('env.js').NODE_ENV !== 'production') {
+ 	require('moment')   
+ }
+
+// webpack 不转换
+```
+
+#### `Documentation`
+
+[Webpack DefinePlugin](https://webpack.docschina.org/plugins/define-plugin/)
+
+
+
+
+
