@@ -1,8 +1,19 @@
-<h3 align="center">
-  <a href="https://rain120.github.io/study-notes">study-notes</a>
-</h3>
+<!--
+ * @Author: Rain120
+ * @Date: 2019-09-08 16:50:18
+ * @LastEditTime: 2019-09-14 14:37:16
+ -->
+<h1 align="center">
+  <a href="https://rain120.github.io/study-notes">Study Notes</a>
+</h1>
 
-> Daily study notes, some useful [bookmarking resources](https://rain120.github.io/study-notes/#/resources), and [resources](https://rain120.github.io/study-notes/#/resources) for friends.
+<div align="center">
+Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/resources">bookmarking resources</a>, and <a href="https://rain120.github.io/study-notes/#/resources">resources</a> for friends.
+</div>
+
+> Add a note-taking template out of the box, just configure your own github, logo and profile.
+
+> [How to Usage](https://github.com/Rain120/study-notes/tree/note-template)
 
 <!-- 学习笔记 -->
 

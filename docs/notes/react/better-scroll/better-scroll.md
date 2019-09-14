@@ -19,7 +19,7 @@
 - `SlideMenu`
 - `CascaMenu`
 
-接下我会以视频和小结的方式，来讲解如何开发这些组件。
+接下来我会以视频的方式，来讲解如何开发这些组件。
 
 <iframe src="https://codesandbox.io/embed/react-better-scroll-8gghg?autoresize=1&eslint=1&fontsize=14" title="react-better-scroll" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
