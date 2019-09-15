@@ -45,7 +45,7 @@
 
 [SMSReceiveFree](https://smsreceivefree.com)
 
-[Receive a SMS Online](https://receive-a-sms.com/)
+~~[Receive a SMS Online](https://receive-a-sms.com/)~~
 
 [Receive-SMS](http://receive-sms-online.com/)
 
