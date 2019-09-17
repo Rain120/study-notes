@@ -127,6 +127,8 @@
 
 > 提供的视频教程非常丰富并且质量很高，包括：PS 教程、手机摄影教程、Ai 做图教程、Excel 教程、Word 教程、PPT 教程、Pr 视频剪辑教程、Ae 视频特效教程、Au 音频教程、Flash 教程、做网页教程、css 样式教程、js 教程、Cad 制图教程、电路制作教程、Windows 教程、色彩搭配教程、Prezi 演示教程、Keynote 教程、做图标教程。
 
+![oeasy](./wf/oeasy.png)
+
 [2uts](https://2uts.com/)
 
 > 一个完全免费的视频教程网站，它提供了丰富并且免费的高质量国外视频教程。
