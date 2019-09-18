@@ -123,6 +123,10 @@
 
 [测试网站网络速度](http://www.17ce.com/site)
 
+[压缩图](https://www.yasuotu.com/)
+
+> 在线处理图片的网站
+
 [oeasy](http://oeasy.org/)
 
 > 提供的视频教程非常丰富并且质量很高，包括：PS 教程、手机摄影教程、Ai 做图教程、Excel 教程、Word 教程、PPT 教程、Pr 视频剪辑教程、Ae 视频特效教程、Au 音频教程、Flash 教程、做网页教程、css 样式教程、js 教程、Cad 制图教程、电路制作教程、Windows 教程、色彩搭配教程、Prezi 演示教程、Keynote 教程、做图标教程。
