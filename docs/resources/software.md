@@ -28,6 +28,8 @@
 
 [123快下载](http://www.123kuai.net/)
 
+[Python量化](https://www.lizenghai.com/)
+
 #### 2、Mac软件相关
 
 [xclient](https://xclient.info/): 收集了各种分类的软件，大部分软件都可以在上面找到，再也不用花费大量时间去找那些让你很烦的软件了呢。
