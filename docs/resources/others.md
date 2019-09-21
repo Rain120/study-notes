@@ -43,7 +43,7 @@
 
 #### 国外短信验证码接收平台
 
-[SMSReceiveFree](https://smsreceivefree.com)
+~~[SMSReceiveFree](https://smsreceivefree.com)~~
 
 ~~[Receive a SMS Online](https://receive-a-sms.com/)~~
 
@@ -69,7 +69,7 @@
 
 [Twilio](https://www.twilio.com/)
 
-[国内](https://www.pdflibr.com/)
+[国内](https://www.pdflibr.com/): **10.7后再试试**
 
 [云短信](https://yunduanxin.net/)
 
