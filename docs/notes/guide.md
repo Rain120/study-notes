@@ -23,6 +23,7 @@
    - [CSS Tips](notes/tips/css-tips.md)
    - [JS Tips](notes/tips/js-tips.md)
    - [Webpack Tips](notes/tips/webpack-tips.md)
+   - [Typescript Tips](notes/tips/typescript-tips.md)
 
 * [Webpack](notes/webpack/guide.md)
 
@@ -32,9 +33,10 @@
 
    * [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
 * [Vue之网易云音乐横向菜单滑动的实现](notes/vue/slide-menu/slide-menu.md)
+   
    * [Vue 生命周期笔记](notes/vue/vue-lifecycle/vue-lifecycle.md)
 * [Vue 源码学习](notes/vue/code-review/code-review.md)
-   
+  
 * [React](notes/react/guide.md)
 
    * [React组件库开发 - 初始化项目](notes/react/Component-library/init.md)
