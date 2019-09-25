@@ -1,3 +1,19 @@
+### 提示：'软件已损坏，打不开' 或 '不是Mac Appstore下载'
+
+![mac-software-broken.png](./sw/mac-software-broken.png)
+
+```shell
+// 显示
+sudo spctl --master-disable
+
+// 隐藏
+sudo spctl --master-enable
+```
+
+
+
+![resources.png](./sw/resources.png)
+
 ### Alfred
 
 [下载地址](https://github.com/Rain120/Free-Source/blob/master/Mac%20Tools/Alfred_4.0.1%20b1078-EN.dmg)
