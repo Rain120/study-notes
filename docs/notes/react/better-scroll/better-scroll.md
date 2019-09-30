@@ -8,16 +8,25 @@
 - 零依赖：基于原生 JS 实现的，不依赖任何框架。完美运用于 Vue、React 等 MVVM 框架。
 - 插件灵活：提供了插件机制，便于对基础滚动进行功能扩展。
 
+### 为什么要做这个？
+
+- 学习`React Hooks`的使用
+- 提高自己的前端开发技能
+- 学习如何分享以及增强自己的演说能力
+
 ### 实践内容
 
 `react`: `16.8.6`
 
 `better-scroll`: `2.0.0-bate.2`
 
+- [基础组件开发]()
 - [Slider 组件开发](notes/react/better-scroll/slider.md) 
 - [Sticky 组件开发](notes/react/better-scroll/sticky.md)
 - `SlideMenu`
 - `CascaMenu`
+- `Pullup`
+- `PullDown`
 
 接下来我会以视频的方式，来讲解如何开发这些组件。
 

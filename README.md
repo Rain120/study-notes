@@ -40,6 +40,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
     - [React better-scroll实践](notes/react/better-scroll/better-scroll.md)
       - [Slider 组件开发](notes/react/better-scroll/slider.md)
       - [Sticky 组件开发](notes/react/better-scroll/sticky.md)
+    - [React Hooks 学习](notes/react/hooks/hooks.md)
   - [Vue](notes/vue/guide.md)
     - [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
     - [Vue之网易云音乐横向菜单滑动的实现](notes/vue/slide-menu/slide-menu.md)
