@@ -1,3 +1,19 @@
+### 提示：'软件已损坏，打不开' 或 '不是Mac Appstore下载'
+
+![mac-software-broken.png](./sw/mac-software-broken.png)
+
+```shell
+// 显示
+sudo spctl --master-disable
+
+// 隐藏
+sudo spctl --master-enable
+```
+
+
+
+![resources.png](./sw/resources.png)
+
 ### Alfred
 
 [下载地址](https://github.com/Rain120/Free-Source/blob/master/Mac%20Tools/Alfred_4.0.1%20b1078-EN.dmg)
@@ -183,7 +199,7 @@ F12 / Shift + Ctrl + I
 
    
 
-### [Cleanmymac](https://macpaw.com/cleanmymac) 
+### [Cleanmymac](https://macpaw.com/cleanmymac) -> [CleanMyMacx 4.0.4 破解版](https://github.com/Rain120/Free-Source/releases/tag/0.0.24)
 
 > 它可以流畅地与系统性能相结合，静默清理、记录更新、清洁缓存、快速和安全删除、卸载应用程序和清空回收站等重要功能。节省硬盘空间，提高电脑的速度，CleanMyMac X 会使您的Mac更出色
 

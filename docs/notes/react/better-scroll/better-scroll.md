@@ -8,20 +8,31 @@
 - 零依赖：基于原生 JS 实现的，不依赖任何框架。完美运用于 Vue、React 等 MVVM 框架。
 - 插件灵活：提供了插件机制，便于对基础滚动进行功能扩展。
 
+### 为什么要做这个？
+
+- 学习`React Hooks`的使用
+- 提高自己的前端开发技能
+- 学习如何分享以及增强自己的演说能力
+
 ### 实践内容
 
 `react`: `16.8.6`
 
 `better-scroll`: `2.0.0-bate.2`
 
+- [基础组件开发]()
 - [Slider 组件开发](notes/react/better-scroll/slider.md) 
 - [Sticky 组件开发](notes/react/better-scroll/sticky.md)
 - `SlideMenu`
 - `CascaMenu`
+- `Pullup`
+- `PullDown`
 
 接下来我会以视频的方式，来讲解如何开发这些组件。
 
 <iframe src="https://codesandbox.io/embed/react-better-scroll-8gghg?autoresize=1&eslint=1&fontsize=14" title="react-better-scroll" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+
 ### 参考资料
 
 [BetterScroll 2.x官方文档](https://better-scroll.github.io/docs/en-US/)

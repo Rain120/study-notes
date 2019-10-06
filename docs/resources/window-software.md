@@ -15,12 +15,11 @@
 [火柴](http://huochaipro.com/)(原*火萤酱*)是一款效率神器软件，支持Windows、Mac系统。具备文件秒搜，局域网秒传文件，局域网聊天的强大功能。
 
 <video controls="controls" src="https://skincdn.huoying666.com/jimg/v.mp4" id="v1" width="800" height="450" loop="loop" preload="metadata" poster="https://skincdn.huoying666.com/jimg/video_mask.png" webkit-playsinline="true" playsinline="true"></video>
-
 ### [Typora](https://typora.io/)
 
 一款支持实时预览的` Markdown` 文本编辑器。它有 `OS X`、`Windows`、`Linux` 三个平台的版本，并且由于仍在测试中，是完全免费的。
 
-<video muted="muted" preload="preload" loop="loop" style="border-radius: 8px;box-shadow: 0px 0px 8px 3px #ccc;" src="https://typora.io/img/beta.mp4"></video>
+<video muted="muted" preload="preload" loop="loop" style="width=100%;" src="https://typora.io/img/beta.mp4"></video>
 
 ![typro.png](./sw/typro.png)
 
