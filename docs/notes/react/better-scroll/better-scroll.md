@@ -10,7 +10,7 @@
 
 ### 为什么要做这个？
 
-- 学习`React Hooks`的使用
+- 学习`React Hooks`的使用(暂未使用`hooks`相关知识)
 - 提高自己的前端开发技能
 - 学习如何分享以及增强自己的演说能力
 
@@ -31,7 +31,32 @@
 接下来我会以视频的方式，来讲解如何开发这些组件。
 
 <iframe src="https://codesandbox.io/embed/react-better-scroll-8gghg?autoresize=1&eslint=1&fontsize=14" title="react-better-scroll" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+### 遇到的问题
 
+- `create-react-app`项目在`npm run build`后，`index.html`的路径`/static/xxx`导致资源找不到
+
+  > 在`public/index.html`中的注释说道
+  >
+  > Notice the use of %PUBLIC_URL% in the tags above. It will be replaced with the URL of the `public` folder during the build. Only files inside the `public` folder can be referenced from the HTML. Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will work correctly both with client-side routing and a non-root public URL. Learn how to configure a non-root public URL by running `npm run build`.
+  >
+  > 使用了`％PUBLIC_URL％`的路径在构建期间，它将被`public`文件夹的`URL`替换，`HTML`只能引用`public`文件夹中的文件。
+
+  官方还在项目中注入了`process.env.PUBLIC_URL`环境变量，同样引用到`public`目录，具体可以查看[官方文档 - Using the Public Folder](https://create-react-app.dev/docs/using-the-public-folder)和到`config/env.js`中查找先关内容。
+
+  > Useful for resolving the correct path to static assets in `public`. For example, <img src={process.env.PUBLIC_URL + '/img/logo.png'} />. This should only be used as an escape hatch. Normally you would put images into the `src` and `import` them in code to get their paths.
+
+  **解决办法:**
+
+  在`package.json`中增加这一条属性即可
+
+  ```json
+  // package.json
+  {
+    "homepage": "."
+  }
+  ```
+
+  
 
 ### 参考资料
 

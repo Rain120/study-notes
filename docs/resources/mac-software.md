@@ -203,6 +203,8 @@ F12 / Shift + Ctrl + I
 
 > 它可以流畅地与系统性能相结合，静默清理、记录更新、清洁缓存、快速和安全删除、卸载应用程序和清空回收站等重要功能。节省硬盘空间，提高电脑的速度，CleanMyMac X 会使您的Mac更出色
 
+**Note:** 不知道为什么总会自动更新，请自己保存安装包，更新就删除，重新安装。
+
 ![cleanmymac](./sw/cleanmymac.png)
 
 ### [Mounty](https://mounty.app/)
