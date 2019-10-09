@@ -20,7 +20,7 @@
 
 `better-scroll`: `2.0.0-bate.2`
 
-- [基础组件开发]()
+- [基础组件Scroll开发](notes/react/better-scroll/scroll.md)
 - [Slider 组件开发](notes/react/better-scroll/slider.md) 
 - [Sticky 组件开发](notes/react/better-scroll/sticky.md)
 - `SlideMenu`
@@ -33,7 +33,6 @@
 [Online Demo](https://rain120.github.io/better-scroll-for-react-usage/dist/#/)
 
 <iframe src="https://codesandbox.io/embed/react-better-scroll-8gghg?autoresize=1&eslint=1&fontsize=14" title="react-better-scroll" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-
 
 ### 遇到的问题
 
