@@ -67,7 +67,7 @@
 * [`Git`学习](notes/git-npm/guide.md)
 
    * [你必须知道的`Git`命令](notes/git-npm/you-must-know-git-commands.md)
-   * [Github Actions](notes/git-npm/github-action.md)
+   * [Github Actions实践](notes/git-npm/github-action.md)
    * [Git配置多个SSH Key](notes/git-npm/git-config-multiple-ssh.md)
    * [Npm Scripts](notes/git-npm/npm-scripts.md)
    * [Npm 包发布笔记](notes/git-npm/npm-publish.md)
