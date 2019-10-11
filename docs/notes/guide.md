@@ -24,6 +24,7 @@
    - [JS Tips](notes/tips/js-tips.md)
    - [Webpack Tips](notes/tips/webpack-tips.md)
    - [Typescript Tips](notes/tips/typescript-tips.md)
+   - [Email Tips](notes/tips/email-tips.md)
 
 * [Webpack](notes/webpack/guide.md)
 
@@ -50,7 +51,7 @@
    
 * [移动端](notes/mobile/guide.md)
 
-   * Charles抓包https手机配置](notes/mobile/charles-https-mobile-config.md)
+   * [Charles抓包https手机配置](notes/mobile/charles-https-mobile-config.md)
    * [移动端Tips](notes/mobile/mobile-tips.md)
 
 * [Linux](notes/linux/guide.md)
@@ -71,7 +72,7 @@
    * [Git配置多个SSH Key](notes/git-npm/git-config-multiple-ssh.md)
    * [Npm Scripts](notes/git-npm/npm-scripts.md)
    * [Npm 包发布笔记](notes/git-npm/npm-publish.md)
-   * [[Npm 知识储备](notes/git-npm/npm-knowledge-reserve.md)
+   * [Npm 知识储备](notes/git-npm/npm-knowledge-reserve.md)
    * [Npx如何run](notes/git-npm/how-npx-to-run.md)
 
 * [日常错误笔记](notes/error-qa/guide.md)

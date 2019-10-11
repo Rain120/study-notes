@@ -2,3 +2,4 @@
 * [JS Tips](notes/tips/js-tips.md)
 * [Webpack Tips](notes/tips/webpack-tips.md)
 * [Typescript Tips](notes/tips/typescript-tips.md)
+* [Email Tips](notes/tips/email-tips.md)

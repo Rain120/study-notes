@@ -17,6 +17,7 @@
       - [JS Tips](notes/tips/js-tips.md)
       - [Webpack Tips](notes/tips/webpack-tips.md)
       - [Typescript Tips](notes/tips/typescript-tips.md)
+      - [Email Tips](notes/tips/email-tips.md)
    * [Webpack](notes/webpack/guide.md)
       * [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
    * [React](notes/react/guide.md)
