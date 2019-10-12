@@ -51,6 +51,8 @@
    * [日常错误笔记](notes/error-qa/guide.md)
       * [Mysql错误笔记](notes/error-qa/mysql/note-qa.md)
       * [Node & Git错误笔记](notes/error-qa/node-git/note-qa.md)
+   * [VS Code相关](notes/vscode/guide.md)
+      - [VS Code Tips](notes/vscode/tips.md)
 
 <!--  资源集合 -->
 
