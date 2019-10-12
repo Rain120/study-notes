@@ -20,26 +20,43 @@
 
 ![set_node_yml.png](./images/set_node_yml.png)
 
+
+
 我们发现这个`workflow`会帮我们`check node`的版本以及提供一些简单的流程。
 
 我们目前只要让他执行
 
 ```shell
 npm install
+npm run changelog
 npm run build
 ```
 
 所以我们的配置如下
 
+![edit-node-yml.png](./images/edit-node-yml.png)
+
 ![nodejs_yml.png](./images/nodejs_yml.png)
+
+
 
 设置完了之后，我们点击进入
 
 ![workflow.png](./images/workflow.png)
 
+
+
 👉有个执行按钮
 
+![run_yml1.png](./images/run_yml1.png)
+
+`CI`完成状态
+
 ![run_yml.png](./images/run_yml.png)
+
+`commit`提示`CI`成功失败
+
+![push_node_build.png](./images/push_node_build.png)
 
 ### 参考资料
 
