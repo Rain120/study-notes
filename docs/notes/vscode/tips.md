@@ -6,9 +6,9 @@
   以 , 分隔多个筛选条件
   ```
 
-  
 
 ![search-exclude.png](./images/search-exclude.png)
 
+- 设置
 
-
+  ![search-setting](./images/search-setting.png)
