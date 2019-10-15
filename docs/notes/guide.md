@@ -65,4 +65,5 @@
    * [Mysql错误笔记](notes/error-qa/mysql/note-qa.md)
 * [VS Code相关](notes/vscode/guide.md)
    * [VS Code Tips](notes/vscode/tips.md)
+   * [VS Code 插件](notes/vscode/extensions.md)
 
