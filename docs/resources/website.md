@@ -31,11 +31,11 @@
 
 在线代码编辑器,支持`React` ,`Vue`, `Angular`, `Web`，和你平常耍的`VSCode`快捷键完全一致，还可以在线安装依赖，一键同步到你的`GitHub`，除了有点卡，其他的好耍到爆炸
 
-![codesanbox.png](./wf/codesanbox.png)
+![codesanbox.png](./wf/codesanbox.png ":no-zoom")
 
 [Codepen](https://codepen.io/)
 
-![codepen](./fe/codepen.png)
+![codepen](./fe/codepen.png ":no-zoom")
 
 [JSBin](http://jsbin.com/?html,css,js,output)
 
@@ -43,7 +43,7 @@
 
 [Carbon](https://carbon.now.sh/)
 
-![carbon](./wf/carbon.png)
+![carbon](./wf/carbon.png ":no-zoom")
 
 [注释 - 字符串写法](http://asciiflow.com/)
 
@@ -53,17 +53,17 @@
 
 [Github](<https://github.com/mozilla/send>)
 
-![firefox-send](./wf/firefox-send.png)
+![firefox-send](./wf/firefox-send.png ":no-zoom")
 
 #### 文件格式转换
 
 [SmallPDF](https://smallpdf.com/)
 
-![smallpdf](./wf/smallpdf.png)
+![smallpdf](./wf/smallpdf.png ":no-zoom")
 
 [ILovePDF](https://www.ilovepdf.com/zh-tw)
 
-![Ilovepdf](./wf/Ilovepdf.png)
+![Ilovepdf](./wf/Ilovepdf.png ":no-zoom")
 
 [CleverPDF](https://www.cleverpdf.com/cn)
 
@@ -77,7 +77,7 @@
 
 [PPT制作](<https://slides.com/>)
 
-![slides](./wf/slides.png)
+![slides](./wf/slides.png ":no-zoom")
 
 [方方格子](http://www.ffcell.com/index.aspx)
 
@@ -87,19 +87,19 @@
 
 [XMind](<https://www.xmind.cn/>)
 
-![xmind](./wf/xmind.png)
+![xmind](./wf/xmind.png ":no-zoom")
 
 [Mindmeister](<https://www.mindmeister.com/zh>)
 
-![mindmeister](./wf/mindmeister.png)
+![mindmeister](./wf/mindmeister.png ":no-zoom")
 
 [Draw.IO](<https://www.draw.io/>)
 
-![drawio](./wf/drawio.png)
+![drawio](./wf/drawio.png ":no-zoom")
 
 [Notion](https://www.notion.so/?r=a8b6e24bd86f4597a0b26266f6f8aee9)
 
-![notion](./wf/notion.png)
+![notion](./wf/notion.png ":no-zoom")
 
 [Sketchboard](<https://sketchboard.me/>)
 
@@ -137,7 +137,7 @@
 
 > 提供的视频教程非常丰富并且质量很高，包括：PS 教程、手机摄影教程、Ai 做图教程、Excel 教程、Word 教程、PPT 教程、Pr 视频剪辑教程、Ae 视频特效教程、Au 音频教程、Flash 教程、做网页教程、css 样式教程、js 教程、Cad 制图教程、电路制作教程、Windows 教程、色彩搭配教程、Prezi 演示教程、Keynote 教程、做图标教程。
 
-![oeasy](./wf/oeasy.png)
+![oeasy](./wf/oeasy.png ":no-zoom")
 
 [2uts](https://2uts.com/)
 

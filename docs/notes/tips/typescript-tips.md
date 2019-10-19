@@ -10,7 +10,7 @@ npx create-react-app my-app --typescript
 
 
 
-![create-react-app-baseUrl.png](./images/create-react-app-baseUrl.png)
+![create-react-app-baseUrl.png](./images/create-react-app-baseUrl.png ":no-zoom")
 
 - [create-react-app启动报错](https://github.com/facebook/create-react-app/issues/6850)
 
@@ -22,7 +22,7 @@ npx create-react-app my-app --typescript
   }
   ```
 
-![absolute-import.png](./images/absolute-import.png)
+![absolute-import.png](./images/absolute-import.png ":no-zoom")
 
 旧版本
 

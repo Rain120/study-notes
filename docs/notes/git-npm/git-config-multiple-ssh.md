@@ -41,7 +41,7 @@ IdentityFile ~/.ssh/id_rsa_github
 ...
 ```
 
-![ssh-pwd](./images/ssh-pwd.png)
+![ssh-pwd](./images/ssh-pwd.png ":no-zoom")
 
 **Note**: `ll` -> `ls -al`
 

@@ -48,7 +48,7 @@ vim nginx.conf
 
 [`homebrew`详见](https://brew.sh/)
 
-![cd-nginx](./images/cd-nginx.png)
+![cd-nginx](./images/cd-nginx.png ":no-zoom")
 
 #### Nginx 参数列表
 
@@ -76,7 +76,7 @@ vim nginx.conf
 
 `Event Use`支持的事件模型
 
-![events-use](./images/events-use.png)
+![events-use](./images/events-use.png ":no-zoom")
 
 [`Events`详见](https://www.myfreax.com/nginx-event-module-introduction/)
 
@@ -244,7 +244,7 @@ location  / some / path /  {
 
 修改 `http` `server`中的配置
 
-![nginx-config](./images/nginx-config.png)
+![nginx-config](./images/nginx-config.png ":no-zoom")
 
 启动`Nginx`
 
@@ -272,7 +272,7 @@ nginx -s stop
 
 因为我已经启动了，所以就重启一下`Nginx`即可
 
-![nginx-reload](./images/nginx-reload.png)
+![nginx-reload](./images/nginx-reload.png ":no-zoom")
 
 ####  `Linux`安装`Nginx`
 
@@ -286,7 +286,7 @@ nginx -s stop
 pstree
 ```
 
-![pstree](./images/pstree.png)
+![pstree](./images/pstree.png ":no-zoom")
 
 查找`Nginx`的位置
 
@@ -294,13 +294,13 @@ pstree
 ps -aux | grep nginx
 ```
 
-![server-where-nginx](./images/server-where-nginx.png)
+![server-where-nginx](./images/server-where-nginx.png ":no-zoom")
 
 进入`nginx`的目录
 
-![212-server-nginx](./images/212-server-nginx.png)
+![212-server-nginx](./images/212-server-nginx.png ":no-zoom")
 
-![nginx-conf](./images/nginx-conf.png)
+![nginx-conf](./images/nginx-conf.png ":no-zoom")
 
 然后配置`nginx.conf`文件即可
 
@@ -374,7 +374,7 @@ http {
    docker search nginx
    ```
 
-   ![docker-search](./images/docker-search.png)
+   ![docker-search](./images/docker-search.png ":no-zoom")
 
 2. 拉取官方镜像
 
@@ -390,7 +390,7 @@ http {
    docker images nginx
    ```
 
-   ![docker-images](./images/docker-images.png)
+   ![docker-images](./images/docker-images.png ":no-zoom")
 
 #### `Server Tree`
 
@@ -409,7 +409,7 @@ tree -C -L 3 -I '*node_modules*'
 │       └── router.js
 ```
 
-![file-tree](./images/file-tree.png)
+![file-tree](./images/file-tree.png ":no-zoom")
 
 #### `Node Server`
 
@@ -715,7 +715,7 @@ npm install express mysql body-parser -S
 npm run build
 ```
 
-![vue-build](./images/vue-build.png)
+![vue-build](./images/vue-build.png ":no-zoom")
 
 因为我的`Server`端是`Express`写的，启动`Server`需要使用`Node`，所以我们需要在服务器上安装`Node`.
 
@@ -745,19 +745,19 @@ yum install -y nodejs
 nohup node website/server/app.js &
 ```
 
-![node-nohup](./images/node-nohup.png)
+![node-nohup](./images/node-nohup.png ":no-zoom")
 
 **`nohup`**:可以将程序以忽略挂起信号的方式运行起来，被运行的程序的输出信息将不会显示到终端。
 
 无论是否将 `nohup `命令的输出重定向到终端，输出都将附加到当前目录的 `nohup.out`文件中。如果当前目录的 `nohup.out` 文件不可写，输出重定向到`$HOME/nohup.out`文件中。如果没有文件能创建或打开以用于追加，那么 [`command`](http://man.linuxde.net/command) 参数指定的命令不可调用。如果标准错误是一个终端，那么把指定的命令写给标准错误的所有输出作为标准输出重定向到相同的文件描述符。
 
-![nohup-out](./images/nohup-out.png)
+![nohup-out](./images/nohup-out.png ":no-zoom")
 
 到这里，我们的`Web`，`Node Server` ，`Nginx`都已经配置并启动好了，我们只需要到浏览器输入`你的服务器IP:8080`即可.
 
 [`Nginx`众多概念详见官方词汇表](https://www.nginx.com/resources/glossary/)
 
-![nginx-glossary](./images/nginx-glossary.png)
+![nginx-glossary](./images/nginx-glossary.png ":no-zoom")
 
 - [什么是应用交付？](https://www.nginx.com/resources/glossary/application-delivery/)
 - [什么是应用交付控制器（ADC）？](https://www.nginx.com/resources/glossary/application-delivery-controller/)

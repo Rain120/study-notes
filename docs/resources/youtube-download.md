@@ -2,9 +2,13 @@
 
 #### 视频(2019-07-13更新)
 
-[Softorino YouTube Converter for Mac](https://github.com/Rain120/Free-Source/blob/master/Mac%20Tools/Softorino%20YouTube%20Converter%202_2.1.7_WaitsUn.com.dmg) 
+[Softorino YouTube Converter for Mac](https://github.com/Rain120/Free-Source/blob/master/Mac%20Tools/Softorino%20YouTube%20Converter%202_2.1.7_WaitsUn.com.dmg)
 
-[Videoder](https://www.videoder.com/zh)
+[converto](https://www.converto.io/)
+
+[ytube.win](http://ytube.win/)
+
+~~[Videoder](https://www.videoder.com/zh)~~
 
 [youtube-dlb](http://ytdl-org.github.io/youtube-dl/index.html)
 
@@ -16,7 +20,7 @@ youtube-dl -F [url]
 youtube-dl -f [code] [url]
 ```
 
-![youtube-dl-F](./others/youtube-dl-F.png)
+![youtube-dl-F](./others/youtube-dl-F.png ":no-zoom")
 
 ~~[urlgot](https://www.urlgot.com/)~~
 

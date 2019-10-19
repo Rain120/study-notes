@@ -16,59 +16,59 @@
 
 > React是一个为数据提供渲染为HTML视图的开源JavaScript 库。React视图通常采用包含以自定义HTML标记规定的其他组件的组件渲染。React为程序员提供了一种子组件不能直接影响外层组件的模型，数据改变时对HTML文档的有效更新，和现代单页应用中组件之间干净的分离。
 
-![reactjs](./fe/reactjs.png)
+![reactjs](./fe/reactjs.png ":no-zoom")
 
 [React - Antd](https://ant.design/index-cn):  `antd` 是基于 Ant Design 设计体系的 React UI 组件库，主要用于研发企业级中后台产品。
 
-![react-antd](./fe/react-antd.png)
+![react-antd](./fe/react-antd.png ":no-zoom")
 
 [UxCore](http://uxco.re/): 为企业级后台而生的PC组件库。
 
-![uxcore](./fe/uxcore.png)
+![uxcore](./fe/uxcore.png ":no-zoom")
 
 
 
 [ZanUI](https://www.youzanyun.com/zanui): PC、移动、小程序
 
-![zanui](./fe/zanui.png)
+![zanui](./fe/zanui.png ":no-zoom")
 
 
 
 [React.part](https://react.parts/): 查找`React`的组件
 
-![react-parts](./fe/react-parts.png)
+![react-parts](./fe/react-parts.png ":no-zoom")
 
 ##### [Vue](https://vuefe.cn/)
 
 > Vue.js是一个用于创建用户界面的开源JavaScript框架，也是一个创建单页应用的Web应用框架。 2016年一项针对JavaScript的调查表明，Vue有着89%的开发者满意度。 在GitHub上，该项目平均每天能收获95颗星，为Github有史以来星标数第3多的项目。
 
-![vuejs](./fe/vuejs.png)
+![vuejs](./fe/vuejs.png ":no-zoom")
 
 [Vue - Antd](https://vue.ant.design/docs/vue/introduce/)
 
-![vue-antd](./fe/vue-antd.png)
+![vue-antd](./fe/vue-antd.png ":no-zoom")
 
 [IView](https://www.iviewui.com/): 一套基于 Vue.js 的高质量
 
-![iview](./fe/iview.png)
+![iview](./fe/iview.png ":no-zoom")
 
 [Element](http://element-cn.eleme.io/#/zh-CN): Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
 
-![element](./fe/element.png)
+![element](./fe/element.png ":no-zoom")
 
 [Mint UI](https://mint-ui.github.io/#!/zh-cn): 基于 Vue.js 的移动端组件库
 
-![Mint-UI](./fe/Mint-UI.png)
+![Mint-UI](./fe/Mint-UI.png ":no-zoom")
 
 [VUX](https://vux.li/#/?id=%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8): 一个凑合的 Vue.js 移动端 UI 组件库
 
-![vux](./fe/vux.png)
+![vux](./fe/vux.png ":no-zoom")
 
 [Vue-Map](https://github.com/ElemeFE/vue-amap): 基于 Vue 2.x 和高德地图的地图组件
 
 [文档](https://elemefe.github.io/vue-amap/#/)
 
-![vue-amap](./fe/vue-amap.png)
+![vue-amap](./fe/vue-amap.png ":no-zoom")
 
 
 
@@ -78,17 +78,17 @@
 
 [Express](https://expressjs.com/)： 高度包容、快速而极简的 [Node.js](http://nodejs.org/) Web 框架
 
-![express](./fe/express.png)
+![express](./fe/express.png ":no-zoom")
 
 [koa](https://koajs.com/)
 
 > Koa 是一个新的 web 框架，由 Express 幕后的原班人马打造， 致力于成为 web 应用和 API 开发领域中的一个更小、更富有表现力、更健壮的基石。 通过利用 async 函数，Koa 帮你丢弃回调函数，并有力地增强错误处理。 Koa 并没有捆绑任何中间件， 而是提供了一套优雅的方法，帮助您快速而愉快地编写服务端应用程序。
 
-![koa](./fe/koa.png)
+![koa](./fe/koa.png ":no-zoom")
 
 [egg](https://eggjs.org/): 为企业级框架和应用而生
 
-![egg](./fe/egg.png)
+![egg](./fe/egg.png ":no-zoom")
 
 
 
@@ -100,33 +100,33 @@
 
 [现代 Javascript 教程](https://zh.javascript.info/): 从基础知识到高阶主题，只需既简单又详细的解释。
 
-![js-info](./fe/js-info.png)
+![js-info](./fe/js-info.png ":no-zoom")
 
 [Philip Roberts](http://latentflip.com/): **Visualizing the javascript runtime at runtime**
 
 [Github](https://github.com/latentflip/loupe) -> [Demo](http://latentflip.com/loupe)
 
-![philip-roberts](./fe/philip-roberts.png)
+![philip-roberts](./fe/philip-roberts.png ":no-zoom")
 
 [Lodash](https://lodash.com/)
 
-![lodash](./fe/lodash.png)
+![lodash](./fe/lodash.png ":no-zoom")
 
 [Ramda](https://ramdajs.com/)
 
-![ramda](./fe/ramda.png)
+![ramda](./fe/ramda.png ":no-zoom")
 
 [Underscore](https://underscorejs.org/)
 
 [Github](<https://github.com/jashkenas/underscore>)
 
-![underscorejs](./fe/underscorejs.png)
+![underscorejs](./fe/underscorejs.png ":no-zoom")
 
  [30 seconds of code](https://30secondsofcode.org/index)
 
 [Github](<https://github.com/30-seconds/30-seconds-of-code>)
 
-![30secondsofcode](./fe/30secondsofcode.png)
+![30secondsofcode](./fe/30secondsofcode.png ":no-zoom")
 
 [AST Explorer](<https://astexplorer.net/>)
 
@@ -134,15 +134,15 @@
 
 [Easy-Mock](https://easy-mock.com/): 高效伪造数据
 
-![easy-mock](./fe/easy-mock.png)
+![easy-mock](./fe/easy-mock.png ":no-zoom")
 
 [Mock.js](http://mockjs.com/):生成随机数据，拦截 Ajax 请求
 
-![mock-js](./fe/mockjs.png)
+![mock-js](./fe/mockjs.png ":no-zoom")
 
 [Rapid-Api](https://rapidapi.com/)
 
-![rapidapi](./fe/rapidapi.png)
+![rapidapi](./fe/rapidapi.png ":no-zoom")
 
 
 
@@ -152,23 +152,23 @@
 
 [Github](<https://github.com/mrdoob/three.js/>)
 
-![threejs](./fe/threejs.png)
+![threejs](./fe/threejs.png ":no-zoom")
 
 [Animate.css](https://daneden.github.io/animate.css/)
 
-![animate-css](./fe/animate-css.png)
+![animate-css](./fe/animate-css.png ":no-zoom")
 
 [Animejs](https://animejs.com/)
 
-![animejs](./fe/animejs.png)
+![animejs](./fe/animejs.png ":no-zoom")
 
 [TweenMax.js](https://www.tweenmax.com.cn/)
 
-![tweenmaxjs](./fe/tweenmaxjs.png)
+![tweenmaxjs](./fe/tweenmaxjs.png ":no-zoom")
 
 [GreenSock](https://greensock.com/)
 
-![greensock](./fe/greensock.png)
+![greensock](./fe/greensock.png ":no-zoom")
 
 Notes: [11 JavaScript Animation Libraries For 2019](<https://blog.bitsrc.io/11-javascript-animation-libraries-for-2018-9d7ac93a2c59>)
 
@@ -176,7 +176,7 @@ Notes: [11 JavaScript Animation Libraries For 2019](<https://blog.bitsrc.io/11-j
 
 [Github](<https://github.com/thednp/kute.js/>)
 
-![kutejs](./fe/kutejs.png)
+![kutejs](./fe/kutejs.png ":no-zoom")
 
 [Hover](<http://ianlunn.github.io/Hover/>)
 
@@ -188,7 +188,7 @@ Notes: [11 JavaScript Animation Libraries For 2019](<https://blog.bitsrc.io/11-j
 
 [Mocha GitHub](<https://github.com/mochajs/mocha>)
 
-![mocha](./fe/mocha.png)
+![mocha](./fe/mocha.png ":no-zoom")
 
 
 
@@ -196,13 +196,13 @@ Notes: [11 JavaScript Animation Libraries For 2019](<https://blog.bitsrc.io/11-j
 
 [Chai Github](<https://github.com/chaijs/chai>)
 
-![chai](./fe/chai.png)
+![chai](./fe/chai.png ":no-zoom")
 
 [Jest](<https://jestjs.io/>)
 
 [Jest Github](<https://github.com/facebook/jest>)
 
-![jest](./fe/jest.png)
+![jest](./fe/jest.png ":no-zoom")
 
 [Karma](<http://karma-runner.github.io/latest/index.html>)
 
@@ -220,25 +220,25 @@ Notes: [11 JavaScript Animation Libraries For 2019](<https://blog.bitsrc.io/11-j
 
 [Webpack](https://webpack.js.org/)
 
-![webpack](./fe/webpack.png)
+![webpack](./fe/webpack.png ":no-zoom")
 
 [Webpack config tool](<https://createapp.dev/>): webpack 配置工具
 
-![createappdev](./fe/createappdev.png)
+![createappdev](./fe/createappdev.png ":no-zoom")
 
 
 
 [BootCDN](https://www.bootcdn.cn/): 稳定、快速、免费的前端开源项目 CDN 加速服务
 
-![bootcdn](./fe/bootcdn.png)
+![bootcdn](./fe/bootcdn.png ":no-zoom")
 
 [BootStrap](https://v4.bootcss.com/)
 
-![bootstrap](./fe/bootstrap.png)
+![bootstrap](./fe/bootstrap.png ":no-zoom")
 
 [BootsWatch](https://bootswatch.com/): Free themes for Bootstrap
 
-![bootswatch](./fe/bootswatch.png)
+![bootswatch](./fe/bootswatch.png ":no-zoom")
 
 [RxJS](https://rxjs.dev/): 使用` Observables` 的响应式编程的库，它使编写异步或基于回调的代码更容易。
 
@@ -246,17 +246,17 @@ Notes: [11 JavaScript Animation Libraries For 2019](<https://blog.bitsrc.io/11-j
 
 [中文文档](https://cn.rx.js.org/)
 
-![rxjs](./fe/rxjs.png)
+![rxjs](./fe/rxjs.png ":no-zoom")
 
 [Layui](https://www.layui.com/)
 
 [Github](https://github.com/sentsin/layui/)
 
-![layui](./fe/layui.png)
+![layui](./fe/layui.png ":no-zoom")
 
 [Awesome Lists](<https://www.prettyawesomelists.com/lists>)
 
-![awesomelists](./fe/awesomelists.png)
+![awesomelists](./fe/awesomelists.png ":no-zoom")
 
 
 
@@ -266,13 +266,13 @@ Notes: [11 JavaScript Animation Libraries For 2019](<https://blog.bitsrc.io/11-j
 
 [Github](<https://github.com/apache/incubator-echarts>)
 
-![echarts](./fe/echarts.png)
+![echarts](./fe/echarts.png ":no-zoom")
 
 [AntV](<https://antv.alipay.com/zh-cn/index.html>)
 
 [Github](<https://github.com/antvis/>)
 
-![antv](./fe/antv.png)
+![antv](./fe/antv.png ":no-zoom")
 
 [G2](<https://antv.alipay.com/zh-cn/g2/3.x/index.html>)
 
@@ -294,13 +294,13 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Github](<https://github.com/recharts/recharts/>)
 
-![recharts](./fe/recharts.png)
+![recharts](./fe/recharts.png ":no-zoom")
 
 
 
 [Datamatic](<https://datamatic.io/>)
 
-![datamatic](./fe/datamatic.png)
+![datamatic](./fe/datamatic.png ":no-zoom")
 
 
 
@@ -308,7 +308,7 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Awesomes前端开发资源](https://www.awesomes.cn/)
 
-![awesomes-web-resource](./fe/awesomes-web-resource.png)
+![awesomes-web-resource](./fe/awesomes-web-resource.png ":no-zoom")
 
 [语雀 IT 百科精品知识库](https://www.yuque.com/yuque/blog/yuque-info-tech-encyclopedia)
 
@@ -316,37 +316,37 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Rappid算法学习](http://resources.jointjs.com/)
 
-![rappid-ast](./fe/rappid-ast.png)
+![rappid-ast](./fe/rappid-ast.png ":no-zoom")
 
 [AI算法工程师手册](http://www.huaxiaozhuan.com/)
 
 [机器深度学习](http://redstonewill.com/)
 
-![depp-ast-redstone](./fe/depp-ast-redstone.png)
+![depp-ast-redstone](./fe/depp-ast-redstone.png ":no-zoom")
 
 [VisuAlgo - 数据结构和算法动态可视化 (Chinese)](https://visualgo.net/zh)
 
-![visualgo](./fe/visualgo.png)
+![visualgo](./fe/visualgo.png ":no-zoom")
 
 [Algorithm Visualizer](https://algorithm-visualizer.org/) 
 
 [Github](https://github.com/algorithm-visualizer/algorithm-visualizer)
 
-![algorithm-visualizer](./fe/algorithm-visualizer.png)
+![algorithm-visualizer](./fe/algorithm-visualizer.png ":no-zoom")
 
 [Papers With Code : the latest in machine learning](https://paperswithcode.com/)
 
-![paperswithcode](./fe/paperswithcode.png)
+![paperswithcode](./fe/paperswithcode.png ":no-zoom")
 
 [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html): 旧金山大学CS Data Structure
 
-![visualization](./fe/visualization.png)
+![visualization](./fe/visualization.png ":no-zoom")
 
 [BestofML](<https://bestofml.com/>):  收集汇总了机器学习相关的资源，包括书籍、课程、博客、论文等
 
 [Github](<https://github.com/RemoteML/bestofml>)
 
-![bestofml](./fe/bestofml.png)
+![bestofml](./fe/bestofml.png ":no-zoom")
 
 [internetfundamentals](http://internetfundamentals.com/watch/)：了解Web的工作原理，并迈出创建网页的第一步！ 一个完全免费的视频课程，适合初学者
 
@@ -362,13 +362,13 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Math ∩ Programming](https://jeremykun.com/)
 
-![Math ∩ Programming](./fe/Math-Programming.png)
+![Math ∩ Programming](./fe/Math-Programming.png ":no-zoom")
 
 
 
 [Immersive Linear Algebra](http://immersivemath.com/ila/index.html):  一本会动的线代书，O(∩_∩)O哈哈~
 
-![linear-algebra](./fe/linear-algebra.png)
+![linear-algebra](./fe/linear-algebra.png ":no-zoom")
 
 [机器学习的数学基础知识](<https://mml-book.github.io/>)
 
@@ -388,13 +388,13 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Linux命令大全](http://man.linuxde.net/)
 
-![linuxde](./fe/linuxde.png)
+![linuxde](./fe/linuxde.png ":no-zoom")
 
 [Iodide](https://alpha.iodide.io/): `Mozilla `支持的在 `Web `中实现各种数据科学的效果
 
 [Github](https://github.com/iodide-project/iodide)
 
-![Iodide](./fe/Iodide.png)
+![Iodide](./fe/Iodide.png ":no-zoom")
 
 
 
@@ -402,49 +402,49 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Iconfont](https://iconfont.cn)
 
-![iconfont](./fe/iconfont.png)
+![iconfont](./fe/iconfont.png ":no-zoom")
 
 [FontAwesome](https://fontawesome.com/)
 
-![fontawesome](./fe/fontawesome.png)
+![fontawesome](./fe/fontawesome.png ":no-zoom")
 
 [Ionicons](https://ionicons.com/)
 
-![ionicons](./fe/ionicons.png)
+![ionicons](./fe/ionicons.png ":no-zoom")
 
 
 
 [Icomoon](https://icomoon.io/)
 
-![icomoon](./fe/icomoon.png)
+![icomoon](./fe/icomoon.png ":no-zoom")
 
 
 
 [Mobiriseicons](https://mobiriseicons.com/)
 
-![mobiriseicons](./fe/mobiriseicons.png)
+![mobiriseicons](./fe/mobiriseicons.png ":no-zoom")
 
 [zwicon](https://www.zwicon.com/cheatsheet.html)
 
-![zwicon](./fe/zwicon.png)
+![zwicon](./fe/zwicon.png ":no-zoom")
 
 [unDraw](https://undraw.co/)
 
-![undraw](./fe/undraw.png)
+![undraw](./fe/undraw.png ":no-zoom")
 
 [优设](https://uiiiuiii.com/)
 
-![uiiiuiii](./fe/uiiiuiii.png)
+![uiiiuiii](./fe/uiiiuiii.png ":no-zoom")
 
 [uiforus](https://www.uiforus.com/)
 
 > 它免费提供设计素材、插件、工具，其中设计素材包括：UI 、图标、网页、插画、实物、桌面、组件、表单、字体，并且按照不同的设计软件对应的文件进行分类，包括：Photoshop 、Sketch 、Adobe Xd 、Illustrator 文件。
 
-![uiforus](./fe/uiforus.png)
+![uiforus](./fe/uiforus.png ":no-zoom")
 
 [Can I Use](<https://caniuse.com/>): 查询浏览器的特性支持情况
 
-![caniuse](./fe/caniuse.png)
+![caniuse](./fe/caniuse.png ":no-zoom")
 
 [Package Different](<https://diff.intrinsic.com/>)
 
@@ -458,15 +458,15 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Vue.js 社区](https://www.vue-js.com/)
 
-![vue-js-club](./fe/vue-js-club.png)
+![vue-js-club](./fe/vue-js-club.png ":no-zoom")
 
 [React.js社区](http://react-china.org/)
 
-![react-china](./fe/react-china.png)
+![react-china](./fe/react-china.png ":no-zoom")
 
 [掘金](https://juejin.im/timeline)
 
-![juejin](./fe/juejin.png)
+![juejin](./fe/juejin.png ":no-zoom")
 
 [InfoQ](https://www.infoq.cn/): *InfoQ* 是一个实践驱动的社区资讯站点，致力于促进软件开发领域知识与创新的传播。
 
@@ -531,11 +531,11 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Repl.it](<https://repl.it/>)
 
-![repl-it](./fe/repl-it.png)
+![repl-it](./fe/repl-it.png ":no-zoom")
 
 [Glitch](<https://glitch.com/>)
 
-![glitch](./fe/glitch.png)
+![glitch](./fe/glitch.png ":no-zoom")
 
 正则表达式可视化工具
 
@@ -543,19 +543,19 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 Regulex是一个JavaScript正则表达式可视化工具，由纯JavaScript实现，源码托管在[Github](https://github.com/JexCheng/regulex)上。
 
-![regulex](./fe/regulex.png)
+![regulex](./fe/regulex.png ":no-zoom")
 
 [Regexper](<https://regexper.com/>)
 
 `Regexper`是由`Jeff Avallone`开发的一款`JavaScript`正则表达式可视化工具，源码托管在[Github](https://github.com/javallone/regexper)上。它能够让正则表达式字符串以 `Railroad `形式图形化，便于阅读和理解。同时推荐一款 `JavaScript` 正则在线测试工具——[Regexpal](http://regexpal.com/)，可以和` Regexper` 配合使用。
 
-![regexper](./fe/regexper.png)
+![regexper](./fe/regexper.png ":no-zoom")
 
 [Debuggex](<https://www.debuggex.com/>)
 
 `Debuggex`是一个测试正则表达式的`Web`应用，它支持`JavaScript`、`Python`以及`PCRE`。
 
-![debuggex](./fe/debuggex.png)
+![debuggex](./fe/debuggex.png ":no-zoom")
 
 [前端网站导航](http://nav.web-hub.cn/)
 

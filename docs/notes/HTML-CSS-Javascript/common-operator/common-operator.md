@@ -124,7 +124,7 @@ console.log('~1:', ~1);
 console.log("~'1':", ~'1');
 ```
 
-![unary-operators](./images/unary-operators.png)
+![unary-operators](./images/unary-operators.png ":no-zoom")
 
 ##### 2. 自增 `&` 自减运算符
 
@@ -148,7 +148,7 @@ console.log('b', b);
 console.log('--b', --b);
 ```
 
-![arithmetic-operators1](./images/arithmetic-operators1.png)
+![arithmetic-operators1](./images/arithmetic-operators1.png ":no-zoom")
 
 ##### 3. 算术运算符
 
@@ -174,13 +174,13 @@ console.log('--b', --b);
 
 二进制表示规则
 
-![bitwise-show](./images/bitwise-show.png)
+![bitwise-show](./images/bitwise-show.png ":no-zoom")
 
 正数左右位移
 
-![bitwise-operators-positive-number](./images/bitwise-operators-positive-number.png)
+![bitwise-operators-positive-number](./images/bitwise-operators-positive-number.png ":no-zoom")
 
-![bitwise-positive-negative-convert](./images/bitwise-positive-negative-convert.png)
+![bitwise-positive-negative-convert](./images/bitwise-positive-negative-convert.png ":no-zoom")
 
 ```javascript
 console.log('8 << 3', 8 << 3);
@@ -191,7 +191,7 @@ console.log('8 >>> 3', 8 >>> 3);
 console.log('-1 >>> 3', -1 >>> 3);
 ```
 
-![Displacement operator](./images/displacement-operator.png)
+![Displacement operator](./images/displacement-operator.png ":no-zoom")
 
 ##### 5. [位运算符(**Bitwise operators**)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
 
@@ -264,7 +264,7 @@ console.log('2 | 3:', 2 | 3);
 console.log('~3:', ~3);
 ```
 
-![bitwise-operators](./images/bitwise-operators.png)
+![bitwise-operators](./images/bitwise-operators.png ":no-zoom")
 
 
 
@@ -295,7 +295,7 @@ console.log('~~ -11.13:', ~~ -11.13);
 console.log('~ -11.13:', ~ -11.13);
 ```
 
-![bitwise-operators-2](./images/bitwise-operators-2.png)
+![bitwise-operators-2](./images/bitwise-operators-2.png ":no-zoom")
 
 ##### 6. 关系运算符
 
@@ -323,7 +323,7 @@ console.log('0 == null:', 0 == null);
 console.log('0 === null:', 0 === null);
 ```
 
-![==&===](./images/==&===.png)
+![==&===](./images/==&===.png ":no-zoom")
 
 ##### [7. 逻辑运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
 
@@ -398,7 +398,7 @@ console.log(true && true || false);
 console.log(true && true || true);
 ```
 
-![logical-operators](./images/logical-operators.png)
+![logical-operators](./images/logical-operators.png ":no-zoom")
 
 ```javascript
 console.log('!true', !true);
@@ -418,7 +418,7 @@ console.log('!!{}', !!{});
 
 
 
-![!&!!](./images/!&!!.png)
+![!&!!](./images/!&!!.png ":no-zoom")
 
 ##### 8. 条件（三元）运算符
 
@@ -433,7 +433,7 @@ console.log(false ? 'true' : true ? 'false true' : 'false');
 
 ```
 
-![conditional-operator](./images/conditional-operator.png)
+![conditional-operator](./images/conditional-operator.png ":no-zoom")
 
 ##### [9. 赋值运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
 

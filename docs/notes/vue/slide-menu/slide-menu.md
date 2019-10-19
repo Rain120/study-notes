@@ -2,7 +2,7 @@
 
 之前在学习的时候有稍微捣鼓一下网易云音乐，主要是为了学习Vue，巩固基础知识，然后看到这个横向菜单，当然个人也喜欢看球，所以每次看腾讯NBA的时候总是会想这个是这样实现的，于是借助之前还没写完的demo，完成这个横向菜单的实现，废话不多说，先上效果图
 
-![网易云音乐横向菜单](./images/slide-menu.gif)
+![网易云音乐横向菜单](./images/slide-menu.gif ":no-zoom")
 
 从使用虎牙直播横向菜单的体验得到，我们的横向菜单的业务逻辑如下：
 
@@ -29,7 +29,7 @@
 ```
 
 通过使用插件Vue来调试项目
-![Vue DOM](./images/vue-devtools.png)
+![Vue DOM](./images/vue-devtools.png ":no-zoom")
 
 其中tabs包括菜单项名和它的路由
 ```
@@ -175,7 +175,7 @@ methods: {
   }
 ```
 
-![渲染的DOM结构](./images/slide-menu-dom.png)
+![渲染的DOM结构](./images/slide-menu-dom.png ":no-zoom")
 
 很多时候我们在使用better-scroll的时候，发现这个实例对象已经初始化，但是不能滑动，是因为，Vue是异步更新数据的，所以我们需要异步计算它实际内容的宽度或者高度，Vue提供一个了this.$nextTick()这个hock来实现，这个API是在下次 DOM 更新循环结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM。
 

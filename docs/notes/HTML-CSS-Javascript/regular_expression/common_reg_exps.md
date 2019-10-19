@@ -20,11 +20,11 @@
 
 英文
 
-![reg-special-symbol-us](./images/reg-special-symbol-us.png)
+![reg-special-symbol-us](./images/reg-special-symbol-us.png ":no-zoom")
 
 中文
 
-![reg-special-symbol-zh](./images/reg-special-symbol-zh.png)
+![reg-special-symbol-zh](./images/reg-special-symbol-zh.png ":no-zoom")
 
 **测试**
 
@@ -66,15 +66,15 @@ var reg = /[~!@#$%^&*()/\|,.<>?"'();:_+-=\[\]{}\s+]/ig;
 
 ``MSDN`中定义的`DateTime`对象`
 
-![reg-date-msdn](./images/reg-date-msdn.png)
+![reg-date-msdn](./images/reg-date-msdn.png ":no-zoom")
 
 `Unix`时间戳
 
-![reg-date-unix](./images/reg-date-unix.png)
+![reg-date-unix](./images/reg-date-unix.png ":no-zoom")
 
 `YYYY-MM-DD HH:mm:ss`
 
-![reg-date-ymd](./images/reg-date-ymd.png)
+![reg-date-ymd](./images/reg-date-ymd.png ":no-zoom")
 
 **测试**
 
@@ -132,11 +132,11 @@ dates.map(date => {
 
 `24h`
 
-![reg-time-24](./images/reg-time-24.png)
+![reg-time-24](./images/reg-time-24.png ":no-zoom")
 
 `12h`
 
-![reg-time-12](./images/reg-time-12.png)
+![reg-time-12](./images/reg-time-12.png ":no-zoom")
 
 **测试**
 
@@ -227,7 +227,7 @@ reg_24 false
  /^\w+([-_+.]+\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/
 ```
 
-![reg-email](./images/reg-email.png)
+![reg-email](./images/reg-email.png ":no-zoom")
 
 **测试**
 
@@ -317,7 +317,7 @@ _Rainy@qq.com true
 
 191, 199
 
-![2019_phone_numbers](./images/2019_phone_numbers.png)
+![2019_phone_numbers](./images/2019_phone_numbers.png ":no-zoom")
 
 **正则表达式**
 
@@ -330,11 +330,11 @@ _Rainy@qq.com true
 
 严格模式
 
-![reg-phone-number-s](./images/reg-phone-number-s.png)
+![reg-phone-number-s](./images/reg-phone-number-s.png ":no-zoom")
 
 宽松模式
 
-![reg-phone-number](./images/reg-phone-number.png)
+![reg-phone-number](./images/reg-phone-number.png ":no-zoom")
 
 **测试**
 
@@ -432,15 +432,15 @@ reg_strict true
 
 15位
 
-![reg-id-card-15](./images/reg-id-card-15.png)
+![reg-id-card-15](./images/reg-id-card-15.png ":no-zoom")
 
 18位
 
-![reg-id-card-18](./images/reg-id-card-18.png)
+![reg-id-card-18](./images/reg-id-card-18.png ":no-zoom")
 
 15 & 18位
 
-![reg-id-card-15-18](./images/reg-id-card-15-18.png)
+![reg-id-card-15-18](./images/reg-id-card-15-18.png ":no-zoom")
 
 **测试**
 
@@ -538,7 +538,7 @@ reg_15_18 true
 /^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/
 ```
 
-![reg-rgb](./images/reg-rgb.png)
+![reg-rgb](./images/reg-rgb.png ":no-zoom")
 
 **测试**
 
@@ -582,7 +582,7 @@ colors.map(color => {
  /(\d{1,3})(?=(\d{3})+(?:$|\.))/g
 ```
 
-![reg-thousands](./images/reg-thousands.png)
+![reg-thousands](./images/reg-thousands.png ":no-zoom")
 
 测试**
 

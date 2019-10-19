@@ -1,6 +1,6 @@
 ### 提示：'软件已损坏，打不开' 或 '不是Mac Appstore下载'
 
-![mac-software-broken.png](./sw/mac-software-broken.png)
+![mac-software-broken.png](./sw/mac-software-broken.png ":no-zoom")
 
 ```shell
 // 显示
@@ -12,7 +12,7 @@ sudo spctl --master-enable
 
 
 
-![resources.png](./sw/resources.png)
+![resources.png](./sw/resources.png ":no-zoom")
 
 ### Alfred
 
@@ -20,7 +20,7 @@ sudo spctl --master-enable
 
 > `Alfred` 这是一款被称之为`Mac`效率神器的`App`，有了`Alfred` 你甚至无需鼠标就可以实现各种操作，包括出发各种文件、网络操作，其`UI`界面使用方便，而且不是通过命令来实现，是开发者们和键盘刘童鞋们的神器，比之此前类似的软件——`Pack`和`Power`来说完全是秒杀的节奏。
 
-![alfred](./sw/alfred.png)
+![alfred](./sw/alfred.png ":no-zoom")
 
 ### [KeyCastr](https://github.com/keycastr/keycastr)
 
@@ -28,9 +28,9 @@ sudo spctl --master-enable
 
 > 实时显示键位操作
 
-![keycastr](./sw/keycastr.png)
+![keycastr](./sw/keycastr.png ":no-zoom")
 
-![reposition.gif](./sw/reposition.gif)
+![reposition.gif](./sw/reposition.gif ":no-zoom")
 
 #### [Karabiner-Elements](https://pqrs.org/osx/karabiner/document.html)
 
@@ -45,9 +45,9 @@ sudo spctl --master-enable
 caps_lock -> right_command
 ```
 
-![karabiner-elements](./sw/karabiner-elements.png)
+![karabiner-elements](./sw/karabiner-elements.png ":no-zoom")
 
-![karabiner-elements-f19-config](./sw/karabiner-elements-f19-config.png)
+![karabiner-elements-f19-config](./sw/karabiner-elements-f19-config.png ":no-zoom")
 
 ### [Thor](https://github.com/gbammc/Thor)
 
@@ -55,13 +55,13 @@ caps_lock -> right_command
 
 > 一键直达应用
 
-![thor](./sw/thor.png)
+![thor](./sw/thor.png ":no-zoom")
 
 ### [XMind](https://www.xmind.cn/)
 
 > 思维导图
 
-![xmind](./sw/xmind.png)
+![xmind](./sw/xmind.png ":no-zoom")
 
 ### [Iterm2](https://www.iterm2.com/) + zsh - [oh-my-zsh](https://ohmyz.sh/)
 
@@ -77,7 +77,7 @@ caps_lock -> right_command
 defaults write com.torusknot.SourceTreeNotMAS completedWelcomeWizardVersion 3
 ```
 
-![sourcetree](./sw/sourcetree.png)
+![sourcetree](./sw/sourcetree.png ":no-zoom")
 
 ### [Flox](https://mac.eltima.com/cn/download-manager.html)
 
@@ -103,7 +103,7 @@ defaults write com.torusknot.SourceTreeNotMAS completedWelcomeWizardVersion 3
 
 > `Notion` 自称是一款「**将笔记、知识库和任务管理无缝整合的协作平台**」。它具有无限的层级和相互链接的组织弹性，给笔记间的关系提供了足够自由的组织方式；它排版灵活，能够把笔记里的内容按块(`Block`)进行组织和拖拽，甚至可以做出 `Trello `看板进行项目管理；它的内容类型丰富，可以嵌入图片、网页、文档甚至视频，几乎无所不能。
 
-![notion](./sw/notion.png)
+![notion](./sw/notion.png ":no-zoom")
 
 ### [Snipaste](https://www.snipaste.com/)
 
@@ -111,11 +111,11 @@ defaults write com.torusknot.SourceTreeNotMAS completedWelcomeWizardVersion 3
 >
 > 你还可以将剪贴板里的文字或者颜色信息转化为图片窗口，并且将它们进行缩放、旋转、翻转、设为半透明，甚至让鼠标能穿透它们！如果你是程序员、设计师，或者是大部分工作时间都在电脑前，贴图功能将改变你的工作方式、提升工作效率。
 
-![snipaste](./sw/snipaste.png)
+![snipaste](./sw/snipaste.png ":no-zoom")
 
 #### 网页截屏
 
-![chrome-capture.png](./sw/chrome-capture.png)
+![chrome-capture.png](./sw/chrome-capture.png ":no-zoom")
 
 `chrome 59版本+` 
 
@@ -205,7 +205,7 @@ F12 / Shift + Ctrl + I
 
 **Note:** 不知道为什么总会自动更新，请自己保存安装包，更新就删除，重新安装。
 
-![cleanmymac](./sw/cleanmymac.png)
+![cleanmymac](./sw/cleanmymac.png ":no-zoom")
 
 ### [Mounty](https://mounty.app/)
 

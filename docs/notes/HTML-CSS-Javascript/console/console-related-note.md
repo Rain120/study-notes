@@ -1,6 +1,6 @@
 #### `console`函数列表
 
-![console-function](./images/console-function.png)
+![console-function](./images/console-function.png ":no-zoom")
 
 笔记来源：
 
@@ -9,9 +9,9 @@
 
 #### 问题引申
 
-![console-problem-broswer](./images/console-problem-broswer.png)
+![console-problem-broswer](./images/console-problem-broswer.png ":no-zoom")
 
-![console-problem-node](./images/console-problem-broswer.png)
+![console-problem-node](./images/console-problem-broswer.png ":no-zoom")
 
 测试代码
 
@@ -29,9 +29,9 @@ obj.a = 321;
 
 > [`Node Console官方解释`](https://nodejs.org/dist/latest-v10.x/docs/api/console.html#console_console)
 
-![console-problem-broswer-stringify](./images/console-problem-broswer-stringify.png)
+![console-problem-broswer-stringify](./images/console-problem-broswer-stringify.png ":no-zoom")
 
-![console-problem-node-stringify](./images/console-problem-node-stringify.png)
+![console-problem-node-stringify](./images/console-problem-node-stringify.png ":no-zoom")
 
 通过`JSON.stringify`输入可以得到我们期望的值。
 
@@ -63,9 +63,9 @@ console.log('json:', json);
 console.log('%d %f%% %s %o %j', intNum, floatNum, str, obj, json);
 ```
 
-![log-broswer](./images/log-broswer.png)
+![log-broswer](./images/log-broswer.png ":no-zoom")
 
-![log-node](./images/log-node.png)
+![log-node](./images/log-node.png ":no-zoom")
 
 `console.log`输出其实很简单，使用空格隔开即可。当然我们可以使用一些占位符来输出我们需要的一些特定的格式。
 
@@ -99,7 +99,7 @@ console.error('Hello JS');
 console.debug('Hello JS');
 ```
 
-![log-info-warn-error-debug](./images/log-info-warn-error-debug.png)
+![log-info-warn-error-debug](./images/log-info-warn-error-debug.png ":no-zoom")
 
 ##### 3. `console.group`, `console.groupEnd`, `console.groupCollapsed`
 
@@ -130,7 +130,7 @@ console.log("Third NO.3, and I.m the last in the group");
 console.groupEnd();
 ```
 
-![group-end-collapsed](./images/group-end-collapsed.png)
+![group-end-collapsed](./images/group-end-collapsed.png ":no-zoom")
 
 ##### 4. `console.time`, `console.timeEnd`, `console.timeLog()`
 
@@ -150,7 +150,7 @@ for (let i = 0; i < 100; i++) {}
 console.timeEnd('100-operates');
 ```
 
-![time-timeEnd](./images/time-timeEnd.png)
+![time-timeEnd](./images/time-timeEnd.png ":no-zoom")
 
 ```javascript
 console.time('process');
@@ -162,7 +162,7 @@ console.timeLog('process', value);
 console.timeEnd('process');
 ```
 
-![timeLog](./images/timeLog.png)
+![timeLog](./images/timeLog.png ":no-zoom")
 
 ##### 5. `console.table`
 
@@ -180,21 +180,21 @@ var profile = { name: 'Rain120', github: 'https://github.com/Rain120' };
 console.table(profile)
 ```
 
-![table](./images/table.png)
+![table](./images/table.png ":no-zoom")
 
 ```javascript
 var profile = { name: 'Rain120', github: 'https://github.com/Rain120' };
 console.table([profile])
 ```
 
-![objArray](./images/objArray.png)
+![objArray](./images/objArray.png ":no-zoom")
 
 ```javascript
 var profile = { name: 'Rain120', github: 'https://github.com/Rain120' };
 console.table([profile], ['github'])
 ```
 
-![table-columns](./images/table-columns.png)
+![table-columns](./images/table-columns.png ":no-zoom")
 
 ##### 6. `console.count()`
 
@@ -208,7 +208,7 @@ for (i = 0; i < 5; i++) {
 }
 ```
 
-![console.count](./images/console.count.png)
+![console.count](./images/console.count.png ":no-zoom")
 
 ```javascript
 console.count("Rainy");
@@ -221,7 +221,7 @@ console.count("Test");
 
 `console.count() `每次调用，如果标签一样数字会增加 1，如果不一样则重新开始计数。
 
-![console.count-lable](./images/console.count-lable.png)
+![console.count-lable](./images/console.count-lable.png ":no-zoom")
 
 ##### 7. `console.trace() `
 
@@ -240,7 +240,7 @@ first();
 
 一个函数会被执行，该函数还会执行另外一个包含 `console.trace() `方法的喊，调用轨迹会显示在控制台上。
 
-![console.trace](./images/console.trace.png)
+![console.trace](./images/console.trace.png ":no-zoom")
 
 ##### 8. `console.assert()`
 
@@ -253,7 +253,7 @@ console.assert(false, 'Whoops %s work', 'didn\'t');
 
 一个简单的`assert`测试，用于验证值是否真实。如果不是，则记录`Assertion failed`。
 
-![console.assert](./images/console.assert.png)
+![console.assert](./images/console.assert.png ":no-zoom")
 
 ##### 9. `console.clear()`
 
