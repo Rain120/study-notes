@@ -19,6 +19,7 @@
   - [office相关](resources/website?id=office相关)
   - [思维导图](resources/website?id=思维导图)
 - [思维导图](resources/website?id=思维导图)
+- [书籍查找](resources/website?id=书籍查找)
 - [其他](resources/website?id=其他)
 
 #### 文献查找
@@ -46,6 +47,10 @@
 学术搜索、文献数据、共享资源、学术标准、人才计划、专利标准！
 
 ![keta.png](./wf/keta.png)
+
+[Library Genesis](http://gen.lib.rus.ec/)
+
+它不仅可以免费下载文献，还能免费下载很多外文书籍，且 Library Genesis 几乎每天都在更新。可以随意下载 80 多万本图书的网站，其中 99% 是难以买到的科学著作！
 
 [墙内Google学术](http://ac.scmor.com/)
 
@@ -94,7 +99,7 @@
 
 提供的视频教程非常丰富并且质量很高，包括：`PS` 教程、手机摄影教程、`Ai `做图教程、`Excel `教程、`Word `教程、PPT 教程、`Pr` 视频剪辑教程、`Ae` 视频特效教程`、Au` 音频教程、`Flash` 教程、做网页教程、`css `样式教程、`js` 教程、`Cad` 制图教程、电路制作教程、`Windows `教程、色彩搭配教程、`Prezi `演示教程、`Keynote` 教程、做图标教程。
 
-![oeasy](./wf/oeasy.png)]
+![oeasy](./wf/oeasy.png)
 
 [2uts](https://2uts.com/)
 
@@ -211,6 +216,14 @@
 [Sketchboard](<https://sketchboard.me/>)
 
 [幕布](https://mubu.com/)
+
+#### 书籍查找
+
+[BookSC](https://booksc.org/)
+
+世界上最大的在线图书馆之一。
+
+网站截至今日，已有 257 万多书籍可免费下载，大多数是 `pdf`、`djvu`、`eupb` 格式。下载也很方便，直接搜书名即可，也可下载论文或者文章，还可选择地区并设置成中国。
 
 #### 其他
 [文章索引](resources/website?id=文章索引)
