@@ -6,7 +6,7 @@
 
 [官网下载速度慢，可使用这个链接下载](https://github.com/Rain120/Free-Source/releases/tag/0.0.1) 或者[`Github`下载地址](https://github.com/Rain120/Free-Source/blob/master/Git%20Bash/README.md), 需要其他版本请提`issue`联系我。
 
-![git_operations](./images/git_operations.png ":no-zoom")
+![git_operations](./images/git_operations.png)
 
 #### 1. `Git` 配置
 
@@ -73,12 +73,12 @@ git config --list # 列举所有配置
 
 远程仓库`(Remote)`
 
-![git_infos_repo](./images/git_infos_repo.png ":no-zoom")
+![git_infos_repo](./images/git_infos_repo.png)
 
 
 
 <center>阮一峰老师对Git工作区、暂存区、版本库、远程仓库的解释</center>
-![git_infos](./images/git_infos.jpg ":no-zoom")
+![git_infos](./images/git_infos.jpg)
 
 <center>Runoob对Git工作区、暂存区、版本库、远程仓库的解释</center>
 忽略文件配置：添加.gitignore 文件
@@ -122,7 +122,7 @@ graph TD;
     br3_c3_c3-->br3_c3;
 ```
 
-![HEAD-diff](./images/HEAD-diff.png ":no-zoom")
+![HEAD-diff](./images/HEAD-diff.png)
 
 `master`: `master`分支
 
@@ -513,9 +513,9 @@ git pull origin master --allow-unrelated-histories
 git push -u origin master
 ```
 
-![git_commands](./images/git_commands.png ":no-zoom")
+![git_commands](./images/git_commands.png)
 
-![git-command](./images/git.png ":no-zoom")
+![git-command](./images/git.png)
 
 
 

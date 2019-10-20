@@ -4,21 +4,21 @@
 
 `GitLens`增强了`VS Code`中内置的`Git`功能。 它可以帮助您通过`Git`责备注释和代码镜头一目了然地看到代码作者的身份，无缝地导航和浏览`Git`存储库，通过功能强大的比较命令获得有价值的见解，等等。
 
-![gitlens](./images/gitlens.gif ":no-zoom")
+![gitlens](./images/gitlens.gif)
 
 [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 
-![git-history-1](./images/git-history-1.gif ":no-zoom")
+![git-history-1](./images/git-history-1.gif)
 
-![git-history-1](./images/git-history-2.gif ":no-zoom")
+![git-history-1](./images/git-history-2.gif)
 
-![git-history-1](./images/git-history-3.gif ":no-zoom")
+![git-history-1](./images/git-history-3.gif)
 
-![git-history-1](./images/git-history-4.gif ":no-zoom")
+![git-history-1](./images/git-history-4.gif)
 
 [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 
-![git-graph](./images/git-graph.gif ":no-zoom")
+![git-graph](./images/git-graph.gif)
 
 #### React
 
@@ -32,25 +32,25 @@
 
 [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 
-![jest](./images/jest.gif ":no-zoom")
+![jest](./images/jest.gif)
 
 [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 
 该扩展名将在编辑器中内联显示导入包的大小。 该扩展程序利用带有`babili-webpack-plugin`的`webpack`来检测导入的大小。
 
-![import-cost](./images/import-cost.gif ":no-zoom")
+![import-cost](./images/import-cost.gif)
 
 [Indent-Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 
 此扩展名使文本前面的缩进着色，每步交替四种不同的颜色。 有些人可能会发现它对于编写`Nim`或`Python`的代码很有帮助。
 
-![indent-rainbow](./images/indent-rainbow.png ":no-zoom")
+![indent-rainbow](./images/indent-rainbow.png)
 
 [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
 
 自动查找，解析并提供所有可用导入的代码操作和代码完成。 与`Typescript`和`TSX`一起使用。
 
-![autoimport](./images/autoimport.gif ":no-zoom")
+![autoimport](./images/autoimport.gif)
 
 #### Node.js
 
@@ -58,7 +58,7 @@
 
 可自动完成导入语句中的`npm`模块。
 
-![npm-intellisense](./images/npm-intellisense.gif ":no-zoom")
+![npm-intellisense](./images/npm-intellisense.gif)
 
 #### HTML + CSS + Javascript
 
@@ -70,21 +70,21 @@
 
 此扩展名允许用颜色标识匹配的括号。 用户可以定义要匹配的字符以及要使用的颜色。
 
-![bracket-pair-colorizer](./images/bracket-pair-colorizer.png ":no-zoom")
+![bracket-pair-colorizer](./images/bracket-pair-colorizer.png)
 
 [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
 
-![svg-viewer](./images/svg-viewer.gif ":no-zoom")
+![svg-viewer](./images/svg-viewer.gif)
 
 [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
 
-![todo-highlight](./images/todo-highlight.png ":no-zoom")
+![todo-highlight](./images/todo-highlight.png)
 
 #### 代码管理相关
 
 [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
-![debugger-for-chrome](./images/debugger-for-chrome.gif ":no-zoom")
+![debugger-for-chrome](./images/debugger-for-chrome.gif)
 
 [Prettier - Code formatter](https://prettier.io/)
 
@@ -96,7 +96,7 @@
 
 检查 `typescript` 语法规范
 
-![tslint](./images/tslint.png ":no-zoom")
+![tslint](./images/tslint.png)
 
 [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
@@ -106,11 +106,11 @@
 
 检查 `CSS/SCSS/Less` 语法规范
 
-![stylelint](./images/stylelint.png ":no-zoom")
+![stylelint](./images/stylelint.png)
 
 #### VS Code
 
 [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
 
-![vscode-icons](./images/vscode-icons.gif ":no-zoom")
+![vscode-icons](./images/vscode-icons.gif)
 

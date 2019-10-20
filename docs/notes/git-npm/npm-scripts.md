@@ -113,9 +113,9 @@
 
    `npx`是一个工具，旨在帮助完善使用`npm`注册表中的包的体验， 它以同样的方式使得`npm`安装和管理托管在注册表上的依赖项变得非常容易，`npx`旨在使其易于使用`Cli`工具和其他 注册表上托管的可执行文件。 它大大简化了许多事情，直到现在，还需要一些与普通的`npm`有关的步骤。
 
-   ![npx](./images/npx.gif ":no-zoom")
+   ![npx](./images/npx.gif)
 
-   ![npx-cache-path](./images/npx-cache-path.png ":no-zoom")
+   ![npx-cache-path](./images/npx-cache-path.png)
 
    
 

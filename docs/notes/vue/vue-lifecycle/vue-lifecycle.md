@@ -1,4 +1,4 @@
-![vue-lifecycle](https://vue.docschina.org/images/lifecycle.png ":no-zoom")
+![vue-lifecycle](https://vue.docschina.org/images/lifecycle.png)
 
 [ 详见Vue 生命周期](https://vue.docschina.org/v2/guide/instance.html#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%A4%BA%E6%84%8F%E5%9B%BE)
 
@@ -105,7 +105,7 @@ export default {
 
 ##### `create` + `mounted`
 
-![create+mounte](./create+mounte.png ":no-zoom")
+![create+mounte](./create+mounte.png)
 
 从上面的执行结果我们可以知道，`beforeCreate`和`created`,在这两个`hook`之间，`Vue`实例会进行事件初始化, 配置`Event`和`watch`,对`data`, `props`,`computed`进行数据观测(`data observer`)。此时，`$el`还不存在，但在`create`时`data`属性已经存在，所以，如果我们的数据不依赖`dom`，我们可以在这个`hook`中进行`API`数据获取。
 
@@ -113,13 +113,13 @@ export default {
 
 `create`钩子数据请求`demo`:
 
-![created-axios](./created-axios.png ":no-zoom")
+![created-axios](./created-axios.png)
 
-![axios-methods](./axios-methods.png ":no-zoom")
+![axios-methods](./axios-methods.png)
 
 ##### `update` + `destory`
 
-![update+destory](./update+destory.png ":no-zoom")
+![update+destory](./update+destory.png)
 
 `beforeDestroy`钩子函数在实例销毁之前调用。在这一步，实例仍然完全可用, this仍能获取到实例。
 `destroyed`钩子函数在`Vue `实例销毁后调用。调用后，`Vue `实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。组件上几乎没有任何东西。 与之相关的一切都被销毁了。 

@@ -92,7 +92,7 @@ callHook(vm, 'created')
 
 #### 4. `beforeMount & mounted`
 
-![lifecycle-1](./images/lifecycle-1.png ":no-zoom")
+![lifecycle-1](./images/lifecycle-1.png)
 
 从测试代码我们知道，在`beforeMount`和`mounted`中，我们发现`boforeMount`钩子函数的执行顺序是先父后子，而`mounted`钩子函数的执行顺序是先子后父，这是为什么呢？我们来从代码一探究竟吧。
 

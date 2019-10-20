@@ -20,7 +20,7 @@ youtube-dl -F [url]
 youtube-dl -f [code] [url]
 ```
 
-![youtube-dl-F](./others/youtube-dl-F.png ":no-zoom")
+![youtube-dl-F](./others/youtube-dl-F.png)
 
 ~~[urlgot](https://www.urlgot.com/)~~
 

@@ -7,11 +7,11 @@
 
 错误结果
 
-![unknown.png](./images/unknown.png ":no-zoom")
+![unknown.png](./images/unknown.png)
 
 正确结果
 
-![https-request.png](./images/https-request.png ":no-zoom")
+![https-request.png](./images/https-request.png)
 
 ### 代理设置
 
@@ -20,11 +20,11 @@ Proxy
 	-> macOS Proxy
 ```
 
-![proxy-setting.png](./images/proxy-setting.png ":no-zoom")
+![proxy-setting.png](./images/proxy-setting.png)
 
-![proxy-setting-port.png](./images/proxy-setting-port.png ":no-zoom")
+![proxy-setting-port.png](./images/proxy-setting-port.png)
 
-![find-ip.png](./images/find-ip.png ":no-zoom")
+![find-ip.png](./images/find-ip.png)
 
 手机(移动端设备)
 
@@ -54,11 +54,11 @@ help
 	-> 始终信任
 ```
 
-![install-pc-certificate.png](./images/install-pc-certificate.png ":no-zoom")
+![install-pc-certificate.png](./images/install-pc-certificate.png)
 
-![add-certificate.png](./images/add-certificate.png ":no-zoom")
+![add-certificate.png](./images/add-certificate.png)
 
-![charles-proxy-ca.png](./images/charles-proxy-ca.png ":no-zoom")
+![charles-proxy-ca.png](./images/charles-proxy-ca.png)
 
 #### 手机证书安装
 
@@ -68,9 +68,9 @@ help
 	-> install Charles Root Certificate on a Mobile Device or Remote Browser
 ```
 
-![install-mobile-certificate.png](./images/install-mobile-certificate.png ":no-zoom")
+![install-mobile-certificate.png](./images/install-mobile-certificate.png)
 
-![browser-certificate.png](./images/browser-certificate.png ":no-zoom")
+![browser-certificate.png](./images/browser-certificate.png)
 
 下载证书
 
@@ -120,9 +120,9 @@ http://chls.pro/ssl
 	# or custom port
   ```
 
-  ![ssl-proxy.png](./images/ssl-proxy.png ":no-zoom")
+  ![ssl-proxy.png](./images/ssl-proxy.png)
 
-  ![ssl-proxy-setting.png](./images/ssl-proxy-setting.png ":no-zoom")
+  ![ssl-proxy-setting.png](./images/ssl-proxy-setting.png)
   
   
 
@@ -134,6 +134,6 @@ http://chls.pro/ssl
 
 通过`rewrite`工具，您可以创建在通过`Charles`时修改请求和响应的规则。 添加或更改`header`或搜索和替换响应正文中的某些文本等规则。
 
-![rewrite.png](./images/rewrite.png ":no-zoom")
+![rewrite.png](./images/rewrite.png)
 
-![rewrite-setting.png](./images/rewrite-setting.png ":no-zoom")
+![rewrite-setting.png](./images/rewrite-setting.png)

@@ -9,7 +9,7 @@ echo $shell
 echo 'Rainy'
 ```
 
-![echo](./images/echo.png ":no-zoom")
+![echo](./images/echo.png)
 
 **2. [`ps`命令](http://man.linuxde.net/ps)**
 
@@ -93,7 +93,7 @@ kill [参数] [服务名称]
 kill -l
 ```
 
-![kill-l](./images/kill-l.png ":no-zoom")
+![kill-l](./images/kill-l.png)
 
 只有第9种信号(`SIGKILL`)才可以无条件终止进程，其他信号进程都有权利忽略。
 

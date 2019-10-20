@@ -8,13 +8,13 @@
   以 , 分隔多个筛选条件
   ```
 
-![search-exclude.png](./images/search-exclude.png ":no-zoom")
+![search-exclude.png](./images/search-exclude.png)
 
 
 
 - 设置
 
-  ![search-setting](./images/search-setting.png ":no-zoom")
+  ![search-setting](./images/search-setting.png)
 
 #### 编辑相关技巧
 
@@ -44,7 +44,7 @@ ctrl ⌃
   ctrl(⌃) + option(⌥) + ⬅️
   ```
 
-  ![cursor-op](./images/cursor-op.gif ":no-zoom")
+  ![cursor-op](./images/cursor-op.gif)
 
 - 行 - 复制、移动、删除、合并、插入、缩进
 
@@ -79,11 +79,11 @@ ctrl ⌃
 
   **单行**
 
-  ![line-op](./images/line-op.gif ":no-zoom")
+  ![line-op](./images/line-op.gif)
 
   **多行**
 
-  ![multiple-line-op](./images/multiple-line-op.gif ":no-zoom")
+  ![multiple-line-op](./images/multiple-line-op.gif)
 
 #### 参考资料
 

@@ -8,7 +8,7 @@
 
 <span id="q1">1</span>. **浏览器的工作原理**
 
-![layers](../images/layers.png ":no-zoom")
+![layers](../images/layers.png)
 
 <center>  浏览器结构</center>
 
@@ -26,11 +26,11 @@
 
 **数据存储(Data Persistence)** - 这是持久层。浏览器需要在硬盘上保存各种数据，例如 `Cookie`。新的 `HTML` 规范 `(HTML5)` 定义了“网络数据库”，这是一个完整（但是轻便）的浏览器内数据库。
 
-![webkit-dom-render](../images/webkit-dom-render.png ":no-zoom")
+![webkit-dom-render](../images/webkit-dom-render.png)
 
 <center>Webkit Dom Render过程</center>
 
-![gecko-dom-render.png](../images/gecko-dom-render.png ":no-zoom")
+![gecko-dom-render.png](../images/gecko-dom-render.png)
 
 <center>Gecko Dom Render过程</center>
 

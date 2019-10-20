@@ -18,7 +18,7 @@
 
 - **区别？**
 
-![module-component](./images/module-component.png ":no-zoom")
+![module-component](./images/module-component.png)
 
 ​		组件化是在设计层面上，对于`UI`的拆分，它更多关注的`UI`部分，而模块化侧重的功能的封装，主要是针对`Javascript`代码，隔离、组织复制的`javascript`代码，将它封装成一个个具有特定功能的的模块。
 

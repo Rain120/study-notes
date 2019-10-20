@@ -12,7 +12,7 @@ plugins: [
 ]
 ```
 
-![moment](./images/moment.png ":no-zoom")
+![moment](./images/moment.png)
 
 #### Usage
 
@@ -61,7 +61,7 @@ import get from 'lodash/get'
 
    [babel-plugin-import](https://github.com/ant-design/babel-plugin-import#options)
 
-![lodash](./images/lodash.png ":no-zoom")
+![lodash](./images/lodash.png)
 
 ## Webpack DefinePlugin 相关问题
 

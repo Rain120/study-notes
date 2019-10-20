@@ -4,15 +4,15 @@
 
 ### 1. `DOM`
 
-![dom-size-position](./images/dom-size-position.png ":no-zoom")
+![dom-size-position](./images/dom-size-position.png)
 
 查看各浏览器版本是否兼容属性: [Can I Use](<https://caniuse.com/>)
 
 #### **Scroll家族**
 
-![scroll-position-1](./images/scroll-position-1.png ":no-zoom")
+![scroll-position-1](./images/scroll-position-1.png)
 
-![scroll-position-2](./images/scroll-position-2.png ":no-zoom")
+![scroll-position-2](./images/scroll-position-2.png)
 
 * `scroll`
   * `scrollHeight`: 只读
@@ -32,7 +32,7 @@
 
 **getBoundingClientRect()**: 返回元素的大小及其相对于视口的位置。
 
-![getBoundingClientRect-trbl](./images/getBoundingClientRect-trbl.png ":no-zoom")
+![getBoundingClientRect-trbl](./images/getBoundingClientRect-trbl.png)
 
 **判定元素是否滚动到底**
 
@@ -50,7 +50,7 @@ window.getComputedStyle(element).overflowY === 'visible' window.getComputedStyle
 
 #### **Client家族**
 
-![client-position](./images/client-position.png ":no-zoom")
+![client-position](./images/client-position.png)
 
 * `client`
   * `clientHeight`: 只读
@@ -70,7 +70,7 @@ window.getComputedStyle(element).overflowY === 'visible' window.getComputedStyle
 
 #### **Offset家族**
 
-![dom-offset](./images/dom-offset.png ":no-zoom")
+![dom-offset](./images/dom-offset.png)
 
 ```css
 #content {
@@ -81,7 +81,7 @@ window.getComputedStyle(element).overflowY === 'visible' window.getComputedStyle
 }
 ```
 
-![window-scroll](./images/window-scroll.png ":no-zoom")
+![window-scroll](./images/window-scroll.png)
 
 * `offset`
   * `offsetHeight`
@@ -103,31 +103,31 @@ window.getComputedStyle(element).overflowY === 'visible' window.getComputedStyle
 
   - 1、`position: fixed` -> `offsetParent = null`
 
-    ![fix-position-dom](./images/fix-position-dom.png ":no-zoom")
+    ![fix-position-dom](./images/fix-position-dom.png)
 
-    ![display-none-offsetParent](./images/display-none-offsetParent.png ":no-zoom")
+    ![display-none-offsetParent](./images/display-none-offsetParent.png)
 
   - 2 父元素是根据其父元素定位后元素，当前元素无定位 -> `offsetParent = current parent dom`
 
-    ![parent-position-dom](./images/parent-position-dom.png ":no-zoom")
+    ![parent-position-dom](./images/parent-position-dom.png)
 
-    ![parent-position-offsetParent](./images/parent-position-offsetParent.png ":no-zoom")
+    ![parent-position-offsetParent](./images/parent-position-offsetParent.png)
 
   - 3 父元素是无定位后元素，当前元素无定位  -> `offsetParent = <body></body>`
 
-    ![parent-none-position-dom](./images/parent-none-position-dom.png ":no-zoom")
+    ![parent-none-position-dom](./images/parent-none-position-dom.png)
 
-    ![parent-none-position-offsetParent](./images/parent-none-position-offsetParent.png ":no-zoom")
+    ![parent-none-position-offsetParent](./images/parent-none-position-offsetParent.png)
 
   - 4  `display: none` -> `offsetParent = null`
 
-    ![display-none-dom](./images/display-none-dom.png ":no-zoom")
+    ![display-none-dom](./images/display-none-dom.png)
 
-    ![display-none-offsetParent](./images/display-none-offsetParent.png ":no-zoom")
+    ![display-none-offsetParent](./images/display-none-offsetParent.png)
 
   - 5  `<body></body>`元素 -> `offsetParent = null`
 
-    ![body-offsetParent](./images/body-offsetParent.png ":no-zoom")
+    ![body-offsetParent](./images/body-offsetParent.png)
 
   **注意**：
 

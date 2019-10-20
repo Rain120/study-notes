@@ -11,7 +11,7 @@
 
 ### [Chrome插件安装](chrome://extensions/)
 
-![extensions](./plugins/extensions.png ":no-zoom")
+![extensions](./plugins/extensions.png)
 
 ### 插件分类
 

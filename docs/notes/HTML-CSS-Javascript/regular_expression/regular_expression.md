@@ -49,21 +49,21 @@
 
 元字符`\b`与`\B`
 
-![test \b \B](./images/1.png ":no-zoom")
+![test \b \B](./images/1.png)
 
-![test \b \B](./images/2.png ":no-zoom")
+![test \b \B](./images/2.png)
 
-![\b](./images/3.png ":no-zoom")
+![\b](./images/3.png)
 从上面结果得知，b匹配的是单词的边界，B匹配的是非单词的边界
 
 元字符`\d`与`\D`
-![test \d \D](./images/4.png ":no-zoom")
+![test \d \D](./images/4.png)
 
-![test \d \D 1](./images/5.png ":no-zoom")
+![test \d \D 1](./images/5.png)
 
-![test \d \D](./images/6.png ":no-zoom")
+![test \d \D](./images/6.png)
 
-![](./images/7.png ":no-zoom")
+![](./images/7.png)
 元字符`\s`与`\S`
 
 元字符`\w`与`\W`
@@ -101,7 +101,7 @@
 
 `匹配失败：` false
 
-![test test](./images/8.png ":no-zoom")
+![test test](./images/8.png)
 
 #### 2. `exec(str)`
 
@@ -125,7 +125,7 @@
 |        |           | multiline            |
 |        |           | source               |
 
-![test exec](./images/9.png ":no-zoom")
+![test exec](./images/9.png)
 
 #### 3. `match(pattern)`
 
@@ -140,7 +140,7 @@
   - `index`: 匹配的结果的开始位置
   - `input`: 搜索的字符串。
 
-![match](./images/match.png ":no-zoom")
+![match](./images/match.png)
 
 `match[0]`: 整条正则表达式匹配结果
 
@@ -152,7 +152,7 @@
 
 ##### `return`: 如果匹配成功，则 `search()` 返回正则表达式在字符串中首次匹配项的索引。否则，返回 `-1`。
 
-![search](./images/search.png ":no-zoom")
+![search](./images/search.png)
 
 很类似`indexof`这个方法
 
@@ -165,7 +165,7 @@
 
 ##### `return`: 一个部分或全部匹配由替代模式所取代的新的字符串。
 
-![replace](./images/replace.png ":no-zoom")
+![replace](./images/replace.png)
 
 
 
@@ -188,5 +188,5 @@
 
 ##### `return`: 返回源字符串以分隔符出现位置分隔而成的一个`Array`
 
-![split](./images/split.png ":no-zoom")
+![split](./images/split.png)
 

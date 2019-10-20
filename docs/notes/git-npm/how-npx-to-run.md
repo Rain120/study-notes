@@ -8,7 +8,7 @@
 
 ### 怎么使用`npx`?
 
-![npx](./images/npx.gif ":no-zoom")
+![npx](./images/npx.gif)
 
 ### 为什么`npx`能在不安装的情况下使用？
 
@@ -24,7 +24,7 @@
 
 同样的, 你可以执行`npx node@10 -e "console.log(process.execPath)"`, 会输出当前`node`的`path`.
 
-![npx-cache-path](./images/npx-cache-path.png ":no-zoom")
+![npx-cache-path](./images/npx-cache-path.png)
 
 ### `npx`的使用场景
 

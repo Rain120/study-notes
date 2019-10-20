@@ -77,6 +77,6 @@ export const isIPhoneX = () => {
 - 银联卡 ` ^62[0-5]\d{13,16}$`
 - `Visa`: `^4[0-9]{12}(?:[0-9]{3})?$`
 
-![caniuse-pattern](./images/caniuse-pattern.png ":no-zoom")
+![caniuse-pattern](./images/caniuse-pattern.png)
 
 [caniuse - pattern](https://caniuse.com/#search=pattern)

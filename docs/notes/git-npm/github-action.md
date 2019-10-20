@@ -1,4 +1,4 @@
-![github-actions.jpg](./images/github-actions.jpg ":no-zoom")
+![github-actions.jpg](./images/github-actions.jpg)
 
 ### [GitHub Actions](https://github.com/features/actions)
 
@@ -6,19 +6,19 @@
 
 ### 申请权限`Github Actions bete`
 
-![sign-for-git-actions-bate.png](./images/sign-for-git-actions-bate.png ":no-zoom")
+![sign-for-git-actions-bate.png](./images/sign-for-git-actions-bate.png)
 
-![enabled-git-actions-bate.png](./images/enabled-git-actions-bate.png ":no-zoom")
+![enabled-git-actions-bate.png](./images/enabled-git-actions-bate.png)
 
 #### 如何使用`Github Actions`
 
-![git-actions](./images/git-actions.png ":no-zoom")
+![git-actions](./images/git-actions.png)
 
 我们来做一个最简单的`CI`，就是在线`Build and Deploy`，我们使用的[Demo](https://github.com/Rain120/better-scroll-for-react-usage)只需要在用户`push`之后,进行`npm run build`即可。
 
 首先我们选择`Node.js`
 
-![set_node_yml.png](./images/set_node_yml.png ":no-zoom")
+![set_node_yml.png](./images/set_node_yml.png)
 
 
 
@@ -34,29 +34,29 @@ npm run build
 
 所以我们的配置如下
 
-![edit-node-yml.png](./images/edit-node-yml.png ":no-zoom")
+![edit-node-yml.png](./images/edit-node-yml.png)
 
-![nodejs_yml.png](./images/nodejs_yml.png ":no-zoom")
+![nodejs_yml.png](./images/nodejs_yml.png)
 
 
 
 设置完了之后，我们点击进入
 
-![workflow.png](./images/workflow.png ":no-zoom")
+![workflow.png](./images/workflow.png)
 
 
 
 👉有个执行按钮
 
-![run_yml1.png](./images/run_yml1.png ":no-zoom")
+![run_yml1.png](./images/run_yml1.png)
 
 `CI`完成状态
 
-![run_yml.png](./images/run_yml.png ":no-zoom")
+![run_yml.png](./images/run_yml.png)
 
 `commit`提示`CI`成功失败
 
-![push_node_build.png](./images/push_node_build.png ":no-zoom")
+![push_node_build.png](./images/push_node_build.png)
 
 ### 参考资料
 

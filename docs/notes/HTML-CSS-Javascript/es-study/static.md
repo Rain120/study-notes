@@ -351,7 +351,7 @@ console.log(foo.constructor === Foo);
 console.log(Bar.staticMethod2()););
 ```
 
-![static-func-property](./images/static-func-property.png ":no-zoom")
+![static-func-property](./images/static-func-property.png)
 
 如上图示，`name`、`staticMethod`、`staticMethod2`都是在`Foo`这个类上，不在`prototype`上，只有`classMethod`在`prototype`上。这就说明访问静态变量和属性只能通过类来访问，不能通过实例来访问。
 

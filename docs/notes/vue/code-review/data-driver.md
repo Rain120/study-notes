@@ -50,7 +50,7 @@ cond(yes)->render->vnode->patch->e
 cond(no)->render
 ```
 
-![vue_process](./images/vue_process.png ":no-zoom")
+![vue_process](./images/vue_process.png)
 
 2. `init`
 
