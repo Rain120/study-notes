@@ -5,25 +5,34 @@
 !> [How to Usage](https://github.com/Rain120/study-notes/tree/note-template)
 
 * [知识图谱](notes/knowledge-map/guide.md)
-* [前端知识图谱](notes/knowledge-map/fe_knowledge_map.md)
- * [HTML + CSS + Javascript](notes/HTML-CSS-Javascript/console-related-note.md)
+   * [前端知识图谱](notes/knowledge-map/fe_knowledge_map.md)
 
-    - [console全家桶](notes/HTML-CSS-Javascript/console/console-related-note.md)
-    - [JavaScript常见运算符](notes/HTML-CSS-Javascript/common-operator/common-operator.md)
-    - [JavaScript获取DOM元素的位置和尺寸](notes/HTML-CSS-Javascript/get-dom-property/get-dom-property.md)
-    - [Javascript正则表达式](notes/HTML-CSS-Javascript/regular_expression/regular_expression.md)
-    - [日常使用的正则表达式](notes/HTML-CSS-Javascript/regular_expression/common_reg_exps.md)
-    - [ECMAScript学习](notes/HTML-CSS-Javascript/es-study/es-guide.md)
-    - [与AST的相知相识](notes/HTML-CSS-Javascript/ast/ast.md)
+* [HTML](notes/html/guide.md)
+
+* [CSS](notes/css/guide.md)
+
+* [Javascript](notes/javascript/guide.md)
+
+   * [console全家桶](notes/javascript/console/console-related-note.md)
+   * [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
+   * [JavaScript获取DOM元素的位置和尺寸](notes/javascript/get-dom-property/get-dom-property.md)
+   * [Javascript正则表达式](notes/javascript/regular_expression/regular_expression.md)
+   * [日常使用的正则表达式](notes/javascript/regular_expression/common_reg_exps.md)
+   * [ECMAScript学习](notes/javascript/es-study/es-guide.md)
+
 * [前端开发 Tips](notes/tips/guide.md)
 
-   - [CSS Tips](notes/tips/css-tips.md)
-   - [JS Tips](notes/tips/js-tips.md)
-   - [Webpack Tips](notes/tips/webpack-tips.md)
-   - [Typescript Tips](notes/tips/typescript-tips.md)
-   - [Email Tips](notes/tips/email-tips.md)
+   * [CSS Tips](notes/tips/css-tips.md)
+   * [JS Tips](notes/tips/js-tips.md)
+   * [Webpack Tips](notes/tips/webpack-tips.md)
+   * [Typescript Tips](notes/tips/typescript-tips.md)
+   * [Email Tips](notes/tips/email-tips.md)
 * [Webpack](notes/webpack/guide.md)
-* [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
+   * [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
+
+* [Babel](notes/babel/guide.md)
+   * [与AST的相知相识](notes/babel/ast/ast.md)
+
 * [Vue](notes/vue/guide.md)
 
    * [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)

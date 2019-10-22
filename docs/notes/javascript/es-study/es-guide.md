@@ -1,6 +1,6 @@
 #### ECMAScript学习笔记
 
-- [类的Static学习](notes/HTML-CSS-Javascript/es-study/static.md)
+- [类的Static学习](notes/javascript/es-study/static.md)
 
 #### 参考资料
 
