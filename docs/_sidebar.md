@@ -1,59 +1,51 @@
 <!-- 学习笔记 -->
 
 * [知识图谱](knowledge-map/guide.md)
-  * [前端知识图谱](knowledge-map/fe_knowledge_map.md)
-
+  
+* [前端知识图谱](knowledge-map/fe_knowledge_map.md)
+  
 * [学习笔记](notes/guide.md)
     * [HTML](notes/html/guide.md)
-
     * [CSS](notes/css/guide.md)
-
     * [Javascript](notes/javascript/guide.md)
-
       * [console全家桶](notes/javascript/console/console-related-note.md)
       * [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
       * [获取DOM元素的位置和尺寸](notes/javascript/get-dom-property/get-dom-property.md)
       * [Javascript正则表达式](notes/javascript/regular_expression/regular_expression.md)
       * [日常使用的正则表达式](notes/javascript/regular_expression/common_reg_exps.md)
       * [ECMAScript学习](notes/javascript/es-study/es-guide.md)
-
     * [前端开发 Tips](notes/tips/guide.md)
       * [CSS Tips](notes/tips/css-tips.md)
       * [JS Tips](notes/tips/js-tips.md)
       * [Webpack Tips](notes/tips/webpack-tips.md)
       * [Typescript Tips](notes/tips/typescript-tips.md)
       * [Email Tips](notes/tips/email-tips.md)
-
     * [Webpack](notes/webpack/guide.md)
       * [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
-
     * [Babel](notes/babel/guide.md)
-     * [与AST的相知相识](notes/babel/ast/ast.md)
+        * [Babel手册](notes/babel/babel-handbook.md)
+        * [与AST的相知相识](notes/babel/ast/ast.md)
 
     * [React](notes/react/guide.md)
-     * [React组件库开发 - 初始化项目](notes/react/component-library/init.md)
-     * [React better-scroll实践](notes/react/better-scroll/better-scroll.md)
-       * [基础组件Scroll开发](notes/react/better-scroll/scroll.md)
-       * [Slider 组件开发](notes/react/better-scroll/slider.md)
-       * [Sticky 组件开发](notes/react/better-scroll/sticky.md)
-     * [React Hooks 学习](notes/react/hooks/hooks.md)
+         * [React组件库开发 - 初始化项目](notes/react/component-library/init.md)
+         * [React better-scroll实践](notes/react/better-scroll/better-scroll.md)
+           * [基础组件Scroll开发](notes/react/better-scroll/scroll.md)
+           * [Slider 组件开发](notes/react/better-scroll/slider.md)
+           * [Sticky 组件开发](notes/react/better-scroll/sticky.md)
+         * [React Hooks 学习](notes/react/hooks/hooks.md)
     * [Vue](notes/vue/guide.md)
-     * [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
-     * [Vue之网易云音乐横向菜单滑动的实现](notes/vue/slide-menu/slide-menu.md)
-     * [Vue 生命周期笔记](notes/vue/vue-lifecycle/vue-lifecycle.md)
-     * [Vue 源码学习](notes/vue/code-review/code-review.md)
-
+         * [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
+         * [Vue之网易云音乐横向菜单滑动的实现](notes/vue/slide-menu/slide-menu.md)
+         * [Vue 生命周期笔记](notes/vue/vue-lifecycle/vue-lifecycle.md)
+         * [Vue 源码学习](notes/vue/code-review/code-review.md)
     * [移动端](notes/mobile/guide.md)
       * [Charles抓包https手机配置](notes/mobile/charles-https-mobile-config.md)
       * [移动端Tips](notes/mobile/mobile-tips.md)
-
     * [Linux](notes/linux/guide.md)
       * [Linux入门学习](notes/linux/initial.md)
       * [常用命令行快捷键](notes/linux/command-shortcut.md)
-
     * [Nginx](notes/nginx/guide.md)
       * [Nginx笔记](notes/nginx/nginx/note.md)
-
     * [Git & npm学习](notes/git-npm/guide.md)
       * [你必须知道的Git命令](notes/git-npm/you-must-know-git-commands.md)
       * [Github Actions实践](notes/git-npm/github-action.md)
@@ -66,8 +58,8 @@
       * [Mysql错误笔记](notes/error-qa/mysql/note-qa.md)
       * [Node & Git错误笔记](notes/error-qa/node-git/note-qa.md)
     * [VS Code相关](notes/vscode/guide.md)
-      * [VS Code Tips](notes/vscode/tips.md)
-      * [VS Code 插件](notes/vscode/extensions.md)
+    * [VS Code Tips](notes/vscode/tips.md)
+    * [VS Code 插件](notes/vscode/extensions.md)
 
 <!--  资源集合 -->
 

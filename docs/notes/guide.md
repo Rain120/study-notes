@@ -31,8 +31,9 @@
    * [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
 
 * [Babel](notes/babel/guide.md)
-   * [与AST的相知相识](notes/babel/ast/ast.md)
-
+   * [Babel手册](notes/babel/babel-handbook.md)
+* [与AST的相知相识](notes/babel/ast/ast.md)
+   
 * [Vue](notes/vue/guide.md)
 
    * [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
@@ -75,4 +76,3 @@
 * [VS Code相关](notes/vscode/guide.md)
    * [VS Code Tips](notes/vscode/tips.md)
    * [VS Code 插件](notes/vscode/extensions.md)
-

@@ -15,5 +15,5 @@
 
 [Vedio -> Master the Art of the AST and Take Control of Your JS](https://www.youtube.com/watch?v=C06MohLG_3s)
 
-[babel-handbook](https://github.com/jamiebuilds/babel-handbook)
+[Babel 插件手册 中文文档](https://github.com/Rain120/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md)
 

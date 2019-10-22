@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime: 2019-10-20 14:00:43
+ * @LastEditTime: 2019-10-22 17:32:51
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -28,6 +28,11 @@
       name: 'Study Notes',
       repo: 'https://github.com/Rain120/study-notes',
       ga: 'UA-132840488-1',
+      alias: {
+        '/.*/_navbar.md': '/_navbar.md',
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_404.md': '/_404.md',
+      },
       search: {
         maxAge: 86400000, // Expiration time, the default one day
         placeholder: 'Type to search',
@@ -38,6 +43,12 @@
         hideOtherSidebarContent: false,
       },
       autoHeader: true,
+      auto2top: true,
+      executeScript: true,
+      mergeNavbar: true,
+      notFoundPage: {
+        '/': '_404.md',
+      },
       formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
       coverpage: true,
       loadNavbar: true,
