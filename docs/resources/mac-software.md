@@ -223,7 +223,13 @@ F12 / Shift + Ctrl + I
 
 > 屏幕录制工具，支持导出 GIF 动画图片格式，轻量级、使用简单，录制过程中可以随意改变录屏范围。运行后会以窗口的方式显示在桌面，拖动选取一个合适的大小范围，点击 Record 选取保存路径就开始录屏了。**LICEcap** 在录屏过程中可以随时拖动窗口改变录屏范围，Stop 过后自动保存为 GIF 格式。
 
+[Paper](https://paper.meiyuan.in/)
+
+> 专为 Mac 设计的壁纸应用,每天享受来自全球新鲜精美的壁纸
+
 ### 参考
 
 [云谦 - 装了啥 2019 版](https://juejin.im/post/5c9446e36fb9a071082f5118)
+
+[有什么让你相见恨晚的 MacBook 神器？](https://www.zhihu.com/question/41049134)
 

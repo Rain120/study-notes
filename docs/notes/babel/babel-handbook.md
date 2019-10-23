@@ -23,6 +23,7 @@
 - 语法转换
 - 源码转换
 - 通过 `Polyfill` 方式在目标环境中添加缺失的特性
+- 等等...
 
 ### 安装使用
 
@@ -72,8 +73,6 @@ yarn add @babel/core --dev
 	}
 }
 ```
-
-
 
 ### babel-polyfill
 

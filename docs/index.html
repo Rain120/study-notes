@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime: 2019-10-22 17:32:51
+ * @LastEditTime: 2019-10-23 10:17:00
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -125,6 +125,11 @@
     // facebook-like distraction free mode
     distractionFreeMode: true
   })
+</script>
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('serviceWorker.js')
+  }
 </script>
 </body>
 </html>
