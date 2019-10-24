@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime: 2019-10-23 10:17:00
+ * @LastEditTime: 2019-10-24 12:49:40
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +27,7 @@
       el: '#app',
       name: 'Study Notes',
       repo: 'https://github.com/Rain120/study-notes',
-      ga: 'UA-132840488-1',
+      ga: 'UA-150864629-1',
       alias: {
         '/.*/_navbar.md': '/_navbar.md',
         '/.*/_sidebar.md': '/_sidebar.md',
@@ -81,6 +81,8 @@
         //   let footer = [
         //     '<hr/>',
         //     '<footer style="text-align: center;">',
+        //     '<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>',
+        //     '<hr />',
         //     '<span><a href="https://github.com/Rain120">Rain120</a> &copy; 2019.</span>',
         //     '</footer>'
         //   ].join('')
@@ -115,21 +117,31 @@
   <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
-<script>
-  const gitalk = new Gitalk({
-    clientID: 'f0d924a27274378ef2a3',
-    clientSecret: '41718ded9b3115824be3e162439ce43f736be645',
-    repo: 'study-notes',
-    owner: 'Rain120',
-    admin: ['Rain120'],
-    // facebook-like distraction free mode
-    distractionFreeMode: true
-  })
-</script>
-<script>
-  if (typeof navigator.serviceWorker !== 'undefined') {
-    navigator.serviceWorker.register('serviceWorker.js')
-  }
-</script>
+  <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'f0d924a27274378ef2a3',
+      clientSecret: '41718ded9b3115824be3e162439ce43f736be645',
+      repo: 'study-notes',
+      owner: 'Rain120',
+      admin: ['Rain120'],
+      // facebook-like distraction free mode
+      distractionFreeMode: true
+    })
+  </script>
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('serviceWorker.js')
+    }
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150864629-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-150864629-1');
+  </script>
 </body>
 </html>

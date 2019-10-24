@@ -150,7 +150,15 @@
 
 ![carbon](./wf/carbon.png)
 
+##### 字符(注释+绘图)
+
 [注释 - 字符串写法](http://asciiflow.com/)
+
+[照片生成代码](https://www.text-image.com/convert/)
+
+[文字转换成字符](http://patorjk.com/software/taag/)
+
+[有趣的ASCII注释](http://www.asciiworld.com/)
 
 ##### 文件相关
 [文章索引](resources/website?id=文章索引)
