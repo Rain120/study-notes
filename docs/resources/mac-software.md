@@ -227,6 +227,10 @@ F12 / Shift + Ctrl + I
 
 > 专为 Mac 设计的壁纸应用,每天享受来自全球新鲜精美的壁纸
 
+[动态壁纸下载](https://dynamicwallpaper.club/)
+
+> 专门用于macOS Mojave动态壁纸的平台。
+
 ### 参考
 
 [云谦 - 装了啥 2019 版](https://juejin.im/post/5c9446e36fb9a071082f5118)
