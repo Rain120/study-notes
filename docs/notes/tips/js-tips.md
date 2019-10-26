@@ -91,3 +91,59 @@ if (catalogueDrawer) {
 [MDN decodeURI](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/decodeURI)
 
 [MDN decodeURIComponent](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent)
+
+#### JS 缓慢回到顶部
+
+原生`Javascript`实现
+
+```javascript
+const isWebkit = navigator.userAgent.toLowerCase().match(/webkit\/([\d.]+)/);
+const requestAnimationFrame =
+  window.requestAnimationFrame ||
+  window.mozRequestAnimationFrame ||
+  window.webkitRequestAnimationFrame ||
+  window.msRequestAnimationFrame;
+
+function backTop() {
+  function step() {
+    let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentScroll > 0) {
+      requestAnimationFrame(step);
+      window.scrollTo (0, currentScroll - (currentScroll / 5));
+    }
+  }
+
+  requestAnimationFrame(step);
+}
+```
+
+`Jquery`实现
+
+```javascript
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script>
+    let fadeTime = 1500;
+    let animateTime = 1000;
+    let height = 100;
+    $(function() {
+            $(function () {
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > height) {
+                        $("#back-to-top").fadeIn(fadeTime);
+                    } else {
+                        $("#back-to-top").fadeOut(fadeTime);
+                    }
+                });
+                $("#back-to-top").click(function() {
+                if ($('html').scrollTop()) {
+                    $('html').animate({ scrollTop: 0 }, animateTime);
+                    return false;
+                }
+                $('body').animate({ scrollTop: 0 }, animateTime);
+                    return false;            
+              });       
+        })   
+    });
+  </script>
+```
+

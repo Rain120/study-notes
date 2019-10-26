@@ -222,3 +222,5 @@ history (选项) [参数]
 
 [`Linux`命令大全](http://man.linuxde.net/)
 
+
+

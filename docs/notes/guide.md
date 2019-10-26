@@ -53,9 +53,10 @@
 * [Linux](notes/linux/guide.md)
 * [Linux入门学习](notes/linux/initial.md)
    * [常用命令行快捷键](notes/linux/command-shortcut.md)
+* [Shell](notes/shell/guide.md)
+* [Shell 脚本](notes/shell/shell.md)
 * [Nginx](notes/nginx/guide.md)
-
-   * [Nginx笔记(2019-03-08更新)](notes/nginx/nginx/note.md)
+* [Nginx笔记(2019-03-08更新)](notes/nginx/nginx/note.md)
 * [`Git`学习](notes/git-npm/guide.md)
 
    * [你必须知道的`Git`命令](notes/git-npm/you-must-know-git-commands.md)

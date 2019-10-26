@@ -1,0 +1,35 @@
+html, body {
+  position: relative;
+  /* scroll-behavior: smooth; */
+}
+.backtop {
+  display: none;
+  height: 64px;
+  cursor: pointer;
+  position: fixed;
+  right: 30px;
+  bottom: 10%;
+  z-index: 1000;
+  text-align: center;
+}
+
+.backtop:hover {
+  animation: jump 2s infinite;
+}
+
+.backtop-img {
+  width: 48px;
+  height: 100%;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

@@ -44,8 +44,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
     - [Babel](notes/babel/guide.md)
       - [Babel手册](notes/babel/babel-handbook.md)
       - [与AST的相知相识](notes/babel/ast/ast.md)
-
-    - [React](notes/react/guide.md)
+- [React](notes/react/guide.md)
       - [React组件库开发 - 初始化项目](notes/react/component-library/init.md)
       - [React better-scroll实践](notes/react/better-scroll/better-scroll.md)
         - [基础组件Scroll开发](notes/react/better-scroll/scroll.md)
@@ -66,6 +65,8 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
     - [Linux](notes/linux/guide.md)
       - [Linux入门学习](notes/linux/initial.md)
       - [常用命令行快捷键](notes/linux/command-shortcut.md)
+    - [Shell](notes/shell/guide.md)
+      - [Shell 脚本](notes/shell/shell.md)
     - [Nginx](notes/nginx/guide.md)
       - [Nginx笔记](notes/nginx/nginx/note.md)
     - [Git & npm学习](notes/git-npm/guide.md)
@@ -81,10 +82,10 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [Node & Git错误笔记](notes/error-qa/node-git/note-qa.md)
     - [VS Code相关](notes/vscode/guide.md)
       - [VS Code Tips](notes/vscode/tips.md)
-      - [VS Code 插件](notes/vscode/extensions.md)
-
-  <!--  资源集合 -->
-
+    - [VS Code 插件](notes/vscode/extensions.md)
+  
+<!--  资源集合 -->
+  
   - [资源集合](resources/guide.md)
     - [前端](resources/front-end.md)
     - [网站](resources/website.md)
@@ -97,16 +98,16 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
     - [轻松追剧系列](resources/shows.md)
     - [歌曲下载](resources/music-download.md)
     - [其他](resources/others.md)
-  - [About Me](profile/profile.md)
-
+- [About Me](profile/profile.md)
+  
   <!-- About Me -->
-  <!-- ---
-
+<!-- ---
+  
   - [<i class="profile-icon gh iconfont icon-github"></i>Github](https://github.com/Rain120)
   - [<i class="profile-icon zh iconfont icon-zhihu"></i>知乎](https://www.zhihu.com/people/yan-yang-nian-hua-120/activities)
   - [<i class="profile-icon jj iconfont icon-juejin"></i>掘金](https://juejin.im/user/57c616496be3ff00584f54db)
   - [<i class="profile-icon bk iconfont icon-blog"></i>个人博客](https://rain120.github.io/)
   - [<i class="profile-icon sf iconfont icon-sf"></i>SegmentFault](https://segmentfault.com/u/rainyk1/articles)
-  - [<i class="profile-icon csdn iconfont icon-csdn"></i>CSDN](https://blog.csdn.net/ZC_XY) -->
-
+- [<i class="profile-icon csdn iconfont icon-csdn"></i>CSDN](https://blog.csdn.net/ZC_XY) -->
+  
   

@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime: 2019-10-24 12:49:40
+ * @LastEditTime: 2019-10-26 21:23:21
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,11 +16,15 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-  <link rel="stylesheet" href="./style/docs.css">
+  <link rel="stylesheet" href="./custom/style/docs.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./custom/style/custom.css">
 </head>
 <body>
+  <div id="back-to-top" class="backtop" title="回到顶部" >
+    <img class="backtop-img" src="./backtop.png" alt="backtop" />
+  </div>
   <div id="app"></div>
   <script>
     window.$docsify = {
@@ -103,10 +107,7 @@
       ]
     }
   </script>
-  <script
-    src="https://cdn.jsdelivr.net/gh/rain120/live2d-widget/lib.js"
-    id="live2d-widget-lib"
-  ></script>
+  <script src="https://cdn.jsdelivr.net/gh/rain120/live2d-widget/lib.js" id="live2d-widget-lib"></script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
@@ -136,6 +137,30 @@
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150864629-1"></script>
+  <script src="./custom/js/backtop.js"></script>
+  <script>
+    let fadeTime = 1500;
+    let animateTime = 1000;
+    let height = 100;
+    $(function () {
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > height) {
+                $("#back-to-top").fadeIn(fadeTime);
+            } else {
+                $("#back-to-top").fadeOut(fadeTime);
+            }
+        });
+        $("#back-to-top").click(function() {
+          if ($('html').scrollTop()) {
+            $('html').animate({ scrollTop: 0 }, animateTime);
+            return false;
+          }
+          $('body').animate({ scrollTop: 0 }, animateTime);
+          return false;            
+        });    
+      });  
+  </script>
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}

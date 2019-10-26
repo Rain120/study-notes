@@ -25,8 +25,7 @@
     * [Babel](notes/babel/guide.md)
         * [Babel手册](notes/babel/babel-handbook.md)
         * [与AST的相知相识](notes/babel/ast/ast.md)
-
-    * [React](notes/react/guide.md)
+* [React](notes/react/guide.md)
          * [React组件库开发 - 初始化项目](notes/react/component-library/init.md)
          * [React better-scroll实践](notes/react/better-scroll/better-scroll.md)
            * [基础组件Scroll开发](notes/react/better-scroll/scroll.md)
@@ -47,6 +46,8 @@
     * [Linux](notes/linux/guide.md)
       * [Linux入门学习](notes/linux/initial.md)
       * [常用命令行快捷键](notes/linux/command-shortcut.md)
+    * [Shell](notes/shell/guide.md)
+      - [Shell 脚本](notes/shell/shell.md)
     * [Nginx](notes/nginx/guide.md)
       * [Nginx笔记](notes/nginx/nginx/note.md)
     * [Git & npm学习](notes/git-npm/guide.md)
