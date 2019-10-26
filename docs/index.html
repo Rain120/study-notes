@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime: 2019-10-19 15:16:43
+ * @LastEditTime: 2019-10-26 21:55:38
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -18,14 +18,23 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="./style/docs.css"><script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style/custom.css">
 </head>
 <body>
+  <div id="back-to-top" class="backtop" title="回到顶部" >
+    <img class="backtop-img" src="./backtop.png" alt="backtop" />
+  </div>
   <div id="app"></div>
   <script>
     window.$docsify = {
       el: '#app',
       name: 'Study Notes',
       repo: 'https://github.com/rain120/study-notes',
+      alias: {
+        '/.*/_navbar.md': '/_navbar.md',
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_404.md': '/_404.md',
+      },
       search: {
         maxAge: 86400000, // Expiration time, the default one day
         placeholder: 'Type to search',
@@ -36,13 +45,19 @@
         hideOtherSidebarContent: false,
       },
       autoHeader: true,
+      auto2top: true,
+      executeScript: true,
+      mergeNavbar: true,
+      notFoundPage: {
+        '/': '_404.md',
+      },
       formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
       coverpage: true,
       loadNavbar: true,
       loadSidebar: true,
       pagination: {
-        previousText: 'Prev',
-        nextText: 'Next',
+        previousText: '上一点再上一点',
+        nextText: '下一点再下一点',
       },
       plugins: [
         // git talk
@@ -85,6 +100,28 @@
   <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script>
+    let fadeTime = 1500;
+    let animateTime = 1000;
+    let height = 100;
+    $(function () {
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > height) {
+                $("#back-to-top").fadeIn(fadeTime);
+            } else {
+                $("#back-to-top").fadeOut(fadeTime);
+            }
+        });
+        $("#back-to-top").click(function() {
+          if ($('html').scrollTop()) {
+            $('html').animate({ scrollTop: 0 }, animateTime);
+            return false;
+          }
+          $('body').animate({ scrollTop: 0 }, animateTime);
+          return false;            
+        });    
+      });  
+  </script>
   <script>
     /**
      * clientID: 'your gitalk clientID',
