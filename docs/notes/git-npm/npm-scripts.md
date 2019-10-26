@@ -1,3 +1,9 @@
+
+
+[目录 -> 学习笔记](notes/guide.md)
+
+[目录 -> 上一级](notes/git-npm/guide.md)
+
 1. 什么是`npm scripts`?
 
    >  **脚本语言**(英语: `Scripting language`)是为了缩短传统的「编写、编译、链接、运行」(`edit-compile-link-run`)过程而创建的计算机[编程](https://zh.wikipedia.org/wiki/编程)语言。 ——[维基百科 - 脚本语言](https://zh.wikipedia.org/wiki/脚本语言)
@@ -120,7 +126,7 @@
    
 
    使用场景：
-   
+
    1. 使用不同版本的`node`版本
    2. 执行`github gist`
    3. 执行`npm`二进制包

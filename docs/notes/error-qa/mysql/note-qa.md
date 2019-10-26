@@ -1,5 +1,9 @@
 
 
+[目录 -> 学习笔记](notes/guide.md)
+
+[目录 -> 上一级](notes/error-qa/guide.md)
+
 ##### 1. MySQL + Node报错
 
 ![node-mysql-error](./sp/node-mysql-error.png)

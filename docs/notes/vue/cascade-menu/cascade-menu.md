@@ -11,6 +11,11 @@
 
 [Github](https://github.com/Rain120)
 -->
+
+[目录 -> 学习笔记](notes/guide.md)
+
+[目录 -> 上一级](notes/vue/guide.md)
+
 源码传送门：[Rain120/vue-study](https://github.com/Rain120/vue-study/blob/master/my-project/src/components/cascad-menu.vue)
 
 ### 根据[掘金评论](https://juejin.im/post/5b6ea54cf265da0f6436f77a#comment)需求，更新了数据接口并修复了一些问题

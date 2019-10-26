@@ -1,3 +1,9 @@
+
+
+[目录 -> 学习笔记](notes/guide.md)
+
+[目录 -> 上一级](notes/git-npm/guide.md)
+
 本文是对`npm`的学习上的一篇理解笔记，主要通过当前使用到的一些功能进行理解，解释。
 
 ### [安装 install](https://docs.npmjs.com/cli/install) & [更新 update](https://docs.npmjs.com/cli/update)

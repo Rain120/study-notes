@@ -1,3 +1,9 @@
+
+
+[目录 -> 学习笔记](notes/guide.md)
+
+[目录 -> 上一级](notes/tips/guide.md)
+
 ### Js长按图片
 
 ##### 原理: 监听`touchstart`到`touchend`的时间差

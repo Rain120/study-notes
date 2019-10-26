@@ -1,3 +1,9 @@
+
+
+[目录 -> 学习笔记](notes/guide.md)
+
+[目录 -> 上一级](notes/javascript/guide.md)
+
 #### ECMAScript学习笔记
 
 - [类的Static学习](notes/javascript/es-study/static.md)

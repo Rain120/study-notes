@@ -1,3 +1,9 @@
+
+
+[目录 -> 学习笔记](notes/guide.md)
+
+[目录 -> 上一级](notes/linux/guide.md)
+
 #### 新手入门`Linux`必知的`n`条命令
 
 **1．[`echo`命令](http://man.linuxde.net/echo)**

@@ -1,3 +1,9 @@
+
+
+[目录 -> 学习笔记](notes/guide.md)
+
+[目录 -> 上一级](notes/react/guide.md)
+
 ### better-scroll是什么?
 
 `BetterScroll `是一款重点解决移动端（已支持` PC`）各种滚动场景需求的插件。它的核心是借鉴的 [iscroll](https://github.com/cubiq/iscroll) 的实现，它的 API 设计基本兼容` iscroll`，在` iscroll` 的基础上又扩展了一些 `feature `以及做了一些性能优化。
@@ -33,7 +39,6 @@
 [Online Demo](https://rain120.github.io/better-scroll-for-react-usage/dist/#/)
 
 <iframe src="https://codesandbox.io/embed/react-better-scroll-8gghg?autoresize=1&eslint=1&fontsize=14" title="react-better-scroll" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-
 ### 遇到的问题
 
 - `create-react-app`项目在`npm run build`后，`index.html`的路径`/static/xxx`导致资源找不到

@@ -61,8 +61,8 @@
       * [Mysql错误笔记](notes/error-qa/mysql/note-qa.md)
       * [Node & Git错误笔记](notes/error-qa/node-git/note-qa.md)
     * [VS Code相关](notes/vscode/guide.md)
-    * [VS Code Tips](notes/vscode/tips.md)
-    * [VS Code 插件](notes/vscode/extensions.md)
+         * [VS Code Tips](notes/vscode/tips.md)
+         * [VS Code 插件](notes/vscode/extensions.md)
 
 <!--  资源集合 -->
 

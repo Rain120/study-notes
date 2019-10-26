@@ -1,3 +1,9 @@
+
+
+[目录 -> 学习笔记](notes/guide.md)
+
+[目录 -> 上一级](notes/git-npm/guide.md)
+
 #### 1. 注册`npm`账号
 
 [npm注册地址](https://www.npmjs.com/)

@@ -1,3 +1,9 @@
+
+
+[目录 -> 学习笔记](notes/guide.md)
+
+[目录 -> 上一级](notes/webgl/guide.md)
+
 ### 目录
 
 [什么是Threejs?](#什么是Threejs?)
@@ -50,6 +56,10 @@
    1. 设置着色器程序(和纹理)
    2. 准备缓冲区
    3. 绘制图元
+
+![threejs-create-process.png](./images/threejs-create-process.png)
+
+
 
 #### Three.js 常见概念
 
