@@ -147,3 +147,15 @@ function backTop() {
   </script>
 ```
 
+#### 让当前的元素滚动到浏览器窗口的可视区域内。
+
+```javascript
+var element = document.getElementById("box");
+
+element.scrollIntoView();
+element.scrollIntoView(false);
+element.scrollIntoView({block: "end"});
+element.scrollIntoView({behavior: "instant", block: "end", inline: "nearest"});
+```
+
+[Element.scrollIntoView 方法](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/scrollIntoView)
