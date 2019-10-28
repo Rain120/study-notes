@@ -8,8 +8,8 @@ html, body {
   cursor: pointer;
   position: fixed;
   right: 30px;
-  bottom: 10%;
-  z-index: 1000;
+  bottom: 20%;
+  z-index: 100;
   text-align: center;
 }
 
@@ -20,6 +20,94 @@ html, body {
 .backtop-img {
   width: 48px;
   height: 100%;
+}
+
+.doc-directory {
+  position: fixed;
+  right: 30px;
+  top: 20%;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.header {
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+.header::after {
+  content: '.';
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+.title-content {
+  display: none;
+  float: left;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+  min-width: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+  background: #36cfc8;
+  border-radius: 10px;
+}
+.common > .wrapper {
+  padding-top: 5px;
+}
+
+.h2-title > .wrapper {
+  font-size: 18px;
+}
+
+.h3-title > .wrapper {
+  margin-left: 10px;
+  font-size: 17px;
+}
+
+.h4-title > .wrapper {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.h5-title > .wrapper {
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+.wrapper {
+  margin: 0 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.wrapper .dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 5px;
+}
+
+.wrapper .anchor {
+  color: #fff; 
+}
+.wrapper .anchor:hover {
+  text-decoration: none;
+}
+
+.wrapper .dot-active {
+  background: red !important;
+}
+
+.wrapper .active {
+  color: red;
 }
 
 @keyframes jump {

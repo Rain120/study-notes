@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime: 2019-10-26 21:23:21
+ * @LastEditTime: 2019-10-28 20:54:08
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -17,11 +17,19 @@
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="./custom/style/docs.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="./custom/style/custom.css">
 </head>
 <body>
+  <div class="doc-directory">
+    <ul class="title-content"></ul>
+    <div class="header">
+      <img class="menu-img" src="./menu.png" alt="menu" />
+    </div>
+  </div>
   <div id="back-to-top" class="backtop" title="回到顶部" >
     <img class="backtop-img" src="./backtop.png" alt="backtop" />
   </div>
@@ -142,23 +150,83 @@
     let fadeTime = 1500;
     let animateTime = 1000;
     let height = 100;
-    $(function () {
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > height) {
-                $("#back-to-top").fadeIn(fadeTime);
-            } else {
-                $("#back-to-top").fadeOut(fadeTime);
-            }
+    let hList = [];
+    $(function() {
+      let back2Top = $("#back-to-top");
+      let docDirectory = $('.doc-directory');
+
+      $(window).scroll(function() {
+        if (!tContent.is(':hidden')) {
+          tContent.fadeOut(500);
+        }
+        if ($(window).scrollTop() > height) {
+          back2Top.fadeIn(fadeTime);
+        } else {
+          back2Top.fadeOut(fadeTime);
+        }
+      });
+
+      // back to top
+      back2Top.draggable();
+      back2Top.click(function() {
+        back2Top.animate({ top: 'toggle' }, animateTime);
+        if ($('html').scrollTop()) {
+          $('html').animate({ scrollTop: 0 }, animateTime);
+          return false;
+        }
+        $('body').animate({ scrollTop: 0 }, animateTime);
+        return false;            
+      });
+
+      // doc directory
+      let tContent = $('.title-content');
+      
+      // docDirectory.draggable();
+      $('.header').click(function(e) {
+        e.stopPropagation();
+        if (tContent.is(':hidden')) {
+          tContent.fadeIn(500);
+        } else {
+          tContent.fadeOut(500);
+        }
+        setTitle({
+          docDirectory,
+          tContent
         });
-        $("#back-to-top").click(function() {
-          if ($('html').scrollTop()) {
-            $('html').animate({ scrollTop: 0 }, animateTime);
-            return false;
-          }
-          $('body').animate({ scrollTop: 0 }, animateTime);
-          return false;            
-        });    
-      });  
+      });
+
+      $(window).bind('hashchange', function() {
+        setTitle({
+          docDirectory,
+          tContent,
+        });
+      });
+    });
+
+    function setTitle({
+      docDirectory,
+      tContent,
+    }) {
+      tContent.empty();
+      
+      hList = $('.content h2, h3, h4, h5');
+      hList.each(function() {
+        let tagName = this.tagName.toLowerCase();
+        let [path, hash] = location.hash.split('?');
+        let params = hash ? decodeURIComponent(hash.split('=')[1]) : '';
+        let active = this.id === params;
+        let dotActive = active ? 'dot-active' : '';
+        let aActive = active ? 'active' : '';
+        tContent.append(`
+          <li class="${tagName}-title common">
+            <div class="wrapper">
+              <span class="dot ${dotActive}"></span>
+              <a class="anchor ${aActive}" href="${path}?id=${this.id}">${this.outerText}</a>
+            </div>
+          </li>
+        `);
+      });
+    }
   </script>
   <script>
     window.dataLayer = window.dataLayer || [];

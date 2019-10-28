@@ -272,3 +272,4 @@ console.assert(false, 'Whoops %s work', 'didn\'t');
 以上就是关于`console`系列的我使用的所有方法了。
 
 [`Google Chrome - Tools for Web Developers`](https://developers.google.com/web/tools/chrome-devtools/console/?hl=zh-cn)
+
