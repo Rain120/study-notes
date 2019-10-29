@@ -1,9 +1,3 @@
-
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/vscode/guide.md)
-
 #### Git
 
 [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)

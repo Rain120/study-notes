@@ -1,4 +1,6 @@
-### 详细代码
+### Code
+
+### 代码详解
 
 ```react
 import React, { Component } from "react";

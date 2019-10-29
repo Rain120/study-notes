@@ -1,9 +1,3 @@
-
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/babel/guide.md)
-
 #### 工具
 
 [AST在线预览](https://astexplorer.net/)

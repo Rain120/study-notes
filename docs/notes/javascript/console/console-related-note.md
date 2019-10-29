@@ -1,9 +1,3 @@
-
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/javascript/guide.md)
-
 #### `console`函数列表
 
 ![console-function](./images/console-function.png)

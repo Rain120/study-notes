@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime: 2019-10-29 10:51:12
+ * @LastEditTime: 2019-10-29 20:28:39
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -207,11 +207,18 @@
       docDirectory,
       tContent,
     }) {
+      let mainCategoryPath = location.hash.split('/').slice(0, 3).join('/');
       tContent.empty();
       tContent.append(`
         <li class="home-title common">
           <div class="wrapper">
             <a class="anchor" href="#/notes/guide">学习笔记</a>
+          </div>
+        </li>
+        <li class="category-title common">
+          <div class="wrapper">
+            <span class="dot"></span>
+            <a class="anchor" href="${mainCategoryPath}/guide">回到上一级目录</a>
           </div>
         </li>
       `);

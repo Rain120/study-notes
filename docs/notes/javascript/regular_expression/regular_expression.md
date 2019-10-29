@@ -1,9 +1,4 @@
-
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/javascript/guide.md)
-
+## 缘由
 小白正则表达式入门学习：[正则表达式30分钟入门教程](http://www.runoob.com/w3cnote/regular-expression-30-minutes-tutorial.html#alternative)
 
 正则表达式Regular Expression是一种文本模式。它描述了一种字符串匹配的模式pattern，可以用来检查一个串是否含有某种子串、将匹配的子串替换或者从某个串中取出符合某个条件的子串等。

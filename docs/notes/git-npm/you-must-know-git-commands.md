@@ -1,9 +1,3 @@
-
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/git-npm/guide.md)
-
 > [Git](https://git-scm.com/) 是一个分布式版本控制软件, 最初目的是为更好地管理`Linux`内核开发而设计。
 >
 > 来源：[维基百科  - Git](https://zh.wikipedia.org/wiki/Git)

@@ -1,9 +1,3 @@
-
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/webgl/guide.md)
-
 ### 什么是WebGL(Web Graphics Library)？
 
 `WebGL`(`Web`图形库) 是一种`JavaScript API`，用于在任何兼容的`Web`浏览器中呈现交互式`3D`和`2D`图形，而无需使用插件。`WebGL`通过引入一个与[`OpenGL ES`](http://www.khronos.org/opengles/) 2.`紧密相符合的`API`，可以在[HTML5 Canvas](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/canvas)元素中使用。

@@ -48,7 +48,7 @@
    * [Charles抓包https手机配置](notes/mobile/charles-https-mobile-config.md)
    * [移动端Tips](notes/mobile/mobile-tips.md)
 * [WebGL](notes/webgl/guide.md)
-* [WebGL基础知识](notes/webgl/webgl.md)
+   * [WebGL基础知识](notes/webgl/webgl.md)
    * [Three.js 学习](notes/webgl/threejs/threejs.md)
 * [Linux](notes/linux/guide.md)
 * [Linux入门学习](notes/linux/initial.md)

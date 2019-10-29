@@ -63,6 +63,10 @@ html, body {
   text-align: center;
 }
 
+.category-title {
+  font-size: 16px;
+}
+
 .title-content .empty-content {
   margin: 10px;
 }

@@ -1,10 +1,4 @@
-
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/error-qa/guide.md)
-
-##### 1. MySQL + Node报错
+#### 1. MySQL + Node报错
 
 ![node-mysql-error](./sp/node-mysql-error.png)
 
@@ -24,7 +18,7 @@ https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-a
 
 
 
-##### 2. MySQL
+#### 2. MySQL
 
 **Q:** 2002 - Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2 "No such file or directory")
 

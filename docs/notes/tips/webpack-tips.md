@@ -1,9 +1,3 @@
-
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/tips/guide.md)
-
 ## webpack 打包优化
 
 #### moment 按需加载语言包

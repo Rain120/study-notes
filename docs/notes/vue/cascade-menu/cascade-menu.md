@@ -1,24 +1,7 @@
-<!--
- * @Author: Rainy
- * @Github: https://github.com/Rain120
- * @Date: 2019-01-20 16:30:53
- * @LastEditTime: 2019-10-19 12:01:46
- -->
-<!-- 
-[知乎](https://www.zhihu.com/people/yan-yang-nian-hua-120/activities)
-
-[个人博客](https://rain120.github.io/)
-
-[Github](https://github.com/Rain120)
--->
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/vue/guide.md)
-
+### Code
 源码传送门：[Rain120/vue-study](https://github.com/Rain120/vue-study/blob/master/my-project/src/components/cascad-menu.vue)
 
-### 根据[掘金评论](https://juejin.im/post/5b6ea54cf265da0f6436f77a#comment)需求，更新了数据接口并修复了一些问题
+**根据[掘金评论](https://juejin.im/post/5b6ea54cf265da0f6436f77a#comment)需求，更新了数据接口并修复了一些问题**
 
 之前在外卖软件上看到这个左右联动的效果，觉得很有意思，所以就尝试使用`Vue`来实现，将这个联动抽离成为一个单独的组件，废话少说，先来一张效果图。
 
@@ -26,7 +9,7 @@
 
 这个组件分为两个部分，1、左菜单；2、右菜单。
 
-动态数据结构
+#### 动态数据结构
 ![动态数据结构](2.jpeg)
 
 ```
@@ -81,7 +64,7 @@ data数据是用户自定义增加一些内容，并渲染`DOM`
 </scroll>
 ```
 
-右菜单的`DOM`结构
+#### 右菜单的`DOM`结构
 
 ```
 <scroll
@@ -224,7 +207,7 @@ selectLeft (index, event) {
 },
 ```
 
-使用
+#### 使用
 ```
 <cascad-menu :menus="menus"></cascad-menu>
 ```

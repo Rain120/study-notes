@@ -1,9 +1,3 @@
-
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/linux/guide.md)
-
 ### Vim
 
 - 显示行号

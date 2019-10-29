@@ -1,22 +1,16 @@
-
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/git-npm/guide.md)
-
-1. 什么是`npm scripts`?
+#### 1. 什么是`npm scripts`? 
 
    >  **脚本语言**(英语: `Scripting language`)是为了缩短传统的「编写、编译、链接、运行」(`edit-compile-link-run`)过程而创建的计算机[编程](https://zh.wikipedia.org/wiki/编程)语言。 ——[维基百科 - 脚本语言](https://zh.wikipedia.org/wiki/脚本语言)
 
    `npm scripts`就是通过使用脚本来自动执行重复性任务。
 
-2. 启动原理
+#### 2. 启动原理
 
    通过命令行将命令作为脚本参数传递给`sh`来运行脚本。`npm` 脚本的退出码，也遵守 `Shell` 脚本规则。如果退出码不是`0`，npm 就认为这个脚本执行失败，则会中止该过程。
 
    请注意，这些脚本文件不必是`nodejs`甚至是`javascript`程序。 它们只需要是某种可执行文件。
 
-3. `Path`
+#### 3. `Path`
 
    如果依赖于定义可执行脚本的模块（如测试套件），那么这些可执行文件将添加到`path`以执行脚本。 所以，如果你的`package.json`有这个：
 
@@ -34,13 +28,13 @@
 
    然后你可以运行`npm build:dev`来执行`webpack`脚本，它被导出到`npm install`上的`node_modules/.bin`目录中。
 
-4. 参数
+#### 4. 参数
 
    向 `npm` 脚本传入参数，要使用`—`标明，表明在此之后的任何东西都应该直接附加到命令中。
 
    可以直接执行命令，也可以将命令写成一条脚本命令执行。
 
-5. 环境变量
+#### 5. 环境变量
 
    `npm`可以通过`npm_package_xxx`来访问`package.json`中的字段。
 
@@ -52,7 +46,7 @@
 
      
 
-6. 执行顺序
+#### 6. 执行顺序
 
    如果一条自定义脚本可能需要执行多条任务，那么他们会存在两种情况，并行和穿行。
 
@@ -74,7 +68,7 @@
 
    
 
-7. 钩子函数
+#### 7. 钩子函数
 
    在 `npm script` 中存在两种类型的钩子，`pre-xxx` 和 `post-xxx`。
 
@@ -111,7 +105,7 @@
 
    
 
-8. `npx`
+#### 8. `npx`
 
    [npm@5.2.0](https://github.com/npm/npm/releases/tag/v5.2.0)版本更新最大的一个特性就是`npx`命令，那么`npx`是个什么呢？
 
@@ -132,7 +126,7 @@
    3. 执行`npm`二进制包
    4. 以交互方式开发`npm run-scripts`
 
-参考资料:
+#### 参考资料
 
 [npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
 

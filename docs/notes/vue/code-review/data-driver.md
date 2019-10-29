@@ -1,8 +1,7 @@
 
-
 [回到上层Vue源码学习菜单](notes/vue/code-review/code-review.md)
 
-1. **VDom** 
+#### 1. **VDom** 
 
    为什么需要使用虚拟`DOM`？
 
@@ -52,7 +51,7 @@ cond(no)->render
 
 ![vue_process](./images/vue_process.png)
 
-2. `init`
+#### 2. `init`
 
 干了什么: 合并配置，初始化生命周期，初始化事件中心，初始化渲染，初始化 data、props、computed、watcher 等等。
 

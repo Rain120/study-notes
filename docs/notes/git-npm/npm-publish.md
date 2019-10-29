@@ -1,9 +1,3 @@
-
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/git-npm/guide.md)
-
 #### 1. 注册`npm`账号
 
 [npm注册地址](https://www.npmjs.com/)
@@ -16,7 +10,7 @@ npm login
 
 ![npm-login](./images/npm-login.png)
 
-2. #### 新建一个`repository`
+#### 2. 新建一个`repository`
 
 ![new-repository](./images/new-repository.png)
 
@@ -24,7 +18,7 @@ npm login
 
 ![cui-npm-init](./images/cui-npm-init.png)
 
-3. #### 创建项目
+#### 3. 创建项目
 
 `vue-create`
 
@@ -38,7 +32,7 @@ npm login
 
 ![git-push-error](./images/git-push-error.png)
 
-4. #### 发布`npm`
+#### 4. 发布`npm`
 
 查看你的包名是否已存在
 
@@ -168,9 +162,7 @@ npm login
       },
       ````
 
-    
-
-问题:
+#### 问题
 
 1. `vue 3.x`学习
 2. 组件库开发

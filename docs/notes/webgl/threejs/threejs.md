@@ -1,23 +1,3 @@
-
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/webgl/guide.md)
-
-### 目录
-
-[什么是Threejs?](#什么是Threejs?)
-
-[作用](#作用)
-
-[常用APIs](#常用APIs)
-
-[Three.js 核心对象结构和基本的渲染流程](#threejs-核心对象结构和基本的渲染流程)
-
-[参考资料](#参考资料)
-
-
-
 #### 什么是Threejs?
 
 `Three.js`是一个`3D JavaScript`库。

@@ -1,9 +1,3 @@
-
-
-[目录 -> 学习笔记](notes/guide.md)
-
-[目录 -> 上一级](notes/tips/guide.md)
-
 ### Typescript 绝对文件引入 -> `react + typescript`
 
 ```shell
