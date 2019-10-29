@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime: 2019-10-28 20:54:08
+ * @LastEditTime: 2019-10-29 10:51:12
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -208,24 +208,36 @@
       tContent,
     }) {
       tContent.empty();
+      tContent.append(`
+        <li class="home-title common">
+          <div class="wrapper">
+            <a class="anchor" href="#/notes/guide">学习笔记</a>
+          </div>
+        </li>
+      `);
       
       hList = $('.content h2, h3, h4, h5');
-      hList.each(function() {
-        let tagName = this.tagName.toLowerCase();
-        let [path, hash] = location.hash.split('?');
-        let params = hash ? decodeURIComponent(hash.split('=')[1]) : '';
-        let active = this.id === params;
-        let dotActive = active ? 'dot-active' : '';
-        let aActive = active ? 'active' : '';
-        tContent.append(`
-          <li class="${tagName}-title common">
-            <div class="wrapper">
-              <span class="dot ${dotActive}"></span>
-              <a class="anchor ${aActive}" href="${path}?id=${this.id}">${this.outerText}</a>
-            </div>
-          </li>
-        `);
-      });
+      if (hList.length) {
+        hList.each(function() {
+          let tagName = this.tagName.toLowerCase();
+          let [path, hash] = location.hash.split('?');
+          let params = hash ? decodeURIComponent(hash.split('=')[1]) : '';
+          let active = this.id === params;
+          let dotActive = active ? 'dot-active' : '';
+          let aActive = active ? 'active' : '';
+          tContent.append(`
+            <li class="${tagName}-title common">
+              <div class="wrapper" title="${this.outerText}">
+                <span class="dot ${dotActive}"></span>
+                <a class="anchor ${aActive}" href="${path}?id=${this.id}">${this.outerText}</a>
+              </div>
+            </li>
+          `);
+        });
+      } else {
+        hList = $('.content ul');
+        tContent.append(hList.clone());
+      }
     }
   </script>
   <script>
