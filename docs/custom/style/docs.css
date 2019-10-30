@@ -1,4 +1,5 @@
 @import './font/iconfont.css';
+@import './normalize.css';
 
 .logo {
   border-radius: 50%;

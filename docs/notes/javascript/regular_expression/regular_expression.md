@@ -1,9 +1,9 @@
-## 缘由
+#### 缘由
 小白正则表达式入门学习：[正则表达式30分钟入门教程](http://www.runoob.com/w3cnote/regular-expression-30-minutes-tutorial.html#alternative)
 
 正则表达式Regular Expression是一种文本模式。它描述了一种字符串匹配的模式pattern，可以用来检查一个串是否含有某种子串、将匹配的子串替换或者从某个串中取出符合某个条件的子串等。
 我们将正则表达式分为几个部分记下笔记，便于理解与使用。
-## 1. 元字符
+#### 1. 元字符
 
 我们在 [MDN-Regular_Expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) 上得知，正则表达式会有一些特殊字符，也叫作元字符。如下表示：
 
@@ -68,7 +68,7 @@
 元字符`\s`与`\S`
 
 元字符`\w`与`\W`
-## 2. 参数
+#### 2. 参数
 
 | 参数列表 | 含义                                                         | 英语记忆或者个人记忆方法 |
 | :------: | ------------------------------------------------------------ | :----------------------: |
@@ -79,7 +79,7 @@
 
 当然，上面这几种匹配规则可以结合使用，例如`/ig`或者`/gi`都是全文查找、忽略大小写
 
-## <span id="func">3. 方法</span>
+#### <span id="func">3. 方法</span>
 
 |                             方法                             | 含义                                                         |      匹配返回值      | 未匹配返回值 |
 | :----------------------------------------------------------: | ------------------------------------------------------------ | :------------------: | :----------: |
@@ -92,11 +92,11 @@
 
 下面我们讲上述方法一个一个的测试
 
-#### 1. `test(str)`
+1. ##### `test(str)`
 
-##### param：`str`
+`param`：`str`
 
-##### result:
+`result`:
 
 `匹配成功：` 如果正则表达式与指定的字符串匹配 ，返回true
 
@@ -104,11 +104,11 @@
 
 ![test test](./images/8.png)
 
-#### 2. `exec(str)`
+2. ##### `exec(str)`
 
-##### param：`str`
+`param`：`str`
 
-##### result:
+`result`:
 
 `匹配成功：`exec() 方法返回一个数组，并更新正则表达式对象的属性。返回的数组将完全匹配成功的文本作为第一项，将正则括号里匹配成功的作为数组填充到后面。
 
@@ -128,11 +128,11 @@
 
 ![test exec](./images/9.png)
 
-#### 3. `match(pattern)`
+3. ##### `match(pattern)`
 
-##### `param`: 传入一个正则表达式对象, 如果传入一个非正则表达式对象，则会隐式地使用 `new RegExp(obj)` 将其转换为一个 [`RegExp`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/RegExp) 。如果你没有给出任何参数并直接使用match() 方法 ，你将会得到一 个包含空字符串的 [`Array`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Array) ：[""] 。
+`param`: 传入一个正则表达式对象, 如果传入一个非正则表达式对象，则会隐式地使用 `new RegExp(obj)` 将其转换为一个 [`RegExp`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/RegExp) 。如果你没有给出任何参数并直接使用match() 方法 ，你将会得到一 个包含空字符串的 [`Array`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Array) ：[""] 。
 
-##### `return`:  
+`return`:  
 
 - 如果使用`g`标志，则将返回与完整正则表达式匹配的所有结果（`Array`），但不会返回捕获组，或者未匹配 `null`。
 - 如果未使用`g`标志，则仅返回第一个完整匹配及其相关的捕获组（`Array`）。 在这种情况下，返回的项目将具有如下所述的其他属性，或者未匹配 `null`。
@@ -147,24 +147,24 @@
 
 `match[1]`: `(\w+)`匹配结果
 
-#### 4. `search(pattern)`
+##### 4. `search(pattern)`
 
-##### `param`: 传入一个正则表达式对象， 如果传入一个非正则表达式对象，则会使用 `new RegExp(obj)` 隐式地将其转换为正则表达式对象。
+`param`: 传入一个正则表达式对象， 如果传入一个非正则表达式对象，则会使用 `new RegExp(obj)` 隐式地将其转换为正则表达式对象。
 
-##### `return`: 如果匹配成功，则 `search()` 返回正则表达式在字符串中首次匹配项的索引。否则，返回 `-1`。
+`return`: 如果匹配成功，则 `search()` 返回正则表达式在字符串中首次匹配项的索引。否则，返回 `-1`。
 
 ![search](./images/search.png)
 
 很类似`indexof`这个方法
 
-#### 5. `replace(regexp|substr, newSubStr|function)`
+##### 5. `replace(regexp|substr, newSubStr|function)`
 
-##### `param`: 
+`param`: 
 
 - 正则表达式`or`字符
 - 字符串或者函数
 
-##### `return`: 一个部分或全部匹配由替代模式所取代的新的字符串。
+`return`: 一个部分或全部匹配由替代模式所取代的新的字符串。
 
 ![replace](./images/replace.png)
 
@@ -180,14 +180,14 @@
 
 
 
-#### 6. `split(pattern， limit？)`
+##### 6. `split(pattern， limit？)`
 
-##### `param`:
+`param`:
 
 - `pattern`: 指定表示每个拆分应发生的点的字符串, 可以是一个正则表达式，也可以是字符串。
 - `limit`: 一个整数，限定返回的分割片段数量。
 
-##### `return`: 返回源字符串以分隔符出现位置分隔而成的一个`Array`
+`return`: 返回源字符串以分隔符出现位置分隔而成的一个`Array`
 
 ![split](./images/split.png)
 
