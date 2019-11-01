@@ -297,6 +297,8 @@ git reset --help
 
 > 重置索引并更新工作树中<commit>和`HEAD`之间不同的文件。 如果<commit>和`HEAD`之间不同的文件具有本地更改，则重置将中止。
 
+[Git 工具 - 重置揭密](https://git-scm.com/book/zh/v2/Git-工具-重置揭密)
+
 #### 8. 提交历史
 
 [常见参数选项](https://git-scm.com/book/zh/v2/Git-基础-查看提交历史#rlog_options):
@@ -519,7 +521,7 @@ git push -u origin master
 
 
 
-参考资料
+#### 参考资料
 
 [Git Document](https://git-scm.com/docs)  [中文文档](https://git-scm.com/book/zh/v2)
 
@@ -537,5 +539,6 @@ git push -u origin master
 
 [猴子🐒都能懂的Git入门](https://backlog.com/git-tutorial/cn/)
 
+[Learn Git Branching](https://learngitbranching.js.org/): `Git`可视化操作
 
 
