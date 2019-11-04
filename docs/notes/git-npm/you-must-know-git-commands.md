@@ -417,6 +417,10 @@ git rebase <branch> # 衍合指定分支到当前分支
 git cherry-pick <start-commit-id>…<end-commit-id>
 ```
 
+**git cherry-pick <start_commit_id>...<end_commit_id>**
+
+![git-cherry-pick](./images/git-cherry-pick.gif)
+
 #### 11. 储藏与清理
 
 当你在项目的一部分上已经工作一段时间后，所有东西都进入了混乱的状态，而这时你想要切换到另一个分支做一点别的事情。 问题是，你不想仅仅因为过会儿回到这一点而为做了一半的工作创建一次提交。
