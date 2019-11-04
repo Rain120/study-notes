@@ -10,6 +10,8 @@
 
 [DevDocs: API Documentation Browser](https://devdocs.io/) -> [Github](https://github.com/freeCodeCamp/devdocs)
 
+#### 框架
+
 ##### [React](https://react.docschina.org/)
 
 > React是一个为数据提供渲染为HTML视图的开源JavaScript 库。React视图通常采用包含以自定义HTML标记规定的其他组件的组件渲染。React为程序员提供了一种子组件不能直接影响外层组件的模型，数据改变时对HTML文档的有效更新，和现代单页应用中组件之间干净的分离。
@@ -38,7 +40,9 @@
 
 [Vue-Map](https://github.com/ElemeFE/vue-amap): 基于 Vue 2.x 和高德地图的地图组件, [Vue-Map文档](https://elemefe.github.io/vue-amap/#/)
 
-##### [Nodejs](https://nodejs.org/zh-cn/)
+
+
+#### [Nodejs](https://nodejs.org/zh-cn/)
 
 > Node.js是一个能够在服务器端运行JavaScript的开放源代码、跨平台JavaScript运行环境。Node.js由Node.js基金会持有和维护，并与Linux基金会有合作关系。
 
@@ -52,7 +56,9 @@
 
 [Nodejs学习笔记](https://github.com/chyingp/nodejs-learning-guide)
 
-##### [Javascript](https://www.javascript.com/)
+
+
+#### [Javascript](https://www.javascript.com/)
 
 [现代 Javascript 教程](https://zh.javascript.info/): 从基础知识到高阶主题，只需既简单又详细的解释。
 
@@ -62,17 +68,33 @@
 
 [Ramda](https://ramdajs.com/): 一款实用的JavaScript 函数式编程库。
 
-[Underscore](https://underscorejs.org/) : -> [Github](https://github.com/jashkenas/underscore)
+[Underscore](https://underscorejs.org/) : -> [Github](https://github.com/jashkenas/underscore): Underscore.js是一个JavaScript库，为常见的编程任务提供实用程序功能。它与Prototype.js和Ruby语言提供的功能相当，但选择功能性编程设计而不是扩展对象原型。
 
-> Underscore.js是一个JavaScript库，为常见的编程任务提供实用程序功能。它与Prototype.js和Ruby语言提供的功能相当，但选择功能性编程设计而不是扩展对象原型。
-
- [30 seconds of code](https://30secondsofcode.org/index) -> [Github](https://github.com/30-seconds/30-seconds-of-code)
-
-> 精心收集的有用的 JavaScript 代码片段，可以让你在 30 秒或更少的时间内理解
+ [30 seconds of code](https://30secondsofcode.org/index) -> [Github](https://github.com/30-seconds/30-seconds-of-code): 精心收集的有用的 JavaScript 代码片段，可以让你在 30 秒或更少的时间内理解
 
 [AST Explorer](https://astexplorer.net/): 用于探索各种解析器生成的AST的Web工具。
 
-##### `Mock`
+[JavaScript 版本兼容性查询](https://kangax.github.io/compat-table/es6/)
+
+[前端代码片段](https://alligator.io/)
+
+[flaviocopes](https://flaviocopes.com/): 一些`JavaScript`编程教程
+
+
+
+#### Web 相关
+
+[Can I Use](<https://caniuse.com/>): 查询浏览器的特性支持情况
+
+[Package Different](<https://diff.intrinsic.com/>)
+
+[查询 NodeJS 的 ES2018 特性支持情况](https://node.green/)
+
+[Web Dev](https://web.dev/): `Google`官方`Web`开发者资源
+
+
+
+#### `Mock`
 
 [Easy-Mock](https://easy-mock.com/): 高效伪造数据
 
@@ -80,7 +102,9 @@
 
 [Rapid-Api](https://rapidapi.com/): 构建块来增强您的应用程序, 发现并连接世界上最大的API中心的数千个API.
 
-##### 动画库(Javascript & CSS)
+
+
+#### 动画库(Javascript & CSS)
 
 [Threejs](https://threejs.org/) -> [Github](https://github.com/mrdoob/three.js/)
 
@@ -100,37 +124,33 @@
 
 Notes: [11 JavaScript Animation Libraries For 2019](https://blog.bitsrc.io/11-javascript-animation-libraries-for-2018-9d7ac93a2c59)
 
-[Kubt.js](http://thednp.github.io/kute.js/) -> [Github](https://github.com/thednp/kute.js/)
+[Kubt.js](http://thednp.github.io/kute.js/) -> [Github](https://github.com/thednp/kute.js/): KUTE.js是一个Javascript动画引擎，具有顶级性能，内存效率和模块化代码。 它提供了大量工具来帮助您创建出色的自定义动画。
 
-> KUTE.js是一个Javascript动画引擎，具有顶级性能，内存效率和模块化代码。 它提供了大量工具来帮助您创建出色的自定义动画。
+[Hover](http://ianlunn.github.io/Hover/) -> [Github](https://github.com/IanLunn/Hover): CSS3动力悬停效果的集合，适用于链接，按钮，徽标，SVG，特色图像等。 轻松应用于您自己的元素，修改或仅用于灵感。 提供CSS，Sass和LESS。
 
-[Hover](http://ianlunn.github.io/Hover/) -> [Github](https://github.com/IanLunn/Hover)
+[css-tricks](https://css-tricks.com/): 分享使用CSS样式的技巧、经验和教程等。值得前端开发者阅读收藏的国外网站。
 
-> CSS3动力悬停效果的集合，适用于链接，按钮，徽标，SVG，特色图像等。 轻松应用于您自己的元素，修改或仅用于灵感。 提供CSS，Sass和LESS。
+[V8 引擎](https://v8.dev/): 了解支持 Chrome 和 NodeJS 的 Google 开源高性能 Javascript 和 WebAssembly 引擎
 
-##### 测试框架
 
-[Mocha](https://mochajs.org/) -> [Mocha GitHub](https://github.com/mochajs/mocha)
 
-> Mocha是Node.js程序的JavaScript测试框架，具有浏览器支持，异步测试，测试覆盖率报告以及任何断言库的使用。
+#### 测试框架
 
-[Chai](<https://www.chaijs.com/>) -> [Chai Github](https://github.com/chaijs/chai)
+[Mocha](https://mochajs.org/) -> [Mocha GitHub](https://github.com/mochajs/mocha): `Mocha`是`Node.js`程序的JavaScript测试框架，具有浏览器支持，异步测试，测试覆盖率报告以及任何断言库的使用。
 
-> Chai是节点和浏览器的BDD / TDD断言库，可以与任何javascript测试框架愉快地配对。
+[Chai](<https://www.chaijs.com/>) -> [Chai Github](https://github.com/chaijs/chai): Chai是节点和浏览器的BDD / TDD断言库，可以与任何javascript测试框架愉快地配对。
 
-[Jest](https://jestjs.io/) -> [Jest Github](https://github.com/facebook/jest)
+[Jest](https://jestjs.io/) -> [Jest Github](https://github.com/facebook/jest): Jest是一个令人愉快的JavaScript测试框架，专注于简单性。它适用于以下项目：Babel，TypeScript，Node，React，Angular，Vue等等！
 
-> Jest是一个令人愉快的JavaScript测试框架，专注于简单性。它适用于以下项目：Babel，TypeScript，Node，React，Angular，Vue等等！
-
-[Karma](http://karma-runner.github.io/latest/index.html): 一个 `runner` ， 旨在帮助开发者简单而又快速的进行自动化单元测试 -> [Github](https://github.com/karma-runner/karma)
-
-> [karma测试框架的前世今生](http://taobaofed.org/blog/2016/01/08/karma-origin/)
+[Karma](http://karma-runner.github.io/latest/index.html): 一个 `runner` ， 旨在帮助开发者简单而又快速的进行自动化单元测试 -> [Github](https://github.com/karma-runner/karma): [karma测试框架的前世今生](http://taobaofed.org/blog/2016/01/08/karma-origin/)
 
 [Tape Github](<https://github.com/substack/tape>)
 
 [jsPerf — JavaScript performance playground](https://jsperf.com/) -> [GitHub](https://github.com/jsperf/jsperf.com)
 
-##### 优秀项目 & 插件
+
+
+#### 优秀项目 & 插件
 
 [Webpack](https://webpack.js.org/)
 
@@ -148,7 +168,9 @@ Notes: [11 JavaScript Animation Libraries For 2019](https://blog.bitsrc.io/11-ja
 
 [Awesome Lists](<https://www.prettyawesomelists.com/lists>)
 
-##### 图表库
+
+
+#### 图表库
 
 [Echarts](https://echarts.baidu.com/) -> [Github](https://github.com/apache/incubator-echarts)
 
@@ -174,13 +196,17 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Datamatic](https://datamatic.io/)
 
-##### 开发资源
+
+
+#### 开发资源
 
 [Awesomes前端开发资源](https://www.awesomes.cn/)
 
 [语雀 IT 百科精品知识库](https://www.yuque.com/yuque/blog/yuque-info-tech-encyclopedia)
 
-##### 算法学习 & 机器学习
+
+
+#### 算法学习 & 机器学习
 
 [Rappid算法学习](http://resources.jointjs.com/)
 
@@ -200,7 +226,9 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [internetfundamentals](http://internetfundamentals.com/watch/)：了解Web的工作原理，并迈出创建网页的第一步！ 一个完全免费的视频课程，适合初学者
 
-##### 数学知识学习
+
+
+#### 数学知识学习
 
 > 微积分
 >
@@ -224,7 +252,7 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 
 
-##### [Linux](https://en.wikipedia.org/wiki/Linux)
+#### [Linux](https://en.wikipedia.org/wiki/Linux)
 
 [Linux命令大全](http://man.linuxde.net/)
 
@@ -232,7 +260,9 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [Iodide](https://alpha.iodide.io/): `Mozilla `支持的在 `Web `中实现各种数据科学的效果 -> [Github](https://github.com/iodide-project/iodide)
 
-##### Icon & 设计 & 网页
+
+
+#### Icon & 设计 & 网页
 
 [Iconfont](https://iconfont.cn)
 
@@ -254,17 +284,21 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 > 它免费提供设计素材、插件、工具，其中设计素材包括：UI 、图标、网页、插画、实物、桌面、组件、表单、字体，并且按照不同的设计软件对应的文件进行分类，包括：Photoshop 、Sketch 、Adobe Xd 、Illustrator 文件。
 
-[Can I Use](<https://caniuse.com/>): 查询浏览器的特性支持情况
+[Product Hunt](https://www.producthunt.com/): 产品相关
 
-[Package Different](<https://diff.intrinsic.com/>)
-
-[查询 NodeJS 的 ES2018 特性支持情况](<https://node.green/>)
+[Issue Hunt](https://issuehunt.io/): `issue`需要帮助或者有余力去帮助别人，当然也可以赚钱哦
 
 [网络安全的教程](https://www.hacksplaining.com/lessons)
 
 以一个黑客的角度将你带入，它配套了十几个小demo，一步一步带你发现各种各样的安全漏洞。因为这些demo都是交互式，玩起来很带感。
 
-##### 开发社区 & 学习社区
+
+
+#### 开发社区 & 学习社区
+
+[Medium](https://medium.com/): 轻量级内容发行的平台，允许单一用户或多人协作，将自己创作的内容以主题的形式结集为专辑（Collection），分享给用户进行消费和阅读
+
+[Stack Overflow](https://stackoverflow.com/): 最好的软件类问答网站了，给软件开发人员工作和学习提供了非常大的便利
 
 [Vue.js 社区](https://www.vue-js.com/)
 
@@ -288,7 +322,10 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [softnshare](https://softnshare.com/)
 
-##### 路径及文章
+
+
+#### 路径及文章
+
 [众成翻译](https://www.zcfy.cc/)
 
 [Fly63前端](http://www.fly63.com/)
@@ -321,7 +358,9 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [美团前端](https://tech.meituan.com/)
 
-##### 路径
+
+
+#### 路径
 
 [程序员不能错过的28份技术知识图谱，你的进阶路上必备](https://cloud.tencent.com/developer/article/1135231)
 
@@ -329,9 +368,11 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [浏览器的工作原理](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
 
-##### 工具
 
-[Repl.it](https://repl.it/)
+
+#### 工具
+
+[Repl.it](https://repl.it/): 不要浪费时间建立一个开发环境。它为您提供了一个即时的IDE，让您可以在一个地方学习、构建、协作和托管所有内容。
 
 [Glitch](https://glitch.com/)
 
