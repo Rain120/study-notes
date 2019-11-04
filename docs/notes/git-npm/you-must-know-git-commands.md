@@ -372,7 +372,7 @@ git whatchanged —-since='2 weeks ago'
 
 
 
-#### 9. 标签
+#### 9. 标签(Tag)
 
 `Git` 可以给历史中的某一个提交打上标签，以示重要。
 
@@ -417,9 +417,11 @@ git rebase <branch> # 衍合指定分支到当前分支
 git cherry-pick <start-commit-id>…<end-commit-id>
 ```
 
-**git cherry-pick <start_commit_id>...<end_commit_id>**
+**git cherry-pick start_commit_id, ..., end_commit_id**
 
 ![git-cherry-pick](./images/git-cherry-pick.gif)
+
+
 
 #### 11. 储藏与清理
 
