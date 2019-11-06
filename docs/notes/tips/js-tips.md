@@ -153,3 +153,92 @@ element.scrollIntoView({behavior: "instant", block: "end", inline: "nearest"});
 ```
 
 [Element.scrollIntoView 方法](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/scrollIntoView)
+
+#### 文件上传预览文件
+
+##### 单文件
+
+**HTML**
+
+```html
+<input type="file" onchange="previewFile()"><br>
+<img src="" height="200" alt="Image preview...">
+```
+
+**JavaScript**
+
+```javascript
+function previewFile() {
+  var preview = document.querySelector('img');
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
+
+  reader.addEventListener("load", function () {
+    preview.src = reader.result;
+  }, false);
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+}
+```
+
+##### 多文件
+
+**HTML**
+
+```html
+<input id="browse" type="file" onchange="previewFiles()" multiple>
+<div id="preview"></div>
+```
+
+**JavaScript**
+
+```javascript
+function previewFiles() {
+
+  var preview = document.querySelector('#preview');
+  var files   = document.querySelector('input[type=file]').files;
+
+  function readAndPreview(file) {
+
+    // 确保 `file.name` 符合我们要求的扩展名
+    if ( /\.(jpe?g|png|gif)$/i.test(file.name) ) {
+      var reader = new FileReader();
+
+      reader.addEventListener("load", function () {
+        var image = new Image();
+        image.height = 100;
+        image.title = file.name;
+        image.src = this.result;
+        preview.appendChild( image );
+      }, false);
+
+      reader.readAsDataURL(file);
+    }
+
+  }
+
+  if (files) {
+    [].forEach.call(files, readAndPreview);
+  }
+
+}
+```
+
+[FileReader](https://developer.mozilla.org/zh-CN/docs/Web/API/FileReader)
+
+[readAsDataURL](https://developer.mozilla.org/zh-CN/docs/Web/API/FileReader/readAsDataURL)
+
+```javascript
+const video = document.getElementById('video');
+const obj_url = window.URL.createObjectURL(blob);
+video.src = obj_url;
+video.play()
+window.URL.revokeObjectURL(obj_url);
+```
+
+[createObjectURL](https://developer.mozilla.org/zh-CN/docs/Web/API/URL/createObjectURL)
+
+[在web应用程序中使用文件](https://developer.mozilla.org/zh-CN/docs/Web/API/File/Using_files_from_web_applications#Example.3A_Using_object_URLs_to_display_images)
+
