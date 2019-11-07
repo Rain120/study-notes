@@ -1,9 +1,9 @@
 <!-- 学习笔记 -->
 
 * [知识图谱](knowledge-map/guide.md)
-  
-* [前端知识图谱](knowledge-map/fe_knowledge_map.md)
-  
+* [前端知识](knowledge-map/guide.md)
+  * [图谱](knowledge-map/fe_knowledge_map.md)
+  * [前端工程师学习路径](knowledge-map/feer.md)
 * [学习笔记](notes/guide.md)
     * [HTML](notes/html/guide.md)
     * [CSS](notes/css/guide.md)

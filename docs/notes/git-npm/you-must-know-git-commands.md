@@ -535,6 +535,8 @@ git push -u origin master
 
 [Git Document](https://git-scm.com/docs)  [中文文档](https://git-scm.com/book/zh/v2)
 
+[Git 推荐](https://github.com/Rain120/program-learning-lists/blob/master/README.md#git)
+
 [15-git-commands-you-may-not-know](https://zaiste.net/15-git-commands-you-may-not-know/)
 
 [阮一峰常用`Git `命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
