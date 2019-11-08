@@ -421,6 +421,12 @@ git rebase <branch> # 衍合指定分支到当前分支
 git cherry-pick <start-commit-id>…<end-commit-id>
 ```
 
+**git rebase a b**
+
+![git-rebase](./images/git-rebase.gif)
+
+
+
 **git cherry-pick start_commit_id, ..., end_commit_id**
 
 ![git-cherry-pick](./images/git-cherry-pick.gif)

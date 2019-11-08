@@ -16,6 +16,7 @@
   - [开发相关](#开发相关)
   - [在线代码编辑器](resources/website?id=在线代码编辑器)
   - [图片相关](resources/website?id=图片相关)
+  - [图片压缩](resources/website?id=图片压缩)
   - [文件相关](resources/website?id=文件相关)
   - [office相关](resources/website?id=office相关)
   - [思维导图](resources/website?id=思维导图)
@@ -119,11 +120,11 @@
 
 [Colourcode](https://colourco.de/)
 
-> 可以自由配色，也能在色彩调和规则的限制下配色。Colourcode 的特色在于它的操控体验。
+可以自由配色，也能在色彩调和规则的限制下配色。Colourcode 的特色在于它的操控体验。
 
 [Color Hunt](https://colorhunt.co/)
 
-> 色板由用户自己创建，点赞高的色板自然会排在网页前面。这上面展示的配色方案还是挺好看的，毕竟它的用户很多都是专业设计师。
+色板由用户自己创建，点赞高的色板自然会排在网页前面。这上面展示的配色方案还是挺好看的，毕竟它的用户很多都是专业设计师。
 
 [这些实用的色彩工具，非设计师也能快速上手](https://sspai.com/post/43885)
 
@@ -155,8 +156,6 @@
 
 [在线替换图片背景](https://www.gaoding.com/koutu)
 
-[压缩图](https://www.yasuotu.com/): 在线处理图片的网站
-
 [Pexels](https://www.pexels.com/)
 
 这个网站提供免费的高质量图片！并且这些图片都是没有版权的。
@@ -170,6 +169,43 @@
 [Carbon](https://carbon.now.sh/)
 
 ![carbon](./wf/carbon.png)
+
+##### 图片压缩
+
+[压缩图](https://www.yasuotu.com/): 在线处理图片的网站
+
+[Recompressor](https://recompressor.com/): 一款免费图片最佳压缩工具，将图片拖曳到网页中就能处理，支持`.svg`、`.jpg` 和`.png `三种格式，和其他同类服务不同的是` Recompressor `会自动进行多种压缩，产生不同文档大小、压缩比和画质对比图，提供给使用者最佳的压缩结果建议。`Recompressor`使用上完全免费、无广告，压缩会在使用者浏览器的` JavaScript `中进行，图片不会上传到远端服务器，相当安全。压缩后会显示各种图片画质对应的文档大小、`RMSE` 和最大误差等数据，绘制成图表后更易于检视。
+
+![recompressor.png](./wf/recompressor.png)
+
+
+
+[Tinyjpg](https://tinyjpg.com/): 一次性可批量压缩最多20张不超过`5M`的`JPG`或者`PNG`图片，在线就可以使用。
+
+[jpeg.io](https://www.jpeg.io/): 优点是支持压缩的格式特别多，连`PSD` 都可以压缩，不过压缩后的格式会统一为`JPG`。免费可打包下载。
+
+![jpeg-io.png](./wf/jpeg-io.png)
+
+[Optimizilla](https://imagecompressor.com/zh/)
+
+优点：
+
+- 在保证图像最佳画质前提下压缩率达40%-70%
+- 支持多文件同时压缩，JPG/PNG均可同时存在
+- 可以自定义画质来压缩图像
+- 可即时对比预览效果图
+
+[智图](https://zhitu.isux.us/): 智图是腾讯`ISUX`前端团队开发的一个专门用于图片压缩和图片格式转换的平台，其功能包括针对`png`,`jpeg`,`gif`等各类格式图片的压缩，以及为上传图片自动选择最优的图片格式。同时，智图平台还会为用户转换一份`webp`格式的图片。
+
+![zhitu.png](./wf/zhitu.png)
+
+
+
+[图好快](https://www.tuhaokuai.com/): 可以压缩静态图，还可以压缩`Gif`，还有一系列贴心的小功能：批量下载、加水印、格式转换，一键处理淘宝店图等等。
+
+![tuhaokuai.png](./wf/tuhaokuai.png)
+
+
 
 ##### 字符(注释+绘图)
 
