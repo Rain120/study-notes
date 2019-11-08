@@ -20,7 +20,6 @@
 一款支持实时预览的` Markdown` 文本编辑器。它有 `OS X`、`Windows`、`Linux` 三个平台的版本，并且由于仍在测试中，是完全免费的。
 
 <video muted="muted" preload="preload" loop="loop" style="width=100%;" src="https://typora.io/img/beta.mp4"></video>
-
 ![typro.png](./sw/typro.png)
 
 ### [Notion](https://www.notion.so/?r=a8b6e24bd86f4597a0b26266f6f8aee9)
@@ -117,4 +116,8 @@
 ### [Clover ](http://cn.ejie.me/)
 
 `Windows Explorer` 资源管理器的一个扩展，为其增加类似谷歌` Chrome `浏览器的多标签页功能。
+
+[Gif Cam](http://blog.bahraniapps.com/gifcam/)
+
+一款集录制与剪辑为一体的屏幕 GIF 动画制作工具，录制后的动画可以逐帧编辑。
 
