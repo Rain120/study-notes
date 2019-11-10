@@ -82,6 +82,10 @@
 
 [flaviocopes](https://flaviocopes.com/): 一些`JavaScript`编程教程
 
+[JSDoc](http://www.html5plus.org/doc/jsdocp.html): JS Doc一些介绍
+
+[bestofjs](https://bestofjs.org/): 搜索HTML，CSS， Javascript的一些资源
+
 
 
 #### Web 相关
@@ -93,6 +97,8 @@
 [查询 NodeJS 的 ES2018 特性支持情况](https://node.green/)
 
 [Web Dev](https://web.dev/): `Google`官方`Web`开发者资源
+
+[HTML 5 相关API解析](http://www.html5plus.org/doc/h5p.html)
 
 
 
@@ -110,7 +116,7 @@
 
 [Threejs](https://threejs.org/) -> [Github](https://github.com/mrdoob/three.js/)
 
-> Three.js是一个跨浏览器的脚本，使用JavaScript函数库或API来在网页浏览器中创建和展示动画的三维计算机图形。Three.js使用WebGL。源代码托管在GitHub
+Three.js是一个跨浏览器的脚本，使用JavaScript函数库或API来在网页浏览器中创建和展示动画的三维计算机图形。Three.js使用WebGL。源代码托管在GitHub
 
 [Animate.css](https://daneden.github.io/animate.css/): 一个使用CSS3的animation制作的动画效果的CSS集合，里面预设了很多种常用的动画，且使用非常简单。
 
@@ -118,9 +124,9 @@
 
 [TweenMax.js](https://www.tweenmax.com.cn/)
 
-> 适用于移动端和现代互联网的超高性能专业级动画插件。
->
-> Tweenmax是GreenSock 动画平台的核心，配合其他插件  可动画CSS属性、滤镜效果、 颜色、 声音、 色彩、 帧、 饱和度、 对比度、 色调、 色系、 亮度、 贝塞尔
+适用于移动端和现代互联网的超高性能专业级动画插件。
+
+Tweenmax是GreenSock 动画平台的核心，配合其他插件  可动画CSS属性、滤镜效果、 颜色、 声音、 色彩、 帧、 饱和度、 对比度、 色调、 色系、 亮度、 贝塞尔
 
 [GreenSock](https://greensock.com/): 适用于现代网络的超高性能专业级动画
 
@@ -133,6 +139,8 @@ Notes: [11 JavaScript Animation Libraries For 2019](https://blog.bitsrc.io/11-ja
 [css-tricks](https://css-tricks.com/): 分享使用CSS样式的技巧、经验和教程等。值得前端开发者阅读收藏的国外网站。
 
 [V8 引擎](https://v8.dev/): 了解支持 Chrome 和 NodeJS 的 Google 开源高性能 Javascript 和 WebAssembly 引擎
+
+[CSS Battle](https://cssbattle.dev/): 一些`CSS`的挑战题目
 
 
 
@@ -178,19 +186,19 @@ Notes: [11 JavaScript Animation Libraries For 2019](https://blog.bitsrc.io/11-ja
 
 [AntV](https://antv.alipay.com/zh-cn/index.html) -> [Github](https://github.com/antvis/)
 
-[G2](<https://antv.alipay.com/zh-cn/g2/3.x/index.html>)
+[G2](https://antv.alipay.com/zh-cn/g2/3.x/index.html)
 
 G2 是一套基于可视化编码的图形语法，以数据驱动，具有高度的易用性和扩展性，用户无需关注各种繁琐的实现细节，一条语句即可构建出各种各样的可交互的统计图表。
 
-[G6](<https://antv.alipay.com/zh-cn/g6/3.x/index.html>)
+[G6](https://antv.alipay.com/zh-cn/g6/3.x/index.html)
 
 G6 是一个简单、易用、完备的图可视化引擎，它在高定制能力的基础上，提供了一系列设计优雅、便于使用的图可视化解决方案。能帮助开发者搭建属于自己的图 图分析 应用或是 图编辑器 应用。
 
-[F2](<https://antv.alipay.com/zh-cn/f2/3.x/index.html>)
+[F2](https://antv.alipay.com/zh-cn/f2/3.x/index.html)
 
 F2 是一个专注于移动，开箱即用的可视化解决方案，完美支持 H5 环境同时兼容多种环境（Node, 小程序，Weex），完备的图形语法理论，满足你的各种可视化需求，专业的移动设计指引为你带来最佳的移动端图表体验。
 
-[L7](<https://antv.alipay.com/zh-cn/l7/1.x/index.html>)
+[L7](https://antv.alipay.com/zh-cn/l7/1.x/index.html)
 
 L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置数据提供可视化能力。L7 的目标是提供一套地理空间数据可视化框架，易用易扩展，支持海量数据的高性能和 3D 高质量渲染，安全可靠（无地图法务风险）的地理空间数据可视化解决方案。
 

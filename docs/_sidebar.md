@@ -48,7 +48,7 @@
       * [常用命令行快捷键](notes/linux/command-shortcut.md)
     * [Shell](notes/shell/guide.md)
       - [Shell 脚本](notes/shell/shell.md)
-      - [常用 Git 命令](notes/shell/common-git-commands.md)
+      - [Shell 中常用的 Git 命令](notes/shell/common-git-commands.md)
     * [Nginx](notes/nginx/guide.md)
       * [Nginx笔记](notes/nginx/nginx/note.md)
     * [Git & npm学习](notes/git-npm/guide.md)

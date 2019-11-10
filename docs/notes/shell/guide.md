@@ -1,2 +1,2 @@
 - [Shell 脚本](notes/shell/shell.md)
-- [常用 Git 命令](notes/shell/common-git-commands.md)
+- [Shell 中常用的 Git 命令](notes/shell/common-git-commands.md)
