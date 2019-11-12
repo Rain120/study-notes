@@ -242,3 +242,30 @@ window.URL.revokeObjectURL(obj_url);
 
 [在web应用程序中使用文件](https://developer.mozilla.org/zh-CN/docs/Web/API/File/Using_files_from_web_applications#Example.3A_Using_object_URLs_to_display_images)
 
+#### 不同时序的请求，cancel先触发的请求
+
+**场景**
+
+![timeline-more-request-cancel.png](./images/timeline-more-request-cancel.png)
+
+**解决思路**
+
+```javascript
+const requests = {
+  /**
+   * key: 任意key值，对应用户触发的事件
+   * value: 对应该类事件的请求队列，可设置maxSize来限制队列请求数，如果是互斥结果，可以直接替换该 promise，并将该请求的 promise cancel
+   **/
+  [click]: [promise],
+  [mouse]: [promise],
+}
+
+Event 1 ==> click promise (cancel)
+
+Event 2 ==> click promise (trigger)
+
+Event3 ==> mouse promise (trigger)
+```
+
+就是当用户的请求使用到`requests`中相同的`key`值就是想将之前相同`key`值对应的请求`cancel`掉
+
