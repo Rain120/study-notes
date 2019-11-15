@@ -38,6 +38,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       * [Webpack Tips](notes/tips/webpack-tips.md)
       * [Typescript Tips](notes/tips/typescript-tips.md)
       * [Email Tips](notes/tips/email-tips.md)
+      * [Code Tips](notes/tips/code-tips.md)
     * [Webpack](notes/webpack/guide.md)
       * [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
     * [Babel](notes/babel/guide.md)
