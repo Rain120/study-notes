@@ -14,13 +14,13 @@
   - [计算机](resources/website?id=计算机)
 - [工具网站](resources/website?id=工具网站)
   - [开发相关](#开发相关)
+  - [设计相关](#设计相关)
   - [在线代码编辑器](resources/website?id=在线代码编辑器)
   - [图片相关](resources/website?id=图片相关)
   - [图片压缩](resources/website?id=图片压缩)
   - [文件相关](resources/website?id=文件相关)
   - [office相关](resources/website?id=office相关)
   - [思维导图](resources/website?id=思维导图)
-- [思维导图](resources/website?id=思维导图)
 - [书籍查找](resources/website?id=书籍查找)
 - [其他](resources/website?id=其他)
 
@@ -130,7 +130,30 @@
 
 **Digital Color Meter(macOS自带)**： `Mac`直接数码取色器即可
 
+##### 设计相关
+
+[seeseed](https://www.seeseed.com/)
+
+你想知道设计**灵感**、**配色**、**字体**、**图标**等众多信息，它全都有。
+
+![seeseed](./wf/seeseed.png)
+
+![seeseed-color.png](./wf/seeseed-color.png)
+
+[addog](http://www.addog.vip/)
+
+广告创意/设计/文案/PPT模板/营销策略大全网址导航
+
+addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了常用的微博、微信、小红书、知乎、B站、淘宝、天猫、爱奇艺、好奇心日报等社交 APP 和平台。
+
+25个营销垂直门户，有广告门、数英网、梅花网、adweek、topys、campaignbrief 等海内外营销广告资讯平台。
+
+16个广告案例库，包含海内外主流案例库，涵盖了上千万个经典创意广告，adsoftheworld、adforum、welovead、广告门案例库、strategy都一一在列，找参考案例是非常方便。
+
+![addog-vip](./wf/addog-vip.png)
+
 ##### 在线代码编辑器
+
 [文章索引](resources/website?id=文章索引)
 
 [Codesandbox](https://codesandbox.io/)
@@ -159,6 +182,8 @@
 [Unsplash](https://unsplash.com/)
 
 [remove - 移除背景](https://www.remove.bg/)
+
+![remove-bg](./wf/remove-bg.png)
 
 [在线替换图片背景](https://www.gaoding.com/koutu)
 
@@ -257,7 +282,13 @@
 [convertio.co](https://convertio.co/zh/): 支持多类的文件转换、小于100M的文件
 
 ##### Office相关
-[文章索引](resources/website?id=文章索引)
+
+[OfficePLUS](http://www.officeplus.cn/Template/Home.shtml)
+
+旨在为全球`Office`用户提供丰富的高品质原创`PPT`模板、实用文档、数据图表及个性化定制服务，帮助用户随时随地提升效率，成就更多。
+也许您还为如何美化`PPT`而发愁，为排版和构架而烦恼，`OfficePLUS`将让您的困惑一扫而光。这里有行业内最优的原创模板，不仅设计精美，更针对用户不同的使用场景提供了清晰的逻辑架构以及非常灵活的排版和图表。大到背景图，小到每一个图标，都可以实现轻松自如的个性化设计，从此让`PPT`的制作变得轻松愉悦。
+
+![officeplus](./wf/officeplus.png)
 
 [声享PPT制作](https://ppt.baomitu.com/)
 
@@ -269,7 +300,10 @@
 
 方方格子是一个专注于 `Excel `的综合学习网站，它不仅提供实用的 Excel` 插件和工具箱，还提供各种 ``Excel `学习教程。
 
+[文章索引](resources/website?id=文章索引)
+
 #### 思维导图
+
 [文章索引](resources/website?id=文章索引)
 
 [XMind](<https://www.xmind.cn/>)
