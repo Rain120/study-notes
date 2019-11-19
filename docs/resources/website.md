@@ -310,6 +310,12 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 ![xmind](./wf/xmind.png)
 
+快捷键
+
+![](./wf/xmind-key.jpg)
+
+
+
 [Mindmeister](<https://www.mindmeister.com/zh>)
 
 ![mindmeister](./wf/mindmeister.png)
