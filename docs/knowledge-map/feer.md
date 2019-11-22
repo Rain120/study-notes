@@ -8,6 +8,10 @@
 </html>
 ```
 
+```html
+<img src="./images/feer.svg" />
+```
+
 
 
 ![feer.png](./images/feer.png)

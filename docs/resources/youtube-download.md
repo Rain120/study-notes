@@ -12,6 +12,10 @@
 
 [savieo](https://savieo.com/)
 
+[urlgot](https://www.urlgot.cn/)
+
+它支持的视频平台非常全面，几乎支持所有的主流视频平台。它还支持多种分辨率视频供你选择下载。
+
 [youtube-dlb](http://ytdl-org.github.io/youtube-dl/index.html)
 
 ```bash
@@ -117,4 +121,6 @@ youtube-dl -f [code] [url]
    下载 `YouTube`双语字幕
 
 3. [网易见外工作台转换字幕](https://jianwai.netease.com/)
+
+   支持每日 2 小时免费体验，它支持的黑科技实用功能包括：视频翻译、视频转写、字幕翻译、文档翻译、语音翻译、语音转写、会议同传、图片翻译，每个功能都是非常实用
 
