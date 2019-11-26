@@ -80,6 +80,8 @@ git config --list # 列举所有配置
 
 
 <center>阮一峰老师对Git工作区、暂存区、版本库、远程仓库的解释</center>
+
+
 ![git_infos](./images/git_infos.jpg)
 
 
