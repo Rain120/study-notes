@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime: 2019-10-30 10:27:07
+ * @LastEditTime: 2019-11-27 16:54:14
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -139,9 +139,10 @@
     })
   </script>
   <script>
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('serviceWorker.js')
-    }
+    // serviceWorker is too slow for user
+    // if (typeof navigator.serviceWorker !== 'undefined') {
+    //   navigator.serviceWorker.register('serviceWorker.js')
+    // }
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150864629-1"></script>

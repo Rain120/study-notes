@@ -68,6 +68,7 @@
    * [Npm 包发布笔记](notes/git-npm/npm-publish.md)
    * [Npm 知识储备](notes/git-npm/npm-knowledge-reserve.md)
    * [Npx如何run](notes/git-npm/how-npx-to-run.md)
+   * [npm install vs npm ci](notes/git-npm/npm-install-vs-npm-ci.md)
 * [日常错误笔记](notes/error-qa/guide.md)
 
    * [Mysql错误笔记](notes/error-qa/mysql/note-qa.md)
