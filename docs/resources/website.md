@@ -390,3 +390,7 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 帮助你搜索同类型网站
 
+[emojipedia](https://emojipedia.org/) + [getemoji](https://getemoji.com/)
+
+搜索、选择各类的`emoji`表情，你懂得~~
+
