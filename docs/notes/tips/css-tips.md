@@ -25,3 +25,15 @@
 
 [参考资料](https://www.zhangxinxu.com/wordpress/2010/05/实现兼容性的css粗虚线边框dashed效果/)
 
+#### `flex` 在`safari`上出现压缩
+
+```
+设置flex 布局的子元素 flex-shrink: 0;
+```
+
+
+
+
+
+
+
