@@ -269,3 +269,69 @@ Event3 ==> mouse promise (trigger)
 
 就是当用户的请求使用到`requests`中相同的`key`值就是想将之前相同`key`值对应的请求`cancel`掉
 
+#### JS 如何查找树形结构的数据
+
+```javascript
+function findTreeNode({
+    data,
+    value,
+    key
+}) {
+    let result = null;
+    let children = [];
+    for (let item of data) {
+        // decide your unique key
+        if (item[key]) {
+          return `${key} is undefined at the data`
+        }
+        if (item[key] === value) {
+            result = item;
+            break;
+        }
+        if (item.children) {
+            children = [...children, ...item.children];
+        }
+    }
+    if (!result && children.length) {
+        result = findTreeNode({
+            data: children,
+            value,
+            key
+        });
+    }
+    return result;
+}
+let arr = [
+    {
+        id: 1,
+        children: [{
+            id: 2
+        }]
+    },
+    {
+        id: 3,
+        children: [{
+            id: 4,
+            children: [{
+                id: 5
+            }]
+        }]
+    },
+    {
+        id: 6,
+        children: [{
+            id: 7,
+            children: [{
+                id: 8
+            }]
+        }]
+    },
+]
+let id = 4;
+console.log(findTreeNode({
+    data: arr,
+    value: id,
+    key: 'id'
+}))
+```
+
