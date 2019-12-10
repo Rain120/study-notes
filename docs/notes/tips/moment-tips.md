@@ -41,6 +41,19 @@ let starts = moment().startOf('month').subtract('month', 1);
 let ends = moment().endOf('month').subtract('month', 1).endOf('month');
 ```
 
+#### 当前所在时间所在的季度起始、截止时间
+
+```javascript
+let startDate = moment().startOf('quarter').format('YYYY-MM-DD');
+let endDate = moment().endOf('quarter').format('YYYY-MM-DD');
+```
+
+#### 当前所在时间距离当前季度剩余周数
+
+```javascript
+let leftWeeks = moment(moment().endOf('quarter').valueOf()).isoWeeksInYear() - moment().week();
+```
+
 
 
 #### 参考资料
