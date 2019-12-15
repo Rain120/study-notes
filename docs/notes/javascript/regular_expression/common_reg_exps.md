@@ -525,54 +525,7 @@ reg_18 true
 reg_15_18 true
 ```
 
-#### 7. RGB颜色
-
-**匹配规则:**
-
-1. 16进制
-2. 两两相等可以缩写
-
-**正则表达式**
-
-```javascript
-/^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/
-```
-
-![reg-rgb](./images/reg-rgb.png)
-
-**测试**
-
-```javascript
-var reg = /^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/;
-var colors = [
-	'123',
-	'123456',
-	'#ff00ff',
-	'#f0f',
-	'#FF00FF',
-	'#F0F',
-	'#123456',
-	'#FFFFFG',
-];
-colors.map(color => {
-	console.log(color, reg.test(color));
-});
-```
-
-**结果**
-
-```javascript
-123 true
-123456 true
-#ff00ff true
-#f0f true
-#FF00FF true
-#F0F true
-#123456 true
-#FFFFFG false
-```
-
-#### 8. 千分位
+#### 7. 千分位
 
 **匹配规则:**
 
@@ -584,7 +537,7 @@ colors.map(color => {
 
 ![reg-thousands](./images/reg-thousands.png)
 
-测试**
+**测试**
 
 ```javascript
 var reg = /(\d{1,3})(?=(\d{3})+(?:$|\.))/g;
@@ -623,7 +576,242 @@ numbers.map(number => {
 1234wqeqw56 false 1234wqeqw56
 ```
 
-#### 9.
+#### 8. Javascript判断HEX 16进制颜色
+
+**匹配规则:**
+
+1. 16进制
+2. 两两相等可以缩写
+3. A-F` + `0-9`
+4. 三位或者六位
+5. 不区分大小写
+
+**正则表达式**
+
+```javascript
+// 1
+/^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/
+
+// 2
+/(^#[\dA-F]{6}$)|(^#[\dA-F]{3}$)/i
+```
+
+![reg-rgb](./images/reg-rgb.png)
+
+**测试**
+
+```javascript
+// 1
+var reg = /^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/;
+var colors = [
+	'123',
+	'123456',
+	'#ff00ff',
+	'#f0f',
+	'#FF00FF',
+	'#F0F',
+	'#123456',
+	'#FFFFFG',
+];
+colors.map(color => {
+	console.log(color, reg.test(color));
+});
+
+// 2
+var reg = /(^#[\dA-F]{6}$)|(^#[\dA-F]{3}$)/i;
+var colors = [
+    'FFF',
+  	'#fsa',
+    '#FFF',
+    '#fff',
+    '#FFF000',
+    '#fff123',
+    '#adf123',
+];
+colors.map(color => {
+	console.log(color, reg.test(color));
+});
+```
+
+**结果**
+
+```javascript
+// 1
+123 true
+123456 true
+#ff00ff true
+#f0f true
+#FF00FF true
+#F0F true
+#123456 true
+#FFFFFG false
+// 2
+FFF false
+#fsa false
+#FFF true
+#fff true
+#FFF000 true
+#fff123 true
+#adf123 true
+```
+
+#### 9. Javascript判断RGB, RGBA颜色
+
+**匹配规则:**
+
+- `rgb(`或者`rgba`开头, 不区分大小写
+- `r`, `g`, `b` 值范围 `[0-255]`, 每一个值后面的`,`前后可接`0-n`个空格
+- `a` 值范围 `[0-1]`, `a < 1`时可省略 `0`
+
+**正则表达式**
+
+```javascript
+// 1
+// rgb
+/^rgb\(((\d{1,2}|1\d{2}|2([0-4]\d|5[0-5]))\s*,\s*){2}((\d{1,2}|1\d\d|2([0-4]\d|5[0-5]))\s*)\)$/i
+// rgba
+/^rgba\(((\d{1,2}|1\d{2}|2([0-4]\d|5[0-5]))\s*,\s*){2}((\d{1,2}|1\d\d|2([0-4]\d|5[0-5]))\s*)(,\s*(0?\.\d+|1|0)+)+\)$/i
+
+// Group
+// rgb
+/^rgb\(((\d{1,2}|1\d{2}|2([0-4]\d|5[0-5]))(\s*,\s*)){2}\2\)$/i
+// rgba
+/^rgba\(((\d{1,2}|1\d{2}|2([0-4]\d|5[0-5]))(\s*,\s*)){2}\2\4+(0?\.\d+|1|0)+\)$/i
+```
+
+**RGB**
+
+<iframe frameborder="0" width="1539" height="508" src="https://jex.im/regulex/#!embed=true&flags=i&re=%5Ergb%5C(((%5Cd%7B1%2C2%7D%7C1%5Cd%7B2%7D%7C2(%5B0-4%5D%5Cd%7C5%5B0-5%5D))%5Cs*%2C%5Cs*)%7B2%7D((%5Cd%7B1%2C2%7D%7C1%5Cd%5Cd%7C2(%5B0-4%5D%5Cd%7C5%5B0-5%5D))%5Cs*)%5C)%24"></iframe>
+**Group**
+
+<iframe frameborder="0" width="1191" height="508" src="https://jex.im/regulex/#!embed=true&flags=i&re=%5Ergb%5C(((%5Cd%7B1%2C2%7D%7C1%5Cd%7B2%7D%7C2(%5B0-4%5D%5Cd%7C5%5B0-5%5D))(%5Cs*%2C%5Cs*))%7B2%7D%5C2%5C)%24"></iframe>
+**RGBA**
+
+<iframe frameborder="0" width="2128" height="508" src="https://jex.im/regulex/#!embed=true&flags=i&re=%5Ergba%5C(((%5Cd%7B1%2C2%7D%7C1%5Cd%7B2%7D%7C2(%5B0-4%5D%5Cd%7C5%5B0-5%5D))%5Cs*%2C%5Cs*)%7B2%7D((%5Cd%7B1%2C2%7D%7C1%5Cd%5Cd%7C2(%5B0-4%5D%5Cd%7C5%5B0-5%5D))%5Cs*)(%2C%5Cs*(0%3F%5C.%5Cd%2B%7C1%7C0)%2B)%2B%5C)%24"></iframe>
+**Group**
+
+<iframe frameborder="0" width="1682" height="508" src="https://jex.im/regulex/#!embed=true&flags=i&re=%5Ergba%5C(((%5Cd%7B1%2C2%7D%7C1%5Cd%7B2%7D%7C2(%5B0-4%5D%5Cd%7C5%5B0-5%5D))(%5Cs*%2C%5Cs*))%7B2%7D%5C2%5C4%2B(0%3F%5C.%5Cd%2B%7C1%7C0)%2B%5C)%24"></iframe>
+**测试**
+
+```javascript
+var reg = /^rgba\(((\d{1,2}|1\d{2}|2([0-4]\d|5[0-5]))\s*,\s*){2}((\d{1,2}|1\d\d|2([0-4]\d|5[0-5]))\s*)(,\s*(0?\.\d+|1|0)+)+\)$/i;
+var colors = [
+    'rgba(0, 0, 0, 1)',
+    'rgba(255, 0, 0, 1)',
+    'rgba(0, 255, 0, 1)',
+    'rgba(0, 0, 255, 1)',
+    'rgba(256, 0, 0, 1)',
+    'rgba(0, 256, 0, 1)',
+    'rgba(0, 0, 256, 1)',
+    'rgba(255, 255, 255, 0)',
+    'rgba(0, 255, 0, 0.2)',
+    'rgba(0, 255, 0, .2)',
+    'rgba(255, 255, 255)',
+    'rgba(255, 255, 255, )',
+    'RGBA(0, 0, 255, 1)',
+    'RGBA(0, 255, 0, 0.2)',
+    'RGBA(0, 255, 0, .2)',
+    'RGBA(0, 255, 0, )',
+];
+colors.map(color => {
+	console.log(color, reg.test(color));
+});
+```
+
+**结果**
+
+```javascript
+rgba(0, 0, 0, 1) true
+rgba(255, 0, 0, 1) true
+rgba(0, 255, 0, 1) true
+rgba(0, 0, 255, 1) true
+rgba(256, 0, 0, 1) false
+rgba(0, 256, 0, 1) false
+rgba(0, 0, 256, 1) false
+rgba(255, 255, 255, 0) true
+rgba(0, 255, 0, 0.2) true
+rgba(0, 255, 0, .2) true
+rgba(255, 255, 255) false
+rgba(255, 255, 255, ) false
+RGBA(0, 0, 255, 1) true
+RGBA(0, 255, 0, 0.2) true
+RGBA(0, 255, 0, .2) true
+RGBA(0, 255, 0, ) false
+```
+
+[JS HEX十六进制与RGB, HSL颜色的相互转换](https://www.zhangxinxu.com/wordpress/2010/03/javascript-hex-rgb-hsl-color-convert/)
+
+#### 10. Javascript判断HSL, HSLA颜色
+
+**匹配规则:**
+
+- `Hue(色调)` 取值范围`[0-360]`
+
+- `Saturation(饱和度)` 取值范围`[0%-100%]`
+
+- `Lightness (亮度)`  取值范围`[0%-100%]`
+
+- `alpha (透明度)` 取值范围`[0-1]`
+
+**正则表达式**
+
+```javascript
+// HSL
+/^hsl\(\s*((\d{1,2}|[1-2]\d{2}|3([0-5]\d|60)))\s*,(\s*(((\d{1,2}|100)%)|0)\s*,)(\s*(((\d{1,2}|100)%)|0)\s*)\)$/i
+
+// HSLA
+/^hsla\(\s*((\d{1,2}|[1-2]\d{2}|3([0-5]\d|60)))\s*,(\s*(((\d{1,2}|100)%)|0)\s*,){2}\s*(0?\.\d+|1|0)\)$/i
+```
+
+**测试**
+
+```javascript
+var reg = /^hsla\(\s*((\d{1,2}|[1-2]\d{2}|3([0-5]\d|60)))\s*,(\s*(((\d{1,2}|100)%)|0)\s*,){2}\s*(0?\.\d+|1|0)\)$/i;
+var colors = [
+    'hsla(0, 0, 0, 1)',
+    'hsla(360, 0, 0, 1)',
+    'hsla(0, 100%, 0, 1)',
+    'hsla(0, 0, 100%, 1)',
+    'hsla(361, 0, 0, 1)',
+    'hsla(0, 101%, 0, 1)',
+    'hsla(0, 0, 101%, 1)',
+    'hsla(360, 100%, 100%, 1)',
+    'hsla(0, 100%, 0, 0.2)',
+    'hsla(0, 100%, 0, .2)',
+    'hsla(360, 100%, 100%)',
+    'hsla(255, 100%, 100%, )',
+    'HSLA(0, 0, 100%, 1)',
+    'HSLA(0, 100%, 0, 0.2)',
+    'HSLA(0, 100%, 0, .2)',
+    'HSLA(0, 100%, 0, )',
+];
+colors.map(color => {
+	console.log(color, reg.test(color));
+});
+```
+
+**结果**
+
+```javascript
+hsla(0, 0, 0, 1) true
+hsla(360, 0, 0, 1) true
+hsla(0, 100%, 0, 1) true
+hsla(0, 0, 100%, 1) true
+hsla(361, 0, 0, 1) false
+hsla(0, 101%, 0, 1) false
+hsla(0, 0, 101%, 1) false
+hsla(360, 100%, 100%, 1) true
+hsla(0, 100%, 0, 0.2) true
+hsla(0, 100%, 0, .2) true
+hsla(360, 100%, 100%) false
+hsla(255, 100%, 100%, ) false
+HSLA(0, 0, 100%, 1) true
+HSLA(0, 100%, 0, 0.2) true
+HSLA(0, 100%, 0, .2) true
+HSLA(0, 100%, 0, ) false
+```
+
+#### 11.
 
 **匹配规则:**
 
@@ -644,4 +832,12 @@ numbers.map(number => {
 ```javascript
 
 ```
+
+
+
+#### 可视化测试正则表达式
+
+[正则表达式可视化 1](https://jex.im/regulex)
+
+[正则表达式可视化 2](https://regex101.com/)
 
