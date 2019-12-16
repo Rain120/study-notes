@@ -596,7 +596,7 @@ numbers.map(number => {
 /(^#[\dA-F]{6}$)|(^#[\dA-F]{3}$)/i
 ```
 
-![reg-rgb](./images/reg-rgb.png)
+![reg-rgb](./images/reg-hex.png)
 
 **测试**
 
@@ -681,16 +681,20 @@ FFF false
 
 **RGB**
 
-<iframe frameborder="0" width="1539" height="508" src="https://jex.im/regulex/#!embed=true&flags=i&re=%5Ergb%5C(((%5Cd%7B1%2C2%7D%7C1%5Cd%7B2%7D%7C2(%5B0-4%5D%5Cd%7C5%5B0-5%5D))%5Cs*%2C%5Cs*)%7B2%7D((%5Cd%7B1%2C2%7D%7C1%5Cd%5Cd%7C2(%5B0-4%5D%5Cd%7C5%5B0-5%5D))%5Cs*)%5C)%24"></iframe>
+![reg-rgb](./images/reg-rgb.png)
+
 **Group**
 
-<iframe frameborder="0" width="1191" height="508" src="https://jex.im/regulex/#!embed=true&flags=i&re=%5Ergb%5C(((%5Cd%7B1%2C2%7D%7C1%5Cd%7B2%7D%7C2(%5B0-4%5D%5Cd%7C5%5B0-5%5D))(%5Cs*%2C%5Cs*))%7B2%7D%5C2%5C)%24"></iframe>
+![reg-rgb-group](./images/reg-rgb-group.png)
+
 **RGBA**
 
-<iframe frameborder="0" width="2128" height="508" src="https://jex.im/regulex/#!embed=true&flags=i&re=%5Ergba%5C(((%5Cd%7B1%2C2%7D%7C1%5Cd%7B2%7D%7C2(%5B0-4%5D%5Cd%7C5%5B0-5%5D))%5Cs*%2C%5Cs*)%7B2%7D((%5Cd%7B1%2C2%7D%7C1%5Cd%5Cd%7C2(%5B0-4%5D%5Cd%7C5%5B0-5%5D))%5Cs*)(%2C%5Cs*(0%3F%5C.%5Cd%2B%7C1%7C0)%2B)%2B%5C)%24"></iframe>
+![reg-rgba](./images/reg-rgba.png)
+
 **Group**
 
-<iframe frameborder="0" width="1682" height="508" src="https://jex.im/regulex/#!embed=true&flags=i&re=%5Ergba%5C(((%5Cd%7B1%2C2%7D%7C1%5Cd%7B2%7D%7C2(%5B0-4%5D%5Cd%7C5%5B0-5%5D))(%5Cs*%2C%5Cs*))%7B2%7D%5C2%5C4%2B(0%3F%5C.%5Cd%2B%7C1%7C0)%2B%5C)%24"></iframe>
+![reg-rgba-group](./images/reg-rgba-group.png)
+
 **测试**
 
 ```javascript
@@ -762,6 +766,14 @@ RGBA(0, 255, 0, ) false
 // HSLA
 /^hsla\(\s*((\d{1,2}|[1-2]\d{2}|3([0-5]\d|60)))\s*,(\s*(((\d{1,2}|100)%)|0)\s*,){2}\s*(0?\.\d+|1|0)\)$/i
 ```
+
+**HSL**
+
+![reg-rgba-group](./images/reg-hsl.png)
+
+**HSLA**
+
+![reg-rgba-group](./images/reg-hsla.png)
 
 **测试**
 
