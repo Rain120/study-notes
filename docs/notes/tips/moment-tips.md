@@ -18,13 +18,33 @@ let monday = moment(value).isoWeekday(1);
 
 // Sunday
 let sunday = moment(value).isoWeekday(7);
+
+// i 星期几
+moment(value).isoWeekday(i);
 ```
 
 #### 上周
 
 ```javascript
- let monday = moment().startOf('week');
+let monday = moment().startOf('week');
 let sunday = moment().endOf('week');
+let weekOfDay = parseInt(moment().format('E'));
+
+let monday = moment().subtract(weekOfDay + (7 - 1), 'days').format('YYYY-MM-DD');
+let sunday = moment().subtract(weekOfDay + (7 - 7), 'days').format('YYYY-MM-DD');
+
+// i 星期几
+moment().subtract(weekOfDay + (7 - i), 'days').format('YYYY-MM-DD');
+```
+
+#### 下周
+
+```javascript
+let monday = moment().add((7 - weekOfDay) + 1, 'days').format('YYYY-MM-DD');
+let sunday = moment().add((7 - weekOfDay) + 7, 'days').format('YYYY-MM-DD');
+
+// i 星期几
+moment().add((7 - weekOfDay) + i, 'days').format('YYYY-MM-DD');
 ```
 
 #### 本月
