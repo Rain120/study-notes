@@ -74,6 +74,12 @@ let endDate = moment().endOf('quarter').format('YYYY-MM-DD');
 let leftWeeks = moment(moment().endOf('quarter').valueOf()).isoWeeksInYear() - moment().week();
 ```
 
+#### 距离当前季度结束时间
+
+```javascript
+let days = moment().endOf('quarter').diff(moment(), 'days');
+```
+
 
 
 #### 参考资料
