@@ -735,9 +735,9 @@ curl -sL https://rpm.nodesource.com/setup_8.x | bash -
 yum install -y nodejs
 ```
 
-[具体安装各版本的`Node`详见](https://my.oschina.net/idoop/blog/1545011)
+~~具体安装各版本的`Node`详见~~
 
-启动`Node`
+#### 启动`Node`
 
 此处我之前的命令执行错误，所以我需要`kill`这个进程
 
