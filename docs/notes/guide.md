@@ -5,7 +5,7 @@
 !> [How to Usage](https://github.com/Rain120/study-notes/tree/note-template)
 
 * [知识图谱](notes/knowledge-map/guide.md)
-   
+  
    * [前端知识图谱](notes/knowledge-map/fe_knowledge_map.md)
    
 * [HTML](notes/html/guide.md)
@@ -30,13 +30,14 @@
    * [Email Tips](notes/tips/email-tips.md)
    * [Code Tips](notes/tips/code-tips.md)
    * [Moment Tips](notes/tips/moment-tips.md)
+   * [Chrome 79 Bug](notes/tipschrome-79-bug.md)
    
 * [Webpack](notes/webpack/guide.md)
-   
+  
    * [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
    
 * [Babel](notes/babel/guide.md)
-   
+  
    * [Babel手册](notes/babel/babel-handbook.md)
    
 * [与AST的相知相识](notes/babel/ast/ast.md)
@@ -72,7 +73,7 @@
 * [Linux](notes/linux/guide.md)
 
 * [Linux入门学习](notes/linux/initial.md)
-   
+  
    * [常用命令行快捷键](notes/linux/command-shortcut.md)
    
 * [Shell](notes/shell/guide.md)
