@@ -30,7 +30,7 @@
    * [Email Tips](notes/tips/email-tips.md)
    * [Code Tips](notes/tips/code-tips.md)
    * [Moment Tips](notes/tips/moment-tips.md)
-   * [Chrome 79 Bug](notes/tipschrome-79-bug.md)
+   * [Chrome 79 Bug](notes/tips/chrome-79-bug.md)
    
 * [Webpack](notes/webpack/guide.md)
   
