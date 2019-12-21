@@ -31,6 +31,31 @@
 设置flex 布局的子元素 flex-shrink: 0;
 ```
 
+#### 实现不规则两端对齐布局
+
+![css-left-right-layout.png](./images/css-left-right-layout.png)
+
+`HTML`
+
+```html
+<div class='wrapper'>
+  <li class='left'>#101923</li>
+  <li class='right'>1次</li>
+</div>
+```
+
+`CSS`
+
+```less
+.wrapper {
+  display: flex;
+  width: 100%;
+  .right {
+    margin-left: auto;
+  }
+}
+```
+
 
 
 
