@@ -38,3 +38,6 @@
 
 可以在线看你，就是很慢，而且很多垃圾广告，你懂得
 
+[聚BT](https://www.jubt.net/cn/index.html#)
+
+聚BT - 聚合最优质的BT、磁力资源
