@@ -74,10 +74,19 @@ let endDate = moment().endOf('quarter').format('YYYY-MM-DD');
 let leftWeeks = moment(moment().endOf('quarter').valueOf()).isoWeeksInYear() - moment().week();
 ```
 
-#### 距离当前季度结束时间
+#### 当前所在时间距离当前季度剩余周数
 
 ```javascript
-let days = moment().endOf('quarter').diff(moment(), 'days');
+let days = moment(date).endOf('quarter').diff(moment(date), 'days');
+```
+
+#### 下周几时间 (默认周一)
+
+```javascript
+function nextWeek(date = moment(), day = 1) {
+  const weekOfDay = parseInt(moment(date).format('E'), 10);
+	return moment(date).add(7 - weekOfDay * (day - 1) + 1, 'days').startOf('days');
+}
 ```
 
 
