@@ -1,12 +1,13 @@
 
 
+!> [查看我的2019 年度总结](https://github.com/Rain120/Web-Study/issues/12)
+
 !> Add a note-taking template out of the box, just configure your own github, logo and profile.
 
 !> [How to Usage](https://github.com/Rain120/study-notes/tree/note-template)
 
 * [知识图谱](notes/knowledge-map/guide.md)
-  
-   * [前端知识图谱](notes/knowledge-map/fe_knowledge_map.md)
+  * [前端知识图谱](notes/knowledge-map/fe_knowledge_map.md)
    
 * [HTML](notes/html/guide.md)
 
