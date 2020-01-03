@@ -55,6 +55,7 @@
     * [Nginx](notes/nginx/guide.md)
       * [Nginx笔记](notes/nginx/nginx/note.md)
     * [Git & Npm学习](notes/git-npm/guide.md)
+      * [Git 底层深入浅析](notes/git-npm/git-base-analysis.md)
       * [你必须知道的Git命令](notes/git-npm/you-must-know-git-commands.md)
       * [Github Actions实践](notes/git-npm/github-action.md)
       * [Git配置多个SSH Key](notes/git-npm/git-config-multiple-ssh.md)

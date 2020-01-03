@@ -8,7 +8,7 @@
 
 * [知识图谱](notes/knowledge-map/guide.md)
   * [前端知识图谱](notes/knowledge-map/fe_knowledge_map.md)
-   
+  
 * [HTML](notes/html/guide.md)
 
 * [CSS](notes/css/guide.md)
@@ -87,11 +87,11 @@
 
 * [Git & Npm 学习](notes/git-npm/guide.md)
 
+   * [Git 底层深入浅析](notes/git-npm/git-base-analysis.md)
    * [你必须知道的`Git`命令](notes/git-npm/you-must-know-git-commands.md)
    * [Github Actions实践](notes/git-npm/github-action.md)
    * [Git配置多个SSH Key](notes/git-npm/git-config-multiple-ssh.md)
    * [Git Tips](notes/git-npm/git-tips.md)
-   
    * [Npm Scripts](notes/git-npm/npm-scripts.md)
    * [Npm 包发布笔记](notes/git-npm/npm-publish.md)
    * [Npm 知识储备](notes/git-npm/npm-knowledge-reserve.md)
