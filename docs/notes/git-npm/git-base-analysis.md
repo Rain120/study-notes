@@ -13,14 +13,54 @@ cd .git
 ls -al
 ```
 
-- `hooks`：存储钩子的文件夹
-- `logs`：存储日志的文件夹
-- `refs`：存储指向各个分支的指针`(SHA-1标识)`文件
-- `objects`：存放`git`对象
-- `config`：存放各种设置文档
+![_git.png](./images/_git.png)
+
+- `config`：存放各种设置文档, 包含项目特有的配置选项。
+
+```sh
+cat .git/config
+```
+
+包括默认`remote`,  `branch`, 个人账户等信息
+
+```sh
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = git@github.com:Rain120/study-notes.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "note-template"]
+	remote = origin
+	merge = refs/heads/note-template
+```
+
+
+
 - `HEAD`：指向当前所在分支的指针文件路径，一般指向`refs`下的某文件
 
-![_git.png](./images/_git.png)
+
+
+- `refs`：存储指向各个分支的指针`(SHA-1标识)`文件
+
+  
+
+- `hooks`：存储钩子的文件夹
+
+
+
+- `logs`：存储日志的文件夹
+
+
+
+- `objects`：存放`git`对象
 
 #### 参考资料
 

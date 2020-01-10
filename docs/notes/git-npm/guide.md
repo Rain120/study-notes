@@ -4,7 +4,8 @@
 
 - [Git 底层深入浅析](notes/git-npm/git-base-analysis.md)
 - [你必须知道的`Git`命令](notes/git-npm/you-must-know-git-commands.md)
-- [Github Actions实践](notes/git-npm/github-action.md)
+- [Github Actions 初实践](notes/git-npm/github-action.md)
+- [Github Actions 提升](notes/git-npm/github-action-improve.md)
 - [Git配置多个SSH Key](notes/git-npm/git-config-multiple-ssh.md)
 - [Git Tips](notes/git-npm/git-tips.md)
 
