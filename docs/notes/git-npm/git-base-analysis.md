@@ -79,9 +79,27 @@ git config --help
 
 ![git-HEAD-sourcetree.png](./images/git-HEAD-sourcetree.png)
 
-- `refs`：存储指向各个分支的指针`(SHA-1标识)`文件
+- `refs`：存储指向各个分支的指针`(SHA-1标识)`文件, 包括分支和标签的引用
+
+  ![git-refs.png](./images/git-refs.png)
 
   
+
+  `heads`
+
+  ![git-refs-heads.png](./images/git-refs-heads.png)
+
+  `remotes`
+
+  ![git-refs-remotes.png](./images/git-refs-remotes.png)
+
+  `tags`
+
+  ![git-tag-add.png](./images/git-tag-add.png)
+
+  
+
+  ![git-refs-tags.png](./images/git-refs-tags.png)
 
 - `hooks`：包含客户端或服务端的钩子脚本 `(hooks scripts)`
 
@@ -92,6 +110,7 @@ git config --help
 
 
 - `objects`：存放`git`对象
+- 
 
 #### 参考资料
 
@@ -108,4 +127,3 @@ git config --help
 [A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html)
 
 [Git 资料学习](https://github.com/Rain120/Free-Source#Git)
-
