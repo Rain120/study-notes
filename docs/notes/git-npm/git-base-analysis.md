@@ -103,14 +103,46 @@ git config --help
 
 - `hooks`：包含客户端或服务端的钩子脚本 `(hooks scripts)`
 
+`Git Hooks` 是定制化的脚本程序, 它能在特定事件发生**之前**或**之后**执行特定脚本代码功能。它分为客户端`hooks` `(Client-Side Hooks)` 和服务端`hooks` `(Server-Side Hooks)`。
 
+- `Client-Side Hooks`
+  - **`pre-commit`** : 执行`git commit`命令时触发，常用于代码格式化
+  - `prepare-commit-msg`: `commit message`编辑器启动前`default commit message`创建后触发，常用于生成默认的[标准化的提交说明](https://conventionalcommits.org/)
+  - **`commit-msg`** :  在`git commit -m message`后触发，常用于校验`commit message`是否标准
+  - `post-commit` : 整个`git commit`完成后触发，常用于邮件通知、提醒
+  - `applypatch-msg` : 执行`git am`命令时触发，常用于检查命令提取出来的提交信息是否符合特定格式
+  - `pre-applypatch `: `git am`提取出补丁并应用于当前分支后，准备提交前触发，常用于执行测试用例或检查缓冲区代码
+  - `post-applypatch`: `git -am`提交后触发，常用于通知、或补丁邮件回复（此钩子不能停止`git am`过程）
+  - `pre-rebase`: 执行`git rebase`命令时触发
+  - `post-rewrite`: 执行会替换`commit`的命令时触发，比如`git rebase`或`git commit --amend`
+  - `post-checkout`: 执行`git checkout`命令成功后触发，可用于生成特定文档，处理大二进制文件等
+  - `post-merge`: 成功完成一次 `merge`行为后触发
+  - `pre-push`: 执行`git push`命令时触发，可用于执行测试用例
+  - `pre-auto-gc`: 执行垃圾回收前触发
+- `Server-Side Hooks`
+  - `pre-receive`: 当服务端收到一个 `push`操作请求时触发，可用于检测`push`的内容
+  - `update`: 与pre-receive相似，但当一次`push`想更新多个分支时，`pre-receive`只执行一次，而此钩子会为每一分支都执行一次
+  - `post-receive`: 当整个`push`操作完成时触发，常用于服务侧同步、通知
+
+![git-hooks.png](./images/git-hooks.png)
+
+>  `.sample` 拓展名是为了防止它们默认被执行，安装一个钩子只需要去掉 `.sample`拓展名即可。
+
+相关使用，`husky` `commitlint`
+
+###### 参考
+
+[自定义你的工作流](https://github.com/geeeeeeeeek/git-recipes/wiki/5.4-Git-钩子：自定义你的工作流)
+
+[Git-钩子](https://git-scm.com/book/zh/v2/自定义-Git-Git-钩子#r_git_hooks)
 
 - `logs`：存储日志的文件夹
 
-
+## 
 
 - `objects`：存放`git`对象
-- 
+
+
 
 #### 参考资料
 
