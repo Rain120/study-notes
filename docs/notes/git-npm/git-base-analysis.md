@@ -138,7 +138,19 @@ git config --help
 
 - `logs`：存储日志的文件夹
 
-## 
+ `git log` 能够让我们清晰的知道我们 `or` 其他人具体每次提交都做了什么，以及精确定位到每一次代码修改。
+
+```sh
+# 最近 n 条日志
+git log -n
+
+git reflog
+
+# log 提交时间、作者格式化
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+```
+
+
 
 - `objects`：存放`git`对象
 
