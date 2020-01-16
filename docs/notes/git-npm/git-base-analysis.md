@@ -154,7 +154,15 @@ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(
 
 - `objects`：存放`git`对象
 
+`Git `的底层存储从本质上讲是基于本地文件系统实现的 键值对型的数据库, `key`对应对象内容的 `hash` 值, `value`对应` git objects`。
 
+`git objects`分为 `3`类:
+
+- `commit`: 对象存储` git `中的提交信息.
+- `tree `: 对象存储` git` 仓库中的文件元数据信息, 包括文件名及目录结构信息等.
+- `blob `: 对应的是 `git `仓库中的文件内容.
+
+我们将在下节更详细的讲述 [git objects](notes/git-npm/git-objects.md).
 
 #### 参考资料
 
