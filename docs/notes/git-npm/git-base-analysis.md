@@ -55,7 +55,7 @@ cat .git/config
 # 系统配置
 git config --system --list
 
-# 全部配置
+# 全局配置
 git config --global --list
 
 # 当前仓库
@@ -166,12 +166,6 @@ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(
 
 #### 参考资料
 
-[Git 内部原理 - 底层命令和高层命令]([https://git-scm.com/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BA%95%E5%B1%82%E5%91%BD%E4%BB%A4%E5%92%8C%E9%AB%98%E5%B1%82%E5%91%BD%E4%BB%A4](https://git-scm.com/book/zh/v2/Git-内部原理-底层命令和高层命令))
-
-[这才是真正的GIT——GIT内部原理](https://www.lzane.com/tech/git-internal/)
-
-[这才是真正的GIT——GIT内部原理 - 视频](https://www.bilibili.com/video/av77252063?t=2070)
-
 [Git - Wiki](https://en.wikipedia.org/wiki/Git)
 
 [Git 官网](https://git-scm.com/)
@@ -179,3 +173,6 @@ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(
 [A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html)
 
 [Git 资料学习](https://github.com/Rain120/Free-Source#Git)
+
+
+
