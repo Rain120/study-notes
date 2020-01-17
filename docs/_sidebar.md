@@ -24,6 +24,7 @@
       * [Moment Tips](notes/tips/moment-tips.md)
       * [Chrome 79 Bug](notes/tips/chrome-79-bug.md)
     * [Webpack](notes/webpack/guide.md)
+      * [Webpack 打包器实现](notes/webpack/mini-webpack.md)
       * [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
     * [Babel](notes/babel/guide.md)
         * [Babel手册](notes/babel/babel-handbook.md)

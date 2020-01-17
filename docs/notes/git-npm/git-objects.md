@@ -12,6 +12,10 @@
 
 - `git-hash-object xxx`: 用来计算文件内容的 `hash` 值，并将生成的数据对象存储到 `Git` 文件系统中。
 
+`-w`表示将数据对象写入到 `Git` 文件系统中
+
+`--stdin`表示从标准输入中获取文件内容
+
 可以使用`git hash-object --help`来查看他的参数列表。
 
 ![git-hash-object.png](./images/git-hash-object.png)
