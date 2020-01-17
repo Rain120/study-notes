@@ -35,7 +35,7 @@ git cat-file -t 7369f96
 git cat-file -p 7369f96
 ```
 
-我们先找到一个`hash`值，然后对这个`hash`值 执行 `git cat-file`，我们发现这个`hash`类型是`commit`，以及它的内容包括父节点，作者信息，提交者信息等信息。
+我们先找到一个`hash`值，然后对这个`hash`值 执行 `git cat-file`，我们发现这个`hash`类型是`commit`，以及它的内容包括父节点，作者信息，提交者信息等其他信息。
 
 ![git-log.png](./images/git-log.png)
 
