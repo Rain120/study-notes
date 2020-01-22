@@ -74,6 +74,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
     * [Docker](notes/docker/guide.md)
       - [Docker 安装](notes/docker/docker-install.md)
       - [Docker CentOS下安装 Node](notes/docker/centos-node-install.md)
+      - [Docker 学习](notes/docker/docker-command.md)
     * [Nginx](notes/nginx/guide.md)
       * [Nginx笔记](notes/nginx/nginx/note.md)
     * [Git & Npm学习](notes/git-npm/guide.md)

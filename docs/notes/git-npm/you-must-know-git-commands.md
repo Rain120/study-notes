@@ -240,7 +240,7 @@ git commit --amend -m # 修改最后一次提交，如果代码没有任何新�
 #### 7. [撤销、版本回滚](https://git-scm.com/book/zh/v2/Git-基础-撤消操作)
 
 ```shell
-git reset --hard HEAD # 撤销工作目录中暂存的所有未提交文件的修改内容
+git reset --hard HEAD # 撤销工作目录中暂存的所有未提交文件的修改内容, 如果带上要回滚到的节点的hash值，从回滚到的节点到你当前节点所有的代码都会丢失。
 
 # 只回退了commit的信息，暂存区和工作区与回退之前保持一致。如果还要提交，直接commit即可
 get reset --soft HEAD
