@@ -1,6 +1,20 @@
 
 
-#### 视频(2019-07-13更新)
+#### 视频(2020-01-23更新)
+
+---
+
+**New**
+
+[y2b.xyz](https://www.y2b.xyz/)
+
+[vidpaw](https://www.vidpaw.com/cn/)
+
+[savefrom](https://zh.savefrom.net/1/)
+
+[videosolo](https://www.videosolo.com/zh-CN/online-video-downloader/)
+
+---
 
 [Softorino YouTube Converter for Mac](https://github.com/Rain120/Free-Source/blob/master/Mac%20Tools/Softorino%20YouTube%20Converter%202_2.1.7_WaitsUn.com.dmg)
 
