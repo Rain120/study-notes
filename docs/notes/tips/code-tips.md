@@ -4,7 +4,7 @@
 
 **Note**: `npm 5.2+`
 
-````sh
+```sh
 npm install commitizen -g
 ```
 
@@ -46,7 +46,7 @@ module.exports = {
 
 
 
-- 配置
+- 自定义配置
 
 `commitlint.config.js`
 
