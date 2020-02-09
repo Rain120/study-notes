@@ -281,11 +281,11 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 文件快速分享
 
-[FireFox Send](<https://send.firefox.com/>)
-
-[Github](<https://github.com/mozilla/send>)
+[FireFox Send](<https://send.firefox.com/>) [Github](<https://github.com/mozilla/send>)
 
 ![firefox-send](./wf/firefox-send.png)
+
+[wenshushu](https://www.wenshushu.cn/): 极速传文件给他人 [Github](https://github.com/Aruelius/wenshushu)
 
 文件格式转换
 
@@ -304,6 +304,8 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 [ExtractPDF.com](https://www.extractpdf.com/zh.html): `14M`
 
 [迅捷PDF转换器](https://app.xunjiepdf.com/): 非会员`2M`文件
+
+[pdf24](https://tools.pdf24.org/zh/): 免费且易于使用的在线 `PDF` 工具
 
 [convertio.co](https://convertio.co/zh/): 支持多类的文件转换、小于100M的文件
 
