@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2019-10-28 14:41:02
+ * @LastEditTime : 2020-02-11 13:25:23
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -41,24 +41,26 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       * [Code Tips](notes/tips/code-tips.md)
       * [Moment Tips](notes/tips/moment-tips.md)
       * [Chrome 79 Bug](notes/tips/chrome-79-bug.md)
+      * [Markdown 数学符号](notes/tips/markdown-math-symbol-tips.md)
     * [Webpack](notes/webpack/guide.md)
       * [Webpack 打包器实现](notes/webpack/mini-webpack.md)
       * [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
+      * [Webpack 4 性能优化](notes/webpack/webpack4-optimizate.md)
     * [Babel](notes/babel/guide.md)
-        * [Babel手册](notes/babel/babel-handbook.md)
-        * [与AST的相知相识](notes/babel/ast/ast.md)
+      * [Babel手册](notes/babel/babel-handbook.md)
+      * [与AST的相知相识](notes/babel/ast/ast.md)
     * [React](notes/react/guide.md)
-        * [React组件库开发 - 初始化项目](notes/react/component-library/init.md)
-        * [React better-scroll实践](notes/react/better-scroll/better-scroll.md)
-          * [基础组件Scroll开发](notes/react/better-scroll/scroll.md)
-          * [Slider 组件开发](notes/react/better-scroll/slider.md)
-          * [Sticky 组件开发](notes/react/better-scroll/sticky.md)
-        * [React Hooks 学习](notes/react/hooks/hooks.md)
+      * [React组件库开发 - 初始化项目](notes/react/component-library/init.md)
+      * [React better-scroll实践](notes/react/better-scroll/better-scroll.md)
+        * [基础组件Scroll开发](notes/react/better-scroll/scroll.md)
+        * [Slider 组件开发](notes/react/better-scroll/slider.md)
+        * [Sticky 组件开发](notes/react/better-scroll/sticky.md)
+      * [React Hooks 学习](notes/react/hooks/hooks.md)
     * [Vue](notes/vue/guide.md)
-         * [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
-         * [Vue之网易云音乐横向菜单滑动的实现](notes/vue/slide-menu/slide-menu.md)
-         * [Vue 生命周期笔记](notes/vue/vue-lifecycle/vue-lifecycle.md)
-         * [Vue 源码学习](notes/vue/code-review/code-review.md)
+      * [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
+      * [Vue之网易云音乐横向菜单滑动的实现](notes/vue/slide-menu/slide-menu.md)
+      * [Vue 生命周期笔记](notes/vue/vue-lifecycle/vue-lifecycle.md)
+      * [Vue 源码学习](notes/vue/code-review/code-review.md)
     * [移动端](notes/mobile/guide.md)
       * [Charles抓包https手机配置](notes/mobile/charles-https-mobile-config.md)
       * [移动端Tips](notes/mobile/mobile-tips.md)
@@ -94,8 +96,11 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       * [Mysql错误笔记](notes/error-qa/mysql/note-qa.md)
       * [Node & Git错误笔记](notes/error-qa/node-git/note-qa.md)
     * [VS Code相关](notes/vscode/guide.md)
-         * [VS Code Tips](notes/vscode/tips.md)
-         * [VS Code 插件](notes/vscode/extensions.md)
+      * [VS Code Tips](notes/vscode/tips.md)
+      * [VS Code 插件](notes/vscode/extensions.md)
+    * [前端开发 Debugger相关](notes/debugger/guide.md)
+      * [Mac 如何使用其他环境的浏览器](notes/debugger/mac-how-to-use-other-env-browsers.md)
+      * [浏览器的用户代理字符串(User Agent)](notes/debugger/browser-user-agent.md)
 
 <!--  资源集合 -->
 

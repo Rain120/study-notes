@@ -17,8 +17,8 @@
    * [Javascript正则表达式](notes/javascript/regular_expression/regular_expression.md)
    * [日常使用的正则表达式](notes/javascript/regular_expression/common_reg_exps.md)
    * [ECMAScript学习](notes/javascript/es-study/es-guide.md)
-* [前端开发 Tips](notes/tips/guide.md)
 
+* [前端开发 Tips](notes/tips/guide.md)
    * [CSS Tips](notes/tips/css-tips.md)
    * [JS Tips](notes/tips/js-tips.md)
    * [Webpack Tips](notes/tips/webpack-tips.md)
@@ -27,50 +27,55 @@
    * [Code Tips](notes/tips/code-tips.md)
    * [Moment Tips](notes/tips/moment-tips.md)
    * [Chrome 79 Bug](notes/tips/chrome-79-bug.md)
+   * [Markdown 数学符号](notes/tips/markdown-math-symbol-tips.md)
+
 * [Webpack](notes/webpack/guide.md)
   * [Webpack 打包器实现](notes/webpack/mini-webpack.md)
-   * [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
+  * [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
+  * [Webpack 4 性能优化](notes/webpack/webpack4-optimizate.md)
+
 * [Babel](notes/babel/guide.md)
-  
    * [Babel手册](notes/babel/babel-handbook.md)
 * [与AST的相知相识](notes/babel/ast/ast.md)
 * [Vue](notes/vue/guide.md)
 
    * [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
 * [Vue之网易云音乐横向菜单滑动的实现](notes/vue/slide-menu/slide-menu.md)
-  
    * [Vue 生命周期笔记](notes/vue/vue-lifecycle/vue-lifecycle.md)
-* [Vue 源码学习](notes/vue/code-review/code-review.md)
-* [React](notes/react/guide.md)
+   * [Vue 源码学习](notes/vue/code-review/code-review.md)
 
+* [React](notes/react/guide.md)
    * [React组件库开发 - 初始化项目](notes/react/Component-library/init.md)
    * [React better-scroll实践](notes/react/better-scroll/better-scroll.md)
      * [基础组件Scroll开发](notes/react/better-scroll/scroll.md)
      * [Slider 组件开发](notes/react/better-scroll/slider.md)
      * [Sticky 组件开发](notes/react/better-scroll/sticky.md)
    * [React Hooks 学习](notes/react/hooks/hooks.md)
-* [移动端](notes/mobile/guide.md)
 
+* [移动端](notes/mobile/guide.md)
    * [Charles抓包https手机配置](notes/mobile/charles-https-mobile-config.md)
    * [移动端Tips](notes/mobile/mobile-tips.md)
+
 * [WebGL](notes/webgl/guide.md)
    * [WebGL基础知识](notes/webgl/webgl.md)
    * [Three.js 学习](notes/webgl/threejs/threejs.md)
 * [Linux](notes/linux/guide.md)
 * [Linux入门学习](notes/linux/initial.md)
-  
    * [常用命令行快捷键](notes/linux/command-shortcut.md)
+
 * [Shell](notes/shell/guide.md)
    * [Shell 脚本](notes/shell/shell.md)
    * [Shell 中常用的 Git 命令](notes/shell/common-git-commands.md)
+
 * [Docker](notes/docker/guide.md)
    * [Docker 安装](notes/docker/docker-install.md)
    * [Docker CentOS下安装 Node](notes/docker/centos-node-install.md)
    * [Docker 学习](notes/docker/docker-command.md)
-* [Nginx](notes/nginx/guide.md)
-* [Nginx笔记(2019-03-08更新)](notes/nginx/nginx/note.md)
-* [Git & Npm 学习](notes/git-npm/guide.md)
 
+* [Nginx](notes/nginx/guide.md)
+   * [Nginx笔记(2019-03-08更新)](notes/nginx/nginx/note.md)
+
+* [Git & Npm 学习](notes/git-npm/guide.md)
    * [Git 底层深入浅析 - 目录篇](notes/git-npm/git-base-analysis.md)
    * [Git Object 深入浅析](notes/git-npm/git-objects.md)
    * [你必须知道的`Git`命令](notes/git-npm/you-must-know-git-commands.md)
@@ -83,9 +88,14 @@
    * [Npm 知识储备](notes/git-npm/npm-knowledge-reserve.md)
    * [Npx如何run](notes/git-npm/how-npx-to-run.md)
    * [npm install vs npm ci](notes/git-npm/npm-install-vs-npm-ci.md)
-* [日常错误笔记](notes/error-qa/guide.md)
 
+* [日常错误笔记](notes/error-qa/guide.md)
    * [Mysql错误笔记](notes/error-qa/mysql/note-qa.md)
+
 * [VS Code相关](notes/vscode/guide.md)
    * [VS Code Tips](notes/vscode/tips.md)
    * [VS Code 插件](notes/vscode/extensions.md)
+
+* [前端开发 Debugger相关](notes/debugger/guide.md)
+   * [Mac 如何使用其他环境的浏览器](notes/debugger/mac-how-to-use-other-env-browsers.md)
+   * [浏览器的用户代理字符串(User Agent)](notes/debugger/browser-user-agent.md)

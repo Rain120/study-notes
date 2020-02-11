@@ -89,7 +89,34 @@ function nextWeek(date = moment(), day = 1) {
 }
 ```
 
+#### 相距时间 (可自定义秒, 分, 时, 天, 周, 月, 年)
 
+```javascript
+function isAfter({
+  type = 'isBefore'
+  start = moment(),
+  end = moment(),
+  long = 0,
+  key = 'days'
+}) {
+  const date = moment(end).clone().add(long, key);
+  return type === 'isBefore' ? moment(start).isBefore(date) : moment(start).isAfter(date);
+}
+```
+
+`type` 参数列表，对应`moment.add()`的第二个参数
+
+| 键           | 快捷键 |
+| :----------- | :----- |
+| years        | y      |
+| quarters     | Q      |
+| months       | M      |
+| weeks        | w      |
+| days         | d      |
+| hours        | h      |
+| minutes      | m      |
+| seconds      | s      |
+| milliseconds | ms     |
 
 #### Demo
 
