@@ -91,8 +91,17 @@ Opera/9.80 (Windows NT 6.0; U; pl) Presto/2.10.229 Version/11.62
 Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; fr) Presto/2.9.168 Version/11.52
 Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; de) Presto/2.9.168 Version/11.52
 
+// safari 11
+Mozilla/5.0 (iPhone; U; CPU iPhone OS 11_0_9 like Mac OS X; en-US) AppleWebKit/602.5.3 (KHTML, like Gecko) Version/11.0.3 Mobile/8F48a Safari/6533.18.5
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5
+Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5
+Mozilla/5.0 (iPhone; U; CPU iPhone OS 11_2_3 like Mac OS X; en-NZ) AppleWebKit/605.4.7 (KHTML, like Gecko) Version/11.0.1 Mobile/8F290 Safari/6533.18.5
+
 ...
 ```
+
+
 
 [Safari 更多详见](https://github.com/fengzhizi715/user-agent-list/blob/master/Safari.txt)
 

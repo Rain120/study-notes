@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime : 2019-12-31 16:31:42
+ * @LastEditTime : 2020-02-12 11:47:02
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -106,7 +106,7 @@
         // Goto the document
         function(hook, vm) {
           hook.beforeEach(function (html) {
-            var url = `https://github.com/rain120/study-notes/docs/${vm.route.file}`;
+            var url = `https://github.com/rain120/study-notes//blob/master/docs/${vm.route.file}`;
             var gotoHTML = `[📝 GOTO DOCUMENT](${url})\n`;
 
             return gotoHTML + html + '\n----\n' + 'Last modified <strong>{docsify-updated}</strong>';

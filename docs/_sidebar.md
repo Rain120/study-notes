@@ -21,6 +21,7 @@
       * [Typescript Tips](notes/tips/typescript-tips.md)
       * [Email Tips](notes/tips/email-tips.md)
       * [Code Tips](notes/tips/code-tips.md)
+      * [Npm Tips](notes/tips/npm-tips.md)
       * [Moment Tips](notes/tips/moment-tips.md)
       * [Chrome 79 Bug](notes/tips/chrome-79-bug.md)
       * [Markdown 数学符号](notes/tips/markdown-math-symbol-tips.md)

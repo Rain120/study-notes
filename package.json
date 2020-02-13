@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Rain120/study-notes/issues"
   },
-  "homepage": "https://github.com/Rain120/study-notes#readme"
+  "homepage": "https://github.com/Rain120/study-notes#readme",
+  "devDependencies": {
+    "docsify": "^4.10.2"
+  }
 }

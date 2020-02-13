@@ -61,9 +61,9 @@
 
 [Receive SMS Online](http://receive-sms-online.com/)
 
-[TextNow](https://www.textnow.com/)
+~~[TextNow](https://www.textnow.com/)~~
 
-[Textfree](https://www.pinger.com/text-free/)
+~~[Textfree](https://www.pinger.com/text-free/)~~
 
 [Sellaite](http://sms.sellaite.com)
 
@@ -76,6 +76,16 @@
 [visitorsms](https://www.visitorsms.com/)
 
 [sms24](https://sms24.me/)
+
+[becmd](https://www.becmd.com/)
+
+[114sim](http://www.114sim.com/)
+
+[jmapingtai](http://jmapingtai.com/)
+
+[mianfeijiema](https://mianfeijiema.com/)
+
+[free-receive-sms](https://www.imtqy.com/free-receive-sms.html)
 
 #### 其他
 
