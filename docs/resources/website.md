@@ -130,6 +130,8 @@
 
 [flatuicolors](https://flatuicolors.com/)
 
+[zhongguose](http://zhongguose.com/)
+
 [Colourcode](https://colourco.de/)
 
 可以自由配色，也能在色彩调和规则的限制下配色。Colourcode 的特色在于它的操控体验。
@@ -143,6 +145,10 @@
 **Digital Color Meter(macOS自带)**： `Mac`直接数码取色器即可
 
 ##### 设计相关
+
+[lookae](http://www.lookae.com/)
+
+大众脸为您提供的后期技术交流平台
 
 [seeseed](https://www.seeseed.com/)
 
@@ -171,6 +177,10 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 [imgcook](https://imgcook.taobao.org/)
 
 由设计稿一键智能生成代码
+
+[videezy](https://www.videezy.com/)
+
+免费下载 `4k`视频
 
 ##### 在线代码编辑器
 
@@ -212,6 +222,10 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 这个网站提供免费的高质量图片！并且这些图片都是没有版权的。
 
 ![pexels](./wf/pexels.png)
+
+[pngimg](http://pngimg.com/)
+
+世界最大 `png` 透明背景图库推荐，两万张免费插图下载
 
 [imagecyborg](https://imagecyborg.com/)
 
@@ -405,3 +419,6 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 搜索、选择各类的`emoji`表情，你懂得~~
 
+[egouz](https://www.egouz.com/)
+
+国外网站推荐
