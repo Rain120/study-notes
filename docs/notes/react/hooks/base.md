@@ -359,6 +359,24 @@ function Counter({initialCount}) {
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 ```
 
+#### useCallback()
+
+返回一个 [memoized](https://en.wikipedia.org/wiki/Memoization) 回调。
+
+参数: **内联回调**和**一组输入**。
+
+ `useCallback` 将返回一个 `callback(回调)` 的 `memoized` 版本，该版本仅在其中一个输入发生更改时才会更改。 当将回调传递给依赖于引用相等性的优化子组件，以防止不必要的渲染（例如，`shouldComponentUpdate`）时，这非常有用。
+
+`useCallback(fn, inputs)` 等价于 `useMemo(() => fn, inputs)`。
+
+> 注意
+>
+> 输入数组不作为参数传递给效果函数。 但从概念上讲，这就是它们所代表的内容：效果函数中引用的每个值也应出现在输入数组中。 将来，一个足够先进的编译器可以自动创建这个数组。
+
+```jsx
+const memoizedCallback = useCallback(() => doSomething(a, b), [a, b]);
+```
+
 
 
 #### useRef()
@@ -488,4 +506,6 @@ const usePerson = (personId) => {
 [React Hooks 入门教程](https://www.ruanyifeng.com/blog/2019/09/react-hooks.html)
 
 [React Hooks 详解 ](https://juejin.im/post/5dbbdbd5f265da4d4b5fe57d)
+
+[When to useMemo and useCallback](https://kentcdodds.com/blog/usememo-and-usecallback/)
 

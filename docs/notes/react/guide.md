@@ -3,5 +3,8 @@
   - [基础组件Scroll开发](notes/react/better-scroll/scroll.md)
   - [Slider 组件开发](notes/react/better-scroll/slider.md)
   - [Sticky 组件开发](notes/react/better-scroll/sticky.md)
-- [React Hooks 学习](notes/react/hooks/hooks.md)
+- [React Hooks](notes/react/hooks/guide.md)
+  - [React Hooks 基础学习](notes/react/hooks/base.md)
+- [React-Router](notes/react/router/guide.md)
+  - [BrowserRouter和HashRouter的区别?](notes/react/router/router-diff-with-browser-and-hash.md)
 

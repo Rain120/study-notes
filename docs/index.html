@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime : 2020-02-12 11:47:02
+ * @LastEditTime: 2020-03-12 15:10:25
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -197,6 +197,10 @@
       });
 
       $(window).bind('hashchange', function() {
+        document.querySelector('.active').scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        });
         setTitle({
           docDirectory,
           tContent,
