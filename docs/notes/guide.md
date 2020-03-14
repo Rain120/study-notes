@@ -10,13 +10,16 @@
 - [HTML](notes/html/guide.md)
 - [CSS](notes/css/guide.md)
 - [Javascript](notes/javascript/guide.md)
-
    - [console全家桶](notes/javascript/console/console-related-note.md)
    - [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
    - [JavaScript获取DOM元素的位置和尺寸](notes/javascript/get-dom-property/get-dom-property.md)
    - [Javascript正则表达式](notes/javascript/regular_expression/regular_expression.md)
    - [日常使用的正则表达式](notes/javascript/regular_expression/common_reg_exps.md)
    - [ECMAScript学习](notes/javascript/es-study/es-guide.md)
+
+- [Typescript](notes/typescript/guide.md)
+   - [Typescript 问题 & 解释](notes/typescript/qa.md)
+   - [Typescript 开发小建议](notes/typescript/tips.md)
 
 - [前端开发 Tips](notes/tips/guide.md)
    - [CSS Tips](notes/tips/css-tips.md)

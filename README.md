@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2020-03-12 14:18:26
+ * @LastEditTime: 2020-03-14 11:49:39
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -32,6 +32,9 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [Javascript正则表达式](notes/javascript/regular_expression/regular_expression.md)
       - [日常使用的正则表达式](notes/javascript/regular_expression/common_reg_exps.md)
       - [ECMAScript学习](notes/javascript/es-study/es-guide.md)
+    - [Typescript](notes/typescript/guide.md)
+      - [Typescript 问题 & 解释](notes/typescript/qa.md)
+      - [Typescript 开发小建议](notes/typescript/tips.md)
     - [前端开发 Tips](notes/tips/guide.md)
       - [CSS Tips](notes/tips/css-tips.md)
       - [JS Tips](notes/tips/js-tips.md)
