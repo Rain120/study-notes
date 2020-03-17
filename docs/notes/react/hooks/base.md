@@ -493,6 +493,8 @@ const usePerson = (personId) => {
 
 ![react-hooks-lifecycle.png](./images/react-hooks-lifecycle.png)
 
+![react-hooks-lifecycle2.png](./images/react-hooks-lifecycle2.png)
+
 | Hooks                                      | Class Componets                          |
 | ------------------------------------------ | ---------------------------------------- |
 | `useEffect`                                | `componentDidMount`,`componentDidUpdate` |
@@ -522,3 +524,4 @@ const usePerson = (personId) => {
 
 [react-lifecycle-methods-diagram](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
+[reactacademy.ca](https://www.reactacademy.ca/handouts/)
