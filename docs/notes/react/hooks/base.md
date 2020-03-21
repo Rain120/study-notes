@@ -44,7 +44,12 @@
 
 参数: 初始化 `state`
 
-返回值: [当前 `state` , 更新 `state` 的函数] **Note**: 返回一个数组
+返回值: [当前 `state` , 更新 `state` 的函数] 
+
+**Note**: 
+
+- 返回一个数组
+- `Hooks`的setState**不会合并**旧状态，而是**完全替代**了旧的状态
 
 ```jsx
 import React, { useState } from 'react';
@@ -63,8 +68,6 @@ function Example() {
   );
 }
 ```
-
-
 
 #### useEffect()
 
@@ -110,8 +113,6 @@ function Example() {
   );
 }
 ```
-
-
 
 **使用Tips**
 
@@ -180,9 +181,9 @@ function Example() {
   }
   ```
 
-  **Hook 允许我们按照代码的用途分离他们，** 而不是像生命周期函数那样。React 将按照 effect 声明的顺序依次调用组件中的*每一个* effect。
+  **Hook 允许我们按照代码的用途分离他们，** 而不是像生命周期函数那样。React 将按照 effect 声明的顺序依次调用组件中的**每一个** `effect`。
 
-- ✅ 通过跳过 Effect 进行性能优化
+- ✅ 通过跳过 `Effect` 进行性能优化
 
   在某些情况下，每次渲染后都执行清理或者执行 effect 可能会导致性能问题。在 `class` 组件中，我们可以通过在 `componentDidUpdate` 中添加对 `prevProps` 或 `prevState` 的比较逻辑解决。
 
@@ -203,6 +204,19 @@ function Example() {
   ```
 
   推荐启用 [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks#installation) 中的 [`exhaustive-deps`](https://github.com/facebook/react/issues/14920) 规则。
+
+#### useLayoutEffect()
+
+参数列表与`useEffect`一样
+
+**区别:**
+
+- `useEffect`是异步的, `useLayoutEffect`是同步的
+- `useLayoutEffect` 会在 浏览器` layout` 之后，`painting` 之前执行, `useEffect` 在全部渲染完毕后才会执行
+
+![layout-paint.png](./images/layout-paint.png)
+
+[你可能不是“我”所认识的useEffect](https://imweb.io/topic/5cd845cadcd62f86299fcd76)
 
 #### useContext()
 
@@ -259,8 +273,6 @@ function ThemedButton() {
   );
 }
 ```
-
-
 
 #### useReducer()
 
@@ -338,8 +350,6 @@ function Counter({initialCount}) {
 
 ```
 
-
-
 #### useMemo()
 
 作用: 有助于避免在每次渲染时都进行高开销的计算。
@@ -350,7 +360,7 @@ function Counter({initialCount}) {
 
 **Note:**
 
-- 传入 `useMemo` 的函数会在渲染期间执行。请不要在这个函数内部执行与渲染无关的操作，诸如副作用这类的操作属于 `useEffect` 的适用范畴，而不是 `useMemo`。
+- 传入 `useMemo` 的函数会**在渲染期间执行**, 所以为了避免一些没必要重复执行的方法, 可以使用`useMemo`。请不要在这个函数内部执行与渲染无关的操作，诸如副作用这类的操作属于 `useEffect` 的适用范畴，而不是 `useMemo`。
 
 - 如果没有提供依赖项数组，`useMemo` 在每次渲染时都会计算新的值。
 
@@ -370,7 +380,7 @@ const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 
 `useCallback(fn, inputs)` 等价于 `useMemo(() => fn, inputs)`。
 
-> 注意
+> **注意**
 >
 > 输入数组不作为参数传递给效果函数。 但从概念上讲，这就是它们所代表的内容：效果函数中引用的每个值也应出现在输入数组中。 将来，一个足够先进的编译器可以自动创建这个数组。
 
@@ -378,13 +388,16 @@ const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 const memoizedCallback = useCallback(() => doSomething(a, b), [a, b]);
 ```
 
+`useMemo()`和`useCallback()`的区别
 
+-  `useMemo` 缓存的是计算数据的值, 返回的是函数运行的结果; `useCallback` 缓存的是函数的引用，所以返回的是函数。
+-  `useMemo` 专注于避免繁重的计算, `useCalback`专注于不同的事情, 它修复了内联事件处理程序时的性能问题
 
 #### useRef()
 
 参数: `null or DOM` , 用来初始化`ref`对象的 `.current` 属性。
 
-`useRef` 返回一个可变的 ref 对象。**返回的 `ref` 对象在组件的整个生命周期内保持不变, 使用 `React.createRef` ，每次重新渲染组件都会重新创建 `ref`。**
+`useRef` 返回一个可变的 `ref 对象`。**返回的 `ref` 对象在组件的整个生命周期内保持不变, 使用 `React.createRef` ，每次重新渲染组件都会重新创建 `ref`。**
 
 ```jsx
 function TextInputWithFocusButton() {
@@ -462,8 +475,6 @@ function FancyInput(props, ref) {
 FancyInput = forwardRef(FancyInput);
 ```
 
-
-
 #### useCutom 自定义Hooks
 
 - ✅ 钩子一律使用`use`前缀命名，便于识别。你要使用 `xxx` 功能，钩子就命名为 `usexxx`
@@ -525,3 +536,4 @@ const usePerson = (personId) => {
 [react-lifecycle-methods-diagram](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
 [reactacademy.ca](https://www.reactacademy.ca/handouts/)
+
