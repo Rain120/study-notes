@@ -53,6 +53,8 @@
     - [移动端](notes/mobile/guide.md)
       - [Charles抓包https手机配置](notes/mobile/charles-https-mobile-config.md)
       - [移动端Tips](notes/mobile/mobile-tips.md)
+    - [Lerna](notes/lerna/guide.md)
+         - [Lerna 入门篇](notes/lerna/base.md)
     - [WebGL](notes/webgl/guide.md)
       - [WebGL基础知识](notes/webgl/webgl.md)
       - [Three.js 学习](notes/webgl/threejs/threejs.md)

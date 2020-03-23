@@ -14,5 +14,13 @@ git fetch upstream
 
 ![git-fetch-upstream.png](./images/git-fetch-upstream.png)
 
+#### git pull 与 git pull --rebase的区别
+
+```sh
+git pull # => git fetch + git merge
+
+git pull --rebase # => git fetch + git rebase
+```
+
 
 

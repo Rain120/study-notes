@@ -81,7 +81,6 @@ git config --list # 列举所有配置
 
 <center>阮一峰老师对Git工作区、暂存区、版本库、远程仓库的解释</center>
 
-
 ![git_infos](./images/git_infos.jpg)
 
 
@@ -426,6 +425,32 @@ git cherry-pick <start-commit-id>…<end-commit-id>
 **git rebase a b**
 
 ![git-rebase](./images/git-rebase.gif)
+
+`git rebase`参数列表及其使用
+
+`--continue`: 继续处理变基的其余部分。
+
+`--abort`: 完全撤消变基。 `Git` 将您恢复为分支状态如同调用 `git rebase` 之前一样。
+
+`--skip`:  完全跳过提交。 这意味着将不包括由有问题的提交引入的任何更改。 很少会选择此选项。
+
+**常见解决远程冲突的方式**
+
+```sh
+# 1. 拉取远程代码，并合并到本地
+git pull --rebase # => git fetch + git rebase
+
+# or
+
+git fetch origin
+git rebase origin/branch
+
+# 2. 解决冲突， 编辑器 or 命令行
+
+# 3. 提交
+git add -u
+git rebase --continue
+```
 
 
 
