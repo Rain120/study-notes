@@ -11,7 +11,7 @@
 
 [爱软客](http://www.bokeboke.net/)
 
-[小众软件](https://www.appinn.com/)
+[小众软件](https://www.appinn.com/) [小众软件2](https://love.appinn.com/)
 
 [少数派](<https://sspai.com/>)
 

@@ -22,6 +22,7 @@
   - [office相关](resources/website?id=office相关)
   - [思维导图](resources/website?id=思维导图)
 - [书籍查找](resources/website?id=书籍查找)
+- [视频](resources/website?id=视频)
 - [其他](resources/website?id=其他)
 
 #### 文献查找
@@ -392,7 +393,14 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 网站截至今日，已有 257 万多书籍可免费下载，大多数是 `pdf`、`djvu`、`eupb` 格式。下载也很方便，直接搜书名即可，也可下载论文或者文章，还可选择地区并设置成中国。
 
+#### 视频
+
+[MV Cat](http://www.mvcat.com/)
+
+[全网VIP 视频解析](http://qmaile.com/)
+
 #### 其他
+
 [文章索引](resources/website?id=文章索引)
 
 [Fliqlo](https://fliqlo.com/index.html)
@@ -428,3 +436,5 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 [egouz](https://www.egouz.com/)
 
 国外网站推荐
+
+[分享大师](http://www.fenxiangdashi.com/)

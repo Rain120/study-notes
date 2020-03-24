@@ -16,6 +16,8 @@
     - `repo`体积较大
     - 统一构建工具，对构建工具提出了更高要求，要能构建各种相关`module`
 
+![mono-vs-mutil.jpg](./images/mono-vs-mutil.jpg)
+
 #### lerna 是什么？
 
 `Lerna`是一种工具，用于优化使用`git`和`npm`管理多包存储库的工作流程。
