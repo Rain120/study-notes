@@ -55,6 +55,7 @@
       - [移动端Tips](notes/mobile/mobile-tips.md)
     - [Lerna](notes/lerna/guide.md)
          - [Lerna 入门篇](notes/lerna/base.md)
+         - [Lerna 命令](notes/lerna/commands.md)
     - [WebGL](notes/webgl/guide.md)
       - [WebGL基础知识](notes/webgl/webgl.md)
       - [Three.js 学习](notes/webgl/threejs/threejs.md)

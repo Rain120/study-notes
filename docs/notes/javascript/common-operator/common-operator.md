@@ -440,7 +440,19 @@ console.log(false ? 'true' : true ? 'false true' : 'false');
 
 `=` `+=` `-=` `*=` `/=` `%=`  `**=`(平方) `<<=` `>>=` `>>>=` `&=` `|=` `^|`
 
+#### 10. 可选链
 
+```javascript
+var a = {};
+console.log(a?.b);
+            
+var a = { b: 1 };
+console.log(a?.b);
+```
+
+
+
+![optional-chaining.png](./images/optional-chaining.png)
 
 **参考**
 
