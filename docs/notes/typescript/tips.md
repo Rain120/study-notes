@@ -26,3 +26,6 @@ export type ArrayMap<T> = T[];
 [Typescript 官方文档](https://www.tslang.cn/index.html)
 
 [TypeScript Spec](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md)
+
+[TypeScript 入门教程](https://ts.xcatliu.com/introduction/what-is-typescript)
+

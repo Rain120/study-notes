@@ -10,11 +10,13 @@
 
 - [文献查找](resources/website?id=文献查找)
 - [学习网站](resources/website?id=学习网站)
+  - [英语](resources/website?id=英语)
   - [综合](resources/website?id=综合)
   - [计算机](resources/website?id=计算机)
 - [工具网站](resources/website?id=工具网站)
   - [开发相关](#开发相关)
   - [设计相关](#设计相关)
+  - [Logo生成](resources/website?id=Logo生成)
   - [在线代码编辑器](resources/website?id=在线代码编辑器)
   - [图片相关](resources/website?id=图片相关)
   - [图片压缩](resources/website?id=图片压缩)
@@ -70,8 +72,14 @@
 
 网站｜万方、知网、维普、超星学术论文免费下载，杂志期刊免费看
 
-[SciHub 桌面版](https://www.appinn.com/sci-hub/)
+~~[SciHub 桌面版](https://www.appinn.com/sci-hub/)~~
 有点久，不知道还行不行
+
+[http://sci-hub.tw/](http://sci-hub.tw/)
+
+[http://sci-hub.se/](http://sci-hub.se/)
+
+[http://sci-hub.si/](http://sci-hub.si/)
 
 [hejizhan](http://www.hejizhan.com/bbs/)
 
@@ -81,6 +89,30 @@
 
 #### 学习网站
 [文章索引](resources/website?id=文章索引)
+
+##### 英语
+
+[微软小英写作网站](https://app.mtutor.engkoo.com/englishwriting/)
+
+- **考试分类**
+
+  覆盖8种考试类型，可根据自身需求选择不同评分标准
+
+- **语法检查**
+
+  AI技术自动检查拼写和语法错误，提供修改建议
+
+- **图片识别**
+
+  无须输入文字，可一键上传照片，自动识别作文内容
+
+- **写作助手**
+
+  单词不会拼，逻辑连接词用哪个，写作助手全搞定
+
+[听力练习](https://www.voscreen.com/)
+
+`Voscreen`通过简短的视频剪辑帮助您提高英语水平。 在`Voscreen`视频学习环境中，学习和提高英语比以往更加有趣。
 
 ##### 综合
 [文章索引](resources/website?id=文章索引)
@@ -151,6 +183,8 @@
 
 ##### 设计相关
 
+[配色分享](https://juejin.im/post/5e7cdee26fb9a03c6e640cc7)
+
 [lookae](http://www.lookae.com/)
 
 大众脸为您提供的后期技术交流平台
@@ -186,6 +220,16 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 [videezy](https://www.videezy.com/)
 
 免费下载 `4k`视频
+
+##### Logo生成
+
+[wuruihong](https://icon.wuruihong.com/): 启动图生成工具
+
+[designmantic](https://www.designmantic.com/)
+
+[brandmark](https://brandmark.io/): 生成的logo图标符号形状较多，造型简单，整体质量较好
+
+[logosc](https://www.logosc.cn/) 在线付费logo制作设计网站，为企业定制logo
 
 ##### 在线代码编辑器
 
