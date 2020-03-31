@@ -2,7 +2,7 @@
  # @Author: Rainy
  # @Date: 2020-03-31 17:41:06
  # @LastEditors: Rainy
- # @LastEditTime: 2020-03-31 17:41:48
+ # @LastEditTime: 2020-03-31 17:54:38
  ###
 
 #!/usr/bin/env bash
@@ -61,6 +61,6 @@ fi
 echo "Commit pushing"
 
 # git push origin ${branch}:refs/for/${branch}
-git push
+git push origin ${branch}
 
 echo "---- commit push shell end ----"
