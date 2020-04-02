@@ -290,6 +290,8 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 ![carbon](./wf/carbon.png)
 
+[codeimg](https://codeimg.io/): 源代码生成图片工具
+
 ##### 图片压缩
 
 [压缩图](https://www.yasuotu.com/): 在线处理图片的网站
@@ -482,8 +484,4 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 国外网站推荐
 
 [分享大师](http://www.fenxiangdashi.com/)
-
-[codeimg](https://codeimg.io/): 源代码生成图片工具
-
-[carbon](https://carbon.now.sh/): 源代码生成图片工具
 
