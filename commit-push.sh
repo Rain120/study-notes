@@ -2,7 +2,7 @@
 # @Author: Rainy
 # @Date: 2020-03-30 11:50:18
  # @LastEditors: Rainy
- # @LastEditTime: 2020-04-02 18:58:42
+ # @LastEditTime: 2020-04-02 18:59:39
 ###
 
 #!/usr/bin/env bash
@@ -85,7 +85,7 @@ if [ -n "$msg" ];then
 
             echo "Log: Pushing"
 
-            git push origin ${branch}:refs/for/${branch}
+            git push origin ${branch}
         fi
 
         echo "------------ commit push shell end ------------"
