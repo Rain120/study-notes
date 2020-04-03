@@ -2,7 +2,7 @@
 # @Author: Rainy
 # @Date: 2020-03-30 11:50:18
  # @LastEditors: Rainy
- # @LastEditTime: 2020-04-02 18:59:39
+ # @LastEditTime: 2020-04-03 18:58:06
 ###
 
 #!/usr/bin/env bash
@@ -46,10 +46,10 @@ if [ -n "$msg" ];then
         
         if [[ $amend = "Y" || $amend = "y" ]];then
             echo "Log: Amending message commit"
-            git commit --amend -m "$msg"
+            git commit --amend -m "$msg" || exit 1
         else
             echo "Log: Commiting"
-            git commit -m "$msg"
+            git commit -m "$msg" || exit 1
         fi
 
         if [[ $pull = "Y" || $pull = "y" ]];then
@@ -63,7 +63,7 @@ if [ -n "$msg" ];then
             branch=curBranch
 
             echo "Log: Pulling ${branch} from remote"
-            # git pull origin ${branch}
+            git pull origin ${branch} || exit 1
 
         else
 
@@ -85,7 +85,7 @@ if [ -n "$msg" ];then
 
             echo "Log: Pushing"
 
-            git push origin ${branch}
+            git push origin ${branch} || exit 1
         fi
 
         echo "------------ commit push shell end ------------"
