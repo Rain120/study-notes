@@ -15,6 +15,7 @@
       - [日常使用的正则表达式](notes/javascript/regular_expression/common_reg_exps.md)
       - [ECMAScript学习](notes/javascript/es-study/es-guide.md)
     - [Typescript](notes/typescript/guide.md)
+      - [Typescript 基础入门](notes/typescript/base.md)
       - [Typescript 问题 & 解释](notes/typescript/qa.md)
       - [Typescript 开发小建议](notes/typescript/tips.md)
     - [前端开发 Tips](notes/tips/guide.md)
