@@ -57,6 +57,8 @@
     - [Lerna](notes/lerna/guide.md)
          - [Lerna 入门篇](notes/lerna/base.md)
          - [Lerna 命令](notes/lerna/commands.md)
+         - [Lerna 搭建脚手架](notes/lerna/build-cli/guide.md)
+          - [Lerna 搭建脚手架 第一集](notes/lerna/build-cli/1.md)
     - [WebGL](notes/webgl/guide.md)
       - [WebGL基础知识](notes/webgl/webgl.md)
       - [Three.js 学习](notes/webgl/threejs/threejs.md)

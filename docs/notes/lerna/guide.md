@@ -1,2 +1,5 @@
 - [Lerna 入门篇](notes/lerna/base.md)
 - [Lerna 命令](notes/lerna/commands.md)
+- [Lerna 搭建脚手架](notes/lerna/build-cli/guide.md)
+  - [Lerna 搭建脚手架 第一集](notes/lerna/build-cli/1.md)
+

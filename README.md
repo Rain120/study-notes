@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2020-03-14 11:49:39
+ * @LastEditTime: 2020-04-05 16:32:34
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -75,6 +75,8 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
     - [Lerna](notes/lerna/guide.md)
       - [Lerna 入门篇](notes/lerna/base.md)
       - [Lerna 命令](notes/lerna/commands.md)
+      - [Lerna 搭建脚手架](notes/lerna/build-cli/guide.md)
+        - [Lerna 搭建脚手架 第一集](notes/lerna/build-cli/1.md)
     - [WebGL](notes/webgl/guide.md)
       - [WebGL基础知识](notes/webgl/webgl.md)
       - [Three.js 学习](notes/webgl/threejs/threejs.md)
