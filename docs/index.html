@@ -2,7 +2,7 @@
  * @Author: Rainy
  * @Github: https://github.com/Rain120
  * @Date: 2019-01-20 10:59:41
- * @LastEditTime: 2020-03-12 15:10:25
+ * @LastEditTime: 2020-04-06 11:54:22
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -45,15 +45,15 @@
         '/.*/_sidebar.md': '/_sidebar.md',
         '/.*/_404.md': '/_404.md',
       },
-      search: {
-        maxAge: 86400000, // Expiration time, the default one day
-        placeholder: 'Type to search',
-        noData: '人家里面什么也没有啦!',
-        // Headline depth, 1 - 6
-        depth: 2,
-        // whether or not to hide other sidebar content
-        hideOtherSidebarContent: false,
-      },
+      // search: {
+      //   maxAge: 86400000, // Expiration time, the default one day
+      //   placeholder: 'Type to search',
+      //   noData: '人家里面什么也没有啦!',
+      //   // Headline depth, 1 - 6
+      //   depth: 6,
+      //   // whether or not to hide other sidebar content
+      //   hideOtherSidebarContent: false,
+      // },
       autoHeader: true,
       auto2top: true,
       executeScript: true,
@@ -121,7 +121,7 @@
   <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
   <script src="//unpkg.com/docsify-copy-code"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script> -->
   <script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
@@ -197,10 +197,13 @@
       });
 
       $(window).bind('hashchange', function() {
-        document.querySelector('.active').scrollIntoView({
-          behavior: 'smooth',
-          block: 'center',
-        });
+        const active = document.querySelector('.active');
+        if (active) {
+          active.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+          });
+        }
         setTitle({
           docDirectory,
           tContent,
