@@ -59,6 +59,8 @@
 
   `Mac`使用跳过注册
 
+  关闭打开的`source tree`命令行执行下列命令
+
   ```shell
   defaults write com.torusknot.SourceTreeNotMAS completedWelcomeWizardVersion 3
   ```
