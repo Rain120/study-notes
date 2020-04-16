@@ -26,6 +26,8 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
     - [HTML](notes/html/guide.md)
     - [CSS](notes/css/guide.md)
     - [Javascript](notes/javascript/guide.md)
+      - [JavaScript 核心概念](notes/javascript/key-concept/guide.md)
+        - [JavaScript 核心概念 (1)](notes/javascript/key-concept/concept-1.md)
       - [console全家桶](notes/javascript/console/console-related-note.md)
       - [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
       - [获取DOM元素的位置和尺寸](notes/javascript/get-dom-property/get-dom-property.md)
