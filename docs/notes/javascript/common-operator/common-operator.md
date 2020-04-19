@@ -225,8 +225,8 @@ console.log('-1 >>> 3', -1 >>> 3);
 >
 > 1. Let *number* be the result of calling [ToNumber](http://es5.github.io/#x9.3) on the input argument.
 > 2. If *number* is **NaN**, **+0**, **−****0**, **+****∞**, or **−∞**, return **+0**.
-> 3. Let *posInt* be [sign](http://es5.github.io/#sign)(*number*) * [floor](http://es5.github.io/#floor)([abs](http://es5.github.io/#abs)(*number*)).
-> 4. Let *int32bit* be *posInt* [modulo](http://es5.github.io/#modulo) 232; that is, a finite integer value k of Number type with positive sign and less than 232 in magnitude such that the mathematical difference of *posInt* and k is mathematically an integer multiple of 232.
+> 3. Let *posInt* be [sign](http://es5.github.io/#sign)(*number*) - [floor](http://es5.github.io/#floor)([abs](http://es5.github.io/#abs)(*number*)).
+> 4. Let *int32bit* be *posInt- [modulo](http://es5.github.io/#modulo) 232; that is, a finite integer value k of Number type with positive sign and less than 232 in magnitude such that the mathematical difference of *posInt* and k is mathematically an integer multiple of 232.
 > 5. If *int32bit* is greater than or equal to 231, return *int32bit* − 232, otherwise return *int32bit*.
 >
 > 中文：

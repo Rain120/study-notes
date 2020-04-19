@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2020-04-05 16:32:34
+ * @LastEditTime: 2020-04-19 15:36:02
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -27,7 +27,9 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
     - [CSS](notes/css/guide.md)
     - [Javascript](notes/javascript/guide.md)
       - [JavaScript 核心概念](notes/javascript/key-concept/guide.md)
-        - [JavaScript 核心概念 (1)](notes/javascript/key-concept/concept-1.md)
+        - [值类型 vs 引用类型](notes/javascript/key-concept/values-vs-reference.md)
+        - [null 和 undefined 的区别](notes/javascript/key-concept/null-vs-undefined.md)
+        - [Javascript 小数精度问题](notes/javascript/key-concept/js-float-accurate.md)
       - [console全家桶](notes/javascript/console/console-related-note.md)
       - [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
       - [获取DOM元素的位置和尺寸](notes/javascript/get-dom-property/get-dom-property.md)

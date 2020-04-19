@@ -6,5 +6,5 @@
  -->
 # 学习笔记
 
-* [学习笔记](notes/guide)
-* [书签资源](resources/resources)
+- [学习笔记](notes/guide)
+- [书签资源](resources/resources)
