@@ -218,6 +218,10 @@ history (选项) [参数]
 
 [Linux 推荐](https://github.com/Rain120/program-learning-lists/blob/master/README.md#linux)
 
+[Bash 脚本教程](http://wangdoc.com/bash/index.html)
+
+
+
 
 
 
