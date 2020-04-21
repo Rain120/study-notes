@@ -30,6 +30,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
         - [值类型 vs 引用类型](notes/javascript/key-concept/values-vs-reference.md)
         - [null 和 undefined 的区别](notes/javascript/key-concept/null-vs-undefined.md)
         - [Javascript 小数精度问题](notes/javascript/key-concept/js-float-accurate.md)
+        - [Javascript 闭包](notes/javascript/key-concept/closure.md)
       - [console全家桶](notes/javascript/console/console-related-note.md)
       - [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
       - [获取DOM元素的位置和尺寸](notes/javascript/get-dom-property/get-dom-property.md)
