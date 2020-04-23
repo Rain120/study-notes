@@ -4,6 +4,9 @@
 - [null 和 undefined 的区别](notes/javascript/key-concept/null-vs-undefined.md)
 - [Javascript 小数精度问题](notes/javascript/key-concept/js-float-accurate.md)
 - [Javascript 闭包](notes/javascript/key-concept/closure.md)
+- [Javascript this](notes/javascript/key-concept/this.md)
+- [Javascript new](notes/javascript/key-concept/new.md)
+- [call apply bind](notes/javascript/key-concept/call-apply-bind.md)
 
 #### 参考资料
 
