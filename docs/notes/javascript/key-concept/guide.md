@@ -7,7 +7,7 @@
 - [Javascript this](notes/javascript/key-concept/this.md)
 - [Javascript new](notes/javascript/key-concept/new.md)
 - [call apply bind](notes/javascript/key-concept/call-apply-bind.md)
-- [词法作用域链、函数作用域、块级作用域、执行上下文](notes/javascript/key-concept/chain-scope.md)
+- [Javascript 词法作用域链、函数作用域、块级作用域、执行上下文](notes/javascript/key-concept/chain-scope.md)
 
 #### 参考资料
 

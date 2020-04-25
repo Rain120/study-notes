@@ -6,7 +6,7 @@
   - [Javascript this](notes/javascript/key-concept/this.md)
   - [Javascript new](notes/javascript/key-concept/new.md)
   - [call apply bind](notes/javascript/key-concept/call-apply-bind.md)
-  - [词法作用域链、函数作用域、块级作用域、执行上下文](notes/javascript/key-concept/chain-scope.md)
+  - [Javascript 词法作用域链、函数作用域、块级作用域、执行上下文](notes/javascript/key-concept/chain-scope.md)
 - [console全家桶](notes/javascript/console/console-related-note.md)
 - [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
 - [获取DOM元素的位置和尺寸](notes/javascript/get-dom-property/get-dom-property.md)
