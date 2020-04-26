@@ -8,7 +8,7 @@ Emmm，那是什么？
 
 ![1](https://img.gmz88.com/uploadimg/ico/2019/0708/1562548009625680.jpg)
 
-灵魂连环问, `Loader` 是什么？有什么用？有什么特点？有哪些Loader` ? 怎么用？怎么写一个自己的`Loader ？
+灵魂连环问, `Loader` 是什么？有什么用？有什么特点？有哪些`Loader` ? 怎么用？怎么写一个自己的`Loader` ？
 
 #### Loader是什么？
 
@@ -30,6 +30,96 @@ Emmm，那是什么？
 - 除了使用 `package.json` 常见的 `main` 属性，还可以将普通的 npm 模块导出为 `loader`，做法是在 `package.json` 里定义一个 `loader` 字段。
 - 插件`(plugin)`可以为 `loader` 带来更多特性。
 - `loader` 能够产生额外的任意文件。
+
+
+#### Loader 配置
+
+##### 配置
+
+`webpack.config.js`中 `loader`的配置如下
+
+```javascript
+// webpack.config.js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            laoder: 'css-loader'
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+##### 内联配置Loader
+
+```javascript
+import 'style-loader!css-loader!less-loader?name=Rain120!./styles.less';
+```
+
+上面内联引入模块相当于如下配置:
+
+```javascript
+// webpack.config.js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.less$/,
+        use: [
+          {
+            loader: 'style-loader',
+  	        options: {}
+          },
+          {
+            laoder: 'css-loader',
+            options: {}
+          },
+          {
+            laoder: 'less-loader',
+            options: '?name=Rain120'
+          }
+        ]
+      }
+    ]
+  }
+}
+
+```
+
+再如:
+
+```javascript
+import '-!my-loader!my-loader2!./styles.css';
+```
+
+
+
+![inline-loader-process.png](./images/inline-loader-process.png)
+
+通过前置所有规则及使用 `!`，可以对应覆盖到配置中的任意 `loader`, 更多参数请到 [Loader 匹配规则](#Loader匹配规则) 查看。
+
+选项可以传递查询参数，例如 `?key=value&foo=bar`，或者一个 `JSON` 对象，例如 `?{"key":"value","foo":"bar"}`。
+
+##### Cli 配置Loader
+
+也可以通过 `CLI` 使用 `loader`
+
+```javascript
+webpack --module-bind jade-loader --module-bind 'css=style-loader!css-loader'
+```
+
+这会对 `.jade` 文件使用 `jade-loader`，对 `.css` 文件使用 [`style-loader`](https://www.webpackjs.com/loaders/style-loader) 和 [`css-loader`](https://www.webpackjs.com/loaders/css-loader)。
+
+[webpack 使用 Loader](https://www.webpackjs.com/concepts/loaders/#使用-loader)
 
 #### Loader 种类
 
@@ -66,6 +156,59 @@ module.exports = {
 - `normal Loader`: 普通 `loader` ②  ---->  默认
 - `inline Loader`: 内联`loader` ③  ----> 在模块中指定使用的`loader`是[内联`loader`](#内联配置Loader)
 - `post Loader`: 后置`loader` ④  ----> `enforce: 'post`'
+
+#### Loader匹配规则
+
+当然，`webpack`可以通过引入模块的路径规则，来判断是否使用内联模式或者剔除一些前置`(pre)` `Loader`, 后置`(post)` , 普通`(normal)` `Loader`。规则如下:
+
+**-!** : 剔除 配置中符合条件的 `pre` 和 `normal` `Loader`
+
+**!** : 剔除 配置中符合条件的  `normal` `Loader`
+
+**!!** : 剔除 配置中符合条件的 `pre` & `normal` & `post` `Loader`
+
+```javascript
+// Disable normal loaders
+import { a } from '!./file1.js';
+
+// Disable preloaders and normal loaders
+import { b } from  '-!./file2.js';
+
+// Disable all loaders
+import { c } from  '!!./file3.js';
+```
+
+`webpack`代码逻辑解析规则如下`(5.0.0.beta.15 vs 4.43.0)`
+
+```javascript
+const firstChar = requestWithoutMatchResource.charCodeAt(0);
+const secondChar = requestWithoutMatchResource.charCodeAt(1);
+const noPreAutoLoaders = firstChar === 45 && secondChar === 33; // startsWith "-!"
+const noAutoLoaders = noPreAutoLoaders || firstChar === 33; // startsWith "!"
+const noPrePostAutoLoaders = firstChar === 33 && secondChar === 33; // startsWith "!!";
+const rawElements = requestWithoutMatchResource
+  .slice(
+    noPreAutoLoaders || noPrePostAutoLoaders ? 2 : noAutoLoaders ? 1 : 0
+  )
+  .split(/!+/);
+```
+
+[详见 5.0.0 beta.15 webpack NormalModuleFactory.js](https://github.com/webpack/webpack/blob/2db705096bd9fa869e5cbe3e9fe5e09b0089c188/lib/NormalModuleFactory.js#L273)
+
+```javascript
+const noPreAutoLoaders = requestWithoutMatchResource.startsWith("-!");
+const noAutoLoaders =
+  noPreAutoLoaders || requestWithoutMatchResource.startsWith("!");
+const noPrePostAutoLoaders = requestWithoutMatchResource.startsWith("!!");
+let elements = requestWithoutMatchResource
+  .replace(/^-?!+/, "")
+  .replace(/!!+/g, "!")
+  .split("!");
+let resource = elements.pop();
+elements = elements.map(identToLoaderRequest);
+```
+
+[详见 4.43.0 webpack NormalModuleFactory.js](https://github.com/webpack/webpack/blob/c9d4ff7b054fc581c96ce0e53432d44f9dd8ca72/lib/NormalModuleFactory.js#L180)
 
 #### Loader执行
 
@@ -154,133 +297,6 @@ module.exports = {
 
 [Rule.enforce](https://webpack.js.org/configuration/module/#ruleenforce)
 
-#### Loader 配置
-
-##### 配置
-
-`webpack.config.js`中 `loader`的配置如下
-
-```javascript
-// webpack.config.js
-module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            laoder: 'css-loader'
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-##### 内联配置Loader
-
-```javascript
-import 'style-loader!css-loader!less-loader?{"key":"value","foo":"bar"}!./styles.less';
-```
-
-上面内联引入模块相当于如下配置:
-
-```javascript
-// webpack.config.js
-module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.less$/,
-        use: [
-          {
-            loader: 'style-loader',
-  	        options: {}
-          },
-          {
-            laoder: 'css-loader',
-            options: {}
-          },
-          {
-            laoder: 'less-loader',
-            options: {
-              "key":"value",
-              "foo":"bar"
-            }
-          }
-        ]
-      }
-    ]
-  }
-}
-
-```
-
-
-
-通过前置所有规则及使用 `!`，可以对应覆盖到配置中的任意 `loader`, 更多参数请到 [Loader 匹配规则](#Loader匹配规则) 查看。
-
-选项可以传递查询参数，例如 `?key=value&foo=bar`，或者一个 `JSON` 对象，例如 `?{"key":"value","foo":"bar"}`。
-
-##### Cli 配置Loader
-
-也可以通过 `CLI` 使用 `loader`
-
-```javascript
-webpack --module-bind jade-loader --module-bind 'css=style-loader!css-loader'
-```
-
-这会对 `.jade` 文件使用 `jade-loader`，对 `.css` 文件使用 [`style-loader`](https://www.webpackjs.com/loaders/style-loader) 和 [`css-loader`](https://www.webpackjs.com/loaders/css-loader)。
-
-[使用 Loader](https://www.webpackjs.com/concepts/loaders/#使用-loader)
-
-#### Loader匹配规则
-
-
-当然，`webpack`可以通过引入模块的路径规则，来判断是否使用内联模式或者剔除一些前置`(pre)` `Loader`, 后置`(post)` , 普通`(normal)` `Loader`。规则如下:
-
-**-!** : 剔除 配置中符合条件的 `pre` 和 `normal` `Loader`
-
-**!** : 剔除 配置中符合条件的  `normal` `Loader`
-
-**!!** : 剔除 配置中符合条件的 `pre` & `normal` & `post` `Loader`
-
-`webpack`代码逻辑解析规则如下`(5.0.0.beta.15 vs 4.43.0)`
-
-```javascript
-const firstChar = requestWithoutMatchResource.charCodeAt(0);
-const secondChar = requestWithoutMatchResource.charCodeAt(1);
-const noPreAutoLoaders = firstChar === 45 && secondChar === 33; // startsWith "-!"
-const noAutoLoaders = noPreAutoLoaders || firstChar === 33; // startsWith "!"
-const noPrePostAutoLoaders = firstChar === 33 && secondChar === 33; // startsWith "!!";
-const rawElements = requestWithoutMatchResource
-  .slice(
-    noPreAutoLoaders || noPrePostAutoLoaders ? 2 : noAutoLoaders ? 1 : 0
-  )
-  .split(/!+/);
-```
-
-[详见 5.0.0 beta.15 webpack NormalModuleFactory.js](https://github.com/webpack/webpack/blob/2db705096bd9fa869e5cbe3e9fe5e09b0089c188/lib/NormalModuleFactory.js#L273)
-
-```javascript
-const noPreAutoLoaders = requestWithoutMatchResource.startsWith("-!");
-const noAutoLoaders =
-  noPreAutoLoaders || requestWithoutMatchResource.startsWith("!");
-const noPrePostAutoLoaders = requestWithoutMatchResource.startsWith("!!");
-let elements = requestWithoutMatchResource
-  .replace(/^-?!+/, "")
-  .replace(/!!+/g, "!")
-  .split("!");
-let resource = elements.pop();
-elements = elements.map(identToLoaderRequest);
-```
-
-[详见 4.43.0 webpack NormalModuleFactory.js](https://github.com/webpack/webpack/blob/c9d4ff7b054fc581c96ce0e53432d44f9dd8ca72/lib/NormalModuleFactory.js#L180)
-
 #### 如何编写一个Loader
 
 `loader` 是导出为一个函数的 `node` 模块。该函数在 `loader` 转换资源的时候调用。给定的函数将调用 [loader API](https://www.webpackjs.com/api/loaders/)，并通过 `this` 上下文访问。
@@ -302,6 +318,8 @@ elements = elements.map(identToLoaderRequest);
 [loaders api](https://webpack.docschina.org/api/loaders/)
 
 [编写一个 loader](https://www.webpackjs.com/contribute/writing-a-loader/)
+
+[【webpack进阶】你真的掌握了loader么？- loader十问](https://juejin.im/post/5bc1a73df265da0a8d36b74f)
 
 [webpack 系列之四 loader 详解 1](https://segmentfault.com/a/1190000018450503)
 
