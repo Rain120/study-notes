@@ -10,11 +10,11 @@ Emmm，那是什么？
 
 灵魂连环问, `Loader` 是什么？有什么用？有什么特点？有哪些`Loader` ? 怎么用？怎么写一个自己的`Loader` ？
 
-#### Loader是什么？
+#### Loader 是什么？
 
 `Loader` 又称**加载器**, 它是类似其他构建工具中的 **任务(task)**, 提供了处理前端构建步骤的强大方法。
 
-#### Loader有什么用？
+#### Loader 有什么用？
 
 `loader` 让 `webpack` 能够去处理那些非 `JavaScript` 文件(`webpack` 自身只理解 `JavaScript`)。`loader` 可以将所有类型的文件转换为 `webpack` 能够处理的有效模块,然后你就可以利用 `webpack` 的打包能力,对它们进行处理。
 
@@ -31,7 +31,6 @@ Emmm，那是什么？
 - 插件`(plugin)`可以为 `loader` 带来更多特性。
 - `loader` 能够产生额外的任意文件。
 
-
 #### Loader 配置
 
 ##### 配置
@@ -47,52 +46,53 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: 'style-loader',
           },
           {
-            laoder: 'css-loader'
-          }
-        ]
-      }
-    ]
-  }
-}
+            laoder: 'css-loader',
+          },
+        ],
+      },
+    ],
+  },
+};
 ```
 
-##### 内联配置Loader
+##### 内联配置 Loader
 
 ```javascript
-import 'style-loader!css-loader!less-loader?name=Rain120!./styles.less';
+import '!style-loader!css-loader!less-loader?name=Rain120!./styles.less';
 ```
 
-上面内联引入模块相当于如下配置:
+上面内联引入模块相当于如下配置 **(内部执行转换过的rule配置)**:
 
 ```javascript
-// webpack.config.js
 module.exports = {
+  // ...
   module: {
+    // ...
     rules: [
       {
         test: /\.less$/,
         use: [
           {
             loader: 'style-loader',
-  	        options: {}
+            options: {},
           },
           {
             laoder: 'css-loader',
-            options: {}
+            options: {},
           },
           {
             laoder: 'less-loader',
-            options: '?name=Rain120'
-          }
-        ]
-      }
-    ]
-  }
-}
-
+            options: '?name=Rain120',
+          },
+        ],
+      },
+    ],
+  },
+  // ...
+};
 ```
 
 再如:
@@ -101,15 +101,13 @@ module.exports = {
 import '-!my-loader!my-loader2!./styles.css';
 ```
 
-
-
 ![inline-loader-process.png](./images/inline-loader-process.png)
 
 通过前置所有规则及使用 `!`，可以对应覆盖到配置中的任意 `loader`, 更多参数请到 [Loader 匹配规则](#Loader匹配规则) 查看。
 
 选项可以传递查询参数，例如 `?key=value&foo=bar`，或者一个 `JSON` 对象，例如 `?{"key":"value","foo":"bar"}`。
 
-##### Cli 配置Loader
+##### Cli 配置 Loader
 
 也可以通过 `CLI` 使用 `loader`
 
@@ -127,24 +125,27 @@ webpack --module-bind jade-loader --module-bind 'css=style-loader!css-loader'
 
 ```javascript
 module.exports = {
+  // ...
 	module: {
+    // ...
     // 从下往上, css-loader -> style-loader
-		rules: [
+    rules: [
       {
         test: /\.css$/,
-        use: use: {
+        use: {
           loader: 'style-loader'
         },
-			  enforce:'pre'
+        enforce:'pre'
       },
       {
         test: /\.css$/,
         use: {
-					loader: 'css-loader'
+          loader: 'css-loader'
         }
       }
     ]
-	}
+  },
+  // ...
 }
 ```
 
@@ -152,18 +153,18 @@ module.exports = {
 
 `rule.enforce`的参数: `'pre'` `'post'`
 
-- `pre Loader`: 前置 `loader` ①  ----> `enforce: 'pre`'
-- `normal Loader`: 普通 `loader` ②  ---->  默认
-- `inline Loader`: 内联`loader` ③  ----> 在模块中指定使用的`loader`是[内联`loader`](#内联配置Loader)
-- `post Loader`: 后置`loader` ④  ----> `enforce: 'post`'
+- `pre Loader`: 前置 `loader` ① ----> `enforce: 'pre`'
+- `normal Loader`: 普通 `loader` ② ----> 默认
+- `inline Loader`: 内联`loader` ③ ----> 在模块中指定使用的`loader`是[内联`loader`](#内联配置Loader)
+- `post Loader`: 后置`loader` ④ ----> `enforce: 'post`'
 
-#### Loader匹配规则
+#### Loader 匹配规则
 
 当然，`webpack`可以通过引入模块的路径规则，来判断是否使用内联模式或者剔除一些前置`(pre)` `Loader`, 后置`(post)` , 普通`(normal)` `Loader`。规则如下:
 
 **-!** : 剔除 配置中符合条件的 `pre` 和 `normal` `Loader`
 
-**!** : 剔除 配置中符合条件的  `normal` `Loader`
+**!** : 剔除 配置中符合条件的 `normal` `Loader`
 
 **!!** : 剔除 配置中符合条件的 `pre` & `normal` & `post` `Loader`
 
@@ -172,45 +173,47 @@ module.exports = {
 import { a } from '!./file1.js';
 
 // Disable preloaders and normal loaders
-import { b } from  '-!./file2.js';
+import { b } from '-!./file2.js';
 
 // Disable all loaders
-import { c } from  '!!./file3.js';
+import { c } from '!!./file3.js';
 ```
 
 `webpack`代码逻辑解析规则如下`(5.0.0.beta.15 vs 4.43.0)`
 
 ```javascript
+// ...
 const firstChar = requestWithoutMatchResource.charCodeAt(0);
 const secondChar = requestWithoutMatchResource.charCodeAt(1);
 const noPreAutoLoaders = firstChar === 45 && secondChar === 33; // startsWith "-!"
 const noAutoLoaders = noPreAutoLoaders || firstChar === 33; // startsWith "!"
 const noPrePostAutoLoaders = firstChar === 33 && secondChar === 33; // startsWith "!!";
 const rawElements = requestWithoutMatchResource
-  .slice(
-    noPreAutoLoaders || noPrePostAutoLoaders ? 2 : noAutoLoaders ? 1 : 0
-  )
+  .slice(noPreAutoLoaders || noPrePostAutoLoaders ? 2 : noAutoLoaders ? 1 : 0)
   .split(/!+/);
+// ...
 ```
 
 [详见 5.0.0 beta.15 webpack NormalModuleFactory.js](https://github.com/webpack/webpack/blob/2db705096bd9fa869e5cbe3e9fe5e09b0089c188/lib/NormalModuleFactory.js#L273)
 
 ```javascript
-const noPreAutoLoaders = requestWithoutMatchResource.startsWith("-!");
+// ...
+const noPreAutoLoaders = requestWithoutMatchResource.startsWith('-!');
 const noAutoLoaders =
-  noPreAutoLoaders || requestWithoutMatchResource.startsWith("!");
-const noPrePostAutoLoaders = requestWithoutMatchResource.startsWith("!!");
+  noPreAutoLoaders || requestWithoutMatchResource.startsWith('!');
+const noPrePostAutoLoaders = requestWithoutMatchResource.startsWith('!!');
 let elements = requestWithoutMatchResource
-  .replace(/^-?!+/, "")
-  .replace(/!!+/g, "!")
-  .split("!");
+  .replace(/^-?!+/, '')
+  .replace(/!!+/g, '!')
+  .split('!');
 let resource = elements.pop();
 elements = elements.map(identToLoaderRequest);
+// ...
 ```
 
 [详见 4.43.0 webpack NormalModuleFactory.js](https://github.com/webpack/webpack/blob/c9d4ff7b054fc581c96ce0e53432d44f9dd8ca72/lib/NormalModuleFactory.js#L180)
 
-#### Loader执行
+#### Loader 执行
 
 ##### Loader 链式执行
 
@@ -218,42 +221,48 @@ elements = elements.map(identToLoaderRequest);
 
 ```javascript
 module.exports = {
-	module: {
-		rules: [
+  // ...
+  module: {
+    // ...
+    rules: [
       {
         test: /\.css$/,
-        use: ['style-laoder', 'css-loader'], // 从右往左, css-loader -> style-loader
-      }
-    ]
-	}
-}
+        // 从右往左, css-loader -> style-loader
+        use: ['style-laoder', 'css-loader'],
+      },
+    ],
+  },
+};
 ```
 
 **对象**: 从下往上执行
 
 ```javascript
 module.exports = {
-	module: {
+  // ...
+  module: {
+    // ...
     // 从下往上, css-loader -> style-loader
-		rules: [
+    rules: [
       {
         test: /\.css$/,
-        use: use: {
+        use: {
           loader: 'style-loader'
         }
       },
       {
         test: /\.css$/,
         use: {
-					loader: 'css-loader'
+          loader: 'css-loader'
         }
       }
     ]
-	}
+  },
+  // ...
 }
 ```
 
-每个`loader`默认的执行阶段(`normal execution`)的执行顺序是从①  ②  ③  ④, 即，从后往前执行; 某些情况下，`loader` 只关心 `request` 后面的**元数据(metadata)**，并且忽略前一个 `loader` 的结果。在实际（从右到左）执行 loader 之前，会先**从左到右**调用 `loader` 上的 `pitch` 方法，`pitch` 阶段的执行顺序是 ④  ③  ②  ①。对于以下 [`use`](https://webpack.docschina.org/configuration/module#rule-use) 配置: 
+每个`loader`默认的执行阶段(`normal execution`)的执行顺序是从 ① ② ③ ④, 即，从后往前执行; 某些情况下，`loader` 只关心 `request` 后面的**元数据(metadata)**，并且忽略前一个 `loader` 的结果。在实际（从右到左）执行 loader 之前，会先**从左到右**调用 `loader` 上的 `pitch` 方法，`pitch` 阶段的执行顺序是 ④ ③ ② ①。对于以下 [`use`](https://webpack.docschina.org/configuration/module#rule-use) 配置:
 
 ```javascript
 module.exports = {
@@ -262,14 +271,11 @@ module.exports = {
     rules: [
       {
         //...
-        use: [
-          'a-loader',
-          'b-loader',
-          'c-loader'
-        ]
-      }
-    ]
-  }
+        use: ['a-loader', 'b-loader', 'c-loader'],
+      },
+    ],
+  },
+  // ...
 };
 ```
 
@@ -289,7 +295,7 @@ module.exports = {
 
 ![webpack-loader.png](./images/webpack-loader.png)
 
-在这个过程中如果任何 `pitch` 有返回值，则 `loader` 执行链被阻断。`webpack` 会跳过后面所有的的 `pitch` 和 `loader`，直接进入上一个` loader` 的 `normal execution`。
+在这个过程中如果任何 `pitch` 有返回值，则 `loader` 执行链被阻断。`webpack` 会跳过后面所有的的 `pitch` 和 `loader`，直接进入上一个`loader` 的 `normal execution`。
 
 ![webpack-loader-pitch.png](./images/webpack-loader-pitch.png)
 
@@ -297,7 +303,7 @@ module.exports = {
 
 [Rule.enforce](https://webpack.js.org/configuration/module/#ruleenforce)
 
-#### 如何编写一个Loader
+#### 如何编写一个 Loader
 
 `loader` 是导出为一个函数的 `node` 模块。该函数在 `loader` 转换资源的时候调用。给定的函数将调用 [loader API](https://www.webpackjs.com/api/loaders/)，并通过 `this` 上下文访问。
 
@@ -319,7 +325,6 @@ module.exports = {
 
 [编写一个 loader](https://www.webpackjs.com/contribute/writing-a-loader/)
 
-[【webpack进阶】你真的掌握了loader么？- loader十问](https://juejin.im/post/5bc1a73df265da0a8d36b74f)
+[【webpack 进阶】你真的掌握了 loader 么？- loader 十问](https://juejin.im/post/5bc1a73df265da0a8d36b74f)
 
 [webpack 系列之四 loader 详解 1](https://segmentfault.com/a/1190000018450503)
-
