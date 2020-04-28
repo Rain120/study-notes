@@ -13,3 +13,4 @@
 - [Javascript正则表达式](notes/javascript/regular_expression/regular_expression.md)
 - [日常使用的正则表达式](notes/javascript/regular_expression/common_reg_exps.md)
 - [ECMAScript学习](notes/javascript/es-study/es-guide.md)
+- [Javascript 学习资源](notes/javascript/resource.md)

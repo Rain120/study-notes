@@ -218,6 +218,10 @@ F12 / Shift + Ctrl + I
 
 屏幕录制工具，支持导出 GIF 动画图片格式，轻量级、使用简单，录制过程中可以随意改变录屏范围。运行后会以窗口的方式显示在桌面，拖动选取一个合适的大小范围，点击 Record 选取保存路径就开始录屏了。**LICEcap** 在录屏过程中可以随时拖动窗口改变录屏范围，Stop 过后自动保存为 GIF 格式。
 
+[GIF Brewery 3](https://itunes.apple.com/cn/app/gif-brewery-3-video-to-gif/id1081413713?l=en&mt=12)
+
+`Mac` 动图制作工具 `GIF Brewery 3`
+
 #### [Kap](https://getkap.co/)
 
 录屏工具。

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "commit-push": "./commit-push.sh",
-    "docs": "docsify serve docs"
+    "docs": "docsify serve docs -p 9527"
   },
   "repository": {
     "type": "git",
