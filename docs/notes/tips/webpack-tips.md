@@ -177,5 +177,16 @@ plugins: [
 
 [cross-env](https://www.npmjs.com/package/cross-env)
 
+#### Webpack 打包某些包报错 `ERROR in xxx.js from UglifyJs`
+
+`uglify-js` 版本太低，不支持`ES6`语法
+
+解决：`uglifyjs-webpack-plugin`插件包支持`ES6`
+
+```
+ERROR in xxx.js from UglifyJs
+Unexpected token punc «(», expected punc «:» [./~/xxx-test-module/xxx/xxx.js:3,7]
+```
+
 
 

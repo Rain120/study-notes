@@ -14,6 +14,24 @@ sudo spctl --master-enable
 
 ![resources.png](./sw/resources.png)
 
+#### Homebrew
+
+[**Homebrew**](https://brew.sh/index_zh-cn)是一款[自由](https://zh.wikipedia.org/wiki/自由软件)及[开放源代码](https://zh.wikipedia.org/wiki/开源软件)的[软件包管理系统](https://zh.wikipedia.org/wiki/软件包管理系统)。**macOS（或 Linux）缺失的软件包的管理器**
+
+##### 官方安装方式
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+##### 国内安装方式
+
+```sh
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+```
+
+[Homebrew国内如何自动安装（国内地址）](https://zhuanlan.zhihu.com/p/111014448)
+
 #### Alfred
 
 [下载地址](https://github.com/Rain120/Free-Source/blob/master/Mac%20Tools/Alfred_4.0.1%20b1078-EN.dmg)
