@@ -7,6 +7,7 @@
 - [学习笔记](notes/guide.md)
     - [HTML](notes/html/guide.md)
     - [CSS](notes/css/guide.md)
+         - [CSS 学习资源](notes/css/resource.md)
     - [Javascript](notes/javascript/guide.md)
       - [JavaScript 核心概念](notes/javascript/key-concept/guide.md)
         - [值类型 vs 引用类型](notes/javascript/key-concept/values-vs-reference.md)

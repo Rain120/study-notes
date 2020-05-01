@@ -1,3 +1,13 @@
+#### 补全代码
+
+[TabNine](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
+
+**TabNine** 是一个自动补全的编码插件，不同于一般的自动补全插件，它使用了**深度学习** 来帮助我们补全代码。并且开箱即用，不需要额外配置。他支持23种语言及5种主流编辑器。
+
+[各种编辑器安装](https://www.tabnine.com/install)
+
+![tabnine-java.gif](./images/tabnine-java.gif)
+
 #### Git
 
 [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
@@ -72,13 +82,47 @@
 
 ![bracket-pair-colorizer](./images/bracket-pair-colorizer.png)
 
-[SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
+~~[SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)~~
 
 ![svg-viewer](./images/svg-viewer.gif)
 
 [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
 
 ![todo-highlight](./images/todo-highlight.png)
+
+[TODO tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+
+该扩展程序快速在您的工作空间中搜索注释标签（例如`TODO`和`FIXME`），并将其显示在资源管理器窗格的树状视图中。 单击树中的`TODO`将打开文件，并将光标放在包含`TODO`的行上。
+
+找到的待办事项也可以在打开的文件中突出显示。
+
+![todo-tree.png](./images/todo-tree.png)
+
+[CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
+
+![css-peek.gif](./images/css-peek.gif)
+
+[Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
+
+突出显示匹配的开始或结束标签
+
+![highlight-matching-tag.gif](./images/highlight-matching-tag.gif)
+
+![highlight-matching-tag.png](./images/highlight-matching-tag.png)
+
+[Image Preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
+
+图片实时预览
+
+![image-preview.png](./images/image-preview.png)
+
+[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+
+检查拼写是否错误
+
+![code-spell-checker.gif](./images/code-spell-checker.gif)
+
+![code-spell-checker-suggest.gif](./images/code-spell-checker-suggest.gif)
 
 #### 代码管理相关
 
