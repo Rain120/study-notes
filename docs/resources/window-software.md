@@ -121,3 +121,31 @@
 
 一款集录制与剪辑为一体的屏幕 GIF 动画制作工具，录制后的动画可以逐帧编辑。
 
+
+### Win 10 家庭版(Home) 升级 到 专业版(Pro)
+
+![change-product-key.png](./sw/change-product-key.png)
+
+Note: 本人的已激活
+
+到下面这篇文章上找一个激活码，然后等待重启即可
+[微软2020win10家庭版升级专业版激活码](https://win10zjb.com/win10jihuo/6850.html)
+
+右键点击开始图标，弹出这个菜单，选择 `windows powershell(管理员)`，或者命令提示符管理员
+
+![win-10-pro-active-cmd.png](./sw/win-10-pro-active-cmd.png)
+
+```sh
+# 安装密钥
+slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+
+# 设置kms服务器, 更多详见 KMS 服务器
+slmgr /skms zh.us.to
+
+# 执行激活操作
+slmgr /ato
+```
+
+![win-10-pro-active.png](./sw/win-10-pro-active.png)
+
+[可用的kms激活服务器](http://www.xitongcheng.com/jiaocheng/dnrj_article_44606.html)
