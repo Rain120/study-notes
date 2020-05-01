@@ -279,7 +279,7 @@ module.exports = {
 };
 ```
 
-`patch` 和`normal execution`执行结果如下
+`pitch` 和`normal execution`执行结果如下
 
 ```sh
 |- a-loader `pitch`

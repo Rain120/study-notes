@@ -177,16 +177,88 @@ plugins: [
 
 [cross-env](https://www.npmjs.com/package/cross-env)
 
-#### Webpack 打包某些包报错 `ERROR in xxx.js from UglifyJs`
-
-`uglify-js` 版本太低，不支持`ES6`语法
-
-解决：`uglifyjs-webpack-plugin`插件包支持`ES6`
+#### Webpack 打包某些包报错 `ERROR in xxx.js from UglifyJs Unexpected token punc`
 
 ```
 ERROR in xxx.js from UglifyJs
 Unexpected token punc «(», expected punc «:» [./~/xxx-test-module/xxx/xxx.js:3,7]
 ```
+
+1. `uglify-js` 版本太低，不支持`ES6`语法
+
+解决：`uglifyjs-webpack-plugin`插件包支持`ES6`
+
+2. 有可能是`babel-loader`未配置解析`ES6`
+
+解决办法:
+
+安装`babel-preset-es2015`
+
+```sh
+npm install babel-preset-es2015 -S
+```
+
+
+
+```javascript
+// webpack.config.js
+
+module.exports = {
+  // ...
+  module: {
+    rules: [
+      {
+        test: '/\.js/$',
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            'ES2015'
+          ]
+        }
+      }
+    ]
+  }
+}
+```
+
+配置`babel`
+
+```json
+// .babelrc
+{
+  presets: ['ES2015']
+}
+```
+
+
+
+3. 可能是引用的包内部是`ES6`, 而`babel-loader` 不会对其进行转换，导致打包出错，比如说 `smooth-scroll`
+
+解决办法:
+
+需要将你需要打包的文件路径`includes`到`babel-loader`配置中
+
+```javascript
+// webpack.config.js
+
+module.exports = {
+  // ...
+  module: {
+    rules: [
+      {
+        test: '/\.js/$',
+        loader: 'babel-loader',
+        includes: [
+          resolve('src'),
+          resolve('node_modules/smooth-scroll')
+        ]
+      }
+    ]
+  }
+}
+```
+
+[Webpack issue 1542](https://github.com/webpack/webpack/issues/1542#issuecomment-308747244)
 
 
 
