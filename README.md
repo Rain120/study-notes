@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2020-04-19 15:36:02
+ * @LastEditTime: 2020-05-03 19:55:59
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -60,6 +60,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [Chrome 79 Bug](notes/tips/chrome-79-bug.md)
       - [Markdown 数学符号](notes/tips/markdown-math-symbol-tips.md)
     - [Webpack](notes/webpack/guide.md)
+      - [Webpack 基础知识](notes/webpack/webpack-base.md)
       - [Webpack 打包器实现](notes/webpack/mini-webpack.md)
       - [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
       - [Webpack 4 性能优化](notes/webpack/webpack4-optimizate.md)
