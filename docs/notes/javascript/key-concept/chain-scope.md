@@ -1,3 +1,28 @@
+
+#### 什么是变量？
+
+变量是存储数据值的容器。在 `JavaScript` 中，对象和函数也是变量。
+
+##### 全局变量
+
+函数之外声明的变量，会成为*全局变量*。
+
+全局变量的作用域是*全局的*：网页的所有脚本和函数都能够访问它。
+
+##### 局部变量
+
+在 `JavaScript` 函数中声明的变量，会成为函数的*局部变量*。
+
+局部变量的作用域是*局部的*：只能在函数内部访问它们。
+
+**Note:** 
+
+`JavaScript `变量的有效期始于其被创建时。
+
+局部变量会在函数完成时被删除。
+
+全局变量会在您关闭页面是被删除。
+
 #### 什么是作用域?
 
 变量和函数的**可访问范围**，即作用域控制着变量和函数的 **可见性** 和 **生命周期**。
@@ -136,32 +161,6 @@ function testConst() {
 
 #### 什么是作用域链？
 
-#### 什么是变量？
-
-变量是存储数据值的容器。在 `JavaScript` 中，对象和函数也是变量。
-
-##### 全局变量
-
-函数之外声明的变量，会成为*全局变量*。
-
-全局变量的作用域是*全局的*：网页的所有脚本和函数都能够访问它。
-
-##### 局部变量
-
-在 `JavaScript` 函数中声明的变量，会成为函数的*局部变量*。
-
-局部变量的作用域是*局部的*：只能在函数内部访问它们。
-
-
-
-**Note:** 
-
-`JavaScript `变量的有效期始于其被创建时。
-
-局部变量会在函数完成时被删除。
-
-全局变量会在您关闭页面是被删除。
-
 #### 参考资料
 
 [what-is-lexical-scope](https://stackoverflow.com/questions/1047454/what-is-lexical-scope)
@@ -177,4 +176,6 @@ function testConst() {
 [are-variables-declared-with-let-or-const-not-hoisted-in-es6](https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-not-hoisted-in-es6)
 
 [let hoisting](https://github.com/getify/You-Dont-Know-JS/issues/767)
+
+[variables-lifecycle-and-why-let-is-not-hoisted](https://dmitripavlutin.com/variables-lifecycle-and-why-let-is-not-hoisted)
 
