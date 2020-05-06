@@ -2,7 +2,7 @@
 # @Author: Rainy
 # @Date: 2020-03-30 11:50:18
  # @LastEditors: Rainy
- # @LastEditTime: 2020-04-03 18:58:06
+ # @LastEditTime: 2020-05-06 10:10:17
 ###
 
 #!/usr/bin/env bash
@@ -27,7 +27,7 @@ echo "Log: Cureren branch is ${curBranch}"
 
 if [[ $pull = "Y" || $pull = "y" ]];then
 
-    read -p "Need pull branch(default: current branch, eg: it4/mobile): " branch
+    read -p "Need pull branch(default: current branch, eg: master): " branch
 
 fi
 
@@ -60,7 +60,7 @@ if [ -n "$msg" ];then
 
             fi
 
-            branch=curBranch
+            branch=${curBranch}
 
             echo "Log: Pulling ${branch} from remote"
             git pull origin ${branch} || exit 1
