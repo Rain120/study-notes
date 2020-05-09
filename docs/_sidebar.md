@@ -17,6 +17,7 @@
         - [Javascript this](notes/javascript/key-concept/this.md)
         - [Javascript new](notes/javascript/key-concept/new.md)
         - [call apply bind](notes/javascript/key-concept/call-apply-bind.md)
+        - [var let const 生命周期](notes/javascript/key-concept/var-vs-let-vs-const-lifecycle.md)
         - [Javascript 词法作用域链、函数作用域、块级作用域、执行上下文](notes/javascript/key-concept/chain-scope.md)
       - [console全家桶](notes/javascript/console/console-related-note.md)
       - [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
