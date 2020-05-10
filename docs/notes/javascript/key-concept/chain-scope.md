@@ -44,7 +44,7 @@
 
 用于组合零个或多个语句，该块由一对大括号`{}`界定, 具体从[`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)中体现。
 
-关于 `var ` `let` `const`的生命周期请移步 [var let const 生命周期](notes/javascript/key-concept/var-vs-let-vs-const-lifecycle.md)
+关于 `var ` `let` `const`的生命周期请移步 [var let const function 生命周期](notes/javascript/key-concept/var-let-const-function-lifecycle.md)
 
 ##### 暂存性死区
 
