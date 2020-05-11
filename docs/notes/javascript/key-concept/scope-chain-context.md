@@ -29,30 +29,35 @@
 
 `ES6`之前, `Javascript`只有 **全局作用域** 和 **局部作用域**, 之后新增了 **块级作用域**, 具体从[`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)中体现。
 
-#### 全局作用域(Global Scope)
+##### 全局作用域(Global Scope)
 
 不在任何函数内定义的变量就具有全局作用域。
 
 - `window` 是**浏览器**的全局对象，`global` 是 `Node`环境下的全局对象
 - 不在任何一个函数内定义的变量拥有全局作用域
 
-#### 局部作用域(Local Scope)
+##### 局部作用域(Local Scope)
 
 `JavaScript`的作用域是通过函数来定义的，所以每一个在函数内定义的变量只能拥有这个函数内的**局部作用域**  (除**闭包**外, 详见[Javascript 闭包](notes/javascript/key-concept/closure.md))。
 
-#### 块级作用域(block Statement)
+##### 块级作用域(block Statement)
 
 用于组合零个或多个语句，该块由一对大括号`{}`界定, 具体从[`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)中体现。
 
 关于 `var ` `let` `const`的生命周期请移步 [var let const function 生命周期](notes/javascript/key-concept/var-let-const-function-lifecycle.md)
 
-##### 暂存性死区
+**暂存死区**
 
-在讲这两个关键字前，我们先讲一个概念 `TDZ(Temporal Dead Zone)`, 又称**暂存性死区**。
+在讲`let` `const`这两个关键字前，我们先讲一个概念 `TDZ(Temporal Dead Zone)`, 又称**暂存死区**。
 
 ##### let
 
 **let**允许你声明一个作用域被限制在 [`块`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/statements/block)级中的变量、语句或者表达式。与 [`var`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/statements/var) 关键字不同的是， [`var`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/statements/var)声明的变量只能是全局或者整个函数块的。 [`var`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/statements/var) 和 `let` 的不同之处在于后者是在编译时才初始化（[见下面](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let#暂存死区)）。
+
+**Note:** 
+
+- `let has hoisting?`
+  - 提升是变量在作用域顶部的耦合声明和初始化阶段，`let`生命周期分离声明和初始化阶段, 产生了**暂存死区**, 所以此时变量无法访问。
 
 ##### const
 
@@ -161,7 +166,15 @@ function testConst() {
 
 更多详情请移步 [babeljs playground](https://www.babeljs.cn/repl#?browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DYUwLgBADgTg9gMwJaggXggbQOQCUCGSAdgIwBMADNgDQTYAWYYUAzgFwD0HA5kmPQFcARgDoAxnAC2HGIVKVsAXQDcAKABu-GBCTo63YHCH5g2NaoQCiYsEjhEIYECzAA1LQAoAlBADeXR2dIfhAIAGsQAE8IfCE4AUhNGFUICCSdPQo1VIQ4bQ903QwSZQyAHmh4ZFARUCJuflKkAGpmn18U1IBICSIWOBrDbg9sJJpKxBQQTCRFL1LOgF9O3v7BuGHRrXGkedVliysbOwcnFwAZcG8_ALPg-lCI6Nj4yFAwTveMjCzO3PyvkUICVyhNqiBaiB6o0dK12p0ID17GsIUMRu8drRYJNQDM5gtUstUqsBqiNujwDodnsDpZrLZ7IEXABhZFga7-DhM-6PKIxOIJCCrD7EtnfCC_HJ5CAeYXikG6CrY8GQ6H0JpwvwIpF9Um1cnYYWYsFTPHzCBLFbIvVow1ipDUtQHW5BdwwbxqF0XK57L1gVl9dm-rkk9abAxGEyO1RAA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=true&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015&prettier=true&targets=&version=7.9.6&externalPlugins=)
 
+通过上述代码，我们知道块级作用域的作用范围只能在它定义的`{}`内部使用。
+
+##### 函数作用域
+
+在函数内声明的所有变量在函数体内始终是可见的，可以在整个函数的范围内使用及复用。
+
 #### 什么是作用域链？
+
+当查找变量的时候，会先从当前上下文的变量对象中查找，如果没有找到，就会从父级(词法层面上的父级)执行上下文的变量对象中查找，一直找到全局上下文的变量对象，也就是全局对象。这样由多个执行上下文的变量对象构成的链表就叫做作用域链。
 
 #### 参考资料
 
@@ -175,9 +188,5 @@ function testConst() {
 
 [Scope](https://developer.mozilla.org/zh-CN/docs/Glossary/Scope)
 
-[are-variables-declared-with-let-or-const-not-hoisted-in-es6](https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-not-hoisted-in-es6)
-
-[let hoisting](https://github.com/getify/You-Dont-Know-JS/issues/767)
-
-[variables-lifecycle-and-why-let-is-not-hoisted](https://dmitripavlutin.com/variables-lifecycle-and-why-let-is-not-hoisted)
+[](https://github.com/mqyqingfeng/Blog/issues/6)
 

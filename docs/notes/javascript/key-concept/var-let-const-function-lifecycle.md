@@ -64,3 +64,9 @@
 
 [我用了两个月的时间才理解 let](https://zhuanlan.zhihu.com/p/28140450)
 
+[are-variables-declared-with-let-or-const-not-hoisted-in-es6](https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-not-hoisted-in-es6)
+
+[let hoisting](https://github.com/getify/You-Dont-Know-JS/issues/767)
+
+[variables-lifecycle-and-why-let-is-not-hoisted](https://dmitripavlutin.com/variables-lifecycle-and-why-let-is-not-hoisted)
+

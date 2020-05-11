@@ -8,7 +8,7 @@
 - [Javascript new](notes/javascript/key-concept/new.md)
 - [call apply bind](notes/javascript/key-concept/call-apply-bind.md)
 - [var let const function 生命周期](notes/javascript/key-concept/var-let-const-function-lifecycle.md)
-- [Javascript 词法作用域链、函数作用域、块级作用域、执行上下文](notes/javascript/key-concept/chain-scope.md)
+- [Javascript 词法作用域链、函数作用域、块级作用域、执行上下文](notes/javascript/key-concept/scope-chain-context.md)
 
 #### 参考资料
 
