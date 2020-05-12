@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2020-05-03 19:55:59
+ * @LastEditTime: 2020-05-12 20:12:06
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -36,7 +36,8 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
         - [Javascript new](notes/javascript/key-concept/new.md)
         - [call apply bind](notes/javascript/key-concept/call-apply-bind.md)
         - [var let const function 生命周期](notes/javascript/key-concept/var-let-const-function-lifecycle.md)
-        - [Javascript 词法作用域链、函数作用域、块级作用域、执行上下文](notes/javascript/key-concept/scope-chain-context.md)
+        - [Javascript 执行上下文](notes/javascript/key-concept/execution-context.md)
+        - [Javascript 词法作用域链、函数作用域、块级作用域](notes/javascript/key-concept/scope-chain.md)
       - [console全家桶](notes/javascript/console/console-related-note.md)
       - [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
       - [获取DOM元素的位置和尺寸](notes/javascript/get-dom-property/get-dom-property.md)

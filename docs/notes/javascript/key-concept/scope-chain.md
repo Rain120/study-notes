@@ -176,6 +176,8 @@ function testConst() {
 
 当查找变量的时候，会先从当前上下文的变量对象中查找，如果没有找到，就会从父级(词法层面上的父级)执行上下文的变量对象中查找，一直找到全局上下文的变量对象，也就是全局对象。这样由多个执行上下文的变量对象构成的链表就叫做作用域链。
 
+**作用域链的用途，就是保证对执行环境有权访问的所有变量和函数的有序访问。**
+
 #### 参考资料
 
 [what-is-lexical-scope](https://stackoverflow.com/questions/1047454/what-is-lexical-scope)
@@ -188,5 +190,5 @@ function testConst() {
 
 [Scope](https://developer.mozilla.org/zh-CN/docs/Glossary/Scope)
 
-[](https://github.com/mqyqingfeng/Blog/issues/6)
+[JavaScript深入之作用域链](https://github.com/mqyqingfeng/Blog/issues/6)
 
