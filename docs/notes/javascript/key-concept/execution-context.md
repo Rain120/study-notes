@@ -1,20 +1,24 @@
-#### 执行上下文(Execution Context or EC)
+#### 前言
+
+想要了解 `EC`，需要先了解一下几个概念
+
+- 执行上下文`(Execution Context or EC)`
+- 执行环境栈 `(Execution Context Stack or ECS)`
+- 变量对象`(Variable object，VO)`
+- 活动对象`(Active object，AO)`
+- [作用域链`(Scope chain)`](notes/javascript/key-concept/scope-chain.md)
+
+#### 执行上下文 (Execution Context or EC)
 
 执行上下文`(EC)`是评估和执行 `JavaScript` 代码的环境的抽象概念。每当 `Javascript` 代码在运行的时候，它都是在执行上下文中运行。
 
-对于每个执行上下文，都有三个重要属性：
-
-- 变量对象`(Variable object，VO)`
-- 作用域链`(Scope chain)`
-- `this`
-
-#### 生命周期
+##### 生命周期
 
 执行上下文的生命周期包括三个阶段：**创建阶段👉执行阶段👉回收阶段**。
 
-#### 执行上下文栈(Execution Context Stack or ECS)
+##### 执行上下文类型
 
-JavaScript 中有三种执行上下文类型。
+`JavaScript` 中有三种执行上下文类型。
 
 - **全局执行上下文**
 
@@ -28,10 +32,24 @@ JavaScript 中有三种执行上下文类型。
 
   执行在 `eval`函数内部的代码也会有它属于自己的执行上下文。
 
-#### 执行上下文栈
+#### 执行上下文栈 (Execution Context Stack or ECS)
 
 也称**调用栈**, 是一种拥有 `LIFO(后进先出)`数据结构的栈，被用来存储代码运行时创建的所有**执行上下文**。
+
+#### 变量对象 (Variable object，VO)
+
+创建执行上下文时与之关联的会有一个变量对象，它保存当前上下文所有变量。
+
+#### 活动对象 (Active object，AO)
+
+当控制进入函数代码的执行上下文时，创建一个活动对象并将它与该执行上下文相关联， 并使用一个名为 `arguments`、特征为 `{ DontDelete }` 的属性初始化该对象。该属性的初始值是稍后将要描述的一个参数对象`Arguments Object(简称ArgO)`。 活动对象纯粹是一种规范性机制，在 `ECMAScript` 访问它是不可能的。只能访问其成员而非该活动对象本身。对一个基于对象为活动对象的引用值应用调用运算符时，这次调用的 `this` 值为` null`。
+
+#### 作用域链 (Scope chain)
+
+[详见](notes/javascript/key-concept/scope-chain.md)
 
 #### 参考资料
 
 [Understanding Execution Context and Execution Stack in Javascript](https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0)
+
+[调用栈](https://developer.mozilla.org/zh-CN/docs/Glossary/Call_stack)
