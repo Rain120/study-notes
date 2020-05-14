@@ -16,19 +16,25 @@
 
 执行上下文的生命周期包括三个阶段：**创建阶段👉执行阶段👉回收阶段**。
 
+**创建阶段**
+
+**执行阶段**
+
+**回收阶段**
+
 ##### 执行上下文类型
 
 `JavaScript` 中有三种执行上下文类型。
 
-- **全局执行上下文**
+- **全局执行上下文** `(global)`
 
-  这是默认或者说基础的上下文，任何不在函数内部的代码都在全局上下文中。它会执行两件事：创建一个全局的 `window` 对象（浏览器的情况下），并且设置 `this`的值等于这个全局对象。一个程序中只会有一个全局执行上下文。
+  默认任何不在函数内部的代码都在全局上下文中。它会执行两件事：创建一个全局的 `window` 对象（浏览器的情况下），并且设置 `this`的值等于这个全局对象。一个程序中只会有一个全局执行上下文。
 
-- **函数执行上下文**
+- **函数执行上下文** `(function)`
 
   每当一个函数被调用时, 都会为该函数创建一个新的上下文。每个函数都有它自己的执行上下文，不过是在函数被调用时创建的。函数上下文可以有任意多个。每当一个新的执行上下文被创建，它会按定义的顺序执行一系列步骤。
 
-- **Eval 函数执行上下文**
+- **Eval 函数执行上下文** `(Eval)`
 
   执行在 `eval`函数内部的代码也会有它属于自己的执行上下文。
 
@@ -52,4 +58,11 @@
 
 [Understanding Execution Context and Execution Stack in Javascript](https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0)
 
+[execution-contexts](https://tc39.es/ecma262/#sec-execution-contexts)
+
+[execution-context-stack](https://tc39.es/ecma262/#execution-context-stack)
+
+[ecmascript variable-object](http://dmitrysoshnikov.com/ecmascript/chapter-2-variable-object/)
+
 [调用栈](https://developer.mozilla.org/zh-CN/docs/Glossary/Call_stack)
+
