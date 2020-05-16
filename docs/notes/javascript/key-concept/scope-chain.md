@@ -61,7 +61,9 @@
 
 ##### const
 
-下面我们将边通过`babel`对`var` `let` `const`关键字的解析来理解，块级作用域，反派总是死于话多，话不多说，我们直接上代码
+常量是块级作用域，很像使用 [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) 语句定义的变量。常量的值不能通过重新赋值来改变，并且不能重新声明。
+
+下面我们将边通过`babel`对`var` `let` `const`关键字的解析来理解`babel`对块级作用域的解析。反派总是死于话多，话不多说，我们直接上代码
 
 ```javascript
 let profile = ['Rain120', 'https://github.com/rain120'];
@@ -176,7 +178,9 @@ function testConst() {
 
 当查找变量的时候，会先从当前上下文的变量对象中查找，如果没有找到，就会从父级(词法层面上的父级)执行上下文的变量对象中查找，一直找到全局上下文的变量对象，也就是全局对象。这样由多个执行上下文的变量对象构成的链表就叫做作用域链。
 
-**作用域链的用途，就是保证对执行环境有权访问的所有变量和函数的有序访问。**
+更多关于**执行上下文、变量对象**等上述的相关问题请转到 [Javascript 执行上下文](notes/javascript/key-concept/execution-context.md) 阅读。
+
+**作用域链是由当前环境与上层环境的一系列变量对象组成，它保证对执行环境有权访问的所有变量和函数的有序访问。**
 
 #### 参考资料
 
@@ -185,6 +189,10 @@ function testConst() {
 [作用域 - Wiki](https://zh.wikipedia.org/zh-cn/作用域)
 
 [块级作用域](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block)
+
+[const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+
+[let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
 [Execution context and the call stack — visually illustrated by a slice of tasty cake](https://medium.com/free-code-camp/execution-context-and-the-call-stack-visually-illustrated-by-a-slice-of-tasty-cake-14f9a64dc460)
 

@@ -5,7 +5,7 @@
 - 执行上下文`(Execution Context or EC)`
 - 执行环境栈 `(Execution Context Stack or ECS)`
 - 变量对象`(Variable object，VO)`
-- 活动对象`(Active object，AO)`
+- 活动对象`(Activation object，AO)`
 - [作用域链`(Scope chain)`](notes/javascript/key-concept/scope-chain.md)
 
 #### 执行上下文 (Execution Context or EC)
@@ -46,7 +46,7 @@
 
 创建执行上下文时与之关联的会有一个变量对象，它保存当前上下文所有变量。
 
-#### 活动对象 (Active object，AO)
+#### 活动对象 (Activation object，AO)
 
 当控制进入函数代码的执行上下文时，创建一个活动对象并将它与该执行上下文相关联， 并使用一个名为 `arguments`、特征为 `{ DontDelete }` 的属性初始化该对象。该属性的初始值是稍后将要描述的一个参数对象`Arguments Object(简称ArgO)`。 活动对象纯粹是一种规范性机制，在 `ECMAScript` 访问它是不可能的。只能访问其成员而非该活动对象本身。对一个基于对象为活动对象的引用值应用调用运算符时，这次调用的 `this` 值为` null`。
 
@@ -58,11 +58,13 @@
 
 [Understanding Execution Context and Execution Stack in Javascript](https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0)
 
-[execution-contexts](https://tc39.es/ecma262/#sec-execution-contexts)
+[execution contexts](https://tc39.es/ecma262/#sec-execution-contexts)
 
-[execution-context-stack](https://tc39.es/ecma262/#execution-context-stack)
+[execution context stack](https://tc39.es/ecma262/#execution-context-stack)
 
-[ecmascript variable-object](http://dmitrysoshnikov.com/ecmascript/chapter-2-variable-object/)
+[ecmascript variable object](http://dmitrysoshnikov.com/ecmascript/chapter-2-variable-object/)
+
+[javascriptthe core](http://dmitrysoshnikov.com/ecmascript/javascript-the-core/)
 
 [调用栈](https://developer.mozilla.org/zh-CN/docs/Glossary/Call_stack)
 
