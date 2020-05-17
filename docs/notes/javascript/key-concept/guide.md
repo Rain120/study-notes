@@ -17,3 +17,5 @@
 
 [现代 JavaScript 教程](https://zh.javascript.info/)
 
+[ECMA 262 所有标准文档](http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm)
+

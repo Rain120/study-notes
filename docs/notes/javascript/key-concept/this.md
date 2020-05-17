@@ -97,6 +97,10 @@ console.log(user.name)   // 输出 Rain120
 - 不能通过 `new`关键字调用，**箭头函数不能用作构造器，和 `new`一起用会抛出错误**
 - 没有`new.target`值和`prototype`属性
 
+#### this 指向终极解决方法
+
+![this.png](./images/this.png)
+
 #### 参考资料
 
 [Javascript 的 this 用法 - 阮一峰](http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html)
