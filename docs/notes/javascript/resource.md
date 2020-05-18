@@ -20,6 +20,8 @@
 
 [bestofjs](https://bestofjs.org/): 搜索HTML，CSS， Javascript的一些资源
 
+[alligator](https://alligator.io/): 各类前端基础知识教程
+
 #### JavaScript 类库
 
 [Lodash](https://lodash.com/): Lodash是一个JavaScript库，它使用函数式编程范例为常见的编程任务提供实用程序功能。
@@ -28,7 +30,17 @@
 
 [Underscore](https://underscorejs.org/) : -> [Github](https://github.com/jashkenas/underscore): Underscore.js是一个JavaScript库，为常见的编程任务提供实用程序功能。它与Prototype.js和Ruby语言提供的功能相当，但选择功能性编程设计而不是扩展对象原型。
 
+#### Javascript 执行可视化网站
 
+[javascript-visualizer](https://tylermcginnis.com/javascript-visualizer/): `Tyler Mcginnis`的`Advanced JS`课程配套的可视化工具，只能用`ES5`语法。
 
+[JavaScript Visualizer 9000](https://www.jsv9000.app/)
 
+[loupe](http://latentflip.com/loupe): `Philip Roberts`在`JS`大会上讲`Event Loop`时做[演示](https://2014.jsconf.eu/speakers/philip-roberts-what-the-heck-is-the-event-loop-anyway.html)的网站
+
+[pythontutor javascript](http://www.pythontutor.com/javascript.html#mode=display): `JS`运行可视化 (也可以可视化运行 `Python2, Python3, Java, JavaScript, TypeScript, Ruby, C, and C++ code`)
+
+#### ECMA
+
+[ES 5 标准中文版](https://yanhaijing.com/es5)
 

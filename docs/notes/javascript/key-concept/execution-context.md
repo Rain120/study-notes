@@ -22,9 +22,18 @@
 
 **创建阶段**
 
-- 创建变量对象
+- 创建变量对象 **(当前执行上下文)**
+  - 创建`arguments`对象
+    - 检查上下文，初始化参数名称和值并创建引用的复制
+  - 创建函数声明 (存在的话)
+    - 以函数声明的名字在[变量对象](#变量对象-variable-object，vo) 上创建一个属性，并指向函数存放的引用地址
+    - **若遇到重复的函数名，将覆盖上一次引用地址**
+  - 创建变量 (存在的话)
+    - 以变量名在[变量对象](#变量对象-variable-object，vo) 上创建一个属性，并给当前变量赋值为`undefined`
+    - **若遇到重复的变量名，不进行任何相关赋值操作，继续下一步**
 - 建立作用域链
 - 确定`this`指向
+  - 更多`this` 指向问题详见 [Javascript this](notes/javascript/key-concept/this.md)
 
 **执行阶段**
 
@@ -56,19 +65,27 @@
 
 #### 执行上下文栈 (Execution Context Stack or ECS)
 
-也称**调用栈**, 是一种拥有 `LIFO(后进先出)`数据结构的栈，被用来存储代码运行时创建的所有**执行上下文**。
+也称**调用栈**, 是一种拥有 `LIFO(后进先出)`数据结构的栈，被用来存储代码运行时创建的所有**执行上下文**。 它是一种记录保存结构，允许我们执行函数调用。 每个函数调用在调用堆栈上都表示为一个框架。 这就是`JavaScript`引擎跟踪已调用哪些函数以及调用顺序的方式。 `JS`引擎使用此信息来确保函数返回后在正确的位置重新执行。
+
+当`JavaScript`程序首次开始执行时，调用栈为空。 进行第一个函数调用时，新的框架将被推到调用堆栈的顶部。 当该函数返回时，其框架从调用堆栈弹出。
+
+![call-stack.gif](./images/call-stack.gif)
 
 #### 变量对象 (Variable object，VO)
 
 > Every execution context has associated with it a variable object. Variables and functions declared in the source text are added as properties of the variable object. For function code, parameters are added as properties of the variable object.
 >
-> --- [Standard ECMA-262 3r d Edition - December 1999 - 10.1.3 Variable Instantiation](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262, 3rd edition, December 1999.pdf)
+> --- [Standard ECMA-262 3r d Edition - December 1999 - 10.1.3 Variable Instantiation](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%203rd%20edition,%20December%201999.pdf)
 
-创建执行上下文时与之关联的会有一个变量对象，它保存着当前上下文所有变量。
+每一个执行上下文都会分配一个变量对象`(variable object)`，变量对象的属性由 **变量**`(variable)` 和 **函数声明**`(function declaration)` 构成。在函数上下文情况下，**参数列表**`(parameter list)`也会被加入到变量对象`(variable object)`中作为属性。变量对象与当前作用域息息相关。不同作用域的变量对象互不相同，它保存了当前作用域的所有函数和变量。
 
-- 变量`(Variable Declaration)`
-- 函数生命`(Function Declaration)`
+`VO`初始化阶段会将👇👇👇内容依次初始化到`VO`上，与👆👆👆[执行上下文的生命周期](#生命周期)创建过程一致。
+
 - 函数形参 `(function arguments)`
+- 函数声明`(FunctionDeclaration, FD)`，注意函数声明与**函数表达式**的区别。
+- 变量声明 `(var, VariableDeclaration)`
+
+**Note:** 函数声明先于变量声明
 
 #### 活动对象 (Activation object，AO)
 
@@ -76,13 +93,108 @@
 >
 > The activation object is then used as the variable object for the purposes of variable instantiation.
 >
-> --- [Standard ECMA-262 3r d Edition - December 1999 - 10.1.6 Activation Object](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262, 3rd edition, December 1999.pdf)
-
-
+> --- [Standard ECMA-262 3r d Edition - December 1999 - 10.1.6 Activation Object](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%203rd%20edition,%20December%201999.pdf)
 
 当控制进入函数代码的执行上下文时，创建一个活动对象并将它与该执行上下文相关联， 并使用一个名为 `arguments`、特征为 `{ DontDelete }` 的属性初始化该对象。该属性的初始值是稍后将要描述的一个参数对象`Arguments Object(简称ArgO)`。 活动对象纯粹是一种规范性机制，在 `ECMAScript` 访问它是不可能的。只能访问其成员而非该活动对象本身。对一个基于对象为活动对象的引用值应用调用运算符时，这次调用的 `this` 值为` null`。
 
 **当函数被激活，那么一个活动对象(activation object)就会被创建并且分配给执行上下文。活动对象由特殊对象 arguments 初始化而成。随后，它被当做变量对象(variable object)用于变量初始化。**
+
+#### 举个🌰
+
+```javascript
+var name = 'Rain';
+
+function getName(firstName) {
+	var lastName = 120;
+  
+    var test = function func() {};
+
+    function realName() {
+        var goal = 10;
+        return firstName + lastName;
+    }
+
+    return realName();
+}
+
+var realName = getName(name);
+
+alert(realName);
+```
+
+**Note:** 先在创建阶段 `VO` 再到激活阶段 `AO`
+
+`Global EC`
+
+```javascript
+VO = {
+  scopChain： {...},
+  variableObject: {
+    window: global object,
+    this: undefined,
+    name: undefined,
+    getName: fn() reference address,
+    realName: fn() reference address,
+  },
+  activationObject: {
+    window: global object,
+    name: 'Rain',
+    getName: fn() reference address,
+    realName: fn() reference address,
+  },
+  this: window
+}
+```
+
+`getName EC `
+
+```javascript
+VO = {
+    scopChain： {...},
+    variableObject: {
+        arguments: { 0: undefined, length: 1 }
+        lastName: undefined,
+        test: fn() reference address,
+        realName: fn() reference address,
+        firstName: undefined,
+   },
+   activationObject: {
+        arguments: { 0: 'Rain', length: 1 }
+        lastName: '120',
+        test: fn() reference address,
+        realName: fn() reference address,
+        firstName: 'Rain',
+   },
+   this: window
+}
+```
+
+`realName EC `
+
+```javascript
+EC = {
+    scopChain： {...},
+    variableObject: {
+        arguments: { length: 0 }
+        goal: undefined,
+    },
+    activationObject: {
+        arguments: { length: 0 }
+        goal: 10,
+   },
+   this: window
+}
+```
+
+![vo-ao.gif](./images/vo-ao.gif)
+
+#### 总结
+
+##### 变量提升
+
+##### `this` 指向
+
+更对详见 [Javascript this](notes/javascript/key-concept/this.md)
 
 #### 参考资料
 
