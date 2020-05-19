@@ -223,7 +223,7 @@ ctrl ⌃
   **跳转到匹配的括号**
   
   ```
-  command(⌘) + option(⌥) + |
+  command(⌘) + option(⌥) + 👆 / 👇
   ```
   
   ![jump-match-brackets.gif](./images/jump-match-brackets.gif)
