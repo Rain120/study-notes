@@ -352,6 +352,8 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 [wenshushu](https://www.wenshushu.cn/): 极速传文件给他人 [Github](https://github.com/Aruelius/wenshushu)
 
+[Airportal](https://airportal.cn/): 极速分享
+
 文件格式转换
 
 [文章索引](resources/website?id=文章索引)
@@ -444,6 +446,8 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 网站截至今日，已有 257 万多书籍可免费下载，大多数是 `pdf`、`djvu`、`eupb` 格式。下载也很方便，直接搜书名即可，也可下载论文或者文章，还可选择地区并设置成中国。
 
 #### 视频
+
+[Mixkit](https://mixkit.co/): 免费可商用的视频网站
 
 [MV Cat](http://www.mvcat.com/)
 

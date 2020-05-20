@@ -31,6 +31,8 @@
 
 [Python量化](https://www.lizenghai.com/)
 
+[slant](https://www.slant.co/)
+
 #### 2、Mac软件相关
 
 [Mac Flow](https://macflow.net/)

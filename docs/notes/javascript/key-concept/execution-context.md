@@ -192,6 +192,8 @@ EC = {
 
 ##### 变量提升
 
+
+
 ##### `this` 指向
 
 更对详见 [Javascript this](notes/javascript/key-concept/this.md)
