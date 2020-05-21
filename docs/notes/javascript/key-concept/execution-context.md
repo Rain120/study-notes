@@ -22,6 +22,8 @@
 
 **创建阶段**
 
+ `(ECMA 3 规范)`
+
 - 创建变量对象 **(当前执行上下文)**
   - 创建`arguments`对象
     - 检查上下文，初始化参数名称和值并创建引用的复制
@@ -34,6 +36,23 @@
 - 建立作用域链
 - 确定`this`指向
   - 更多`this` 指向问题详见 [Javascript this](notes/javascript/key-concept/this.md)
+
+ `(ECMA 5 规范)`
+
+- 确定`this`指向
+  - 更多`this` 指向问题详见 [Javascript this](notes/javascript/key-concept/this.md)
+
+- 创建词法环境 `(Lexical Environment)`
+
+  > A *Lexical Environment* is a specification type used to define the association of *Identifiers* to specific variables and functions based upon the lexical nesting structure of ECMAScript code. A Lexical Environment consists of an [Environment Record](https://www.ecma-international.org/ecma-262/5.1/#sec-10.2.1) and a possibly null reference to an *outer* Lexical Environment. Usually a Lexical Environment is associated with some specific syntactic structure of ECMAScript code such as a *FunctionDeclaration*, a *WithStatement*, or a *Catch* clause of a *TryStatement* and a new Lexical Environment is created each time such code is evaluated.
+
+  词法环境是一种规范类型，用于根据`ECMAScript`代码的词法嵌套结构来定义标识符与特定变量和函数的关联。 词法环境由环境记录和对外部词法环境的可能为空的引用组成。 通常，词法环境与`ECMAScript`代码的某些特定语法结构（如`FunctionDeclaration`，`WithStatement`或`TryStatement`的`Catch`子句）相关联，并且每次评估此类代码时都会创建一个新的词法环境。
+
+- 创建变量环境 `(Variable Environment)`
+
+  > Identifies the [Lexical Environment](https://www.ecma-international.org/ecma-262/5.1/#sec-10.2) whose environment record holds bindings created by *VariableStatements* and *FunctionDeclarations* within this execution context.
+
+  标识词法环境，该词法环境的环境记录包含此执行上下文中`VariableStatements`和`FunctionDeclarations`创建的绑定。
 
 **执行阶段**
 
@@ -202,7 +221,7 @@ EC = {
 
 [Understanding Execution Context and Execution Stack in Javascript](https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0)
 
-[execution contexts](https://tc39.es/ecma262/#sec-execution-contexts)
+[Execution Contexts](https://www.ecma-international.org/ecma-262/5.1/#sec-10.3)
 
 [execution context stack](https://tc39.es/ecma262/#execution-context-stack)
 
