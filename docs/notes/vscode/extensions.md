@@ -162,3 +162,8 @@
 
 ![vscode-draw-io.png](./images/vscode-draw-io.png)
 
+[Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
+
+一键将 `JSON` 文件转换为一个目标语言的类型定义, [可视化生成](https://app.quicktype.io/)
+
+![paste-json-as-code.gif](./images/paste-json-as-code.gif)
