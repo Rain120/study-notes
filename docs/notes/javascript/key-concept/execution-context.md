@@ -40,6 +40,7 @@
  `(ECMA 5 规范)`
 
 - 确定`this`指向
+
   - 更多`this` 指向问题详见 [Javascript this](notes/javascript/key-concept/this.md)
 
 - 创建词法环境 `(Lexical Environment)`
@@ -221,6 +222,8 @@ EC = {
 
 [Understanding Execution Context and Execution Stack in Javascript](https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0)
 
+[Lexical environments: ECMAScript implementation](http://dmitrysoshnikov.com/ecmascript/es5-chapter-3-2-lexical-environments-ecmascript-implementation/)
+
 [Execution Contexts](https://www.ecma-international.org/ecma-262/5.1/#sec-10.3)
 
 [execution context stack](https://tc39.es/ecma262/#execution-context-stack)
@@ -230,10 +233,6 @@ EC = {
 [javascriptthe core](http://dmitrysoshnikov.com/ecmascript/javascript-the-core/)
 
 [调用栈](https://developer.mozilla.org/zh-CN/docs/Glossary/Call_stack)
-
-
-
-Realm 领域 8.5 8.6 15.1.10
 
 
 
