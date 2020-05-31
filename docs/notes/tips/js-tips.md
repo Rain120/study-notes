@@ -335,3 +335,29 @@ console.log(findTreeNode({
 }))
 ```
 
+#### 带标签的模板字符串
+
+标签使您可以用函数解析模板字符串。标签函数的第一个参数包含一个字符串值的数组。其余的参数与表达式相关。
+
+```javascript
+function getName(string, firstName, lastName, age) {
+  console.log(string)
+  return string[0] + firstName + lastName + string[2] + age;
+}
+console.log(getName`My Name is ${'Rain'} ${'120'}, I'm ${18}`);
+```
+
+按照[RFC3986](http://wiki.jabbercn.org/RFC3986)文档规定，`Url`中只允许包含`英文字母(a-zA-Z)`、`数字(0-9)`、`-_.~`4个特殊字符以及所有保留字符。
+
+**使用场景**
+
+1. 过滤 `HTML` 字符串，防止用户输入恶意内容
+2. 多语言转换 (国际化处理)
+3. 在 `JavaScript` 语言之中嵌入其他语言
+
+![label-template-string.png](./images/label-template-string.png)
+
+[参考](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/template_strings)
+
+[RFC 3986](https://tools.ietf.org/html/rfc3986)
+

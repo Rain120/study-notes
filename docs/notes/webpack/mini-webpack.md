@@ -44,7 +44,9 @@
 
 #### 实现代码
 
-`ing`
+[Github: mini-webpack](https://github.com/Rain120/mini-webpack)
+
+[Demo](https://rain120.github.io/mini-webpack/example/index.html)
 
 #### 参考资料
 
