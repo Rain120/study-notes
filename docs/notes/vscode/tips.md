@@ -218,12 +218,24 @@ ctrl ⌃
   
   **批量选择多行**
   
+  ![mutil-line-select.gif](./images/mutil-line-select.gif)
+  
+  ```
+  shift(⇧) + option(⌥)  + 鼠标拖动
+  ```
+  
+  
+  
   ![selected-mutil-line.gif](./images/selected-mutil-line.gif)
+  
+  ```
+  command(⌘) + option(⌥) + 👆 / 👇
+  ```
   
   **跳转到匹配的括号**
   
   ```
-  command(⌘) + option(⌥) + 👆 / 👇
+  command(⌘) + option(⌥) + |
   ```
   
   ![jump-match-brackets.gif](./images/jump-match-brackets.gif)
