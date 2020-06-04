@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2020-05-12 20:12:06
+ * @LastEditTime: 2020-06-04 14:33:21
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -120,6 +120,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [Github Actions 提升](notes/git-npm/github-action-improve.md)
       - [Git配置多个SSH Key](notes/git-npm/git-config-multiple-ssh.md)
       - [Git Tips](notes/git-npm/git-tips.md)
+      - [Git 分支设置与发版想法](notes/git-npm/git-branch-opinion.md)
       - [Npm Scripts](notes/git-npm/npm-scripts.md)
       - [Npm 包发布笔记](notes/git-npm/npm-publish.md)
       - [Npm 知识储备](notes/git-npm/npm-knowledge-reserve.md)
