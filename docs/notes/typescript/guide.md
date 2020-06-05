@@ -2,3 +2,4 @@
 - [Typescript 问题 & 解释](notes/typescript/qa.md)
 - [Typescript 开发小建议](notes/typescript/tips.md)
 - [Typescript + Eslint 配置Qa](notes/typescript/ts-eslint-qa.md)
+- [Typescript 快速定义QuickType](notes/typescript/quicktype.md)

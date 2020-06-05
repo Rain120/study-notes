@@ -167,3 +167,5 @@
 一键将 `JSON` 文件转换为一个目标语言的类型定义, [可视化生成](https://app.quicktype.io/)
 
 ![paste-json-as-code.gif](./images/paste-json-as-code.gif)
+
+![paste-json-as-code2.gif](./images/paste-json-as-code2.gif)
