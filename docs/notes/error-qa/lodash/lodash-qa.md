@@ -5,6 +5,8 @@
 
 ![lodash-fuse-not-defined.png](../images/lodash-fuse-not-defined.png)
 
+可能是因为新旧版本更新后缓存导致的问题, 因为我经常使用的是`https://lodash.com/docs/4.17.11#sortBy`, 而 `lodash`已经更新到`4.17.15`了。
+
 解决办法:
 
 - 打开控制台
