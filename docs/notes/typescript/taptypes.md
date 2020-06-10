@@ -6,9 +6,29 @@
   - 有没有办法快速定义接口的数据结构
 - 大量的`JSON`数据快速完成类型定义
 
-#### 基础设计
+#### 基础构思 + 设计
 
-![taptype.png](./images/taptype.png)
+![taptypes.png](./images/taptypes.png)
+
+#### 实现难点
+
+✅ `JSON Schema` 转换 
+
+❎ 数据解析
+
+- 简单类型定义
+- 复杂类型定义
+
+❎ 操作
+
+- `cli`
+- `web` 可视化
+
+#### 体验
+
+先注册包，暂时不可以使用
+
+~~[tap-types](https://www.npmjs.com/package/tap-types)~~
 
 #### 参考资料
 
@@ -17,3 +37,6 @@
 [quicktype](https://github.com/quicktype/quicktype)
 
 [transform](https://github.com/ritz078/transform)
+
+
+

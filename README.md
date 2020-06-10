@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2020-06-04 14:33:21
+ * @LastEditTime: 2020-06-10 11:16:36
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -51,7 +51,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [Typescript 开发小建议](notes/typescript/tips.md)
       - [Typescript + Eslint 配置Qa](notes/typescript/ts-eslint-qa.md)
       - [Typescript 快速定义QuickType](notes/typescript/quicktype.md)
-      - [Typescript 快速定义 tapType 实践](notes/typescript/taptype.md)
+      - [Typescript 快速定义 tapTypes 实践](notes/typescript/taptypes.md)
     - [前端开发 Tips](notes/tips/guide.md)
       - [CSS Tips](notes/tips/css-tips.md)
       - [JS Tips](notes/tips/js-tips.md)
@@ -122,7 +122,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [Github Actions 提升](notes/git-npm/github-action-improve.md)
       - [Git配置多个SSH Key](notes/git-npm/git-config-multiple-ssh.md)
       - [Git Tips](notes/git-npm/git-tips.md)
-      - [Git 分支设置与发版想法](notes/git-npm/git-branch-opinion.md)
+      - [Git 分支的前世今生](notes/git-npm/git-branch-opinion.md)
       - [Npm Scripts](notes/git-npm/npm-scripts.md)
       - [Npm 包发布笔记](notes/git-npm/npm-publish.md)
       - [Npm 知识储备](notes/git-npm/npm-knowledge-reserve.md)
@@ -133,6 +133,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [Node & Git错误笔记](notes/error-qa/node-git/note-qa.md)
       - [Mobx 错误笔记](notes/error-qa/mobx/mobx-qa.md)
       - [Jest 错误笔记](notes/error-qa/jest/jest-qa.md)
+      - [Lodash 错误笔记](notes/error-qa/lodash/lodash-qa.md)
     - [VS Code相关](notes/vscode/guide.md)
       - [VS Code Tips](notes/vscode/tips.md)
       - [VS Code 插件](notes/vscode/extensions.md)

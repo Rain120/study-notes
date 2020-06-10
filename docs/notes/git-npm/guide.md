@@ -9,7 +9,7 @@
 - [Github Actions 提升](notes/git-npm/github-action-improve.md)
 - [Git配置多个SSH Key](notes/git-npm/git-config-multiple-ssh.md)
 - [Git Tips](notes/git-npm/git-tips.md)
-- [Git 分支设置与发版想法](notes/git-npm/git-branch-opinion.md)
+- [Git 分支的前世今生](notes/git-npm/git-branch-opinion.md)
 
 #### NPM
 

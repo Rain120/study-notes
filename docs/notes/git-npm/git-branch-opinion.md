@@ -16,7 +16,11 @@
 
 为什么消除这些问题, 故有了这些想法。
 
-#### 分支设置
+#### 分支的诞生
+
+#### 分支的生命周期
+
+#### 分支的设置规则
 
 ![git-branch-opinion-branch-setting.png](./images/git-branch-opinion-branch-setting.png)
 
@@ -32,7 +36,9 @@
 
 - 好吧, 我想不出来, 欢迎补充呀👋👋👋
 
-#### 发布
+#### 分支的交际
+
+#### 分支的发布
 
 ![git-branch-opinion-branch-deploy.png](./images/git-branch-opinion-branch-deploy.png)
 
@@ -51,3 +57,6 @@
             推荐在`push`之前(谁后发版谁合并, 因为有关联, 建议与之前的开发者沟通下**冲突的内容**)合并分支发版测试 🤝🤝🤝
             - 否
             测试单发分支, 最后合并
+
+#### 分支的未来
+
