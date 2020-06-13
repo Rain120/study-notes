@@ -227,9 +227,21 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 [designmantic](https://www.designmantic.com/)
 
-[brandmark](https://brandmark.io/): 生成的logo图标符号形状较多，造型简单，整体质量较好
+[brandmark](https://brandmark.io/): 生成的`logo`图标符号形状较多，造型简单，整体质量较好
 
-[logosc](https://www.logosc.cn/) 在线付费logo制作设计网站，为企业定制logo
+[logosc](https://www.logosc.cn/) 在线付费`logo`制作设计网站，为企业定制`logo`
+
+[凡科快图](https://kt.fkw.com/)
+
+[canva](https://www.canva.cn/)
+
+[创客贴](https://www.chuangkit.com/): 包含有海量海报、名片、PPT、简历、宣传单、易拉宝、邀请函、信息图表等设计模板
+
+[懒设计](https://www.fotor.com.cn/): `Fotor`懒设计提供了适用于各种尺寸和应用场景的设计模板，包括国内外的主流社交媒体配图、电商平台配图，以及各种广告`banner`、朋友圈邀请函、海报设计等，用户也可根据设计需求，选择所需尺寸，然后从`Fotor`的海量模板素材中挑选合适的进行设计。
+
+[图怪兽](https://818ps.com/): 一个在线ps图片编辑器,它相当于`ps`精简版,可提供微信公众号图文在线编辑、在线ps照片处理、在线拼图、在线设计、平面设计、海报制作、在线图片处理等功能
+
+[更多](https://zhuanlan.zhihu.com/p/46980463) `or` [这个](https://www.v1tx.com/post/best-online-graphic-design-tool/#artboard-studio)
 
 ##### 在线代码编辑器
 
@@ -433,9 +445,11 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 [幕布](https://mubu.com/)
 
-[ASCII](http://asciiflow.com/)
+[ASCII: 字符创建流程图](http://asciiflow.com/)
 
 [geogebra](https://www.geogebra.org/): 免费在线数学工具: 绘图, 几何, 3D及更多内容
+
+[gitmind](https://gitmind.cn/): 免费在线思维导图软件，简化逻辑梳理，集思广益，释放创造力在线脑图、思维导图、流程图、工业设计、工程管理，一图涵千面
 
 #### 书籍查找
 
