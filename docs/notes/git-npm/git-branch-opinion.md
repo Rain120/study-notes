@@ -96,6 +96,11 @@
 
 笔者认为，此时应该就 **该分支** 打成`tag`, 这样日后也可以很方便的找到这次相关的所有内容，及其其他信息。
 
+```sh
+// description ....
+git tag -a -m 'feat: 9.5.27'
+```
+
 #### 参考资料
 
 [git-branch](https://git-scm.com/docs/git-branch)

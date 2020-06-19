@@ -454,6 +454,8 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 [gitmind](https://gitmind.cn/): 免费在线思维导图软件，简化逻辑梳理，集思广益，释放创造力在线脑图、思维导图、流程图、工业设计、工程管理，一图涵千面
 
+[Excalidraw](https://excalidraw.com/): 手绘流程图
+
 #### 书籍查找
 
 [BookSC](https://booksc.org/)
@@ -509,4 +511,6 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 国外网站推荐
 
 [分享大师](http://www.fenxiangdashi.com/)
+
+[LaTex 在线编辑](https://latexlive.com/): 数学公式书写
 
