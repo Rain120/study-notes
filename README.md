@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2020-06-10 11:16:36
+ * @LastEditTime: 2020-06-19 17:43:22
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -52,6 +52,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [Typescript + Eslint 配置Qa](notes/typescript/ts-eslint-qa.md)
       - [Typescript 快速定义QuickType](notes/typescript/quicktype.md)
       - [Typescript 快速定义 tapTypes 实践](notes/typescript/taptypes.md)
+        - [JSON Schema 知识流](notes/typescript/json-schema.md)
     - [前端开发 Tips](notes/tips/guide.md)
       - [CSS Tips](notes/tips/css-tips.md)
       - [JS Tips](notes/tips/js-tips.md)

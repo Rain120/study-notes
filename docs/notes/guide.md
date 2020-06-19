@@ -35,6 +35,7 @@
    - [Typescript + Eslint 配置Qa](notes/typescript/ts-eslint-qa.md)
    - [Typescript 快速定义QuickType](notes/typescript/quicktype.md)
    - [Typescript 快速定义 tapTypes 实践](notes/typescript/taptypes.md)
+     - [JSON Schema 知识流](notes/typescript/json-schema.md)
 - [前端开发 Tips](notes/tips/guide.md)
    - [CSS Tips](notes/tips/css-tips.md)
    - [JS Tips](notes/tips/js-tips.md)
