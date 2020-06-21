@@ -19,3 +19,5 @@
 
 [ECMA 262 所有标准文档](http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm)
 
+[ECMAScript® 2018 Language Specification.pdf 中文版](https://github.com/Rain120/study-notes/blob/master/docs/notes/javascript/key-concept/images/ECMAScript®-2018-zh.pdf)
+
