@@ -172,6 +172,54 @@ module.exports = {
 
 #### Tree Shaking
 
+##### 作用
+
+用于移除 `JavaScript`上下文中未引用的代码`(dead-code)`。它只支持`ES2015(ES6)`模块语法的静态结构特性，例如`import` `export`。
+
+##### 使用
+
+```javascript
+// webpack.config.js
+
+module.exports = {
+  // ...
+  mode: 'development',
+  optimization: {
+    useExports: true,
+  }
+  // ...
+}
+```
+
+
+
+有时候，我们没办法保证项目中的资源的纯度，我们可以通过`package.json`的`sideEffects`来标识该文件没有副作用。
+
+**Note**: 
+
+`side effect (副作用)`的定义是: 在导入时会执行特殊行为代码，而不是仅仅暴露一个`export`或者多个`export`。
+
+```json
+// package.json
+{
+  // sideEffects: false,
+  sideEffects: [
+    "*.css",
+    "path/file.js"
+  ]
+}
+```
+
+#### `sideEffects VS useExports`
+
+`sideEffects`更为有效，因为它允许跳过整个模块或者文件和整个文件子树。
+
+`useExports`依赖于 [terser](https://github.com/terser-js/terser) 去检测语句中的副作用。它是一个 JavaScript 任务而且没有像 `sideEffects` 一样简单直接。而且它不能跳转子树/依赖由于细则中说副作用需要被评估。尽管导出函数能运作如常，但 React 框架的高阶函数（HOC）在这种情况下是会出问题的。
+
+[Webpack tree-shaking](https://webpack.js.org/guides/tree-shaking/)
+
+[sideEffects](https://github.com/webpack/webpack/issues/8814#issuecomment-465223178)
+
 #### 参考资料
 
 [Webpack](https://webpack.js.org/)
