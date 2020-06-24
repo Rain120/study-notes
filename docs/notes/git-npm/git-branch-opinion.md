@@ -70,6 +70,20 @@
 
 ![git-model.png](./images/git-model.png)
 
+##### 分支的流向
+
+![git-dev-branch.png](./images/git-dev-branch.png)
+
+主分支`(默认为 master 分支)`
+
+开发分支的只能单向的流向`dev -> release -> master`
+
+##### 分支的`commit merge`
+
+![git-commit-merge.png](./images/git-commit-merge.png)
+
+绘制 `GitFlow` 请到 [codesanbox](https://codesandbox.io/s/git-graph-krvdf)
+
 #### 分支的发布
 
 ![git-branch-opinion-branch-deploy.png](./images/git-branch-opinion-branch-deploy.png)
