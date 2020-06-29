@@ -20,6 +20,8 @@
 
 [「颜值即正义」那些管UI小姐姐要来的网站](https://juejin.im/post/5e7cdee26fb9a03c6e640cc7)
 
+[CSS3渐变效果工具](https://www.bestvist.com/css-gradient)
+
 #### 图片 素材下载网站
 
 [Undraw](https://undraw.co/illustrations)

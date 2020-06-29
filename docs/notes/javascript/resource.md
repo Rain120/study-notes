@@ -44,3 +44,9 @@
 
 [ES 5 标准中文版](https://yanhaijing.com/es5)
 
+#### Code Style(代码风格)
+
+[Google Styleguide](https://github.com/google/styleguide): -> [中文版](https://github.com/zh-google-styleguide/zh-google-styleguide) -> [Doc](https://zh-google-styleguide.readthedocs.io/en/latest/contents/)
+
+[Google JavaScript StyleGuide](https://google.github.io/styleguide/jsguide.html)
+
