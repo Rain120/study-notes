@@ -41,7 +41,7 @@
 
 [chacuo.net](http://24mail.chacuo.net/zhtw)
 
-#### 国外短信验证码接收平台
+#### 短信验证码接收平台
 
 ~~[SMSReceiveFree](https://smsreceivefree.com)~~
 
@@ -69,7 +69,7 @@
 
 [Twilio](https://www.twilio.com/)
 
-[国内](https://www.pdflibr.com/): **10.7后再试试**
+[国内](https://www.pdflibr.com/)
 
 [云短信](https://yunduanxin.net/)
 
