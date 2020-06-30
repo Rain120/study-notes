@@ -17,6 +17,8 @@
 
 [Redux 的作者 Dan Abramov的 总结](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889)
 
+[函数式组件与类组件有何不同？](https://overreacted.io/zh-hans/how-are-function-components-different-from-classes/)
+
 `Hooks`的优势
 
 - 能优化类组件的三大问题
@@ -68,6 +70,12 @@ function Example() {
   );
 }
 ```
+
+##### function state vs class state
+
+- `function state` 的颗粒度更细
+- `function state` 保存的是快照，`class state`保存的是引用
+- `function state` 必须保证是个新的引用， `class state` 不需要
 
 #### useEffect()
 
@@ -211,8 +219,8 @@ function Example() {
 
 **区别:**
 
-- `useEffect`是异步的, `useLayoutEffect`是同步的
-- `useLayoutEffect` 会在 浏览器` layout` 之后，`painting` 之前执行, `useEffect` 在全部渲染完毕后才会执行
+- `useEffect`是异步的 `(不会阻塞浏览器渲染)`, `useLayoutEffect`是同步的 `(会阻塞浏览器渲染)`
+- `useLayoutEffect` 会在 浏览器` layout` 之后，`painting(渲染)` 之前执行, `useEffect` 在全部渲染完毕后才会执行
 
 ![layout-paint.png](./images/layout-paint.png)
 
@@ -417,9 +425,14 @@ function TextInputWithFocusButton() {
 
 **Note:**
 
-- 当 `ref` 对象内容发生变化时，`useRef` 并*不会*通知你。变更 `.current` 属性不会引发组件重新渲染。如果想要在 React 绑定或解绑 DOM 节点的 ref 时运行某些代码，则需要使用[回调 ref](https://zh-hans.reactjs.org/docs/hooks-faq.html#how-can-i-measure-a-dom-node) 来实现。
+- 当 `ref` 对象内容发生变化时，`useRef` 并*不会*通知你。修改`ref.current` 不会引发组件重新渲染。如果想要在 React 绑定或解绑 DOM 节点的 ref 时运行某些代码，则需要使用[回调 ref](https://zh-hans.reactjs.org/docs/hooks-faq.html#how-can-i-measure-a-dom-node) 来实现。
+- `useRef` 在渲染周期内永远不变，所以可以用来引用某些值。
+- 类组件、`React` 元素用 `React.createRef` 。
 
-- 类组件、`React` 元素用 `React.createRef` 
+##### useRef vs createRef
+
+- `useRef` 只能用于 **函数组件**，`createRef` 可以用在类组件上。
+- `useRef` 在每次重新渲染后都保持不变，`createRef` 每次都会发生变化。
 
 ##### React.forwardRef()
 
