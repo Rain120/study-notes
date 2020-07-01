@@ -10,6 +10,7 @@
 - [var let const function 生命周期](notes/javascript/key-concept/var-let-const-function-lifecycle.md)
 - [Javascript 执行上下文](notes/javascript/key-concept/execution-context.md)
 - [Javascript 词法作用域链、函数作用域、块级作用域](notes/javascript/key-concept/scope-chain.md)
+- [Javascript Decorator 实现原理及其使用](notes/javascript/key-concept/decorator.md)
 
 #### 参考资料
 

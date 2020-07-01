@@ -9,6 +9,7 @@
   - [var let const function 生命周期](notes/javascript/key-concept/var-let-const-function-lifecycle.md)
   - [Javascript 执行上下文](notes/javascript/key-concept/execution-context.md)
   - [Javascript 词法作用域链、函数作用域、块级作用域](notes/javascript/key-concept/scope-chain.md)
+  - [Javascript Decorator (装饰器) 实现原理及其使用](notes/javascript/key-concept/decorator.md)
 - [console全家桶](notes/javascript/console/console-related-note.md)
 - [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
 - [获取DOM元素的位置和尺寸](notes/javascript/get-dom-property/get-dom-property.md)
