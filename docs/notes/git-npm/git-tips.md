@@ -24,3 +24,20 @@ git pull --rebase # => git fetch + git rebase
 
 
 
+#### 如何从 GitHub 测试Pull Request(PR) 的代码 (本地检查 Pull Request(PR) 代码)
+
+找到PR请求的 `ID`，打开 `Iterm2` 或者你的 `Terminal(终端)`
+
+```sh
+# 根据该 ID 获取本次 PR 的引用，并在该过程中创建一个新分支
+# git fetch origin pull/PR_ID/head:Branch_Name
+git fetch origin pull/19/head:pr-19
+
+# 切换到该新分支
+# git checkout Branch_Name
+git checkout pr-19
+```
+
+![git-pr-fetch-origin.png](./images/git-pr-fetch-origin.png)
+
+[本地检查拉取请求 - Github 官方](https://docs.github.com/cn/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally)
