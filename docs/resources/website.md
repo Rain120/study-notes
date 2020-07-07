@@ -468,6 +468,8 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 [Mixkit](https://mixkit.co/): 免费可商用的视频网站
 
+[bilibili 在线视频下载](https://xbeibeix.com/api/bilibili/)
+
 [MV Cat](http://www.mvcat.com/)
 
 [全网VIP 视频解析](http://qmaile.com/)

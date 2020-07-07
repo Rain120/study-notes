@@ -36,8 +36,16 @@ git fetch origin pull/19/head:pr-19
 # 切换到该新分支
 # git checkout Branch_Name
 git checkout pr-19
+
+# push
+# git push origin Branch_Name
+git push origin pr-19
+
+# PR GitHub 可视化提交PR即可
 ```
 
 ![git-pr-fetch-origin.png](./images/git-pr-fetch-origin.png)
+
+![git-pr-github.png](./images/git-pr-github.png)
 
 [本地检查拉取请求 - Github 官方](https://docs.github.com/cn/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally)
