@@ -1,14 +1,105 @@
 #### 定义
 
-装饰器 `(Decorator)`  是 `ES7` 中的一个提案，它是一种与类 `(class)` 相关的语法，用来注释或修改类和类方法。装饰器是一种函数，写成`@ + 函数名`, 它可以放在类和类方法的定义前面。
+装饰器 `(Decorator)`  是 `ES7` 中的一个提案，目前仍处于 [stage-2: 草稿状态](https://github.com/tc39/proposal-decorators)。它是一种与类 `(class)` 相关的语法，用来注释或修改类和类方法。装饰器是一种函数，写成`@ + 函数名`, 它可以放在类和类方法的定义前面。
 
 #### 作用
 
-它们不仅增加了代码的可读性，清晰地表达了意图，而且提供一种方便的手段，增加或修改类的功能。
+它们不仅增加了代码的可读性，清晰地表达了意图，而且提供一种方便的手段，**增加或修改类的功能**。
+
+#### 使用
+
+##### 前提
+
+安装`babel` 以及 `decorator` 插件
+
+```sh
+npm install @babel/cli @babel/core --save-dev
+npm install @babel/proposal-decorators @babel/proposal-class-properties --save-dev
+```
+
+配置 `.babelrc`
+
+```
+"plugins": [
+	["@babel/proposal-decorators", {
+		"legency": true
+	}],
+  ["@babel/proposal-class-properties", {
+		"loose": true
+	}]
+]
+```
+
+当然你也可以到这里看 `babel` 编译结果 [I'm here !!](https://babeljs.io/repl/?spm=taofed.bloginfo.blog.4.46f85ac8ur2znZ#?browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABAZzgWwKYBEMTgJwEMoCAKAawBtDlkAaRcjATwYBMNkIBKRAbwBQiRPgxQQ-JBy4BuAQF8BAiNVqIAYnDj8hwxAAFUmHHiIl8u4QHMxKdBgCCECJ1T5SvPovlA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=true&fileSize=false&timeTravel=false&sourceType=module&lineWrap=false&presets=stage-2&prettier=true&targets=&version=7.10.4&externalPlugins=)
+
+##### 类装饰器
+
+```js
+function decorator(target, key, descriptor) {
+  // target -> 所要装饰的目标类, Foo 类
+  // key -> undefined
+  // descriptor -> undefined
+}
+
+@decorator
+class Foo {}
+
+// ===> 
+
+Foo = decorator(Foo) || Foo
+```
+
+**装饰器对类的行为的改变，是代码编译时发生的，而不是在运行时**。这意味着，装饰器能在编译阶段运行代码。也就是说，**装饰器本质就是编译时执行的函数**。
+
+##### 类方法, 类属性装饰器
+
+```js
+class Person {
+  @readonly
+  name() { return `${this.first} ${this.last}` }
+}
+
+function readonly(target, name, descriptor){
+  // descriptor对象原来的值如下
+  // {
+  //   value: specifiedFunction,
+  //   enumerable: false,
+  //   configurable: true,
+  //   writable: true
+  // };
+  descriptor.writable = false;
+  return descriptor;
+}
+
+readonly(Person.prototype, 'name', descriptor);
+// 类似于
+Object.defineProperty(Person.prototype, 'name', descriptor);
+```
+
+##### 函数方法的装饰
+
+**装饰器只能用于类和类的方法，不能用于函数，因为存在函数提升**。如果一定要装饰函数，可以采用高阶函数的形式直接执行。
+
+```js
+function doSomething(name) {
+  console.log('Hello, ' + name);
+}
+
+function loggingDecorator(wrapped) {
+  return function() {
+    console.log('Starting');
+    const result = wrapped.apply(this, arguments);
+    console.log('Finished');
+    return result;
+  }
+}
+
+const wrapped = loggingDecorator(doSomething);
+```
 
 #### 实现原理
 
-装饰器实际是一种函数, 它的实现类似于 `JavaScript`的 `Object.defineProperty`。
+装饰器实际是一种编译时执行的函数, 它的实现依赖于 `JavaScript`的 `Object.defineProperty`。
 
 ##### Object.defineProperty(obj, prop, descriptor)
 
@@ -54,10 +145,95 @@
 
     属性的 `setter` 函数，如果没有 `setter`，则为 `undefined`。当属性值被修改时，会调用此函数。该方法接受一个参数（也就是被赋予的新值），会传入赋值时的 `this` 对象。 **默认为 undefined**。
 
-##### 实现
+##### babel 转换
+
+我们通过 `babel` 转换的结果来理解 `decorator` 是如何实现的。
+
+编译前
+
+```js
+class Foo {
+	@readonly
+	get name() {
+		return 'Rain120';
+	}
+}
+
+function readonly(target, name, descriptor) {
+  return descriptor;
+}
+```
+
+编译后
+
+```js
+var _class;
+
+function _applyDecoratedDescriptor(
+	 target, // _class.prototype,
+   property, // "name",
+   decorators, // [readonly],
+   descriptor, // Object.getOwnPropertyDescriptor(_class.prototype, "name"),
+   context // _class.prototype
+  ) {
+  var desc = {};
+  // 拷贝属性
+  Object.keys(descriptor).forEach(function (key) {
+    desc[key] = descriptor[key];
+  });
+  desc.enumerable = !!desc.enumerable;
+  desc.configurable = !!desc.configurable;
+
+  if ('value' in desc || desc.initializer) {
+    desc.writable = true;
+  }
+
+  // 应用多个 decorators
+  desc = decorators.slice().reverse().reduce(function (desc, decorator) {
+    return decorator(target, property, desc) || desc;
+  }, desc);
+
+  // 设置 decorators 修改的属性
+  if (context && desc.initializer !== void 0) {
+    desc.value = desc.initializer ? desc.initializer.call(context) : void 0;
+    desc.initializer = undefined;
+  }
+
+  if (desc.initializer === void 0) {
+    Object.defineProperty(target, property, desc);
+    desc = null;
+  }
+
+  return desc;
+}
+
+function readonly(target, key, descriptor) {
+  return descriptor;
+}
+
+let Foo = (
+  _class = class Foo {
+    get name() {
+      return 'Rain120';
+    }
+
+  },
+  _applyDecoratedDescriptor(
+      _class.prototype,
+      "name", [readonly],
+      Object.getOwnPropertyDescriptor(_class.prototype, "name"),
+      _class.prototype
+  ),
+  _class
+);
+```
+
+##### 自己实现
 
 - `Decorator` 装饰方法时，`descriptor`的参数和 `Object.defineProperty` 的 `descriptor` 一致
 - `Decorator` 装饰类属性时，`descriptor`没有`value`和`get`或`set`，且多出一个`initializer`方法, 返回值作为属性的值
+
+无参的 `decorator`
 
 ```js
 /**
@@ -83,7 +259,33 @@ function Decorator(target, key, descriptor) {
 }
 ```
 
+带参的 `decorator`
 
+```js
+/**
+ * @description 装饰器函数
+ * @param target 被装饰器装饰的目标对象原型
+ * @param key 要定义或修改的属性, 类和方法的名称或Symbol
+ * @param descriptor 要定义或修改的属性, 类和方法的描述符
+ */
+function Decorator(props) {
+  return (target, key, descriptor) => {
+    let descriptorValue = descriptor.initializer && descriptor.initializer.call(this);
+    const descriptor = {
+        enumerable: false,
+        configurable: true,
+        writable: true,
+        get() {
+          return descriptorValue;
+        },
+        set(value) {
+          descriptorValue = value;
+        }
+    };
+    return descriptor;
+  }
+}
+```
 
 #### 参考资料
 
@@ -91,10 +293,17 @@ function Decorator(target, key, descriptor) {
 
 [Object.defineProperty - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
 
-[JavaScript Decorators 提案地址][https://github.com/tc39/proposal-decorators]
+[JavaScript Decorators 提案地址](https://github.com/tc39/proposal-decorators)
 
 [Exploring EcmaScript Decorators](https://medium.com/google-developers/exploring-es7-decorators-76ecb65fb841#.cmajiy3p1)
 
 [javascript-decorators](https://github.com/wycats/javascript-decorators)
 
 [introduction-to-es-decorator](https://efe.baidu.com/blog/introduction-to-es-decorator/)
+
+[ES7 Decorator 装饰者模式](https://fed.taobao.org/blog/taofed/do71ct/es7-decorator/?spm=taofed.homepage.header.22.7eab5ac8PULUNx)
+
+[ES6 系列之我们来聊聊装饰器](https://github.com/mqyqingfeng/Blog/issues/109)
+
+[ES Decorators简介](https://efe.baidu.com/blog/introduction-to-es-decorator/)
+
