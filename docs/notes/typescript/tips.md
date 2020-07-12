@@ -1,8 +1,10 @@
+## Important [Typescript 指导书](https://rain120.github.io/typescript-guide/)
+
 ### 未知Object类型
 
 ```typescript
 interface AnyObject {
-    [key: string]: any;
+  [key: string]: any;
 }
 ```
 
@@ -10,7 +12,7 @@ interface AnyObject {
 
 ```typescript
 interface CustomObject<V> {
-    [key: string]: V;
+  [key: string]: V;
 }
 ```
 
@@ -36,11 +38,11 @@ class C {
     // This is the "definite assignment assertion"
 
     constructor() {
-        this.initialize();
+      this.initialize();
     }
 
     initialize() {
-        this.foo = 0;
+      this.foo = 0;
     }
 }
 ```

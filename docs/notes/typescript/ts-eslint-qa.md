@@ -1,6 +1,6 @@
 #### 项目配置完 eslint之后报👇错误
 
-`Parsing error: ImportDeclaration should appear when the mode is ES6 and **in** the module context`
+`Parsing error: ImportDeclaration should appear when the mode is ES6 and in the module context`
 
 ![ts-eslint-parsing-error.png](./images/ts-eslint-parsing-error.png)
 

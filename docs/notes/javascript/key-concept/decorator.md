@@ -307,3 +307,5 @@ function Decorator(props) {
 
 [ES Decorators简介](https://efe.baidu.com/blog/introduction-to-es-decorator/)
 
+[JS 中的装饰器模式](https://imcuttle.github.io/js-%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F)
+

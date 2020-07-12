@@ -1,9 +1,11 @@
+## Important [Typescript 指导书](https://rain120.github.io/typescript-guide/)
+
 #### 配置
 
 - 手动 创建一个 `tsconfig.json`文件
 - 使用`tsc`命令
   - `npx tsc --init` 
-  - `npm i -g typscript`  `tsc --init`
+  - `npm i -g typescript`  `tsc --init`
 
 `config` 文件解释
 
