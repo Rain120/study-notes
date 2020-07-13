@@ -1,7 +1,17 @@
-- [2019年度总结](https://github.com/Rain120/Web-Study/issues/12)
+- [Typescript 指导书](https://rain120.github.io/typescript-guide/)
 
-* Lang(测试)
-  * 中文
-  * English
-  * Spanish
-  * French
+- [JavaScript 源码实现](https://rain120.github.io/awesome-javascript-code-implementation/)
+
+- [2020年 年中总结](https://github.com/Rain120/Web-Study/issues/13)
+
+- 年度总结
+
+  - [2020年 年中总结](https://github.com/Rain120/Web-Study/issues/13)
+
+  - [2019年 年度总结](https://github.com/Rain120/Web-Study/issues/12)
+
+<!-- - Lang(测试)
+  - 中文
+  - English
+  - Spanish
+  - French -->
