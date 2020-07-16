@@ -1,5 +1,5 @@
 
-#### Typescript 中的 interface 和 type 有什么区别, 异同点？
+#### Typescript 中的 interface 和 type 有什么异同点？
 
 [interface-declarations](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md#71-interface-declarations)
 
