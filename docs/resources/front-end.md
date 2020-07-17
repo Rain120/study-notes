@@ -320,9 +320,7 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [InfoQ](https://www.infoq.cn/): *InfoQ* 是一个实践驱动的社区资讯站点，致力于促进软件开发领域知识与创新的传播。
 
-[w3cplus](<https://www.w3cplus.com/>)
-
-[V2EX](https://www.v2ex.com/)
+[w3cplus](https://www.w3cplus.com/)
 
 [大前端](http://www.daqianduan.com/)
 
@@ -333,8 +331,6 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 [best-chinese-front-end-blogs](https://github.com/FrankFang/best-chinese-front-end-blogs): 收集优质的中文前端博客
 
 [softnshare](https://softnshare.com/)
-
-
 
 #### 路径及文章
 

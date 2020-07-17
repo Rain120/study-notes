@@ -492,8 +492,6 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 [w3cplus](<https://www.w3cplus.com/>)
 
-[V2EX](https://www.v2ex.com/)
-
 [大前端](http://www.daqianduan.com/)
 
 [开源中国](https://www.oschina.net/)
