@@ -10,6 +10,7 @@
 - [Git配置多个SSH Key](notes/git-npm/git-config-multiple-ssh.md)
 - [Git Tips](notes/git-npm/git-tips.md)
 - [Git 分支的前世今生](notes/git-npm/git-branch-opinion.md)
+- [GitHub 隐藏功能 - 个人首页](notes/git-npm/github-profile.md)
 
 #### NPM
 
