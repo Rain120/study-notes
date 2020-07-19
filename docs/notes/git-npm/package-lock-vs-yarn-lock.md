@@ -49,7 +49,7 @@
 
 #### lock 的作用
 
-- 锁定安装时的包的版本号
+- 能获得可重复的构建 `(repeatable build)`，当你在 `CI(持续集成)` 上重复 `build` 的时候，得到的 `artifact` 是一样的，因为依赖的版本都被锁住了。
 - 避免由于开发人员意外更改或者更新版本，而导致项目不兼容等问题
 
 #### 何时生成 lock 文件
@@ -118,6 +118,10 @@
 [yarn-lock](https://classic.yarnpkg.com/en/docs/yarn-lock)
 
 [关于package-lock.json的一切](https://codertx.github.io/2018/01/09/about-package-json/)
+
+[npm install 生成的package-lock.json是什么文件？有什么用？](https://www.zhihu.com/question/62331583)
+
+[why-does-npm-install-rewrite-package-lock-json](https://stackoverflow.com/questions/45022048/why-does-npm-install-rewrite-package-lock-json)
 
 
 
