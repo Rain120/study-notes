@@ -30,6 +30,8 @@
 
 [Black illustrations](https://www.blackillustrations.com/)
 
+[sketchvalley](https://sketchvalley.com/): 手绘免费矢量图资源
+
 [码力全开](https://design.maliquankai.com/)
 
 <iframe

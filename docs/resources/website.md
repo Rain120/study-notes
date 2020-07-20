@@ -241,6 +241,8 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 [图怪兽](https://818ps.com/): 一个在线ps图片编辑器,它相当于`ps`精简版,可提供微信公众号图文在线编辑、在线ps照片处理、在线拼图、在线设计、平面设计、海报制作、在线图片处理等功能
 
+[sketchvalley](https://sketchvalley.com/): 手绘免费矢量图资源
+
 [更多](https://zhuanlan.zhihu.com/p/46980463) `or` [这个](https://www.v1tx.com/post/best-online-graphic-design-tool/#artboard-studio)
 
 ##### 在线代码编辑器
