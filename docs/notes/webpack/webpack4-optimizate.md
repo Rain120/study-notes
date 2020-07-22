@@ -10,9 +10,150 @@
 
 #### noParse
 
-#### ignorePlugin
+[module.noParse](https://webpack.js.org/configuration/module/#modulenoparse) 是 `webpack` 中的一个配置项, 主要通过忽略对 `amd / cmd` 模块代码的递归解析和处理来提高构建性能。
 
-#### 动态链接库(dllPlugin)
+参数: `RegExp[RegExp] function(resource) string[string]`
+
+```javascript
+noParse: RegExp[RegExp] | function(resource) | string[string]
+```
+
+**Demo**
+
+```js
+// webpack.config.js
+const webpack = require('webpack');
+
+module.exports = {
+  // ...
+  module: {
+    // noParse: 'lodash',
+    // noParse: /lodash/,
+    noParse: resource => /lodash/.test(resource)
+  },
+  // ...
+}
+```
+
+
+
+#### IgnorePlugin
+
+[IgnorePlugin](https://webpack.js.org/plugins/ignore-plugin/) 在 `import`或 `require` 调用时, 忽略第三方包指定模块, 使其不被打包。
+
+参数列表:
+
+- `requestRegExp` 匹配 `(test)` 资源请求路径的正则表达式。
+- `contextRegExp` (可选) 匹配 `(test)` 资源上下文 (目录) 的正则表达式。
+
+```javascript
+new webpack.IgnorePlugin(requestRegExp, [contextRegExp])
+```
+
+**Demo**
+
+```javascript
+// webpack.config.js
+const webpack = require('webpack');
+
+module.exports = {
+  // ...
+  plugins: [
+    new webpack.IgnorePlugin(/\.\/locale$/, /moment$/)
+  ],
+  // ...
+}
+```
+
+
+
+#### 动态链接库(DllPlugin)
+
+[DllPlugin](https://webpack.js.org/plugins/dll-plugin/#dllplugin) 和 [DllReferencePlugin](https://webpack.js.org/plugins/dll-plugin/#dllreferenceplugin) 可以实现对第三方依赖的拆分, 再次打包就不需要打包此模块了，从而提高构建速度。
+
+##### DllPlugin
+
+创建一个只有 `dll`的 `bundles`, 并生成一个 `mainfest.json`文件，用来让 `DllReferencePlugin` 映射到相关依赖上。
+
+参数列表:
+
+- `context` `(optional)`: `manifest` 文件中请求的上下文`(context)`(默认值为 `webpack` 的上下文`(context)`)
+- `name`: 暴露出的 `DLL` 的函数名 ([TemplatePaths](https://github.com/webpack/webpack/blob/master/lib/TemplatedPathPlugin.js): `[hash]` & `[name]` )
+- `path`: `manifest.json` 文件的**绝对路径** (输出文件)
+
+```javascript
+new webpack.DllPlugin(options)
+```
+
+**Demo**
+
+```javascript
+const path = require('path');
+const webpack = require('webpack');
+
+// webpack.config.js
+module.exports = {
+  // ...
+  mode: 'development',
+  entry: {
+    react: ['react', 'react-dom'],
+  },
+  output: {
+    filename: '__dll_[name].js',
+    path: path.resolve(__dirname, 'dll'),
+    library: '[name]-[hash]',
+  },
+  plugins: [
+    new webpack.DllPlugin({
+      // name 必须和 output.library 一致
+      name: '[name]-[hash]',
+      // 该属性需要与 DllReferencePlugin 中一致
+      context: __dirname,
+      path: path.join(__dirname, 'dll', '[name]-mainfest.json')
+    }),
+  ],
+  // ...
+}
+```
+
+##### DllReferencePlugin
+
+把只有 `dll` 的 `bundles`引用到需要的预编译的依赖。
+
+参数列表:
+
+- `context`: (**绝对路径**) `manifest` (或者是内容属性)中请求的上下文
+- `manifest`: 包含 `content` 和 `name` 的对象，或者在编译时`(compilation)`的一个用于加载的 `JSON manifest` 绝对路径
+- `content`(optional): 请求到模块 `id` 的映射 (默认值为 `manifest.content`)
+- `name` `(optional)`: `dll` 暴露的地方的名称 (默认值为 `manifest.name`) (可参考 [`externals`](https://www.webpackjs.com/configuration/externals/))
+- `scope` `(optional):` `dll` 中内容的前缀
+- `sourceType` `(optional)`: `dll` 是如何暴露的 ([libraryTarget](https://www.webpackjs.com/configuration/output/#output-librarytarget))
+
+```javascript
+new webpack.DllReferencePlugin(options)
+```
+
+**Demo**
+
+```javascript
+const path = require('path');
+const webpack = require('webpack');
+
+// webpack.config.js
+module.exports = {
+  // ...
+  plugins: [
+    new webpack.DllReferencePlugin({
+      // 该属性需要与 DllPlugin 中的 context 一致
+      context: __dirname,
+      mainfest: require('path/react-mainfest.json')
+    }),
+  ],
+  // ...
+}
+```
+
+
 
 #### HappyPack
 
@@ -36,6 +177,7 @@ npm install --save-dev happypack
 
 ```javascript
 // webpack.config.js
+const webpack = require('webpack');
 const Happypack = require('happypack');
 const threadPool = Happypack.ThreadPool({ size: 5});
 
@@ -121,6 +263,8 @@ npm install --save-dev thread-loader
 
 ```javascript
 // webpack.config.js
+const webpack = require('webpack');
+
 module.exports = {
   // ...
   module: {
@@ -180,6 +324,7 @@ module.exports = {
 
 ```javascript
 // webpack.config.js
+const webpack = require('webpack');
 
 module.exports = {
   // ...

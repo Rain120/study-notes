@@ -22,6 +22,8 @@
 
 [alligator](https://alligator.io/): 各类前端基础知识教程
 
+[npm runkit](https://npm.runkit.com/): 快速运行 `npm` 包
+
 #### JavaScript 类库
 
 [Lodash](https://lodash.com/): Lodash是一个JavaScript库，它使用函数式编程范例为常见的编程任务提供实用程序功能。
@@ -43,6 +45,8 @@
 #### ECMA
 
 [ES 5 标准中文版](https://yanhaijing.com/es5)
+
+[ES6 编程语言备忘录](https://devhints.io/es6)
 
 #### Code Style(代码风格)
 
