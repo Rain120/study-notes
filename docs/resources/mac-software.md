@@ -10,7 +10,7 @@ sudo spctl --master-disable
 sudo spctl --master-enable
 ```
 
-
+##### 安全性与隐私
 
 ![resources.png](./sw/resources.png)
 

@@ -14,6 +14,8 @@
 
 [Mac Svg 生成器](https://macsvg.org/)
 
+[css-triangle-generator](http://apps.eky.hk/css-triangle-generator/zh-hant): 快速生成三角形的 `css`
+
 #### 取色网站
 
 [工具网站](https://rain120.github.io/study-notes/#/resources/website?id=工具网站)
