@@ -11,6 +11,7 @@
 - [Javascript 执行上下文](notes/javascript/key-concept/execution-context.md)
 - [Javascript 词法作用域链、函数作用域、块级作用域](notes/javascript/key-concept/scope-chain.md)
 - [Javascript Decorator 实现原理及其使用](notes/javascript/key-concept/decorator.md)
+- [Javascript 垃圾回收](notes/javascript/key-concept/garbage-collection.md)
 
 #### 参考资料
 
