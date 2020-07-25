@@ -25,6 +25,7 @@
   - [思维导图](resources/website?id=思维导图)
 - [书籍查找](resources/website?id=书籍查找)
 - [视频](resources/website?id=视频)
+- [视音频](resources/website?id=视音频)
 - [其他](resources/website?id=其他)
 
 #### 文献查找
@@ -476,6 +477,18 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 [全网VIP 视频解析](http://qmaile.com/)
 
+[茶杯狐](https://www.cupfox.com/)
+
+#### 视音频
+
+[文章索引](resources/website?id=文章索引)
+
+[mixkit](https://mixkit.co/) 免版权音频文件下载
+
+[耳聆网](https://www.ear0.com/): 中国最专业的声音分享平台，汇聚国内众多专业录音师和业余声音爱好者，拥有庞大的声音资源云库和完善的授权使用机制，一直以来为音乐创作、影视后期、场景设计和游戏制作等领域提供广泛的资源及技术支持。
+
+[视频模板](https://panzoid.com/) 众多免费视音频模板下载
+
 #### 其他
 
 [文章索引](resources/website?id=文章索引)
@@ -522,5 +535,5 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 [React Vue 框架实例 Demo](http://md-md-e867c335436d-fc.madewith.cn/)
 
-
+[zoomeye.org](https://www.zoomeye.org): 一款针对网络空间的搜索引擎，收录了互联网空间中的设备、网站及其使用的服务或组件等信息。
 
