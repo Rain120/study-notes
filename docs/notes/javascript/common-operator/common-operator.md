@@ -50,9 +50,9 @@
 |        | [全等号](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Identity) |          | `expr !== expr`        |
 | 9      | [按位与](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#Bitwise_AND) | 从左到右 | `expr & expr`          |
 | 8      | [按位异或](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#Bitwise_XOR) | 从左到右 | `expr ^ expr`          |
-| 7      | [按位或](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#Bitwise_OR) | 从左到右 | `expr | expr`          |
+| 7      | [按位或](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#Bitwise_OR) | 从左到右 | `expr \| expr`         |
 | 6      | [逻辑与](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Logical_AND) | 从左到右 | `expr && expr`         |
-| 5      | [逻辑或](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Logical_OR) | 从左到右 | `expr || expr`         |
+| 5      | [逻辑或](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Logical_OR) | 从左到右 | `expr \|\| expr`       |
 | 4      | [条件运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) | 从右到左 | `expr ? expr : expr`   |
 | 3      | [赋值](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Assignment_Operators) | 从右到左 | `expr = expr `         |
 |        |                                                              |          | `expr += expr `        |
@@ -64,10 +64,10 @@
 |        |                                                              |          | `expr >>= expr `       |
 |        |                                                              |          | `expr >>>= expr `      |
 |        |                                                              |          | `expr &= expr `        |
-|        |                                                              |          | `expr |= expr `        |
+|        |                                                              |          | `expr \|= expr `       |
 |        |                                                              |          | `expr ^= expr `        |
 | 2      | [yield](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/yield) | 从右到左 | `yield expr`           |
-|        | [yield*](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/yield*) | 从右到左 | `yield* expr           |
+|        | [yield*](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/yield*) | 从右到左 | `yield* expr`          |
 | 1      | [展开运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Spread_operator) | n/a      | `...expr`              |
 | 0      | [逗号](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Comma_Operator) | 从左到右 | `expr, expr`           |
 

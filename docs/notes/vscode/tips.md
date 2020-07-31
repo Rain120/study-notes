@@ -286,6 +286,18 @@ command(⌘) + .
 
 ![refactor-batch-rename.gif](./images/refactor-batch-rename.gif)
 
+##### 前进后退
+
+```
+# 前进
+ctrl(⌃) + -
+
+# 后退
+shift(⇧) + ctrl(⌃) + -
+```
+
+![forward-backward.gif](./images/forward-backward.gif)
+
 #### 自定义VSCode编辑器样式
 
 ##### 背景图片

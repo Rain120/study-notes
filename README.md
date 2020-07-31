@@ -128,6 +128,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
         - [Git Tips](notes/git-npm/git-tips.md)
         - [Git 分支的前世今生](notes/git-npm/git-branch-opinion.md)
         - [GitHub 隐藏功能 - 个人首页](notes/git-npm/github-profile.md)
+        - [GitHub 软件(包)版本问题](notes/git-npm/version.md)
       - Npm 相关
         - [Npm Scripts](notes/git-npm/npm-scripts.md)
         - [Npm 包发布笔记](notes/git-npm/npm-publish.md)
