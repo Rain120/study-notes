@@ -361,3 +361,74 @@ console.log(getName`My Name is ${'Rain'} ${'120'}, I'm ${18}`);
 
 [RFC 3986](https://tools.ietf.org/html/rfc3986)
 
+#### 原生 textarea 计算长度不准确的问题
+
+主要是 `Safari` 的问题
+
+```html
+<textarea cols="40" rows="8" name="textarea" class="c" maxlength='1000'></textarea>
+
+<button onclick="getLength">
+  获取 Value
+</button>
+```
+
+```js
+function getLength() {
+  var v = document.querySelectorAll('.c')[0].value
+  console.log(123, v, v.length)
+}
+document.querySelectorAll('button')[0].onclick = getLength
+```
+
+![textarea-length.png](./images/textarea-length.png)
+
+##### 出现原因
+
+- `Chrome (Windows和OS X)` 将换行符视为 **2个不同的字符**  `\r\n`
+
+- `Firefox (Windows和OS X)` 将换行计数为 **1个单个字符**  `\n`
+
+- `IE（Windows）`将换行计数为 **1个单个字符**  `\n`
+
+- `Safari（OS X）`将换行符视为 **2个不同的字符**  `\r\n`
+
+这些浏览器将换行符计算为 **1个或2个字符**，而没有将 **CR + LF** 明确命名为用于表示换行符的一对字符。那是因为我不能确保它们在实践中将换行符编码为 **CR + LF**。
+
+实际上，**W3C HTML 5** 规范指出，换行符应表示为表单元素的 API值内的单个LF字符，该值是使用JS检索的。
+
+`\r` 代表的是 回车符 `(ACSII: 13 或0x0d)`, 也就是 **硬回车**
+
+`\n` 代表的是 换行符`(ACSII: 10 或 0x0a)`, 也就是 **软回车**
+
+##### 解决办法
+
+```jsx
+class TextArea extends React.Component {
+  handleChange = e => {
+      const { onChange } = this.props;
+      e.target.value = this.limitInput(e.target.value);
+      onChange(e);
+  }
+  limitInput(value) {
+      const {maxLength: limit} = this.props;
+      return value.slice(0, limit);
+  }
+  render() {
+    // Note: 不要将 maxLength 传给 
+    const { maxLength, ...rest } = this.props;
+    return (
+    	<textarea onChange={this.handleChange} { ...rest } />
+    );
+  }
+}
+```
+
+##### 参考
+
+[MDN - textarea](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/textarea)
+
+[Fix length calculation for Mac new lines /r/n ](https://github.com/pioul/jQuery.Maxlength/pull/4#issuecomment-58760693)
+
+[Chrome counts characters wrong in textarea with maxlength attribute](https://stackoverflow.com/questions/10030921/chrome-counts-characters-wrong-in-textarea-with-maxlength-attribute)
+
