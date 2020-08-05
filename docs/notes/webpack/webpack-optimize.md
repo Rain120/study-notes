@@ -1,12 +1,296 @@
+#### 可视化依赖分析工具
+
+##### [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
+
+```sh
+# NPM
+npm install --save-dev webpack-bundle-analyzer
+# Yarn
+yarn add -D webpack-bundle-analyzer
+```
+
+```js
+// webpack.config.js
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
+module.exports = {
+  plugins: [
+    new BundleAnalyzerPlugin()
+  ]
+}
+```
+
+```json
+{
+	"scripts": {
+    "stats": "webpack --env production --json > stats.json"
+  }
+}
+```
+
+##### [webpack-chart](http://alexkuz.github.io/webpack-chart/)
+
+##### [analyse](http://webpack.github.io/analyse)
+
+##### SMP 时间分析
+
+[speed-measure-webpack-plugin](https://github.com/stephencookdev/speed-measure-webpack-plugin)
+
+```sh
+# npm 
+npm install --save-dev speed-measure-webpack-plugin
+
+# yarn
+yarn add -D speed-measure-webpack-plugin
+```
+
+```js
+// webpack.config.js
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+const options = {};
+const smp = new SpeedMeasurePlugin(options);
+
+const webpackConfig = smp.wrap({
+  plugins: [
+    new MyPlugin(),
+    new MyOtherPlugin()
+  ]
+});
+```
+
 #### 模块热替换(HMR)
+
+模块热替换 `(Hot Module Replacement 或 HMR)` 是 `webpack` 提供的最有用的功能之一。它会在应用程序运行过程中替换、添加或删除[模块](https://www.webpackjs.com/concepts/modules/)，而无需进行完全刷新。
+
+```js
+// webpack.config.js
+const webpack = require('webpack');
+
+module.exports = {
+  entry: {
+    app: './src/index.js'
+  },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  },
+  // ...
+  devServer: {
+    contentBase: [path.join(__dirname, "dist")],
+    compress: true,
+    port: 9527, // 启动端口号
+    hot: true, // 启用 webpack 的模块热替换特性
+    inline: true,
+    publicPath: '/',
+  },
+  plugins: [
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+      title: 'Hot Module Replacement'
+    }),
+   	new webpack.NamedModulesPlugin(),
+   	new webpack.HotModuleReplacementPlugin()
+  ],
+  // ...
+}
+```
+
+
+
+```js
+// index.js
+if (module.hot) {
+  module.hot.accept('./library.js', function() {
+    // 使用更新过的 library 模块执行某些操作...
+  })
+}
+```
 
 #### 懒加载(按需加载)
 
+TODO ing....
+
 #### 抽离公共代码
+
+将多次引入的模块抽离成公共代码块。
+
+```js
+// webpack.config.js
+module.exports = {
+  //...
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      minSize: 20000,
+      minRemainingSize: 0,
+      maxSize: 0,
+      minChunks: 1,
+      maxAsyncRequests: 30,
+      maxInitialRequests: 30,
+      automaticNameDelimiter: '~',
+      enforceSizeThreshold: 50000,
+      // 缓存组
+      cacheGroups: {
+        defaultVendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10
+        },
+        default: {
+          // 公共的代码块 引入模块的最小数量
+          minChunks: 2,
+          // 升级权重
+          priority: -20,
+          reuseExistingChunk: true
+        }
+      }
+    }
+  }
+};
+```
+
+
+
+[splitChunksPlugin](https://webpack.js.org/plugins/split-chunks-plugin/)
 
 #### loader 配置
 
+`loader` 让 `webpack` 能够去处理那些非 `JavaScript` 文件(`webpack` 自身只理解 `JavaScript`)。`loader` 可以将所有类型的文件转换为 `webpack` 能够处理的有效模块,然后你就可以利用 `webpack` 的打包能力,对它们进行处理。
+
+`Webpack Loader` 更多 [Here](notes/webpack/webpack-loader.md)
+
+```js
+// webpack.config.js
+const webpack = require('webpack');
+const path = require('path');
+
+// webpack.config.js
+module.exports = {
+  // ...
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader?cacheDirectory=true',
+        include: [
+          path.resolve('src')
+        ],
+        exclude: /node_modules/
+      },
+    ],
+  },
+  // ...
+};
+```
+
+### externals
+
+我们可以将一些JS文件存储在 `CDN` 上(减少 `Webpack`打包出来的 `js` 体积)，在 `index.html` 中通过 `<script>` 标签引入
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">root</div>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</body>
+</html>
+```
+
+我们希望在使用时，仍然可以通过 `import` 的方式去引用(如 `import $ from 'jquery'`)，并且希望 `webpack` 不会对其进行打包，此时就可以配置 `externals`。
+
+```js
+//webpack.config.js
+module.exports = {
+    //...
+    externals: {
+        //jquery通过script引入之后，全局中即有了 jQuery 变量
+        'jquery': 'jQuery'
+    }
+}
+
+```
+
+
+
 #### resolve 配置
+
+[resolve](https://webpack.js.org/configuration/resolve/) 配置 `webpack` 如何去寻找模块对应的文件。
+
+```js
+// webpack.config.js
+module.expotrs = {
+  // ...
+  resolve: {
+    alias: {
+      'utils': path.resolve(__dirname, 'src/utils'),
+    }
+  },
+  // ...
+}
+```
+
+##### alias
+
+创建 `import` 或 `require` 的别名，来确保模块引入变得更简单。
+
+```js
+// webpack.config.js
+module.expotrs = {
+  // ...
+  resolve: {
+    alias: {
+      'utils': path.resolve(__dirname, 'src/utils'),
+    }
+  },
+  // ...
+}
+```
+
+##### extensions
+
+试图按顺序解析这些后缀名。
+
+**Note:** 如果有多个文件有相同的名字，但后缀名不同，`webpack` 会解析列在数组首位的后缀的文件 并跳过其余的后缀。
+
+```js
+// webpack.config.js
+module.expotrs = {
+  // ...
+  resolve: {
+    extensions: ['.js', '.json']
+  },
+  // ...
+}
+```
+
+用户在引入模块时不带扩展,
+
+```js
+import File from '../path/to/file';
+```
+
+使用此选项会 **覆盖默认数组**，这就意味着 webpack 将不再尝试使用默认扩展来解析模块。
+
+##### modules
+
+告诉 `webpack` 解析模块时应该搜索的目录。
+
+```js
+// webpack.config.js
+module.expotrs = {
+  // ...
+  resolve: {
+    modules: ['node_modules']
+  },
+  // ...
+}
+```
 
 #### noParse
 
@@ -153,7 +437,58 @@ module.exports = {
 }
 ```
 
+### HardSourceWebpackPlugin
 
+`HardSourceWebpackPlugin` 为模块提供中间缓存，缓存默认的存放路径是: `node_modules/.cache/hard-source`。
+
+##### 安装
+
+```sh
+# npm
+npm install hard-source-webpack-plugin -D
+
+# yarn
+yarn add hard-source-webpack-plugin -D
+```
+
+##### 配置
+
+```js
+// webpack.config.js
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
+
+module.exports = {
+  // ...
+  plugins: [
+    new HardSourceWebpackPlugin({
+        // cacheDirectory是在高速缓存写入。默认情况下，将缓存存储在node_modules下的目录中，因此如 
+        // 果清除了node_modules，则缓存也是如此
+        cacheDirectory: 'node_modules/.cache/hard-source/[confighash]',
+        // Either an absolute path or relative to webpack's options.context.
+        // Sets webpack's recordsPath if not already set.
+        recordsPath: 'node_modules/.cache/hard-source/[confighash]/records.json',
+        // configHash在启动webpack实例时转换webpack配置，并用于cacheDirectory为不同的webpack配 
+        // 置构建不同的缓存
+        configHash: function(webpackConfig) {
+           // node-object-hash on npm can be used to build this.
+           return require('node-object-hash')({sort: false}).hash(webpackConfig);
+        },
+        // 当加载器，插件，其他构建时脚本或其他动态依赖项发生更改时，hard-source需要替换缓存以确保输 
+        // 出正确。environmentHash被用来确定这一点。如果散列与先前的构建不同，则将使用新的缓存
+        environmentHash: {
+           root: process.cwd(),
+           directories: [],
+           files: ['package-lock.json', 'yarn.lock'],
+        },
+    })
+  ],
+  // ...
+}
+```
+
+
+
+[hard-source-webpack-plugin](https://github.com/mzgoddard/hard-source-webpack-plugin)
 
 #### HappyPack
 
@@ -369,3 +704,4 @@ module.exports = {
 
 [Webpack](https://webpack.js.org/)
 
+[Webpack系列(优化篇)](https://juejin.im/post/6844904093463347208#heading-8)

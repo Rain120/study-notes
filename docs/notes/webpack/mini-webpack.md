@@ -12,6 +12,8 @@
 
 #### Webpack构建过程
 
+![webpack-process.png](./images/webpack-process.png)
+
 ![webpack-build.jpg](./images/webpack-build.jpg)
 
 1. **初始化参数**
@@ -54,5 +56,5 @@
 
 [从零实现一个 webpack - Ronen Amiel](https://www.bilibili.com/video/av53379967/)
 
-
+[webpack系列之三resolve](https://juejin.im/post/6844903779712630797)
 
