@@ -2,6 +2,10 @@
 
 函数和对其周围状态`(lexical environment，词法环境)`的引用捆绑在一起构成**闭包**`(closure)`。也就是说，**闭包可以让你从内部函数访问外部函数作用域。**在 `JavaScript` 中，每当函数被创建，就会在函数生成时生成闭包。
 
+#### 闭包产生的原因
+
+在 `ES5` 中只存在两种作用域: **全局作用域和函数作用域**，**当访问一个变量时，解释器会首先在当前作用域查找标示符，如果没有找到，就去父作用域找，直到找到该变量的标示符或者不在父作用域中，这就是作用域链**，值得注意的是，每一个子函数都会拷贝上级的作用域，形成一个作用域的链条, 当前环境中存在指向父级作用域的引用。
+
 #### 如何理解闭包？
 
 ##### 变量的作用域
@@ -56,4 +60,6 @@ console.log(name); // undefined
 [MDN Closures](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures)
 
 [JavaScript开发者应懂的33个概念  闭包](https://github.com/stephentian/33-js-concepts#8-闭包)
+
+[谈谈你对闭包的理解](https://juejin.im/post/6844903974378668039#heading-23)
 

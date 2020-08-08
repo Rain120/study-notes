@@ -19,6 +19,7 @@
 export function _new(...arg: any): any {
   // 1
   let obj: any = new Object();
+  // 获取构造函数
   let _constructor = Array.prototype.shift.call(arg);
   // 2
   obj.__proto__ = _constructor.prototype;
