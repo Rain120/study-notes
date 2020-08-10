@@ -23,10 +23,28 @@ Person.prototype.__proto__ === Object.prototype
 
 ```
 
-
-
 ![prototype-chain-all.jpg](./images/prototype-chain-all.jpg)
+
+#### 原型链查找问题
+
+```js
+function Person() {};
+Person.prototype.name = 'Rainy';
+
+const person = new Person();
+person.prototype.name = 'Rain120';
+
+console.log(Person.prototype.name); // undefiend
+console.log(person.prototype.name); // Rain120
+```
+
+**沿着原形链查找** 其实不是沿着 `prototype` 属性查找， 而是 `__proto__`
+
+`Person` 是个函数，只能算`Function`的实例, 只有 `Person` 的实例才能访问得到
+
+[javascript 给函数加了原型属性后，为什么用函数不能直接访问这个属性？代码如下： - Jim Liu的回答 - 知乎](https://www.zhihu.com/question/51820518/answer/127655677)
 
 #### 参考资料
 
 [MDN - 继承与原型链](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+

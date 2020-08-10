@@ -11,6 +11,19 @@
 #### 实现
 
 ```js
+function _instanceof(left, right) {
+  const rt = right.prototype;
+  let lt = left.__proto__;
+  while (true) {
+    if (lt === null) {
+      return false;
+    }
+    if (lt === rt) {
+      return true;
+    }
+    lt = lt.__proto__;
+  }
+}
 var Fun = function (name) {
    this.name = name;
 }
@@ -24,3 +37,4 @@ console.log(obj.__proto__ === Fun.prototype);
 #### 参考资料
 
 [instanceof](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/instanceof)
+

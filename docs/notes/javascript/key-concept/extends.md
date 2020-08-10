@@ -20,7 +20,7 @@ function Child () {
 
 #### 借助原型链实现继承
 
-原理：每个函数都有`prototype`属性(是个`Object`对象)，`prototype`是子类构造函数的属性，`Parent`的实例赋值给这个属性，即`new Child()._*proto*__ = Child.prototype = new Parent`
+原理：每个函数都有`prototype`属性(是个`Object`对象)，`prototype`是子类构造函数的属性，`Parent`的实例赋值给这个属性，即`new Child().__proto__ = Child.prototype = new Parent`
 
 ```js
 function Parent () {
@@ -125,3 +125,4 @@ console.log(c1.play, c2.play);
 ![extends-5.jpg](./images/extends-5.jpg)
 
 **总结: 完美解决上述所有的问题**
+

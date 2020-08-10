@@ -72,6 +72,7 @@
         - [React Hooks 基础学习](notes/react/hooks/base.md)
       - [React-Router](notes/react/router/guide.md)
         - [BrowserRouter和HashRouter的区别?](notes/react/router/router-diff-with-browser-and-hash.md)
+      - [React setState]((notes/react/setState.md))
     - [Vue](notes/vue/guide.md)
          - [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
          - [Vue之网易云音乐横向菜单滑动的实现](notes/vue/slide-menu/slide-menu.md)
