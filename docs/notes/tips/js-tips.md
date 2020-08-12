@@ -3,11 +3,17 @@
 ##### 原理: 监听`touchstart`到`touchend`的时间差
 
 ```javascript
+// https://codesandbox.io/s/interview-fy99q?file=/src/tap.tsx
 let imgs = document.querySelectorAll('img');
 let timeout = 0;
 this.longPress({
   ctx: imgs,
-  () => {}
+  () => {
+		// 解决点透问题 fastclick
+    setTimeout(() => {
+      console.log("解决点透问题");
+    }, 200);
+  }
 })
   
 export function longPress({
@@ -26,18 +32,18 @@ export function longPress({
       }, false);
       
       ctx[i].addEventListener('touchmove', e => {
-        e.preventDefault()
+        e.preventDefault();
         console.log('touchmove')
-        clearTimeout(this.imgTouchTimer)
-				timeout = 0;
-      }
+        clearTimeout(timeout);
+        timeout = 0;
+      }, false);
       
       ctx[i].addEventListener('touchend', e => {
         console.log('touchend')
-        clearTimeout(this.imgTouchTimer)
         if (timeout !== 0) {
           clickCallback && clickCallback();
         }
+        clearTimeout(timeout);
         return false;
       }, false);
     }
