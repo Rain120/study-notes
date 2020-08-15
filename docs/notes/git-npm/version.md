@@ -14,4 +14,5 @@
 
 #### 参考资料
 
-[软件版本周期]([https://zh.wikipedia.org/zh-cn/%E8%BB%9F%E4%BB%B6%E7%89%88%E6%9C%AC%E9%80%B1%E6%9C%9F](https://zh.wikipedia.org/zh-cn/軟件版本週期))
+[软件版本周期](https://zh.wikipedia.org/zh-cn/%E8%BB%9F%E4%BB%B6%E7%89%88%E6%9C%AC%E9%80%B1%E6%9C%9F)
+
