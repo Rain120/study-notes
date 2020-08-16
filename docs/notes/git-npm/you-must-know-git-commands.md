@@ -137,13 +137,22 @@ graph TD;
 
 `br1_c1_c1`: `br1_c1`的第一次提交
 
-<details>
-  <summary>如何区分`^`和`~`？</summary>
-  <br />
-  据上图示知，当前开发分支是`master`，即`HEAD`指向`master`, `c1`, `c2`, `c3`是`master`的三次父提交
-  <br />
-  `HEAD^ -> c1`，`HEAD^2 -> c2`，`HEAD^3 -> c3`, `HEAD~ -> c1`，`HEAD~2 -> c1_c1`
-</details>
+##### 如何区分`^`和`~`？
+
+据上图示知，当前开发分支是`master`，即`HEAD`指向`master`, `c1`, `c2`, `c3`是`master`的三次父提交
+
+- **^** 兄弟层级
+   - `HEAD^ -> br1_c1`
+
+   - `HEAD^2 -> br2_c2`
+
+   - `HEAD^3 -> br3_c3`
+
+- **~** 子层级
+
+   - `HEAD~ -> br1_c1`
+
+   - `HEAD~2 -> br1_c1_c1`
 
 
 

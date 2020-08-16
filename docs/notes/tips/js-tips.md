@@ -409,6 +409,8 @@ document.querySelectorAll('button')[0].onclick = getLength
 
 ##### 解决办法
 
+`slice change value`
+
 ```jsx
 class TextArea extends React.Component {
   handleChange = e => {
@@ -429,6 +431,26 @@ class TextArea extends React.Component {
   }
 }
 ```
+
+引发的问题
+
+- 复制，粘贴会丢失数据 `Eg: textarea maxlength` 10字符, 实际内容 20个字符，`slice`会截断，大量数据时用户并不会察觉到这个问题
+
+- 中文输入问题 Eg: maxlength 剩余2字符长度，但是我想输入 **生活**，于是我开始了, sheeeeeeeeeeeee ----> shit, 我 e 不出来啊，快让我e下，要死了，要死了，因为`onChange`的时候被`slice`截断了, 可以使用 `API onCompositionEnd` ， 这个`API` 只对中文生效 更多内容请到[Here](https://developer.mozilla.org/en-US/docs/Web/API/Element/compositionend_event)
+
+- 光标问题，`react` 在截断后的光标会默认跳到最后
+
+##### 解决办法
+
+给用户提示错报，而不是人为的截断，限制输入
+
+例如
+
+![textarea-tips.png](./images/textarea-tips.png)
+
+##### 其他方案
+
+`Word` 统计计数, 可以参考 [split-word](https://github.com/imcuttle/split-word)
 
 ##### 参考
 

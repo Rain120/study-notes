@@ -80,3 +80,4 @@ export const isIPhoneX = () => {
 ![caniuse-pattern](./images/caniuse-pattern.png)
 
 [caniuse - pattern](https://caniuse.com/#search=pattern)
+

@@ -76,3 +76,4 @@ function getMailtoUrl({ to, cc = [], bcc = [], subject = "", body = "" }) {
 - `Body`: 邮件内容
 
 `Note`:  多个邮件地址用`;`隔开
+

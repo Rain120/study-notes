@@ -1,4 +1,6 @@
-## Important [Typescript 指导书](https://rain120.github.io/typescript-guide/)
+## [Typescript 指导书](https://rain120.github.io/typescript-guide/)
+
+> 费时两个多月, 终于完成了 **Typescript指导书** `90%`的基础知识, 需要更多实践
 
 ### 未知Object类型
 

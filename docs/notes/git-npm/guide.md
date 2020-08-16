@@ -1,6 +1,4 @@
-### Git & Npm
-
-#### Git
+### Git
 
 - [Git 底层深入浅析 - 目录篇](notes/git-npm/git-base-analysis.md)
 - [Git Object 深入浅析](notes/git-npm/git-objects.md)
@@ -13,7 +11,7 @@
 - [GitHub 隐藏功能 - 个人首页](notes/git-npm/github-profile.md)
 - [GitHub 软件(包)版本问题](notes/git-npm/version.md)
 
-#### NPM
+### NPM
 
 - [Npm Scripts](notes/git-npm/npm-scripts.md)
 - [Npm 包发布笔记](notes/git-npm/npm-publish.md)
