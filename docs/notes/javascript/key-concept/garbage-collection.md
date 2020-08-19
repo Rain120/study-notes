@@ -2,6 +2,8 @@
 
 释放那些**不再继续使用的变量**所其占用的内存，**垃圾收集器`(GC)`**会按照固定的时间间隔周期性地执行这一操作。
 
+#### 可达性
+
 #### 参考资料
 
 [MDN 内存管理](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)

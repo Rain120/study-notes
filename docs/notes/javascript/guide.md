@@ -13,6 +13,7 @@
   - [Javascript 词法作用域链、函数作用域、块级作用域](notes/javascript/key-concept/scope-chain.md)
   - [Javascript Decorator (装饰器) 实现原理及其使用](notes/javascript/key-concept/decorator.md)
   - [Javascript 继承](notes/javascript/key-concept/extends.md)
+  - [Javascript 从输入URL 到显示页面](notes/javascript/key-concept/url-to-page.md)
   - [Javascript 垃圾回收](notes/javascript/key-concept/garbage-collection.md)
 - [console全家桶](notes/javascript/console/console-related-note.md)
 - [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
@@ -20,4 +21,5 @@
 - [Javascript正则表达式](notes/javascript/regular_expression/regular_expression.md)
 - [日常使用的正则表达式](notes/javascript/regular_expression/common_reg_exps.md)
 - [ECMAScript学习](notes/javascript/es-study/es-guide.md)
+  - [类的Static学习](notes/javascript/es-study/static.md)
 - [Javascript 学习资源](notes/javascript/resource.md)

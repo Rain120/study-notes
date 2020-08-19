@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2020-06-19 17:43:22
+ * @LastEditTime: 2020-08-15 17:52:30
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -42,6 +42,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
         - [Javascript 词法作用域链、函数作用域、块级作用域](notes/javascript/key-concept/scope-chain.md)
         - [Javascript Decorator (装饰器) 实现原理及其使用](notes/javascript/key-concept/decorator.md)
         - [Javascript 继承](notes/javascript/key-concept/extends.md)
+        - [Javascript 从输入URL 到显示页面](notes/javascript/key-concept/url-to-page.md)
         - [Javascript 垃圾回收](notes/javascript/key-concept/garbage-collection.md)
       - [console全家桶](notes/javascript/console/console-related-note.md)
       - [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
@@ -49,7 +50,10 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [Javascript正则表达式](notes/javascript/regular_expression/regular_expression.md)
       - [日常使用的正则表达式](notes/javascript/regular_expression/common_reg_exps.md)
       - [ECMAScript学习](notes/javascript/es-study/es-guide.md)
+        - [类的Static学习](notes/javascript/es-study/static.md)
       - [Javascript 学习资源](notes/javascript/resource.md)
+    - [HTTP](notes/http/guide.md)
+      - [HTTP 三次握手 四次挥手](notes/http/three-handshaking-four-wave.md)
     - [Typescript](notes/typescript/guide.md)
       - [Typescript 基础入门](notes/typescript/base.md)
       - [Typescript 问题 & 解释](notes/typescript/qa.md)
@@ -90,7 +94,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
         - [React Hooks 基础学习](notes/react/hooks/base.md)
       - [React-Router](notes/react/router/guide.md)
         - [BrowserRouter和HashRouter的区别?](notes/react/router/router-diff-with-browser-and-hash.md)
-      - [React setState]((notes/react/setState.md))
+      - [React setState](notes/react/setState.md)
     - [Vue](notes/vue/guide.md)
       - [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
       - [Vue之网易云音乐横向菜单滑动的实现](notes/vue/slide-menu/slide-menu.md)
@@ -120,9 +124,9 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [Docker CentOS下安装 Node](notes/docker/centos-node-install.md)
       - [Docker 学习](notes/docker/docker-command.md)
     - [Nginx](notes/nginx/guide.md)
-      - [Nginx笔记](notes/nginx/nginx/note.md)
+      - [Nginx笔记](notes/nginx/note.md)
     - [Git & Npm学习](notes/git-npm/guide.md)
-      - Git 相关
+      - [Git 相关](notes/git-npm/guide?id=git)
         - [Git 底层深入浅析 - 目录篇](notes/git-npm/git-base-analysis.md)
         - [Git Object 深入浅析](notes/git-npm/git-objects.md)
         - [你必须知道的Git命令](notes/git-npm/you-must-know-git-commands.md)
@@ -133,7 +137,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
         - [Git 分支的前世今生](notes/git-npm/git-branch-opinion.md)
         - [GitHub 隐藏功能 - 个人首页](notes/git-npm/github-profile.md)
         - [GitHub 软件(包)版本问题](notes/git-npm/version.md)
-      - Npm 相关
+      - [Npm 相关](notes/git-npm/guide?id=npm)
         - [Npm Scripts](notes/git-npm/npm-scripts.md)
         - [Npm 包发布笔记](notes/git-npm/npm-publish.md)
         - [Npm 知识储备](notes/git-npm/npm-knowledge-reserve.md)
