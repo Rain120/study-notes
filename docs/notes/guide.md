@@ -9,6 +9,8 @@
 - - [前端知识图谱](notes/knowledge-map/fe_knowledge_map.md)
 - [HTML](notes/html/guide.md)
 - [CSS](notes/css/guide.md)
+   - [flex](notes/css/flex.md)
+     - [flex grow & flex shrink & flex basis](notes/css/flex-grow-shrink-basis.md)
    - [CSS 学习资源](notes/css/resource.md)
 - [Javascript](notes/javascript/guide.md)
    - [JavaScript 核心概念](notes/javascript/key-concept/guide.md)

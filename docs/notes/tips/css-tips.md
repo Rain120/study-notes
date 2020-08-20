@@ -61,23 +61,19 @@
 
 ```css
 div {
-  min-width: 40rem;
-  max-width: 20rem;
-  width: 30rem;
+  min-width: 40px;
+  max-width: 20px;
+  width: 30px;
 }
 ```
 
-##### 答案: 30rem
+##### 答案: 40px
 
 <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
   <div style="margin-bottom: 10px;">
       <div style="border: 1px solid blue; padding: 5px;margin-bottom: 10px; height: 170px;">
         <h4>no min-width max-width</h4>
         width: 30px;
-        <br />
-        height: 50px;
-        <br />
-        background: red;
     </div>
     <div style="
       width: 30px;
@@ -90,14 +86,39 @@ div {
   </div>
   <div style="margin-bottom: 10px;">
       <div style="border: 1px solid blue; padding: 5px;margin-bottom: 10px; height: 170px;">
-        <h4>min-width</h4>
+        <h4>no width max-width</h4>
+        min-width: 30px;
+    </div>
+    <div style="
+      min-width: 30px;
+      height: 50px;
+      line-height: 50px;
+      background: red;
+      color: #fff;
+      text-align: center;
+    ">最小30, 没有最大限制</div>
+  </div><div style="margin-bottom: 10px;">
+      <div style="border: 1px solid blue; padding: 5px;margin-bottom: 10px; height: 170px;">
+        <h4>no min-width width</h4>
+        max-width: 30px;
+        <br />
+        最大30, 最小为0
+    </div>
+    <div style="
+      max-width: 30px;
+      height: 50px;
+      line-height: 50px;
+      background: red;
+      color: #fff;
+      text-align: center;
+    ">占位</div>
+  </div>
+  <div style="margin-bottom: 10px;">
+      <div style="border: 1px solid blue; padding: 5px;margin-bottom: 10px; height: 170px;">
+        <h4>width < min-width</h4>
         min-width: 40px;
         <br />
         width: 30px;
-        <br />
-        height: 50px;
-        <br />
-        background: red;
     </div>
     <div style="
       min-width: 40px;
@@ -111,14 +132,27 @@ div {
   </div>
   <div style="margin-bottom: 10px;">
       <div style="border: 1px solid blue; padding: 5px;margin-bottom: 10px; height: 170px;">
-        <h4>max-width</h4>
+        <h4>width > min-width</h4>
+        min-width: 30px;
+        <br />
+        width: 40px;
+    </div>
+    <div style="
+      min-width: 30px;
+      width: 40px;
+      height: 50px;
+      line-height: 50px;
+      background: red;
+      color: #fff;
+      text-align: center;
+    ">40</div>
+  </div>
+  <div style="margin-bottom: 10px;">
+      <div style="border: 1px solid blue; padding: 5px;margin-bottom: 10px; height: 170px;">
+        <h4>max-width < width</h4>
         max-width: 20px;
         <br />
         width: 30px;
-        <br />
-        height: 50px;
-        <br />
-        background: red;
     </div>
     <div style="
       max-width: 20px;
@@ -132,16 +166,29 @@ div {
   </div>
   <div style="margin-bottom: 10px;">
       <div style="border: 1px solid blue; padding: 5px;margin-bottom: 10px; height: 170px;">
-        <h4>width & min-width & max-width</h4>
-        max-width: 20px;
+        <h4>max-width > width</h4>
+        max-width: 30px;
         <br />
-        min-width: 40px;
+        width: 20px;
+    </div>
+    <div style="
+      max-width: 30px;
+      width: 20px;
+      height: 50px;
+      line-height: 50px;
+      background: red;
+      color: #fff;
+      text-align: center;
+    ">20</div>
+  </div>
+  <div style="margin-bottom: 10px;">
+      <div style="border: 1px solid blue; padding: 5px;margin-bottom: 10px; height: 170px;">
+        <h4>max-width < width < min-width</h4>
+        max-width: 20px;
         <br />
         width: 30px;
         <br />
-        height: 50px;
-        <br />
-        background: red;
+        min-width: 40px;
     </div>
     <div style="
       max-width: 20px;
@@ -157,15 +204,11 @@ div {
   <div style="margin-bottom: 10px;">
       <div style="border: 1px solid blue; padding: 5px;margin-bottom: 10px; height: 170px;">
         <h4>min-width < width < max-width</h4>
-        max-width: 20px;
-        <br />
-        min-width: 40px;
+        min-width: 20px;
         <br />
         width: 30px;
         <br />
-        height: 50px;
-        <br />
-        background: red;
+        max-width: 40px;
     </div>
     <div style="
       max-width: 40px;
@@ -178,6 +221,26 @@ div {
       text-align: center;
     ">30</div>
   </div>
+  <div style="margin-bottom: 10px;">
+      <div style="border: 1px solid blue; padding: 5px;margin-bottom: 10px; height: 170px;">
+        <h4>width < max-width < min-width</h4>
+        width: 20px;
+        <br />
+        max-width: 30px;
+        <br />
+        min-width: 40px;
+    </div>
+    <div style="
+      max-width: 30px;
+      min-width: 40px;
+      width: 20px;
+      height: 50px;
+      line-height: 50px;
+      background: red;
+      color: #fff;
+      text-align: center;
+    ">40</div>
+  </div>
 </div>
 
 
@@ -189,6 +252,8 @@ div {
 1. `no min-width, max-width -> width`
 2. `width < min-width -> min-width`
 3. `width > max-width -> max-width`
+
+`height` 跟 `width` 处理逻辑一致
 
 
 
