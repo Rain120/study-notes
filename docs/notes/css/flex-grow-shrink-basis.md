@@ -2,7 +2,7 @@
 
 #### flex-grow
 
-
+**flex-grow** 设置了一个 `flex` 项[主尺寸](https://www.w3.org/TR/css-flexbox/#main-size)的 `flex` 增长系数。它指定了 `flex` 容器中 **剩余空间** 的多少应该分配给项目 `(flex增长系数)`。
 
 #### flex-shrink
 
