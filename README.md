@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2020-08-15 17:52:30
+ * @LastEditTime: 2020-08-22 19:24:21
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -25,8 +25,9 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
 - [学习笔记](notes/guide.md)
     - [HTML](notes/html/guide.md)
     - [CSS](notes/css/guide.md)
-      - [flex](notes/css/flex.md)
-        - [flex grow & flex shrink & flex basis](notes/css/flex-grow-shrink-basis.md)
+      - [Flex](notes/css/flex.md)
+        - [Flex 容器属性](notes/css/flex-container-properties.md)
+        - [Flex 项目属性](notes/css/flex-item-properties.md)
       - [CSS 学习资源](notes/css/resource.md)
     - [Javascript](notes/javascript/guide.md)
       - [JavaScript 核心概念](notes/javascript/key-concept/guide.md)

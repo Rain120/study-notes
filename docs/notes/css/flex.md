@@ -1,6 +1,14 @@
-#### flex 属性
+#### Flex 布局
 
-[flex grow & flex shrink & flex basis](notes/css/flex-grow-shrink-basis.md)
+
+
+#### Flex 容器属性
+
+[Flex 容器属性](notes/css/flex-container-properties.md)
+
+#### Flex 项目属性
+
+[Flex 项目属性](notes/css/flex-item-properties.md)
 
 #### 参考资料
 
@@ -9,3 +17,4 @@
 [送小青蛙回家 - Flex 篇目](https://flexboxfroggy.com/#zh-cn)
 
 [Flex - MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex)
+
