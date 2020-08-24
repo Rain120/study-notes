@@ -1,6 +1,84 @@
 #### flex-grow
 
+**Note:** 默认是 **0** 。
+
 **flex-grow** 设置了一个 `flex` 项[主尺寸](https://www.w3.org/TR/css-flexbox/#main-size)的 `flex` 增长系数。它指定了 `flex` 容器中 **剩余空间** 的多少应该分配给项目 `(flex增长系数)`。
+
+##### 不设置flex-grow
+
+<div style="
+  margin: 10px;
+  display: flex;
+  width: 500px;
+  height: 200px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border: 1px solid red;
+  box-sizing: content-box;
+">
+    <div style="
+  width: 100px;
+  background-color: #e84242;
+">
+      <p>width 100</p>
+    </div>
+    <div style="
+  width: 200px;
+  background-color: #44ff76;
+">
+      <p>width 200</p>
+    </div>
+    <div style="
+  width: 100px;
+  background-color: #61dafb;
+">
+      <p>width 100</p>
+    </div>
+</div>
+
+##### 设置flex-grow
+
+<div style="
+  margin: 10px;
+  display: flex;
+  width: 500px;
+  height: 200px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border: 1px solid red;
+  box-sizing: content-box;
+">
+    <div style="
+  width: 100px;
+  flex-grow: 2;
+  background-color: #e84242;
+">
+      <p>width 100</p>
+      <p>flex-grow: 2</p>
+    </div>
+    <div style="
+  width: 200px;
+  flex-grow: 1;
+  background-color: #44ff76;
+">
+      <p>width 200</p>
+      <p>flex-grow: 1</p>
+    </div>
+    <div style="
+  width: 100px;
+  flex-grow: 1;
+  background-color: #61dafb;
+">
+      <p>width 100</p>
+      <p>flex-grow: 1</p>
+    </div>
+</div>
+
+如何计算`flex-grow` 要占多少空间呢？
+
+从上面例子来看剩余内容 `(rest_content = 100)`, `sum(flew-grow) = 2 + 1 + 1`，所以每一块区域内容会根据剩余内容的宽度拓展宽度为 `100 / 4 * flex-grow`，即 `50`, `25`, `25`。
 
 
 
