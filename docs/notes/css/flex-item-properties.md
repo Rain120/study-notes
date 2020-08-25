@@ -37,6 +37,8 @@
     </div>
 </div>
 
+
+
 ##### 设置flex-grow
 
 <div style="
@@ -86,7 +88,73 @@
 
 **flex-shrink** 属性指定了 `flex` 元素的收缩规则。`flex` 元素仅在默认宽度之和大于容器的时候才会发生收缩，其收缩的大小是依据 `flex-shrink` 的值
 
+##### 不设置flex-shrink
 
+<div style="
+  margin: 10px;
+  display: flex;
+  width: 500px;
+  height: 200px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border: 1px solid red;
+  box-sizing: content-box;
+">
+    <div style="
+  width: 300px;
+  background-color: #e84242;
+">
+      <p>width 300</p>
+    </div>
+    <div style="
+  width: 200px;
+  background-color: #44ff76;
+">
+      <p>width 200</p>
+    </div>
+    <div style="
+  width: 100px;
+  background-color: #61dafb;
+">
+      <p>width 100</p>
+    </div>
+</div>
+
+从图上得知, 最右边的 `width` 被压缩了，我们
+
+##### 设置flex-shrink
+
+<div style="
+  margin: 10px;
+  display: flex;
+  width: 500px;
+  height: 200px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border: 1px solid red;
+  box-sizing: content-box;
+">
+    <div style="
+  width: 300px;
+  background-color: #e84242;
+">
+      <p>width 300</p>
+    </div>
+    <div style="
+  width: 200px;
+  background-color: #44ff76;
+">
+      <p>width 200</p>
+    </div>
+    <div style="
+  width: 100px;
+  background-color: #61dafb;
+">
+      <p>width 100</p>
+    </div>
+</div>
 
 #### flex-basis
 
