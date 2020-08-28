@@ -207,3 +207,4 @@ div {
 
 - `min-width < width < max-width -> width`
 
+![width-height-properties.png](./images/width-height-properties.png)
