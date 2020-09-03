@@ -18,6 +18,8 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
 
 <!-- 学习笔记 -->
 
+- [我的四象限](notes/plans.md)
+
 - [知识图谱](knowledge-map/guide.md)
   
 - [前端知识图谱](knowledge-map/fe_knowledge_map.md)
