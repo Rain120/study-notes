@@ -1,5 +1,7 @@
 <!-- 学习笔记 -->
 
+- [我的四象限](notes/plans.md)
+
 - [知识图谱](knowledge-map/guide.md)
 - [前端知识](knowledge-map/guide.md)
   - [图谱](knowledge-map/fe_knowledge_map.md)

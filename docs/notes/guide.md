@@ -6,7 +6,7 @@
 
 !> [How to Usage](https://github.com/Rain120/study-notes/tree/note-template)
 
-- [我的四象限](./plans.md)
+- [我的四象限](notes/plans.md)
 
 - [前端知识图谱](notes/knowledge-map/fe_knowledge_map.md)
 - [HTML](notes/html/guide.md)
