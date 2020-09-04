@@ -1,9 +1,7 @@
+- [百度-企业智能平台部(北京)-信息化管理方向 高级/资深前端开发工程师](https://juejin.im/pin/6868560019175505934)
 - [Typescript 指导书](https://rain120.github.io/typescript-guide/)
-
 - [JavaScript 源码实现](https://rain120.github.io/awesome-javascript-code-implementation/)
-
 - [2020年 年中总结](https://github.com/Rain120/Web-Study/issues/13)
-
 - 年度总结
 
   - [2020年 年中总结](https://github.com/Rain120/Web-Study/issues/13)
@@ -15,3 +13,4 @@
   - English
   - Spanish
   - French -->
+
