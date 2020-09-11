@@ -32,6 +32,8 @@ sudo spctl --master-enable
 
 [Homebrew国内如何自动安装（国内地址）](https://zhuanlan.zhihu.com/p/111014448)
 
+[Gitee 地址](https://gitee.com/cunkai/HomebrewCN)
+
 #### Alfred
 
 [下载地址](https://github.com/Rain120/Free-Source/blob/master/Mac%20Tools/Alfred_4.0.1%20b1078-EN.dmg)
