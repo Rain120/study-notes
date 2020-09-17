@@ -19,6 +19,7 @@
   - [Logo生成](resources/website?id=Logo生成)
   - [在线代码编辑器](resources/website?id=在线代码编辑器)
   - [图片相关](resources/website?id=图片相关)
+  - [AI图片无损放大](resources/website?id=AI图片无损放大)
   - [图片压缩](resources/website?id=图片压缩)
   - [文件相关](resources/website?id=文件相关)
   - [office相关](resources/website?id=office相关)
@@ -311,6 +312,34 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 ![carbon](./wf/carbon.png)
 
 [codeimg](https://codeimg.io/): 源代码生成图片工具
+
+##### AI图片无损放大
+
+使用最新人工智能深度学习技术——深度卷积神经网络。它会将噪点和锯齿的部分进行补充，实现图片的无损放大。
+
+[letsenhance](https://letsenhance.io/)
+
+注册可免费5张
+
+[bigjpg](https://bigjpg.com/zh)
+
+一款`AI`人工智能图片放大工具，它使用深度学习将图片中的噪点和锯齿进行补充，从而实现图片的修复和无损放大
+
+[waifu2x](http://waifu2x.udp.jp/)
+
+一个开源的图片放大工具，它使用卷积神经网络对动漫风格的图片和照片进行放大操作，支持网络图像和本地上传，最大可以支持到2倍放大，如果你对人工智能图片放大感兴趣，[Github](https://github.com/nagadomi/waifu2x)
+
+[Smart upscaler](https://icons8.com/upscaler)
+
+是由icons8推出的一款免费AI图片放大工具，它使用人工智能来放大和增强照片画质，让图片更加清晰。Smart upscaler 使用非常简单，无需注册，只要上传图片就能自动放大，并且会在网页上显示实时效果图，支持图形和照片类型图像，支持放到2倍到4倍，如果你希望照片放大的同时变得更加清晰，`Smart upscaler` 是一个非常好的选择
+
+[pixfix](https://pixfix.com/)
+
+ 一款图片修复工具，它使用算法清理图片中的噪点和因压缩造成的图片损坏，上传图片后，你可以调节修复强度，并且实时预览图片的效果，直到满意后再下载图片
+
+[UPSCALE PICS](https://upscalepics.com/)
+
+一款照片放大工具，它使用AI算法来增强照片，可以在不降低画质的情况下放大图片，并图片增加更多细节，最大可以支持到8倍放大，`UPSCALE PICS` 目前还在测试中，需要注册后才能使用
 
 ##### 图片压缩
 
