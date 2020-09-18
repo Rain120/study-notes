@@ -31,13 +31,13 @@
 
 [obagg](http://od.obagg.com/)
 
-[my365](http://my365.tw/)
+~~[my365](http://my365.tw/)~~
 
 [odmail](http://t.odmail.cn/)
 
-[office365vip](http://od.office365vip.cn/)
+~~[office365vip](http://od.office365vip.cn/)~~
 
-[xkx](http://xkx.me/)
+[xkx](http://xkx.me/): 这好用
 
 [chacuo.net](http://24mail.chacuo.net/zhtw)
 
