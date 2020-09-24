@@ -75,15 +75,15 @@
 
 [visitorsms](https://www.visitorsms.com/)
 
-[sms24](https://sms24.me/)
+~~[sms24](https://sms24.me/)~~
 
-[becmd](https://www.becmd.com/)
+~~[becmd](https://www.becmd.com/)~~
 
 [114sim](http://www.114sim.com/)
 
-[jmapingtai](http://jmapingtai.com/)
+~~[jmapingtai](http://jmapingtai.com/)~~
 
-[mianfeijiema](https://mianfeijiema.com/)
+~~[mianfeijiema](https://mianfeijiema.com/)~~
 
 [free-receive-sms](https://www.imtqy.com/free-receive-sms.html)
 
