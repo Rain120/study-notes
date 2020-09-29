@@ -19,11 +19,10 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
 <!-- 学习笔记 -->
 
 - [我的四象限](notes/plans.md)
-
 - [知识图谱](knowledge-map/guide.md)
-  
 - [前端知识图谱](knowledge-map/fe_knowledge_map.md)
-  
+  - [前端工程师学习路径](knowledge-map/feer.md)
+  - [一目了然的代码注释和技巧](knowledge-map/code-annotation.md)
 - [学习笔记](notes/guide.md)
     - [HTML](notes/html/guide.md)
     - [CSS](notes/css/guide.md)
