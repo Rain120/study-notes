@@ -487,4 +487,4 @@ linux: ctrl + meta + t
 
 [代码整洁之道 - 第 4 章 注释](http://gdut_yy.gitee.io/doc-cleancode/ch4.html)
 
-[代码大全 19.4 有效注释的关键](knowledge-map/code-complete.pdf)
+[代码大全 19.4 有效注释的关键](https://github.com/Rain120/study-notes/blob/master/docs/knowledge-map/code-complete.pdf)
