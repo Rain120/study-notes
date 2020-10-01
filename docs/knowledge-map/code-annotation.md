@@ -8,7 +8,6 @@
 
 > Clean code should read like well-written prose. — Robert C. Martin(罗伯特·塞西尔·马丁)
 >
-> — Robert C. Martin(罗伯特·塞西尔·马丁)
 
 著名诗人**雷某**也说
 
