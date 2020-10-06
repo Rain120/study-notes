@@ -137,4 +137,24 @@ youtube-dl -f [code] [url]
 3. [网易见外工作台转换字幕](https://jianwai.netease.com/)
 
    支持每日 2 小时免费体验，它支持的黑科技实用功能包括：视频翻译、视频转写、字幕翻译、文档翻译、语音翻译、语音转写、会议同传、图片翻译，每个功能都是非常实用
+   
+4. [downsub](https://downsub.com/)
+
+   `DownSub`是免费的网络应用程序，可以直接从`Youtube`, `VIU`, `Viki`, `Vlive` 等下载字幕。我们支持下载所有字幕格式。
+
+5. [savesubs](https://savesubs.com/zh)
+
+   `SaveSubs`允许您从许多网站下载字幕，其中包括`Youtube`，`Dailymotion`，`Facebook`，Viki等等。我们不允许用户下载或安装任何类型的扩展程序或第三方软件，我们提供了一种在线方法来下载字幕（即只需粘贴视频`URL`并让我们处理其他所有内容）。 `SaveSubs`是一个免费的`Web`应用程序（并且将永远是），可以直接下载和保存字幕。
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
 
