@@ -68,7 +68,7 @@
     "terminal.integrated.fontSize": 14,
     "files.autoSave": "onWindowChange",
     "fileheader.customMade": {
-        "Author": "Rainy",
+        "Author": "Rainy [https://github.com/rain120]",
         "Date": "Do not edit",
         "LastEditors": "Rainy",
         "LastEditTime": "Do not edit",
@@ -83,13 +83,33 @@
     },
     "javascript.implicitProjectConfig.experimentalDecorators": true,
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
+    // 解决 code helper 吃进程问题
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        // "**/tmp": true,
+        // "**/node_modules": true,
+        "**/bower_components": true,
+        // "**/dist": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/tmp/**": true,
+        "**/bower_components/**": true,
+        "**/dist/**": true
+    },
     "search.exclude": {
         "!/system/**/*.ps*": true,
-        // "**/node_modules": false,
-        // "node_modules": false,
+        "**/node_modules": false,
         "system/": true
     },
+    "search.useIgnoreFiles": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "tslint.autoFixOnSave": true,
     "diffEditor.ignoreTrimWhitespace": false,
@@ -101,20 +121,22 @@
 
     // TODO Tree Setting
     // "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
+    "todo-tree.tree.autoRefresh": true,
     "todo-tree.general.tags": [
         "TODO:",
-        "FIXME:",
+        "HOTFIX:",
+        "BUGFIX",
         "DONE:",
         "NOTE:",
         "INFO:",
         "LINK_TO",
         "TAG",
-        "BUG",
         "N.B.",
         "HACK",
     ],
     "todo-tree.highlights.defaultHighlight": {
-        "gutterIcon": true
+        "gutterIcon": true,
+        // "type": "text-and-comment"
     },
     // LINK_TO: https://primer.style/octicons/
     "todo-tree.highlights.customHighlight": {
@@ -123,7 +145,7 @@
             "background": "#ffbd2a",
             "iconColour": "#ffbd2a"
         },
-        "FIXME:": {
+        "HOTFIX:": {
             "foreground": "#fff",
             "background": "#f06292",
             "icon": "flame",
@@ -161,7 +183,7 @@
             "iconColour": "#03A9F4",
             "rulerLane": "full"
         },
-        "BUG": {
+        "BUGFIX": {
             "foreground": "#fff",
             "background": "#ee3c2c",
             "icon": "bug",
@@ -217,8 +239,6 @@
      "[json]": {
          "editor.defaultFormatter": "esbenp.prettier-vscode"
      },
-     "window.zoomLevel": 0,
-     "diffEditor.ignoreTrimWhitespace": false,
      "[jsonc]": {
          "editor.defaultFormatter": "esbenp.prettier-vscode"
      },
@@ -231,7 +251,8 @@
     "tabnine.experimentalAutoImports": true,
     "search.actionsPosition": "right",
     "cSpell.userWords": [
-        "Mobx"
+        "Mobx",
+        "customizer"
     ],
     "leetcode.endpoint": "leetcode-cn",
     "leetcode.workspaceFolder": "",

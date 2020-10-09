@@ -56,11 +56,32 @@ $ > settings
     },
     "javascript.implicitProjectConfig.experimentalDecorators": true,
     "window.zoomLevel": 0,
+    // 解决 code helper 吃进程问题
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        // "**/tmp": true,
+        // "**/node_modules": true,
+        "**/bower_components": true,
+        // "**/dist": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/tmp/**": true,
+        "**/bower_components/**": true,
+        "**/dist/**": true
+    },
     "search.exclude": {
         "!/system/**/*.ps*": true,
-        "node_modules": false,
+        "**/node_modules": false,
         "system/": true
     },
+    "search.useIgnoreFiles": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "tslint.autoFixOnSave": true
 }
@@ -117,11 +138,32 @@ $ > settings
 
   ```json
   {
+      // 解决 code helper 吃进程问题
+      "files.exclude": {
+          "**/.git": true,
+          "**/.svn": true,
+          "**/.hg": true,
+          "**/CVS": true,
+          "**/.DS_Store": true,
+          // "**/tmp": true,
+          // "**/node_modules": true,
+          "**/bower_components": true,
+          // "**/dist": true
+      },
+      "files.watcherExclude": {
+          "**/.git/objects/**": true,
+          "**/.git/subtree-cache/**": true,
+          "**/node_modules/**": true,
+          "**/tmp/**": true,
+          "**/bower_components/**": true,
+          "**/dist/**": true
+      },
       "search.exclude": {
           "!/system/**/*.ps*": true,
-          "node_modules": false,
+          "**/node_modules": false,
           "system/": true
-      }
+      },
+      "search.useIgnoreFiles": false,
   }
   ```
 
