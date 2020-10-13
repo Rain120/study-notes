@@ -16,7 +16,7 @@
 
 #### Node.js
 
-[Nodejs学习](notes/knowledge-map/fe/nodejs.md)
+[Nodejs 学习](notes/knowledge-map/fe/nodejs.md)
 
 #### 框架学习
 
@@ -29,4 +29,8 @@
 [从入门到深入：IM聊天系统前端开发实践](https://www.yuque.com/matrix/gdn7nq)
 
 [前端早早聊大会](https://www.yuque.com/zaotalk/posts)
+
+#### 数学学习
+
+[数学](notes/knowledge-map/fe/math.md)
 
