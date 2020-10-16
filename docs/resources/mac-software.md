@@ -52,7 +52,7 @@ sudo spctl --master-enable
 
 ![reposition.gif](./sw/reposition.gif)
 
-#### [Karabiner-Elements](https://pqrs.org/osx/karabiner/document.html) 
+#### [Karabiner-Elements](https://karabiner-elements.pqrs.org/docs/) 
 
 [下载地址](https://github.com/Rain120/Free-Source/blob/master/Mac%20Tools/Karabiner-Elements-12.6.0.dmg)
 
@@ -60,9 +60,12 @@ sudo spctl --master-enable
 
 [官方拔插式配置](https://pqrs.org/osx/karabiner/complex_modifications/)
 
-```
-修改~/.config/karabiner/karabiner.json
-caps_lock -> right_command
+`import` [这个](https://ke-complex-modifications.pqrs.org/?q=change%20caps_lock) 插件，`enable F19`.
+
+```sh
+vi ~/.config/karabiner/karabiner.json
+
+# from.key_code: caps_lock -> right_command
 ```
 
 ![karabiner-elements](./sw/karabiner-elements.png)

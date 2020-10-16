@@ -653,9 +653,19 @@ module.exports = {
 
 ##### 作用
 
-用于移除 `JavaScript`上下文中未引用的代码`(dead-code)`。它只支持`ES2015(ES6)`模块语法的静态结构特性，例如`import` `export`。
+用于移除 `JavaScript`上下文中未引用的代码`(dead-code)`又称 `DCE`。它只支持`ES2015(ES6)`模块语法的静态结构特性，例如`import` `export`。
+
+`DCE` 一般具有以下几个特征
+
+- 代码不会被执行，不可到达
+
+- 代码执行的结果不会被用到
+
+- 代码只会影响死变量 `(只写不读)`
 
 ##### 使用
+
+`production` 默认开启 `tree-shaking`。
 
 ```javascript
 // webpack.config.js
@@ -690,6 +700,12 @@ module.exports = {
 }
 ```
 
+`or` `js`代码区域:
+
+```js
+/*#__PURE__*/ double(55);
+```
+
 #### `sideEffects VS useExports`
 
 `sideEffects`更为有效，因为它允许跳过整个模块或者文件和整个文件子树。
@@ -705,3 +721,4 @@ module.exports = {
 [Webpack](https://webpack.js.org/)
 
 [Webpack系列(优化篇)](https://juejin.im/post/6844904093463347208#heading-8)
+
