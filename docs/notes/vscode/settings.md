@@ -27,7 +27,7 @@
         // 快速选择颜色分组标签。
         // "pickerGroup.foreground": "#F44336",
         // 活动选项卡底部的边框。选项卡是编辑器区域中编辑器的容器。可以在一个编辑器组中打开多个选项卡。可以有多个编辑器组。
-        "tab.activeBorder": "#F44336",
+        "tab.activeBorder": "#F44336"
         // 通知链接前景颜色。通知从窗口的右下角滑入。
         // "notificationLink.foreground": "#F44336",
         // 编辑器小部件的调整大小栏的边框颜色。只有当小部件选择具有调整大小的边框，并且该颜色没有被小部件覆盖时，才使用该颜色。
@@ -53,17 +53,17 @@
     },
     "editor.tokenColorCustomizations": {
         // 注释
-        // "comments": "#9f9fa1", 
+        // "comments": "#9f9fa1",
         // 变量名
         // "variables": "#05e3f3",
         // 函数名
-        // "functions": "#0771fc", 
+        // "functions": "#0771fc",
         // 数字
         // "numbers": "#AE81FF",
         // 关键字
         // "keywords": "#0a0",
         // 字符串
-        // "strings": "#e2d75dbd", 
+        // "strings": "#e2d75dbd",
     },
     "terminal.integrated.fontSize": 14,
     "files.autoSave": "onWindowChange",
@@ -71,10 +71,10 @@
         "Author": "Rainy [https://github.com/rain120]",
         "Date": "Do not edit",
         "LastEditors": "Rainy",
-        "LastEditTime": "Do not edit",
+        "LastEditTime": "Do not edit"
     },
     "fileheader.configObj": {
-        "autoAdd": false,
+        "autoAdd": false
     },
     "workbench.iconTheme": "vscode-icons",
     "javascript.updateImportsOnFileMove.enabled": "always",
@@ -93,7 +93,7 @@
         "**/.DS_Store": true,
         // "**/tmp": true,
         // "**/node_modules": true,
-        "**/bower_components": true,
+        "**/bower_components": true
         // "**/dist": true
     },
     "files.watcherExclude": {
@@ -132,10 +132,10 @@
         "LINK_TO",
         "TAG",
         "N.B.",
-        "HACK",
+        "HACK"
     ],
     "todo-tree.highlights.defaultHighlight": {
-        "gutterIcon": true,
+        "gutterIcon": true
         // "type": "text-and-comment"
     },
     // LINK_TO: https://primer.style/octicons/
@@ -155,7 +155,7 @@
             "background": "#2BBE4E",
             "icon": "issue-closed",
             "rulerColour": "#2BBE4E",
-            "iconColour": "#2BBE4E",
+            "iconColour": "#2BBE4E"
         },
         "INFO:": {
             "foreground": "#fff",
@@ -206,42 +206,40 @@
             "rulerColour": "#cb2431",
             "iconColour": "#cb2431",
             "rulerLane": "full"
-        },
+        }
     },
-    
+
     // "editor.formatOnSave": true,
-    // "eslint.autoFixOnSave": true,
+    "eslint.autoFixOnSave": true,
     /*  prettier的配置 */
     // "prettier.jsxSingleQuote": true,
-     "prettier.useEditorConfig": false, // 忽略.editorconfig
-     "prettier.printWidth": 100, // 超过最大值换行
-     "prettier.tabWidth": 4, // 缩进字节数
+    "prettier.useEditorConfig": false, // 忽略.editorconfig
+    "prettier.printWidth": 100, // 超过最大值换行
+    "prettier.tabWidth": 4, // 缩进字节数
     //  "prettier.tabWidth": 2, // 缩进字节数
-     "prettier.useTabs": false, // 缩进不使用tab，使用空格
-     "prettier.semi": true, // 句尾添加分号
-     "prettier.singleQuote": true, // 使用单引号代替双引号
-     "prettier.proseWrap": "preserve", // 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行
-     "prettier.arrowParens": "avoid", //  (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
-     "prettier.bracketSpacing": false, // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
-     "prettier.disableLanguages": [
-         "vue"
-     ], // 不格式化vue文件，vue文件的格式化单独设置
-     "prettier.endOfLine": "auto", // 结尾是 \n \r \n\r auto
-     // "prettier.eslintIntegration": false, //不让prettier使用eslint的代码格式进行校验
-     "prettier.htmlWhitespaceSensitivity": "ignore",
-     "prettier.ignorePath": ".prettierignore", // 不使用prettier格式化的文件填写在项目的.prettierignore文件中
-     "prettier.jsxBracketSameLine": false, // 在jsx中把'>' 是否单独放一行
-     "prettier.jsxSingleQuote": true, // 在jsx中使用单引号代替双引号
-     // "prettier.parser": "babylon", // 格式化的解析器，默认是babylon
-     "prettier.requireConfig": false, // Require a 'prettierconfig' to format prettier
-     // "prettier.stylelintIntegration": false, //不让prettier使用stylelint的代码格式进行校验
-     "prettier.trailingComma": "none", // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
-     "[json]": {
-         "editor.defaultFormatter": "esbenp.prettier-vscode"
-     },
-     "[jsonc]": {
-         "editor.defaultFormatter": "esbenp.prettier-vscode"
-     },
+    "prettier.useTabs": false, // 缩进不使用tab，使用空格
+    "prettier.semi": true, // 句尾添加分号
+    "prettier.singleQuote": true, // 使用单引号代替双引号
+    "prettier.proseWrap": "preserve", // 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行
+    "prettier.arrowParens": "avoid", //  (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
+    "prettier.bracketSpacing": false, // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
+    "prettier.disableLanguages": ["vue"], // 不格式化vue文件，vue文件的格式化单独设置
+    "prettier.endOfLine": "auto", // 结尾是 \n \r \n\r auto
+    // "prettier.eslintIntegration": false, //不让prettier使用eslint的代码格式进行校验
+    "prettier.htmlWhitespaceSensitivity": "ignore",
+    "prettier.ignorePath": ".prettierignore", // 不使用prettier格式化的文件填写在项目的.prettierignore文件中
+    "prettier.jsxBracketSameLine": false, // 在jsx中把'>' 是否单独放一行
+    "prettier.jsxSingleQuote": true, // 在jsx中使用单引号代替双引号
+    // "prettier.parser": "babylon", // 格式化的解析器，默认是babylon
+    "prettier.requireConfig": false, // Require a 'prettierconfig' to format prettier
+    // "prettier.stylelintIntegration": false, //不让prettier使用stylelint的代码格式进行校验
+    // "prettier.trailingComma": "none", // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "git.autofetch": true,
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -250,10 +248,7 @@
     "timeline.pageSize": 0,
     "tabnine.experimentalAutoImports": true,
     "search.actionsPosition": "right",
-    "cSpell.userWords": [
-        "Mobx",
-        "customizer"
-    ],
+    "cSpell.userWords": ["Mobx", "customizer"],
     "leetcode.endpoint": "leetcode-cn",
     "leetcode.workspaceFolder": "",
     "leetcode.defaultLanguage": "javascript",
@@ -281,6 +276,10 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
+
 ```
 
