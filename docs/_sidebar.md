@@ -144,6 +144,8 @@
       - [VS Code 插件](notes/vscode/extensions.md)
       - [VS Code 别名提示配置](notes/vscode/alias.md)
       - [VS Code 配置](notes/vscode/settings.md)
+    - [Iterm2 相关](notes/iterm2/guide.md)
+      - [Iterm2 & oh my zsh 配置终端环境](notes/iterm2/iterm2+zsh.md)
     - [前端开发 Debugger相关](notes/debugger/guide.md)
       - [Mac 如何使用其他环境的浏览器](notes/debugger/mac-how-to-use-other-env-browsers.md)
       - [浏览器的用户代理字符串(User Agent)](notes/debugger/browser-user-agent.md)

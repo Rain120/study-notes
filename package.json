@@ -25,6 +25,10 @@
   },
   "homepage": "https://github.com/Rain120/study-notes#readme",
   "devDependencies": {
-    "docsify": "^4.10.2"
+    "docsify": "^4.11.6"
+  },
+  "dependencies": {
+    "docsify-cli": "^4.4.1",
+    "g": "^2.0.1"
   }
 }
