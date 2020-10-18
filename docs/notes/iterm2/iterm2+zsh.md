@@ -30,6 +30,16 @@ chsh -s /bin/bash
 
 [stackoverfloe QA](https://stackoverflow.com/questions/6205157/iterm-2-how-to-set-keyboard-shortcuts-to-jump-to-beginning-end-of-line)
 
+##### Vim 鼠标滚动
+
+`preferences -> Advanced -> Mouse -> scroll(up / down)`
+
+- `down -> \j`
+
+- `up -> \k`
+
+![vim-mouse-scroll.png](./images/vim-mouse-scroll.png)
+
 #### 安装 oh my zsh
 
 ```sh

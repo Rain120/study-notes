@@ -90,6 +90,8 @@ vi ~/.config/karabiner/karabiner.json
 
 `Mac`的`terminal`工具
 
+[Iterm2 & oh my zsh 配置终端环境](notes/iterm2/iterm2+zsh.md)
+
 #### [Sourcetree](https://www.sourcetreeapp.com/)
 
 `git`版本管理工具,支持`git-flow`,`UI`简洁
@@ -259,7 +261,23 @@ F12 / Shift + Ctrl + I
 
 #### [动态壁纸下载](https://dynamicwallpaper.club/)
 
-专门用于macOS Mojave动态壁纸的平台。
+专门用于`macOS Mojave`动态壁纸的平台。
+
+#### 屏保
+
+##### 时间屏保
+
+[Fliqlo](https://fliqlo.com/#/screensaver)
+
+翻页日历式的复古界面，结合了电子和机械的美感
+
+[padbury](https://padbury.app/)
+
+极简主义的时钟屏保，没有太多附加的修饰，但它设置选项却很丰富。
+
+[applewatch](https://www.rasmusnielsen.dk/applewatch.php)
+
+![appwatch.gif)](./sw/appwatch.gif)
 
 ### 参考
 
