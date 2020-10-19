@@ -3,13 +3,13 @@
 **Note:** 安装 `homebrew` `or` 国内安装，请到 👉👉👉 [here](resources/mac-software?id=homebrew)
 
 ```sh
-brew install radis
+brew install redis
 ```
 
 #### 启动
 
 ```sh
-radis-server
+redis-server
 ```
 
 #### 启动/停止Redis服务器作为后台服务
@@ -23,19 +23,19 @@ brew service list
 ##### 启动
 
 ```sh
-brew service start radis
+brew service start redis
 ```
 
 ##### 停止
 
 ```sh
-brew service stop radis
+brew service stop redis
 ```
 
 ##### 重启
 
 ```sh
-brew service restart radis
+brew service restart redis
 ```
 
 #### 检查Redis是否启动
@@ -69,3 +69,6 @@ brew uninstall redis
 rm ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 ```
 
+#### 异常处理
+
+[redis 异常处理](notes/redis/issue.md)

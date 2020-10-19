@@ -70,6 +70,10 @@ alias mongodb-restart="brew services restart mongodb-community"
 
 - 数据目录路径 `/usr/local/var/mongodb`
 
+#### 异常处理
+
+[MongoDB 异常处理](notes/mongoDB/issue.md)
+
 #### 参考资料
 
 [官方安装指南](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
