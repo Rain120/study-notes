@@ -34,6 +34,14 @@ sudo spctl --master-enable
 
 [Gitee 地址](https://gitee.com/cunkai/HomebrewCN)
 
+##### Error: brew services: Unknown command: services
+
+```sh
+brew update-reset
+```
+
+[issue](https://github.com/Homebrew/homebrew-services/issues/206)
+
 #### Alfred
 
 [下载地址](https://github.com/Rain120/Free-Source/blob/master/Mac%20Tools/Alfred_4.0.1%20b1078-EN.dmg)
