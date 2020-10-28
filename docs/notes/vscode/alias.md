@@ -45,6 +45,22 @@
 
 **Note:** 重启一下`vscode`
 
+#### webStorm 配置
+
+```js
+// https://stackoverflow.com/a/59369029
+
+System.config({
+    paths: {
+        'frontend/*': './src/frontend/*',
+        'slate*': './src/frontend/slate*',
+        'slate-react*': './src/frontend/slate-react*',
+        'intro.js*': './src/frontend/intro.js*'
+    }
+});
+
+```
+
 #### 参考资料
 
 [jsconfig](https://code.visualstudio.com/docs/languages/jsconfig)
