@@ -47,6 +47,8 @@
 
 #### webStorm 配置
 
+`webStorm.config.js`
+
 ```js
 // https://stackoverflow.com/a/59369029
 
