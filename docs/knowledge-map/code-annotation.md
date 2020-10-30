@@ -256,7 +256,71 @@ export enum IDerivationState {
 }
 ```
 
+**链接注释**
+
+解释性`(more info etc...)`链接注释
+
+```js
+// LINK_TO: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor
+// 返回指定对象上一个自有属性对应的属性描述符。
+// (自有属性指的是直接赋予该对象的属性，不需要从原型链上进行查找的属性)
+export const getDescriptor = Object.getOwnPropertyDescriptor;
+```
+
+`Bug Fix` 链接注释
+
+```js
+const path = require('path')
+
+// get drive on windows
+function getRootPath (p) {
+  p = path.normalize(path.resolve(p)).split(path.sep)
+  if (p.length > 0) return p[0]
+  return null
+}
+
+// http://stackoverflow.com/a/62888/10333 contains more accurate
+// TODO: expand to include the rest
+const INVALID_PATH_CHARS = /[<>:"|?*]/
+
+function invalidWin32Path (p) {
+  const rp = getRootPath(p)
+  p = p.replace(rp, '')
+  return INVALID_PATH_CHARS.test(p)
+}
+```
+
+`reference`引用链接注释
+
+```js
+// LINK_TO: https://github.com/immerjs/immer/blob/9257084c2b3c04fc9727e4c701d672483a7767b7/src/utils/common.ts#L65
+export const getOwnPropertyDescriptors =
+  Object.getOwnPropertyDescriptors ||
+  function getOwnPropertyDescriptors(target: any): Object {
+    // Polyfill needed for Hermes and IE, see https://github.com/facebook/hermes/issues/274
+    const result: any = {};
+    ownKeys(target).forEach(key => {
+      result[key] = getDescriptor(target, key);
+    });
+
+    return result;
+  };
+```
+
 **Shell**
+
+头部注释
+
+```sh
+###
+# @Author: Rainy [https://github.com/rain120]
+# @Date: 2020-10-10 10:10:10
+# @LastEditors: Rainy
+# @LastEditTime: 2020-11-11 11:11:11
+###
+```
+
+代码注释
 
 ```sh
 # 这是 shell 的注释
