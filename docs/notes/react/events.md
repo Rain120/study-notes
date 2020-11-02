@@ -24,11 +24,19 @@
 
 `DOM`事件流分为三个阶段：`捕获阶段`、`目标阶段`、`冒泡阶段`。先调用捕获阶段的处理函数，其次调用目标阶段的处理函数，最后调用冒泡阶段的处理函数。
 
+**目标元素**: 触发事件的元素
+
 ##### 捕获阶段
+
+**自上而下**, 由 `window` 到 目标元素
 
 ##### 目标阶段
 
+触发事件阶段
+
 ##### 冒泡阶段
+
+**自下而上**, 由 目标元素 到 `window` 
 
 ##### 阻止捕获、冒泡、默认行为
 
@@ -122,7 +130,95 @@
 
 #### 原生 `DOM` 事件的执行顺序
 
+**`DOM`事件的执行顺序与注册事件的顺序是相关的。**
 
+测试HTML
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h4>
+      先注册捕获事件，再注册冒泡事件
+    </h4>
+    <div id="outside" style="border: 1px solid green">
+      <p>先注册捕获事件，再注册冒泡事件: 父元素</p>
+      <button id='inside' onclick="console.log('先注册捕获事件，再注册冒泡事件: 子元素被点击')">先注册捕获事件，再注册冒泡事件: 子元素</button>
+    </div>
+    <hr />
+    <h4>
+      先注册冒泡事件，再注册捕获事件
+    </h4>
+    <div id="outside1" style="border: 1px solid red">
+      <p>先注册冒泡事件，再注册捕获事件: 父元素</p>
+      <button id='inside1' onclick="console.log('先注册冒泡事件，再注册捕获事件: 子元素被点击')">先注册冒泡事件，再注册捕获事件: 子元素</button>
+    </div>
+  </body>
+  </html>
+</html>
+```
+
+#### 先注册捕获事件，再注册冒泡事件
+
+```js
+document.getElementById('inside').addEventListener("click", () => {
+  console.log('先注册捕获事件，再注册冒泡事件: inside, 冒泡')
+}, false);
+document.getElementById('inside').addEventListener("click", () => {
+  console.log('先注册捕获事件，再注册冒泡事件: inside, 捕获')
+}, true);
+document.getElementById('outside').addEventListener("click", () => {
+  console.log('先注册捕获事件，再注册冒泡事件: outside, 冒泡')
+}, false);
+document.getElementById('outside').addEventListener("click", () => {
+  console.log('先注册捕获事件，再注册冒泡事件: outside, 捕获')
+}, true);
+```
+
+**结果**
+
+```
+先注册捕获事件，再注册冒泡事件: outside, 捕获 
+先注册捕获事件，再注册冒泡事件: 子元素被点击 
+先注册捕获事件，再注册冒泡事件: inside, 冒泡 
+先注册捕获事件，再注册冒泡事件: inside, 捕获 
+先注册捕获事件，再注册冒泡事件: outside, 冒泡 
+```
+
+##### 先注册冒泡事件，再注册捕获事件
+
+```js
+document.getElementById('inside1').addEventListener("click", () => {
+  console.log('先注册冒泡事件，再注册捕获事件: inside, 捕获')
+}, true);
+document.getElementById('inside1').addEventListener("click", () => {
+  console.log('先注册冒泡事件，再注册捕获事件: inside, 冒泡')
+}, false);
+document.getElementById('outside1').addEventListener("click", () => {
+  console.log('先注册冒泡事件，再注册捕获事件: outside, 捕获')
+}, true);
+document.getElementById('outside1').addEventListener("click", () => {
+  console.log('先注册冒泡事件，再注册捕获事件: outside, 冒泡')
+}, false);
+```
+
+**结果**
+
+```js
+先注册冒泡事件，再注册捕获事件: outside, 捕获 
+先注册冒泡事件，再注册捕获事件: 子元素被点击 
+先注册冒泡事件，再注册捕获事件: inside, 捕获 
+先注册冒泡事件，再注册捕获事件: inside, 冒泡 
+先注册冒泡事件，再注册捕获事件: outside, 冒泡 
+```
+
+[Demo](https://codesandbox.io/s/test-demo-opqou)
 
 #### React 事件系统
 
@@ -166,11 +262,35 @@
 
 #### React 合成事件
 
+##### 为什么React要自定义 events
+
+- **抹平浏览器之间的兼容性差异**
+
+  最主要的动机。
+
+- **事件"合成", 事件自定义**
+
+  事件合成既可以处理兼容性问题，也可以用来自定义事件
+
+- **抽象跨平台事件机制**
+
+  类似 `VirtualDOM` 抽象了跨平台的渲染方式，合成事件(`SyntheticEvent`)提供一个抽象的跨平台事件机制。
+
+- **性能优化**
+
+  简化了 `DOM` 事件处理逻辑，减少了内存开销。**React自己模拟一套事件冒泡的机制。**
+
+- **干预事件的分发, 简化事件逻辑**
+
+  `React v16`引入 `Fiber` 架构，`React` 可以通过干预事件的分发以优化用户的交互体验。不同类型的事件有不同的优先级，比如高优先级的事件可以中断渲染，让用户代码可以及时响应用户交互。
+
+##### 定义
+
 `React` 根据 [W3C 规范](https://www.w3.org/TR/DOM-Level-3-Events/) 来定义自己的事件系统，其事件被称之为[合成事件 (`SyntheticEvent`)](https://zh-hans.reactjs.org/docs/events.html)，它在`DOM`事件体系基础上做了很大改进，减少了**内存消耗**，**简化了事件逻辑**，并最大化的解决了`IE`等浏览器的不兼容问题。
 
 #### React 事件与原生事件区别
 
-
+**WIP**: `React`自己模拟一套事件冒泡的机制
 
 #### 参考资料
 
@@ -181,6 +301,8 @@
 [W3C DOM 0级事件](https://www.w3.org/TR/uievents/#dom-level-0)
 
 [W3C DOM 3级事件](https://www.w3.org/TR/DOM-Level-3-Core/)
+
+[冒泡和捕获](https://zh.javascript.info/bubbling-and-capturing)
 
 
 
