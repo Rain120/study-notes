@@ -10,6 +10,8 @@
 
 [JavaScript学习](notes/knowledge-map/fe/javascript.md)
 
+[Javascript测试最佳做法](https://testjavascript.com/) [Github](https://github.com/goldbergyoni/javascript-testing-best-practices)
+
 #### 浏览器相关
 
 [浏览器相关](notes/knowledge-map/fe/browser.md)
