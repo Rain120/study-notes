@@ -290,6 +290,10 @@ document.getElementById('outside1').addEventListener("click", () => {
 
 #### React 事件与原生事件区别
 
+![react-16-events.png](./images/react-16-events.png)
+
+![react-17-events.png](./images/react-17-events.png)
+
 **WIP**: `React`自己模拟一套事件冒泡的机制
 
 #### 参考资料
@@ -303,6 +307,8 @@ document.getElementById('outside1').addEventListener("click", () => {
 [W3C DOM 3级事件](https://www.w3.org/TR/DOM-Level-3-Core/)
 
 [冒泡和捕获](https://zh.javascript.info/bubbling-and-capturing)
+
+[动画浅析REACT事件系统和源码](https://www.lzane.com/tech/react-event-system-and-source-code/)
 
 
 
