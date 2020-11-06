@@ -7,8 +7,8 @@
 #### 🤩想学
 
 - [ ] React Hooks
-- [ ] Mobx
-- [ ] Typescript
+- [ ] [Mobx](https://github.com/rain120/mini-mobx/)
+- [ ] [Typescript](https://github.com/Rain120/typescript-guide)
 - [ ] Nodejs
 - [ ] Lerna
 - [ ] Serverless
@@ -17,9 +17,9 @@
 #### 👩‍💻在学
 
 - [ ] React Hooks
-- [ ] Mobx
+- [ ] [Mobx](https://github.com/rain120/mini-mobx/)
 - [ ] Lerna
-- [ ] Typescript
+- [ ] [Typescript](https://github.com/Rain120/typescript-guide)
 
 #### 🙅‍♂️不会
 
