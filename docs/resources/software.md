@@ -47,15 +47,11 @@
 
 [麦客孤独](http://www.macgudu.net/)
 
-[Waitsun](https://www.waitsun.com/)
-
 [macdown](https://www.macdown.com/)
 
 [masuit](https://masuit.com/)
 
 [maoxinhang](https://www.maoxinhang.com/)
-
-[waitsun](https://www.waitsun.com/)
 
 #### 3、工具
 
