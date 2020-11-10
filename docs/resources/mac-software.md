@@ -14,6 +14,21 @@ sudo spctl --master-enable
 
 ![resources.png](./sw/resources.png)
 
+#### Xxx已损坏，无法打开。您应该将它移到废纸篓。
+
+1. 在**系统偏好设置 - 安全与隐私 - 通用标签**中选择来自任何来源选项。
+2. 命令行执行
+
+```sh
+sudo spctl --master-disable
+```
+
+3. 执行下面命令，将 `XMind\ ZEN.app` 换成 `xxx`
+
+```sh
+sudo xattr -r -d com.apple.quarantine /Applications/XMind\ ZEN.app
+```
+
 #### Homebrew
 
 [**Homebrew**](https://brew.sh/index_zh-cn)是一款[自由](https://zh.wikipedia.org/wiki/自由软件)及[开放源代码](https://zh.wikipedia.org/wiki/开源软件)的[软件包管理系统](https://zh.wikipedia.org/wiki/软件包管理系统)。**macOS（或 Linux）缺失的软件包的管理器**
