@@ -44,3 +44,6 @@ brew cask install docker
 docker info
 ```
 
+#### 参考资料
+
+[Docker Desktop for Mac user manual](https://docs.docker.com/docker-for-mac/)
