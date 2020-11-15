@@ -278,7 +278,7 @@ document.getElementById('outside1').addEventListener("click", () => {
 
 - **性能优化**
 
-  简化了 `DOM` 事件处理逻辑，减少了内存开销。**React自己模拟一套事件冒泡的机制。**
+  简化了 `DOM` 事件处理逻辑，减少了内存开销。`React`采用了事件代理，池，批量更新，跨浏览器和跨平台兼容等思想，将事件监听挂载在`document`上，构造合成事件，并且在内部模拟了一套捕获和冒泡并触发回调函数的机制，实现了自己的一套事件系统。
 
 - **干预事件的分发, 简化事件逻辑**
 
@@ -290,11 +290,15 @@ document.getElementById('outside1').addEventListener("click", () => {
 
 #### React 事件与原生事件区别
 
+
+
+#### React 16 - React 17 事件修改
+
 ![react-16-events.png](./images/react-16-events.png)
 
 ![react-17-events.png](./images/react-17-events.png)
 
-**WIP**: `React`自己模拟一套事件冒泡的机制
+
 
 #### 参考资料
 

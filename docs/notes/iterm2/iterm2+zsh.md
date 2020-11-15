@@ -84,6 +84,12 @@ rm -rf fonts
 
 ![config-fonts.png](./images/config-fonts.png)
 
+#### 配置 Status Bar
+
+![status-bar.png](./images/status-bar.png)
+
+![status-bar-config.png](./images/status-bar-config.png)
+
 #### 下载插件
 
 ##### 插件配置
@@ -396,3 +402,4 @@ source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighti
 ```
 
 其他的看看这个吧 [`here`](https://juejin.im/post/6844904178075058189)
+
