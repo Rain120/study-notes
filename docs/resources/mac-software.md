@@ -83,11 +83,12 @@ brew update-reset
 
 [官方拔插式配置](https://pqrs.org/osx/karabiner/complex_modifications/)
 
-`import` [这个](https://ke-complex-modifications.pqrs.org/?q=change%20caps_lock) 插件，`enable F19`.
+`import` [这个](https://ke-complex-modifications.pqrs.org/?q=change%20caps_lock) 插件，选择 **Import** `Change caps_lock key (rev 4)` ，然后在你的`Karabiner`中选择`enable F19`.
 
 ```sh
 vi ~/.config/karabiner/karabiner.json
 
+# 将 caps_lock 更改为 right_command
 # from.key_code: caps_lock -> right_command
 ```
 
