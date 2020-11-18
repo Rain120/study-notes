@@ -16,14 +16,18 @@ ssh-keygen -t rsa -C "youremail@email.com” -f ~/.ssh/id_rsa
 
 创建时，会创建公钥和私钥，分别是`id_rsa_xxx.pub`, `id_rsa_xxx`, 你只需要根据自己需求使用对应的`SSH Key`即可。
 
+### 添加GitHub SSH
+
+![id_rsa.pub.png](./images/id_rsa.pub.png)
+
+![add-ssh-key.png](./images/add-ssh-key.png)
+
 ### 创建`config`
 
 ```bash
 cd ~/.ssh
 touch config
 ```
-
-
 
 ```shell
 # gitlab
@@ -50,4 +54,6 @@ IdentityFile ~/.ssh/id_rsa_github
 ```bash
 ssh -T git@github.com
 ```
+
+![ssh-github-test.png](./images/ssh-github-test.png)
 
