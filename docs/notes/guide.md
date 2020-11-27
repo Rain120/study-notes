@@ -74,7 +74,8 @@
   - [Webpack 魔法注释(Magic Comments)](notes/webpack/magic-comments.md)
 - [Babel](notes/babel/guide.md)
    - [Babel手册](notes/babel/babel-handbook.md)
-- [与AST的相知相识](notes/babel/ast/ast.md)
+   - [与AST的相知相识](notes/babel/ast/ast.md)
+     - [EsTree 规范](notes/babel/ast/estree-spec.md)
 - [Vue](notes/vue/guide.md)
 
    - [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)

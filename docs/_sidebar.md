@@ -74,6 +74,7 @@
     - [Babel](notes/babel/guide.md)
       - [Babel手册](notes/babel/babel-handbook.md)
       - [与AST的相知相识](notes/babel/ast/ast.md)
+        - [EsTree 规范](notes/babel/ast/estree-spec.md)
     - [React](notes/react/guide.md)
       - [React组件库开发 - 初始化项目](notes/react/component-library/init.md)
       - [React better-scroll实践](notes/react/better-scroll/better-scroll.md)
