@@ -5,7 +5,16 @@
 ### AST步骤(I/O)
 
 - **I**
-  - `Parse` -> 解析
+  - `Parse` -> 语法分析
+
+    - 词法分析`(Lexical Analysis)`
+
+      将整个代码字符串分割成最小语法单元数组。
+
+    - 语法分析`(Syntactic Analysis，也称 Parsing)`
+
+      在分词基础上建立分析语法单元之间的关系。组合分词的结果，确定词语之间的关系，确定词语最终的表达含义，生成抽象语法树。
+
   - `Traverse `-> 遍历
 - **O**
   - `Manipulate` -> 操作
@@ -183,4 +192,8 @@ JSXParser.parse("foo(<bar/>)", {ecmaVersion: 2020});
 [Babel 插件手册 中文文档](https://github.com/Rain120/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md)
 
 [Build a JS Interpreter in JavaScript Using Acorn as a Parser](https://blog.bitsrc.io/build-a-js-interpreter-in-javascript-using-acorn-as-a-parser-5487bb53390c)
+
+[Wiki 词法分析](https://en.wikipedia.org/wiki/Lexical_analysis)
+
+[Wiki 语法分析](https://zh.wikipedia.org/wiki/%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90)
 

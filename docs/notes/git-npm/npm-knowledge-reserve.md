@@ -74,7 +74,7 @@ npm update package
 
 [高级范围语法](https://docs.npmjs.com/misc/semver#advanced-range-syntax)
 
-**`npm`**版本规则如下:
+**npm** 版本规则如下:
 
 - "1.2.3"
 
