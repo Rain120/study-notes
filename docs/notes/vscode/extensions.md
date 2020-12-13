@@ -152,6 +152,19 @@
 
 ![stylelint](./images/stylelint.png)
 
+#### 字体
+
+[FiraCode](https://github.com/tonsky/FiraCode)
+
+```json
+{
+  "editor.fontFamily": "'Fira Code',Menlo, Monaco, 'Courier New', monospace", // 设置字体显示
+	"editor.fontLigatures": false,//控制是否启用字体连字，true启用，false不启用
+}
+```
+
+![firacode-font.svg](./images/firacode-font.svg)
+
 #### VS Code
 
 [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
