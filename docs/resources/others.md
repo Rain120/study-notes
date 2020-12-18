@@ -69,23 +69,23 @@
 
 [Twilio](https://www.twilio.com/)
 
-[国内](https://www.pdflibr.com/)
+~~[国内](https://www.pdflibr.com/)~~
 
 [云短信](https://yunduanxin.net/)
 
-[visitorsms](https://www.visitorsms.com/)
+~~[visitorsms](https://www.visitorsms.com/)~~
 
 ~~[sms24](https://sms24.me/)~~
 
 ~~[becmd](https://www.becmd.com/)~~
 
-[114sim](http://www.114sim.com/)
+~~[114sim](http://www.114sim.com/)~~
 
 ~~[jmapingtai](http://jmapingtai.com/)~~
 
 ~~[mianfeijiema](https://mianfeijiema.com/)~~
 
-[free-receive-sms](https://www.imtqy.com/free-receive-sms.html)
+~~[free-receive-sms](https://www.imtqy.com/free-receive-sms.html)~~
 
 #### 其他
 
