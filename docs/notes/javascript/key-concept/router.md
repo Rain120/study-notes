@@ -49,11 +49,63 @@ window.addEventListener("hashchange", event => {
 
 ##### 实现原理
 
-```js
+- 以键值对的形式存储 `path` 及其回调函数
+- 监听 `hashchange` 事件触发对应的回调
+- 用一个 `history` 数组来记录之前的 `hash` 路由，并创建一个指针来实现前进后退的功能
 
+```ts
+type NoopFunction = () => void;
+
+interface IRouters {
+  currentUrl: string;
+  currentIndex: number;
+  isBack: boolean;
+  routes: Object<T, V>;
+  refresh: NoopFunction;
+  back: NoopFunction;
+}
+
+class Routers extends IRouters {
+  constructor () {
+    // 以键值对的形式存储路由
+    this.routes<PropertyKey, Function<any>> = {}
+    // 当前路由的 url
+    this.currentUrl = ''
+    // 记录出现过的 hash
+    this.history = [];
+    // 作为指针，默认指向 this.history 的末尾，根据后退前进指向 history 中不同的 hash
+    this.currentIndex = this.history.length - 1
+    this.isBack = false // 记录是否为后退操作
+    window.addEventListener('load', this.refresh, false)
+    window.addEventListener('hashchange', this.refresh, false)
+  }
+
+  // 将 path 路径与对应的 callback 函数储存
+  route (path, callback) {
+    this.routes[path] = callback;
+  }
+
+  // 刷新
+  refresh () {
+    this.currentUrl = location.hash.slice(1) || '/' // 获取当前 URL 中的 hash 路径
+    if (!this.isBack) {
+      this.history.push(this.currentUrl) // 将当前 hash 路由推入 history 数组中
+    }
+    this.currentIndex++ // 指针向前移动
+    this.routes[this.currentUrl]() // 执行当前 hash 路径的 callback 函数
+    this.isBack = false
+  }
+
+  // 后退功能
+  back () {
+    this.isBack = true
+    // 如果指针小于 0 的话就不存在对应 hash 路由了，因此锁定指针为 0 即可
+    this.currentIndex <= 0 ? this.currentIndex = 0 : this.currentIndex = this.currentIndex - 1
+    location.hash = `#${this.history[this.currentIndex]}` // location 响应变化
+    this.routes[this.history[this.backOff.currentIndex]]() // 执行对应的 callback
+  }
+}
 ```
-
-
 
 #### history模式
 
@@ -105,11 +157,47 @@ history.state                // 返回当前状态对象
 
 ##### 实现原理
 
-```js
+```ts
+type NoopFunction = () => void;
 
+interface IRouters {
+  routes: Object<T, V>;
+  init: (path: PropertyKey);
+  go: (path: PropertyKey);
+  route: (path: PropertyKey, callback: Function<any>) => any;
+  _bindPopState: NoopFunction;
+}
+class Routers extends IRouters {
+  constructor () {
+    this.routes<PropertyKey, Function<any>> = {}
+    this._bindPopState()
+  }
+
+  // 初始化路由
+  init (path) {
+    history.replaceState({ path: path }, null, path)
+    this.routes[path] && this.routes[path]()
+  }
+
+  // 将路径和对应的回调函数加入 hashMap
+  route (path, callback) {
+    this.routes[path] = callback;
+  }
+
+  go (path) {
+    history.pushState({ path: path }, null, path)
+    this.routes[path] && this.routes[path]()
+  }
+
+  // 监听 popstate 事件
+  _bindPopState () {
+    window.addEventListener('popstate', e => {
+      const path = e.state && e.state.path
+      this.routes[path] && this.routes[path]()
+    })
+  }
+}
 ```
-
-
 
 #### 区别
 
