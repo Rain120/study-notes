@@ -1,6 +1,7 @@
 #### ECMAScript学习笔记
 
 - [类的Static学习](notes/javascript/es-study/static.md)
+- [Map Vs WeakMap, Set Vs WeakSet](notes/javascript/es-study/map-weakmap-set-weakset.md)
 
 #### 参考资料
 

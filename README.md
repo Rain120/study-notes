@@ -59,6 +59,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [日常使用的正则表达式](notes/javascript/regular_expression/common_reg_exps.md)
       - [ECMAScript学习](notes/javascript/es-study/es-guide.md)
         - [类的Static学习](notes/javascript/es-study/static.md)
+        - [Map Vs WeakMap, Set Vs WeakSet](notes/javascript/es-study/map-weakmap-set-weakset.md)
       - [Javascript 学习资源](notes/javascript/resource.md)
     - [HTTP](notes/http/guide.md)
       - [HTTP 三次握手 四次挥手](notes/http/three-handshaking-four-wave.md)
