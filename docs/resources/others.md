@@ -31,11 +31,7 @@
 
 [obagg](http://od.obagg.com/)
 
-~~[my365](http://my365.tw/)~~
-
 [odmail](http://t.odmail.cn/)
-
-~~[office365vip](http://od.office365vip.cn/)~~
 
 [xkx](http://xkx.me/): 这好用
 
@@ -43,49 +39,23 @@
 
 #### 短信验证码接收平台
 
-~~[SMSReceiveFree](https://smsreceivefree.com)~~
+[收信箱](https://www.shouxinxiang.com/)
 
-~~[Receive a SMS Online](https://receive-a-sms.com/)~~
+[在线短信接收 1](https://www.materialtools.com/)
 
-[Receive-SMS](http://receive-sms-online.com/)
+[在线短信接收 2](http://www.shejiinn.com/)
 
-[Receive SMS Online for FREE](https://www.receive-sms-online.info/)
+[在线短信接收-接码号](https://jiemahao.com/)
 
-[Free SMS Numbers Online](https://smsnumbersonline.com/)
+[Z-SMS](http://www.z-sms.com/)
 
-[Receive FREE SMS online](http://receivefreesms.com/)
+[隐私短信](https://www.yinsiduanxin.com/)
 
-[Free Online Phone](https://www.freeonlinephone.org)
+[超级云短信](https://www.bfkdim.com/)
 
-[RECEIVE SMS ONLINE](https://www.receivesmsonline.net/)
+[Mytrashmobile](https://de.mytrashmobile.com/)
 
-[Receive SMS Online](http://receive-sms-online.com/)
-
-~~[TextNow](https://www.textnow.com/)~~
-
-~~[Textfree](https://www.pinger.com/text-free/)~~
-
-[Sellaite](http://sms.sellaite.com)
-
-[Twilio](https://www.twilio.com/)
-
-~~[国内](https://www.pdflibr.com/)~~
-
-[云短信](https://yunduanxin.net/)
-
-~~[visitorsms](https://www.visitorsms.com/)~~
-
-~~[sms24](https://sms24.me/)~~
-
-~~[becmd](https://www.becmd.com/)~~
-
-~~[114sim](http://www.114sim.com/)~~
-
-~~[jmapingtai](http://jmapingtai.com/)~~
-
-~~[mianfeijiema](https://mianfeijiema.com/)~~
-
-~~[free-receive-sms](https://www.imtqy.com/free-receive-sms.html)~~
+[Receive SMS Online for free](https://sms-online.co/receive-free-sms)
 
 #### 其他
 
