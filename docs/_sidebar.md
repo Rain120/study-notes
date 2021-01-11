@@ -91,6 +91,7 @@
         - [BrowserRouter和HashRouter的区别?](notes/react/router/router-diff-with-browser-and-hash.md)
       - [React setState](notes/react/setState.md)
       - [React 事件机制](notes/react/events.md)
+      - [React 脚手架 Typescript 多入口配置](notes/react/crd.md)
     - [Vue](notes/vue/guide.md)
          - [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
          - [Vue之网易云音乐横向菜单滑动的实现](notes/vue/slide-menu/slide-menu.md)

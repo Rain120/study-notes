@@ -96,6 +96,7 @@
       - [BrowserRouter和HashRouter的区别?](notes/react/router/router-diff-with-browser-and-hash.md)
    - [React setState](notes/react/setState.md)
    - [React 事件机制](notes/react/events.md)
+   - [React 脚手架 Typescript 多入口配置](notes/react/crd.md)
 - [移动端](notes/mobile/guide.md)
    - [Charles抓包https手机配置](notes/mobile/charles-https-mobile-config.md)
    - [移动端Tips](notes/mobile/mobile-tips.md)
