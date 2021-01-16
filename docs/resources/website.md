@@ -466,6 +466,8 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 ![mindmeister](./wf/mindmeister.png)
 
+[visual-paradigm](https://online.visual-paradigm.com/): 直观的 **信息图表软件**
+
 [Draw.IO](<https://www.draw.io/>)
 
 ![drawio](./wf/drawio.png)
