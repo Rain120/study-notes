@@ -54,3 +54,5 @@ git init lerna-repo && cd lerna-repo
 
 [Lerna 官方文档](https://lerna.js.org/)
 
+[【PPT】白鹭引擎首席架构师@王泽：框架开发中的基础设施搭建 ](https://www.sohu.com/a/343217202_463970)
+

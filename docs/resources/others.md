@@ -53,6 +53,8 @@
 
 [超级云短信](https://www.bfkdim.com/)
 
+[云短信](https://yunduanxin.net/)
+
 [Mytrashmobile](https://de.mytrashmobile.com/)
 
 [Receive SMS Online for free](https://sms-online.co/receive-free-sms)
