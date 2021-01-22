@@ -324,6 +324,17 @@ command(⌘) + .
 
 ![refactor.gif](./images/refactor.gif)
 
+##### 快速跳转函数引用和使用
+
+```
+// 跳到实现
+command(⌘) + F12
+// 跳到引用
+shift(⇧)  + F12
+```
+
+![file-usage-define.gif](./images/file-usage-define.gif)
+
 ##### 重构批量修改名字
 
 ![refactor-batch-rename.gif](./images/refactor-batch-rename.gif)
