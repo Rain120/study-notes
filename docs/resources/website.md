@@ -558,6 +558,8 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 搜索、选择各类的`emoji`表情，你懂得~~
 
+[Emoji 中文网](https://www.emojiall.com/zh-hans)
+
 [egouz](https://www.egouz.com/)
 
 国外网站推荐
