@@ -71,7 +71,7 @@ export const isIPhoneX = () => {
 `Android 4.4`👇(包括微信所用的`X5`内核)，两者都调起数字键盘；
 `Android 4.4.4`👆，只认 `type` 属性，也就是说，如果上面的代码将` type="number" `改为`type="text" `，将调起全键盘而不会是九宫格数字键盘。
 
-常用的`pattern`[正则表达式](notes/javascript/regular_expression/common_reg_exps.md)
+常用的`pattern`[正则表达式](notes/javascript/regular-expression/common-reg-exps.md)
 
 - 信用卡  `[0-9]{13,16}`
 - 银联卡 ` ^62[0-5]\d{13,16}$`
