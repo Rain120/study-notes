@@ -104,6 +104,14 @@ vi ~/.config/karabiner/karabiner.json
 
 ![thor](./sw/thor.png)
 
+#### [SpaceLauncher](https://spacelauncherapp.com/)
+
+按住空格键的同时按一个键以启动或切换到应用程序。
+
+#### [FlyKey](https://www.better365.cn/FlyKey.html)
+
+快速查看应用快捷键程序
+
 #### [XMind](https://www.xmind.cn/)
 
 思维导图
@@ -252,6 +260,8 @@ F12 / Shift + Ctrl + I
 
 ![cleanmymac](./sw/cleanmymac.png)
 
+[腾讯柠檬清理](https://lemon.qq.com/): 专业的深层*清理*，保持Mac清爽干净；浏览器隐私*清理*，避免敏感信息泄露；五大深度*清理*小工具，全方位*清理*多余垃圾
+
 #### [Mounty](https://mounty.app/)
 
 `Mac OS`平台上的一款`NTFS`格式读写工具，软件虽小小但是功能挺实用的，其主要功能类似`Paragon NTFS for mac`。当你插入 `NTFS` 硬盘后会提示是否创新加载成读写模式。大多数情况下 `Mac OS X` 是默认没有开启 `NTFS `的写入模式。所以这样你就这一不在需要安装其他软件就可以对 `Windows` 的 `NTFS` 硬盘进行复制文件操作。
@@ -302,6 +312,26 @@ F12 / Shift + Ctrl + I
 [applewatch](https://www.rasmusnielsen.dk/applewatch.php)
 
 ![appwatch.gif)](./sw/appwatch.gif)
+
+#### [DeepL](https://www.deepl.com/home)
+
+`DeepL` 通过训练人工智能来理解和翻译文本。
+
+#### [Eagle - 图片收集及管理必备工具](https://cn.eagle.cool/)
+
+*Eagle* 可以轻松管理大量图片、视频、音频素材，满足素材「收藏、整理、查找」的各种场景，支持Mac 与Windows 系统。
+
+#### [Mos](https://github.com/Caldis/Mos)
+
+一个用于在 macOS 上平滑你的鼠标滚动效果或单独设置滚动方向的小工具, 让你的滚轮爽如触控板
+
+#### [Copyless](https://copyless.net/)
+
+剪贴板插件
+
+#### [Bob](https://ripperhe.gitee.io/bob/#/)
+
+一款 `Mac` 端 `OCR` 翻译软件，支持**划词翻译**、**截图翻译**以及手动输入翻译。
 
 ### 参考
 
