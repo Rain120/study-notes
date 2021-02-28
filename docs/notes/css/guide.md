@@ -4,6 +4,7 @@
 - [CSS宽度高度问题](notes/css/width-height-properties.md)
 - [CSS 学习资源](notes/css/resource.md)
 - [CSS 修改 input, textarea 等控件 placeholder 的颜色](notes/css/change-inputs-placeholder.md)
+- [CSS 常见的选择器](notes/css/css-selector.md)
 
 #### 参考资料
 
