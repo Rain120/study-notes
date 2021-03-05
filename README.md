@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2020-10-19 14:32:14
+ * @LastEditTime: 2021-02-28 13:14:54
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -34,6 +34,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [CSS宽度高度 问题](notes/css/width-height-properties.md)
       - [CSS 学习资源](notes/css/resource.md)
       - [CSS 修改 input, textarea 等控件 placeholder 的颜色](notes/css/change-inputs-placeholder.md)
+      - [CSS 常见的选择器](notes/css/css-selector.md)
     - [Javascript](notes/javascript/guide.md)
       - [JavaScript 核心概念](notes/javascript/key-concept/guide.md)
         - [值类型 vs 引用类型](notes/javascript/key-concept/values-vs-reference.md)
@@ -61,6 +62,10 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [ECMAScript学习](notes/javascript/es-study/es-guide.md)
         - [类的Static学习](notes/javascript/es-study/static.md)
         - [Map Vs WeakMap, Set Vs WeakSet](notes/javascript/es-study/map-weakmap-set-weakset.md)
+        - [模块化方案](notes/javascript/es-study/module.md)
+        - [import 关键字](notes/javascript/es-study/import.md)
+          - [import 全量引入](notes/javascript/es-study/import-compared.md)
+          - [import 异步引入](notes/javascript/es-study/import-async.md)
       - [Javascript 学习资源](notes/javascript/resource.md)
     - [HTTP](notes/http/guide.md)
       - [HTTP 三次握手 四次挥手](notes/http/three-handshaking-four-wave.md)

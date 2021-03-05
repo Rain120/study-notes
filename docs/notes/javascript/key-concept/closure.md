@@ -63,3 +63,5 @@ console.log(name); // undefined
 
 [谈谈你对闭包的理解](https://juejin.im/post/6844903974378668039#heading-23)
 
+[I never understood JavaScript closures](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
+
