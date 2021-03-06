@@ -184,6 +184,7 @@
   - [Youtube 1080p 下载(视频 + 字幕)](resources/youtube-download.md)
   - [轻松追剧系列](resources/shows.md)
   - [歌曲下载](resources/music-download.md)
+  - [Vlog](resources/vlog.md)
   - [其他](resources/others.md)
 - [About Me](profile/profile.md)
 
