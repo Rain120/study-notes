@@ -26,6 +26,6 @@
   - [Map Vs WeakMap, Set Vs WeakSet](notes/javascript/es-study/map-weakmap-set-weakset.md)
   - [模块化方案](notes/javascript/es-study/module.md)
   - [import 关键字](notes/javascript/es-study/import.md)
-    - [import全量引入](notes/javascript/es-study/import-compared.md)
+    - [import全量引入](notes/javascript/es-study/import-full.md)
     - [import 异步引入](notes/javascript/es-study/import-async.md)
 - [Javascript 学习资源](notes/javascript/resource.md)
