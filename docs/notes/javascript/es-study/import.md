@@ -8,10 +8,12 @@
 
 #### import 相关
 
-- [import 全量引入](notes/javascript/es-study/import-compared.md)
+- [import 全量引入](notes/javascript/es-study/import-full.md)
 - [import 异步引入](notes/javascript/es-study/import-async.md)
 
 #### 参考资料
 
 [JavaScript modules 模块](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Modules)
+
+[export import type](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-8.html#type-only-imports-and-export)
 
