@@ -22,7 +22,7 @@
 });
 ```
 
-#### **\_\_webpack_require\_\_**
+#### `__webpack_require__`
 
 ```js
 // The module cache
@@ -64,7 +64,7 @@ function __webpack_require__(moduleId) {
 
 所以它其实是模拟 `import` 一个模块，并在最后返回所有模块`export` 的变量。
 
-##### \_\_webpack_require\_\_ 的属性
+##### `__webpack_require__` 的属性
 
 - 所有的模块(IIFE 传入的模块参数)对象
 
@@ -73,7 +73,7 @@ function __webpack_require__(moduleId) {
 __webpack_require__.m = modules;
 ```
 
-- 已导入(require())的模块对象
+- 已导入`(require())`的模块对象
 
 ```js
 // expose the module cache
@@ -89,18 +89,7 @@ __webpack_require__.o = function (object, property) {
 };
 ```
 
-- 
-
-```js
-// define getter function for harmony exports
-__webpack_require__.d = function (exports, name, getter) {
-  if (!__webpack_require__.o(exports, name)) {
-    Object.defineProperty(exports, name, {enumerable: true, get: getter});
-  }
-};
-```
-
-
+- 用于标记一个`ES Module`
 
 ```js
 // define __esModule on exports
@@ -112,7 +101,18 @@ __webpack_require__.r = function (exports) {
 };
 ```
 
-- 
+- 给 `ES Module` 的定义一个 `getter` 方法
+
+```js
+// define getter function for harmony exports
+__webpack_require__.d = function (exports, name, getter) {
+  if (!__webpack_require__.o(exports, name)) {
+    Object.defineProperty(exports, name, {enumerable: true, get: getter});
+  }
+};
+```
+
+**Note:** `harmony module` 其实是指 `ES Module`。 直到`2008`年`8`月，`ECMAScript`第四版提案被命名为一个名为`ECMAScript Harmony`的项目。
 
 ```js
 // create a fake namespace object
@@ -139,8 +139,7 @@ __webpack_require__.t = function (value, mode) {
   return ns;
 };
 ```
-
-- 
+- 针对非 `ES Module( 👆👆👆 )`  模块的输出定义函数做一些兼容
 
 ```js
 // getDefaultExport function for compatibility with non-harmony modules
@@ -167,8 +166,188 @@ __webpack_require__.p = '';
 
 #### 同步导入
 
-```js
+在 `IIFE` 的参数，我们发现同步导入是如何实现的，即同步 `import` 实际上是执行 `__webpack_require__()`。
 
+```js
+(function (modules) { // webpackBootstrap
+  // ...
+	// Load entry module and return exports
+	return __webpack_require__(__webpack_require__.s = "./index.js");
+})({
+   "./index.js": (function (module, __webpack_exports__, __webpack_require__) {
+     __webpack_require__.r(__webpack_exports__);
+     // ...
+   })
+})
 ```
 
-#### 动态导入
+#### 异步导入
+
+- 异步引入实现
+
+```js
+(function (modules) { // webpackBootstrap
+  // ...
+  // Load entry module and return exports
+  return __webpack_require__(__webpack_require__.s = "./index.js");
+})({
+  "./index.js": (function (module, __webpack_exports__, __webpack_require__) {
+    __webpack_require__.r(__webpack_exports__);
+    // ...
+    const asyncImport = async () => await __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.t.bind(null, /*! ./async */ "./async.js", 7));
+    // ...
+  }
+})
+```
+
+从代码里面，我们发现异步导入实际上是调用 `__webpack_require__.e()` 方法`(异步 import实际上是转换成__webpack_require__.e())`，而且，使用的 `async-await` 方法，所以我们知道这个函数的返回值一定是个 `promise` 对象，我们接着往下看吧。
+
+```js
+// script path function
+function jsonpScriptSrc (chunkId) {
+  return __webpack_require__.p + "" + ({}[chunkId] || chunkId) + ".js"
+}
+
+// object to store loaded and loading chunks
+// undefined = chunk not loaded, null = chunk preloaded/prefetched
+// Promise = chunk loading, 0 = chunk loaded
+var installedChunks = {
+  "main": 0
+};
+
+// This file contains only the entry chunk.
+// The chunk loading function for additional chunks
+__webpack_require__.e = function requireEnsure (chunkId) {
+  var promises = [];
+  
+  // JSONP chunk loading for javascript
+  var installedChunkData = installedChunks[chunkId];
+  if (installedChunkData !== 0) { // 0 means "already installed".
+    // a Promise means "currently loading".
+    if (installedChunkData) {
+      promises.push(installedChunkData[2]);
+    } else {
+      // setup Promise in chunk cache
+      var promise = new Promise(function (resolve, reject) {
+        // 把 resolve 保存到 installedChunks[chunkId] 中，等待代码加载好再执行 resolve() 以返回 promise
+        installedChunkData = installedChunks[chunkId] = [resolve, reject];
+      });
+      promises.push(installedChunkData[2] = promise);
+
+      // start chunk loading
+      // 通过往head头部插入script标签异步加载到chunk代码
+      var script = document.createElement('script');
+      var onScriptComplete;
+
+      script.charset = 'utf-8';
+      script.timeout = 120;
+      if (__webpack_require__.nc) {
+        script.setAttribute("nonce", __webpack_require__.nc);
+      }
+      script.src = jsonpScriptSrc(chunkId);
+
+      // create error before stack unwound to get useful stacktrace later
+      var error = new Error();
+      onScriptComplete = function (event) {
+        // avoid mem leaks in IE.
+        script.onerror = script.onload = null;
+        clearTimeout(timeout);
+        var chunk = installedChunks[chunkId];
+        if (chunk !== 0) {
+          if (chunk) {
+            var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+            var realSrc = event && event.target && event.target.src;
+            error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
+            error.name = 'ChunkLoadError';
+            error.type = errorType;
+            error.request = realSrc;
+            chunk[1](error);
+          }
+          installedChunks[chunkId] = undefined;
+        }
+      };
+      var timeout = setTimeout(function () {
+        onScriptComplete({ type: 'timeout', target: script });
+      }, 120000);
+      script.onerror = script.onload = onScriptComplete;
+      document.head.appendChild(script);
+    }
+  }
+  return Promise.all(promises);
+};
+```
+
+我们发现，`installedChunkData`的值代表着**缓存模块的状态**:
+
+- `0` 该 `chunk` 已经加载完毕
+
+- `undefined` 代表该 `chunk` 加载失败、加载超时、从未加载过
+
+- `promise`代表该 `chunk` 正在加载
+
+```js
+installedChunkData = installedChunks[chunkId] = [resolve, reject];
+promises.push(installedChunkData[2] = promise);
+
+// installedChunkData = [resolve, reject, promise]
+```
+
+`__webpack_require__.e()` 通过传入的`chunkId`，来加载对应此 `chunkId` 对应的异步 `chunk` 文件，它返回一个`promise`。通过`jsonp`的方式使用`script`标签去加载。这个函数调用多次，还是只会发起一次请求 `js` 的请求。若已加载完成，这时候异步的模块文件已经被注入到立即执行函数的入参`modules`变量中了，这个时候和同步执行`import`调用`__webpack_require__`的效果就一样了(这个注入由`webpackJsonpCallback`函数完成)。
+
+`webpackJsonpCallback` 其实就是加载异步模块完成的回调。
+
+```js
+// install a JSONP callback for chunk loading
+function webpackJsonpCallback (data) {
+  var chunkIds = data[0];
+  var moreModules = data[1];
+
+  // add "moreModules" to the modules object,
+  // then flag all "chunkIds" as loaded and fire callback
+  var moduleId, chunkId, i = 0, resolves = [];
+  for (; i < chunkIds.length; i++) {
+    chunkId = chunkIds[i];
+    if (Object.prototype.hasOwnProperty.call(installedChunks, chunkId) && installedChunks[chunkId]) {
+      resolves.push(installedChunks[chunkId][0]);
+    }
+    installedChunks[chunkId] = 0;
+  }
+  for (moduleId in moreModules) {
+    if (Object.prototype.hasOwnProperty.call(moreModules, moduleId)) {
+      modules[moduleId] = moreModules[moduleId];
+    }
+  }
+  if (parentJsonpFunction) parentJsonpFunction(data);
+
+  while (resolves.length) {
+    resolves.shift()();
+  }
+
+};
+
+var jsonpArray = window["webpackJsonp"] = window["webpackJsonp"] || [];
+// 保存原始的 Array.prototype.push 方法
+var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
+// 将 push 方法的实现修改为 webpackJsonpCallback
+// 这样我们在异步 chunk 中执行的 window['webpackJsonp'].push 其实是 webpackJsonpCallback 函数。
+jsonpArray.push = webpackJsonpCallback;
+jsonpArray = jsonpArray.slice();
+// 对已在数组中的元素依次执行webpackJsonpCallback方法
+for (var i = 0; i < jsonpArray.length; i++) webpackJsonpCallback(jsonpArray[i]);
+var parentJsonpFunction = oldJsonpFunction;
+```
+
+- 异步加载错误日志打印
+
+```js
+// on error function for async loading
+__webpack_require__.oe = function (err) { console.error(err); throw err; };
+```
+
+#### 参考资料
+
+[ECMAScript 4th_Edition_(abandoned)](https://en.wikipedia.org/wiki/ECMAScript#4th_Edition_(abandoned))
+
+
+
+[bate]: 
