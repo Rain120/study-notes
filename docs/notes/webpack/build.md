@@ -8,6 +8,8 @@
 
 接下来，就是我们掀起红盖头的时候了，凎。
 
+#### [TL;DR](#总结)
+
 ### 初探源码
 
 打开源码，移除无用代码，格式化，折叠，发现它实际上就是一个[IIFE(立即调用函数表达式)](https://developer.mozilla.org/zh-CN/docs/Glossary/IIFE)。
@@ -40,7 +42,7 @@ function __webpack_require__(moduleId) {
   // 不存在 cache 中就创建一个新的 module，使用 moduleId 作为 key, 所以 key 的唯一
   var module = (installedModules[moduleId] = {
       i: moduleId,
-      l: false,
+      l: false, // loaded 是否被加载
       exports: {},
   });
 
@@ -221,9 +223,13 @@ __webpack_require__.e = function requireEnsure (chunkId) {
   var promises = [];
   
   // JSONP chunk loading for javascript
+  // Javescript JSONP chunk加载中
   var installedChunkData = installedChunks[chunkId];
-  if (installedChunkData !== 0) { // 0 means "already installed".
+  if (installedChunkData !== 0) {
+    // 0 means "already installed".
+    // 0 代表已经完成
     // a Promise means "currently loading".
+    // installedChunkData 不为undefined，表示 promise 正在加载中
     if (installedChunkData) {
       promises.push(installedChunkData[2]);
     } else {
@@ -247,6 +253,7 @@ __webpack_require__.e = function requireEnsure (chunkId) {
       script.src = jsonpScriptSrc(chunkId);
 
       // create error before stack unwound to get useful stacktrace later
+      // 在堆栈展开之前创建错误，以便以后获得有用的堆栈跟踪
       var error = new Error();
       onScriptComplete = function (event) {
         // avoid mem leaks in IE.
@@ -279,11 +286,10 @@ __webpack_require__.e = function requireEnsure (chunkId) {
 
 我们发现，`installedChunkData`的值代表着**缓存模块的状态**:
 
-- `0` 该 `chunk` 已经加载完毕
-
-- `undefined` 代表该 `chunk` 加载失败、加载超时、从未加载过
-
-- `promise`代表该 `chunk` 正在加载
+- `0` 代表 `chunk` 已经加载完毕
+- `undefined` 代表 `chunk` 加载失败、加载超时、从未加载过
+- `null` 代表 `chunk` `preloaded/prefetched`
+- `promise`代表 `chunk` 正在加载
 
 ```js
 installedChunkData = installedChunks[chunkId] = [resolve, reject];
@@ -297,44 +303,58 @@ promises.push(installedChunkData[2] = promise);
 `webpackJsonpCallback` 其实就是加载异步模块完成的回调。
 
 ```js
-// install a JSONP callback for chunk loading
-function webpackJsonpCallback (data) {
-  var chunkIds = data[0];
-  var moreModules = data[1];
+(function (modules) {
+  // ...
+  
+  // install a JSONP callback for chunk loading
+  function webpackJsonpCallback (data) {
+    var chunkIds = data[0];
+    var moreModules = data[1];
 
-  // add "moreModules" to the modules object,
-  // then flag all "chunkIds" as loaded and fire callback
-  var moduleId, chunkId, i = 0, resolves = [];
-  for (; i < chunkIds.length; i++) {
-    chunkId = chunkIds[i];
-    if (Object.prototype.hasOwnProperty.call(installedChunks, chunkId) && installedChunks[chunkId]) {
-      resolves.push(installedChunks[chunkId][0]);
+    // add "moreModules" to the modules object,
+    // then flag all "chunkIds" as loaded and fire callback
+    var moduleId, chunkId, i = 0, resolves = [];
+    for (; i < chunkIds.length; i++) {
+      chunkId = chunkIds[i];
+      // installedChunks[chunkId] = [resolve, reject, promise]
+      if (Object.prototype.hasOwnProperty.call(installedChunks, chunkId) && installedChunks[chunkId]) {
+        resolves.push(installedChunks[chunkId][0]);
+      }
+      // 标记成已经执行完
+      installedChunks[chunkId] = 0;
     }
-    installedChunks[chunkId] = 0;
-  }
-  for (moduleId in moreModules) {
-    if (Object.prototype.hasOwnProperty.call(moreModules, moduleId)) {
-      modules[moduleId] = moreModules[moduleId];
+    
+    // 将异步 chunk 中的 module 加入主 chunk 的 modules(IIFE的参数)数组中
+    for (moduleId in moreModules) {
+      if (Object.prototype.hasOwnProperty.call(moreModules, moduleId)) {
+        modules[moduleId] = moreModules[moduleId];
+      }
     }
-  }
-  if (parentJsonpFunction) parentJsonpFunction(data);
+    
+    // 将 data 加入 window["webpackJsonp"] 数组
+    if (parentJsonpFunction) parentJsonpFunction(data);
 
-  while (resolves.length) {
-    resolves.shift()();
-  }
+    // __webpack_require__.e 中每一个 Promise 的返回结果
+    while (resolves.length) {
+      resolves.shift()();
+    }
+  };
 
-};
-
-var jsonpArray = window["webpackJsonp"] = window["webpackJsonp"] || [];
-// 保存原始的 Array.prototype.push 方法
-var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
-// 将 push 方法的实现修改为 webpackJsonpCallback
-// 这样我们在异步 chunk 中执行的 window['webpackJsonp'].push 其实是 webpackJsonpCallback 函数。
-jsonpArray.push = webpackJsonpCallback;
-jsonpArray = jsonpArray.slice();
-// 对已在数组中的元素依次执行webpackJsonpCallback方法
-for (var i = 0; i < jsonpArray.length; i++) webpackJsonpCallback(jsonpArray[i]);
-var parentJsonpFunction = oldJsonpFunction;
+  var jsonpArray = window["webpackJsonp"] = window["webpackJsonp"] || [];
+  // 保存原始的 Array.prototype.push 方法
+  var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
+  // 将 push 方法的实现修改为 webpackJsonpCallback
+  // 这样我们在异步 chunk 中执行的 window['webpackJsonp'].push 其实是 webpackJsonpCallback 函数。
+  jsonpArray.push = webpackJsonpCallback;
+  jsonpArray = jsonpArray.slice();
+  // 对已在数组中的元素依次执行 webpackJsonpCallback 方法
+  for (var i = 0; i < jsonpArray.length; i++) webpackJsonpCallback(jsonpArray[i]);
+  var parentJsonpFunction = oldJsonpFunction;
+  
+  // ...
+})({
+  // ...
+})
 ```
 
 - 异步加载错误日志打印
@@ -344,10 +364,21 @@ var parentJsonpFunction = oldJsonpFunction;
 __webpack_require__.oe = function (err) { console.error(err); throw err; };
 ```
 
+#### 总结
+
+- `webpack` 打包出来的结果实际上是一个 `IIFE`, 参数是模块的文件 `chunks`
+  - 会对引用过的模块进行缓存
+- `webpack IIFE` 通过实现 `__webpack_require__` 模拟 `import` 一个模块，并 `export` 该模块。
+- `webpack` 通过 `__webpack_require__.r` 方法用来标记一个`ES Module` ，通过`__webpack_require__.n` 方法针对非 `ES Module( 👆👆👆 )`  模块的输出定义函数做一些兼容，即 `__esModule` 为 `true` 使用 `module.default` 导出模块，否则使用 `module` 导出模块
+- 异步加载 `import()` 的实现主要是使用 `JSONP` 动态加载模块，并通过 `webpackJsonpCallback` 判断加载的结果
+  - 缓存异步模块的状态
+
+    - `0` 代表 `chunk` 已经加载完毕
+    - `undefined` 代表 `chunk` 加载失败、加载超时、从未加载过
+    - `null` 代表 `chunk` `preloaded/prefetched`
+    - `promise`代表 `chunk` 正在加载
+
 #### 参考资料
 
 [ECMAScript 4th_Edition_(abandoned)](https://en.wikipedia.org/wiki/ECMAScript#4th_Edition_(abandoned))
 
-
-
-[bate]: 
