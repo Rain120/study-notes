@@ -2,6 +2,10 @@
 
 `Babel` 是一个通用的多用途 `JavaScript `编译器。它主要用于将` ECMAScript 2015+` 版本的代码转换为向后兼容的 `JavaScript` 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。
 
+`babel` 总共分为三个阶段：解析，转换，生成。
+
+`babel` 本身不具有任何转化功能，它把转化的功能都分解到一个个 `plugin` 里面。因此当我们不配置任何插件时，经过 `babel` 的代码和输入是相同的。
+
 ### 作用
 
 - 语法转换
@@ -19,7 +23,7 @@
 
    
 
-2. [在你的项目中创建新文件]([https://www.babeljs.cn/docs/configuration#%E4%BD%A0%E7%9A%84%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%E6%98%AF%E4%BB%80%E4%B9%88](https://www.babeljs.cn/docs/configuration#你的使用场景是什么))
+2. [在你的项目中创建新文件](https://www.babeljs.cn/docs/configuration#你的使用场景是什么)
 
    1. 你是否希望编译 `node_modules` 目录下的模块？
 
@@ -71,7 +75,7 @@
 
 ### [配置 Babel](https://www.babeljs.cn/docs/configuration)
 
-你可以通过安装 [**插件(plugins)** ](https://www.babeljs.cn/docs/plugins)或 [**预设(presets)** ](https://www.babeljs.cn/docs/presets)来指示 `Babel` 去做什么事情。 `preset `作为 `Babel` `plugins`的组合转换你的代码。
+你可以通过安装 [插件(plugins)](https://www.babeljs.cn/docs/plugins)或 [预设(presets)](https://www.babeljs.cn/docs/presets)来指示 `Babel` 去做什么事情。 `preset `作为 `Babel` `plugins`的组合转换你的代码。
 
 #### **Plugins**
 
@@ -104,6 +108,11 @@
 
 参数由插件名和参数对象组成一个数组，可以在配置文件中设置。
 
+**格式**
+
+- 不带配置项，直接列出名字
+- 带了配置项，自己变成数组，**[名字, 配置项对象]**
+
 ```json
 {
   "presets": [
@@ -117,7 +126,7 @@
 
 **执行顺序**
 
-逆序排列的(从后往前)。
+逆序排列的(从后往前)，主要是为了保证向后兼容，我们在编排 `preset` 的时候，也要注意顺序，**其实只要按照规范的时间顺序列出即可。**。
 
 **[babel-preset-stage-x](https://www.babeljs.cn/docs/presets#stage-x-实验性质的-presets)**
 
@@ -125,11 +134,52 @@
 
 [TC39](https://github.com/tc39) 将提案分为以下几个阶段：
 
-- [Stage 0](https://www.babeljs.cn/docs/babel-preset-stage-0) - 设想（Strawman）：只是一个想法，可能有 Babel插件。
+- [Stage 0](https://www.babeljs.cn/docs/babel-preset-stage-0) - 设想（Strawman）：只是一个想法，可能有 `Babel` 插件。
 - [Stage 1](https://www.babeljs.cn/docs/babel-preset-stage-1) - 建议（Proposal）：这是值得跟进的。
 - [Stage 2](https://www.babeljs.cn/docs/babel-preset-stage-2) - 草案（Draft）：初始规范。
 - [Stage 3](https://www.babeljs.cn/docs/babel-preset-stage-3) - 候选（Candidate）：完成规范并在浏览器上初步实现。
 - Stage 4 - 完成（Finished）：将添加到下一个年度版本发布中。
+
+**env**
+
+`env` 的核心目的是通过配置得知目标环境的特点，然后只做必要的转换，而无需对目标环境所需的语法转换(以及可选的浏览器`polyfill`)进行管理，这样可以使包更小。
+
+```sh
+npm install --save-dev @babel/preset-env
+```
+
+`@babel/preset-env` 接受您指定的任何目标环境，并根据其映射检查它们，以编译插件列表，并将其传递给`Babel`。常见用法如下
+
+```js
+{
+  "presets": [
+    ["env", {
+      "targets": {
+         "browsers": ["last 2 versions", "safari >= 7"]
+      }
+    }]
+  ]
+}
+```
+
+或者可以配置 [.browserslistrc](https://github.com/browserslist/browserslist)
+
+```js
+last 2 versions
+safari >= 7
+```
+
+或者 `package.json`
+
+```json
+{
+  "browserslist": "last 2 versions, safari >= 7"
+}
+```
+
+
+
+[babel-preset-env](https://www.babeljs.cn/docs/babel-preset-env)
 
 ### 常用包解释
 
@@ -262,14 +312,6 @@ npm install --save @babel/runtime
 }
 ```
 
-
-
-------
-
-**[Back To 目录](#目录)**
-
----
-
 ### 参考资料
 
 [Babel官网](https://www.babeljs.cn/docs/)
@@ -277,4 +319,6 @@ npm install --save @babel/runtime
 [babel-handbook 中文文档](https://github.com/Rain120/babel-handbook/blob/master/translations/zh-Hans/README.md)
 
 [深入浅出 Babel 上篇：架构和原理 + 实战](https://juejin.im/post/5d94bfbf5188256db95589be#heading-1)
+
+[一口（很长的）气了解 babel](https://zhuanlan.zhihu.com/p/43249121)
 
