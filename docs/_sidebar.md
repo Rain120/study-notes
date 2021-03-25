@@ -19,6 +19,7 @@
         - [CSS 学习资源](notes/css/resource.md)
         - [CSS 修改 input, textarea 等控件 placeholder 的颜色](notes/css/change-inputs-placeholder.md)
         - [CSS 常见的选择器](notes/css/css-selector.md)
+        - [CSS3 Masks](notes/css/css3-maks.md)
     - [Javascript](notes/javascript/guide.md)
       - [JavaScript 核心概念](notes/javascript/key-concept/guide.md)
         - [值类型 vs 引用类型](notes/javascript/key-concept/values-vs-reference.md)
