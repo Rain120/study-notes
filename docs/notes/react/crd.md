@@ -260,3 +260,4 @@ if (!checkRequiredFiles([paths.appHtml].concat(appIndexFiles))) {
 [Get Start](https://create-react-app.dev/docs/getting-started)
 
 [多入口配置](https://xuxun.cool/2020/09/multiple-entry-with-create-react-app-v3/)
+

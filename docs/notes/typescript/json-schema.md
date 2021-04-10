@@ -65,7 +65,7 @@
 | `properties`           | `object`   | 定义各种键和他们的值类型，以及用于 `JSON` 文件中的最小值和最大值。 |
 | `maxProperties`        | `number`   | 最大属性数量                                                 |
 | `minProperties`        | `number`   | 最小属性数量                                                 |
-| `dependencies`         | `object`   | 表示哪些属性的存在必须依赖另外一些属性的存在`                |
+| `dependencies`         | `object`   | 表示哪些属性的存在必须依赖另外一些属性的存在                 |
 | `patternProperties`    | `object`   | 判断所有属性名匹配上的都必须满足一定的条件                   |
 | `additionalProperties` | `object`   | 表示 `json` 可以出现 `object` 未定义，但是满足一定条件的数据 |
 
