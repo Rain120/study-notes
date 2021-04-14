@@ -21,8 +21,6 @@
    npm install --save-dev @babel/core @babel/cli @babel/preset-env
    ```
 
-   
-
 2. [在你的项目中创建新文件](https://www.babeljs.cn/docs/configuration#你的使用场景是什么)
 
    1. 你是否希望编译 `node_modules` 目录下的模块？

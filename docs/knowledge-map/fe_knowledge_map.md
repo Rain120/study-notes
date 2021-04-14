@@ -12,6 +12,8 @@
 
 [Javascript测试最佳做法](https://testjavascript.com/) [Github](https://github.com/goldbergyoni/javascript-testing-best-practices)
 
+[How JavaScript Works 中文版](https://github.com/Troland/how-javascript-works) [原文](https://blog.sessionstack.com/how-javascript-works-under-the-hood-of-custom-elements-best-practices-on-building-reusable-e118e888de0c)
+
 #### 浏览器相关
 
 [浏览器相关](notes/knowledge-map/fe/browser.md)
