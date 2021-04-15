@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2021-03-25 13:14:54
+ * @LastEditTime: 2021-04-15 19:37:30
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -144,6 +144,8 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [Docker 安装](notes/docker/docker-install.md)
       - [Docker CentOS下安装 Node](notes/docker/centos-node-install.md)
       - [Docker 命令学习](notes/docker/docker-command.md)
+          - [容器root fs命令](notes/docker/container-fs.md)
+          - [本地镜像管理](notes/docker/local-images-manage.md)
       - [Docker 快速入门](notes/docker/quick-start.md)
     - [redis](notes/redis/guide.md)
       - [redis 安装启动(Mac)](notes/redis/install-run.md)

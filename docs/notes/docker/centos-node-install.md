@@ -8,8 +8,6 @@ docker search centos
 docker pull centos:7
 ```
 
-
-
 #### `Wget`安装
 
 ```sh
