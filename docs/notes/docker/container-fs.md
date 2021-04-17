@@ -2,8 +2,6 @@
 
 用于容器与主机之间的数据拷贝。
 
-##### 语法
-
 ```sh
 docker cp [Options] Container:source_path dest_path/-
 
@@ -41,8 +39,6 @@ docker cp  68fe0d99b283:/www /tmp/
 
 从容器创建一个新的镜像
 
-##### 语法
-
 ```
 docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]
 ```
@@ -68,8 +64,6 @@ docker commit -a "rain120" -m "test" -='CMD ["apachectl", "-DFOREGROUND"]' c3f27
 #### `diff`
 
 检查容器里文件结构的更改
-
-##### 语法
 
 ```
 docker diff [OPTIONS] CONTAINER
