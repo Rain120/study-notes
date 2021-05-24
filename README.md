@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2021-04-15 19:37:30
+ * @LastEditTime: 2021-05-24 10:56:37
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -123,6 +123,8 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
     - [移动端](notes/mobile/guide.md)
       - [Charles抓包https手机配置](notes/mobile/charles-https-mobile-config.md)
       - [移动端Tips](notes/mobile/mobile-tips.md)
+    - [Puppeteer](notes/puppeteer/guide.md)
+      - [HTML to image(Puppeteer 截图)](notes/puppeteer/html-to-image.md)
     - [Lerna](notes/lerna/guide.md)
       - [Lerna 入门篇](notes/lerna/base.md)
       - [Lerna 命令](notes/lerna/commands.md)
