@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2021-05-24 10:56:37
+ * @LastEditTime: 2021-05-25 14:39:41
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -126,6 +126,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
     - [Puppeteer](notes/puppeteer/guide.md)
       - [HTML to image(Puppeteer 截图)](notes/puppeteer/html-to-image.md)
       - [HTML to PDF](notes/puppeteer/html-to-pdf.md)
+      - [Puppeteer Docker](notes/puppeteer/docker.md)
       - [Puppeteer FAQ](notes/puppeteer/faq.md)
     - [Lerna](notes/lerna/guide.md)
       - [Lerna 入门篇](notes/lerna/base.md)
