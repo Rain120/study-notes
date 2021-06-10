@@ -51,6 +51,8 @@
         - [import 全量引入](notes/javascript/es-study/import-full.md)
         - [import 异步引入](notes/javascript/es-study/import-async.md)
    - [Javascript 学习资源](notes/javascript/resource.md)
+- [Node](notes/node/guide.md)
+   - [Node require](notes/node/require.md)
 - [HTTP](notes/http/guide.md)
    - [HTTP 三次握手 四次挥手](notes/http/three-handshaking-four-wave.md)
 - [Typescript](notes/typescript/guide.md)
