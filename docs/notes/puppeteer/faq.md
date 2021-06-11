@@ -107,3 +107,4 @@ const browser = await puppeteer.launch({
 [How to Update and Install Latest Chrome in Linux/Ubuntu](https://linoxide.com/linux-how-to/install-latest-chrome-run-terminal-ubuntu/)
 
 [How to Manually Install, Update, and Uninstall Fonts on Linux](https://medium.com/source-words/how-to-manually-install-update-and-uninstall-fonts-on-linux-a8d09a3853b0)
+
