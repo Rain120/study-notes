@@ -54,6 +54,7 @@
       - [Javascript 学习资源](notes/javascript/resource.md)
     - [Node](notes/node/guide.md)
          - [Node require](notes/node/require.md)
+         - [Node path](notes/node/path.md)
     - [HTTP](notes/http/guide.md)
          - [HTTP 三次握手 四次挥手](notes/http/three-handshaking-four-wave.md)
     - [Typescript](notes/typescript/guide.md)
