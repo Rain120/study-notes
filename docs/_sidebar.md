@@ -9,6 +9,7 @@
   - [一目了然的代码注释和技巧](knowledge-map/code-annotation.md)
   - [前端学习网站分享](knowledge-map/fe-website.md)
   - [UI 相关知识](knowledge-map/ui.md)
+  - [代码规范](knowledge-map/code-style.md)
 - [学习笔记](notes/guide.md)
     - [HTML](notes/html/guide.md)
     - [CSS](notes/css/guide.md)
