@@ -18,15 +18,27 @@
 
 [浏览器相关](notes/knowledge-map/fe/browser.md)
 
+##### 相关文章
+
+[Google: Inside look at modern web browser (part 1)](https://developers.google.com/web/updates/2018/09/inside-browser-part1) [中文版](https://juejin.cn/post/6844903679389073415)
+
+[深入理解现代浏览器](https://lisongfeng.cn/2019/06/05/understanding-modern-browsers.html)
+
 #### Node.js
 
 [Nodejs 学习](notes/knowledge-map/fe/nodejs.md)
+
+[Node 中文文档](http://nodejs.cn/api/)
 
 #### 框架学习
 
 [框架学习之React & Vue](notes/knowledge-map/fe/react-vue.md)
 
 [How I Started in Web Development](https://codeburst.io/how-i-started-in-web-development-8f61da839e92)
+
+#### npm相关
+
+[npm config](https://docs.npmjs.com/cli/v7/using-npm/config)
 
 #### 前端知识
 
