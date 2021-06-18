@@ -17,7 +17,13 @@
 
 我们知道，对于一样物品，一个生物来说，一个好的名字可以让你更快的记住他，认识他，这个规则，在代码里面也适应。
 
-##### 命名建议
+##### 命名风格
+
+![code-name-style](./images/code-name-style.png)
+
+[`@tinyfe/naming-transform` 文档](https://github.com/tinyfe/one-utils/blob/main/packages/naming-transform/README.md#%E5%91%BD%E5%90%8D%E9%A3%8E%E6%A0%BCnaming-style)
+
+##### 命名习惯建议
 
 规则: **动词 + 名词 + 状态**
 
@@ -140,6 +146,39 @@ function getName(profile) {
 ##### 垂直
 
 #### 代码的布局
+
+在代码来看，所有的代码都是以 **块代码** 和 **行代码** 组成。
+
+- 块代码
+
+  每个块代码后面保留一个空行。
+
+  ```js
+  const info = {
+    name: 'Rain120',
+    gender: 'male',
+    job: 'fe',
+    workTime: 3,
+    age: 25
+  };
+  // ---> here新增一个空行
+  const github = 'https://github.com/rain120';
+  
+  ```
+
+- 行代码
+
+  一行限制在 `80-120` 以内，链式调用，尽量以连接函数换行。
+
+  ```js
+  // end
+  const info = Object.keys(info).map(k => ({ label: k, value:  info[k]})).filter(item => ['name', 'age', 'gender'].includes(item));
+  
+  // good
+  const info = Object.keys(info)
+  		.map(k => ({ label: k, value:  info[k]}))
+  		.filter(item => ['name', 'age', 'gender'].includes(item));
+  ```
 
 #### 个人建议
 
