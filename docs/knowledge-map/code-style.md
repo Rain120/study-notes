@@ -25,16 +25,99 @@
 
 ##### 命名习惯建议
 
-规则: **动词 + 名词 + 状态**
+规则: **动词 + 名词(描述) + 状态**，规则同样适合函数。
 
-- 看变量类型是什么
-- 变量意思是什么
+- 观察变量意思是什么，比如说，变量大概是要表示工作的意思。
+- 观察变量状态是什么，比如说，工作的状态是正在进行中，还是表示工作过。
+- 观察变量类型是什么，比如说，数字，字符串，`Boolean `, etc.
 
+从上面的规则，我们可以这么拆解这个变量，**是否( --> is)** **正在(ing)** **工作(work)**，所以可以命名为 `isWorking` 。
 
+一个变量叫什么，取决于，你对他怎么定性，就好像，你给一个小姐姐去别名，不会叫二狗子吧，你会取一个，女性，和她性格很近的名字，比如说 **猪猪(🐷)女孩** 。
 
-#### 表达式与语句
+#### 语句
 
+在计算机程序设计中，语句是命令式编程语言的一个语法单元，它表达了要执行的一些动作，语句可以有内部组件(例如，表达式)。它分为块语句(多行)和单行语句。
 
+##### 行长度
+
+在语句中，我们习惯的是，尽量保证单行语句在 `80-120`字的范围内。为什么要局限于某一个范围呢？我的理解是，让重点在可视区域。举个🌰：
+
+👇 是一个筛选的例子，我们会从学生列表中取出 男性，年龄大于25岁，工作年限大于3年 `(没有性别歧视，就是随机想的一个🌰)`
+
+```js
+function getInfoByMoreFilterFromStudentListAndFormat(list) {
+  return list.filter(Boolean).filter(item => item.age > 25 && item.gender === 'male' && item.work > 3);
+}
+```
+
+当你看到这串代码的时候，大家默认是从左往右读，这样不是说看不懂，一个就简单的问题，你的脖子累不累，哈哈哈，开玩笑。歧视我想表达的是，这样你会很容易丢失重要信息，也会遗忘之前看了什么。
+
+```js
+function getInfoByMoreFilterFromStudentListAndFormat(list) {
+  return list
+    .filter(Boolean)
+    .filter(
+    	item => item.age > 25
+    	&& item.gender === 'male'
+    	&& item.work > 3
+  	);
+}
+```
+
+我们通过变身，👆 这个代码会让你看起来逻辑更清晰，你只需要着重在某一处即可，不需要记住一大串的条件。
+
+##### 语句块
+
+我们先看下👇这串代码，感受一下
+
+```js
+// https://github.com/tinyfe/one-utils/blob/3d2bebb874e730256511e7a1d476f3ec9c60bb1c/packages/watermark/src/index.ts#L300
+// ...
+observerWaterMark(dom: HTMLElement | null = this.dom) {
+  if (!dom) {
+    throw new Error(`The dom value must be a HTMLElement, now is ${dom}`);
+  }
+  const { observer: observerCallback } = this.options;
+  this.observer = new MutationObserver((mutations, observer) => {
+    this.setWaterMark();
+    observerCallback && observerCallback(mutations, observer);
+    console.log('法网恢恢疏而不漏, 你不要乱来哦');
+  });
+  // 以上述配置开始观察目标节点
+  this.observer.observe(dom, this.options.observerOptions);
+}
+// ...
+```
+
+不知道，你看着他什么感觉，在我看来，很臃肿，所有的东西都揉在一起，看起来很难受，不知道可以在哪里停下来思考，得全部记住，才知道这些是干嘛的。
+
+```js
+// ...
+observerWaterMark(dom: HTMLElement | null = this.dom) {
+  if (!dom) {
+    throw new Error(`The dom value must be a HTMLElement, now is ${dom}`);
+  }
+
+  const { observer: observerCallback } = this.options;
+
+  this.observer = new MutationObserver((mutations, observer) => {
+    this.setWaterMark();
+    observerCallback && observerCallback(mutations, observer);
+    
+    console.log('法网恢恢疏而不漏, 你不要乱来哦');
+  });
+
+  // 以上述配置开始观察目标节点
+  this.observer.observe(dom, this.options.observerOptions);
+}
+// ...
+```
+
+我们这样修改一下，是不是感觉清爽多了。所以我的建议是，
+
+- 明确同类的操作，比如是声明放在一起，他们作为**一块代码**
+- 每一个块之间的代码中间保留一个空行
 
 #### 变量
 
@@ -191,6 +274,8 @@ function getName(profile) {
 #### 参考资料
 
 [Wiki - Programming style](https://en.wikipedia.org/wiki/Programming_style)
+
+[Statement_(computer_science)](https://en.wikipedia.org/wiki/Statement_(computer_science))
 
 [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 
