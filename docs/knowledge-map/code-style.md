@@ -278,8 +278,6 @@ function getName(profile) {
 
 目前，大部分公司和个人开发的项目，都会使用 `eslint` 进行代码(自动保存格式化，`precommit` 自动`eslint --fix`)检查，但是，从个人的角度来看，初学者，不建议自动化处理，而适合手动敲代码，养成习惯，只保留 `precommit fix` 的操作；对于，有经验的同学，我觉得可以，开启这些，用来节省开发时间。
 
-
-
 #### 参考资料
 
 [Wiki - Programming style](https://en.wikipedia.org/wiki/Programming_style)
