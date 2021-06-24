@@ -5,8 +5,8 @@
 总结程序设计实践中的经验，代码风格的要素包括（但不限于）以下几点：
 
 - 名字的使用（参见：[驼峰式大小写](https://zh.wikipedia.org/wiki/駝峰式大小寫)、[标识符命名约定](https://zh.wikipedia.org/w/index.php?title=标识符命名约定&action=edit&redlink=1)、[匈牙利命名法](https://zh.wikipedia.org/wiki/匈牙利命名法)）
-- [表达式](https://zh.wikipedia.org/wiki/表达式)与语句
 - 常量的使用
+- [表达式](https://zh.wikipedia.org/wiki/表达式)与语句
 - 注释的使用
 - [缩进](https://zh.wikipedia.org/wiki/缩进)（参见：[缩进风格](https://zh.wikipedia.org/wiki/缩进风格)）
 - 代码的布局
@@ -43,6 +43,87 @@
 - 函数
   - 开头: `get` `set` `on` `handle`  `blabla....`, etc: `getUserName`, `setUserInfo`, `onClick`, `handleOnTreeProcess` ....
   - 结尾: 动词，名词
+
+#### 变量
+
+##### 定义变量
+
+- 总是使用`const`或 `let` 来声明变量。不这样做会导致全局变量。我们希望避免污染全局名称空间。`eslint: no-undef no-var prefer-const`
+
+  ```js
+  // bad
+  superPower = new SuperPower();
+  var captain = new Captain();
+  
+  // good
+  const superPower = new SuperPower();
+  let captain = new Captain();
+  ```
+
+- 总是单独声明变量，不建议分组。
+
+  为什么？因为这样在重构，调整位置，删除，`debugger`等场景下，你都会有很好的体验，也不会有分隔符`,` ，`;`等其他分隔符的差异。
+
+  ```js
+  // bad
+  const items = getItems(),
+      goSportsTeam = true,
+      dragonball = 'z';
+  
+  // bad
+  // (compare to above, and try to spot the mistake)
+  const items = getItems(),
+      goSportsTeam = true;
+      dragonball = 'z';
+  
+  // good
+  const items = getItems();
+  const goSportsTeam = true;
+  const dragonball = 'z';
+  
+  ```
+
+- 不许链式声明一个变量 `eslint: no-multi-assign `
+
+  为什么?链接变量赋值会创建隐式全局变量。
+
+  ```js
+  // bad
+  (function example() {
+    // JavaScript interprets this as
+    // let a = ( b = ( c = 1 ) );
+    // The let keyword only applies to variable a; variables b and c become
+    // global variables.
+    let a = b = c = 1;
+  }());
+  
+  console.log(a); // throws ReferenceError
+  console.log(b); // 1
+  console.log(c); // 1
+  
+  // good
+  (function example() {
+    let a = 1;
+    let b = a;
+    let c = a;
+  }());
+  
+  console.log(a); // throws ReferenceError
+  console.log(b); // throws ReferenceError
+  console.log(c); // throws ReferenceError
+  
+  // the same applies for `const`
+  ```
+
+#### 常量
+
+- 定义常量使用`const`关键词
+- 定义常量使用**大写英文字母**, 尽量见名知意，每个单词之间用 `_` 分隔。
+- 常量不能重复定义和不能被改变
+
+```js
+const SOME_DAY_I_CAN_GET_IT = true;
+```
 
 #### 语句
 
@@ -128,85 +209,6 @@ observerWaterMark(dom: HTMLElement | null = this.dom) {
 - 明确同类的操作，比如是声明放在一起，他们作为**一块代码**
 - 每一个块之间的代码中间保留一个空行
 
-#### 变量
-
-- 总是使用`const`或 `let` 来声明变量。不这样做会导致全局变量。我们希望避免污染全局名称空间。`eslint: no-undef no-var prefer-const`
-
-  ```js
-  // bad
-  superPower = new SuperPower();
-  var captain = new Captain();
-  
-  // good
-  const superPower = new SuperPower();
-  let captain = new Captain();
-  ```
-
-- 总是单独声明变量，不建议分组。
-
-  为什么？因为这样在重构，调整位置，删除，`debugger`等场景下，你都会有很好的体验，也不会有分隔符`,` ，`;`等其他分隔符的差异。
-
-  ```js
-  // bad
-  const items = getItems(),
-      goSportsTeam = true,
-      dragonball = 'z';
-  
-  // bad
-  // (compare to above, and try to spot the mistake)
-  const items = getItems(),
-      goSportsTeam = true;
-      dragonball = 'z';
-  
-  // good
-  const items = getItems();
-  const goSportsTeam = true;
-  const dragonball = 'z';
-  
-  ```
-
-- 不许链式声明一个变量 `eslint: no-multi-assign `
-
-  为什么?链接变量赋值会创建隐式全局变量。
-
-  ```js
-  // bad
-  (function example() {
-    // JavaScript interprets this as
-    // let a = ( b = ( c = 1 ) );
-    // The let keyword only applies to variable a; variables b and c become
-    // global variables.
-    let a = b = c = 1;
-  }());
-  
-  console.log(a); // throws ReferenceError
-  console.log(b); // 1
-  console.log(c); // 1
-  
-  // good
-  (function example() {
-    let a = 1;
-    let b = a;
-    let c = a;
-  }());
-  
-  console.log(a); // throws ReferenceError
-  console.log(b); // throws ReferenceError
-  console.log(c); // throws ReferenceError
-  
-  // the same applies for `const`
-  ```
-
-#### 常量
-
-- 定义常量使用`const`关键词
-- 定义常量使用**大写英文字母**, 尽量见名知意，每个单词之间用 `_` 分隔。
-- 常量不能重复定义和不能被改变
-
-```js
-const SOME_DAY_I_CAN_GET_IT = true;
-```
-
 #### 注释
 
 多行注释 `/** ... */`
@@ -241,36 +243,36 @@ function getName(profile) {
 
 在代码来看，所有的代码都是以 **块代码** 和 **行代码** 组成。
 
-- 块代码
+##### 块代码
 
-  每个块代码后面保留一个空行。
+每个块代码后面保留一个空行。
 
-  ```js
-  const info = {
-    name: 'Rain120',
-    gender: 'male',
-    job: 'fe',
-    workTime: 3,
-    age: 25
-  };
-  // ---> here新增一个空行
-  const github = 'https://github.com/rain120';
-  
-  ```
+```js
+const info = {
+  name: 'Rain120',
+  gender: 'male',
+  job: 'fe',
+  workTime: 3,
+  age: 25
+};
+// ---> here 新增一个空行
+const github = 'https://github.com/rain120';
 
-- 行代码
+```
 
-  一行限制在 `80-120` 以内，链式调用，尽量以连接函数换行。
+##### 行代码
 
-  ```js
-  // end
-  const info = Object.keys(info).map(k => ({ label: k, value:  info[k]})).filter(item => ['name', 'age', 'gender'].includes(item));
-  
-  // good
-  const info = Object.keys(info)
-  		.map(k => ({ label: k, value:  info[k]}))
-  		.filter(item => ['name', 'age', 'gender'].includes(item));
-  ```
+一行限制在 `80-120` 以内，链式调用，尽量以连接函数换行。
+
+```js
+// end
+const info = Object.keys(info).map(k => ({ label: k, value:  info[k]})).filter(item => ['name', 'age', 'gender'].includes(item));
+
+// good
+const info = Object.keys(info)
+		.map(k => ({ label: k, value:  info[k]}))
+		.filter(item => ['name', 'age', 'gender'].includes(item));
+```
 
 #### 个人建议
 
