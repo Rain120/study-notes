@@ -59,6 +59,8 @@
 
   自定义事件,被动处理，采用 `handleXXX`, e.g. `handleInputChange`
 
+  更多可参考 [react supported events](https://reactjs.org/docs/events.html#supported-events)。
+
 - 状态
 
   通常用来描述实体（例如：HTML标签、组件、对象）的功能属性，而且定法比较固定，当然了，这里
