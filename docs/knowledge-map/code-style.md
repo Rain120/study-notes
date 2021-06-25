@@ -44,6 +44,111 @@
   - 开头: `get` `set` `on` `handle`  `blabla....`, etc: `getUserName`, `setUserInfo`, `onClick`, `handleOnTreeProcess` ....
   - 结尾: 动词，名词
 
+##### 常见词汇
+
+- 数据操作：`get` / `set` / `open` / `close` / `handle` / `make` / `computed` 
+- 增加：`add` / `create` / `insert` / `push` 
+- 删除：`remove` / `destory` / `delete` / `split` 
+- 判断: `is` /  `has` / `can` / `should` / `check` / `enable` / `with` / `allow` / `could`
+
+##### 场景分类
+
+- 事件处理
+
+  原生事件，主动监听，采用 `onXXX`, e.g. `onClick`
+
+  自定义事件,被动处理，采用 `handleXXX`, e.g. `handleInputChange`
+
+- 状态
+
+  通常用来描述实体（例如：HTML标签、组件、对象）的功能属性，而且定法比较固定，当然了，这里
+
+  ```json
+  {
+    disabled: '是否禁用',
+    editable: '是否可编辑',
+    clearable: '是否可清除',
+    readonly: '只读',
+    expandable: '是否可展开',
+    checked: '是否选中',
+    enumberable: '是否可枚举',
+    iterable: '是否可迭代',
+    clickable: '是否可点击',
+    draggable: '是否可拖拽'
+  }
+  ```
+
+- 进行中，过去式
+
+  可以使用`ed` `ing`等有关于状态进行时的描述。
+
+  ```json
+  {
+      isEditing: '是否编辑中',
+      isEdited: '是否已编辑',
+  
+      isChecked: '是否选中',
+      isChecking: '是否正在选择中',
+  
+      isCleared: '是否已清除',
+      isShow: '是否显示',
+      isVisible: '是否可见',
+      isLoading: '是否处于加载中',
+      isConnecting: '是否处于连接中',
+      isValidating: '正在验证中',
+      isRunning: '正在运行中',
+      isListening: '正在监听中'
+  }
+  ```
+
+- 配置类、选项类
+
+  主要是指组件功能的开启与关闭，功能属性的配置。可以使用的：`with`/`enable`/`allow`/`can`/`check`
+
+  ```json
+  {
+    withTab: '是否带选项卡',
+    withoutTab: '不带选项卡',
+    enableFilter: '开启过滤',
+    allownCustomScale: '允许自定义缩放',
+    shouldClear: '是否清除',
+    canSelectItem: '是否能选中元素',
+    noColon: '不显示label后面的冒号',
+    checkJs: '检查Js',
+  }
+  ```
+
+  如果嫌分类太多，可以只使用其中一种方式，比如在`Typescript`中使用了 `allownXx`,`checkJs` 和 `noXx`。
+
+- 异步处理
+
+  主要是指在写数据层服务、状态管理中的`Action`命名，以及`Ajax`回调的命名规则，命名主要围绕数据的增删查找来划分，获取数据通常是 `getXx` 和 `fetchXx`，看个人喜好但是要统一
+
+  ```json
+  {
+      getUsers: '获取用户列表',
+      fetchUsers: '获取用户列表',
+  }
+  ```
+
+- 跳转
+
+  常见动作：`to` / `navigate` / `jump` / `go` / `redirect` / `switch` / `back`
+
+  ```json
+  {
+    toTplDetail: '跳转到模板详情页面',
+    navigateToHome: '导航到首页',
+    jumpHome: '跳转首页',
+    goHome: '跳转首页',
+    redirectToLogin: '重定向到登录页',
+    switchTab: '切换Tab选项卡',
+    backHome: '回到主页'
+  }
+  ```
+
+  
+
 #### 变量
 
 ##### 定义变量
@@ -155,7 +260,47 @@ function getInfoByMoreFilterFromStudentListAndFormat(list) {
 }
 ```
 
-我们通过变身，👆 这个代码会让你看起来逻辑更清晰，你只需要着重在某一处即可，不需要记住一大串的条件。
+我们通过转换变身，👆 这个代码会让你看起来逻辑更清晰，你只需要着重在某一处即可，不需要记住一大串的条件。
+
+在这里，我们对函数参数也有如下建议：
+
+- 超过**3/4个**参数时，**合并参数列表**，当然了，怎么合并，取决于你的策略，怎么分类
+
+  ```js
+  function getParamsFromRouterQuery(router, keys = [], allExclude = true, once = false) {
+      // ...
+  }
+  ```
+
+  转换后
+
+  ```js
+  function getParamsFromRouterQuery(router, {keys = [], allExclude = true, once = false} = {}) {
+      // ...
+  }
+  ```
+
+- 超长函数，记得换行
+
+  ```js
+  function getParamsFromRouterQuery(router, {keys = [], allExclude = true, once = false} = {}) {
+      // ...
+  }
+  ```
+
+  转换后
+
+  ```js
+  function getParamsFromRouterQuery(
+      router, {
+          keys = [],
+          allExclude = true,
+          once = false
+      } = {}
+  ) {
+      // ...
+  }
+  ```
 
 ##### 语句块
 
@@ -207,7 +352,86 @@ observerWaterMark(dom: HTMLElement | null = this.dom) {
 我们这样修改一下，是不是感觉清爽多了。所以我的建议是，
 
 - 明确同类的操作，比如是声明放在一起，他们作为**一块代码**
-- 每一个块之间的代码中间保留一个空行
+
+- **每2个块之间的代码** 或者 **每2不同分类的变量语句的声明、处理** 之间保留一个空行
+
+  ```js
+  const ASSIGN_TOTAL = 1;
+  
+  function dynamicAssign(assign = 1, options = {}) {
+      // INFO: 0 直接处理 为 total
+      if (!assign) {
+          return total;
+      }
+      // 👇和👆是两类，所以此处保留一个空格
+      const {
+          total = ASSIGN_TOTAL, fixed = 3
+      } = options;
+      // 👇和👆是两类，所以此处保留一个空格
+      const average = +(total / assign).toFixed(fixed);
+      const rest = +(total - average * (assign - 1)).toFixed(fixed);
+      // 👇和👆是两类，所以此处保留一个空格
+      return {
+          average,
+          rest
+      };
+  }
+  
+  function getValueByAccuracy(value, accuracy = 1000) {
+      return Math.ceil(+value * accuracy) / accuracy;
+  }
+  
+  const getUpdatedParams = (type, list = []) => {
+      /**
+       * 先通过就旧的分配方式判断时候修改数据，包括 average + reset 的校验，以及 总和是否为 ASSIGN_TOTAL
+       */
+      const listLength = list.length;
+  
+      // 旧的分配方式
+      const {
+          average,
+          rest
+      } = dynamicAssign(listLength, {
+          total: ASSIGN_TOTAL
+      });
+  
+      // odd 分配是有差异的 e.g. [33.3, 33.3, 33.4]
+      const ratioType = [average, rest];
+  
+      // 当前分配的值
+      const ratioList = list.map(
+          item => getValueByAccuracy(+(item.ratio || 0))
+      );
+  		// 👇和👆是两类，所以此处保留一个空格
+      const curFullRatio = ratioList.reduce((cur, next) => cur + next, 0);
+      const isFullRatio = curFullRatio !== ASSIGN_TOTAL;
+  		// 👇和👆是两类，所以此处保留一个空格
+      const hasUpdated = ratioList
+          .some(ratio => !ratioType.includes(ratio)) ||
+          isFullRatio;
+  
+      if (hasUpdated) {
+          return {
+              hasUpdated
+          };
+      }
+  
+      const newListLength = listLen + (type === 'delete' ? -1 : 1);
+      const {
+          average: newAverage,
+          rest: newRest
+      } = dynamicAssign(newListLength, {
+          total: ASSIGN_TOTAL
+      });
+  
+      return {
+          hasUpdated,
+          average: newAverage,
+          rest: newRest,
+          isEven: !!(newKrLength % 2),
+      };
+  }
+  ```
 
 #### 注释
 
@@ -278,7 +502,7 @@ const info = Object.keys(info)
 
 ##### 是否自动格式化
 
-目前，大部分公司和个人开发的项目，都会使用 `eslint` 进行代码(自动保存格式化，`precommit` 自动`eslint --fix`)检查，但是，从个人的角度来看，初学者，不建议自动化处理，而适合手动敲代码，养成习惯，只保留 `precommit fix` 的操作；对于，有经验的同学，我觉得可以，开启这些，用来节省开发时间。
+目前，大部分公司和个人开发的项目，都会使用 `eslint` 进行代码(自动保存格式化，`precommit` 自动`eslint --fix` 检查，但是，从个人的角度来看，初学者，不建议自动化处理，而适合手动敲代码，养成习惯，只保留 `precommit fix` 的操作；对于，有经验的同学，我觉得可以，开启这些，用来节省开发时间。
 
 #### 参考资料
 
