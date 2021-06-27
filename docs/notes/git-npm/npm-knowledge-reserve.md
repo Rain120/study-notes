@@ -46,7 +46,7 @@ npm update package
 
 ### 安装依赖
 
-在**[npm](https://www.npmjs.com/)**有以下**5**种依赖:
+在[npm](https://www.npmjs.com/)有以下 **5** 种依赖:
 
 - [dependencies](https://docs.npmjs.com/files/package.json#dependencies): 
 - [devDependencies](https://docs.npmjs.com/files/package.json#devdependencies): 开发依赖
@@ -56,9 +56,9 @@ npm update package
 
 ### 版本信息
 
-有关指定版本范围的更多详细信息，请参阅**[Semver](https://docs.npmjs.com/misc/semver)**。
+有关指定版本范围的更多详细信息，请参阅 [Semver](https://docs.npmjs.com/misc/semver)。
 
-**`npm`**依赖包的版本格式一般为：**主版本号.次版本号.修订号**(`major.minor.patch`)
+**`npm`** 依赖包的版本格式一般为：**主版本号.次版本号.修订号**(`major.minor.patch`)
 
 - **`major`**: 主版本号
 
