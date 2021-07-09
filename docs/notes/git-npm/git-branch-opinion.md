@@ -56,9 +56,13 @@
 
     - `feat/xxx` or `feature/xxx`: 新功能
 
-    - `hotfix/xxx` or `fix/xxx`: 紧急`bug`
+    - `hotfix/xxx` ：紧急`bug` ，就是那种线上的 `bug`，紧急插入到非上线计划的 `bugfix`
 
-    - `demo/xxx`: `demo` or 客户 `UAT(user at test)`
+    -  `fix/xxx`: 日常迭代修复的`bug`，随着正常上线迭代计划，具体，要不要和 `hotfix`区分，我的理解是，需要区分，日常迭代是计划中的，`hotfix`是紧急的，是插入当前所在开发计划之间的迭代计划
+
+    - `release`: 上下分支(具体符合你们团队的规范，有些团队可以使用 `master`作为上线分支)
+
+    - `demo/xxx`: `demo` or 客户 `UAT(user at test)`, 当前也可以不需要，具体问题，具体分支
 
     - `temp/xxx`:  实验性的分支, 调研时做的`demo`
 
