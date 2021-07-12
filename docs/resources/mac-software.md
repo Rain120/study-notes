@@ -118,6 +118,16 @@ vi ~/.config/karabiner/karabiner.json
 
 ![xmind](./sw/xmind.png)
 
+#### [MarginNote 3](https://www.marginnote.com/chinese/store-cn)
+
+全新上线电子阅读器,助力更高效书籍阅读和学习
+
+革新性整合阅读标注工具,思维导图和学习卡,多维度构建知识连接,提升阅读学习生产力**。**
+
+#### [mindmaster](https://www.edrawsoft.cn/mindmaster/)
+
+`MindMaster`，一款基于云的跨端思维导图软件。`MindMaster`可以将纷繁复杂的想法、知识和信息，如学习笔记、会议纪要、项目需求等简化成一张张清晰的思维导图，以结构化有序化的方式呈现，提高归纳、学习和记忆的效率，方便展示和讲解。
+
 #### [Iterm2](https://www.iterm2.com/) + zsh - [oh-my-zsh](https://ohmyz.sh/)
 
 `Mac`的`terminal`工具
