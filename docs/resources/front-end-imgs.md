@@ -448,14 +448,6 @@ L7 中的 L 代表 Location，7 代表世界七大洲，寓意能为全球位置
 
 ![uiiiuiii](./fe/uiiiuiii.png)
 
-[uiforus](https://www.uiforus.com/)
-
-> 它免费提供设计素材、插件、工具，其中设计素材包括：UI 、图标、网页、插画、实物、桌面、组件、表单、字体，并且按照不同的设计软件对应的文件进行分类，包括：Photoshop 、Sketch 、Adobe Xd 、Illustrator 文件。
-
-![uiforus](./fe/uiforus.png)
-
-
-
 #### Web 相关
 
 [Can I Use](https://caniuse.com/): 查询浏览器的特性支持情况

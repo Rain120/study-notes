@@ -181,7 +181,7 @@
 
 [这些实用的色彩工具，非设计师也能快速上手](https://sspai.com/post/43885)
 
-**Digital Color Meter(macOS自带)**： `Mac`直接数码取色器即可
+**Digital Color Meter(macOS自带)** ： `Mac`直接数码取色器即可
 
 ##### 设计相关
 
