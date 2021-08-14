@@ -39,6 +39,20 @@
 
 #### 短信验证码接收平台
 
+---
+
+新增
+
+https://www.zaixianjiema.com/
+
+https://www.w3h5.com/post/619.html
+
+https://zh.mytrashmobile.com/
+
+https://www.suiyongsuiqi.com/zh/
+
+----
+
 ~~[收信箱](https://www.shouxinxiang.com/)~~
 
 ~~[在线短信接收 1](https://www.materialtools.com/) 没有中国号码了~~
