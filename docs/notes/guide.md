@@ -38,6 +38,7 @@
       - [Javascript 从输入URL 到显示页面](notes/javascript/key-concept/url-to-page.md)
       - [Javascript 垃圾回收](notes/javascript/key-concept/garbage-collection.md)
       - [前端路由原理解析和实现](notes/javascript/key-concept/router.md)
+   [浅谈前端事件驱动和数据驱动](notes/javascript/event-driven-vs-data-driven.md)
    - [console全家桶](notes/javascript/console/console-related-note.md)
    - [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
    - [JavaScript获取DOM元素的位置和尺寸](notes/javascript/get-dom-property/get-dom-property.md)
