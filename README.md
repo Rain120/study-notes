@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2021-05-25 14:39:41
+ * @LastEditTime: 2021-08-26 17:41:32
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -195,6 +195,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [VS Code 插件](notes/vscode/extensions.md)
       - [VS Code 别名提示配置](notes/vscode/alias.md)
       - [VS Code 配置](notes/vscode/settings.md)
+      - [VS Code 插件 Todo Tree 配置](notes/vscode/todo-tree.md)
     - [Iterm2 相关](notes/iterm2/guide.md)
       - [Iterm2 & oh my zsh 配置终端环境](notes/iterm2/iterm2+zsh.md)
     - [前端开发 Debugger相关](notes/debugger/guide.md)

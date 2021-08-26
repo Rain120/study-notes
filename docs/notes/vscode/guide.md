@@ -2,3 +2,4 @@
 - [VS Code 插件](notes/vscode/extensions.md)
 - [VS Code 别名提示配置](notes/vscode/alias.md)
 - [VS Code 配置](notes/vscode/settings.md)
+- [VS Code 插件 Todo Tree 配置](notes/vscode/todo-tree.md)

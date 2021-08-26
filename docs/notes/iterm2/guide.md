@@ -1,1 +1,1 @@
-- [Iterm2 & oh my zsh 配置终端环境](notes/iterm2/iterm2+zsh.md)
+- [iTerm2 & oh my zsh 配置终端环境](notes/iterm2/iterm2+zsh.md)
