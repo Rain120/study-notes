@@ -2,6 +2,22 @@
 
 [program-learning-lists](https://github.com/Rain120/program-learning-lists)
 
+### 打包工具
+
+[Webpack](https://webpack.js.org/): [Github](https://github.com/webpack/webpack)
+
+[Vite](https://cn.vitejs.dev/): [Github](https://github.com/vitejs/vite)
+
+[Rollup](https://rollupjs.org/): [Github](https://github.com/rollup/rollup)
+
+[SWC](https://swc.rs/): [Github](https://github.com/swc-project/swc)
+
+[Snowpack](https://www.snowpack.dev/): [Github](https://github.com/snowpackjs/snowpack)
+
+[esbuild](https://esbuild.github.io/): [Github](https://github.com/evanw/esbuild)
+
+[Parceljs](https://parceljs.org): [Github](https://github.com/parcel-bundler/parcel)
+
 ### CSS
 
 [animista](https://animista.net/play/basic): 自动生成需要的动画的 `CSS`
