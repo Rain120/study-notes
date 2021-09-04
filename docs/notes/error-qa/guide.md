@@ -3,4 +3,5 @@
 - [Mobx 错误笔记](notes/error-qa/mobx/mobx-qa.md)
 - [Jest 错误笔记](notes/error-qa/jest/jest-qa.md)
 - [Lodash 错误笔记](notes/error-qa/lodash/lodash-qa.md)
+- [Sass(Scss) 错误笔记](notes/error-qa/sass.md)
 
