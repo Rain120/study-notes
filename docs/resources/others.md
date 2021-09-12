@@ -69,9 +69,9 @@
 
 [Twilio](https://www.twilio.com/)
 
-[国内](https://www.pdflibr.com/): **10.7后再试试**
+~~[国内](https://www.pdflibr.com/)~~: **10.7后再试试**
 
-[云短信](https://yunduanxin.net/)
+~~[云短信](https://yunduanxin.net/)~~
 
 [visitorsms](https://www.visitorsms.com/)
 
