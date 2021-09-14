@@ -1,3 +1,34 @@
+#### Resolve
+
+```sh
+# 在Linux或Mac OS终端或Windows Git Bash, 执行ssh-keygen命令生成SSH公钥和私钥
+ssh-keygen -t rsa
+
+# 查看并复制SSH公钥
+cat ~/.ssh/id_rsa.pub
+```
+
+生成复制到 `GitHub` 等其他平台，然后在你的 `clone` 完项目之后
+
+```sh
+git clone xxxx
+git config --local user.name Rain120
+git config --local user.name xxx@xxx.com
+
+# 查看配置中的 user
+git config -e
+```
+
+或者一句命令执行
+
+```sh
+git clone xxxx/repo-name baidu/erp/fe-okr \
+&& git config -f repo-name/.git/config user.name Rain120 \
+&& git config -f repo-name/.git/config user.email xxxx@xxx.com
+```
+
+---
+
 ### 为什么需要配置多个`SSH Key`？
 
 公司项目仓库可能存放在其他环境上而且私有，存在安全红线问题，个人学习相关的代码，需要提交到其他仓库
