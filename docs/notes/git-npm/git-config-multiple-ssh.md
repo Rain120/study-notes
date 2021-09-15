@@ -12,6 +12,7 @@ cat ~/.ssh/id_rsa.pub
 
 ```sh
 git clone xxxx
+cd xxxx
 git config --local user.name Rain120
 git config --local user.name xxx@xxx.com
 
