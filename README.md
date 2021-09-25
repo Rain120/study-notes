@@ -184,6 +184,7 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
         - [Npx如何run](notes/git-npm/how-npx-to-run.md)
         - [npm install vs npm ci](notes/git-npm/npm-install-vs-npm-ci.md)
         - [package-lock.json 与 yarn.lock 的作用和区别](notes/git-npm/package-lock-vs-yarn-lock.md)
+        - [npm package.json](notes/git-npm/npm-package-json.md)
     - [日常错误笔记](notes/error-qa/guide.md)
       - [Mysql错误笔记](notes/error-qa/mysql/note-qa.md)
       - [Node & Git错误笔记](notes/error-qa/node-git/note-qa.md)
