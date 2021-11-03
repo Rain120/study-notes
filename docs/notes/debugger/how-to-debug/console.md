@@ -26,7 +26,6 @@
 
 ![console.table.obj.png](./images/console.table.obj.png)
 
-### 参考链接
+### 参考资料
 
-[有哪些 JS 调试技巧？ - 知乎]( https://www.zhihu.com/question/20260762)
-
+[console全家桶](notes/javascript/console/console-related-note.md)
