@@ -1,3 +1,7 @@
+#### Firefox 浏览器版本下载
+
+[Firefox All Releases](http://ftp.mozilla.org/pub/firefox/releases/)
+
 #### Chrome
 
 ```
