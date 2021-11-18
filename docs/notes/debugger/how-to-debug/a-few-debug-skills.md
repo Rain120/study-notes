@@ -12,6 +12,20 @@
 
 ![find-select-options-dom.gif](./images/find-select-options-dom.gif)
 
+#### 修改数据测试
+
+**contentEditable**
+
+```js
+document.body.contentEditable = true
+```
+
+![body-contentEditable.gif](./images/body-contentEditable.gif)
+
+**Edit as HTML**
+
+![edit-as-html.gif](./images/edit-as-html.gif)
+
 ### Debugger
 
 #### Dom
@@ -26,11 +40,15 @@
 
 ![dom-debug-subtree-modifications.gif](./images/dom-debug-subtree-modifications.gif)
 
-##### Noed Removal
+##### Node Removal
 
 ![dom-debug-node-removal.gif](./images/dom-debug-node-removal.gif)
 
 #### Javascript
+
+#### Log
+
+![console-window.png](./images/console-window.png)
 
 ##### Code Debug
 
@@ -47,6 +65,10 @@
 关于watch data 的相关操作
 
 ![sources-watch.png](./images/sources-watch.png)
+
+- 断点之前 hover 参数
+- 右边添加 watch params
+- 直接在 console 输入字段
 
 关于 devtools breakpoint
 
