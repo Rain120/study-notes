@@ -1,2 +1,0 @@
-- [WebGL基础知识](notes/webgl/webgl.md)
-- [Three.js 学习](notes/webgl/threejs/threejs.md)

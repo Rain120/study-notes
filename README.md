@@ -1,231 +1,58 @@
-<!--
-
- * @Author: Rain120
- * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2021-08-26 17:41:32
- -->
-<h1 align="center">
-  <a href="https://rain120.github.io/study-notes">Study Notes</a>
-</h1>
+# Study Notes
 
 <div align="center">
-Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/resources">bookmarking resources</a>, and <a href="https://rain120.github.io/study-notes/#/resources">resources</a> for friends.
+
+[![GitHub watchers](https://img.shields.io/github/watchers/Rain120/study-notes?style=social)](https://github.com/Rain120/study-notes/watchers)
+[![STAR](https://img.shields.io/github/stars/Rain120/study-notes?style=social)](https://github.com/Rain120/study-notes/stargazers) [![FORK](https://img.shields.io/github/forks/Rain120/study-notes?style=social)](https://github.com/Rain120/study-notes/network/members)
+
+[![COMMIT](https://img.shields.io/github/last-commit/Rain120/study-notes?style=flat-square)](https://github.com/Rain120/study-notes/commits/master)
+
 </div>
 
-> Add a note-taking template out of the box, just configure your own github, logo and profile.
+## 😚 Welcome
 
-> [How to Usage](https://github.com/Rain120/study-notes/tree/note-template)
+Welcome to the Study Notes
 
-<!-- 学习笔记 -->
+## 🎮 TL;DR
 
-- [我的四象限](notes/plans.md)
-- [知识图谱](knowledge-map/guide.md)
-- [前端知识图谱](knowledge-map/fe_knowledge_map.md)
-  - [前端工程师学习路径](knowledge-map/feer.md)
-  - [一目了然的代码注释和技巧](knowledge-map/code-annotation.md)
-  - [前端学习网站分享](knowledge-map/fe-website.md)
-  - [UI 相关知识](knowledge-map/ui.md)
-  - [代码规范(建议)](knowledge-map/code-style.md)
-- [学习笔记](notes/guide.md)
-    - [HTML](notes/html/guide.md)
-    - [CSS](notes/css/guide.md)
-      - [Flex](notes/css/flex.md)
-        - [Flex 容器属性](notes/css/flex-container-properties.md)
-        - [Flex 项目属性](notes/css/flex-item-properties.md)
-      - [CSS宽度高度 问题](notes/css/width-height-properties.md)
-      - [CSS 学习资源](notes/css/resource.md)
-      - [CSS 修改 input, textarea 等控件 placeholder 的颜色](notes/css/change-inputs-placeholder.md)
-      - [CSS 常见的选择器](notes/css/css-selector.md)
-      - [CSS3 Masks](notes/css/css3-maks.md)
-    - [Javascript](notes/javascript/guide.md)
-      - [JavaScript 核心概念](notes/javascript/key-concept/guide.md)
-        - [值类型 vs 引用类型](notes/javascript/key-concept/values-vs-reference.md)
-        - [null 和 undefined 的区别](notes/javascript/key-concept/null-vs-undefined.md)
-        - [Javascript 小数精度问题](notes/javascript/key-concept/js-float-accurate.md)
-        - [Javascript 闭包](notes/javascript/key-concept/closure.md)
-        - [Javascript 原型链](notes/javascript/key-concept/prototype-chain.md)
-        - [Javascript instanceof](notes/javascript/key-concept/instanceof.md)
-        - [Javascript this](notes/javascript/key-concept/this.md)
-        - [Javascript new](notes/javascript/key-concept/new.md)
-        - [call apply bind](notes/javascript/key-concept/call-apply-bind.md)
-        - [var let const function 生命周期](notes/javascript/key-concept/var-let-const-function-lifecycle.md)
-        - [Javascript 执行上下文](notes/javascript/key-concept/execution-context.md)
-        - [Javascript 词法作用域链、函数作用域、块级作用域](notes/javascript/key-concept/scope-chain.md)
-        - [Javascript Decorator (装饰器) 实现原理及其使用](notes/javascript/key-concept/decorator.md)
-        - [Javascript 继承](notes/javascript/key-concept/extends.md)
-        - [Javascript 从输入URL 到显示页面](notes/javascript/key-concept/url-to-page.md)
-        - [Javascript 垃圾回收](notes/javascript/key-concept/garbage-collection.md)
-        - [前端路由原理解析和实现](notes/javascript/key-concept/router.md)
-        [浅谈前端事件驱动和数据驱动](notes/javascript/event-driven-vs-data-driven.md)
-      - [console全家桶](notes/javascript/console/console-related-note.md)
-      - [JavaScript常见运算符](notes/javascript/common-operator/common-operator.md)
-      - [获取DOM元素的位置和尺寸](notes/javascript/get-dom-property/get-dom-property.md)
-      - [Javascript正则表达式](notes/javascript/regular-expression/regular-expression.md)
-      - [日常使用的正则表达式](notes/javascript/regular-expression/common-reg-exps.md)
-      - [ECMAScript学习](notes/javascript/es-study/es-guide.md)
-        - [类的Static学习](notes/javascript/es-study/static.md)
-        - [Map Vs WeakMap, Set Vs WeakSet](notes/javascript/es-study/map-weakmap-set-weakset.md)
-        - [模块化方案](notes/javascript/es-study/module.md)
-        - [import 关键字](notes/javascript/es-study/import.md)
-          - [import 全量引入](notes/javascript/es-study/import-full.md)
-          - [import 异步引入](notes/javascript/es-study/import-async.md)
-      - [Javascript 学习资源](notes/javascript/resource.md)
-    - [Node](notes/node/guide.md)
-      - [Node require](notes/node/require.md)
-      - [Node path](notes/node/path.md)
-    - [HTTP](notes/http/guide.md)
-      - [HTTP 三次握手 四次挥手](notes/http/three-handshaking-four-wave.md)
-    - [Typescript](notes/typescript/guide.md)
-      - [Typescript 基础入门](notes/typescript/base.md)
-      - [Typescript 问题 & 解释](notes/typescript/qa.md)
-      - [Typescript 开发小建议](notes/typescript/tips.md)
-      - [Typescript + Eslint 配置Qa](notes/typescript/ts-eslint-qa.md)
-      - [Typescript 快速定义QuickType](notes/typescript/quicktype.md)
-      - [Typescript 快速定义 tapTypes 实践](notes/typescript/taptypes.md)
-        - [JSON Schema 知识流](notes/typescript/json-schema.md)
-    - [前端开发 Tips](notes/tips/guide.md)
-      - [CSS Tips](notes/tips/css-tips.md)
-      - [JS Tips](notes/tips/js-tips.md)
-      - [Webpack Tips](notes/tips/webpack-tips.md)
-      - [Typescript Tips](notes/tips/typescript-tips.md)
-      - [Email Tips](notes/tips/email-tips.md)
-      - [Code Tips](notes/tips/code-tips.md)
-      - [Npm Tips](notes/tips/npm-tips.md)
-      - [Moment Tips](notes/tips/moment-tips.md)
-      - [Chrome 79 Bug](notes/tips/chrome-79-bug.md)
-      - [Markdown 数学符号](notes/tips/markdown-math-symbol-tips.md)
-    - [Webpack](notes/webpack/guide.md)
-      - [Webpack 基础知识](notes/webpack/webpack-base.md)
-      - [从零实现一个 Webpack](notes/webpack/mini-webpack.md)
-      - [Webpack 打包错误分析](notes/webpack/error-analysis/error-analysis.md)
-      - [Webpack 性能优化](notes/webpack/webpack-optimize.md)
-      - [Webpack Loader](notes/webpack/webpack-loader.md)
-      - [Webpack Tapable](notes/webpack/tapable.md)
-      - [Webpack 魔法注释(Magic Comments)](notes/webpack/magic-comments.md)
-      - [Webpack 打包输出代码都有什么？](notes/webpack/build.md)
-    - [Babel](notes/babel/guide.md)
-      - [Babel手册](notes/babel/babel-handbook.md)
-      - [与AST的相知相识](notes/babel/ast/ast.md)
-        - [EsTree 规范](notes/babel/ast/estree-spec.md)
-    - [React](notes/react/guide.md)
-      - [React组件库开发 - 初始化项目](notes/react/component-library/init.md)
-      - [React better-scroll实践](notes/react/better-scroll/better-scroll.md)
-        - [基础组件Scroll开发](notes/react/better-scroll/scroll.md)
-        - [Slider 组件开发](notes/react/better-scroll/slider.md)
-        - [Sticky 组件开发](notes/react/better-scroll/sticky.md)
-      - [React Hooks](notes/react/hooks/guide.md)
-        - [React Hooks 基础学习](notes/react/hooks/base.md)
-      - [React-Router](notes/react/router/guide.md)
-        - [BrowserRouter和HashRouter的区别?](notes/react/router/router-diff-with-browser-and-hash.md)
-      - [React setState](notes/react/setState.md)
-      - [React 事件机制](notes/react/events.md)
-      - [React 脚手架 Typescript 多入口配置](notes/react/crd.md)
-    - [Vue](notes/vue/guide.md)
-      - [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
-      - [Vue之网易云音乐横向菜单滑动的实现](notes/vue/slide-menu/slide-menu.md)
-      - [Vue 生命周期笔记](notes/vue/vue-lifecycle/vue-lifecycle.md)
-      - [Vue 源码学习](notes/vue/code-review/code-review.md)
-    - [移动端](notes/mobile/guide.md)
-      - [Charles抓包https手机配置](notes/mobile/charles-https-mobile-config.md)
-      - [移动端Tips](notes/mobile/mobile-tips.md)
-    - [Puppeteer](notes/puppeteer/guide.md)
-      - [HTML to image(Puppeteer 截图)](notes/puppeteer/html-to-image.md)
-      - [HTML to PDF](notes/puppeteer/html-to-pdf.md)
-      - [Puppeteer Docker](notes/puppeteer/docker.md)
-      - [Puppeteer FAQ](notes/puppeteer/faq.md)
-    - [Lerna](notes/lerna/guide.md)
-      - [Lerna 入门篇](notes/lerna/base.md)
-      - [Lerna 命令](notes/lerna/commands.md)
-      - [Lerna 搭建脚手架](notes/lerna/build-cli/guide.md)
-        - [Lerna 搭建脚手架 第一集](notes/lerna/build-cli/1.md)
-        - [Lerna 搭建脚手架 第二集](notes/lerna/build-cli/2.md)
-        - [遇到的问题及其解决方法](notes/lerna/build-cli/qa.md)
-      - [FAQ](notes/lerna/faq.md)
-    - [WebGL](notes/webgl/guide.md)
-      - [WebGL基础知识](notes/webgl/webgl.md)
-      - [Three.js 学习](notes/webgl/threejs/threejs.md)
-    - [Linux](notes/linux/guide.md)
-      - [Linux入门学习](notes/linux/initial.md)
-      - [常用命令行快捷键](notes/linux/command-shortcut.md)
-    - [Shell](notes/shell/guide.md)
-      - [Shell 脚本](notes/shell/shell.md)
-      - [常用 Git 命令](notes/shell/common-git-commands.md)
-    - [Docker](notes/docker/guide.md)
-      - [Docker 安装](notes/docker/docker-install.md)
-      - [Docker CentOS下安装 Node](notes/docker/centos-node-install.md)
-      - [Docker 命令学习](notes/docker/docker-command.md)
-          - [容器root fs命令](notes/docker/container-fs.md)
-          - [本地镜像管理](notes/docker/local-images-manage.md)
-      - [Docker 快速入门](notes/docker/quick-start.md)
-    - [redis](notes/redis/guide.md)
-      - [redis 安装启动(Mac)](notes/redis/install-run.md)
-      - [redis 异常处理](notes/redis/issue.md)
-    - [MongoDB](notes/mongoDB/guide.md)
-      - [MongoDB 安装启动(Mac)](notes/mongoDB/install-run.md)
-      - [MongoDB 异常处理](notes/mongoDB/issue.md)
-    - [Nginx](notes/nginx/guide.md)
-      - [Nginx笔记](notes/nginx/note.md)
-    - [Git & Npm学习](notes/git-npm/guide.md)
-      - [Git 相关](notes/git-npm/guide?id=git)
-        - [Git 底层深入浅析 - 目录篇](notes/git-npm/git-base-analysis.md)
-        - [Git Object 深入浅析](notes/git-npm/git-objects.md)
-        - [你必须知道的Git命令](notes/git-npm/you-must-know-git-commands.md)
-        - [Github Actions 初实践](notes/git-npm/github-action.md)
-        - [Github Actions 提升](notes/git-npm/github-action-improve.md)
-        - [Git配置多个SSH Key](notes/git-npm/git-config-multiple-ssh.md)
-        - [Git Tips](notes/git-npm/git-tips.md)
-        - [Git 分支的前世今生](notes/git-npm/git-branch-opinion.md)
-        - [GitHub 隐藏功能 - 个人首页](notes/git-npm/github-profile.md)
-        - [GitHub 软件(包)版本问题](notes/git-npm/version.md)
-      - [Npm 相关](notes/git-npm/guide?id=npm)
-        - [Npm Scripts](notes/git-npm/npm-scripts.md)
-        - [Npm 包发布笔记](notes/git-npm/npm-publish.md)
-        - [Npm 知识储备](notes/git-npm/npm-knowledge-reserve.md)
-        - [Npx如何run](notes/git-npm/how-npx-to-run.md)
-        - [npm install vs npm ci](notes/git-npm/npm-install-vs-npm-ci.md)
-        - [package-lock.json 与 yarn.lock 的作用和区别](notes/git-npm/package-lock-vs-yarn-lock.md)
-        - [npm package.json](notes/git-npm/npm-package-json.md)
-    - [日常错误笔记](notes/error-qa/guide.md)
-      - [Mysql错误笔记](notes/error-qa/mysql/note-qa.md)
-      - [Node & Git错误笔记](notes/error-qa/node-git/note-qa.md)
-      - [Mobx 错误笔记](notes/error-qa/mobx/mobx-qa.md)
-      - [Jest 错误笔记](notes/error-qa/jest/jest-qa.md)
-      - [Lodash 错误笔记](notes/error-qa/lodash/lodash-qa.md)
-      - [Sass(Scss) 错误笔记](notes/error-qa/sass.md)
-    - [VS Code相关](notes/vscode/guide.md)
-      - [VS Code Tips](notes/vscode/tips.md)
-      - [VS Code 插件](notes/vscode/extensions.md)
-      - [VS Code 别名提示配置](notes/vscode/alias.md)
-      - [VS Code 配置](notes/vscode/settings.md)
-      - [VS Code 插件 Todo Tree 配置](notes/vscode/todo-tree.md)
-    - [Iterm2 相关](notes/iterm2/guide.md)
-      - [Iterm2 & oh my zsh 配置终端环境](notes/iterm2/iterm2+zsh.md)
-    - [前端开发 Debugger相关](notes/debugger/guide.md)
-      - [Mac 如何使用其他环境的浏览器](notes/debugger/mac-how-to-use-other-env-browsers.md)
-      - [浏览器的用户代理字符串(User Agent)](notes/debugger/browser-user-agent.md)
+⌨️ To be Continue...
 
-<!--  资源集合 -->
+## ✍ Why am I doing this?
 
-- [资源集合](resources/guide.md)
-  - [前端](resources/front-end.md)
-  - [网站](resources/website.md)
-  - [软件(Win10 + Mac)](resources/software.md)
-  - [破解软件合集](resources/crack-software-collection.md)
-  - [葵花宝典系列 - Mac效率神器](resources/mac-software.md)
-  - [葵花宝典系列 - Windows效率神器](resources/window-software.md)
-  - [浏览器插件](resources/browser-plugins.md)
-  - [Youtube 1080p 下载(视频 + 字幕)](resources/youtube-download.md)
-  - [轻松追剧系列](resources/shows.md)
-  - [歌曲下载](resources/music-download.md)
-  - [Vlog](resources/vlog.md)
-  - [其他](resources/others.md)
-- [About Me](profile/profile.md)
+Easy to write documents for someone.
 
-<!-- About Me -->
-<!-- ---
-- [<i class="profile-icon gh iconfont icon-github"></i>Github](https://github.com/Rain120)
-- [<i class="profile-icon zh iconfont icon-zhihu"></i>知乎](https://www.zhihu.com/people/yan-yang-nian-hua-120/activities)
-- [<i class="profile-icon jj iconfont icon-juejin"></i>掘金](https://juejin.im/user/57c616496be3ff00584f54db)
-- [<i class="profile-icon bk iconfont icon-blog"></i>个人博客](https://rain120.github.io/)
-- [<i class="profile-icon sf iconfont icon-sf"></i>SegmentFault](https://segmentfault.com/u/rainyk1/articles)
-- [<i class="profile-icon csdn iconfont icon-csdn"></i>CSDN](https://blog.csdn.net/ZC_XY) -->
+## 🔨 Usage
+
+```sh
+git clone git@github.com:Rain120/study-notes.git
+
+yarn install # or npm install
+```
+
+## 🤝 Contributing
+
+![PR](https://img.shields.io/badge/PRs-Welcome-orange?style=flat-square&logo=appveyor)
+
+We welcome all contributions. You can submit any ideas as [pull requests](https://github.com/Rain120/study-notes/pulls) or as a GitHub [issue](https://github.com/Rain120/study-notes/issues).
+
+## 🔗 Links
+
+- [Demo](https://rain120.github.io/docusaurus-docs-template)
+
+## 👨‍🏭 Author
+
+> Front-End development engineer, technology stack: React + Typescript + Mobx, also used Vue + Vuex for a while
+
+- [Github](https://github.com/Rain120)
+- [知乎](https://www.zhihu.com/people/yan-yang-nian-hua-120/activities)
+- [掘金](https://juejin.im/user/57c616496be3ff00584f54db)
+
+## 📝 License
+
+[MIT](https://github.com/Rain120/study-notes/blob/master/LICENSE)
+
+Copyright © 2021-present [Rain120](https://github.com/Rain120).
+
+## ☕ Coffee or Tea
+
+![wechat-zhifubao-pay.png](./wechat-zhifubao-pay.png)
