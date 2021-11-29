@@ -107,9 +107,6 @@ const plugins = pluginContentDocsConfigList.map(pluginOptions => ([
 		},
 	],
 	[
-		require.resolve('@docusaurus/plugin-google-gtag')
-	],
-	[
 		require.resolve('@docusaurus/plugin-pwa'), {
 			debug: true,
 		}
