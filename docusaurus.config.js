@@ -99,6 +99,12 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()}.`,
       },
+      gtag: {
+        // You can also use your "G-" Measurement ID here.
+        trackingID: 'UA-150864629-1',
+        // Optional fields.
+        anonymizeIP: true, // Should IPs be anonymized?
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

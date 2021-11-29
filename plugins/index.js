@@ -106,10 +106,9 @@ const plugins = pluginContentDocsConfigList.map(pluginOptions => ([
 			// docsDir: docDirKeys,
 		},
 	],
-	// [
-	// 	require.resolve('@docusaurus/plugin-google-gtag'), {
-	// 	}
-	// ],
+	[
+		require.resolve('@docusaurus/plugin-google-gtag')
+	],
 	[
 		require.resolve('@docusaurus/plugin-pwa'), {
 			debug: true,
