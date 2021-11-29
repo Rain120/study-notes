@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>小超子的笔记 Blog</title>
+        <link>https://rain120.github.io/study-notes/study-notes/blog</link>
+        <description>小超子的笔记 Blog</description>
+        <lastBuildDate>Wed, 13 Oct 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[笔记更新版本迭代]]></title>
+            <link>https://rain120.github.io/study-notes/study-notes/blog/v2</link>
+            <guid>v2</guid>
+            <pubDate>Wed, 13 Oct 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[笔记初始]]></title>
+            <link>https://rain120.github.io/study-notes/study-notes/blog/v1</link>
+            <guid>v1</guid>
+            <pubDate>Sun, 20 Jan 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[个人简介]]></title>
+            <link>https://rain120.github.io/study-notes/study-notes/blog/profile</link>
+            <guid>profile</guid>
+            <pubDate>Sat, 07 Jul 2018 00:00:00 GMT</pubDate>
+            <description><![CDATA[-->]]></description>
+            <content:encoded><![CDATA[<ul><li><a href="https://github.com/Rain120">Github</a></li></ul><ul><li><a href="https://www.zhihu.com/people/yan-yang-nian-hua-120/activities">知乎</a></li></ul><ul><li><a href="https://juejin.im/user/57c616496be3ff00584f54db">掘金</a></li></ul><ul><li><a href="https://rain120.github.io/study-notes">study-notes</a></li></ul><ul><li><a href="https://segmentfault.com/u/rainyk1/articles">SegmentFault</a></li></ul><ul><li><a href="https://blog.csdn.net/ZC_XY">CSDN</a></li></ul>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

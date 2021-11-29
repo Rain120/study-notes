@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://rain120.github.io/study-notes/study-notes/blog</id>
+    <title>小超子的笔记 Blog</title>
+    <updated>2021-10-13T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://rain120.github.io/study-notes/study-notes/blog"/>
+    <subtitle>小超子的笔记 Blog</subtitle>
+    <icon>https://rain120.github.io/study-notes/study-notes/img/chao.png</icon>
+    <entry>
+        <title type="html"><![CDATA[笔记更新版本迭代]]></title>
+        <id>v2</id>
+        <link href="https://rain120.github.io/study-notes/study-notes/blog/v2"/>
+        <updated>2021-10-13T00:00:00.000Z</updated>
+        <author>
+            <name>Rain120</name>
+            <uri>https://github.com/Rain120</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[笔记初始]]></title>
+        <id>v1</id>
+        <link href="https://rain120.github.io/study-notes/study-notes/blog/v1"/>
+        <updated>2019-01-20T00:00:00.000Z</updated>
+        <author>
+            <name>Rain120</name>
+            <uri>https://github.com/Rain120</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[个人简介]]></title>
+        <id>profile</id>
+        <link href="https://rain120.github.io/study-notes/study-notes/blog/profile"/>
+        <updated>2018-07-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[-->]]></summary>
+        <content type="html"><![CDATA[<ul><li><a href="https://github.com/Rain120">Github</a></li></ul><ul><li><a href="https://www.zhihu.com/people/yan-yang-nian-hua-120/activities">知乎</a></li></ul><ul><li><a href="https://juejin.im/user/57c616496be3ff00584f54db">掘金</a></li></ul><ul><li><a href="https://rain120.github.io/study-notes">study-notes</a></li></ul><ul><li><a href="https://segmentfault.com/u/rainyk1/articles">SegmentFault</a></li></ul><ul><li><a href="https://blog.csdn.net/ZC_XY">CSDN</a></li></ul>]]></content>
+        <author>
+            <name>Rain120</name>
+            <uri>https://github.com/Rain120</uri>
+        </author>
+    </entry>
+</feed>
