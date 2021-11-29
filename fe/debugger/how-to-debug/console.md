@@ -66,7 +66,7 @@
 
 ### 参考资料
 
-[console全家桶](notes/javascript/console/console-related-note.md)
+console全家桶 // TODO: 等新版本
 
 [Chrome Console Api](https://developer.chrome.com/docs/devtools/console/api/)
 
