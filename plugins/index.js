@@ -100,9 +100,9 @@ const plugins = pluginContentDocsConfigList.map(pluginOptions => ([
 ])).filter(Boolean).concat([
 	[
 		require.resolve('@easyops-cn/docusaurus-search-local'), {
-			// language: ['en', 'zh'],
+			language: ['en', 'zh'],
 			hashed: true,
-			// docsRouteBasePath: docDirKeys,
+			docsRouteBasePath: docDirKeys,
 			// docsDir: docDirKeys,
 		},
 	],
