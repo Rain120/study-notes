@@ -1,1 +1,0 @@
-- [iTerm2 & oh my zsh 配置终端环境](./iterm2+zsh.md)
