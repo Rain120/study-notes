@@ -1,4 +1,9 @@
-#### JavaScript 相关教程
+---
+sidebar_position: 1
+---
+# 学习资源
+
+## JavaScript 相关教程
 
 [Javascript 秘密花园](https://bonsaiden.github.io/JavaScript-Garden/zh/)
 
@@ -24,7 +29,7 @@
 
 [npm runkit](https://npm.runkit.com/): 快速运行 `npm` 包
 
-#### JavaScript 类库
+## JavaScript 类库
 
 [Lodash](https://lodash.com/): Lodash是一个JavaScript库，它使用函数式编程范例为常见的编程任务提供实用程序功能。
 
@@ -32,7 +37,7 @@
 
 [Underscore](https://underscorejs.org/) : -> [Github](https://github.com/jashkenas/underscore): Underscore.js是一个JavaScript库，为常见的编程任务提供实用程序功能。它与Prototype.js和Ruby语言提供的功能相当，但选择功能性编程设计而不是扩展对象原型。
 
-#### Javascript 执行可视化网站
+## Javascript 执行可视化网站
 
 [javascript-visualizer](https://tylermcginnis.com/javascript-visualizer/): `Tyler Mcginnis`的`Advanced JS`课程配套的可视化工具，只能用`ES5`语法。
 
@@ -42,13 +47,13 @@
 
 [pythontutor javascript](http://www.pythontutor.com/javascript.html#mode=display): `JS`运行可视化 (也可以可视化运行 `Python2, Python3, Java, JavaScript, TypeScript, Ruby, C, and C++ code`)
 
-#### ECMA
+## ECMA
 
 [ES 5 标准中文版](https://yanhaijing.com/es5)
 
 [ES6 编程语言备忘录](https://devhints.io/es6)
 
-#### Code Style(代码风格)
+## Code Style(代码风格)
 
 [Google Styleguide](https://github.com/google/styleguide): -> [中文版](https://github.com/zh-google-styleguide/zh-google-styleguide) -> [Doc](https://zh-google-styleguide.readthedocs.io/en/latest/contents/)
 

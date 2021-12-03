@@ -1,4 +1,6 @@
-#### `console`函数列表
+# console全家桶
+
+## `console`函数列表
 
 ![console-function](./images/console-function.png)
 
@@ -7,7 +9,7 @@
 1. `console`调试
 2. 测试问题时候遇到一些看起来奇怪的东西
 
-#### 问题引申
+## 问题引申
 
 ![console-problem-broswer](./images/console-problem-broswer.png)
 
@@ -35,11 +37,11 @@ obj.a = 321;
 
 通过`JSON.stringify`输入可以得到我们期望的值。
 
-#### `console`常见用法
+## `console`常见用法
 
 详细了解可以看看[`Node Console`](https://nodejs.org/dist/latest-v10.x/docs/api/console.html#console_console)
 
-##### 1. `console.log`
+### 1. `console.log`
 
 在`console`家族中，我们最熟悉的就是`console.log`了，所以，我们先熟悉一下`console.log`的一些用法吧。
 
@@ -80,7 +82,7 @@ console.log('%d %f%% %s %o %j', intNum, floatNum, str, obj, json);
 
 [util.format](https://nodejs.org/dist/latest-v10.x/docs/api/util.html#util_util_format_format_args)
 
-##### 2.  `console.info` `console.warn` `console.error` `console.debug`
+### 2.  `console.info` `console.warn` `console.error` `console.debug`
 
 在调试的时候，我们比较关注的是`Info`,`Warn`,`Error`和`Debug`，所以我们先来探究一些这几个`console`的方法。
 
@@ -101,7 +103,7 @@ console.debug('Hello JS');
 
 ![log-info-warn-error-debug](./images/log-info-warn-error-debug.png)
 
-##### 3. `console.group`, `console.groupEnd`, `console.groupCollapsed`
+### 3. `console.group`, `console.groupEnd`, `console.groupCollapsed`
 
 `console.group()` 方法用于设置分组信息的起始位置，该位置之后的所有信息将写入分组。
 
@@ -132,7 +134,7 @@ console.groupEnd();
 
 ![group-end-collapsed](./images/group-end-collapsed.png)
 
-##### 4. `console.time`, `console.timeEnd`, `console.timeLog()`
+### 4. `console.time`, `console.timeEnd`, `console.timeLog()`
 
 `console.time()` 方法是作为计算器的起始方法。
 
@@ -164,7 +166,7 @@ console.timeEnd('process');
 
 ![timeLog](./images/timeLog.png)
 
-##### 5. `console.table`
+### 5. `console.table`
 
 `console.table() `方法用于在控制台输出表格信息。
 
@@ -196,7 +198,7 @@ console.table([profile], ['github'])
 
 ![table-columns](./images/table-columns.png)
 
-##### 6. `console.count()`
+### 6. `console.count()`
 
 `console.count() `在调用时会将数字（调用次数）写入到控制台。
 
@@ -223,7 +225,7 @@ console.count("Test");
 
 ![console.count-lable](./images/console.count-lable.png)
 
-##### 7. `console.trace() `
+### 7. `console.trace() `
 
 `console.trace() `方法用于显示当前执行的代码在堆栈中的调用路径。
 
@@ -242,7 +244,7 @@ first();
 
 ![console.trace](./images/console.trace.png)
 
-##### 8. `console.assert()`
+### 8. `console.assert()`
 
 `console.assert()` 方法在第一个参数为 false 的情况下会在控制台输出信息。
 
@@ -255,7 +257,7 @@ console.assert(false, 'Whoops %s work', 'didn\'t');
 
 ![console.assert](./images/console.assert.png)
 
-##### 9. `console.clear()`
+### 9. `console.clear()`
 
 `console.clear()` 方法用于清除控制台所有信息。
 

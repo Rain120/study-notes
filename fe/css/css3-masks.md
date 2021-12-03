@@ -1,4 +1,6 @@
-#### 定义
+# CSS3 Masks
+
+## 定义
 
 [CSS](https://developer.mozilla.org/zh-CN/docs/Web/CSS) 属性 **`mask`** 允许使用者通过遮罩或者裁切特定区域的图片的方式来隐藏一个元素的部分或者全部可见区域。
 
@@ -6,7 +8,7 @@
 <div id='masked'></div>
 ```
 
-#### 属性默认值
+## 属性默认值
 
 - [mask-image](https://developer.mozilla.org/zh-CN/docs/Web/CSS/mask-image)
 
@@ -209,7 +211,7 @@ mask-composite: exclude; // 遮罩排除。也就是后面遮罩图片重合的�
 ```
 
 
-#### 参考资料
+## 参考资料
 
 [客栈说书:CSS遮罩CSS3 mask/masks详细介绍](https://www.zhangxinxu.com/wordpress/2017/11/css-css3-mask-masks/)
 

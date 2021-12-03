@@ -1,4 +1,6 @@
-#### 原型链
+# 原型链
+
+## 原型链
 
 `JavaScript` 只有一种结构：对象。每个实例对象（ object ）都有一个私有属性（称之为 __proto__ ）指向它的构造函数的原型对象（**prototype** ）。该原型对象也有一个自己的原型对象( __proto__ ) ，层层向上直到一个对象的原型对象为 `null`。根据定义，`null` 没有原型，并作为这个**原型链**中的最后一个环节。
 
@@ -25,7 +27,7 @@ Person.prototype.__proto__ === Object.prototype
 
 ![prototype-chain-all.jpg](./images/prototype-chain-all.jpg)
 
-#### 原型链查找问题
+## 原型链查找问题
 
 ```js
 function Person() {};
@@ -44,7 +46,7 @@ console.log(person.prototype.name); // Rain120
 
 [javascript 给函数加了原型属性后，为什么用函数不能直接访问这个属性？代码如下： - Jim Liu的回答 - 知乎](https://www.zhihu.com/question/51820518/answer/127655677)
 
-#### 参考资料
+## 参考资料
 
 [MDN - 继承与原型链](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 

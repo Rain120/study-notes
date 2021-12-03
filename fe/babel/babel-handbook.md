@@ -1,4 +1,4 @@
-### Babel 是什么？
+## Babel 是什么？
 
 `Babel` 是一个通用的多用途 `JavaScript `编译器。它主要用于将` ECMAScript 2015+` 版本的代码转换为向后兼容的 `JavaScript` 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。
 
@@ -6,14 +6,14 @@
 
 `babel` 本身不具有任何转化功能，它把转化的功能都分解到一个个 `plugin` 里面。因此当我们不配置任何插件时，经过 `babel` 的代码和输入是相同的。
 
-### 作用
+## 作用
 
 - 语法转换
 - 源码转换
 - 通过 `Polyfill` 方式在目标环境中添加缺失的特性
 - 等等...
 
-### 安装使用
+## 安装使用
 
 1. 安装所需的包
 
@@ -71,11 +71,11 @@
       }
       ```
 
-### [配置 Babel](https://www.babeljs.cn/docs/configuration)
+## [配置 Babel](https://www.babeljs.cn/docs/configuration)
 
 你可以通过安装 [插件(plugins)](https://www.babeljs.cn/docs/plugins)或 [预设(presets)](https://www.babeljs.cn/docs/presets)来指示 `Babel` 去做什么事情。 `preset `作为 `Babel` `plugins`的组合转换你的代码。
 
-#### **Plugins**
+### **Plugins**
 
 **参数**
 
@@ -100,7 +100,7 @@
 - 插件在 `Presets` 前运行
 - 插件顺序从前往后排列
 
-#### **Presets**
+### **Presets**
 
 **参数**
 
@@ -179,9 +179,9 @@ safari >= 7
 
 [babel-preset-env](https://www.babeljs.cn/docs/babel-preset-env)
 
-### 常用包解释
+## 常用包解释
 
-#### babel-core
+### babel-core
 
 **版本**
 
@@ -221,7 +221,7 @@ yarn add @babel/core --dev
 }
 ```
 
-#### babel-polyfill
+### babel-polyfill
 
 **版本**
 
@@ -310,7 +310,7 @@ npm install --save @babel/runtime
 }
 ```
 
-### 参考资料
+## 参考资料
 
 [Babel官网](https://www.babeljs.cn/docs/)
 

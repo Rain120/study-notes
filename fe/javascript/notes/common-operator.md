@@ -1,8 +1,10 @@
-### [维基百科 --- 运算符](https://en.wikipedia.org/wiki/Operator_(computer_programming))
+# JavaScript 常见运算符
+
+## [维基百科 --- 运算符](https://en.wikipedia.org/wiki/Operator_(computer_programming))
 
 > [编程语言](https://en.wikipedia.org/wiki/Programming_languages)通常支持一组**运算符**：构造，其行为通常类似于函数，但在[语法](https://en.wikipedia.org/wiki/Syntax_(programming_languages)) 或[语义上](https://en.wikipedia.org/wiki/Semantics_(computer_science)) 与通常的函数不同。常见的简单示例包括算术（加法`+`），比较（加`>`）和逻辑运算（如`AND`或`&&`）。更多涉及的示例包括[赋值](https://en.wikipedia.org/wiki/Assignment_(computer_science)) （通常`=`或`:=`），记录或对象（通常）中的[字段](https://en.wikipedia.org/wiki/Field_(computer_science)) 访问`.`，以及[范围解析运算符](https://en.wikipedia.org/wiki/Scope_resolution_operator) （通常`::`）。语言通常定义一组内置运算符，在某些情况下允许用户定义的运算符。
 
-### [运算符的优先级](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+## [运算符的优先级](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 
 > 简单记忆法(需要具体问题具体分析)：单目 > 算术 > 位移 > 关系 > 逻辑 > 三目 > 赋值
 >
@@ -73,7 +75,7 @@
 
 
 
-#### 1. 单目运算符
+### 1. 单目运算符
 
 一元(单目)运算符只需要一个操作变量。
 
@@ -127,7 +129,7 @@ console.log("~'1':", ~'1');
 
 ![unary-operators](./images/unary-operators.png)
 
-#### 2. 自增 `&` 自减运算符
+### 2. 自增 `&` 自减运算符
 
 `++a`: 先赋值后自增
 
@@ -151,7 +153,7 @@ console.log('--b', --b);
 
 ![arithmetic-operators1](./images/arithmetic-operators1.png)
 
-#### 3. 算术运算符
+### 3. 算术运算符
 
 2个数值（字面量或变量）作为操作数，并返回单个数值.
 
@@ -159,7 +161,7 @@ console.log('--b', --b);
 
 
 
-#### 4. 位移运算符
+### 4. 位移运算符
 
 在二进制的基础上对数字进行移动操作
 
@@ -194,7 +196,7 @@ console.log('-1 >>> 3', -1 >>> 3);
 
 ![Displacement operator](./images/displacement-operator.png)
 
-#### 5. [位运算符(**Bitwise operators**)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
+### 5. [位运算符(**Bitwise operators**)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
 
 ​	将其操作数（operands）当作32位的比特序列（由0和1组成），而不是十进制、十六进制或八进制[数值](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number)。
 
@@ -298,7 +300,7 @@ console.log('~ -11.13:', ~ -11.13);
 
 ![bitwise-operators-2](./images/bitwise-operators-2.png)
 
-#### 6. 关系运算符
+### 6. 关系运算符
 
 比较运算符比较二个操作数并返回基于比较结果的`Boolean`值
 
@@ -326,7 +328,7 @@ console.log('0 === null:', 0 === null);
 
 <!-- ![==&===](./images/==&===.png) -->
 
-#### [7. 逻辑运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
+### [7. 逻辑运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
 
 逻辑运算符典型的用法是用于`boolean`(逻辑)值运算, 它们返回`boolean`值。
 
@@ -421,7 +423,7 @@ console.log('!!{}', !!{});
 
 <!-- ![!&!!](./images/!&!!.png) -->
 
-#### 8. 条件（三元）运算符
+### 8. 条件（三元）运算符
 
 `?:`: 是 `JavaScript` 仅有的使用三个操作数的运算符。本运算符经常作为`if`语句的简短形式来使用。
 
@@ -436,11 +438,11 @@ console.log(false ? 'true' : true ? 'false true' : 'false');
 
 ![conditional-operator](./images/conditional-operator.png)
 
-#### [9. 赋值运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
+### [9. 赋值运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
 
 `=` `+=` `-=` `*=` `/=` `%=`  `**=`(平方) `<<=` `>>=` `>>>=` `&=` `|=` `^|`
 
-### 10. 可选链
+## 10. 可选链
 
 ```javascript
 var a = {};

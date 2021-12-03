@@ -1,4 +1,6 @@
-#### 前言
+# 全量引入
+
+## 前言
 
 ```js
 import React from 'react';
@@ -12,7 +14,7 @@ import * as React from 'react';
 
 我们知道`React`实际上并没有使用`ES6`定义默认导入的方式，即不是 `ES Module`。我们发现在配置了 `TypeScript` 或者配置了 `Babel` 的项目中使用时，我们就可以把它当作 `ES Module default` 来导入，为什么呢？如何配置呢？
 
-#### Typescript 使用
+## Typescript 使用
 
 `tsconfig.json` 文件中有一个选项叫做 `allowSyntheticDefaultImports`
 
@@ -28,7 +30,7 @@ import React from "react";
 import * as React from "react";
 ```
 
-#### Typescript 是怎么实现的？
+## Typescript 是怎么实现的？
 
 [src/compiler/utilities.ts: getAllowSyntheticDefaultImports](https://github.com/microsoft/TypeScript/blob/4d506240ded68cf099c952b889a3f93b09f703ed/src/compiler/utilities.ts#L5986)
 
@@ -46,29 +48,29 @@ export function getAllowSyntheticDefaultImports(compilerOptions: CompilerOptions
 
 ```ts
 function getExportEqualsImportKind(importingFile: SourceFile, compilerOptions: CompilerOptions): ImportKind {
-        const allowSyntheticDefaults = getAllowSyntheticDefaultImports(compilerOptions);
-        // 1. 'import =' will not work in es2015+, so the decision is between a default
-        //    and a namespace import, based on allowSyntheticDefaultImports/esModuleInterop.
-        if (getEmitModuleKind(compilerOptions) >= ModuleKind.ES2015) {
-            return allowSyntheticDefaults ? ImportKind.Default : ImportKind.Namespace;
-        }
-        // 2. 'import =' will not work in JavaScript, so the decision is between a default
-        //    and const/require.
-        if (isInJSFile(importingFile)) {
-            return isExternalModule(importingFile) ? ImportKind.Default : ImportKind.CommonJS;
-        }
-        // 3. At this point the most correct choice is probably 'import =', but people
-        //    really hate that, so look to see if the importing file has any precedent
-        //    on how to handle it.
-        for (const statement of importingFile.statements) {
-            if (isImportEqualsDeclaration(statement)) {
-                return ImportKind.CommonJS;
-            }
-        }
-        // 4. We have no precedent to go on, so just use a default import if
-        //    allowSyntheticDefaultImports/esModuleInterop is enabled.
-        return allowSyntheticDefaults ? ImportKind.Default : ImportKind.CommonJS;
+    const allowSyntheticDefaults = getAllowSyntheticDefaultImports(compilerOptions);
+    // 1. 'import =' will not work in es2015+, so the decision is between a default
+    //    and a namespace import, based on allowSyntheticDefaultImports/esModuleInterop.
+    if (getEmitModuleKind(compilerOptions) >= ModuleKind.ES2015) {
+        return allowSyntheticDefaults ? ImportKind.Default : ImportKind.Namespace;
     }
+    // 2. 'import =' will not work in JavaScript, so the decision is between a default
+    //    and const/require.
+    if (isInJSFile(importingFile)) {
+        return isExternalModule(importingFile) ? ImportKind.Default : ImportKind.CommonJS;
+    }
+    // 3. At this point the most correct choice is probably 'import =', but people
+    //    really hate that, so look to see if the importing file has any precedent
+    //    on how to handle it.
+    for (const statement of importingFile.statements) {
+        if (isImportEqualsDeclaration(statement)) {
+            return ImportKind.CommonJS;
+        }
+    }
+    // 4. We have no precedent to go on, so just use a default import if
+    //    allowSyntheticDefaultImports/esModuleInterop is enabled.
+    return allowSyntheticDefaults ? ImportKind.Default : ImportKind.CommonJS;
+}
 ```
 
 `babel` 同理
@@ -82,7 +84,7 @@ function getExportEqualsImportKind(importingFile: SourceFile, compilerOptions: C
 
 
 
-#### 参考资料
+## 参考资料
 
 [MDN - import](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import)
 

@@ -1,14 +1,10 @@
-#### Flex 布局
+# Flex 布局
 
-#### Flex 容器属性
-
-[Flex 容器属性](./flex-container-properties.md)
-
-#### Flex 项目属性
+## Flex 项目属性
 
 [Flex 项目属性](./flex-item-properties.mdx)
 
-#### 参考资料
+## 参考资料
 
 [Flex 布局教程：语法篇](https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 

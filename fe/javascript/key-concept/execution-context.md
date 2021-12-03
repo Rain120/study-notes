@@ -1,6 +1,10 @@
-## 此笔记有很多问题, 导致笔者有些混乱, 待笔者有空Review并重新整理
+# 执行上下文
 
-#### 前言
+:::warning
+此笔记有很多问题, 导致笔者有些混乱, 待笔者有空Review并重新整理
+:::
+
+## 前言
 
 想要了解 `EC`，需要先了解一下几个概念
 
@@ -10,15 +14,15 @@
 - 变量对象`(Variable object，VO)`
 - 活动对象`(Activation object，AO)`
 
-#### 作用域链 (Scope chain)
+## 作用域链 (Scope chain)
 
 [详见](./scope-chain.md)
 
-#### 执行上下文 (Execution Context or EC)
+## 执行上下文 (Execution Context or EC)
 
 执行上下文`(EC)`是评估和执行 `JavaScript` 代码的环境的抽象概念。每当 `Javascript` 代码在运行的时候，它都是在执行上下文中运行。
 
-##### 生命周期
+### 生命周期
 
 执行上下文的生命周期包括三个阶段：**创建阶段👉执行阶段👉回收阶段**。
 
@@ -69,7 +73,7 @@
 
 ![execution-context-lifecycle.png](./images/execution-context-lifecycle.png)
 
-##### 执行上下文类型
+### 执行上下文类型
 
 `JavaScript` 中有三种执行上下文类型。
 
@@ -85,7 +89,7 @@
 
   执行在 `eval`函数内部的代码也会有它属于自己的执行上下文。
 
-#### 执行上下文栈 (Execution Context Stack or ECS)
+## 执行上下文栈 (Execution Context Stack or ECS)
 
 也称**调用栈**, 是一种拥有 `LIFO(后进先出)`数据结构的栈，被用来存储代码运行时创建的所有**执行上下文**。 它是一种记录保存结构，允许我们执行函数调用。 每个函数调用在调用堆栈上都表示为一个框架。 这就是`JavaScript`引擎跟踪已调用哪些函数以及调用顺序的方式。 `JS`引擎使用此信息来确保函数返回后在正确的位置重新执行。
 
@@ -93,7 +97,7 @@
 
 ![call-stack.gif](./images/call-stack.gif)
 
-#### 变量对象 (Variable object，VO)
+## 变量对象 (Variable object，VO)
 
 > Every execution context has associated with it a variable object. Variables and functions declared in the source text are added as properties of the variable object. For function code, parameters are added as properties of the variable object.
 >
@@ -109,7 +113,7 @@
 
 **Note:** 函数声明先于变量声明
 
-#### 活动对象 (Activation object，AO)
+## 活动对象 (Activation object，AO)
 
 > When control enters an execution context for function code, an object called the activation object is created and associated with the execution context. The activation object is initialised with a property with name arguments and attributes { DontDelete }. The initial value of this property is the arguments object described below.
 >
@@ -121,7 +125,7 @@
 
 **当函数被激活，那么一个活动对象(activation object)就会被创建并且分配给执行上下文。活动对象由特殊对象 arguments 初始化而成。随后，它被当做变量对象(variable object)用于变量初始化。**
 
-#### 举个🌰
+## 举个🌰
 
 ```javascript
 var name = 'Rain';
@@ -210,17 +214,17 @@ EC = {
 
 ![vo-ao.gif](./images/vo-ao.gif)
 
-#### 总结
+## 总结
 
-##### 变量提升
+### 变量提升
 
 
 
-##### `this` 指向
+### `this` 指向
 
 更对详见 [Javascript this](./this.md)
 
-#### 参考资料
+## 参考资料
 
 [Understanding Execution Context and Execution Stack in Javascript](https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0)
 

@@ -1,10 +1,12 @@
-```
+# 日常使用的正则表达式
+
+:::tip
 记录工作、学习所使用到的正则表达式
-```
+:::
 
-#### 1. 检测字符串中特殊符号
+## 检测字符串中特殊符号
 
-**正则表达式**
+- 正则表达式
 
 英文：
 
@@ -26,7 +28,7 @@
 
 ![reg-special-symbol-zh](./images/reg-special-symbol-zh.png)
 
-**测试**
+- 测试
 
 ```javascript
 var reg = /[~!@#$%^&*()/\|,.<>?"'();:_+-=\[\]{}\s+]/ig;
@@ -41,9 +43,9 @@ var reg = /[~!@#$%^&*()/\|,.<>?"'();:_+-=\[\]{}\s+]/ig;
 "javaenableassertionsenablesystemassertionsclasspathusrshareopentsdbjarusrshareopentsdbusrshareopentsdbbinusrshareopentsdblibasyncjarusrshareopentsdblibasynchbasejarusrshareopentsdblibcommonsjexljarusrshareopentsdblibcommonsloggingjarusrshareopentsdblibcommonsmathjarusrshareopentsdblibguavajarusrshareopentsdblibjacksonannotationsjarusrshareopentsdblibjacksoncorejarusrshareopentsdblibjacksondatabindjarusrshareopentsdblibjavaccjarusrshareopentsdblibjgraphtcorejarusrshareopentsdbliblogjoverslfjjarusrshareopentsdbliblogbackclassicjarusrshareopentsdbliblogbackcorejarusrshareopentsdblibmysqlconnectorjavajarusrshareopentsdblibnettyFinaljarusrshareopentsdblibprotobufjavajarusrshareopentsdblibslfjapijarusrshareopentsdblibtsdbjarusrshareopentsdblibzookeeperjaretcopentsdbnetopentsdbtoolsTSDMainportstaticrootusrshareopentsdbstaticcachedirtmpopentsdbconfigetcopentsdbopentsdbconf"
 ```
 
-#### 2. 日期验证
+## 日期验证
 
-**匹配规则:**
+- 匹配规则
 
 - 年`(/.-)`月`(/._)`日, 常见间隔符合`[/.-]`, 格式`YYYY(/.-)(M|MM)(/.-)(D|DD)`
 - 闰年: **百年不闰，四百年再闰**，数学计算方式就是`Year/  400 === 0`
@@ -51,7 +53,7 @@ var reg = /[~!@#$%^&*()/\|,.<>?"'();:_+-=\[\]{}\s+]/ig;
 - `1, 3, 5, 7, 8, 10, 12`: `31`天
 - `4, 6, 9, 11`: `30`天
 
-**正则表达式**
+- 正则表达式
 
 ```javascript
 # `MSDN`中定义的`DateTime`对象:
@@ -76,7 +78,7 @@ var reg = /[~!@#$%^&*()/\|,.<>?"'();:_+-=\[\]{}\s+]/ig;
 
 ![reg-date-ymd](./images/reg-date-ymd.png)
 
-**测试**
+- 测试
 
 ```javascript
 var reg = /^(?:(?!0000)[0-9]{4}([-/.]?)(?:(?:0?[1-9]|1[0-2])\1(?:0?[1-9]|1[0-9]|2[0-8])|(?:0?[13-9]|1[0-2])\1(?:29|30)|(?:0?[13578]|1[02])\1(?:31))|(?:[0-9]{2}(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)([-/.]?)0?2\2(?:29))$/
@@ -112,15 +114,15 @@ dates.map(date => {
 
 [正则应用之——日期正则表达式](https://blog.csdn.net/lxcnn/article/details/4362500)
 
-#### 3. 时间格式验证
+## 时间格式验证
 
-**匹配规则:**
+- 匹配规则
 
 24小时
 
 12小时
 
-**正则表达式**
+- 正则表达式
 
 ```javascript
 // 24h
@@ -138,7 +140,7 @@ dates.map(date => {
 
 ![reg-time-12](./images/reg-time-12.png)
 
-**测试**
+- 测试
 
 ```javascript
 var reg_12 = /^(1[0-2]|0?[1-9]):[0-5]\d:[0-5]\d$/;
@@ -211,9 +213,9 @@ reg_24 false
 
 
 
-#### 4. 邮箱格式验证
+## 邮箱格式验证
 
-**匹配规则:**
+- 匹配规则
 
 - 开头：以字母、数字、下滑线`[_]`、减号`[-]`，并需要重复一次至多次。
 - 中间：必须包括`@`符号。
@@ -221,7 +223,7 @@ reg_24 false
 - 结尾：必须是点号`[.]`加字母。
 - 不考虑中文、以及邮箱域名。
 
-**正则表达式**
+- 正则表达式
 
 ```javascript
  /^\w+([-_+.]+\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/
@@ -229,7 +231,7 @@ reg_24 false
 
 ![reg-email](./images/reg-email.png)
 
-**测试**
+- 测试
 
 ```javascript
 var reg = /^\w+([-_+.]+\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
@@ -261,9 +263,9 @@ Rainy@qq.com.cn true
 _Rainy@qq.com true
 ```
 
-#### 5.手机号码
+##手机号码
 
-**匹配规则:**
+- 匹配规则
 
 物联网专用号段: 物
 
@@ -319,7 +321,7 @@ _Rainy@qq.com true
 
 ![2019_phone_numbers](./images/2019_phone_numbers.png)
 
-**正则表达式**
+- 正则表达式
 
 ```javascript
 //严格模式下
@@ -336,7 +338,7 @@ _Rainy@qq.com true
 
 ![reg-phone-number](./images/reg-phone-number.png)
 
-**测试**
+- 测试
 
 ```javascript
 var reg_loose = /^1([3-9])\d{9}$/;
@@ -407,9 +409,9 @@ reg_loose true
 reg_strict true
 ```
 
-#### 6. 身份证号
+## 身份证号
 
-**匹配规则:**
+- 匹配规则
 
 1. 一代 15位: 6位地区码，6位生日，3位顺序码
 
@@ -417,7 +419,7 @@ reg_strict true
 
 3. 同时匹配
 
-**正则表达式**
+- 正则表达式
 
 ```javascript
 // 15
@@ -442,7 +444,7 @@ reg_strict true
 
 ![reg-id-card-15-18](./images/reg-id-card-15-18.png)
 
-**测试**
+- 测试
 
 ```javascript
 var reg_15 = /^\d{8}(0\d|11|12)(0[1-9]|[1-2]\d|30|31)\d{3}$/
@@ -525,11 +527,11 @@ reg_18 true
 reg_15_18 true
 ```
 
-#### 7. 千分位
+## 千分位
 
-**匹配规则:**
+- 匹配规则
 
-**正则表达式**
+- 正则表达式
 
 ```javascript
  /(\d{1,3})(?=(\d{3})+(?:$|\.))/g
@@ -537,7 +539,7 @@ reg_15_18 true
 
 ![reg-thousands](./images/reg-thousands.png)
 
-**测试**
+- 测试
 
 ```javascript
 var reg = /(\d{1,3})(?=(\d{3})+(?:$|\.))/g;
@@ -576,9 +578,9 @@ numbers.map(number => {
 1234wqeqw56 false 1234wqeqw56
 ```
 
-#### 8. Javascript判断HEX 16进制颜色
+## 判断HEX 16进制颜色
 
-**匹配规则:**
+- 匹配规则
 
 1. 16进制
 2. 两两相等可以缩写
@@ -586,7 +588,7 @@ numbers.map(number => {
 4. 三位或者六位
 5. 不区分大小写
 
-**正则表达式**
+- 正则表达式
 
 ```javascript
 // 1
@@ -598,7 +600,7 @@ numbers.map(number => {
 
 ![reg-rgb](./images/reg-hex.png)
 
-**测试**
+- 测试
 
 ```javascript
 // 1
@@ -655,15 +657,15 @@ FFF false
 #adf123 true
 ```
 
-#### 9. Javascript判断RGB, RGBA颜色
+## 判断RGB, RGBA颜色
 
-**匹配规则:**
+- 匹配规则
 
 - `rgb(`或者`rgba`开头, 不区分大小写
 - `r`, `g`, `b` 值范围 `[0-255]`, 每一个值后面的`,`前后可接`0-n`个空格
 - `a` 值范围 `[0-1]`, `a < 1`时可省略 `0`
 
-**正则表达式**
+- 正则表达式
 
 ```javascript
 // 1
@@ -695,7 +697,7 @@ FFF false
 
 ![reg-rgba-group](./images/reg-rgba-group.png)
 
-**测试**
+- 测试
 
 ```javascript
 var reg = /^rgba\(((\d{1,2}|1\d{2}|2([0-4]\d|5[0-5]))\s*,\s*){2}((\d{1,2}|1\d\d|2([0-4]\d|5[0-5]))\s*)(,\s*(0?\.\d+|1|0)+)+\)$/i;
@@ -745,9 +747,9 @@ RGBA(0, 255, 0, ) false
 
 [JS HEX十六进制与RGB, HSL颜色的相互转换](https://www.zhangxinxu.com/wordpress/2010/03/javascript-hex-rgb-hsl-color-convert/)
 
-#### 10. Javascript判断HSL, HSLA颜色
+## 判断HSL, HSLA颜色
 
-**匹配规则:**
+- 匹配规则
 
 - `Hue(色调)` 取值范围`[0-360]`
 
@@ -757,7 +759,7 @@ RGBA(0, 255, 0, ) false
 
 - `alpha (透明度)` 取值范围`[0-1]`
 
-**正则表达式**
+- 正则表达式
 
 ```javascript
 // HSL
@@ -775,7 +777,7 @@ RGBA(0, 255, 0, ) false
 
 ![reg-rgba-group](./images/reg-hsla.png)
 
-**测试**
+- 测试
 
 ```javascript
 var reg = /^hsla\(\s*((\d{1,2}|[1-2]\d{2}|3([0-5]\d|60)))\s*,(\s*(((\d{1,2}|100)%)|0)\s*,){2}\s*(0?\.\d+|1|0)\)$/i;
@@ -823,17 +825,17 @@ HSLA(0, 100%, 0, .2) true
 HSLA(0, 100%, 0, ) false
 ```
 
-#### 11.
+## 模板
 
-**匹配规则:**
+- 匹配规则
 
-**正则表达式**
+- 正则表达式
 
 ```javascript
 
 ```
 
-**测试**
+- 测试
 
 ```javascript
 
@@ -847,8 +849,7 @@ HSLA(0, 100%, 0, ) false
 
 
 
-#### 可视化测试正则表达式
-
+##
 [正则表达式可视化 1](https://jex.im/regulex)
 
 [正则表达式可视化 2](https://regex101.com/)

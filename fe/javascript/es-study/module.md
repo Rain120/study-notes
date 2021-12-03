@@ -1,4 +1,6 @@
-#### CommonJS
+# 模块化方案
+
+## CommonJS
 
 `Node` 应用由模块组成，采用 `CommonJS` 模块规范。
 
@@ -26,7 +28,7 @@ const info = require('info')
 - 模块加载的顺序，按照其在代码中出现的顺序。
 - 独立性是模块的重要特点就，模块内部最好不与程序的其他部分直接交互。
 
-#### AMD
+## AMD
 
 `AMD` 全称 `Asynchronous Module Definition`，即异步模块定义。`AMD` 是 `RequireJS` 在推广过程中对模块定义的规范化产出。
 
@@ -50,7 +52,7 @@ require([module], callback);
 - 异步加载
 - 管理模块之间的依赖性，便于代码的编写和维护。
 
-#### CMD
+## CMD
 
 `CMD` 全称为 `Common Module Definition`。`CMD` 是 `SeaJS` 在推广过程中对模块定义的规范化产出。
 
@@ -64,13 +66,13 @@ define(function(require, exports, module) {
 })
 ```
 
-##### 与AMD区别
+### 与AMD区别
 
 - 对于依赖的模块，AMD 是**提前执行**，CMD 是**延迟执行**。不过 `RequireJS` 从 2.0 开始，也改成可以延迟执行（根据写法不同，处理方式不同）。CMD 推崇 as lazy as possible.
 
 - CMD 推崇**依赖就近**，AMD 推崇**依赖前置**。
 
-#### UMD
+## UMD
 
 `UMD`，全称 `Universal Module Definition`，即通用模块规范。可应用于浏览器或服务器环境，兼容`AMD`和`CommonJS`规范的同时，还兼容全局引用的方式。
 
@@ -106,7 +108,7 @@ define(function(require, exports, module) {
 }));
 ```
 
-#### ES Module
+## ES Module
 
 ES6 模块的设计思想是尽量的静态化，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。
 
@@ -144,7 +146,7 @@ import { default as AllModule } from './xxxx'
 
 
 
-#### 模块构建步骤
+## 模块构建步骤
 
 对于每个模块，在构建阶段会做三个处理：
 
@@ -152,7 +154,7 @@ import { default as AllModule } from './xxxx'
 2. 提取文件，通过从 `URL` 下载或者从文件系统加载
 3. 解析文件为模块记录
 
-#### 参考资料
+## 参考资料
 
 [Javascript模块化编程（三）：require.js的用法](http://www.ruanyifeng.com/blog/2012/11/require_js.html)
 

@@ -1,3 +1,4 @@
+# null 和 undefined 的区别
 
 **null表示"没有对象"，即该处不应该有值。**典型用法是：
 
@@ -16,7 +17,7 @@
 
 **void 运算符** 对给定的表达式进行求值，然后返回 [`undefined`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/undefined)。`void` 运算符通常只用于获取 `undefined`的原始值，一般使用`void(0)`（等同于`void 0`）。
 
-#### 参考
+## 参考
 
 [undefined与null的区别](https://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html)
 

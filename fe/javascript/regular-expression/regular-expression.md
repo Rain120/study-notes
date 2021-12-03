@@ -1,9 +1,16 @@
-#### 缘由
+---
+sidebar_position: 1
+---
+
+# 常用基础知识
+
+:::tip
 小白正则表达式入门学习：[正则表达式30分钟入门教程](http://www.runoob.com/w3cnote/regular-expression-30-minutes-tutorial.html#alternative)
 
 正则表达式Regular Expression是一种文本模式。它描述了一种字符串匹配的模式pattern，可以用来检查一个串是否含有某种子串、将匹配的子串替换或者从某个串中取出符合某个条件的子串等。
 我们将正则表达式分为几个部分记下笔记，便于理解与使用。
-#### 1. 元字符
+:::
+## 1. 元字符
 
 我们在 [MDN-Regular_Expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) 上得知，正则表达式会有一些特殊字符，也叫作元字符。如下表示：
 
@@ -68,7 +75,7 @@
 元字符`\s`与`\S`
 
 元字符`\w`与`\W`
-#### 2. 参数
+## 2. 参数
 
 | 参数列表 | 含义                                                         | 英语记忆或者个人记忆方法 |
 | :------: | ------------------------------------------------------------ | :----------------------: |
@@ -79,7 +86,7 @@
 
 当然，上面这几种匹配规则可以结合使用，例如`/ig`或者`/gi`都是全文查找、忽略大小写
 
-#### <span id="func">3. 方法</span>
+## <span id="func">3. 方法</span>
 
 |                             方法                             | 含义                                                         |      匹配返回值      | 未匹配返回值 |
 | :----------------------------------------------------------: | ------------------------------------------------------------ | :------------------: | :----------: |
@@ -92,7 +99,7 @@
 
 下面我们讲上述方法一个一个的测试
 
-1. ##### `test(str)`
+1. ### `test(str)`
 
 `param`：`str`
 
@@ -104,7 +111,7 @@
 
 ![test test](./images/8.png)
 
-2. ##### `exec(str)`
+2. ### `exec(str)`
 
 `param`：`str`
 
@@ -128,7 +135,7 @@
 
 ![test exec](./images/9.png)
 
-3. ##### `match(pattern)`
+3. ### `match(pattern)`
 
 `param`: 传入一个正则表达式对象, 如果传入一个非正则表达式对象，则会隐式地使用 `new RegExp(obj)` 将其转换为一个 [`RegExp`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/RegExp) 。如果你没有给出任何参数并直接使用match() 方法 ，你将会得到一 个包含空字符串的 [`Array`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Array) ：[""] 。
 
@@ -147,7 +154,7 @@
 
 `match[1]`: `(\w+)`匹配结果
 
-##### 4. `search(pattern)`
+### 4. `search(pattern)`
 
 `param`: 传入一个正则表达式对象， 如果传入一个非正则表达式对象，则会使用 `new RegExp(obj)` 隐式地将其转换为正则表达式对象。
 
@@ -157,7 +164,7 @@
 
 很类似`indexof`这个方法
 
-##### 5. `replace(regexp|substr, newSubStr|function)`
+### 5. `replace(regexp|substr, newSubStr|function)`
 
 `param`: 
 
@@ -180,7 +187,7 @@
 
 
 
-##### 6. `split(pattern， limit？)`
+### 6. `split(pattern， limit？)`
 
 `param`:
 

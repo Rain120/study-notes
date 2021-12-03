@@ -1,4 +1,9 @@
-#### ECMAScript学习笔记
+---
+sidebar_position: 1
+---
+# 目录
+
+## ECMAScript学习笔记
 
 - [类的Static学习](./javascript/es-study/static.md)
 - [Map Vs WeakMap, Set Vs WeakSet](./javascript/es-study/map-weakmap-set-weakset.md)
@@ -7,7 +12,7 @@
   - [import全量引入](./javascript/es-study/import-full.md)
   - [import 异步引入](./javascript/es-study/import-async.md)
 
-#### 参考资料
+## 参考资料
 
 [ECMAScript®](http://www.ecma-international.org/ecma-262/)
 

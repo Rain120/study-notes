@@ -1,4 +1,6 @@
-#### new 原理
+# new
+
+## new 原理
 
 `new`关键字做了哪些事？
 
@@ -7,7 +9,7 @@
 - 执行构造函数中的代码 -> 为 **新对象** 添加属性
 - 返回 **新对象**
 
-#### 实现代码
+## 实现代码
 
 ```javascript
 export function _new(...arg: any): any {
@@ -26,7 +28,7 @@ export function _new(...arg: any): any {
 
 
 
-#### 参考地址
+## 参考地址
 
 [new](https://rain120.github.io/awesome-javascript-code-implementation/zh/primitive/new)
 

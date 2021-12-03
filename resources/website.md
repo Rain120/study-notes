@@ -135,7 +135,11 @@ sidebar_position: 4
 
 ### 开发相关
 
-取色网站
+#### 取色网站
+
+[「颜值即正义」那些管UI小姐姐要来的网站](https://juejin.im/post/5e7cdee26fb9a03c6e640cc7)
+
+[CSS3渐变效果工具](https://www.bestvist.com/css-gradient)
 
 [flatuicolors](https://flatuicolors.com/)
 
@@ -171,14 +175,6 @@ sidebar_position: 4
 
 [addog](http://www.addog.vip/)
 
-广告创意/设计/文案/PPT模板/营销策略大全网址导航
-
-addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了常用的微博、微信、小红书、知乎、B站、淘宝、天猫、爱奇艺、好奇心日报等社交 APP 和平台。
-
-25个营销垂直门户，有广告门、数英网、梅花网、adweek、topys、campaignbrief 等海内外营销广告资讯平台。
-
-16个广告案例库，包含海内外主流案例库，涵盖了上千万个经典创意广告，adsoftheworld、adforum、welovead、广告门案例库、strategy都一一在列，找参考案例是非常方便。
-
 ![addog-vip](./wf/addog-vip.png)
 
 [shapefactory](https://shapefactory.co/)
@@ -192,6 +188,10 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 [videezy](https://www.videezy.com/)
 
 免费下载 `4k`视频
+
+### Icon 网站
+
+[flaticon](https://www.flaticon.com/)
 
 ### Logo生成
 
@@ -217,7 +217,7 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 [更多](https://zhuanlan.zhihu.com/p/46980463) `or` [这个](https://www.v1tx.com/post/best-online-graphic-design-tool/#artboard-studio)
 
-### 在线代码编辑器
+## 在线代码编辑器
 
 
 [Codesandbox](https://codesandbox.io/)
@@ -242,7 +242,13 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 [mdnice](https://mdnice.com/): `Markdown` 在线排版网站, 支持微信， 知乎，掘金
 
-### 图片相关
+## 图片相关
+
+[Retroooo Folks](https://www.manuelalangella.com/retroooo-folks/)
+
+[Black illustrations](https://www.blackillustrations.com/)
+
+[幕后](https://muhou.net/)
 
 
 [unDraw](https://undraw.co/): 可免费使用的优质插图插画图片素材，并且可以自己定制主题颜色
@@ -280,6 +286,14 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 ![carbon](./wf/carbon.png)
 
 [codeimg](https://codeimg.io/): 源代码生成图片工具
+
+[码力全开](https://design.maliquankai.com/)
+
+<iframe
+    width="100%"
+    height="500"
+    src="https://design.maliquankai.com/">
+</iframe>
 
 ### AI图片无损放大
 
@@ -346,7 +360,7 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 
 
-### 字符(注释+绘图)
+## 字符(注释+绘图)
 
 [注释 - 字符串写法](http://asciiflow.com/)
 
@@ -358,7 +372,7 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 [字符文字生成器](http://patorjk.com/software/taag/#p=display&h=0&v=1&f=3D%20Diagonal&t=Rainy)
 
-### 文件相关
+## 文件相关
 
 文件快速分享
 
@@ -393,7 +407,7 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 [ffmpeg](http://ffmpeg.org/): 完整的跨平台解决方案，用于记录，转换和流传输音频和视频。
 
-### Office相关
+## Office相关
 
 [OfficePLUS](http://www.officeplus.cn/Template/Home.shtml)
 
@@ -412,9 +426,7 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 方方格子是一个专注于 `Excel `的综合学习网站，它不仅提供实用的 Excel` 插件和工具箱，还提供各种 ``Excel `学习教程。
 
-
 ## 思维导图
-
 
 [XMind](<https://www.xmind.cn/>)
 
@@ -423,8 +435,6 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 快捷键
 
 ![](./wf/xmind-key.jpg)
-
-
 
 [Mindmeister](<https://www.mindmeister.com/zh>)
 
@@ -478,7 +488,7 @@ addog.vip涵盖380个必备网站，共分为18类营销策划大全。包含了
 
 [茶杯狐](https://www.cupfox.com/)
 
-## 视音频
+## 音频
 
 
 [mixkit](https://mixkit.co/) 免版权音频文件下载

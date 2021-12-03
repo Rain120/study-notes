@@ -1,4 +1,6 @@
-### 代码
+# CSS 修改 input, textarea 等控件 placeholder 的颜色
+
+## 代码
 
 ```html
 <!DOCTYPE html>
@@ -44,7 +46,7 @@
 </html>
 ```
 
-### Demo
+## Demo
 
 ```html
 <!DOCTYPE html>
@@ -90,13 +92,13 @@
 </html>
 ```
 
-### 兼容性
+## 兼容性
 
 ![can-i-use-placeholder.png](./images/can-i-use-placeholder.png)
 
 [can i use](https://caniuse.com/?search=%3A%3Aplaceholder)
 
-### 参考内容
+## 参考内容
 
 [Change an HTML5 input's placeholder color with CSS](https://stackoverflow.com/questions/2610497/change-an-html5-inputs-placeholder-color-with-css)
 

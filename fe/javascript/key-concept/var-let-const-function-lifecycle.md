@@ -1,4 +1,5 @@
-#### 前言
+# var let const function 生命周期
+## 前言
 
 我们知道，当`Javascript`引擎使用变量时，生命周期包括以下几个阶段：
 
@@ -12,7 +13,7 @@
 
 即: **声明阶段**，**初始化阶段**和**赋值阶段**。
 
-#### var变量生命周期
+## var变量生命周期
 
 ![var-variable-lifecycle.png](./images/var-variable-lifecycle.png)
 
@@ -24,7 +25,7 @@
 
 严格**提升**`(将变量或函数定义移动到作用域头部的过程)`的思想是，在函数作用域的**开始处声明和初始化** 变量。声明和初始化阶段之间没有差距。
 
-#### let 变量生命周期
+## let 变量生命周期
 
 `let`和`var`的区别在于声明和初始化阶段是**分开的**。变量在声明后，初始化之间，会存放在一个暂存死区之中。
 
@@ -36,7 +37,7 @@
 
 ![let-variable-lifecycle.png](./images/let-variable-lifecycle.png)
 
-#### const 变量生命周期
+## const 变量生命周期
 
 ![const-variable-lifecycle.png](./images/const-variable-lifecycle.png)
 
@@ -44,19 +45,19 @@
 
 `const`和`class` 类型与`let`具有相同的生命周期，只是分配只能发生一次`(声明时候必须初始化)`。
 
-#### function 声明生命周期
+## function 声明生命周期
 
 ![function-declarations-lifecycle.png](./images/function-declarations-lifecycle.png)
 
 在定义函数时，声明、初始化和赋值阶段同时发生，所以可以在作用域内的任何地方调用函数，即函数变量会**提升**。
 
-#### 四种声明方式
+## 四种声明方式
 
 ![variable-status.jpg](./images/variable-status.jpg)
 
 
 
-#### 参考资料
+## 参考资料
 
 [variables-lifecycle-and-why-let-is-not-hoisted](https://dmitripavlutin.com/variables-lifecycle-and-why-let-is-not-hoisted)
 

@@ -1,14 +1,16 @@
-#### 定义
+# Decorator (装饰器) 实现原理及其使用
+
+## 定义
 
 装饰器 `(Decorator)`  是 `ES7` 中的一个提案，目前仍处于 [stage-2: 草稿状态](https://github.com/tc39/proposal-decorators)。它是一种与类 `(class)` 相关的语法，用来注释或修改类和类方法。装饰器是一种函数，写成`@ + 函数名`, 它可以放在类和类方法的定义前面。
 
-#### 作用
+## 作用
 
 它们不仅增加了代码的可读性，清晰地表达了意图，而且提供一种方便的手段，**增加或修改类的功能**。
 
-#### 使用
+## 使用
 
-##### 前提
+### 前提
 
 安装`babel` 以及 `decorator` 插件
 
@@ -32,7 +34,7 @@ npm install @babel/proposal-decorators @babel/proposal-class-properties --save-d
 
 当然你也可以到这里看 `babel` 编译结果 [I'm here !!](https://babeljs.io/repl/?spm=taofed.bloginfo.blog.4.46f85ac8ur2znZ#?browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABAZzgWwKYBEMTgJwEMoCAKAawBtDlkAaRcjATwYBMNkIBKRAbwBQiRPgxQQ-JBy4BuAQF8BAiNVqIAYnDj8hwxAAFUmHHiIl8u4QHMxKdBgCCECJ1T5SvPovlA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=true&fileSize=false&timeTravel=false&sourceType=module&lineWrap=false&presets=stage-2&prettier=true&targets=&version=7.10.4&externalPlugins=)
 
-##### 类装饰器
+### 类装饰器
 
 ```js
 function decorator(target, key, descriptor) {
@@ -51,7 +53,7 @@ Foo = decorator(Foo) || Foo
 
 **装饰器对类的行为的改变，是代码编译时发生的，而不是在运行时**。这意味着，装饰器能在编译阶段运行代码。也就是说，**装饰器本质就是编译时执行的函数**。
 
-##### 类方法, 类属性装饰器
+### 类方法, 类属性装饰器
 
 ```js
 class Person {
@@ -76,7 +78,7 @@ readonly(Person.prototype, 'name', descriptor);
 Object.defineProperty(Person.prototype, 'name', descriptor);
 ```
 
-##### 函数方法的装饰
+### 函数方法的装饰
 
 **装饰器只能用于类和类的方法，不能用于函数，因为存在函数提升**。如果一定要装饰函数，可以采用高阶函数的形式直接执行。
 
@@ -97,11 +99,11 @@ function loggingDecorator(wrapped) {
 const wrapped = loggingDecorator(doSomething);
 ```
 
-#### 实现原理
+## 实现原理
 
 装饰器实际是一种编译时执行的函数, 它的实现依赖于 `JavaScript`的 `Object.defineProperty`。
 
-##### Object.defineProperty(obj, prop, descriptor)
+### Object.defineProperty(obj, prop, descriptor)
 
 **参数**
 
@@ -145,7 +147,7 @@ const wrapped = loggingDecorator(doSomething);
 
     属性的 `setter` 函数，如果没有 `setter`，则为 `undefined`。当属性值被修改时，会调用此函数。该方法接受一个参数（也就是被赋予的新值），会传入赋值时的 `this` 对象。 **默认为 undefined**。
 
-##### babel 转换
+### babel 转换
 
 我们通过 `babel` 转换的结果来理解 `decorator` 是如何实现的。
 
@@ -228,7 +230,7 @@ let Foo = (
 );
 ```
 
-##### 自己实现
+### 自己实现
 
 - `Decorator` 装饰方法时，`descriptor`的参数和 `Object.defineProperty` 的 `descriptor` 一致
 - `Decorator` 装饰类属性时，`descriptor`没有`value`和`get`或`set`，且多出一个`initializer`方法, 返回值作为属性的值
@@ -287,7 +289,7 @@ function Decorator(props) {
 }
 ```
 
-#### 参考资料
+## 参考资料
 
 [ECMAScript 6 入门 装饰器](https://es6.ruanyifeng.com/#docs/decorator)
 
