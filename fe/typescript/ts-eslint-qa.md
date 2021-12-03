@@ -1,8 +1,5 @@
----
-title: Typescript Eslint QA
----
-
-### 项目配置完 eslint之后报👇错误
+# Typescript Eslint QA
+## 项目配置完 eslint之后报👇错误
 
 `Parsing error: ImportDeclaration should appear when the mode is ES6 and in the module context`
 
@@ -28,7 +25,7 @@ title: Typescript Eslint QA
 
 ```
 
-### 参考
+## 参考
 
 [eslint issue 55](https://github.com/eslint/eslint-scope/issues/55)
 

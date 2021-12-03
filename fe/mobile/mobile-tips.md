@@ -1,4 +1,6 @@
-### 判断是否是`IPhoneX`系列产品
+# 移动端Tips
+
+## 判断是否是`IPhoneX`系列产品
 
 因为`IPhoneX`后的产品底部返回键: `34pt`, 大概`45px` `(px = pt * 4 / 3)`
 
@@ -32,7 +34,7 @@ export const isIPhoneX = () => {
 
 ```
 
-#### 调用移动端系统功能
+### 调用移动端系统功能
 
 ```javascript
 <!-- 拨号 -->
@@ -56,7 +58,7 @@ export const isIPhoneX = () => {
 
 [H5移动端开发遇到的东西](https://juejin.im/post/5d6e1899e51d453b1e478b29)
 
-### 弹起移动端的数字输入
+## 弹起移动端的数字输入
 
 ```javascript
 <!-- 有"#" "*"符号输入 -->

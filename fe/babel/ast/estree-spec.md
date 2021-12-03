@@ -1,4 +1,5 @@
-#### Program
+# EsTree 规范
+## Program
 
 根节点, 即代表一整颗抽象语法树。
 
@@ -13,7 +14,7 @@ interface Program extends Node {
 }
 ```
 
-#### Identifier
+## Identifier
 
 **标识符节点**
 
@@ -28,7 +29,7 @@ interface Identifier extends Expression, Pattern {
 
 一个标识符可能是一个表达式，或者是解构的模式（`ES6` 中的解构语法）。我们等会会看到 `Expression` 和 `Pattern` 相关的内容的。
 
-#### Literal
+## Literal
 
 **字面量**
 
@@ -42,7 +43,7 @@ interface Literal extends Expression {
 }
 ```
 
-##### RegExpLiteral
+### RegExpLiteral
 
 这个针对正则字面量的，为了更好地来解析正则表达式的内容，添加多一个 `regex` 字段，里边会包括正则本身，以及正则的 `flags`。
 
@@ -58,9 +59,9 @@ interface RegExpLiteral extends Literal {
 }
 ```
 
-#### Statement
+## Statement
 
-##### ExpressionStatement
+### ExpressionStatement
 
 **表达式语句节点。**
 
@@ -73,7 +74,7 @@ interface ExpressionStatement extends Statement {
 }
 ```
 
-##### BlockStatement
+### BlockStatement
 
 **块语句节点**
 
@@ -87,7 +88,7 @@ interface BlockStatement extends Statement {\
 }
 ```
 
-##### ForStatement
+### ForStatement
 
 **for 循环语句节点**
 
@@ -104,9 +105,9 @@ interface ForStatement extends Statement {
 }
 ```
 
-#### Expression
+## Expression
 
-##### AssignmentExpression
+### AssignmentExpression
 
 **赋值表达式节点。**
 
@@ -121,7 +122,7 @@ interface AssignmentExpression extends Expression, Pattern {
 }
 ```
 
-###### AssignmentOperator
+#### AssignmentOperator
 
 **赋值运算符**
 
@@ -134,7 +135,7 @@ enum AssignmentOperator {
 }
 ```
 
-##### ArrayExpression
+### ArrayExpression
 
 **数组表达式节点**
 
@@ -147,7 +148,7 @@ interface ArrayExpression extends Expression {
 }
 ```
 
-##### BinaryExpression
+### BinaryExpression
 
 **二元运算表达式节点**
 
@@ -162,7 +163,7 @@ interface BinaryExpression extends Expression {
 }
 ```
 
-###### BinaryOperator
+#### BinaryOperator
 
 二元运算符，所有值如下：
 
@@ -177,7 +178,7 @@ enum BinaryOperator {
 }
 ```
 
-##### CallExpression
+### CallExpression
 
 **函数调用表达式**，即表示了 `func(1, 2)` 这一类型的语句。
 
@@ -193,7 +194,7 @@ interface CallExpression extends Expression {
 }
 ```
 
-##### ConditionalExpression
+### ConditionalExpression
 
 条件表达式，通常我们称之为三元运算表达式，即 `boolean ? true : false`。属性参考条件语句。
 
@@ -206,7 +207,7 @@ interface ConditionalExpression extends Expression {
 }
 ```
 
-##### FunctionExpression
+### FunctionExpression
 
 **函数表达式节点。**
 
@@ -216,7 +217,7 @@ interface FunctionExpression extends Function, Expression {
 }
 ```
 
-##### LogicalExpression
+### LogicalExpression
 
 **逻辑运算表达式节点**，和赋值或者二元运算类型，只不过 `operator` 是逻辑运算符类型。
 
@@ -229,7 +230,7 @@ interface LogicalExpression extends Expression {
 }
 ```
 
-###### LogicalOperator
+#### LogicalOperator
 
 **逻辑运算符**，两种值，即与或。
 
@@ -239,7 +240,7 @@ enum LogicalOperator {
 }
 ```
 
-##### MemberExpression
+### MemberExpression
 
 成员表达式节点,即表示引用对象成员的语句。
 
@@ -259,7 +260,7 @@ interface MemberExpression extends Expression {
 }
 ```
 
-##### NewExpression
+### NewExpression
 
 `new` 表达式。
 
@@ -269,7 +270,7 @@ interface NewExpression extends CallExpression {
 }
 ```
 
-##### ObjectExpression
+### ObjectExpression
 
 **对象表达式节点**
 
@@ -282,7 +283,7 @@ interface ObjectExpression extends Expression {
 }
 ```
 
-###### Property
+#### Property
 
 **对象表达式中的属性节点。**
 
@@ -301,7 +302,7 @@ interface Property extends Node {
 }
 ```
 
-##### SequenceExpression
+### SequenceExpression
 
 **序列运算符**
 
@@ -316,7 +317,7 @@ interface SequenceExpression extends Expression {
 
 [ESDoc - SequenceExpression](http://160.16.109.33/github.com/mason-lang/esast/class/src/ast.js~SequenceExpression.html)
 
-##### ThisExpression
+### ThisExpression
 
 表示 `this`。
 
@@ -326,7 +327,7 @@ interface ThisExpression extends Expression {
 }
 ```
 
-##### UnaryExpression
+### UnaryExpression
 
 **一元运算表达式节点**（`++/--` 是 update 运算符，不在这个范畴内）
 
@@ -345,7 +346,7 @@ interface UnaryExpression extends Expression {
 }
 ```
 
-###### UnaryOperator
+#### UnaryOperator
 
 **一元运算符**
 
@@ -356,7 +357,7 @@ enum UnaryOperator {
 }
 ```
 
-##### UpdateExpression
+### UpdateExpression
 
 **update 运算表达式节点**
 
@@ -371,7 +372,7 @@ interface UpdateExpression extends Expression {
 }
 ```
 
-#### Declaration
+## Declaration
 
 **声明语句节点**
 
@@ -379,7 +380,7 @@ interface UpdateExpression extends Expression {
 interface Declaration extends Statement { }
 ```
 
-##### FunctionDeclaration
+### FunctionDeclaration
 
 **函数声明**
 
@@ -392,7 +393,7 @@ interface FunctionDeclaration extends Function, Declaration {
 }
 ```
 
-##### VariableDeclarator
+### VariableDeclarator
 
 **变量声明的描述**
 
@@ -406,7 +407,7 @@ interface VariableDeclarator {
 }
 ```
 
-##### VariableDeclaration
+### VariableDeclaration
 
 **变量声明**
 
@@ -422,13 +423,13 @@ interface VariableDeclaration extends Declaration {
 }
 ```
 
-#### Patterns
+## Patterns
 
 ```ts
 interface Pattern extends Node { }
 ```
 
-#### 参考资料
+## 参考资料
 
 [The ESTree Spec](https://github.com/estree/estree)
 

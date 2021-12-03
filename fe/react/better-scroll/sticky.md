@@ -1,6 +1,4 @@
-## Code
-
-### 代码详解
+# Sticky
 
 ```jsx
 import React, { Component } from "react";

@@ -1,6 +1,4 @@
----
-title: 基础配置
----
+# 基础配置
 
 ## [Typescript 指导书](https://rain120.github.io/typescript-guide/)
 

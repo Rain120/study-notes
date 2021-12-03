@@ -1,3 +1,5 @@
+# Babel 手册
+
 ## Babel 是什么？
 
 `Babel` 是一个通用的多用途 `JavaScript `编译器。它主要用于将` ECMAScript 2015+` 版本的代码转换为向后兼容的 `JavaScript` 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。

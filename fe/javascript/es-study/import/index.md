@@ -10,12 +10,12 @@ sidebar_position: 1
 
 ## 模块化
 
-- [模块化方案](./javascript/es-study/module.md)
+- [模块化方案](../module.md)
 
 ## import 相关
 
-- [import 全量引入](./javascript/es-study/import-full.md)
-- [import 异步引入](./javascript/es-study/import-async.md)
+- [import 全量引入](./import-full.md)
+- [import 异步引入](./import-async.md)
 
 ## 参考资料
 

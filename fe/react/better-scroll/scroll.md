@@ -1,4 +1,5 @@
-## Code
+# Scroll
+
 [代码仓库](https://github.com/Rain120/better-scroll-for-react-usage)
 
 通过文档我们阅读[BetterScroll 2.x官方文档](https://better-scroll.github.io/docs/en-US/)，我们需要对该插件需要的属性进行设置。

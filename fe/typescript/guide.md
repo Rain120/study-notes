@@ -1,7 +1,8 @@
 ---
-title: 目录
 sidebar_position: 1
 ---
+
+# 目录
 
 ## [Typescript 指导书](https://rain120.github.io/typescript-guide/)
 

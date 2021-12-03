@@ -1,8 +1,9 @@
-### 工具
+# AST
+## 工具
 
 [AST在线预览](https://astexplorer.net/)
 
-### AST步骤(I/O)
+## AST步骤(I/O)
 
 - **I**
   - `Parse` -> 语法分析
@@ -20,7 +21,7 @@
   - `Manipulate` -> 操作
   - `Generate Code` -> 生成代码
 
-### Acron
+## Acron
 
 [acorn](https://github.com/acornjs/acorn) 是基于 `JavaScript` 开发的一个小型、快速的`JavaScript`解析器。
 
@@ -28,7 +29,7 @@
 - [acorn-loose](https://github.com/acornjs/acorn/blob/master/acorn-loose/): 解析器`(宽松模式)`
 - [acorn-walk](https://github.com/acornjs/acorn/blob/master/acorn-walk/): 遍历 `ast` 树 的 `node`
 
-#### parse(input, options)
+### parse(input, options)
 
 [Github acorn 官方英文文档](https://github.com/acornjs/acorn/blob/master/acorn/README.md)
 
@@ -143,11 +144,11 @@ console.log(acorn.parse("1 + 1", {ecmaVersion: 2020}));
   
      如果此选项为`true`, 则括号表达式由 (非标准) 括号化表达式节点表示, 该节点具有包含括号内的表达式的单个表达式属性。
 
-#### parseExpressionAt(input, offset, options)
+### parseExpressionAt(input, offset, options)
 
 将解析字符串中的单个表达式, 并返回其`AST`。 如果表达式之后还有更多的字符串, 不会去解析。
 
-#### tokenizer(input, options)
+### tokenizer(input, options)
 
 返回具有`getToken`方法的对象, 该方法可以重复调用以获取下一个token和`{start, end, type, value}`对象 (启用了`location`选项时添加了`loc`属性, 并且启用了`ranges`选项时的`range`属性) 。 当令牌的类型为`tokTypes.eof`时, 您应该停止调用该方法, 因为它将永远返回相同的`token`。
 
@@ -166,7 +167,7 @@ var tokens = [...acorn.tokenizer(str)];
 
 `getLineInfo(input, offset)` 可用于为给定的字符串和偏移量获取`{line, column}`对象。
 
-#### Parse类
+### Parse类
 
 `Parser`类的实例包含所有驱动解析的状态和逻辑。 它具有静态方法`parse`, `parseExpressionAt`和`tokenizer`, 它们与同名的顶级函数匹配。
 
@@ -181,11 +182,11 @@ JSXParser.parse("foo(<bar/>)", {ecmaVersion: 2020});
 
 `expand` 方法采用任意数量的插件值, 并返回一个新的`Parser`类, 其中包括插件提供的额外的解析器逻辑。
 
-### EsTree规范
+## EsTree规范
 
 [Here](./babel/ast/estree-spec.md)
 
-#### 参考资料
+### 参考资料
 
 [Vedio -> Master the Art of the AST and Take Control of Your JS](https://www.youtube.com/watch?v=C06MohLG_3s)
 

@@ -1,6 +1,4 @@
----
-title: Tap Types(废弃)
----
+# Tap Types(废弃)
 
 ## 前言
 

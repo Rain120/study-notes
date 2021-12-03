@@ -1,4 +1,6 @@
-#### 前言
+# 事件机制
+
+## 前言
 
 - 什么是事件
 - 什么是事件流
@@ -8,11 +10,11 @@
 - 什么是 `React` 合成事件
 - `React` 事件与原生事件区别
 
-#### 事件
+## 事件
 
 [事件](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Building_blocks/Events)是你在编程时系统内发生的动作或者发生的事情，系统响应事件后，如果需要，您可以某种方式对事件做出回应。
 
-#### 事件流
+## 事件流
 
 **事件流描述的是从页面中接受事件的顺序**，`IE`的事件流是 事件冒泡流，标准的浏览器事件流是 事件捕获流。`W3C`为了制定标准，采取了折中的方式: **先捕获再冒泡**。
 
@@ -20,25 +22,25 @@
 
 [img reference](https://www.w3.org/TR/uievents/#event-flow)
 
-#### 原生 `DOM` 事件流级别
+## 原生 `DOM` 事件流级别
 
 `DOM`事件流分为三个阶段：`捕获阶段`、`目标阶段`、`冒泡阶段`。先调用捕获阶段的处理函数，其次调用目标阶段的处理函数，最后调用冒泡阶段的处理函数。
 
 **目标元素**: 触发事件的元素
 
-##### 捕获阶段
+### 捕获阶段
 
 **自上而下**, 由 `window` 到 目标元素
 
-##### 目标阶段
+### 目标阶段
 
 触发事件阶段
 
-##### 冒泡阶段
+### 冒泡阶段
 
 **自下而上**, 由 目标元素 到 `window` 
 
-##### 阻止捕获、冒泡、默认行为
+### 阻止捕获、冒泡、默认行为
 
 - `event.stopPropagation()`: 阻止捕获、冒泡阶段。
 - `event.preventDefault()`: 阻止默认行为。
@@ -46,7 +48,7 @@
 
 **Note:** 如果有多个相同类型事件的事件监听函数绑定到同一个元素，当该类型的事件触发时，它们会按照被添加的顺序执行。如果其中某个监听函数执行了 `event.stopImmediatePropagation()` 方法，则当前元素剩下的监听函数将不会被执行。
 
-##### 事件级别
+### 事件级别
 
 - [`DOM0`级事件](https://www.w3.org/TR/DOM-Level-2-Events/glossary.html#dt-DOM-Level-0)
 
@@ -128,7 +130,7 @@
   elem.dispatchEvent(event);
   ```
 
-#### 原生 `DOM` 事件的执行顺序
+## 原生 `DOM` 事件的执行顺序
 
 **`DOM`事件的执行顺序与注册事件的顺序是相关的。**
 
@@ -164,7 +166,7 @@
 </html>
 ```
 
-#### 先注册捕获事件，再注册冒泡事件
+## 先注册捕获事件，再注册冒泡事件
 
 ```js
 document.getElementById('inside').addEventListener("click", () => {
@@ -191,7 +193,7 @@ document.getElementById('outside').addEventListener("click", () => {
 先注册捕获事件，再注册冒泡事件: outside, 冒泡 
 ```
 
-##### 先注册冒泡事件，再注册捕获事件
+### 先注册冒泡事件，再注册捕获事件
 
 ```js
 document.getElementById('inside1').addEventListener("click", () => {
@@ -220,7 +222,7 @@ document.getElementById('outside1').addEventListener("click", () => {
 
 [Demo](https://codesandbox.io/s/test-demo-opqou)
 
-#### React 事件系统
+## React 事件系统
 
 ```js
 /**
@@ -260,9 +262,9 @@ document.getElementById('outside1').addEventListener("click", () => {
 
 ```
 
-#### React 合成事件
+## React 合成事件
 
-##### 为什么React要自定义 events
+### 为什么React要自定义 events
 
 - **抹平浏览器之间的兼容性差异**
 
@@ -284,15 +286,15 @@ document.getElementById('outside1').addEventListener("click", () => {
 
   `React v16`引入 `Fiber` 架构，`React` 可以通过干预事件的分发以优化用户的交互体验。不同类型的事件有不同的优先级，比如高优先级的事件可以中断渲染，让用户代码可以及时响应用户交互。
 
-##### 定义
+### 定义
 
 `React` 根据 [W3C 规范](https://www.w3.org/TR/DOM-Level-3-Events/) 来定义自己的事件系统，其事件被称之为[合成事件 (`SyntheticEvent`)](https://zh-hans.reactjs.org/docs/events.html)，它在`DOM`事件体系基础上做了很大改进，减少了**内存消耗**，**简化了事件逻辑**，并最大化的解决了`IE`等浏览器的不兼容问题。
 
-#### React 事件与原生事件区别
+## React 事件与原生事件区别
 
 
 
-#### React 16 - React 17 事件修改
+## React 16 - React 17 事件修改
 
 ![react-16-events.png](./images/react-16-events.png)
 
@@ -300,7 +302,7 @@ document.getElementById('outside1').addEventListener("click", () => {
 
 
 
-#### 参考资料
+## 参考资料
 
 [Github: React](https://github.com/facebook/react)
 

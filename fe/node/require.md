@@ -1,4 +1,4 @@
-#### require 解析规则
+## require 解析规则
 
 ```
 当 Node 遇到 require(X) 时，按下面的顺序处理。
@@ -23,7 +23,7 @@
 （4） 抛出 "not found"
 ```
 
-#### require.resolve 方法
+## require.resolve 方法
 
 - `request`: 需要解析的模块路径。
 
@@ -56,7 +56,7 @@ console.log(
 
 如果找不到模块，则会抛出 `MODULE_NOT_FOUND` 错误。
 
-#### 参考地址
+## 参考地址
 
 [modules all together](https://nodejs.org/api/modules.html#modules_all_together)
 

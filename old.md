@@ -2,7 +2,7 @@
 
  * @Author: Rain120
  * @Date: 2019-09-08 16:50:18
- * @LastEditTime: 2021-12-03 16:59:44
+ * @LastEditTime: 2021-12-03 18:03:29
  -->
 <h1 align="center">
   <a href="https://rain120.github.io/study-notes">Study Notes</a>
@@ -27,19 +27,8 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
   - [UI 相关知识](knowledge-map/ui.md)
   - [代码规范(建议)](knowledge-map/code-style.md)
 - [学习笔记](notes/guide.md)
-    - [Node](notes/node/guide.md)
-      - [Node require](notes/node/require.md)
-      - [Node path](notes/node/path.md)
     - [HTTP](notes/http/guide.md)
       - [HTTP 三次握手 四次挥手](notes/http/three-handshaking-four-wave.md)
-    - [Typescript](notes/typescript/guide.md)
-      - [Typescript 基础入门](notes/typescript/base.md)
-      - [Typescript 问题 & 解释](notes/typescript/qa.md)
-      - [Typescript 开发小建议](notes/typescript/tips.md)
-      - [Typescript + Eslint 配置Qa](notes/typescript/ts-eslint-qa.md)
-      - [Typescript 快速定义QuickType](notes/typescript/quicktype.md)
-      - [Typescript 快速定义 tapTypes 实践](notes/typescript/taptypes.md)
-        - [JSON Schema 知识流](notes/typescript/json-schema.md)
     - [前端开发 Tips](notes/tips/guide.md)
       - [CSS Tips](notes/tips/css-tips.md)
       - [JS Tips](notes/tips/js-tips.md)
@@ -64,24 +53,6 @@ Daily study notes, some useful <a href="https://rain120.github.io/study-notes/#/
       - [Babel手册](notes/babel/babel-handbook.md)
       - [与AST的相知相识](notes/babel/ast/ast.md)
         - [EsTree 规范](notes/babel/ast/estree-spec.md)
-    - [React](notes/react/guide.md)
-      - [React组件库开发 - 初始化项目](notes/react/component-library/init.md)
-      - [React better-scroll实践](notes/react/better-scroll/better-scroll.md)
-        - [基础组件Scroll开发](notes/react/better-scroll/scroll.md)
-        - [Slider 组件开发](notes/react/better-scroll/slider.md)
-        - [Sticky 组件开发](notes/react/better-scroll/sticky.md)
-      - [React Hooks](notes/react/hooks/guide.md)
-        - [React Hooks 基础学习](notes/react/hooks/base.md)
-      - [React-Router](notes/react/router/guide.md)
-        - [BrowserRouter和HashRouter的区别?](notes/react/router/router-diff-with-browser-and-hash.md)
-      - [React setState](notes/react/setState.md)
-      - [React 事件机制](notes/react/events.md)
-      - [React 脚手架 Typescript 多入口配置](notes/react/crd.md)
-    - [Vue](notes/vue/guide.md)
-      - [Vue实现左右菜单联动实现](notes/vue/cascade-menu/cascade-menu.md)
-      - [Vue之网易云音乐横向菜单滑动的实现](notes/vue/slide-menu/slide-menu.md)
-      - [Vue 生命周期笔记](notes/vue/vue-lifecycle/vue-lifecycle.md)
-      - [Vue 源码学习](notes/vue/code-review/code-review.md)
     - [移动端](notes/mobile/guide.md)
       - [Charles抓包https手机配置](notes/mobile/charles-https-mobile-config.md)
       - [移动端Tips](notes/mobile/mobile-tips.md)

@@ -1,6 +1,10 @@
-#### 缘由
+# 网易云音乐横向菜单滑动
 
+## 缘由
+
+:::tip
 之前在学习的时候有稍微捣鼓一下网易云音乐，主要是为了学习Vue，巩固基础知识，然后看到这个横向菜单，当然个人也喜欢看球，所以每次看腾讯NBA的时候总是会想这个是这样实现的，于是借助之前还没写完的demo，完成这个横向菜单的实现，废话不多说，先上效果图
+:::
 
 ![网易云音乐横向菜单](./images/slide-menu.gif)
 
@@ -11,7 +15,7 @@
 
 我们的使用的better-scroll这个插件来实现，具体安装请参考[BetterScroll](https://ustbhuangyi.github.io/better-scroll/#/)
 
-#### 前端DOM结构
+## 前端DOM结构
 ```
 <template>
   <div class="mv-tabs">
@@ -70,7 +74,7 @@ data () {
     }
 ```
 
-#### 样式
+## 样式
 ```
 .mv-tabs
     position relative
@@ -190,7 +194,7 @@ mounted () {
 }
 ```
 
-#### 全部代码
+## 全部代码
 ```
 <template>
   <div class="mv-tabs">

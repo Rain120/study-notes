@@ -1,10 +1,11 @@
-#### 新建项目
+# React 脚手架 Typescript 多入口配置
+## 新建项目
 
 ```sh
 npx create-react-app my-app --template typescript
 ```
 
-#### 自定义配置
+## 自定义配置
 
 `create-react-app` 让我们可以快速和专注项目的开发而不用过多的去关心工具和服务的配置，但是有些场景我们还是需要自定配置的，可以执行下面的命令:
 
@@ -44,11 +45,11 @@ npm run eject
 
 参考: [Add baseUrl and paths in tsconfig.json and jsconfig.json #5645](https://github.com/facebook/create-react-app/issues/5645)
 
-#### 多入口配置
+## 多入口配置
 
 我们知道 `webpack` 打包最重要的几个参数有 `entry`, `output`, `plugins`，所以我们针对这几个参数进行修改即可。
 
-##### entry
+### entry
 
 动态 `paths`
 
@@ -118,7 +119,7 @@ module.exports = function (webpackEnv) {
 }
 ```
 
-##### output
+### output
 
 配置打包输出的不同 `bundle`
 
@@ -137,7 +138,7 @@ module.exports = function (webpackEnv) {
 }
 ```
 
-##### plugins
+### plugins
 
 在 `webpack.config.js`中的方法 `setupMultiEntryConfig`上增加一些处理，
 
@@ -229,7 +230,7 @@ module.exports = function (webpackEnv) {
 }
 ```
 
-##### start.js
+### start.js
 
 ```js
 // entry map
@@ -241,7 +242,7 @@ if (!checkRequiredFiles([paths.appHtml].concat(appIndexFiles))) {
 }
 ```
 
-##### build.js
+### build.js
 
 ```js
 // entry map
@@ -255,7 +256,7 @@ if (!checkRequiredFiles([paths.appHtml].concat(appIndexFiles))) {
 
 
 
-#### 参考资料
+## 参考资料
 
 [Get Start](https://create-react-app.dev/docs/getting-started)
 
