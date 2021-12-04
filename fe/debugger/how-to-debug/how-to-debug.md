@@ -1,4 +1,6 @@
-### Debug
+# 如何调试
+
+## Debug
 
 - [几个调试小技巧](./a-few-debug-skills.md)
 - [console](./console.md)
