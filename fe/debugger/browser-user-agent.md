@@ -1,8 +1,9 @@
-#### Firefox 浏览器版本下载
+# userAgent 设置
+## Firefox 浏览器版本下载
 
 [Firefox All Releases](http://ftp.mozilla.org/pub/firefox/releases/)
 
-#### Chrome
+## Chrome
 
 ```
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
@@ -20,7 +21,7 @@ Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrom
 
 [Chrome 更多详见](https://github.com/fengzhizi715/user-agent-list/blob/master/Chrome.txt)
 
-#### Google bot
+## Google bot
 
 ```
 Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
@@ -30,7 +31,7 @@ Googlebot/2.1 (+http://www.google.com/bot.html)
 
 <!-- [Google bot 更多详见](https://github.com/fengzhizi715/user-agent-list/blob/master/Googlebot.txt) -->
 
-#### FireFox
+## FireFox
 
 ```
 Mozilla/5.0 (X11; Linux i686; rv:64.0) Gecko/20100101 Firefox/64.0
@@ -59,7 +60,7 @@ Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0
 
 [FireFox 更多详见](https://github.com/fengzhizi715/user-agent-list/blob/master/Firefox.txt)
 
-#### Mozilla
+## Mozilla
 
 ```
 Mozilla/5.0 (Windows; U; Windows NT 6.1; rv:2.2) Gecko/20110201
@@ -76,7 +77,7 @@ Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.13; ) Gecko/2010
 
 [Mozilla 更多详见](https://github.com/fengzhizi715/user-agent-list/blob/master/Mozilla.txt)
 
-#### Safari
+## Safari
 
 ```
 Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16
@@ -109,7 +110,7 @@ Mozilla/5.0 (iPhone; U; CPU iPhone OS 11_2_3 like Mac OS X; en-NZ) AppleWebKit/6
 
 [Safari 更多详见](https://github.com/fengzhizi715/user-agent-list/blob/master/Safari.txt)
 
-#### Edge
+## Edge
 
 ```
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14931
@@ -122,7 +123,7 @@ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
 
 <!-- [Edge 更多详见](https://github.com/fengzhizi715/user-agent-list/blob/master/Edge.txt) -->
 
-#### Android Webkit
+## Android Webkit
 
 ```
 Mozilla/5.0 (Linux; U; Android 4.0.3; ko-kr; LG-L160L Build/IML74K) AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
@@ -150,7 +151,7 @@ Mozilla/5.0 (Linux; U; Android 2.2.1; en-ca; LG-P505R Build/FRG83) AppleWebKit/5
 
 <!-- [Android Webkit 更多详见](https://github.com/fengzhizi715/user-agent-list/blob/master/Android%20Webkit%20Browser.txt) -->
 
-#### Opera
+## Opera
 
 ```
 Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16
@@ -174,7 +175,7 @@ Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; de) Presto/2.9.168 Version/11.5
 
 [Opera 更多详见](https://github.com/fengzhizi715/user-agent-list/blob/master/Opera.txt)
 
-#### 参考资料
+## 参考资料
 
 [user-agent-list](https://github.com/fengzhizi715/user-agent-list)
 
