@@ -1,4 +1,10 @@
-#### 创建项目
+---
+sidebar_position: 4
+---
+
+# 快速创建Lerna项目
+
+## 创建项目
 
 ```sh
 mkdir infinity-gems && cd infinity-gems
@@ -10,7 +16,7 @@ lerna init -i
 
 ![sh-lerna-init-i.png](./images/sh-lerna-init-i.png)
 
-#### 代码检查 & 格式化 & 规范提交
+## 代码检查 & 格式化 & 规范提交
 
 - 代码检查
 
@@ -199,13 +205,13 @@ module.exports = {
 
 ```
 
-#### Rollup 打包
+## Rollup 打包
 
 ```sh
 npm i rollup @rollup/plugin-babel @rollup/plugin-commonjs @rollup/plugin-typescript rollup-plugin-terser --save-dev
 ```
 
-#### Jest
+## Jest
 
 ```sh
 npm install -D jest @types/jest ts-jest
@@ -214,7 +220,7 @@ npm install -D jest @types/jest ts-jest
 
 ![jest-init.png](./images/jest-init.png)
 
-#### 创建`package`
+## 创建`package`
 
 ```sh
 lerna create thanos
@@ -235,9 +241,9 @@ lerna create thanos
 
 至此，我们的初始化工作全部完成了。
 
-#### Lerna 脚本配置
+## Lerna 脚本配置
 
-##### lerna add 多依赖
+### lerna add 多依赖
 
 ```sh
 npm install -D commander shelljs prompts
@@ -245,7 +251,7 @@ npm install -D commander shelljs prompts
 
 
 
-#### 参考资料
+## 参考资料
 
 [vue-cli](https://github.com/vuejs/vue-cli)
 

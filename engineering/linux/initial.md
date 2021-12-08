@@ -1,4 +1,10 @@
-#### 新手入门`Linux`必知的`n`条命令
+---
+sidebar_position: 1
+---
+
+# Linux入门学习
+
+## 新手入门`Linux`必知的`n`条命令
 
 **1．[`echo`命令](http://man.linuxde.net/echo)**
 
@@ -212,13 +218,15 @@ history (选项) [参数]
 
 
 
-参考资料
+## 参考资料
 
-[`Linux`命令大全](http://man.linuxde.net/)
+[Linux 命令大全](http://man.linuxde.net/)
 
 [Linux 推荐](https://github.com/Rain120/program-learning-lists/blob/master/README.md#linux)
 
 [Bash 脚本教程](http://wangdoc.com/bash/index.html)
+
+[学会这些 Linux 知识后，我有点飘](https://mp.weixin.qq.com/s/ASwocL_67pU01wbq07LBCg)
 
 
 

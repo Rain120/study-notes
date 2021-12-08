@@ -1,4 +1,10 @@
-#### 多包管理方案
+---
+sidebar_position: 1
+---
+
+# Lerna 入门篇
+
+## 多包管理方案
 
 - `multirepo`
   - 又称`multiple repository`, 多代码仓库
@@ -18,11 +24,11 @@
 
 ![mono-vs-mutil.jpg](./images/mono-vs-mutil.jpg)
 
-#### lerna 是什么？
+## lerna 是什么？
 
 `Lerna`是一种工具，用于优化使用`git`和`npm`管理多包存储库的工作流程。
 
-#### 为什么要使用 lerna?
+## 为什么要使用 lerna?
 
 将大型代码库分成单独的独立版本化的软件包对于代码共享非常有用。 但是，跨许多存储库进行更改很麻烦且难以跟踪，并且跨存储库的测试变得非常复杂。
 
@@ -30,7 +36,7 @@
 
 `lerna`可以让你在主项目下管理多个子项目，从而解决了多个包互相依赖，且发布时需要手动维护多个包的问题。
 
-#### 安装 lerna
+## 安装 lerna
 
 ```sh
 npm install -g lerna
@@ -40,17 +46,17 @@ npm install -g lerna
 yarn global add lerna
 ```
 
-#### 创建 lerna 仓库
+## 创建 lerna 仓库
 
 ```sh
 git init lerna-repo && cd lerna-repo
 ```
 
-#### Lerna 常用命令
+## Lerna 常用命令
 
 [详见 Lerna 命令](./lerna/commands.md)
 
-#### 参考资料
+## 参考资料
 
 [Lerna 官方文档](https://lerna.js.org/)
 

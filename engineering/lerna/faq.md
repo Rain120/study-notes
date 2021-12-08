@@ -1,4 +1,10 @@
-#### Lerna boostrap --hoist
+---
+sidebar_position: 7
+---
+
+# FAQ
+
+## Lerna boostrap --hoist
 
 在`lerna(v3.22.1)`中，当`npmClient`为`yarn`时加上`hoist`参数时执行会报错：
 
@@ -6,7 +12,7 @@
 --hoist is not supported with --npm-client=yarn, use yarn workspaces instead
 ```
 
-##### 解决办法
+### 解决办法
 
 当使用`yarn workspace`，并在`lerna`中开启该功能时，`lerna bootstrap`命令由`yarn install`代理，等价于在`workspace`的根目录下执行`yarn install`。
 
@@ -50,7 +56,7 @@
 
 虽然`yarn`提供的较好的底层依赖处理的支持，但`lerna`提供了更高层的更方便实用的各种命令。
 
-#### 参考资料
+## 参考资料
 
 
 

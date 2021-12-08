@@ -1,4 +1,8 @@
-#### [`Docker`](https://docs.docker.com/)安装
+---
+sidebar_position: 1
+---
+
+# Docker 安装
 
 [`Mac install`](https://docs.docker.com/docker-for-mac/install/)
 
@@ -18,7 +22,7 @@ brew cask install docker
 
 下载安装包安装即可
 
-#### 镜像加速
+## 镜像加速
 
 如果在使用过程中发现拉取 `Docker` 镜像十分缓慢，可以配置` Docker`国内镜像加速。
 
@@ -26,7 +30,7 @@ brew cask install docker
 - [阿里云加速器](https://cr.console.aliyun.com/cn-hangzhou/mirrors)
 - [网易云加速器](https://www.163yun.com/help/documents/56918246390157312)
 
-##### 配置
+### 配置
 
 ```json
 # Perferences -> Docker Engine -> Apply & Restart
@@ -38,12 +42,12 @@ brew cask install docker
 }
 ```
 
-##### 测试生效
+### 测试生效
 
 ```sh
 docker info
 ```
 
-#### 参考资料
+## 参考资料
 
 [Docker Desktop for Mac user manual](https://docs.docker.com/docker-for-mac/)

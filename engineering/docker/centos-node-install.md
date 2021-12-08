@@ -1,4 +1,6 @@
-#### `Centos`安装
+# CentOS下安装 Node
+
+## `Centos`安装
 
 ```sh
 # search
@@ -8,13 +10,13 @@ docker search centos
 docker pull centos:7
 ```
 
-#### `Wget`安装
+## `Wget`安装
 
 ```sh
 yum install wget
 ```
 
-#### `Node`安装
+## `Node`安装
 
 ```sh
 # 下载 node 包
@@ -33,7 +35,7 @@ ln -s /node-v10.18.0-linux-x64/bin/node /usr/bin/node
 ln -s /node-v10.18.0-linux-x64/bin/npm /usr/bin/npm
 ```
 
-#### 测试
+## 测试
 
 ```sh
 node -v

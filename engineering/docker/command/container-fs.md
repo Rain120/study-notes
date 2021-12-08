@@ -1,4 +1,6 @@
-#### `cp` 命令
+# 容器 root fs命令
+
+## `cp` 命令
 
 用于容器与主机之间的数据拷贝。
 
@@ -11,7 +13,7 @@ docker cp [Options] source_path- Container:dest_path
 - `--follow-link`, `-L` : 保持源目标中的链接
 - `--archive` , `-a`:  存档模式(复制所有`uid / gid`信息)
 
-##### 实例
+### 实例
 
 将主机 `/path`目录拷贝到容器 `68fe0d99b283` 的 `/path`目录下。
 
@@ -31,11 +33,11 @@ docker cp /www/runoob 68fe0d99b283:/rename`
 docker cp  68fe0d99b283:/www /tmp/
 ```
 
-![docker-cp.png](./images/docker-cp.png)
+![docker-cp.png](../images/docker-cp.png)
 
-![docker-cp-res.png](./images/docker-cp-res.png)
+![docker-cp-res.png](../images/docker-cp-res.png)
 
-#### `commit`
+## `commit`
 
 从容器创建一个新的镜像
 
@@ -61,7 +63,7 @@ docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]
 docker commit -a "rain120" -m "test" -='CMD ["apachectl", "-DFOREGROUND"]' c3f279d17e0a  svendowideit/testimage:version4
 ```
 
-#### `diff`
+## `diff`
 
 检查容器里文件结构的更改
 
@@ -69,7 +71,7 @@ docker commit -a "rain120" -m "test" -='CMD ["apachectl", "-DFOREGROUND"]' c3f27
 docker diff [OPTIONS] CONTAINER
 ```
 
-##### 实例
+### 实例
 
 查看容器mymysql的文件结构更改。
 
@@ -77,7 +79,7 @@ docker diff [OPTIONS] CONTAINER
 docker diff CONTAINER
 ```
 
-#### 参考资料
+## 参考资料
 
 [Docker commandline cp](https://docs.docker.com/engine/reference/commandline/cp/)
 

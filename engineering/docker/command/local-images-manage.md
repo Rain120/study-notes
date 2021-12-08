@@ -1,4 +1,6 @@
-#### `images` 命令
+# 本地镜像管理
+
+## `images` 命令
 
 列出本地镜像。
 
@@ -20,7 +22,7 @@ committ                   latest              b6fa739cedf5        19 hours ago  
 docker                    latest              30557a29d5ab        20 hours ago        1.089 GB
 ```
 
-#### `image` 命令
+## `image` 命令
 
 管理镜像
 
@@ -30,7 +32,7 @@ docker image COMMAND
 
 [子命令列表](https://docs.docker.com/engine/reference/commandline/image/)
 
-#### `build` 命令
+## `build` 命令
 
 用于使用 `Dockerfile` 创建镜像。
 
@@ -60,7 +62,7 @@ docker build github.com/creack/docker-firefox
 docker build -f /path/to/a/Dockerfile .
 ```
 
-#### `history` 命令
+## `history` 命令
 
 ```sh
 docker history [OPTIONS] IMAGE
@@ -77,7 +79,7 @@ docker history [OPTIONS] IMAGE
 docker history docker
 ```
 
-#### `import` 命令
+## `import` 命令
 
 从归档文件中创建镜像
 
@@ -93,7 +95,7 @@ docker import [OPTIONS] file|URL|- [REPOSITORY[:TAG]]
 $ docker import http://example.com/exampleimage.tgz
 ```
 
-#### `load` 命令
+## `load` 命令
 
 导入使用 [docker save](#save-命令) 命令导出的镜像
 
@@ -132,7 +134,7 @@ fedora              heisenbug           58394af37342        7 weeks ago         
 fedora              latest              58394af37342        7 weeks ago         385.5 MB
 ```
 
-#### `save` 命令
+## `save` 命令
 
 将指定镜像保存成 `tar` 归档文件
 
@@ -155,7 +157,7 @@ $ docker save -o fedora-latest.tar fedora:latest
 
 
 
-#### `tag` 命令
+## `tag` 命令
 
 标记本地镜像，将其归入某一仓库。
 
@@ -169,7 +171,7 @@ docker tag [OPTIONS] IMAGE[:TAG] [REGISTRYHOST/][USERNAME/]NAME[:TAG]
 docker tag ubuntu:15.10 ubuntu:v3
 ```
 
-#### `rmi` 命令
+## `rmi` 命令
 
 删除本地一个或多个镜像。
 
@@ -185,7 +187,7 @@ docker rmi [OPTIONS] IMAGE [IMAGE...]
 docker rmi -f ubuntu:v1
 ```
 
-#### 参考资料
+## 参考资料
 
 [Docker commandline images](https://docs.docker.com/engine/reference/commandline/images/)
 

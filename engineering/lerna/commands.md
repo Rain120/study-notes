@@ -1,3 +1,9 @@
+---
+sidebar_position: 2
+---
+
+# Lerna 命令
+
 ## lerna.json 配置
 
 ```json

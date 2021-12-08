@@ -1,4 +1,6 @@
-#### `Bash` 获取 `git`当前的分支名
+# Shell 中常用的 Git 命令
+
+## `Bash` 获取 `git`当前的分支名
 
 ```sh
 git rev-parse --abbrev-ref HEAD

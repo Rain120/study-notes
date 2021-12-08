@@ -1,4 +1,6 @@
-#### 前言
+# 代码风格
+
+## 前言
 
 **代码风格** (`Programming style` / `code style`)即[程序](https://zh.wikipedia.org/wiki/程序)开发人员所编写源代码的书写风格。良好代码风格的特点是使代码易读。
 
@@ -13,17 +15,17 @@
 
 下面我们将通过以上几点来介绍我对 **代码风格** 的一些理解和个人建议。
 
-#### 命名
+## 命名
 
 我们知道，对于一样物品，一个生物来说，一个好的名字可以让你更快的记住他，认识他，这个规则，在代码里面也适应。
 
-##### 命名风格
+### 命名风格
 
 ![code-name-style](./images/code-name-style.png)
 
 [`@tinyfe/naming-transform` 文档](https://github.com/tinyfe/one-utils/blob/main/packages/naming-transform/README.md#%E5%91%BD%E5%90%8D%E9%A3%8E%E6%A0%BCnaming-style)
 
-##### 命名习惯建议
+### 命名习惯建议
 
 规则: **动词 + 名词(描述) + 状态**，规则同样适合函数。
 
@@ -44,14 +46,14 @@
   - 开头: `get` `set` `on` `handle`  `blabla....`, etc: `getUserName`, `setUserInfo`, `onClick`, `handleOnTreeProcess` ....
   - 结尾: 动词，名词
 
-##### 常见词汇
+### 常见词汇
 
 - 数据操作：`get` / `set` / `open` / `close` / `handle` / `make` / `computed` 
 - 增加：`add` / `create` / `insert` / `push` 
 - 删除：`remove` / `destory` / `delete` / `split` 
 - 判断: `is` /  `has` / `can` / `should` / `check` / `enable` / `with` / `allow` / `could`
 
-##### 场景分类
+### 场景分类
 
 - 事件处理
 
@@ -151,9 +153,9 @@
 
   
 
-#### 变量
+## 变量
 
-##### 定义变量
+### 定义变量
 
 - 总是使用`const`或 `let` 来声明变量。不这样做会导致全局变量。我们希望避免污染全局名称空间。`eslint: no-undef no-var prefer-const`
 
@@ -222,7 +224,7 @@
   // the same applies for `const`
   ```
 
-#### 常量
+## 常量
 
 - 定义常量使用`const`关键词
 - 定义常量使用**大写英文字母**, 尽量见名知意，每个单词之间用 `_` 分隔。
@@ -232,11 +234,11 @@
 const SOME_DAY_I_CAN_GET_IT = true;
 ```
 
-#### 语句
+## 语句
 
 在计算机程序设计中，语句是命令式编程语言的一个语法单元，它表达了要执行的一些动作，语句可以有内部组件(例如，表达式)。它分为块语句(多行)和单行语句。
 
-##### 行长度
+### 行长度
 
 在语句中，我们习惯的是，尽量保证单行语句在 `80-120`字的范围内。为什么要局限于某一个范围呢？我的理解是，让重点在可视区域。举个🌰：
 
@@ -304,7 +306,7 @@ function getInfoByMoreFilterFromStudentListAndFormat(list) {
   }
   ```
 
-##### 语句块
+### 语句块
 
 我们先看下👇这串代码，感受一下
 
@@ -435,19 +437,19 @@ observerWaterMark(dom: HTMLElement | null = this.dom) {
   }
   ```
 
-#### 注释
+## 注释
 
 多行注释 `/** ... */`
 
 单行注释 `//`
 
-更多可以转我另一篇文章 [一目了然的代码注释和技巧](knowledge-map/code-annotation.md)
+更多可以转我另一篇文章 [一目了然的代码注释和技巧](./annotation.md)
 
-#### 缩进
+## 缩进
 
 `eslint: indent`
 
-##### 水平
+### 水平
 
 一般是 **2 或 4 个空格**，或者 **Tab制表符**。这个其实遵循每个团队或者公司的规范即可，但是，我个人喜欢 **2个空格**，因为这样阅读代码可以更舒服写。
 
@@ -463,13 +465,13 @@ function getName(profile) {
 }
 ```
 
-##### 垂直
+### 垂直
 
-#### 代码的布局
+## 代码的布局
 
 在代码来看，所有的代码都是以 **块代码** 和 **行代码** 组成。
 
-##### 块代码
+### 块代码
 
 每个块代码后面保留一个空行。
 
@@ -486,7 +488,7 @@ const github = 'https://github.com/rain120';
 
 ```
 
-##### 行代码
+### 行代码
 
 一行限制在 `80-120` 以内，链式调用，尽量以连接函数换行。
 
@@ -500,13 +502,13 @@ const info = Object.keys(info)
 		.filter(item => ['name', 'age', 'gender'].includes(item));
 ```
 
-#### 个人建议
+## 个人建议
 
-##### 是否自动格式化
+### 是否自动格式化
 
 目前，大部分公司和个人开发的项目，都会使用 `eslint` 进行代码(自动保存格式化，`precommit` 自动`eslint --fix` 检查，但是，从个人的角度来看，初学者，不建议自动化处理，而适合手动敲代码，养成习惯，只保留 `precommit fix` 的操作；对于，有经验的同学，我觉得可以，开启这些，用来节省开发时间。
 
-#### 参考资料
+## 参考资料
 
 [Wiki - Programming style](https://en.wikipedia.org/wiki/Programming_style)
 

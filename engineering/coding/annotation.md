@@ -1,10 +1,12 @@
-### 什么是注释
+# 代码注释
+
+## 什么是注释
 
 > 在[计算机语言](https://zh.wikipedia.org/wiki/计算机语言)中，**注释**是[计算机语言](https://zh.wikipedia.org/wiki/计算机语言)的一个重要组成部分，用于在[源代码](https://zh.wikipedia.org/wiki/源代码)中解释代码的功用，可以增强程序的可读性，可维护性，或者用于在源代码中处理不需运行的代码段，来调试程序的功能执行。
 >
 > 注释在随源代码进入[预处理器](https://zh.wikipedia.org/wiki/预处理器)或[编译器](https://zh.wikipedia.org/wiki/编译器)处理后会被移除，不会在[目标代码](https://zh.wikipedia.org/wiki/目标代码)中保留其相关信息。
 
-### 写代码到底要不要写注释
+## 写代码到底要不要写注释
 
 > Clean code should read like well-written prose. — Robert C. Martin(罗伯特·塞西尔·马丁)
 >
@@ -40,7 +42,7 @@
 
 那就要知道什么注释需要注释，什么不需要？什么才是好的注释，什么是坏的注释？
 
-### 正确注释 VS 错误注释 <sup>参考 代码整洁之道</sup>
+## 正确注释 VS 错误注释 <sup>参考 代码整洁之道</sup>
 
 正确的注释一般包括**序言性注释**和**功能性注释**。
 
@@ -75,7 +77,7 @@
 
   每个函数或者每个变量都有标准的注释完全没有必要，除非是编写公共 API
 
-### 注释的种类 <sup>参考代码大全</sup>
+## 注释的种类 <sup>参考代码大全</sup>
 
 注释可以分成五类
 
@@ -99,25 +101,25 @@
 
   意图这一层上的注释，解释了代码的目的。意图注释在问题一级上，而不是在答案一级操作。
 
-### 注释的分类
+## 注释的分类
 
 >  PS: 我还查了下这个 👉👉👉 “分类”是按某种规则划分，而“种类”是划分后的一个结果。
 
-#### 行注释
+### 行注释
 
 在符号后那一行不会被编译(显示), 行代码可以写在语句上面，也可以写在语句后面，看个人习惯，我个人习惯在上面👆，因为好看啊。😛😛😛
 
-#### 块注释
+### 块注释
 
 被块注释符号中间的部分不会被编译。
 
-### 如何写注释
+## 如何写注释
 
-#### 注释风格
+### 注释风格
 
 `//` 或 `/* */` 都可以; 但 `//` **更常用**。 要在如何注释及注释风格上确保统一。
 
-#### 文件注释
+### 文件注释
 
 每个文件都应该包含许可证引用. 为项目选择合适的许可证版本。(比如, Apache 2.0, BSD, LGPL, GPL)
 
@@ -157,7 +159,7 @@
  */
 ```
 
-#### 代码注释
+### 代码注释
 
 由于本人是`FE er`, 所以本人只介绍前端相关的注释。
 
@@ -312,12 +314,12 @@ export const getOwnPropertyDescriptors =
 头部注释
 
 ```sh
-###
+##
 # @Author: Rainy [https://github.com/rain120]
 # @Date: 2020-10-10 10:10:10
 # @LastEditors: Rainy
 # @LastEditTime: 2020-11-11 11:11:11
-###
+##
 ```
 
 代码注释
@@ -327,7 +329,7 @@ export const getOwnPropertyDescriptors =
 echo "I'm so handsome!"
 ```
 
-#### 特殊标记注释
+### 特殊标记注释
 
 Note: 忽略大小写，可添加特殊符号，如 `@`
 
@@ -352,7 +354,7 @@ Note: 忽略大小写，可添加特殊符号，如 `@`
 
 ![label-annotation.png](./images/label-annotation.png)
 
-#### 注释常用标签 <sup>参考 JS Doc</sup>
+### 注释常用标签 <sup>参考 JS Doc</sup>
 
 **@author Rain120 [1085131904@qq.com]**
 
@@ -387,7 +389,7 @@ Note: 忽略大小写，可添加特殊符号，如 `@`
 
 ![lei-code.jpg](./images/lei-code.jpg)
 
-### VS Code 技巧
+## VS Code 技巧
 
 [addDocComments 插件](https://marketplace.visualstudio.com/items?itemName=stevencl.addDocComments)
 
@@ -397,7 +399,7 @@ Note: 忽略大小写，可添加特殊符号，如 `@`
 
 [koroFileheader](https://marketplace.visualstudio.com/items?itemName=OBKoro1.korofileheader)
 
-#### 快捷键
+### 快捷键
 
 **文件头部添加注释**
 
@@ -438,7 +440,7 @@ linux: ctrl + meta + t
 
 [TODO Tree Icon](https://primer.style/octicons/)
 
-#### TODO Tree 配置
+### TODO Tree 配置
 
 ```json
 {
@@ -540,9 +542,9 @@ linux: ctrl + meta + t
 }
 ```
 
-了解更多 `VS Code` 技巧 `or` `Tips` 👉👉👉  [Here](./vscode/guide)
+了解更多 `VS Code` 技巧 `or` `Tips` 👉👉👉  [Here](https://rain120.github.io/study-notes/tools/vscode/todo-tree)
 
-### 参考资料
+## 参考资料
 
 [Google 开源项目风格指南 注释](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/comments/)
 

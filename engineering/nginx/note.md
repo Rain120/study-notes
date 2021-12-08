@@ -1,6 +1,8 @@
-### [`Nginx`](https://www.nginx.com/) + [`Node`](https://nodejs.org/zh-cn/) + [`Vue`](https://vuefe.cn/) 部署初试(2019-03-08更新)
+# Node 初探
 
-#### **`Nginx`**
+## [`Nginx`](https://www.nginx.com/) + [`Node`](https://nodejs.org/zh-cn/) + [`Vue`](https://vuefe.cn/) 部署初试(2019-03-08更新)
+
+### **`Nginx`**
 
 1. [定义](https://www.nginx.com/resources/glossary/nginx/)
 
@@ -33,7 +35,7 @@
    - 反向代理（适用`2000WPV`、并发连接`1W`/秒），简单的负载均衡和容错
    - 基于客户端` IP` 地址和 `HTTP` 基本认证的访问控制
 
-#### `Mac` 安装`Nginx`
+### `Mac` 安装`Nginx`
 
 ```shell
 // 推荐使用`brew`, 安装`homebrew`
@@ -50,7 +52,7 @@ vim nginx.conf
 
 ![cd-nginx](./images/cd-nginx.png)
 
-#### Nginx 参数列表
+### Nginx 参数列表
 
 | 配置参数属性         | 解释说明                                                     | 参数列表                                                     |
 | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -62,7 +64,7 @@ vim nginx.conf
 | events               | 包含*Nginx*中所有处理连接的设置                              |                                                              |
 | http                 | Nginx http处理的所有核心特性                                 |                                                              |
 
-#### **`Event`**
+### **`Event`**
 
 `Nginx`是以`event`（事件）处理模型为基础的模块。它为了支持跨平台，抽象出了`event`模块。它支持的`event`处理类型有：`AIO`（异步`IO`），`/dev/poll`（`Solaris` 和`Unix`特有），`epoll`（`Linux`特有），`eventport`（`Solaris` 10特有），`kqueue`（`BSD`特有），`poll`，`rtsig`（实时信号），`select`等。
 它的作用是监听`accept`后建立的连接，对读写事件进行添加删除。事件处理模型和`Nginx`的非阻塞IO模型结合在一起使用。当`IO`可读可写的时候，相应的读写事件就会被唤醒，此时就会去处理事件的回调函数。
@@ -80,7 +82,7 @@ vim nginx.conf
 
 [`Events`详见](https://www.myfreax.com/nginx-event-module-introduction/)
 
-#### **`HTTP`**
+### **`HTTP`**
 
 可以嵌套多个`server`，配置代理，缓存，日志定义等绝大多数功能和第三方模块的配置。
 
@@ -97,7 +99,7 @@ vim nginx.conf
 | upstream          | 负载均衡                                                     |                                                          |
 | server            | Nginx的server虚拟主机配置                                    |                                                          |
 
-#### **`Upstream`**
+### **`Upstream`**
 
 它的作用是实现在轮询和客户端IP之间的后端服务器负荷平衡。
 
@@ -111,7 +113,7 @@ vim nginx.conf
 
 `weight` 默认为1.`weight`越大，负载的权重就越大。
 
-###### `Nginx Upstream `状态
+#### `Nginx Upstream `状态
 
 例如：
 
@@ -142,7 +144,7 @@ location ~ /api/ {
 }
 ```
 
-#### **`Server`**
+### **`Server`**
 
 配置虚拟主机的相关参数，一个`http`中可以有多个`server`。
 
@@ -154,7 +156,7 @@ location ~ /api/ {
 | access_log   | 设置虚拟主机访问日志的存放路径及日志的格式 |                           |
 | location     | 设置虚拟主机的基本信息                     |                           |
 
-#### **`Location`**
+### **`Location`**
 
 配置请求的路由，以及各种页面的处理情况。
 
@@ -181,7 +183,7 @@ location ~ /api/ {
 
 [详见`Location`配置](http://seanlook.com/2015/05/17/nginx-location-rewrite/)
 
-#### **`Reverse Proxy`**
+### **`Reverse Proxy`**
 
 当`NGINX`代理请求时，它会将请求发送到指定的代理服务器，获取响应并将其发送回客户端。可以使用指定的协议将请求代理到`HTTP`服务器（另一个`NGINX`服务器或任何其他服务器）或非`HTTP`服务器（可以运行使用特定框架（如`PHP`或`Python`）开发的应用程序）。
 
@@ -219,7 +221,7 @@ location  / some / path /  {
 
 [详见`Proxy`](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/)
 
-#### **全局变量`Global Variable`**
+### **全局变量`Global Variable`**
 
 | 变量名           | 变量含义                                                     |
 | ---------------- | ------------------------------------------------------------ |
@@ -274,7 +276,7 @@ nginx -s stop
 
 ![nginx-reload](./images/nginx-reload.png)
 
-####  `Linux`安装`Nginx`
+###  `Linux`安装`Nginx`
 
 [`Linux`安装](http://www.runoob.com/linux/nginx-install-setup.html)
 
@@ -366,7 +368,7 @@ http {
 
 
 
-#### `Docker`安装`Nginx`
+### `Docker`安装`Nginx`
 
 1. 查找 [Docker Hub](https://hub.docker.com/r/library/nginx/) 上的 `nginx`镜像
 
@@ -392,7 +394,7 @@ http {
 
    ![docker-images](./images/docker-images.png)
 
-#### `Server Tree`
+### `Server Tree`
 
 ```
 tree -C -L 3 -I '*node_modules*'
@@ -411,7 +413,7 @@ tree -C -L 3 -I '*node_modules*'
 
 ![file-tree](./images/file-tree.png)
 
-#### `Node Server`
+### `Node Server`
 
 ```js
 npm init
@@ -669,7 +671,7 @@ npm install express mysql body-parser -S
    }
    ```
 
-##### `Vue`配置代理以及使用`api`
+#### `Vue`配置代理以及使用`api`
 
 1. `config/index.js` 修改`proxyTable`
 
@@ -709,7 +711,7 @@ npm install express mysql body-parser -S
    }
    ```
 
-#### `Vue build`打包
+### `Vue build`打包
 
 ```shell
 npm run build
@@ -719,7 +721,7 @@ npm run build
 
 因为我的`Server`端是`Express`写的，启动`Server`需要使用`Node`，所以我们需要在服务器上安装`Node`.
 
-##### `Linux`安装`Node 8.x`
+#### `Linux`安装`Node 8.x`
 
 ```shell
 # Using Ubuntu
@@ -737,7 +739,7 @@ yum install -y nodejs
 
 ~~具体安装各版本的`Node`详见~~
 
-#### 启动`Node`
+### 启动`Node`
 
 此处我之前的命令执行错误，所以我需要`kill`这个进程
 

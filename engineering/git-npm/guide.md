@@ -1,4 +1,10 @@
-### Git
+---
+sidebar_position: 1
+---
+
+# 目录
+
+## Git
 
 - [Git 底层深入浅析 - 目录篇](./git-base-analysis.md)
 - [Git Object 深入浅析](./git-objects.md)
@@ -11,7 +17,7 @@
 - [GitHub 隐藏功能 - 个人首页](./github-profile.md)
 - [GitHub 软件(包)版本问题](./version.md)
 
-### NPM
+## NPM
 
 - [Npm Scripts](./npm-scripts.md)
 - [Npm 包发布笔记](./npm-publish.md)
@@ -23,7 +29,7 @@
 
 
 
-#### 参考
+### 参考
 
 [npm document](https://docs.npmjs.com/)
 

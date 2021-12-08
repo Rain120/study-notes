@@ -1,10 +1,12 @@
-#### npm link 后命令行报命令找不到
+# 遇到的问题及其解决方法
+
+## npm link 后命令行报命令找不到
 
 ![npm-link.png](./images/npm-link.png)
 
 ![command-not-found.png](./images/command-not-found.png)
 
-##### 解决办法
+### 解决办法
 
 ```sh
 # zsh or bash_profile or 你的 alias 配置文件
@@ -20,7 +22,7 @@ source ~/.zshrc
 
 ![alias.png](./images/alias.png)
 
-##### 引申问题
+### 引申问题
 
 `source ~/.zsh` 是报下图错误
 
