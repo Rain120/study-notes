@@ -1,14 +1,14 @@
-#### Tapable
+# Webpack Tapable
 
 [Tapable](https://github.com/webpack/tapable) 是一个小型的库，允许你对一个 `Javascript` 模块添加和应用插件。它可以被继承或混入到其他模块中。类似于 `NodeJS` 的 `EventEmitter` 类，专注于自定义事件的触发和处理。除此之外，`Tapable` 还允许你通过回调函数的参数，访问事件的 触发者`(emittee)`或 提供者`(producer)`。
 
 ![tapable.png](./images/tapable.png)
 
-#### 定义
+## 定义
 
 类似于`Nodejs`的`EventEmitter`类, 专注于自定义事件的触发和处理。
 
-#### Hooks分类
+## Hooks分类
 
 | 类型        | 描述                                                         |
 | ----------- | ------------------------------------------------------------ |
@@ -17,7 +17,7 @@
 | `Waterfall` | 瀑布式，上一步的返回值继续交给下一步处理和使用               |
 | `Loop`      | 循环类型，如果该监听函数返回`false`, 则退出循环，如果返回`true`则这个监听函数循环执行 |
 
-#### 参数列表
+## 参数列表
 
 所有的`Hooks`在实例化时传入的参数都保持这个规则。
 
@@ -52,7 +52,7 @@ syncHook.call('Rain120', 18);
 
 
 
-#### 参考资料
+## 参考资料
 
 [Webpack Tapable](https://webpack.js.org/api/plugins/#tapable)
 

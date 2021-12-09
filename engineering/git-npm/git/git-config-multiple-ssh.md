@@ -1,4 +1,5 @@
-#### Resolve
+# Git配置多个SSH Key
+## Resolve
 
 ```sh
 # 在Linux或Mac OS终端或Windows Git Bash, 执行ssh-keygen命令生成SSH公钥和私钥
@@ -50,9 +51,9 @@ ssh-keygen -t rsa -C "youremail@email.com” -f ~/.ssh/id_rsa
 
 ### 添加GitHub SSH
 
-![id_rsa.pub.png](./images/id_rsa.pub.png)
+![id_rsa.pub.png](../images/id_rsa.pub.png)
 
-![add-ssh-key.png](./images/add-ssh-key.png)
+![add-ssh-key.png](../images/add-ssh-key.png)
 
 ### 创建`config`
 
@@ -77,7 +78,7 @@ IdentityFile ~/.ssh/id_rsa_github
 ...
 ```
 
-![ssh-pwd](./images/ssh-pwd.png)
+![ssh-pwd](../images/ssh-pwd.png)
 
 **Note**: `ll` -> `ls -al`
 
@@ -87,5 +88,5 @@ IdentityFile ~/.ssh/id_rsa_github
 ssh -T git@github.com
 ```
 
-![ssh-github-test.png](./images/ssh-github-test.png)
+![ssh-github-test.png](../images/ssh-github-test.png)
 

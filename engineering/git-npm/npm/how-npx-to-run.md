@@ -1,4 +1,6 @@
-### 什么是`npx`?
+# Npx如何run
+
+## 什么是`npx`?
 
 [npm@5.2.0](https://github.com/npm/npm/releases/tag/v5.2.0)版本更新最大的一个特性就是`npx`命令，那么`npx`是个什么呢？
 
@@ -6,11 +8,11 @@
 
 `npx`是一个工具，旨在帮助完善使用`npm`注册表中的包的体验， 它以同样的方式使得`npm`安装和管理托管在注册表上的依赖项变得非常容易，`npx`旨在使其易于使用`Cli`工具和其他 注册表上托管的可执行文件。 它大大简化了许多事情，直到现在，还需要一些与普通的`npm`有关的步骤。
 
-### 怎么使用`npx`?
+## 怎么使用`npx`?
 
-![npx](./images/npx.gif)
+![npx](../images/npx.gif)
 
-### 为什么npx能在不安装的情况下使用？
+## 为什么npx能在不安装的情况下使用？
 
 > `npx`执行`<command>`从本地`node_modules/.bin`，或从`cache`安装，以便需要的`packages` `<command>`来运行。
 
@@ -24,9 +26,9 @@
 
 同样的, 你可以执行`npx node@10 -e "console.log(process.execPath)"`, 会输出当前`node`的`path`.
 
-![npx-cache-path](./images/npx-cache-path.png)
+![npx-cache-path](../images/npx-cache-path.png)
 
-### `npx`的使用场景
+## `npx`的使用场景
 
 1. 使用不同版本的`node`版本
 2. 执行`github gist`
@@ -35,7 +37,7 @@
 
 
 
-### 参考
+## 参考
 
 [npx](https://github.com/zkat/npx)
 

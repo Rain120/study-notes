@@ -1,12 +1,14 @@
-#### 前言
+# Webpack 魔法注释(Magic Comments)
 
-#### 什么是魔法注释？
+## 前言
+
+## 什么是魔法注释？
 
 魔术注释`(Magic Comments)`是由 `Webpack` 提供的，可以为代码分割服务的一种技术。通过在 `import` 关键字后的括号中使用指定注释，我们可以对代码分割后的 `chunk` 有更多的控制权。
 
-#### 常用的魔术注释 (Magic Comments)
+## 常用的魔术注释 (Magic Comments)
 
-##### webpackChunkName
+### webpackChunkName
 
 生成新 `chunk` 的名称。可以和`index`、`request`变量一起使用。
 
@@ -21,9 +23,7 @@ import(/* webpackChunkName: "lodash-es" */ 'lodash');
 // 输出新的chunk名字为lodash-es.js
 ```
 
-
-
-##### webpackPrefetch
+### webpackPrefetch
 
 提升加载速度, 资源预拉取，可能在后续被用到。`prefect`会与父` chunk`并行，在浏览器空闲时间`(idle)`被下载
 
@@ -33,7 +33,7 @@ import(/* webpackPrefetch: true */ 'module1')
 
 **Note**: `webpack 4.6.0+` 
 
-##### webpackPreload
+### webpackPreload
 
 提升加载速度, 资源预加载，可能在在当前被用到。`preload`会与父` chunk`并行，立即被下载
 
@@ -43,7 +43,7 @@ import(/* webpackPreload: true */ 'module2')
 
 **Note**: `webpack 4.6.0+` 
 
-##### webpackMode
+### webpackMode
 
 指定以不同的模式解析动态导入。
 
@@ -58,7 +58,7 @@ import(/* webpackPreload: true */ 'module2')
 import(/* webpackMode: "lazy" */ 'module3');
 ```
 
-##### webpackInclude
+### webpackInclude
 
 任何匹配到的文件都将被打包进来。
 
@@ -70,7 +70,7 @@ import(/* webpackInclude: /\.json$/ */ 'module4');
 
 
 
-##### webpackExclude
+### webpackExclude
 
 过滤不可被导入的文件。任何匹配到的文件都不会被打包进来。
 
@@ -82,7 +82,7 @@ import(/* webpackExclude: /\.noimport\.json$/ */ 'module5');
 
 
 
-#### 参考资料
+## 参考资料
 
 [magic-comments](https://webpack.js.org/api/module-methods/#magic-comments)
 

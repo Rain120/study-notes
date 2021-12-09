@@ -1,4 +1,6 @@
-#### 版本介绍
+# GitHub 软件(包)版本问题
+
+## 版本介绍
 
 **alpha版**：内部测试版。`α`是希腊字母的第一个，表示最早的版本，一般用户不要下载这个版本，这个版本包含很多BUG，功能也不全，主要是给开发人员和 测试人员测试和找`Bug`用的。
 
@@ -8,11 +10,11 @@
 
 **stable版**：稳定版。在开源软件中，都有`stable`版，这个就是开源软件的最终发行版，用户可以放心大胆的用了。
 
-#### 版本生命周期
+## 版本生命周期
 
-![software-version.png](./images/software-version.png)
+![software-version.png](../images/software-version.png)
 
-#### 参考资料
+## 参考资料
 
 [软件版本周期](https://zh.wikipedia.org/zh-cn/%E8%BB%9F%E4%BB%B6%E7%89%88%E6%9C%AC%E9%80%B1%E6%9C%9F)
 

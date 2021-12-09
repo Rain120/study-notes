@@ -1,6 +1,10 @@
-本文是对`npm`的学习上的一篇理解笔记，主要通过当前使用到的一些功能进行理解，解释。
+# Npm 知识储备
 
-### [安装 install](https://docs.npmjs.com/cli/install) & [更新 update](https://docs.npmjs.com/cli/update)
+:::tip
+本文是对`npm`的学习上的一篇理解笔记，主要通过当前使用到的一些功能进行理解，解释。
+:::
+
+## [安装 install](https://docs.npmjs.com/cli/install) & [更新 update](https://docs.npmjs.com/cli/update)
 
 ```bash
 npm install package
@@ -44,7 +48,7 @@ npm update package
 
    `install`默认会安装`devDependecies`，除非加上`--production`参数; `update`不会默认安装，除非手动加上`--dev`参数
 
-### 安装依赖
+## 安装依赖
 
 在[npm](https://www.npmjs.com/)有以下 **5** 种依赖:
 
@@ -54,7 +58,7 @@ npm update package
 - [bundledDependencies](https://docs.npmjs.com/files/package.json#bundleddependencies): 
 - [optionalDependencies](https://docs.npmjs.com/files/package.json#optionaldependencies): 
 
-### 版本信息
+## 版本信息
 
 有关指定版本范围的更多详细信息，请参阅 [Semver](https://docs.npmjs.com/misc/semver)。
 
@@ -140,7 +144,7 @@ npm update package
 
   
 
-- ### `>`、`<`、`=`、`>=`、`<=`
+- ## `>`、`<`、`=`、`>=`、`<=`
 
   指定满足范围的版本。
 
@@ -154,7 +158,7 @@ npm update package
 
   
 
-### 发布版本
+## 发布版本
 
 - **`alpha(α)`**: 内部测试版。α是希腊字母的第一个，表示最早的版本，一般用户不要下载这个版本，这个版本包含很多BUG，功能也不全，主要是给开发人员和 测试人员测试和找`BUG`用的。
 
@@ -163,9 +167,9 @@ npm update package
 - **`rc(release candidate)`**:该版本又较`beta`版更进一步了，该版本功能不再增加，和最终发布版功能一样。这个版本有点像最终发行版之前的一个类似 预览版，这个的发布就标明离最终发行版不远了。作为普通用户，如果你很急着用这个软件的话，也可以下载这个版本。
 - **`stable`版**:稳定版。在开源软件中，都有`stable`版，这个就是开源软件的最终发行版，用户可以放心大胆的用了。
 
-### 缓存
+## 缓存
 
-### 参考
+## 参考
 
 [npm cache](https://docs.npmjs.com/cli/cache)
 

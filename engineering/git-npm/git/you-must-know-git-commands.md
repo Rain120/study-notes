@@ -1,12 +1,20 @@
-> [Git](https://git-scm.com/) 是一个分布式版本控制软件, 最初目的是为更好地管理`Linux`内核开发而设计。
->
-> 来源：[维基百科  - Git](https://zh.wikipedia.org/wiki/Git)
+---
+sidebar_position: 2
+---
+
+# 你必须知道的Git命令
+
+:::tip
+[Git](https://git-scm.com/) 是一个分布式版本控制软件, 最初目的是为更好地管理`Linux`内核开发而设计。
+
+来源：[维基百科  - Git](https://zh.wikipedia.org/wiki/Git)
+:::
 
 `Git`是一个软件，它允许你通过提交对一个系统（或一组）文件的历史进行注释。这些提交便是在给定时间点对系统做出的差异“快照”。
 
 [官网下载速度慢，可使用这个链接下载](https://github.com/Rain120/Free-Source/releases/tag/0.0.1) 或者[`Github`下载地址](https://github.com/Rain120/Free-Source/blob/master/Git%20Bash/README.md), 需要其他版本请提`issue`联系我。
 
-![git_operations](./images/git_operations.png)
+![git_operations](../images/git_operations.png)
 
 ## 1 Git配置
 
@@ -73,12 +81,12 @@ git config --list # 列举所有配置
 
 远程仓库`(Remote)`
 
-![git_infos_repo](./images/git_infos_repo.png)
+![git_infos_repo](../images/git_infos_repo.png)
 
 
 <center>阮一峰老师对Git工作区、暂存区、版本库、远程仓库的解释</center>
 
-![git_infos](./images/git_infos.jpg)
+![git_infos](../images/git_infos.jpg)
 
 <center>Runoob对Git工作区、暂存区、版本库、远程仓库的解释</center>
 忽略文件配置：添加.gitignore 文件
@@ -122,7 +130,7 @@ graph TD;
     br3_c3_c3-->br3_c3;
 ```
 
-![HEAD-diff](./images/HEAD-diff.png)
+![HEAD-diff](../images/HEAD-diff.png)
 
 `master`: `master`分支
 
@@ -430,7 +438,7 @@ git cherry-pick <start-commit-id>…<end-commit-id>
 
 **git rebase a b**
 
-![git-rebase](./images/git-rebase.gif)
+![git-rebase](../images/git-rebase.gif)
 
 `git rebase`参数列表及其使用
 
@@ -460,7 +468,7 @@ git rebase --continue
 
 **git cherry-pick start_commit_id, ..., end_commit_id**
 
-![git-cherry-pick](./images/git-cherry-pick.gif)
+![git-cherry-pick](../images/git-cherry-pick.gif)
 
 ## 储藏与清理
 
@@ -560,9 +568,9 @@ git pull origin master --allow-unrelated-histories
 git push -u origin master
 ```
 
-![git_commands](./images/git_commands.png)
+![git_commands](../images/git_commands.png)
 
-![git-command](./images/git.png)
+![git-command](../images/git.png)
 
 
 

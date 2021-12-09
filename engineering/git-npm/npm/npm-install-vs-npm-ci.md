@@ -1,8 +1,10 @@
-#### 什么是`npm ci`?
+# npm install vs npm ci
+
+## 什么是`npm ci`?
 
 此命令类似于`npm-install`，但它旨在用于自动化环境，如测试平台，持续集成和部署。通过跳过某些面向用户的功能，它可以比常规的 `npm `安装快得多。它也比常规安装更严格，它可以帮助捕获由大多数 `npm `用户的增量安装的本地环境引起的错误或不一致。
 
-#### npm install VS npm ci
+## npm install VS npm ci
 
 - 该项目必须具有现有的`package-lock.json`或`npm-shrinkwrap.json`。
 
@@ -11,7 +13,7 @@
 - 如果已经存在一个`node_modules`，它将在`npm ci`开始安装之前被自动删除。
 - 它永远不会写入`package.json`或任何包锁 `package-lock.json`：安装实际上是冻结的。
 
-#### 使用
+## 使用
 
 确保您拥有包锁和最新安装：
 
@@ -41,7 +43,7 @@ cache:
   - "$HOME/.npm"
 ```
 
-#### 参考资料
+## 参考资料
 
 [npm ci](https://docs.npmjs.com/cli/ci.html)
 

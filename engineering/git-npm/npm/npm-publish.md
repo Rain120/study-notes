@@ -1,4 +1,6 @@
-#### 1. 注册`npm`账号
+# Npm 包发布笔记
+
+## 注册`npm`账号
 
 [npm注册地址](https://www.npmjs.com/)
 
@@ -8,41 +10,41 @@ npm login
 
 
 
-![npm-login](./images/npm-login.png)
+![npm-login](../images/npm-login.png)
 
-#### 2. 新建一个`repository`
+## 新建一个`repository`
 
-![new-repository](./images/new-repository.png)
+![new-repository](../images/new-repository.png)
 
 `npm init`
 
-![cui-npm-init](./images/cui-npm-init.png)
+![cui-npm-init](../images/cui-npm-init.png)
 
-#### 3. 创建项目
+## 创建项目
 
 `vue-create`
 
-![vue-create](./images/vue-create.png)
+![vue-create](../images/vue-create.png)
 
 `remote github`
 
-![cui-git-init](./images/cui-git-init.png)
+![cui-git-init](../images/cui-git-init.png)
 
 `push error`
 
-![git-push-error](./images/git-push-error.png)
+![git-push-error](../images/git-push-error.png)
 
-#### 4. 发布`npm`
+## 发布`npm`
 
 查看你的包名是否已存在
 
-![package-name-find](./images/package-name-find.png)
+![package-name-find](../images/package-name-find.png)
 
 `npm publish`
 
-![npm-publish](./images/npm-publish.png)
+![npm-publish](../images/npm-publish.png)
 
-#### 5. 使用`vue3.x`进行组件库开发
+## 使用`vue3.x`进行组件库开发
 
  1. 基础框架的搭建(`typescript`+`Vue 3.x`)
 
@@ -162,7 +164,7 @@ npm login
       },
       ````
 
-#### 问题
+##
 
 1. `vue 3.x`学习
 2. 组件库开发

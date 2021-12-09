@@ -1,23 +1,25 @@
-#### 前言
+# Git 底层深入浅析 - 目录篇
+
+## 前言
 
 为什么要写这个呢？因为一直以来就想学习更多`Git`的相关知识，然后也因为某次演讲和公司大佬的分享，所以我想把我学习到的和理解的分享给大家。如果你也想一起学习`Git`，那就来和我一起学习吧!! `Let's Go` 😁
 
-**Note**: 这个不太适合初学者，如果你想学习基础知识，请移步 [Git 官网](https://git-scm.com/) 以及[你必须知道的`Git`命令](./git-npm/you-must-know-git-commands.md)
+**Note**: 这个不太适合初学者，如果你想学习基础知识，请移步 [Git 官网](https://git-scm.com/) 以及[你必须知道的`Git`命令](./you-must-know-git-commands.md)
 
-#### 前置知识
+## 前置知识
 
 - 三个关键词: 本地仓库 `(local)`, 暂存区 `(index or stage)`, 远程 `(remote)`
 
 要了解`Git`底层工作机制，就要先了解它是什么？它有什么？我们先来了解一下`.git`目录都有什么吧。
 
-#### `.git`目录
+## `.git`目录
 
 ```sh
 cd .git
 ls -al
 ```
 
-![_git.png](./images/_git.png)
+![_git.png](../images/_git.png)
 
 - `info`: 目录包含一个全局性排除 `(global exclude)` 文件，用以放置那些不希望被记录在 `.gitignore` 文件中的忽略模式 `(ignored patterns)`
 - `description`: 文件仅供 `GitWeb` 程序使用，我们无需关心
@@ -75,31 +77,31 @@ git config --help
 
 - `HEAD`：指向当前所在分支`(current branch)`的指针文件路径`(Hash)`，一般指向`refs`下的某文件
 
-![git-HEAD.png](./images/git-HEAD.png)
+![git-HEAD.png](../images/git-HEAD.png)
 
-![git-HEAD-sourcetree.png](./images/git-HEAD-sourcetree.png)
+![git-HEAD-sourcetree.png](../images/git-HEAD-sourcetree.png)
 
 - `refs`：存储指向各个分支的指针`(SHA-1标识)`文件, 包括分支和标签的引用
 
-  ![git-refs.png](./images/git-refs.png)
+  ![git-refs.png](../images/git-refs.png)
 
   
 
   `heads`
 
-  ![git-refs-heads.png](./images/git-refs-heads.png)
+  ![git-refs-heads.png](../images/git-refs-heads.png)
 
   `remotes`
 
-  ![git-refs-remotes.png](./images/git-refs-remotes.png)
+  ![git-refs-remotes.png](../images/git-refs-remotes.png)
 
   `tags`
 
-  ![git-tag-add.png](./images/git-tag-add.png)
+  ![git-tag-add.png](../images/git-tag-add.png)
 
   
 
-  ![git-refs-tags.png](./images/git-refs-tags.png)
+  ![git-refs-tags.png](../images/git-refs-tags.png)
 
 - `hooks`：包含客户端或服务端的钩子脚本 `(hooks scripts)`
 
@@ -124,13 +126,13 @@ git config --help
   - `update`: 与pre-receive相似，但当一次`push`想更新多个分支时，`pre-receive`只执行一次，而此钩子会为每一分支都执行一次
   - `post-receive`: 当整个`push`操作完成时触发，常用于服务侧同步、通知
 
-![git-hooks.png](./images/git-hooks.png)
+![git-hooks.png](../images/git-hooks.png)
 
 >  `.sample` 拓展名是为了防止它们默认被执行，安装一个钩子只需要去掉 `.sample`拓展名即可。
 
 相关使用，`husky` `commitlint`
 
-###### 参考
+#### 参考
 
 [自定义你的工作流](https://github.com/geeeeeeeeek/git-recipes/wiki/5.4-Git-钩子：自定义你的工作流)
 
@@ -162,9 +164,9 @@ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(
 - `tree `: 对象存储` git` 仓库中的文件元数据信息, 包括文件名及目录结构信息等.
 - `blob `: 对应的是 `git `仓库中的文件内容.
 
-我们将在下节更详细的讲述 [git objects](./git-npm/git-objects.md).
+我们将在下节更详细的讲述 [git objects](./git-objects.md).
 
-#### 参考资料
+## 参考资料
 
 [Git - Wiki](https://en.wikipedia.org/wiki/Git)
 

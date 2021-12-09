@@ -1,4 +1,6 @@
-#### 短命令
+# Npm 短命令
+
+## 短命令
 
 - `-v`: `--version`
 - `-h`, `-?`, `--help`, `-H`: `--usage`
@@ -25,7 +27,7 @@
 - `-n`: `--yes false`
 - `ll` and `la` commands: `ls --long`
 
-#### 参考链接
+## 参考链接
 
 [Shorthands and Other CLI Niceties](https://docs.npmjs.com/misc/config.html#shorthands-and-other-cli-niceties)
 

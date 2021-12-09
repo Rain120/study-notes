@@ -1,16 +1,18 @@
-#### 为什么要写这个？
+# 从零实现一个 Webpack
+
+## 为什么要写这个？
 
 因为之前看了 `Ronen Amiel` 的[从零实现一个 Webpack](https://www.bilibili.com/video/av53379967/), 有感而发，也想提高一下自己, 所以就尝试着写了这篇笔记。
 
-#### 什么是Webpack？
+## 什么是Webpack？
 
 本质上，`webpack` 是一个现代 `JavaScript` 应用程序的**静态模块打包器(module bundler)**。当 `webpack` 处理应用程序时，它会递归地构建一个 **依赖关系图(dependency graph)**，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 `bundle`。
 
-#### Webpack核心概念
+## Webpack核心概念
 
 详见[Webpack 基础知识](./webpack-base.md)
 
-#### Webpack构建过程
+## Webpack构建过程
 
 ![webpack-process.png](./images/webpack-process.png)
 
@@ -44,13 +46,13 @@
 
    在确定好输出内容后，根据配置确定输出的路径和文件名，将文件的内容写入文件系统中。
 
-#### 实现代码
+## 实现代码
 
 [Github: mini-webpack](https://github.com/Rain120/mini-webpack)
 
 [Demo](https://rain120.github.io/mini-webpack/example/index.html)
 
-#### 参考资料
+## 参考资料
 
 [minipack](https://github.com/ronami/minipack)
 

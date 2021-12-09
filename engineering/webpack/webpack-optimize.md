@@ -1,6 +1,8 @@
-#### 可视化依赖分析工具
+# Webpack 性能优化
 
-##### [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
+## 可视化依赖分析工具
+
+### [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 
 ```sh
 # NPM
@@ -28,11 +30,11 @@ module.exports = {
 }
 ```
 
-##### [webpack-chart](http://alexkuz.github.io/webpack-chart/)
+### [webpack-chart](http://alexkuz.github.io/webpack-chart/)
 
-##### [analyse](http://webpack.github.io/analyse)
+### [analyse](http://webpack.github.io/analyse)
 
-##### SMP 时间分析
+### SMP 时间分析
 
 [speed-measure-webpack-plugin](https://github.com/stephencookdev/speed-measure-webpack-plugin)
 
@@ -58,7 +60,7 @@ const webpackConfig = smp.wrap({
 });
 ```
 
-#### 模块热替换(HMR)
+## 模块热替换(HMR)
 
 模块热替换 `(Hot Module Replacement 或 HMR)` 是 `webpack` 提供的最有用的功能之一。它会在应用程序运行过程中替换、添加或删除[模块](https://www.webpackjs.com/concepts/modules/)，而无需进行完全刷新。
 
@@ -106,11 +108,11 @@ if (module.hot) {
 }
 ```
 
-#### 懒加载(按需加载)
+## 懒加载(按需加载)
 
 TODO ing....
 
-#### 抽离公共代码
+## 抽离公共代码
 
 将多次引入的模块抽离成公共代码块。
 
@@ -152,7 +154,7 @@ module.exports = {
 
 [splitChunksPlugin](https://webpack.js.org/plugins/split-chunks-plugin/)
 
-#### loader 配置
+## loader 配置
 
 `loader` 让 `webpack` 能够去处理那些非 `JavaScript` 文件(`webpack` 自身只理解 `JavaScript`)。`loader` 可以将所有类型的文件转换为 `webpack` 能够处理的有效模块,然后你就可以利用 `webpack` 的打包能力,对它们进行处理。
 
@@ -218,7 +220,7 @@ module.exports = {
 
 
 
-#### resolve 配置
+## resolve 配置
 
 [resolve](https://webpack.js.org/configuration/resolve/) 配置 `webpack` 如何去寻找模块对应的文件。
 
@@ -235,7 +237,7 @@ module.expotrs = {
 }
 ```
 
-##### alias
+### alias
 
 创建 `import` 或 `require` 的别名，来确保模块引入变得更简单。
 
@@ -252,7 +254,7 @@ module.expotrs = {
 }
 ```
 
-##### extensions
+### extensions
 
 试图按顺序解析这些后缀名。
 
@@ -277,7 +279,7 @@ import File from '../path/to/file';
 
 使用此选项会 **覆盖默认数组**，这就意味着 webpack 将不再尝试使用默认扩展来解析模块。
 
-##### modules
+### modules
 
 告诉 `webpack` 解析模块时应该搜索的目录。
 
@@ -292,7 +294,7 @@ module.expotrs = {
 }
 ```
 
-#### noParse
+## noParse
 
 [module.noParse](https://webpack.js.org/configuration/module/#modulenoparse) 是 `webpack` 中的一个配置项, 主要通过忽略对 `amd / cmd` 模块代码的递归解析和处理来提高构建性能。
 
@@ -321,7 +323,7 @@ module.exports = {
 
 
 
-#### IgnorePlugin
+## IgnorePlugin
 
 [IgnorePlugin](https://webpack.js.org/plugins/ignore-plugin/) 在 `import`或 `require` 调用时, 忽略第三方包指定模块, 使其不被打包。
 
@@ -351,11 +353,11 @@ module.exports = {
 
 
 
-#### 动态链接库(DllPlugin)
+## 动态链接库(DllPlugin)
 
 [DllPlugin](https://webpack.js.org/plugins/dll-plugin/#dllplugin) 和 [DllReferencePlugin](https://webpack.js.org/plugins/dll-plugin/#dllreferenceplugin) 可以实现对第三方依赖的拆分, 再次打包就不需要打包此模块了，从而提高构建速度。
 
-##### DllPlugin
+### DllPlugin
 
 创建一个只有 `dll`的 `bundles`, 并生成一个 `mainfest.json`文件，用来让 `DllReferencePlugin` 映射到相关依赖上。
 
@@ -400,7 +402,7 @@ module.exports = {
 }
 ```
 
-##### DllReferencePlugin
+### DllReferencePlugin
 
 把只有 `dll` 的 `bundles`引用到需要的预编译的依赖。
 
@@ -441,7 +443,7 @@ module.exports = {
 
 `HardSourceWebpackPlugin` 为模块提供中间缓存，缓存默认的存放路径是: `node_modules/.cache/hard-source`。
 
-##### 安装
+### 安装
 
 ```sh
 # npm
@@ -451,7 +453,7 @@ npm install hard-source-webpack-plugin -D
 yarn add hard-source-webpack-plugin -D
 ```
 
-##### 配置
+### 配置
 
 ```js
 // webpack.config.js
@@ -490,25 +492,25 @@ module.exports = {
 
 [hard-source-webpack-plugin](https://github.com/mzgoddard/hard-source-webpack-plugin)
 
-#### HappyPack
+## HappyPack
 
-##### 作用
+### 作用
 
 将文件解析任务分解成多个子进程并发执行。子进程处理完任务后再将结果发送给主进程。所以可以大大提升 `Webpack` 的项目构件速度。`Happypack` 只作用在 `loader` 上，使用多个进程同时对文件进行编译。
 
 **Note**: `HappyPack` 对`file-loader`、url-loader 支持的不友好。
 
-##### 运行原理
+### 运行原理
 
 ![happypack-workflow.png](./images/happypack-workflow.png)
 
-##### 使用
+### 使用
 
 ```sh
 npm install --save-dev happypack
 ```
 
-##### 配置
+### 配置
 
 ```javascript
 // webpack.config.js
@@ -565,7 +567,7 @@ module.export = {
 
 ```
 
-##### 参数列表
+### 参数列表
 
 - `id:string`: 唯一的标识符 `id` 来代表当前的 `HappyPack` 是用来处理一类特定的文件, 默认是 `1`
 - `loader: Array`: 写法与 `webpack loaders` 配置一致
@@ -580,21 +582,21 @@ module.export = {
 
 [淘系前端团队: happypack 原理解析](https://fed.taobao.org/blog/taofed/do71ct/happypack-source-code-analysis)
 
-#### thread-loader
+## thread-loader
 
-##### 作用
+### 作用
 
 `thread-loader` 能将 `loader` 放置在一个 `worker` 池里面运行，以达到多线程构建。
 
 **Note**: 每个 `worker` 都是一个单独的有 `600ms` 限制的 `node.js` 进程。同时跨进程的数据交换也会被限制。
 
-##### 使用
+### 使用
 
 ```sh
 npm install --save-dev thread-loader
 ```
 
-##### 配置
+### 配置
 
 ```javascript
 // webpack.config.js
@@ -649,9 +651,9 @@ module.exports = {
 
 [Webpack thread-loader](https://webpack.js.org/loaders/thread-loader/)
 
-#### Tree Shaking
+## Tree Shaking
 
-##### 作用
+### 作用
 
 用于移除 `JavaScript`上下文中未引用的代码`(dead-code)`又称 `DCE`。它只支持`ES2015(ES6)`模块语法的静态结构特性，例如`import` `export`。
 
@@ -663,7 +665,7 @@ module.exports = {
 
 - 代码只会影响死变量 `(只写不读)`
 
-##### 使用
+### 使用
 
 `production` 默认开启 `tree-shaking`。
 
@@ -706,7 +708,7 @@ module.exports = {
 /*#__PURE__*/ double(55);
 ```
 
-#### `sideEffects VS useExports`
+## `sideEffects VS useExports`
 
 `sideEffects`更为有效，因为它允许跳过整个模块或者文件和整个文件子树。
 
@@ -716,7 +718,7 @@ module.exports = {
 
 [sideEffects](https://github.com/webpack/webpack/issues/8814#issuecomment-465223178)
 
-#### 参考资料
+## 参考资料
 
 [Webpack](https://webpack.js.org/)
 

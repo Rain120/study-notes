@@ -1,4 +1,6 @@
-#### Npm vs Yarn
+# package-lock.json 与 yarn.lock 的作用和区别
+
+## Npm vs Yarn
 
 |              | `npm`                                                        | `yarn`                                                       |
 | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -39,26 +41,26 @@
 
    `yarn`改变了一些`npm`命令的名称，比如 `yarn add/remove`，感觉上比 `npm` 原本的 `install/uninstall`要更清晰。
 
-#### 前置知识
+## 前置知识
 
 [版本信息](./npm-knowledge-reserve.md#版本信息)
 
-#### 为什么需要 lock 文件 ?
+## 为什么需要 lock 文件 ?
 
 因为 `package.json` 文件只能锁定相关依赖包的大版本, 每次在 `npm install` 或者 `yarn install` 时都会根据大版本自动提升到 **大版本的最新版本**, 而有些时候这些版本会影响我们的开发，甚至存在兼容性问题, 所以我们需要 **锁定版本**。
 
-#### lock 的作用
+## lock 的作用
 
 - 能获得可重复的构建 `(repeatable build)`，当你在 `CI(持续集成)` 上重复 `build` 的时候，得到的 `artifact` 是一样的，因为依赖的版本都被锁住了。
 - 避免由于开发人员意外更改或者更新版本，而导致项目不兼容等问题
 
-#### 何时生成 lock 文件
+## 何时生成 lock 文件
 
 `npm 5.x` 之前可以通过 [npm shrinkwrap](https://docs.npmjs.com/cli/shrinkwrap) 命令来生成一个锁定文件 `npm-shrinkwrap.json`, 受 `yarn`的影响, `npm` 在 `5.x` 之后也会生成 `lock` 文件, 即 `package-lock.json`。
 
 `Yarn` 在运行 `install` 时会创建一个 `yarn.lock` 文件用来保存所安装的依赖包的确切版本。
 
-#### lock 文件记录了哪些信息？
+## lock 文件记录了哪些信息？
 
 它包含了重现全部的依赖源码树需要的所有信息、你的项目依赖中的所有信息，以及它们各自的版本。
 
@@ -67,7 +69,7 @@
 - 依赖的包的 `URL`
 - 依赖以及依赖版本
 
-##### [package-lock.json](https://docs.npmjs.com/configuring-npm/package-lock-json#file-format)
+### [package-lock.json](https://docs.npmjs.com/configuring-npm/package-lock-json#file-format)
 
 - `name`
 
@@ -89,7 +91,7 @@
 
   这是模块名称到版本的映射。 这是此模块所需的所有内容的列表，无论它将安装在何处。 该版本应通过常规匹配规则在我们的依赖项或高于我们的级别中匹配一个依赖项。
 
-##### yarn.lock
+### yarn.lock
 
 - \# yarn lockfile v1
 
@@ -107,7 +109,7 @@
 
   记录了包的依赖
 
-#### 参考资料
+## 参考资料
 
 [npm-package-locks](https://docs.npmjs.com/configuring-npm/package-locks.html)
 

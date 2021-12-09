@@ -1,4 +1,5 @@
-### 前言
+# Webpack 打包输出代码都有什么？
+## 前言
 
 由于代码篇幅过长，请各位同学移步步到 [here](https://github.com/Rain120/study-notes/issues/6) 查看代码，当然，如果你想本地查看，也可以下载这个 [源码包](https://github.com/Rain120/study-notes/files/6108125/code.zip)。
 
@@ -8,9 +9,9 @@
 
 接下来，就是我们掀起红盖头的时候了，凎。
 
-#### [TL;DR](#总结)
+### [TL;DR](#总结)
 
-### 初探源码
+## 初探源码
 
 打开源码，移除无用代码，格式化，折叠，发现它实际上就是一个[IIFE(立即调用函数表达式)](https://developer.mozilla.org/zh-CN/docs/Glossary/IIFE)。
 
@@ -24,7 +25,7 @@
 });
 ```
 
-#### `__webpack_require__`
+### `__webpack_require__`
 
 ```js
 // The module cache
@@ -66,7 +67,7 @@ function __webpack_require__(moduleId) {
 
 所以它其实是模拟 `import` 一个模块，并在最后返回所有模块`export` 的变量。
 
-##### `__webpack_require__` 的属性
+#### `__webpack_require__` 的属性
 
 - 所有的模块(IIFE 传入的模块参数)对象
 
@@ -166,7 +167,7 @@ __webpack_require__.n = function (module) {
 __webpack_require__.p = '';
 ```
 
-#### 同步导入
+### 同步导入
 
 在 `IIFE` 的参数，我们发现同步导入是如何实现的，即同步 `import` 实际上是执行 `__webpack_require__()`。
 
@@ -183,7 +184,7 @@ __webpack_require__.p = '';
 })
 ```
 
-#### 异步导入
+### 异步导入
 
 - 异步引入实现
 
@@ -364,7 +365,7 @@ promises.push(installedChunkData[2] = promise);
 __webpack_require__.oe = function (err) { console.error(err); throw err; };
 ```
 
-#### 总结
+### 总结
 
 - `webpack` 打包出来的结果实际上是一个 `IIFE`, 参数是模块的文件 `chunks`
   - 会对引用过的模块进行缓存
@@ -378,7 +379,7 @@ __webpack_require__.oe = function (err) { console.error(err); throw err; };
     - `null` 代表 `chunk` `preloaded/prefetched`
     - `promise`代表 `chunk` 正在加载
 
-#### 参考资料
+### 参考资料
 
 [ECMAScript 4th_Edition_(abandoned)](https://en.wikipedia.org/wiki/ECMAScript#4th_Edition_(abandoned))
 

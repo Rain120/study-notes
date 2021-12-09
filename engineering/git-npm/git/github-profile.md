@@ -1,10 +1,12 @@
-#### 创建一个同名的仓库
+# GitHub 隐藏功能 - 个人首页
+
+## 创建一个同名的仓库
 
 [Create a new repository](https://github.com/new)
 
-![github-new-same-name-repo.png](./images/github-new-same-name-repo.png)
+![github-new-same-name-repo.png](../images/github-new-same-name-repo.png)
 
-#### README.md
+## README.md
 
 ```md
 ### Hi there, I'm Rain120! 👋
@@ -85,7 +87,7 @@ Here are some ideas to get you started:
 
 
 
-#### 参考
+## 参考
 
 [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
 
