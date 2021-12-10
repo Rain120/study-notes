@@ -1,4 +1,5 @@
-#### sass 常量在cacl()函数中不生效的问题
+
+# sass calc()函数中不生效的问题
 
 ```scss
 @use "./constants" as const;
@@ -9,9 +10,9 @@
 }
 ```
 
-![q-scss-calc-const.png](./images/q-scss-calc-const.png)
+![q-scss-calc-const.png](../images/q-scss-calc-const.png)
 
-##### fixed
+## fixed
 
 ```scss
 @use "./constants" as const;
@@ -22,4 +23,4 @@
 }
 ```
 
-![a-scss-calc-const.png](./images/a-scss-calc-const.png)
+![a-scss-calc-const.png](../images/a-scss-calc-const.png)

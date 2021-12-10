@@ -1,4 +1,4 @@
-#### Lodash 搜索框不见了, 怎么办
+# Lodash 搜索框不见了, 怎么办
 
 问题: `Lodash`页面的搜索和`runkit`不见了怎么办？
 ![lodash-search-and-runkit-is-null.png](../images/lodash-search-and-runkit-is-null.png)

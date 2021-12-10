@@ -1,4 +1,4 @@
-#### ReferenceError: test is not defined
+# ReferenceError: test is not defined
 
 ```javascript
 // node -v: 10.13.0
