@@ -1,11 +1,7 @@
----
-title: 安装启动
----
-
+# 安装启动
 ## 使用homebrew安装
 
-**Note:** 安装 `homebrew` `or` 国内安装，请到 👉👉👉 
-// TODO: 等新版本地址
+**Note:** 安装 `homebrew` `or` 国内安装，请到 👉👉👉 [Homebrew](https://rain120.github.io/study-notes/resources/mac-software#homebrew)
 
 ```sh
 brew install redis
