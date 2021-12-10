@@ -37,10 +37,10 @@
     ]
   },
   "devDependencies": {
-    "@docusaurus/core": "^2.0.0-beta.9",
-    "@docusaurus/plugin-google-gtag": "^2.0.0-beta.9",
-    "@docusaurus/plugin-pwa": "^2.0.0-beta.9",
-    "@docusaurus/preset-classic": "^2.0.0-beta.9",
+    "@docusaurus/core": "^2.0.0-beta.10",
+    "@docusaurus/plugin-google-gtag": "^2.0.0-beta.10",
+    "@docusaurus/plugin-pwa": "^2.0.0-beta.10",
+    "@docusaurus/preset-classic": "^2.0.0-beta.10",
     "@easyops-cn/docusaurus-search-local": "^0.19.1",
     "nodejieba": "^2.5.2",
     "upgrade": "^1.1.0"
