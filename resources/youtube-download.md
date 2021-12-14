@@ -1,9 +1,10 @@
 ---
-title: Youtube 1080p 下载(视频 + 字幕)
 sidebar_position: 9
 ---
 
-#### 视频(2020-01-23更新)
+# Youtube 1080p 下载(视频 + 字幕)
+
+## 视频(2020-01-23更新)
 
 ---
 
@@ -43,7 +44,7 @@ youtube-dl -F [url]
 youtube-dl -f [code] [url]
 ```
 
-![youtube-dl-F](./others/youtube-dl-F.png)
+![youtube-dl-F](./images/youtube-dl-F.png)
 
 ~~[urlgot](https://www.urlgot.com/)~~
 
@@ -129,7 +130,7 @@ youtube-dl -f [code] [url]
 
 [VideoFk视频在线解析下载](https://www.videofk.com/)
 
-#### 字幕
+## 字幕
 
 1. [`YouTube`字幕下载](https://zhuwei.me/y2b/)
 
