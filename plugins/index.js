@@ -1,7 +1,7 @@
 const commonPluginContentDocs = {
 	editCurrentVersion: true,
 	showLastUpdateAuthor: true,
-	showLastUpdateTime: true,
+	showLastUpdateTime: true
 }
 
 const docDirs = [
@@ -66,7 +66,11 @@ const docDirs = [
 	{
 		key: 'resources',
 		sidebarKey: 'docs',
-		options: {},
+		options: {
+			exclude: [
+				'**/books/read/components/**/*'
+			],
+		},
 		navbar: {
 			to: '/resources/guide',
 			position: 'left',

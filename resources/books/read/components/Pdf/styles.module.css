@@ -1,0 +1,73 @@
+.container {
+    position: relative;
+}
+
+.page-ops {
+    position: absolute;
+    right: -150px;
+    top: 200px;
+}
+
+.document {
+    min-height: 600px;
+    background: #FFFFFF;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loading {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page > .react-pdf__Page__canvas {
+    margin-bottom: 10px;
+}
+
+.button {
+    margin-bottom: 10px;
+    align-items: center;
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 54px;
+    justify-content: center;
+    letter-spacing: .4px;
+    line-height: 1;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.button span {
+    transition: all 200ms;
+}
+
+.button:hover span {
+    transform: scale(.9);
+    opacity: .75;
+}

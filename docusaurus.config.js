@@ -25,6 +25,8 @@ const config = {
   plugins,
   presets,
 
+  themes: ['@docusaurus/theme-live-codeblock'],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -32,6 +34,15 @@ const config = {
       //   trackingID: '',
       //   anonymizeIP: true, // 是否匿名化 IP？
       // },
+      announcementBar: {
+        id: "feature_release", // Any value that will identify this message.
+        content: `
+          <a href='https://rain120.github.io/study-notes/resources/books/read/react/a-hundred-things-i-learned-working-on-the-react-team'>阅书阁</a> 
+          新上线，欢迎体验
+        `,
+        // backgroundColor: "#fafbfc", // Defaults to `#fff`.
+        // textColor: "#091E42", // Defaults to `#000`.
+      },
       navbar: {
         title: '',
         logo: {
