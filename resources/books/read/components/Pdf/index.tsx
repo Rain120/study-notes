@@ -3,7 +3,7 @@ import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 
 import Loading from '@site/static/img/loading.svg'
 import styles from './styles.module.css';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Pdf = ({ pdf }) => {
     const [file, setFile] = useState(pdf);
@@ -66,7 +66,8 @@ const Pdf = ({ pdf }) => {
                     <span className='text'>{!single ? '单页查看' : '全部'}</span>
                 </button>
             </div>
-            <Document
+            <h2>暂时无法解决react-pdf中的Document cannot found canvas问题，<br />为了保证其他文档访问正常，暂时封闭入口，感谢关注😊</h2>
+            {/* <Document
                 className={styles.document}
                 options={{
                     cMapUrl: `//cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/cmaps/`,
@@ -105,7 +106,7 @@ const Pdf = ({ pdf }) => {
                         ),
                     )
                 )}
-            </Document>
+            </Document> */}
         </div>
     );
 };

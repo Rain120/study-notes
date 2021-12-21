@@ -3,9 +3,9 @@
 }
 
 .page-ops {
-    position: absolute;
-    right: -150px;
-    top: 200px;
+    position: fixed;
+    right: 200px;
+    top: 50%;
 }
 
 .document {
