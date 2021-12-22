@@ -66,17 +66,29 @@ const docDirs = [
 	{
 		key: 'resources',
 		sidebarKey: 'docs',
-		options: {
-			exclude: [
-				'**/books/read/components/**/*'
-			],
-		},
+		options: {},
 		navbar: {
 			to: '/resources/guide',
 			position: 'left',
 			label: '资源',
 			docsPluginId: 'resources',
 			activeBaseRegex: '/resources/',
+		},
+	},
+	{
+		key: 'books',
+		sidebarKey: 'docs',
+		options: {
+			exclude: [
+				'**/read/components/**/*'
+			],
+		},
+		navbar: {
+			to: '/books/guide',
+			position: 'left',
+			label: '书籍分享',
+			docsPluginId: 'books',
+			activeBaseRegex: '/books/',
 		},
 	},
 ];

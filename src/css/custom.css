@@ -34,3 +34,14 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   transition-duration: 59s;
   transition-timing-function: cubic-bezier(.34,0,.84,1);
 }
+
+div[class^=announcementBar_] {
+  background: repeating-linear-gradient(
+    -35deg,
+    var(--ifm-color-primary-lighter),
+    var(--ifm-color-primary-lighter) 20px,
+    var(--ifm-color-primary-lightest) 10px,
+    var(--ifm-color-primary-lightest) 40px
+  );
+  font-weight: 700;
+}

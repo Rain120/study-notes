@@ -36,9 +36,13 @@ const config = {
       // },
       announcementBar: {
         id: "feature_release", // Any value that will identify this message.
+        // content: `
+        //   <a href='https://rain120.github.io/study-notes/books/read/react/a-hundred-things-i-learned-working-on-the-react-team'>阅书阁</a> 
+        //   新上线，欢迎体验
+        // `,
         content: `
-          <a href='https://rain120.github.io/study-notes/resources/books/read/react/a-hundred-things-i-learned-working-on-the-react-team'>阅书阁</a> 
-          新上线，欢迎体验
+          新文章📚 <a href='https://rain120.github.io/study-notes/engineering/coding/style'>代码风格</a>
+          ，欢迎阅读👁👁
         `,
         // backgroundColor: "#fafbfc", // Defaults to `#fff`.
         // textColor: "#091E42", // Defaults to `#000`.
@@ -57,7 +61,7 @@ const config = {
             label: 'Docs',
           },
           ...navbar,
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/rain120/study-notes',
             label: 'GitHub',
