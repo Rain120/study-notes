@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
+// import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 
 import Loading from '@site/static/img/loading.svg'
 import styles from './styles.module.css';
