@@ -37,11 +37,11 @@
     ]
   },
   "devDependencies": {
-    "@docusaurus/core": "^2.0.0-beta.10",
-    "@docusaurus/plugin-google-gtag": "^2.0.0-beta.10",
-    "@docusaurus/plugin-pwa": "^2.0.0-beta.10",
-    "@docusaurus/preset-classic": "^2.0.0-beta.10",
-    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.13",
+    "@docusaurus/core": "^2.0.0-beta.14",
+    "@docusaurus/plugin-google-gtag": "^2.0.0-beta.14",
+    "@docusaurus/plugin-pwa": "^2.0.0-beta.14",
+    "@docusaurus/preset-classic": "^2.0.0-beta.14",
+    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.14",
     "@easyops-cn/docusaurus-search-local": "^0.19.1",
     "nodejieba": "^2.5.2",
     "prettier": "^2.5.1",
