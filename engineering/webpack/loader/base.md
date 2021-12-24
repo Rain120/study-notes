@@ -1,4 +1,4 @@
-# Webpack Loader
+# 那些有关于Loader的知识
 
 ## 前言
 
@@ -103,7 +103,7 @@ module.exports = {
 import '-!my-loader!my-loader2!./styles.css';
 ```
 
-![inline-loader-process.png](./images/inline-loader-process.png)
+![inline-loader-process.png](../images/inline-loader-process.png)
 
 通过前置所有规则及使用 `!`，可以对应覆盖到配置中的任意 `loader`, 更多参数请到 [Loader 匹配规则](#Loader匹配规则) 查看。
 
@@ -295,11 +295,11 @@ module.exports = {
 
 正常执行
 
-![webpack-loader.png](./images/webpack-loader.png)
+![webpack-loader.png](../images/webpack-loader.png)
 
 在这个过程中如果任何 `pitch` 有返回值，则 `loader` 执行链被阻断。`webpack` 会跳过后面所有的的 `pitch` 和 `loader`，直接进入上一个`loader` 的 `normal execution`。
 
-![webpack-loader-pitch.png](./images/webpack-loader-pitch.png)
+![webpack-loader-pitch.png](../images/webpack-loader-pitch.png)
 
 [pitching-loader](https://webpack.js.org/api/loaders/#pitching-loader)
 
