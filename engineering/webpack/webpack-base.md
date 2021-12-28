@@ -41,9 +41,7 @@ module.exports = {
 }
 ```
 
-
-
-### `output`
+### output
 
 [官方文档 - 输出](https://webpack.js.org/concepts/output/)
 
@@ -67,7 +65,7 @@ module.exports = {
 };
 ```
 
-### `module`
+### module
 
 [官方文档 - 模块](https://webpack.js.org/configuration/module/)
 
@@ -79,7 +77,7 @@ module.exports = {
 
 https://webpack.js.org/configuration/module/#condition
 
-### `loaders`
+### loaders
 
 [官方文档 - 模块转换器](https://webpack.js.org/concepts/loaders/)
 
@@ -116,7 +114,7 @@ module.exports = {
 
 [`module.rules`参数列表 ](https://webpack.docschina.org/configuration/module/#module-rules)
 
-### `plugins`
+### plugins
 
 [官方文档 - 插件](https://webpack.js.org/concepts/plugins/)
 
@@ -144,8 +142,6 @@ module.exports = {
     ],
 };
 ```
-
-
 
 - `plugin`原理
 
