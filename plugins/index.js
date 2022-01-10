@@ -91,6 +91,19 @@ const docDirs = [
 			activeBaseRegex: '/books/',
 		},
 	},
+	{
+		key: 'review',
+		sidebarKey: 'docs',
+		options: {
+		},
+		navbar: {
+			to: '/review/guide',
+			position: 'right',
+			label: '年中 & 年终总结',
+			docsPluginId: 'review',
+			activeBaseRegex: '/review/',
+		},
+	},
 ];
 
 const docDirKeys = docDirs.map(({ key }) => key);
