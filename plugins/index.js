@@ -104,6 +104,19 @@ const docDirs = [
 			activeBaseRegex: '/review/',
 		},
 	},
+	{
+		key: 'life',
+		sidebarKey: 'docs',
+		options: {
+		},
+		navbar: {
+			to: '/life/guide',
+			position: 'right',
+			label: '生活杂记',
+			docsPluginId: 'life',
+			activeBaseRegex: '/life/',
+		},
+	},
 ];
 
 const docDirKeys = docDirs.map(({ key }) => key);

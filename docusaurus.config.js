@@ -41,7 +41,7 @@ const config = {
         //   新上线，欢迎体验
         // `,
         content: `
-          新文章📚 <a href='https://rain120.github.io/study-notes/engineering/coding/style'>代码风格</a>
+          新文章📚 <a href='https://rain120.github.io/study-notes/life/how-to-make-dried-flower'>生活杂记 ~ 如何制作干花</a>
           ，欢迎阅读👁👁
         `,
         // backgroundColor: "#fafbfc", // Defaults to `#fff`.
