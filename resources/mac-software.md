@@ -119,7 +119,7 @@ vi ~/.config/karabiner/karabiner.json
 
 ### [XMind](https://www.xmind.cn/)
 
-思维导图
+思维导图 [破JB 下载](https://github.com/Rain120/Free-Source/releases/tag/0.0.28)
 
 ![xmind](./sw/xmind.png)
 
