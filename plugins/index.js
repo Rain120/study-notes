@@ -13,7 +13,7 @@ const docDirs = [
 			to: '/fe/guide',
 			docId: 'guide',
 			position: 'left',
-			label: '(学)前端',
+			label: '前端',
 			activeBaseRegex: '/fe/',
 		}
 	},
@@ -25,7 +25,7 @@ const docDirs = [
 			to: '/backend/guide',
 			docId: 'guide',
 			position: 'left',
-			label: '(学)后端',
+			label: '后端',
 			activeBaseRegex: '/backend/',
 		}
 	},
@@ -99,7 +99,7 @@ const docDirs = [
 		navbar: {
 			to: '/review/guide',
 			position: 'right',
-			label: '年中 & 年终总结',
+			label: '个人总结',
 			docsPluginId: 'review',
 			activeBaseRegex: '/review/',
 		},

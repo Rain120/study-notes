@@ -58,7 +58,7 @@ const config = {
             type: 'doc',
             docId: 'guide',
             position: 'left',
-            label: 'Docs',
+            label: '关于',
           },
           ...navbar,
           // {to: '/blog', label: 'Blog', position: 'left'},
@@ -73,16 +73,16 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '文档站点',
             items: [
               {
-                label: 'Docs',
+                label: '关于我',
                 to: '/docs/guide',
               },
             ],
           },
           {
-            title: '其他仓库',
+            title: 'Hot 仓库',
             items: [
               {
                 label: 'Study Notes',
