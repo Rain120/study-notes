@@ -3,9 +3,9 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const { plugins } = require('./plugins');
-const presets = require('./presets');
-const navbar = require('./navbar');
+const { plugins } = require('./config/plugins');
+const presets = require('./config/presets');
+const navbar = require('./config/navbar');
 
 const baseUrl = process.env.BASE_URL || '/';
 console.log('baseUrl', baseUrl)

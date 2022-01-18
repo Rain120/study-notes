@@ -28,7 +28,7 @@ const presets = [
 					'https://github.com/rain120/study-notes/edit/main/blog/',
 			},
 			theme: {
-				customCss: require.resolve('../src/css/custom.css'),
+				customCss: require.resolve('../../src/css/custom.css'),
 			},
 		}),
 	],
