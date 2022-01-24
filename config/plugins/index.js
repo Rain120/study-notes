@@ -17,18 +17,18 @@ const docDirs = [
 			activeBaseRegex: '/fe/',
 		}
 	},
-	{
-		key: 'backend',
-		sidebarKey: 'docs',
-		options: {},
-		navbar: {
-			to: '/backend/guide',
-			docId: 'guide',
-			position: 'left',
-			label: '后端',
-			activeBaseRegex: '/backend/',
-		}
-	},
+	// {
+	// 	key: 'backend',
+	// 	sidebarKey: 'docs',
+	// 	options: {},
+	// 	navbar: {
+	// 		to: '/backend/guide',
+	// 		docId: 'guide',
+	// 		position: 'left',
+	// 		label: '后端',
+	// 		activeBaseRegex: '/backend/',
+	// 	}
+	// },
 	{
 		key: 'engineering',
 		sidebarKey: 'docs',
@@ -75,22 +75,22 @@ const docDirs = [
 			activeBaseRegex: '/resources/',
 		},
 	},
-	{
-		key: 'books',
-		sidebarKey: 'docs',
-		options: {
-			exclude: [
-				'**/read/components/**/*'
-			],
-		},
-		navbar: {
-			to: '/books/guide',
-			position: 'left',
-			label: '书籍分享',
-			docsPluginId: 'books',
-			activeBaseRegex: '/books/',
-		},
-	},
+	// {
+	// 	key: 'books',
+	// 	sidebarKey: 'docs',
+	// 	options: {
+	// 		exclude: [
+	// 			'**/read/components/**/*'
+	// 		],
+	// 	},
+	// 	navbar: {
+	// 		to: '/books/guide',
+	// 		position: 'left',
+	// 		label: '书籍分享',
+	// 		docsPluginId: 'books',
+	// 		activeBaseRegex: '/books/',
+	// 	},
+	// },
 	{
 		key: 'review',
 		sidebarKey: 'docs',
