@@ -22,3 +22,5 @@ TODO: 探索ing
 
 [JavaScript 内存泄漏教程](http://www.ruanyifeng.com/blog/2017/04/memory-leak.html)
 
+[图解 Google V8](https://time.geekbang.org/column/intro/100048001)
+
