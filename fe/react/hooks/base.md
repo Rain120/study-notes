@@ -41,7 +41,7 @@ sidebar_position: 1
 - ✅ 钩子一律使用`use`前缀命名，便于识别。你要使用 `xxx` 功能，钩子就命名为 `usexxx`
 - ✅ 只在最顶层使用 `Hooks`，不要在循环，条件或嵌套函数中调用 `Hooks`
 - ✅ 只在 `React` 函数中调用 `Hooks`, 不要在普通的 `JavaScript` 函数中调用 `Hooks`
-- ✅ [Hookes 警告](https://reactjs.org/warnings/invalid-hook-call-warning.html)
+- ✅ [Hooks 警告](https://reactjs.org/warnings/invalid-hook-call-warning.html)
 
 [Hooks 规则](https://zh-hans.reactjs.org/docs/hooks-rules.html)
 
