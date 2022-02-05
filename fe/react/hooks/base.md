@@ -73,7 +73,7 @@ sidebar_position: 1
 
 ## Hooks 生命周期对应 Class 组件类
 
-[Here](./lifecycle.md)
+[Here](../lifecycle.mdx)
 
 ## 参考资料
 
