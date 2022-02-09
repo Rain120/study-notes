@@ -10,4 +10,16 @@
 
 [全网VIP 视频解析](http://qmaile.com/)
 
-[茶杯狐](https://www.cupfox.com/)
+[茶杯狐](https://www.cupfox.app/)
+
+[素白白影视](https://www.subaibai.com/)
+
+[白嫖者联盟](https://www.bpzhe.com/)
+
+[奈菲影视](https://www.nfyingshi.com/)
+
+[片库](https://www.mypianku.net/)
+
+[novipnoad](https://www.novipnoad.com/)
+
+[看片狂人](http://kpkuang.xyz) or [2](https://kpkuang.cc)
