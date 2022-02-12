@@ -4,6 +4,56 @@ sidebar_position: 4
 
 # Loader 执行
 
+## 前置知识
+
+### 什么事pitch
+
+Webpack 允许在这个函数上挂载名为 pitch 的函数，**运行时 pitch 会比 Loader 本身更早执行**。它可以阻断 loader 链。
+
+```js
+function pitch(
+  // 当前 loader 之后的资源请求字符串
+  // 以 ! 分割组成的字符串
+  remainingRequest: string, 
+  // 在执行当前 loader 之前经历过的 loader 列表
+  // 已经迭代过(pitch)的 loader 以 ! 分割组成的字符串
+  previousRequest: string,
+  // 与 Loader 函数的 data 相同，用于传递需要在 Loader 传播的信息
+  // 可以在执行 loaderA 时或者 loaderA.pitch 传递的参数
+  data = {}
+): void {
+  // balabala ...
+}
+```
+
+举个🌰
+
+```js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.less$/i,
+        use: [
+          "style-loader", "css-loader", "less-loader"
+        ],
+      },
+    ],
+  },
+};
+```
+
+当执行到 css-loader.pitch 时，
+
+```js
+// css-loader 之后的 loader 列表及资源路径
+remainingRequest = less-loader!./xxx.less
+// css-loader 之前的 loader 列表
+previousRequest = style-loader
+// 默认值
+data = {}
+```
+
 ## Loader 链式执行
 
 **数组**: 从右往左执行
@@ -51,7 +101,9 @@ module.exports = {
 }
 ```
 
-每个`loader`默认的执行阶段(`normal execution`)的执行顺序是从 ① ② ③ ④, 即，从后往前执行; 某些情况下，`loader` 只关心 `request` 后面的**元数据(metadata)**，并且忽略前一个 `loader` 的结果。在实际（从右到左）执行 loader 之前，会先**从左到右**调用 `loader` 上的 `pitch` 方法，`pitch` 阶段的执行顺序是 ④ ③ ② ①。对于以下 [`use`](https://webpack.docschina.org/configuration/module#rule-use) 配置:
+每个`loader`默认的执行阶段(`normal execution`)的执行顺序是从 pre --> normal --> inline --> post, 即，从后往前执行。
+某些情况下，`loader` 只关心 `request` 后面的**元数据(metadata)**，并且忽略前一个 `loader` 的结果。
+在实际执行 loader 之前，会先**从左到右**调用 `loader` 上的 `pitch` 方法，`pitch` 阶段的执行顺序是 post --> inline --> normal --> pre。对于以下 [`use`](https://webpack.docschina.org/configuration/module#rule-use) 配置:
 
 ```javascript
 module.exports = {
@@ -68,7 +120,7 @@ module.exports = {
 };
 ```
 
-`pitch` 和`normal execution`执行结果如下
+`pitch` 和 `normal execution` 执行结果如下
 
 ```sh
 |- a-loader `pitch`

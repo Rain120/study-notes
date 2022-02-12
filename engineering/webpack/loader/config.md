@@ -72,7 +72,14 @@ module.exports = {
 import '-!my-loader!my-loader2!./styles.css';
 ```
 
-![inline-loader-process.png](../images/inline-loader-process.png)
+上面这个语句在执行时会被转换成右边配置进行执行。
+
+:::warning
+注意：此处并不会改变预设配置，而是在执行时转换成右边配置。
+:::
+
+<!-- ![inline-loader-process.png](../images/inline-loader-process.png) -->
+![webpack-loader-transform.png](../images/webpack-loader-transform.png)
 
 通过前置所有规则及使用 `!`，可以对应覆盖到配置中的任意 `loader`, 更多参数请到 [Loader 匹配规则](#Loader匹配规则) 查看。
 
