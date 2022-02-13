@@ -18,7 +18,6 @@ class Promise {
         this.onRejectList = [];
 
         const resolve = (value) => {
-
             if (value instanceof Promise) {
                 return value.then(resolve, reject);
             }
@@ -240,7 +239,7 @@ Promise.all = values => {
             const value = values[i];
 
             if (typeof value === 'function') {
-                value.then(value => processed(value, i), resolve);
+                value.then(value => processed(value, i), reject);
             } else {
                 processed(value, i);
             }
