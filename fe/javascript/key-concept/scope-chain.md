@@ -193,6 +193,8 @@ function testConst() {
 
 ## 参考资料
 
+[ECMA 262: sec-global-environment-records](https://www.ecma-international.org/ecma-262/6.0/#sec-global-environment-records)
+
 [what-is-lexical-scope](https://stackoverflow.com/questions/1047454/what-is-lexical-scope)
 
 [作用域 - Wiki](https://zh.wikipedia.org/zh-cn/作用域)
