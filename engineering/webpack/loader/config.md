@@ -51,12 +51,11 @@ module.exports = {
             options: {},
           },
           {
-            laoder: 'css-loader',
+            loader: 'css-loader',
             options: {},
           },
           {
-            laoder: 'less-loader',
-            options: '?name=Rain120',
+            loader: 'less-loader',
           },
         ],
       },
@@ -83,7 +82,19 @@ import '-!my-loader!my-loader2!./styles.css';
 
 通过前置所有规则及使用 `!`，可以对应覆盖到配置中的任意 `loader`, 更多参数请到 [Loader 匹配规则](#Loader匹配规则) 查看。
 
-选项可以传递查询参数，例如 `?key=value&foo=bar`，或者一个 `JSON` 对象，例如 `?{"key":"value","foo":"bar"}`。
+Loader可以通过 options 传递查询参数，例如
+
+```js
+{
+    // ...
+    loader: 'less-loader',
+    // options: '?name=Rain120&age=18',
+    options: {
+        name： 'Rain120',
+        age: 18
+    }
+}
+```
 
 ### Cli 配置 Loader
 

@@ -6,9 +6,9 @@ sidebar_position: 4
 
 ## 前置知识
 
-### 什么事pitch
+### 什么是pitch
 
-Webpack 允许在这个函数上挂载名为 pitch 的函数，**运行时 pitch 会比 Loader 本身更早执行**。它可以阻断 loader 链。
+Webpack 允许在 loader 函数上挂载一个名为 pitch 的函数，**运行时 pitch 会比 Loader 本身更早执行**。它可以阻断 loader 链。
 
 ```js
 function pitch(
@@ -56,7 +56,7 @@ data = {}
 
 ## Loader 链式执行
 
-**数组**: 从右往左执行
+Loader 的执行顺序遵循后进先出(Last In First Out)。
 
 ```javascript
 module.exports = {
@@ -66,22 +66,22 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        // 从右往左, css-loader -> style-loader
-        use: ['style-laoder', 'css-loader'],
+        // 执行顺序, css-loader -> style-loader
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
 };
 ```
 
-**对象**: 从下往上执行
+或者你是这样配置的 👇🏻
 
 ```javascript
 module.exports = {
   // ...
   module: {
     // ...
-    // 从下往上, css-loader -> style-loader
+    // 执行顺序, css-loader -> style-loader
     rules: [
       {
         test: /\.css$/,
@@ -140,6 +140,4 @@ module.exports = {
 
 ![webpack-loader-pitch.png](../images/webpack-loader-pitch.png)
 
-[pitching-loader](https://webpack.js.org/api/loaders/#pitching-loader)
-
-[Rule.enforce](https://webpack.js.org/configuration/module/#ruleenforce)
+更多参考 [pitching-loader](https://webpack.js.org/api/loaders/#pitching-loader) 和 [Rule.enforce](https://webpack.js.org/configuration/module/#ruleenforce)

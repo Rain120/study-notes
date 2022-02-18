@@ -4,7 +4,16 @@ sidebar_position: 5
 
 # Loader 匹配规则
 
-当然，`webpack`可以通过引入模块的路径规则，来判断是否使用内联模式或者剔除一些前置`(pre)` `Loader`, 后置`(post)` , 普通`(normal)` `Loader`。规则如下:
+当然，`webpack`可以通过引入模块的路径规则，来判断是否使用内联模式或者剔除一些前置`(pre)` `Loader`, 后置`(post)` , 普通`(normal)` `Loader`。
+
+:::warning
+这种内联模式, 并非 ES module 中的规范路径格式, 要尽量避免，因为
+
+- 会在代码中耦合 webpack 的具体细节
+- 可能会对 IDE 的路径解析产生干扰
+:::
+
+规则如下:
 
 **-!** : 剔除 配置中符合条件的 `pre` 和 `normal` 的 `Loader`
 
