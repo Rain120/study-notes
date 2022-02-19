@@ -55,6 +55,10 @@
 
 在讲`let` `const`这两个关键字前，我们先讲一个概念 `TDZ(Temporal Dead Zone)`, 又称**暂存死区**。
 
+定义: 在相同的函数或块作用域内重新声明同一个变量会引发SyntaxError; 也称 TDZ(Temporal dead zone)。
+
+作用: 在声明变量或常量之前使用它, 会引发ReferenceError，即不能在初始化之前，使用变量。
+
 ### let
 
 **let**允许你声明一个作用域被限制在 [`块`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/statements/block)级中的变量、语句或者表达式。与 [`var`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/statements/var) 关键字不同的是， [`var`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/statements/var)声明的变量只能是全局或者整个函数块的。 [`var`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/statements/var) 和 `let` 的不同之处在于后者是在编译时才初始化（[见下面](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let#暂存死区)）。
@@ -190,6 +194,12 @@ function testConst() {
 更多关于**执行上下文、变量对象**等上述的相关问题请转到 [Javascript 执行上下文](./execution-context.md) 阅读。
 
 **作用域链是由当前环境与上层环境的一系列变量对象组成，它保证对执行环境有权访问的所有变量和函数的有序访问。**
+
+## 词法作用域
+
+:::tip
+**词法作用域** 就是指作用域是由代码中函数声明的位置来决定的，所以词法作用域是静态的作用域，通过它就能够预测代码在执行过程中如何查找标识符。 -- [参考](https://blog.poetries.top/browser-working-principle/guide/part2/lesson10.html#%E8%AF%8D%E6%B3%95%E4%BD%9C%E7%94%A8%E5%9F%9F)
+:::
 
 ## 参考资料
 
