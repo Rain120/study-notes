@@ -93,18 +93,18 @@ p.warning.error {
 
 选择前一个元素的**直接子代**的节点**(不会再往下找节点了)**。
 
-![selector->.png](./images/selector->.png)
+![selector-child.png](./images/selector-child.png)
 
 ### 一般子代组合器 `~`
 
 后一个节点在前一个节点后面的任意位置，并且共享同一个父节
 
-![selector-~.png](./images/selector-~.png)
+![selector-child-combine.png](./images/selector-child-combine.png)
 
 ### 紧邻元素组合器 `+`
 
 后一个元素紧跟在前一个之后，并且共享同一个父节点。
-![selector-+.png](./images/selector-+.png)
+![selector-sibling.png](./images/selector-sibling.png)
 
 ### 列组合器 `|| `
 
