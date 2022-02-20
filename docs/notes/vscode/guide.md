@@ -1,3 +1,0 @@
-- [VS Code Tips](notes/vscode/tips.md)
-- [VS Code 插件](notes/vscode/extensions.md)
-- [VS Code 别名提示配置](notes/vscode/alias.md)
