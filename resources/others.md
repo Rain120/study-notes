@@ -19,19 +19,13 @@ sidebar_position: 10
 
 [Fake Mail Generator](http://www.fakemailgenerator.com/): 打开自动生成邮箱的服务，不需注册，页面基于AJAX，无需刷新。
 
-[MailExpire](http://www.mailexpire.com/)
-
 [10 Minute Mail](http://10minutemail.com/): 提供10分钟的临时邮箱。
 
 [GuerrillaMail](http://www.guerrillamail.com/)
 
-[ChacuoNet](http://24mail.chacuo.net/)
-
 [obagg](http://od.obagg.com/)
 
 [odmail](http://t.odmail.cn/)
-
-[xkx](http://xkx.me/): 这好用
 
 [chacuo.net](http://24mail.chacuo.net/zhtw)
 
