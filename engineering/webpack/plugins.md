@@ -1,4 +1,4 @@
-# Webpack 插件
+# Webpack Plugin
 
 ## 定义
 
@@ -18,5 +18,7 @@ plugin是一个扩展器，它丰富了webpack本身，针对是loader结束后�
 ## 参考资料
 
 [Webpack Plugins](https://webpack.js.org/concepts/plugins/)
+
 [Webpack loaders vs plugins; what's the difference?](https://stackoverflow.com/questions/37452402/webpack-loaders-vs-plugins-whats-the-difference/46176755#46176755)
+
 [webpack 中 loader 和 plugin 的区别是什么 ](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/308)
