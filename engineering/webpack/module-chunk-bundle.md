@@ -1,4 +1,4 @@
-# Webpack Module Chunk Bundle 之间的区别
+# Module Chunk Bundle 之间的区别
 
 ## Module
 
