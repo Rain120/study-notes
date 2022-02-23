@@ -2,24 +2,26 @@
 
 ## 定义
 
-装饰器 `(Decorator)`  是 `ES7` 中的一个提案，目前仍处于 [stage-2: 草稿状态](https://github.com/tc39/proposal-decorators)。它是一种与类 `(class)` 相关的语法，用来注释或修改类和类方法。装饰器是一种函数，写成`@ + 函数名`, 它可以放在类和类方法的定义前面。
+装饰器 `(Decorator)`  是 `ES7` 中的一个提案, 目前仍处于 [stage-2: 草稿状态](https://github.com/tc39/proposal-decorators)。它是一种与类 `(class)` 相关的语法, 用来注释或修改类和类方法。装饰器是一种函数, 写成`@ + 函数名`, 它可以放在类和类方法的定义前面。
 
 ## 作用
 
-它们不仅增加了代码的可读性，清晰地表达了意图，而且提供一种方便的手段，**增加或修改类的功能**。
+它们不仅增加了代码的可读性, 清晰地表达了意图, 而且提供一种方便的手段, **增加或修改类的功能**。
 
 ## 使用
 
 ### 前提
 
-安装`babel` 以及 `decorator` 插件
+由于目前原生的JavaScript还不支持装饰器, 所以, 我们需要借助 babel 的能力来实现。
+
+1. 安装`babel` 以及 `decorator` 插件
 
 ```sh
 npm install @babel/cli @babel/core --save-dev
 npm install @babel/proposal-decorators @babel/proposal-class-properties --save-dev
 ```
 
-配置 `.babelrc`
+2. 配置 `.babelrc`
 
 ```
 "plugins": [
@@ -51,7 +53,7 @@ class Foo {}
 Foo = decorator(Foo) || Foo
 ```
 
-**装饰器对类的行为的改变，是代码编译时发生的，而不是在运行时**。这意味着，装饰器能在编译阶段运行代码。也就是说，**装饰器本质就是编译时执行的函数**。
+**装饰器对类的行为的改变, 是代码编译时发生的, 而不是在运行时**。这意味着, 装饰器能在编译阶段运行代码。也就是说, **装饰器本质就是编译时执行的函数**。
 
 ### 类方法, 类属性装饰器
 
@@ -61,7 +63,7 @@ class Person {
   name() { return `${this.first} ${this.last}` }
 }
 
-function readonly(target, name, descriptor){
+function readonly(target, name, descriptor) {
   // descriptor对象原来的值如下
   // {
   //   value: specifiedFunction,
@@ -80,7 +82,7 @@ Object.defineProperty(Person.prototype, 'name', descriptor);
 
 ### 函数方法的装饰
 
-**装饰器只能用于类和类的方法，不能用于函数，因为存在函数提升**。如果一定要装饰函数，可以采用高阶函数的形式直接执行。
+**装饰器只能用于类和类的方法, 不能用于函数, 因为存在函数提升**。如果一定要装饰函数, 可以采用高阶函数的形式直接执行。
 
 ```js
 function doSomething(name) {
@@ -98,6 +100,33 @@ function loggingDecorator(wrapped) {
 
 const wrapped = loggingDecorator(doSomething);
 ```
+
+### 执行顺序
+
+1. 属性装饰器
+2. 方法装饰器
+3. 方法参数装饰器: 从后往前
+   ```js
+   function Test(
+       // 后执行
+       @Param1() name,
+       // 先执行
+       @Param2() age,
+    ) {
+        // ...
+    }
+   ```
+4. 类装饰器: 从后往前
+   ```js
+   // 后执行
+   @decorator1()
+   // 先执行
+   @decorator2()
+   class Test {
+       // ...
+   }
+   ```
+
 
 ## 实现原理
 
@@ -121,31 +150,31 @@ const wrapped = loggingDecorator(doSomething);
 
   - `configurable`
 
-    当且仅当该属性的 `configurable` 键值为 `true` 时，该属性的描述符才能够被改变，同时该属性也能从对应的对象上被删除。 **默认为** **false**。
+    当且仅当该属性的 `configurable` 键值为 `true` 时, 该属性的描述符才能够被改变, 同时该属性也能从对应的对象上被删除。 **默认为** **false**。
 
   - `enumerable`
 
-    当且仅当该属性的 `enumerable` 键值为 `true` 时，该属性才会出现在对象的枚举属性中。 **默认为 false**。
+    当且仅当该属性的 `enumerable` 键值为 `true` 时, 该属性才会出现在对象的枚举属性中。 **默认为 false**。
 
   数据描述符还具有以下可选键值：
 
   - `value`
 
-    该属性对应的值。可以是任何有效的 `JavaScript` 值（数值，对象，函数等）。 **默认为 undefined**。
+    该属性对应的值。可以是任何有效的 `JavaScript` 值（数值, 对象, 函数等）。 **默认为 undefined**。
 
   - `writable`
 
-    当且仅当该属性的 `writable` 键值为 `true` 时，属性的值，也就是上面的 `value`，才能被[`赋值运算符`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)改变。 **默认为 false。**
+    当且仅当该属性的 `writable` 键值为 `true` 时, 属性的值, 也就是上面的 `value`, 才能被[`赋值运算符`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)改变。 **默认为 false。**
 
   存取描述符还具有以下可选键值：
 
   - `get`
 
-    属性的 `getter` 函数，如果没有 `getter`，则为 `undefined`。当访问该属性时，会调用此函数。执行时不传入任何参数，但是会传入 `this` 对象（由于继承关系，这里的`this`并不一定是定义该属性的对象）。该函数的返回值会被用作属性的值。 **默认为 undefined**。
+    属性的 `getter` 函数, 如果没有 `getter`, 则为 `undefined`。当访问该属性时, 会调用此函数。执行时不传入任何参数, 但是会传入 `this` 对象（由于继承关系, 这里的`this`并不一定是定义该属性的对象）。该函数的返回值会被用作属性的值。 **默认为 undefined**。
 
   - `set`
 
-    属性的 `setter` 函数，如果没有 `setter`，则为 `undefined`。当属性值被修改时，会调用此函数。该方法接受一个参数（也就是被赋予的新值），会传入赋值时的 `this` 对象。 **默认为 undefined**。
+    属性的 `setter` 函数, 如果没有 `setter`, 则为 `undefined`。当属性值被修改时, 会调用此函数。该方法接受一个参数（也就是被赋予的新值）, 会传入赋值时的 `this` 对象。 **默认为 undefined**。
 
 ### babel 转换
 
@@ -232,8 +261,8 @@ let Foo = (
 
 ### 自己实现
 
-- `Decorator` 装饰方法时，`descriptor`的参数和 `Object.defineProperty` 的 `descriptor` 一致
-- `Decorator` 装饰类属性时，`descriptor`没有`value`和`get`或`set`，且多出一个`initializer`方法, 返回值作为属性的值
+- `Decorator` 装饰方法时, `descriptor`的参数和 `Object.defineProperty` 的 `descriptor` 一致
+- `Decorator` 装饰类属性时, `descriptor`没有`value`和`get`或`set`, 且多出一个`initializer`方法, 返回值作为属性的值
 
 无参的 `decorator`
 
