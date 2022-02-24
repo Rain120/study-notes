@@ -206,8 +206,10 @@ Promise.prototype.retry = (cb, times = 1) => {
     return new Promise((resolve, reject) => {
         while(times--) {
             try {
-                Promise.resolve(cb()).then(value => resolve(value));
-                break;
+                Promise.resolve(cb()).then(value => {
+                    resolve(value);
+                    break;
+                });
             } catch (error) {
                 console.log(`Retry in the ${times}\'s timers.`)
             }
@@ -227,11 +229,16 @@ Promise.race = values => {
         for (let i = 0; i < values.length; i++) {
             const value = values[i];
 
-            if (typeof value === 'function') {
-                x.then(() => resolve(value), reject);
-            } else {
-                resolve(value);
-            }
+            Promise.resolve(value).then(
+                val => resolve(val),
+                reject
+            );
+
+            // if (typeof value === 'function') {
+            //     value.then(val => resolve(val), reject);
+            // } else {
+            //     resolve(value);
+            // }
         }
     });
 }
@@ -257,11 +264,16 @@ Promise.all = values => {
         for (let i = 0; i < values.length; i++) {
             const value = values[i];
 
-            if (typeof value === 'function') {
-                value.then(value => processed(value, i), reject);
-            } else {
-                processed(value, i);
-            }
+            Promise.resolve(value).then(
+                val => processed(val, i),
+                reject
+            );
+
+            // if (typeof value === 'function') {
+            //     value.then(value => processed(value, i), reject);
+            // } else {
+            //     processed(value, i);
+            // }
         }
     });
 }
