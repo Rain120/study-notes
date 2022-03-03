@@ -278,6 +278,20 @@ Promise.all = values => {
     });
 }
 
+// https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled
+Promise.allSettled = promises => {
+    if (promises.length === 0) {
+        return Promise.resolve([]);
+    }
+
+    return Promise.all(promises.map(promise => {
+        return Promise.resolve(promise).then(
+            value => ({ status: 'fulfilled', value }),
+            reason => ({ status: 'rejected', reason }),
+        );
+    }));
+}
+
 // 中断
 function wrapAbort (promise) {
     let abort;
