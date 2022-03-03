@@ -280,6 +280,11 @@ Promise.all = values => {
 
 // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled
 Promise.allSettled = promises => {
+    if (!Array.isArray(promises)) {
+        const type = typeof promises;
+        return new TypeError(`TypeError: ${type} ${promises} is not iterable`)
+    }
+
     if (promises.length === 0) {
         return Promise.resolve([]);
     }
@@ -290,6 +295,41 @@ Promise.allSettled = promises => {
             reason => ({ status: 'rejected', reason }),
         );
     }));
+}
+
+// https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/any
+Promise.any = promises => {
+    if (!Array.isArray(promises)) {
+        const type = typeof promises;
+        return new TypeError(`TypeError: ${type} ${promises} is not iterable`)
+    }
+
+    if (promises.length === 0) {
+        return Promise.reject(new TypeError('any(): array must not be empty'));
+    }
+
+    return new Promise((resolve, reject) => {
+        let index = 0;
+        const rejected = [];
+
+        const onRejected = (reason, i) => {
+            index++;
+            rejected[index] = reason;
+
+            if (index === promises.length) {
+                reject(new AggregateError('No Promise in Promise.any was resolved'));
+            }
+        }
+
+        for (let i = 0; i < promises.length; i++) {
+            const value = promises[i];
+
+            Promise.resolve(value).then(
+                resolve,
+                reason => onRejected(reason, i)
+            );
+        }
+    });
 }
 
 // 中断
