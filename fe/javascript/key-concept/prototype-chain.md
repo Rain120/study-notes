@@ -34,10 +34,10 @@ function Person() {};
 Person.prototype.name = 'Rainy';
 
 const person = new Person();
-person.prototype.name = 'Rain120';
+person.__proto__.name = 'Rain120';
 
-console.log(Person.prototype.name); // undefiend
-console.log(person.prototype.name); // Rain120
+console.log(Person.prototype.name); // Rain120
+console.log(person.name); // Rain120
 ```
 
 **沿着原形链查找** 其实不是沿着 `prototype` 属性查找， 而是 `__proto__`
