@@ -178,7 +178,11 @@ class Promise {
         return promise;
     }
 }
+```
 
+## Promise.prototype.catch
+
+```js
 Promise.prototype.catch = cb => {
     if (typeof cb !== 'function') {
         return Promise.reject(new TypeError(`${cb} is not a function`));
@@ -186,7 +190,11 @@ Promise.prototype.catch = cb => {
 
     return this.then(null, cb);
 }
+```
 
+## Promise.prototype.finally
+
+```js
 Promise.prototype.finally = cb => {
     if (typeof cb !== 'function') {
         return Promise.reject(new TypeError(`${cb} is not a function`));
@@ -197,7 +205,11 @@ Promise.prototype.finally = cb => {
         reason => Promise.resolve(cb()).then(() => { throw reason; }),
     );
 }
+```
 
+## Promise.prototype.retry
+
+```js
 Promise.prototype.retry = (cb, times = 1) => {
     if (typeof cb !== 'function') {
         return Promise.reject(new TypeError(`${cb} is not a function`));
@@ -218,7 +230,11 @@ Promise.prototype.retry = (cb, times = 1) => {
         reject(error);
     }
 }
+```
 
+## Promise.race
+
+```js
 Promise.race = values => {
     if (!Array.isArray(values)) {
         const type = typeof values;
@@ -242,7 +258,11 @@ Promise.race = values => {
         }
     });
 }
+```
 
+## Promise.all
+
+```js
 Promise.all = values => {
     if (!Array.isArray(values)) {
         const type = typeof values;
@@ -277,7 +297,11 @@ Promise.all = values => {
         }
     });
 }
+```
 
+## Promise.allSettled
+
+```js
 // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled
 Promise.allSettled = promises => {
     if (!Array.isArray(promises)) {
@@ -296,7 +320,11 @@ Promise.allSettled = promises => {
         );
     }));
 }
+```
 
+## Promise.any
+
+```js
 // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/any
 Promise.any = promises => {
     if (!Array.isArray(promises)) {
@@ -331,7 +359,11 @@ Promise.any = promises => {
         }
     });
 }
+```
 
+## wrapAbort
+
+```js
 // 中断
 function wrapAbort (promise) {
     let abort;
@@ -344,7 +376,11 @@ function wrapAbort (promise) {
 
     return p;
 }
+```
 
+## promisify
+
+```js
 function promisify (fn) {
     return (...args) => {
         return new Promise((resolve, reject) => {
@@ -361,7 +397,13 @@ function promisify (fn) {
         })
     }
 }
+```
 
+## 官方用例测试
+
+`npm i -D promises-aplus-tests`
+
+```js
 Promise.defer = Promise.deferred = function () {
     let dfd = {};
     dfd.promise = new Promise((resolve, reject) => {
@@ -371,6 +413,11 @@ Promise.defer = Promise.deferred = function () {
     return dfd;
 }
 
+```
+
+## 测试
+
+```js
 const promise = new Promise((resolve, reject) => {
     reject('失败');
 }).then().then().then(data => {
