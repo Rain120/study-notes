@@ -534,7 +534,10 @@ reg_15_18 true
 - 正则表达式
 
 ```javascript
- /(\d{1,3})(?=(\d{3})+(?:$|\.))/g
+/(\d{1,3})(?=(\d{3})+(?:$|\.))/g
+
+// or
+/\B(?=(\d{3})+$)/g
 ```
 
 ![reg-thousands](./images/reg-thousands.png)
