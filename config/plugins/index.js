@@ -141,13 +141,24 @@ const plugins = pluginContentDocsConfigList.map(pluginOptions => ([
 	pluginOptions,
 ])).filter(Boolean).concat([
 	[
-		require.resolve('@easyops-cn/docusaurus-search-local'), {
-			language: ['en', 'zh'],
+		require.resolve('docusaurus-plugin-search-local'), {
+			// language: ['en', 'zh'],
 			hashed: true,
 			docsRouteBasePath: docDirKeys,
+			highlightSearchTermsOnTargetPage: true,
 			// docsDir: docDirKeys,
 		},
 	],
+	// [
+	// 	require.resolve('@docusaurus/plugin-google-gtag'), {
+	// 		gtag: {
+	// 		  // You can also use your 'G-' Measurement ID here.
+	// 		  trackingID: 'UA-150864629-1',
+	// 		  // Optional fields.
+	// 		  anonymizeIP: true, // Should IPs be anonymized?
+	// 		},
+	// 	}
+	// ],
 	[
 		require.resolve('@docusaurus/plugin-pwa'), {
 			debug: true,

@@ -30,6 +30,12 @@ const presets = [
 			theme: {
 				customCss: require.resolve('../../src/css/custom.css'),
 			},
+			gtag: {
+			  // You can also use your "G-" Measurement ID here.
+			  trackingID: 'UA-150864629-1',
+			  // Optional fields.
+			  anonymizeIP: true, // Should IPs be anonymized?
+			},
 		}),
 	],
 ].filter(Boolean);

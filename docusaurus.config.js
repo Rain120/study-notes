@@ -30,10 +30,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // gtag: {
-      //   trackingID: '',
-      //   anonymizeIP: true, // 是否匿名化 IP？
-      // },
       announcementBar: {
         id: "feature_release", // Any value that will identify this message.
         // content: `
@@ -113,12 +109,6 @@ const config = {
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()}.`,
-      },
-      gtag: {
-        // You can also use your "G-" Measurement ID here.
-        trackingID: 'UA-150864629-1',
-        // Optional fields.
-        anonymizeIP: true, // Should IPs be anonymized?
       },
       prism: {
         theme: lightCodeTheme,
