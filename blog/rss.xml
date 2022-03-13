@@ -12,12 +12,16 @@
             <link>https://rain120.github.io/study-notes/study-notes/blog/v2</link>
             <guid>v2</guid>
             <pubDate>Wed, 13 Oct 2021 00:00:00 GMT</pubDate>
+            <category>hello</category>
+            <category>notes 2</category>
         </item>
         <item>
             <title><![CDATA[笔记初始]]></title>
             <link>https://rain120.github.io/study-notes/study-notes/blog/v1</link>
             <guid>v1</guid>
             <pubDate>Sun, 20 Jan 2019 00:00:00 GMT</pubDate>
+            <category>hello</category>
+            <category>notes</category>
         </item>
         <item>
             <title><![CDATA[个人简介]]></title>
@@ -25,7 +29,8 @@
             <guid>profile</guid>
             <pubDate>Sat, 07 Jul 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[-->]]></description>
-            <content:encoded><![CDATA[<ul><li><a href="https://github.com/Rain120">Github</a></li></ul><ul><li><a href="https://www.zhihu.com/people/yan-yang-nian-hua-120/activities">知乎</a></li></ul><ul><li><a href="https://juejin.im/user/57c616496be3ff00584f54db">掘金</a></li></ul><ul><li><a href="https://rain120.github.io/study-notes">study-notes</a></li></ul><ul><li><a href="https://segmentfault.com/u/rainyk1/articles">SegmentFault</a></li></ul><ul><li><a href="https://blog.csdn.net/ZC_XY">CSDN</a></li></ul>]]></content:encoded>
+            <content:encoded><![CDATA[<ul><li><a href="https://github.com/Rain120" target="_blank" rel="noopener noreferrer">Github</a></li></ul><ul><li><a href="https://www.zhihu.com/people/yan-yang-nian-hua-120/activities" target="_blank" rel="noopener noreferrer">知乎</a></li></ul><ul><li><a href="https://juejin.im/user/57c616496be3ff00584f54db" target="_blank" rel="noopener noreferrer">掘金</a></li></ul><ul><li><a href="https://rain120.github.io/study-notes" target="_blank" rel="noopener noreferrer">study-notes</a></li></ul><ul><li><a href="https://segmentfault.com/u/rainyk1/articles" target="_blank" rel="noopener noreferrer">SegmentFault</a></li></ul><ul><li><a href="https://blog.csdn.net/ZC_XY" target="_blank" rel="noopener noreferrer">CSDN</a></li></ul>]]></content:encoded>
+            <category>个人简介</category>
         </item>
     </channel>
 </rss>

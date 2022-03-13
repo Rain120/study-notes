@@ -16,6 +16,8 @@
             <name>Rain120</name>
             <uri>https://github.com/Rain120</uri>
         </author>
+        <category label="hello" term="hello"/>
+        <category label="notes 2" term="notes 2"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[笔记初始]]></title>
@@ -26,6 +28,8 @@
             <name>Rain120</name>
             <uri>https://github.com/Rain120</uri>
         </author>
+        <category label="hello" term="hello"/>
+        <category label="notes" term="notes"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[个人简介]]></title>
@@ -33,10 +37,11 @@
         <link href="https://rain120.github.io/study-notes/study-notes/blog/profile"/>
         <updated>2018-07-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[-->]]></summary>
-        <content type="html"><![CDATA[<ul><li><a href="https://github.com/Rain120">Github</a></li></ul><ul><li><a href="https://www.zhihu.com/people/yan-yang-nian-hua-120/activities">知乎</a></li></ul><ul><li><a href="https://juejin.im/user/57c616496be3ff00584f54db">掘金</a></li></ul><ul><li><a href="https://rain120.github.io/study-notes">study-notes</a></li></ul><ul><li><a href="https://segmentfault.com/u/rainyk1/articles">SegmentFault</a></li></ul><ul><li><a href="https://blog.csdn.net/ZC_XY">CSDN</a></li></ul>]]></content>
+        <content type="html"><![CDATA[<ul><li><a href="https://github.com/Rain120" target="_blank" rel="noopener noreferrer">Github</a></li></ul><ul><li><a href="https://www.zhihu.com/people/yan-yang-nian-hua-120/activities" target="_blank" rel="noopener noreferrer">知乎</a></li></ul><ul><li><a href="https://juejin.im/user/57c616496be3ff00584f54db" target="_blank" rel="noopener noreferrer">掘金</a></li></ul><ul><li><a href="https://rain120.github.io/study-notes" target="_blank" rel="noopener noreferrer">study-notes</a></li></ul><ul><li><a href="https://segmentfault.com/u/rainyk1/articles" target="_blank" rel="noopener noreferrer">SegmentFault</a></li></ul><ul><li><a href="https://blog.csdn.net/ZC_XY" target="_blank" rel="noopener noreferrer">CSDN</a></li></ul>]]></content>
         <author>
             <name>Rain120</name>
             <uri>https://github.com/Rain120</uri>
         </author>
+        <category label="个人简介" term="个人简介"/>
     </entry>
 </feed>
