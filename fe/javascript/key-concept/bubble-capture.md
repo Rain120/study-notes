@@ -38,17 +38,17 @@ dom.addEventListener(
 不会触发冒泡的事件几乎都无法取消。即: preventDefault 和 stopPropagation 不会起作用。
 :::
 
-- blur & focus
+### blur & focus
 
-Note: focusout/focusin 事件会冒泡。如果同时存在的话, focus 先于 focusin, blur 先于 focusout。
+focusout/focusin 事件会冒泡。如果同时存在的话, focus 先于 focusin, blur 先于 focusout。
 
-- scroll
+### scroll
 
-- mouseleave & mouseenter
+### mouseleave & mouseenter
 
-Note: mouseout/mouseover 会触发冒泡。
+mouseout/mouseover 会触发冒泡。
 
-- Media事件
+### Media事件
 
 ```
 onpause 当媒介被用户或程序暂停时运行的脚本

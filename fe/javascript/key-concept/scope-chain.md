@@ -30,7 +30,7 @@
 
 ## 什么是作用域?
 
-变量和函数的**可访问范围**，即作用域控制着变量和函数的 **可见性** 和 **生命周期**。
+变量和函数的**可访问范围**，即作用域控制着变量和函数的 **可见性** 和 **生命周期**。词法环境就是作用域。
 
 `ES6`之前, `Javascript`只有 **全局作用域** 和 **局部作用域**, 之后新增了 **块级作用域**, 具体从[`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)中体现。
 
@@ -187,6 +187,10 @@ function testConst() {
 
 当查找变量的时候，会先从当前上下文的变量对象中查找，如果没有找到，就会从父级(词法层面上的父级)执行上下文的变量对象中查找，一直找到全局上下文的变量对象，也就是全局对象。这样由**多个执行上下文的变量对象构成的链表**就叫做作用域链。
 
+:::tip
+作用域链，是由当前环境与上层环境的一系列变量对象组成，它保证了当前执行环境对符合访问权限的变量和函数的有序访问。
+:::
+
 我们知道执行上下文的生命周期如下图示
 
 ![execution-context-lifecycle.png](./images/execution-context-lifecycle.png)
@@ -221,3 +225,4 @@ function testConst() {
 
 [JavaScript深入之作用域链](https://github.com/mqyqingfeng/Blog/issues/6)
 
+[前端基础进阶（四）：作用域与作用域链](https://www.jianshu.com/p/9b984874776c)
