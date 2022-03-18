@@ -36,6 +36,17 @@ sidebar_position: 1
 
 [Why React Hooks](https://tylermcginnis.com/why-react-hooks/)
 
+`Hooks`的缺点
+
+- 响应式的useEffect不能被清除
+心智成本增加, 依赖的不可控性
+解决方式: 依赖划分, 单一职责划分
+
+- Hooks不擅长异步的代码(旧引用的问题)
+利用闭包的方式 hack或者useRef
+- custom hooks 严重依赖参数的不可变性
+
+建议使用官方推荐的插件 `eslint-plugin-react-hooks`。
 ## 使用注意事项
 
 - ✅ 钩子一律使用`use`前缀命名，便于识别。你要使用 `xxx` 功能，钩子就命名为 `usexxx`
@@ -74,6 +85,56 @@ sidebar_position: 1
 ## Hooks 生命周期对应 Class 组件类
 
 [Here](../lifecycle.mdx)
+
+## 函数组件与类组件的区别
+
+:::tip
+函数式组件捕获了渲染所用的值，通过闭包缓存到了上一次执行的值。（Function components capture the rendered values.）
+类组件会在更新时，会更新整个 this 实例
+https://overreacted.io/zh-hans/how-are-function-components-different-from-classes/
+:::
+
+### 语法
+
+class 需要继承Component，然后 render 返回组件
+function直接返回
+
+### 调用方式
+
+class 需要实例化，然后调用 render
+function直接调用
+
+- 无法使用setState
+
+### useState VS setState
+
+1. setState({}) / setState({}, () => {}) / setState((state, props) => {}, () => {}); useState只能在函数中使用
+
+2. setState会合并参数，useState不会
+
+```js
+state = {
+  name: 'Rain120'
+  age: 20
+}
+setState({
+  age: 18
+})
+
+// => state = { name: 'Rain120', age: 18 }
+
+const [, setProfile] = useState({
+  name: 'Rain120'
+  age: 20
+})
+
+setProfile(prev => ({
+   ...prev,
+   age: 18
+}))
+```
+
+setState可以通过第二个函数得到最新的值，useState需要通过 useEffect
 
 ## 参考资料
 
