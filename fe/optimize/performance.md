@@ -17,3 +17,11 @@
 | tWhiteScreen | responseStart - navigationStart     | 页面开始到资源下载完成耗时                                   | 否，经过实验，资源下载完成，页面并非就有内容，这个字段判断是不准确的，所以不具备参考意义 |
 | tLoadTotal   | loadEventEnd - navigationStart      | 页面总耗时                                                   | 是，这个是页面总耗时，属于关键指标                           |
 | tViewTime    |                                     | 用户点击到页面onload完成时间                                 | 是，这个是用户维度的指标                                     |
+
+### 性能检测工具
+
+https://pagespeed.web.dev/
+
+### polyfill CDN
+
+https://polyfill.io/v3/url-builder/
