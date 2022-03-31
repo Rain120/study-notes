@@ -189,6 +189,8 @@ Github: https://github.com/webpack/webpack
 
 [可视化代码算法的交互式在线平台](https://github.com/algorithm-visualizer/algorithm-visualizer): Interactive Online Platform that Visualizes Algorithms from Code
 
+[动态规划算法可视化](https://alchemist-al.com/)
+
 [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python): 所有算法都在 Python 中实现
 
 [Jeff 的算法手册](https://github.com/jeffgerickson/algorithms): Jeff 的算法手册，笔记等的错误记录
