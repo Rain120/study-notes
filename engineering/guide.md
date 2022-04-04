@@ -22,17 +22,27 @@ title: Summary
 - 统一编码规范，并与团队协作和代码维护
   - 目录结构
   - 文件命名
+  - 代码规范
+    - ESLint, TypeScript, Prettier
 - 开发流程规范
   - 分支规范
   - CR规范
+  - 工作流规范
 - 文档规范
+  - 前后端接口规范
 - 版本管理
   - Git
+  - commit message (husky + commitlint)
 
 ### 组件化
 
 - 抽象能力的提升
 - 框架的选择
+  - CSS方案：CSS Modules, CSS in JS
+  - 视图方案：react、Vue
+  - 数据管理方案：redux、mobx, vuex
+  - 路由：react-router、vue-router
+  - 请求库：fetch、axios、SWR、umi-request
 
 ### 模块化
 
@@ -43,7 +53,16 @@ title: Summary
 
 - 打包构建
   - webpack
+  :::tip
+  增量更新, 构建速度快
+  思路: git diff tag + 拓扑排序 + 构建, 参考 `lerna changed`
+  待实践并对文档进行输出
+  :::
+  - rollup
 - 优化构建流程，研发自动化工程工具，提升开发，部署效率
+- 测试自动化
+  - Jest
+  - Mocha
 
 ## 参考资料
 
