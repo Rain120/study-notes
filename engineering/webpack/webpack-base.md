@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Webpack 基础知识
 
 ## 什么是Webpack？
@@ -8,7 +12,7 @@
 
 [官方文档](https://webpack.js.org/concepts/)
 
-### `entry`
+### entry
 
 [官方文档 - 入口起点](https://webpack.js.org/concepts/entry-points/)
 
