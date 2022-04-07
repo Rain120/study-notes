@@ -41,15 +41,26 @@ const docDirs = [
 			activeBaseRegex: '/engineering/',
 		}
 	},
+	// {
+	// 	key: 'error-qa',
+	// 	sidebarKey: 'docs',
+	// 	options: {},
+	// 	navbar: {
+	// 		to: '/error-qa/guide',
+	// 		position: 'left',
+	// 		label: '开发问题收集',
+	// 		activeBaseRegex: '/error-qa/',
+	// 	},
+	// },
 	{
-		key: 'error-qa',
+		key: 'interview',
 		sidebarKey: 'docs',
 		options: {},
 		navbar: {
-			to: '/error-qa/guide',
+			to: '/interview/guide',
 			position: 'left',
-			label: '开发问题收集',
-			activeBaseRegex: '/error-qa/',
+			label: '面试',
+			activeBaseRegex: '/interview/',
 		},
 	},
 	{
