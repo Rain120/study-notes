@@ -1,13 +1,13 @@
-## hash chunkhash contenthash区别
+# hash chunkhash contenthash区别
 
-### hash
+## hash
 
 整个项目构建相关
 
-### chunkhash
+## chunkhash
 
 根据不同的入口文件(entry)进行依赖文件解析、构建对应的 chunk，生成对应的哈希值
 
-### contenthash
+## contenthash
 
 计算与文件内容本身相关
