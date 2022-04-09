@@ -44,7 +44,7 @@
 ### 自己实现的原因
 
 - 浏览器兼容性的问题 [requestIdleCallback Usage](https://caniuse.com/?search=requestIdleCallback)
-![requestIdleCallback-polyfill.png](../images/requestIdleCallback-polyfill.png)
+![requestIdleCallback-polyfill.png](./images/requestIdleCallback-polyfill.png)
 - requestIdleCallback 依赖于显示器的刷新频率, 使用时需要看 vsync cycle（指硬件设备的频率）
 
 ### 实现方式
