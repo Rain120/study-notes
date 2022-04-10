@@ -13,8 +13,6 @@ sidebar_position: 1
 
  [30 seconds of code](https://30secondsofcode.org/index) -> [Github](https://github.com/30-seconds/30-seconds-of-code): 精心收集的有用的 JavaScript 代码片段，可以让你在 30 秒或更少的时间内理解
 
-[AST Explorer](https://astexplorer.net/): 用于探索各种解析器生成的AST的Web工具。
-
 [JavaScript 版本兼容性查询](https://kangax.github.io/compat-table/es6/)
 
 [前端代码片段](https://alligator.io/)
@@ -28,6 +26,16 @@ sidebar_position: 1
 [alligator](https://alligator.io/): 各类前端基础知识教程
 
 [npm runkit](https://npm.runkit.com/): 快速运行 `npm` 包
+
+[JavaScript开发者应懂的33个概念](https://github.com/stephentian/33-js-concepts)
+
+[JavaScript 进阶问题列表](https://github.com/lydiahallie/javascript-questions/blob/master/zh-CN/README-zh_CN.md)
+
+[30天纯 JavaScript 编程任务](https://javascript30.com/)
+
+[JavaScript 魔法(骚操作)](https://github.com/denysdovhan/wtfjs/blob/master/README-zh-cn.md)
+
+[正则表达式学习](https://github.com/cdoco/learn-regex-zh)
 
 ## JavaScript 类库
 
@@ -66,3 +74,9 @@ sidebar_position: 1
 [JavaScript 性能测试](http://jsbench.github.io/) [jsperf.com](https://github.com/jsperf/jsperf.com)
 
 [JavaScript 语法转换AST工具](https://esprima.org/demo/parse.html#)
+
+[AST Explorer](https://astexplorer.net/): 用于探索各种解析器生成的AST的Web工具。
+
+## 资源
+
+[awesome-javascript](https://github.com/sorrycc/awesome-javascript)
