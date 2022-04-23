@@ -24,7 +24,7 @@ git config -e
 或者一句命令执行
 
 ```sh
-git clone xxxx/repo-name baidu/erp/fe-okr \
+git clone xxxx/repo-name xxxx \
 && git config -f repo-name/.git/config user.name Rain120 \
 && git config -f repo-name/.git/config user.email xxxx@xxx.com
 ```
