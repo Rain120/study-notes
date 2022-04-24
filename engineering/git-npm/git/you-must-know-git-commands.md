@@ -2,12 +2,12 @@
 sidebar_position: 2
 ---
 
-# 你必须知道的Git命令
+# 你必须知道的 Git 命令
 
 :::tip
 [Git](https://git-scm.com/) 是一个分布式版本控制软件, 最初目的是为更好地管理`Linux`内核开发而设计。
 
-来源：[维基百科  - Git](https://zh.wikipedia.org/wiki/Git)
+来源：[维基百科 - Git](https://zh.wikipedia.org/wiki/Git)
 :::
 
 `Git`是一个软件，它允许你通过提交对一个系统（或一组）文件的历史进行注释。这些提交便是在给定时间点对系统做出的差异“快照”。
@@ -16,7 +16,7 @@ sidebar_position: 2
 
 ![git_operations](../images/git_operations.png)
 
-## 1 Git配置
+## 1 Git 配置
 
 ```shell
 --system #系统级别
@@ -33,43 +33,39 @@ git config --list # 列举所有配置
 
 1. 创建`SSH Key`
 
-   ```shell
-   ssh-keygen -t rsa -C <youremail@example.com>
-   ```
-
-   
+    ```shell
+    ssh-keygen -t rsa -C <youremail@example.com>
+    ```
 
 2. 登陆`GitHub`，打开`Account settings` -> `SSH Keys` -> `Add SSH Key`，填上任意`Title`，在`Key`文本框里粘贴`id_rsa.pub`文件的内容
 
 3. 测试是否连接
 
-   ```shell
-   ssh git@github.com
-   ```
+    ```shell
+    ssh git@github.com
+    ```
 
 4. 配置多个用户
 
-   ```
-   1. ssh-keygen -t rsa -C <youremail@example.com>
-   	改变id_rsa文件的名字
-   2. 配置config(Mac)
-     在~/.ssh中创建新文件config
-     # github
-     Host github.com
-     HostName github.com
-     # PreferredAuthentications publickey
-     User Rain120
-     IdentityFile ~/.ssh/id_rsa_github
-   
-     # xxx
-     Host xxx
-     HostName xxx
-     User xxx
-     PreferredAuthentications publickey
-     IdentityFile ~/.ssh/id_rsa
-   ```
+    ```
+    1. ssh-keygen -t rsa -C <youremail@example.com>
+    	改变id_rsa文件的名字
+    2. 配置config(Mac)
+      在~/.ssh中创建新文件config
+      # github
+      Host github.com
+      HostName github.com
+      # PreferredAuthentications publickey
+      User Rain120
+      IdentityFile ~/.ssh/id_rsa_github
 
-   
+      # xxx
+      Host xxx
+      HostName xxx
+      User xxx
+      PreferredAuthentications publickey
+      IdentityFile ~/.ssh/id_rsa
+    ```
 
 几个概念：
 
@@ -77,12 +73,11 @@ git config --list # 列举所有配置
 
 暂存区`(stage / index)`: 保存了下次将提交的文件列表信息, 一般存放在 `.git`目录下 下的`index`文件`(.git/index)`中，所以我们把暂存区有时也叫作索引`(index)`。
 
-版本库`(Repository)`:  工作区有一个隐藏目录`.git`，这个不算工作区，而是`Git`的版本库。
+版本库`(Repository)`: 工作区有一个隐藏目录`.git`，这个不算工作区，而是`Git`的版本库。
 
 远程仓库`(Remote)`
 
 ![git_infos_repo](../images/git_infos_repo.png)
-
 
 <center>阮一峰老师对Git工作区、暂存区、版本库、远程仓库的解释</center>
 
@@ -93,11 +88,11 @@ git config --list # 列举所有配置
 
 文件 `.gitignore` 的格式规范如下：
 
-- 所有空行或者以 `＃` 开头的行都会被 Git 忽略。
-- 可以使用标准的 glob 模式匹配。
-- 匹配模式可以以（`/`）开头防止递归。
-- 匹配模式可以以（`/`）结尾指定目录。
-- 要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（`!`）取反。
+-   所有空行或者以 `＃` 开头的行都会被 Git 忽略。
+-   可以使用标准的 glob 模式匹配。
+-   匹配模式可以以（`/`）开头防止递归。
+-   匹配模式可以以（`/`）结尾指定目录。
+-   要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（`!`）取反。
 
 ## 创建版本库
 
@@ -108,7 +103,7 @@ git clone url # clone远程仓库
 git init # 初始化本地版本库
 ```
 
-## Git分支
+## Git 分支
 
 `master`: 默认开发分支
 
@@ -144,20 +139,19 @@ graph TD;
 
 据上图示知，当前开发分支是`master`，即`HEAD`指向`master`, `c1`, `c2`, `c3`是`master`的三次父提交
 
-- **^** 兄弟层级
-   - `HEAD^ -> br1_c1`
+-   **^** 兄弟层级
 
-   - `HEAD^2 -> br2_c2`
+    -   `HEAD^ -> br1_c1`
 
-   - `HEAD^3 -> br3_c3`
+    -   `HEAD^2 -> br2_c2`
 
-- **~** 子层级
+    -   `HEAD^3 -> br3_c3`
 
-   - `HEAD~ -> br1_c1`
+-   **~** 子层级
 
-   - `HEAD~2 -> br1_c1_c1`
+    -   `HEAD~ -> br1_c1`
 
-
+    -   `HEAD~2 -> br1_c1_c1`
 
 ```shell
 git branch # 查看分支
@@ -282,7 +276,7 @@ git checkout --patch <filename> # 撤消对文件的修改
 git revert <commit_id> # 撤销指定提交
 ```
 
-### git reset详解
+### git reset 详解
 
 ```shell
 git reset --help
@@ -328,20 +322,20 @@ git reset --help
 
 `—shortstat`: 只显示 `—stat` 中最后的行数修改添加移除统计。
 
-`--name-only`  仅在提交信息后显示已修改的文件清单。
+`--name-only` 仅在提交信息后显示已修改的文件清单。
 
-`--name-status`  显示新增、修改、删除的文件清单。
+`--name-status` 显示新增、修改、删除的文件清单。
 
-`--abbrev-commit`:  仅显示 `SHA-1` 的前几个字符，而非所有的 40 个字符。
+`--abbrev-commit`: 仅显示 `SHA-1` 的前几个字符，而非所有的 40 个字符。
 
-`--relative-date`:  使用较短的相对时间显示（比如，`2 weeks ago`）。
+`--relative-date`: 使用较短的相对时间显示（比如，`2 weeks ago`）。
 
-`--graph`:  显示 `ASCII` 图形表示的分支合并历史。
+`--graph`: 显示 `ASCII` 图形表示的分支合并历史。
 
 `—pretty=(oneline,short,medium(默认值),full,fuller,email,raw,format)`： 这个选项可以指定使用不同于默认格式的方式展示提交历史。 这个选项有一些内建的子选项供你使用。
 
-	- `oneline`: 将每个提交放在一行显示，查看的提交数很大时非常有用。
-	- [`format`](https://git-scm.com/book/zh/v2/Git-基础-查看提交历史#rpretty_format): 列出了常用的格式占位符写法及其代表的意义。
+    - `oneline`: 将每个提交放在一行显示，查看的提交数很大时非常有用。
+    - [`format`](https://git-scm.com/book/zh/v2/Git-基础-查看提交历史#rpretty_format): 列出了常用的格式占位符写法及其代表的意义。
 
 `—oneline`: `--pretty=oneline --abbrev-commit` 的简化用法。
 
@@ -382,14 +376,10 @@ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(
 git config --global alias.slg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 ```
 
-
-
 ```shell
 # 显示每个提交在过去两周内引入的差异日志。
 git whatchanged —-since='2 weeks ago'
 ```
-
-
 
 ## 标签(Tag)
 
@@ -401,7 +391,7 @@ git whatchanged —-since='2 weeks ago'
 
 附注标签是存储在 `Git` 数据库中的一个完整对象。 它们是可以被校验的；其中包含打标签者的名字、电子邮件地址、日期时间；还有一个标签信息；并且可以使用 `GNU Privacy Guard(GPG)`签名与验证。 通常建议创建附注标签，这样你可以拥有以上所有信息；但是如果你只是想用一个临时的标签，或者因为某些原因不想要保存那些信息，轻量标签也是可用的。
 
-`-a`:  创建附注标签
+`-a`: 创建附注标签
 
 `-m` 选项指定了一条将会存储在标签中的信息。 如果没有为附注标签指定一条信息，`Git` 会运行编辑器要求你输入信息。
 
@@ -421,7 +411,7 @@ git push origin --tags # 一次性推送所有不在远程仓库服务器上的�
 
 ## 变基
 
-`merge`:  用来合并一个或者多个分支到你已经检出的分支中， 然后它将当前分支指针移动到合并结果上，现有分支不会被修改。
+`merge`: 用来合并一个或者多个分支到你已经检出的分支中， 然后它将当前分支指针移动到合并结果上，现有分支不会被修改。
 
 `rebase`: 通常称之为“衍合”，它通过修改提交历史来对比双方的`commit`，然后找出不同的去缓存，然后在去`push`，修改你的`commit`历史。
 
@@ -446,7 +436,7 @@ git cherry-pick <start-commit-id>…<end-commit-id>
 
 `--abort`: 完全撤消变基。 `Git` 将您恢复为分支状态如同调用 `git rebase` 之前一样。
 
-`--skip`:  完全跳过提交。 这意味着将不包括由有问题的提交引入的任何更改。 很少会选择此选项。
+`--skip`: 完全跳过提交。 这意味着将不包括由有问题的提交引入的任何更改。 很少会选择此选项。
 
 **常见解决远程冲突的方式**
 
@@ -572,26 +562,14 @@ git push -u origin master
 
 ![git-command](../images/git.png)
 
-
-
 ## 参考资料
 
-[Git Document](https://git-scm.com/docs)  [中文文档](https://git-scm.com/book/zh/v2)
-
-[Git 推荐](https://github.com/Rain120/program-learning-lists/blob/master/README.md#git)
+[Git Document](https://git-scm.com/docs) [中文文档](https://git-scm.com/book/zh/v2)
 
 [15-git-commands-you-may-not-know](https://zaiste.net/15-git-commands-you-may-not-know/)
 
 [阮一峰常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
 
-[廖雪峰 Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
+[廖雪峰 Git 教程](https://www.liaoxuefeng.com/wiki/896043488029600)
 
-[Runoob Git教程](https://www.runoob.com/git/git-tutorial.html)
-
-[Git入门](https://backlog.com/git-tutorial/cn/)
-
-[Git的奇技淫巧](https://github.com/521xueweihan/git-tips)
-
-[猴子🐒都能懂的Git入门](https://backlog.com/git-tutorial/cn/)
-
-[Learn Git Branching](https://learngitbranching.js.org/): `Git`可视化操作
+[Runoob Git 教程](https://www.runoob.com/git/git-tutorial.html)
