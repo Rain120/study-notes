@@ -15,11 +15,11 @@ sidebar_position: 10
 
 ### 临时邮箱、匿名邮箱
 
-[Moakt](https://www.moakt.com/):  一个临时邮箱，可以选择多个邮箱后缀
+[Moakt](https://www.moakt.com/): 一个临时邮箱，可以选择多个邮箱后缀
 
-[Fake Mail Generator](http://www.fakemailgenerator.com/): 打开自动生成邮箱的服务，不需注册，页面基于AJAX，无需刷新。
+[Fake Mail Generator](http://www.fakemailgenerator.com/): 打开自动生成邮箱的服务，不需注册，页面基于 AJAX，无需刷新。
 
-[10 Minute Mail](http://10minutemail.com/): 提供10分钟的临时邮箱。
+[10 Minute Mail](http://10minutemail.com/): 提供 10 分钟的临时邮箱。
 
 [GuerrillaMail](http://www.guerrillamail.com/)
 
@@ -31,9 +31,11 @@ sidebar_position: 10
 
 ### 短信验证码接收平台
 
----
+#### 2022-04-25
 
-新增
+https://www.zusms.com/phone/china
+
+---
 
 https://www.zaixianjiema.com/
 
@@ -43,7 +45,7 @@ https://zh.mytrashmobile.com/
 
 https://www.suiyongsuiqi.com/zh/
 
-----
+---
 
 ~~[收信箱](https://www.shouxinxiang.com/)~~
 
@@ -67,9 +69,8 @@ https://www.suiyongsuiqi.com/zh/
 
 ### 其他
 
-[IP & Phone等信息](https://www.qqzeng.com/)
+[IP & Phone 等信息](https://www.qqzeng.com/)
 
 [环游世界 - 立体视角](https://www.airpano.com/)
 
 [测试反应](https://humanbenchmark.com/tests/reactiontime)
-
