@@ -1,6 +1,6 @@
 ## 版本
 
-- `Iterm2` **3.3.12**
+-   `Iterm2` **3.3.12**
 
 ## 修改默认终端
 
@@ -34,9 +34,9 @@ chsh -s /bin/bash
 
 `preferences -> Advanced -> Mouse -> scroll(up / down)`
 
-- `down -> \j`
+-   `down -> \j`
 
-- `up -> \k`
+-   `up -> \k`
 
 ![vim-mouse-scroll.png](./images/vim-mouse-scroll.png)
 
@@ -141,7 +141,7 @@ source ~/.zshrc
 
 ![zsh-auth-tips.png](./images/zsh-auth-tips.png)
 
-### 方法1
+### 方法 1
 
 ```sh
 chmod 755 /usr/local/share/zsh
@@ -150,7 +150,7 @@ chmod 755 /usr/local/share/zsh/site-functions
 
 看提示告诉我们那个文件没有权限，给他加上即可
 
-### 方法2
+### 方法 2
 
 ```sh
 # .zshrc 第一行
@@ -158,6 +158,8 @@ ZSH_DISABLE_COMPFIX="true"
 ```
 
 ## FBI Warning
+
+> 装逼专用，但是真的好无聊的，不建议
 
 ![fbi-wraning.png](./images/fbi-wraning.png)
 
@@ -210,7 +212,6 @@ y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
 spaces=$(printf "%-${y}s" " ")
 echo -e "${spaces}${_MESSAGE}"
 echo " "
-
 ```
 
 ## 全部配置
@@ -223,7 +224,7 @@ ZSH_DISABLE_COMPFIX="true"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/rain120/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -301,7 +302,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-source ~/.bash_profile
+# 如果有需要的话可以创建一个 .bash_profile 配置文件
+# source ~/.bash_profile
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -327,54 +329,6 @@ source ~/.bash_profile
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# FBI Warning
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-_COLUMNS=$(tput cols)
-_MESSAGE=" FBI Warining "
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-
-echo " "
-echo -e "${spaces}\033[41;37;5m FBI WARNING \033[0m"
-echo " "
-_COLUMNS=$(tput cols)
-_MESSAGE="Ferderal Law provides severe civil and criminal penalties for"
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-echo -e "${spaces}${_MESSAGE}"
-
-_COLUMNS=$(tput cols)
-_MESSAGE="the unauthorized reproduction, distribution, or exhibition of"
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-echo -e "${spaces}${_MESSAGE}"
-
-_COLUMNS=$(tput cols)
-_MESSAGE="copyrighted motion pictures (Title 17, United States Code,"
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-echo -e "${spaces}${_MESSAGE}"
-
-_COLUMNS=$(tput cols)
-_MESSAGE="Sections 501 and 508). The Federal Bureau of Investigation"
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-echo -e "${spaces}${_MESSAGE}"
-
-_COLUMNS=$(tput cols)
-_MESSAGE="investigates allegations of criminal copyright infringement"
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-echo -e "${spaces}${_MESSAGE}"
-
-_COLUMNS=$(tput cols)
-_MESSAGE="(Title 17, United States Code, Section 506)."
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-echo -e "${spaces}${_MESSAGE}"
-echo " "
-
 # git alias
 alias gs="git status"
 alias gsm="git summary"
@@ -394,12 +348,16 @@ alias gm="git merge"
 alias git='LANG=en_US git'
 
 # alias for push icode
-alias nrp='npm run push'
+alias i='pnpm i'
+alias b='pnpm build'
+alias c='code .'
+alias d='pnpm dev'
+alias cls='clear'
 
 # remove user host and pc name
 DEFAULT_USER=$USER
+
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
 其他的看看这个吧 [`here`](https://juejin.im/post/6844904178075058189)
-
