@@ -25,7 +25,7 @@ const config = {
   plugins,
   presets,
 
-  themes: ['@docusaurus/theme-live-codeblock'],
+  // themes: [],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -44,6 +44,13 @@ const config = {
         `,
         // backgroundColor: "#fafbfc", // Defaults to `#fff`.
         // textColor: "#091E42", // Defaults to `#000`.
+      },
+      liveCodeBlock: {
+          /**
+           * The position of the live playground, above or under the editor
+           * Possible values: "top" | "bottom"
+           */
+          playgroundPosition: 'bottom',
       },
       navbar: {
         title: '',

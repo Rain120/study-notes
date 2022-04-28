@@ -4,8 +4,9 @@
 
 .page-ops {
     position: fixed;
-    right: 200px;
+    right: 140px;
     top: 50%;
+    z-index: 1;
 }
 
 .document {
