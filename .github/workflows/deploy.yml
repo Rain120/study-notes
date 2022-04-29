@@ -7,23 +7,37 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node_version: [15]
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 7.0.0-rc.9
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+          with:
+            node-version: ${{ matrix.node-version }}
+            cache: 'pnpm'
+
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
-          if [ -e yarn.lock ]; then
-            yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-            npm ci
-          else
-            npm install
-          fi
+          pnpm install
+          # if [ -e yarn.lock ]; then
+          #   yarn install --frozen-lockfile
+          # elif [ -e package-lock.json ]; then
+          #   npm ci
+          # else
+          #   npm install
+          # fi
 
-          BASE_URL=/study-notes/ npm run build
+          BASE_URL=/study-notes/ pnpm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
