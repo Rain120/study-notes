@@ -18,10 +18,12 @@
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^5.5.0",
     "clsx": "^1.1.1",
+    "config-webpack-plugin": "file:config/plugins/config-webpack-plugin",
     "file-loader": "^6.2.0",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-pdf": "^5.7.2",
     "url-loader": "^4.1.1"
   },
   "browserslist": {
@@ -44,7 +46,6 @@
     "@easyops-cn/docusaurus-search-local": "^0.23.0",
     "nodejieba": "^2.5.2",
     "prettier": "^2.6.2",
-    "raw-loader": "^4.0.2",
-    "react-pdf": "^5.7.2"
+    "raw-loader": "^4.0.2"
   }
 }

@@ -176,6 +176,7 @@ const plugins = pluginContentDocsConfigList
             },
         ],
         '@docusaurus/theme-live-codeblock',
+        'config-webpack-plugin'
     ]);
 
 module.exports = {
