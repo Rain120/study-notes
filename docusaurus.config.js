@@ -32,16 +32,16 @@ const config = {
     ({
       announcementBar: {
         id: "feature_release", // Any value that will identify this message.
-        // content: `
-        //   <a href='https://rain120.github.io/study-notes/books/read/react/a-hundred-things-i-learned-working-on-the-react-team'>阅书阁</a> 
-        //   新上线，欢迎体验
-        // `,
+        content: `
+          <a href='https://rain120.github.io/study-notes/books/read/react/a-hundred-things-i-learned-working-on-the-react-team'>阅书阁</a> 
+          新上线，欢迎体验
+        `,
         // 文章📚 
         // 模块 👩‍💻
-        content: `
-          新模块 👩‍💻 <a href='https://rain120.github.io/study-notes/interview/guide'>面试</a>
-          ，欢迎阅读👁👁
-        `,
+        // content: `
+        //   新模块 👩‍💻 <a href='https://rain120.github.io/study-notes/interview/guide'>面试</a>
+        //   ，欢迎阅读👁👁
+        // `,
         // backgroundColor: "#fafbfc", // Defaults to `#fff`.
         // textColor: "#091E42", // Defaults to `#000`.
       },
