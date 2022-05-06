@@ -15,6 +15,8 @@ title: Summary
 
 [重学前端](https://doc.vercel.app/frontend/)
 
+[QCon上海2020全球开发者大会PPT合集](https://github.com/TiScrip/QCon2020-shanghai)
+
 ### Interview
 
 [big frontend dev](https://bigfrontend.dev/zh)
