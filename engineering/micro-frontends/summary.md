@@ -44,7 +44,8 @@ Techniques, strategies and recipes for building a modern web app with multiple t
     - bootstrap
     - mount
     - unmount
-    TODO
+    
+    详细方案[参考](./lifecycle.md)
     :::
 
 -   预加载
