@@ -32,6 +32,10 @@ Digital Color Meter(macOS自带)： `Mac`直接数码取色器即可
 
 [Iconfont](https://iconfont.cn/)
 
+[Google icons](https://fonts.google.com/icons)
+
+[Google fonts](https://fonts.google.com/)
+
 [FontAwesome](https://fontawesome.com/)
 
 [Ionicons](https://ionicons.com/)
