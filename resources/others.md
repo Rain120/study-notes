@@ -47,19 +47,11 @@ https://www.suiyongsuiqi.com/zh/
 
 ---
 
-~~[收信箱](https://www.shouxinxiang.com/)~~
-
-~~[在线短信接收 1](https://www.materialtools.com/) 没有中国号码了~~
-
 [在线短信接收 2](http://www.shejiinn.com/) 没有中国号码了
 
 [在线短信接收-接码号](https://jiemahao.com/)
 
-[Z-SMS](http://www.z-sms.com/)
-
 [隐私短信](https://www.yinsiduanxin.com/)
-
-[云短信](https://yunduanxin.net/)
 
 ### 其他
 
