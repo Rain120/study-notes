@@ -33,7 +33,7 @@ const config = {
       announcementBar: {
         id: "feature_release", // Any value that will identify this message.
         content: `
-          <a href='https://rain120.github.io/study-notes/books/read/react/a-hundred-things-i-learned-working-on-the-react-team'>阅书阁</a> 
+          <a href='https://rain120.github.io/study-notes/books/read/engineering/houjin-exploration-and-practice-of-micro-front-end-technology'>阅书阁 侯晋 - 抖音电商微前端技术探索与实践</a> 
           新上线，欢迎体验
         `,
         // 文章📚 
