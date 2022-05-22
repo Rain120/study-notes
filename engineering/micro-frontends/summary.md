@@ -114,3 +114,5 @@ Luigi 可帮助您构建可模块化, 可扩展, 可伸缩和一致的 UI 和 We
 更多 [你必须知道的 11 个微前端框架](https://www.infoq.cn/article/22ciyqbs3s0bhekvnorp)
 
 ## 参考地址
+
+[微前端在美团外卖的实践](https://tech.meituan.com/2020/02/27/meituan-waimai-micro-frontends-practice.html)
