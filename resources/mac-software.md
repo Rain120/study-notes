@@ -74,6 +74,18 @@ brew update-reset
 
 ![alfred](./sw/alfred.png)
 
+### raycast
+
+![raycast](https://www.raycast.com/assets/img/hero-raycast-frame@2x.ea005c6e.png)
+
+https://www.raycast.com/
+
+### uTools
+
+https://u.tools/
+
+![uTools](https://res.u-tools.cn/home_page-2.mp4)
+
 ### [KeyCastr](https://github.com/keycastr/keycastr)
 
 [下载地址](https://github.com/Rain120/Free-Source/blob/master/Mac%20Tools/KeyCastr.app.zip)
