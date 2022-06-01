@@ -125,7 +125,31 @@ shit
 
 ### CR 过程
 
-### CR 步骤
+### CR 要点
+
+- 设计模式
+
+- 业务逻辑
+
+- 测试
+
+> **通用包建议关注** 
+
+:::tip
+代码是否具有正确且设计良好的自动化测试，[cypress](https://docs.cypress.io/) 了解一下
+:::
+
+- 风格
+
+:::tip
+参考 [代码风格](https://rain120.github.io/study-notes/engineering/coding/style)
+:::
+
+- 注释 文档
+
+:::tip
+参考 [代码注释](https://rain120.github.io/study-notes/engineering/coding/annotation)
+:::
 
 ### 评论相关
 
