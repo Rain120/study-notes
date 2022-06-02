@@ -129,7 +129,13 @@ shit
 
 - 设计模式
 
+[设计模式](https://rain120.github.io/awesome-javascript-code-implementation/zh/design-pattern)
+
 - 业务逻辑
+
+:::tip
+依据业务开发，没有建议
+:::
 
 - 测试
 
