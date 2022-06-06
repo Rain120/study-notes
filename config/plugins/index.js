@@ -170,9 +170,38 @@ const plugins = pluginContentDocsConfigList
         // 	}
         // ],
         [
+            '@docusaurus/preset-classic',
+            {
+              sitemap: {
+                changefreq: 'weekly',
+                priority: 0.5,
+                ignorePatterns: ['/tags/**'],
+                filename: 'sitemap.xml',
+              },
+            },
+        ],
+        [
             require.resolve('@docusaurus/plugin-pwa'),
             {
                 debug: true,
+                offlineModeActivationStrategies: ['always'],
+                pwaHead: [
+                    {
+                        tagName: 'link',
+                        rel: 'icon',
+                        href: '/img/docusaurus.png',
+                    },
+                    {
+                        tagName: 'link',
+                        rel: 'manifest',
+                        href: 'static/manifest.json',
+                    },
+                    {
+                        tagName: 'meta',
+                        name: 'theme-color',
+                        content: 'rgb(37, 194, 160)',
+                    },
+                ],
             },
         ],
         '@docusaurus/theme-live-codeblock',

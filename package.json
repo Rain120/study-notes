@@ -14,18 +14,6 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids"
   },
-  "dependencies": {
-    "@mdx-js/react": "^1.6.21",
-    "@svgr/webpack": "^5.5.0",
-    "clsx": "^1.1.1",
-    "config-webpack-plugin": "file:config/plugins/config-webpack-plugin",
-    "file-loader": "^6.2.0",
-    "prism-react-renderer": "^1.2.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-pdf": "^5.7.2",
-    "url-loader": "^4.1.1"
-  },
   "browserslist": {
     "production": [
       ">0.5%",
@@ -38,11 +26,24 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "@mdx-js/react": "^1.6.21",
+    "@svgr/webpack": "^5.5.0",
+    "clsx": "^1.1.1",
+    "config-webpack-plugin": "file:config/plugins/config-webpack-plugin",
+    "file-loader": "^6.2.0",
+    "prism-react-renderer": "^1.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-pdf": "^5.7.2",
+    "url-loader": "^4.1.1"
+  },
   "devDependencies": {
-    "@docusaurus/core": "^2.0.0-beta.17",
-    "@docusaurus/plugin-pwa": "^2.0.0-beta.17",
-    "@docusaurus/preset-classic": "^2.0.0-beta.17",
-    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.17",
+    "@docusaurus/core": "^2.0.0-beta.21",
+    "@docusaurus/plugin-pwa": "^2.0.0-beta.21",
+    "@docusaurus/plugin-sitemap": "^2.0.0-beta.21",
+    "@docusaurus/preset-classic": "^2.0.0-beta.21",
+    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.21",
     "@easyops-cn/docusaurus-search-local": "^0.23.0",
     "nodejieba": "^2.5.2",
     "prettier": "^2.6.2",
