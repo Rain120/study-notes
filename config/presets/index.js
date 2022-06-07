@@ -36,6 +36,12 @@ const presets = [
 			  // Optional fields.
 			  anonymizeIP: true, // Should IPs be anonymized?
 			},
+			sitemap: {
+                changefreq: 'weekly',
+                priority: 0.5,
+                ignorePatterns: ['/tags/**'],
+                filename: 'sitemap.xml',
+			},
 		}),
 	],
 ].filter(Boolean);
