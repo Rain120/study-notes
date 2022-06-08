@@ -13,6 +13,5 @@ sidebar_position: 1
 - [Typescript 开发小建议](./tips.md)
 - [Typescript + Eslint 配置Qa](./ts-eslint-qa.md)
 - [Typescript 快速定义QuickType](./quicktype.md)
-- [Typescript 快速定义 tapTypes 实践](./taptypes.md)
-  - [JSON Schema 知识流](./json-schema.md)
+- [JSON Schema 知识流](./json-schema.md)
 
