@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkstudy_notes=self.webpackChunkstudy_notes||[]).push([[2611],{87942:function(s){s.exports=JSON.parse('{"label":"notes 2","permalink":"/study-notes/blog/tags/notes-2","allTagsPath":"/study-notes/blog/tags","count":1}')}}]);

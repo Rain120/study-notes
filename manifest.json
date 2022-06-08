@@ -1,0 +1,15 @@
+{
+    "name": "Study Notes",
+    "short_name": "study-notes",
+    "display": "standalone",
+    "start_url": "/",
+    "theme_color": "#313131",
+    "background_color": "#313131",
+    "icons": [
+        {
+            "src": "img/chao.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ]
+}
