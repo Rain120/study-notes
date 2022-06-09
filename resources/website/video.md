@@ -23,3 +23,7 @@
 [novipnoad](https://www.novipnoad.com/)
 
 [看片狂人](http://kpkuang.xyz) or [2](https://kpkuang.cc)
+
+[图片找番剧](https://trace.moe)
+
+[台词找电影](http://www.zhaotaici.cn)

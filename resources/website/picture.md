@@ -6,7 +6,6 @@
 
 [幕后](https://muhou.net/)
 
-
 [unDraw](https://undraw.co/): 可免费使用的优质插图插画图片素材，并且可以自己定制主题颜色
 
 [Unsplash](https://unsplash.com/)
@@ -14,6 +13,10 @@
 [remove - 移除背景](https://www.remove.bg/)
 
 ![remove-bg](./images/remove-bg.png)
+
+[擦除图片物体](https://www.magiceraser.io)
+
+[抠图](https://www.backgrounderaser.io)
 
 [在线替换图片背景](https://www.gaoding.com/koutu)
 
@@ -42,6 +45,12 @@
 ![carbon](./images/carbon.png)
 
 [codeimg](https://codeimg.io/): 源代码生成图片工具
+
+[画作动起来](https://sketch.metademolab.com)
+
+[卡通化你的脸](https://toonme.com/result)
+
+[照片上色](https://deepai.org/machine-learning-model/colorizer)
 
 [码力全开](https://design.maliquankai.com/)
 
@@ -87,8 +96,6 @@
 
 ![recompressor.png](./images/recompressor.png)
 
-
-
 [Tinyjpg](https://tinyjpg.com/): 一次性可批量压缩最多20张不超过`5M`的`JPG`或者`PNG`图片，在线就可以使用。
 
 [jpeg.io](https://www.jpeg.io/): 优点是支持压缩的格式特别多，连`PSD` 都可以压缩，不过压缩后的格式会统一为`JPG`。免费可打包下载。
@@ -107,8 +114,6 @@
 [智图](https://zhitu.isux.us/): 智图是腾讯`ISUX`前端团队开发的一个专门用于图片压缩和图片格式转换的平台，其功能包括针对`png`,`jpeg`,`gif`等各类格式图片的压缩，以及为上传图片自动选择最优的图片格式。同时，智图平台还会为用户转换一份`webp`格式的图片。
 
 ![zhitu.png](./images/zhitu.png)
-
-
 
 [图好快](https://www.tuhaokuai.com/): 可以压缩静态图，还可以压缩`Gif`，还有一系列贴心的小功能：批量下载、加水印、格式转换，一键处理淘宝店图等等。
 
