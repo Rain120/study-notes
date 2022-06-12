@@ -9,7 +9,6 @@
 ## 写代码到底要不要写注释
 
 > Clean code should read like well-written prose. — Robert C. Martin(罗伯特·塞西尔·马丁)
->
 
 著名诗人**雷某**也说
 
@@ -19,14 +18,14 @@
 
 也许你会说
 
-- **代码即注释** ( 我 🔪 呢，让我手刃了你这货 )
-- **注释很重要，每一个地方都需要留注释** ( emm, 看来很闲，闲出病来了，来，把这几个需求实现了 💻   )
+-   **代码即注释** ( 我 🔪 呢，让我手刃了你这货 )
+-   **注释很重要，每一个地方都需要留注释** ( emm, 看来很闲，闲出病来了，来，把这几个需求实现了 💻 )
 
 这些想法多半是偷懒的思路，你还别想了，**Now**，是时候展现我真正的技术了，📽📽📽
 
 我觉得注释是**必须要**的, 也是**不需要**的。
 
-很多开发者，由于需求更新迭代太快 `or` 个人习惯等一系列的原因，**手撸千万行，都不曾留下一言半语的注释**，**Maybe 你的代码和雷老板的诗一样优雅吧**，`but` 你能确保很长一段时间后你还能看得懂吗？你能保证接你代码的人能看得懂你的代码嘛？你能，你能，你能，🙅‍♀️不不不，你不行。所以必须要注释，那为什么又说不需要注释呢？
+很多开发者，由于需求更新迭代太快 `or` 个人习惯等一系列的原因，**手撸千万行，都不曾留下一言半语的注释**，**Maybe 你的代码和雷老板的诗一样优雅吧**，`but` 你能确保很长一段时间后你还能看得懂吗？你能保证接你代码的人能看得懂你的代码嘛？你能，你能，你能，🙅‍♀️ 不不不，你不行。所以必须要注释，那为什么又说不需要注释呢？
 
 注释就是对代码的解释和说明。用于**代码内容的总结**<sup>①</sup>、**表达开发者的意图**<sup>②</sup>， 为了让别人和自己很容易看懂，一看就知道这段代码是做什么用的。
 
@@ -34,11 +33,11 @@
 
 **① 代码中的总结**
 
-  简化代码为一句或两句话，这种注释比重复代码更有价值，能帮助人快速理解代码
+简化代码为一句或两句话，这种注释比重复代码更有价值，能帮助人快速理解代码
 
 **② 代码意图的描述**
 
-  解释代码的目的。意图注释在问题一级上，而不是在答案一级，是一句利用答案的总结描述。『理解最初的编程意图是最难的问题』
+解释代码的目的。意图注释在问题一级上，而不是在答案一级，是一句利用答案的总结描述。『理解最初的编程意图是最难的问题』
 
 那就要知道什么注释需要注释，什么不需要？什么才是好的注释，什么是坏的注释？
 
@@ -54,60 +53,60 @@
 
 -   **多余的注释**
 
-  简单明了的函数，其函数注释说明纯属多余，读注释的时间可能多余读函数代码的时间
+简单明了的函数，其函数注释说明纯属多余，读注释的时间可能多余读函数代码的时间
 
 -   **误导性注释**
 
-  注释不够精确，存在与实际运行不相符的情况，误导使用者进行错误的处理
+注释不够精确，存在与实际运行不相符的情况，误导使用者进行错误的处理
 
 -   **日志性注释**
 
-  在每个模块开始添加每一次修改的注释性日志已经没有必要，现在很多代码维护工具提供更好的修改记录
+在每个模块开始添加每一次修改的注释性日志已经没有必要，现在很多代码维护工具提供更好的修改记录
 
 -   **废话注释**
 
-  见名知意的就不要废话了，`Eg:`
+见名知意的就不要废话了，`Eg:`
 
-  ```js
-  // 获取名字 ------> 废话
-  const getUserName = profile.name;
-  ```
+```js
+// 获取名字 ------> 废话
+const getUserName = profile.name;
+```
 
 -   **循规式注释**
 
-  每个函数或者每个变量都有标准的注释完全没有必要，除非是编写公共 API
+每个函数或者每个变量都有标准的注释完全没有必要，除非是编写公共 API
 
 ## 注释的种类 <sup>参考代码大全</sup>
 
 注释可以分成五类
 
-- 代码的重复
+-   代码的重复
 
-  重复的注释，用不同的词重申了代码的内容。它没有给读者提供代码的附加信息。
+    重复的注释，用不同的词重申了代码的内容。它没有给读者提供代码的附加信息。
 
-- 代码的解释
+-   代码的解释
 
-  解释性注释，典型地用于解释复杂的，有效的和灵敏的代码段。这种情况下，他们是有用的，但常常是由于代码是易混淆的。假如代码复杂到需要解释，那么改进代码总比增加注释更 好些。使代码本身清晰，然后使用总结或注释。
+    解释性注释，典型地用于解释复杂的，有效的和灵敏的代码段。这种情况下，他们是有用的，但常常是由于代码是易混淆的。假如代码复杂到需要解释，那么改进代码总比增加注释更 好些。使代码本身清晰，然后使用总结或注释。
 
-- 代码中的标记
+-   代码中的标记
 
-  标记注释并非是故意留在代码中的注释。它是给开发者的记录，表示工作还未做。一些开发者的标记注释为语法错误的标记（例如**// TODO**），因而编译程序标记它并提醒他们要 做更多的工作。其它开发者把一套特殊字符放人注释中，因而他们可以发现它们，但编译程序 不能识别它们。
+    标记注释并非是故意留在代码中的注释。它是给开发者的记录，表示工作还未做。一些开发者的标记注释为语法错误的标记（例如**// TODO**），因而编译程序标记它并提醒他们要 做更多的工作。其它开发者把一套特殊字符放人注释中，因而他们可以发现它们，但编译程序 不能识别它们。
 
-- 代码的总结
+-   代码的总结
 
-  总结代码的注释做法是；它简化一些代码行成一或两句话。这样的注释比起仅重复代码而 使读者比读代码更快的那种注释更有价值了。总结注释是相当有用的，特别是当其它人但不是 代码的编者试图修改代码时。
+    总结代码的注释做法是；它简化一些代码行成一或两句话。这样的注释比起仅重复代码而 使读者比读代码更快的那种注释更有价值了。总结注释是相当有用的，特别是当其它人但不是 代码的编者试图修改代码时。
 
-- 代码意图的描述
+-   代码意图的描述
 
-  意图这一层上的注释，解释了代码的目的。意图注释在问题一级上，而不是在答案一级操作。
+    意图这一层上的注释，解释了代码的目的。意图注释在问题一级上，而不是在答案一级操作。
 
 ## 注释的分类
 
->  PS: 我还查了下这个 👉👉👉 “分类”是按某种规则划分，而“种类”是划分后的一个结果。
+> PS: 我还查了下这个 👉👉👉 “分类”是按某种规则划分，而“种类”是划分后的一个结果。
 
 ### 行注释
 
-在符号后那一行不会被编译(显示), 行代码可以写在语句上面，也可以写在语句后面，看个人习惯，我个人习惯在上面👆，因为好看啊。😛😛😛
+在符号后那一行不会被编译(显示), 行代码可以写在语句上面，也可以写在语句后面，看个人习惯，我个人习惯在上面 👆，因为好看啊。😛😛😛
 
 ### 块注释
 
@@ -167,7 +166,7 @@
 
 ```html
 <div>
-  <!-- 这是 HTML 的注释 -->
+    <!-- 这是 HTML 的注释 -->
 </div>
 ```
 
@@ -175,7 +174,7 @@
 
 ```css
 .root {
-  /* 这是 CSS 的注释 */
+    /* 这是 CSS 的注释 */
 }
 ```
 
@@ -183,8 +182,8 @@
 
 ```scss
 .root {
-  /* 这是 SCSS 的注释 */
-  // 这也是 SCSS 的注释
+    /* 这是 SCSS 的注释 */
+    // 这也是 SCSS 的注释
 }
 ```
 
@@ -192,8 +191,8 @@
 
 ```less
 .root {
-  /* 这是 LESS 的注释 */
-  // 这也是 LESS 的注释
+    /* 这是 LESS 的注释 */
+    // 这也是 LESS 的注释
 }
 ```
 
@@ -241,20 +240,20 @@ export function executeAction(
 ```ts
 // 推导状态
 export enum IDerivationState {
-  // 在运行之前或(在外部批处理中且未观察到)之前, 派生未保存有关 依赖项 树的任何数据
-  NOT_TRACKING = -1,
+    // 在运行之前或(在外部批处理中且未观察到)之前, 派生未保存有关 依赖项 树的任何数据
+    NOT_TRACKING = -1,
 
-  // 自从上次计算不会重新计算导数以来, 浅层依赖关系没有变化, 这就是使mobx快速运行的原因
-  UP_TO_DATE = 0,
+    // 自从上次计算不会重新计算导数以来, 浅层依赖关系没有变化, 这就是使mobx快速运行的原因
+    UP_TO_DATE = 0,
 
-  // 一些深层依赖关系已更改, 但不知道是否浅层依赖关系已更改
-  // 将需要首先检查 UP_TO_DATE 或 POSSIBLY_STALE 当前是否只有 ComputedValue
-  // 将传播具有此状态的 POSSIBLY_STALE
-  // 不必在每次依赖关系更改时都重新计算
-  POSSIBLY_STALE = 1,
+    // 一些深层依赖关系已更改, 但不知道是否浅层依赖关系已更改
+    // 将需要首先检查 UP_TO_DATE 或 POSSIBLY_STALE 当前是否只有 ComputedValue
+    // 将传播具有此状态的 POSSIBLY_STALE
+    // 不必在每次依赖关系更改时都重新计算
+    POSSIBLY_STALE = 1,
 
-  // 自上次计算以来, 浅层依赖性已发生变化, 并且下一次需要推导时, 需要重新推导。
-  STALE = 2
+    // 自上次计算以来, 浅层依赖性已发生变化, 并且下一次需要推导时, 需要重新推导。
+    STALE = 2,
 }
 ```
 
@@ -272,23 +271,23 @@ export const getDescriptor = Object.getOwnPropertyDescriptor;
 `Bug Fix` 链接注释
 
 ```js
-const path = require('path')
+const path = require('path');
 
 // get drive on windows
-function getRootPath (p) {
-  p = path.normalize(path.resolve(p)).split(path.sep)
-  if (p.length > 0) return p[0]
-  return null
+function getRootPath(p) {
+    p = path.normalize(path.resolve(p)).split(path.sep);
+    if (p.length > 0) return p[0];
+    return null;
 }
 
 // http://stackoverflow.com/a/62888/10333 contains more accurate
 // TODO: expand to include the rest
-const INVALID_PATH_CHARS = /[<>:"|?*]/
+const INVALID_PATH_CHARS = /[<>:"|?*]/;
 
-function invalidWin32Path (p) {
-  const rp = getRootPath(p)
-  p = p.replace(rp, '')
-  return INVALID_PATH_CHARS.test(p)
+function invalidWin32Path(p) {
+    const rp = getRootPath(p);
+    p = p.replace(rp, '');
+    return INVALID_PATH_CHARS.test(p);
 }
 ```
 
@@ -297,16 +296,16 @@ function invalidWin32Path (p) {
 ```js
 // LINK_TO: https://github.com/immerjs/immer/blob/9257084c2b3c04fc9727e4c701d672483a7767b7/src/utils/common.ts#L65
 export const getOwnPropertyDescriptors =
-  Object.getOwnPropertyDescriptors ||
-  function getOwnPropertyDescriptors(target: any): Object {
-    // Polyfill needed for Hermes and IE, see https://github.com/facebook/hermes/issues/274
-    const result: any = {};
-    ownKeys(target).forEach(key => {
-      result[key] = getDescriptor(target, key);
-    });
+    Object.getOwnPropertyDescriptors ||
+    function getOwnPropertyDescriptors(target: any): Object {
+        // Polyfill needed for Hermes and IE, see https://github.com/facebook/hermes/issues/274
+        const result: any = {};
+        ownKeys(target).forEach(key => {
+            result[key] = getDescriptor(target, key);
+        });
 
-    return result;
-  };
+        return result;
+    };
 ```
 
 **Shell**
@@ -333,24 +332,23 @@ echo "I'm so handsome!"
 
 Note: 忽略大小写，可添加特殊符号，如 `@`
 
-- **// TODO:** 有功能代码待编写，待实现的功能在说明中会简略说明
+-   **// TODO:** 有功能代码待编写，待实现的功能在说明中会简略说明
 
-- **// HOTFIX:** 代码需要修正，甚至代码是错误的，不能工作，需要修复，如何修正会在说明中简略说明
+-   **// HOTFIX:** 代码需要修正，甚至代码是错误的，不能工作，需要修复，如何修正会在说明中简略说明
 
-- **// BUGFIX:** `BUGFIX` 相关描述
+-   **// BUGFIX:** `BUGFIX` 相关描述
 
-- **// N.B.** 特别说明`(Note Bell)`
+-   **// N.B.** 特别说明`(Note Bell)`
 
-- **// LINK_TO:** 与此问题相关解决方案 `or` `issue`
+-   **// LINK_TO:** 与此问题相关解决方案 `or` `issue`
 
-- **// HACK:** 编写得不好或格式错误，需要根据自己的需求去调整程序代码
+-   **// HACK:** 编写得不好或格式错误，需要根据自己的需求去调整程序代码
 
-- **// NOTE:** 说明代码如何工作
+-   **// NOTE:** 说明代码如何工作
 
-- **// INFO:** 相关信息描述
+-   **// INFO:** 相关信息描述
 
-- **// TAG:** `Tag` 相关描述
-
+-   **// TAG:** `Tag` 相关描述
 
 ![label-annotation.png](./images/label-annotation.png)
 
@@ -542,7 +540,7 @@ linux: ctrl + meta + t
 }
 ```
 
-了解更多 `VS Code` 技巧 `or` `Tips` 👉👉👉  [Here](https://rain120.github.io/study-notes/tools/vscode/todo-tree)
+了解更多 `VS Code` 技巧 `or` `Tips` 👉👉👉 [Here](https://rain120.github.io/study-notes/tools/vscode/todo-tree)
 
 ## 参考资料
 
@@ -554,5 +552,4 @@ linux: ctrl + meta + t
 
 [代码整洁之道 - 第 4 章 注释](http://gdut_yy.gitee.io/doc-cleancode/ch4.html)
 
-[代码大全 19.4 有效注释的关键](https://github.com/Rain120/study-notes/blob/master/docs/knowledge-map/code-complete.pdf)
-
+[代码大全 19.4 有效注释的关键](https://github.com/Rain120/study-notes/blob/master/engineering/coding/code-complete.pdf)
