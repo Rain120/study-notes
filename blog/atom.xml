@@ -2,11 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rain120.github.io/study-notes/study-notes/blog</id>
     <title>小超子的笔记 Blog</title>
-    <updated>2021-10-13T00:00:00.000Z</updated>
+    <updated>2022-04-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rain120.github.io/study-notes/study-notes/blog"/>
     <subtitle>小超子的笔记 Blog</subtitle>
     <icon>https://rain120.github.io/study-notes/study-notes/img/chao.png</icon>
+    <entry>
+        <title type="html"><![CDATA[换新工作了]]></title>
+        <id>/2022/04/22/</id>
+        <link href="https://rain120.github.io/study-notes/study-notes/blog/2022/04/22/"/>
+        <updated>2022-04-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[从BD调到了总部了]]></summary>
+        <content type="html"><![CDATA[<p>从BD调到了总部了</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[笔记更新版本迭代]]></title>
         <id>v2</id>
