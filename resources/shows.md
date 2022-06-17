@@ -7,6 +7,8 @@ sidebar_position: 5
 
 >  追剧神器，教你轻松追剧
 
+[茶杯狐](https://cupfox.app/)
+
 [天天美剧](http://www.ttzmz.vip/)
 
 主要提供下载，有时也有在线资源，喜欢下载看的，可以收藏一下
