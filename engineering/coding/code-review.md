@@ -4,6 +4,8 @@
 
 全称 Code Review, 代码审查。指对计算机源代码系统化地审查，常用软件同行评审的方式进行，其目的是在找出及修正在软件开发初期未发现的错误，提升软件质量及开发者的技术。
 
+![Code Review](https://d33wubrfki0l68.cloudfront.net/9063209efb3c0bce954cb73d9d43fdefbbf00316/edd16/human-code-reviews-1/flowchart.png)
+
 ### 优势
 
 1. 提升代码质量
@@ -102,7 +104,6 @@ shit
 
 :::
 
-
 ### 调整好你的心态
 
 :::tip
@@ -119,42 +120,58 @@ shit
 
 [Google Code Review Developer Guide](https://github.com/google/eng-practices/blob/master/review/developer/index.md)
 
+### Code
+
+-   代码风格
+
+:::tip
+一般加入一个团队的话，都会有的，可以通过安装插件，配置一下就好了。
+
+可以使用 eslint prettier 以及类似的代码检查工具，更多可参考 [Google Javascript 风格指南](https://zh-google-styleguide.readthedocs.io/en/latest/google-javascript-styleguide/contents/)、[Google TypeScript 风格指南](https://zh-google-styleguide.readthedocs.io/en/latest/google-typescript-styleguide/contents/)、[Css stylelint](https://stylelint.io/)、[Angular coding style guide](https://angular.io/guide/styleguide)
+:::
+
+-   注释文档
+
+:::tip
+程序员中有一些梗，其中有一条就是，最怕别人的代码没有一条注释，裸奔。虽然写注释很浪费时间，但是这个确实对 `reviewer` 来说，能提供很大的帮助，可以直观的了解你做的内容，而不需要去思考你的代码是干嘛的。
+
+关于注释可参考 [代码注释](https://rain120.github.io/study-notes/engineering/coding/annotation)
+:::
+
+-   测试
+
+> **通用包建议关注**
+
+:::tip
+代码是否具有正确且设计良好的自动化测试，[cypress](https://docs.cypress.io/) 了解一下
+:::
+
 ## Reviewer
 
 评审者需要注意 ⚠︎、思考 🤔 的点
 
 ### CR 过程
 
+CR 过程中的更多思考点，应该从如何让它变成一个可以 **在团队中共享的知识** 以及 **提高代码质量** 的角度出发。
+
 ### CR 要点
 
-- 设计模式
+-   设计模式
 
-[设计模式](https://rain120.github.io/awesome-javascript-code-implementation/zh/design-pattern)
+    [设计模式](https://rain120.github.io/awesome-javascript-code-implementation/zh/design-pattern)
 
-- 业务逻辑
+-   业务逻辑
 
 :::tip
-依据业务开发，没有建议
+依据业务开发找一个相对熟悉的同学，别抬杠说 PM 啊，没有其他建议
 :::
 
-- 测试
-
-> **通用包建议关注** 
+-   风格
 
 :::tip
-代码是否具有正确且设计良好的自动化测试，[cypress](https://docs.cypress.io/) 了解一下
-:::
+依据团队 or 公司的开发规范即可。
 
-- 风格
-
-:::tip
-参考 [代码风格](https://rain120.github.io/study-notes/engineering/coding/style)
-:::
-
-- 注释 文档
-
-:::tip
-参考 [代码注释](https://rain120.github.io/study-notes/engineering/coding/annotation)
+个人的话，可参考 [代码风格](https://rain120.github.io/study-notes/engineering/coding/style)
 :::
 
 ### 评论相关
@@ -174,6 +191,12 @@ shit
 当然你们可以根据团队规范来制定类别，比如说缩写 前缀是[P0], [P1], [p2], [O] optional，[Q] question
 :::
 
+### 心态
+
+作为一个 `reviewer`，对不同质量的 CR 请一定要心平气和，保持正面的态度，**`peace and confidence`**，不要有有色眼镜，对大佬的代码就望而却步，对新手或者写的不好的代码就开喷，不要过度自信和自负。
+
+在 review 中，其实并不是让你对代码怎么评判，而是根据你的经验，提供一些好的经验和建议，当然了，`review` 一份写的很好的代码，也可以从中学习很多知识，提升自己的能力，互相学习，互相帮助。`Enjoy it.`
+
 ## CR 沉淀
 
 好的东西，当然要记得分享了，CR 也是一样的，当出现了一个比较有代表性的 CR，比如说 **一个好的解决方案**，**一个比较有代表性的问题**，这类的 CR 就应该沉淀下来。他们有着天然的优势:
@@ -192,3 +215,7 @@ shit
 [Google 开发者代码审查指南 中文版](https://jimmysong.io/eng-practices/docs/review/)
 
 [CODE REVIEW 中的几个提示](https://coolshell.cn/articles/1302.html)
+
+-   How to Do Code Reviews Like a Human
+    -   [part 1](https://mtlynch.io/human-code-reviews-1/)
+    -   [part 2](https://mtlynch.io/human-code-reviews-2/)
