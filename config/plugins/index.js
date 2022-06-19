@@ -87,20 +87,18 @@ const docDirs = [
         },
     },
     {
-    	key: 'books',
-    	sidebarKey: 'docs',
-    	options: {
-    		exclude: [
-    			'**/read/components/**/*'
-    		],
-    	},
-    	navbar: {
-    		to: '/books/guide',
-    		position: 'left',
-    		label: '书籍分享',
-    		docsPluginId: 'books',
-    		activeBaseRegex: '/books/',
-    	},
+        key: 'books',
+        sidebarKey: 'docs',
+        options: {
+            exclude: ['**/read/components/**/*'],
+        },
+        navbar: {
+            to: '/books/guide',
+            position: 'left',
+            label: '书籍分享',
+            docsPluginId: 'books',
+            activeBaseRegex: '/books/',
+        },
     },
     {
         key: 'review',
@@ -194,7 +192,18 @@ const plugins = pluginContentDocsConfigList
             },
         ],
         '@docusaurus/theme-live-codeblock',
-        'config-webpack-plugin'
+        [
+            '@docusaurus/plugin-ideal-image',
+            {
+                quality: 85,
+                max: 1030, // max resized image's size.
+                min: 640, // min resized image's size. if original is lower, use that size.
+                steps: 2, // the max number of images generated between min and max (inclusive)
+                disableInDev: false,
+            },
+        ],
+        'config-webpack-plugin',
+        'plugin-image-zoom',
     ]);
 
 module.exports = {
