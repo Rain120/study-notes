@@ -117,3 +117,4 @@ sidebar_position: 4
 
 [Qlearly - Tab and Bookmark Manager](https://chrome.google.com/webstore/detail/qlearly-tab-and-bookmark/aicaflgmmblfaneodjfhkilgplnpjmig?hl=zh-CN): 按列和面板组织您喜欢的网站。 每次打开新标签页时，您的面板都会在一秒钟内加载。
 
+[iTab](https://chrome.google.com/webstore/detail/itab%E6%96%B0%E6%A0%87%E7%AD%BE%E9%A1%B5/mhloojimgilafopcmlcikiidgbbnelip) 一个让你不受广告干扰的个性化卡片式起始页插件

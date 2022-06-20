@@ -37,24 +37,6 @@ https://www.zusms.com/phone/china
 
 https://smsreceivefree.com/ US Canada
 
----
-
-https://www.zaixianjiema.com/
-
-https://www.w3h5.com/post/619.html
-
-https://zh.mytrashmobile.com/
-
-https://www.suiyongsuiqi.com/zh/
-
----
-
-[在线短信接收 2](http://www.shejiinn.com/) 没有中国号码了
-
-[在线短信接收-接码号](https://jiemahao.com/)
-
-[隐私短信](https://www.yinsiduanxin.com/)
-
 ### 其他
 
 [IP & Phone 等信息](https://www.qqzeng.com/)
