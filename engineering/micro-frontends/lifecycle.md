@@ -6,3 +6,5 @@
 2. mount(挂载)
 3. update(更新)
 4. unmount(卸载)
+
+![lifecycle](./images/lifecycle.png)
