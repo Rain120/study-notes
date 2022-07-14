@@ -54,9 +54,8 @@ Techniques, strategies and recipes for building a modern web app with multiple t
     :::
 
 -   沙箱隔离
-    :::tip 更多详情
+    :::tip [更多详情](./sandbox.md)
     对 JavaScript和CSS进行代码隔离, 主要分为快照沙箱, Proxy(代理)沙箱。
-    WIP
     :::
 
 -   通信
