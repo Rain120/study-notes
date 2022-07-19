@@ -15,13 +15,59 @@ Techniques, strategies and recipes for building a modern web app with multiple t
 ## 优点
 
 -   独立开发, 独立部署
+    :::note
+    子仓库可以有一套独立的、完整的开发流程，部署流程
+    :::
+
 -   独立运行
     :::note
     每个微应用之间状态隔离, 运行时状态不共享
     :::
 
 -   增量升级
+    :::note
+    运行时加载，可以在没有重建的情况下添加，删除或替换前端的各个部分
+    :::
+
 -   技术栈无关
+    :::note
+    每个团队都应该能够选择和升级其技术栈，而无需与其他团队进行协调。
+    :::
+
+## 实现方式
+
+![integration.png](./images/integration.png)
+
+### 构建时集成
+
+通常将第三方库中的组件作为包，在构建时引入依赖。这种实现引入新的微前端需要重新编译，不够灵活。
+
+常见的有 Monorepo(Lerna, nx, rush等)，Web Components。
+
+### 服务端集成
+
+通过 Nginx 配置反向代理来实现不同路径映射到不同应用上。
+
+```conf
+server {
+    listen 9527
+    server_name localhost;
+
+    root directory;
+    index index.html index.htm;
+
+    # Redirect / to /pages
+    rewrite ^/$ http://localhost:8527/pages redirect;
+
+    location /pages {
+        set $PAGE 'pages';
+    }
+}
+```
+
+### 运行时集成
+
+一次加载或通过延迟加载按需动态将微前端注入到容器应用程序中时。当引入新的微前端的时候，不需要构建，可以动态在代码中定义加载。
 
 ## 核心
 
@@ -115,3 +161,5 @@ Luigi 可帮助您构建可模块化, 可扩展, 可伸缩和一致的 UI 和 We
 ## 参考地址
 
 [微前端在美团外卖的实践](https://tech.meituan.com/2020/02/27/meituan-waimai-micro-frontends-practice.html)
+
+[Micro Frontends With Example](https://dzone.com/articles/micro-frontends-by-example-8?spm=a2c6h.12873639.article-detail.7.1d877ce7tfQAuP)
