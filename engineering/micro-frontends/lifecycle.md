@@ -7,4 +7,6 @@
 3. update(更新)
 4. unmount(卸载)
 
+## Garfish 生命周期
+
 ![lifecycle](./images/lifecycle.png)
