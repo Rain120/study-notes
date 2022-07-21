@@ -22,6 +22,20 @@ https://github.com/Rain120/Web-Study/issues/16
 
 ## 浏览器相关
 
+[图解浏览器的基本工作原理](https://zhuanlan.zhihu.com/p/47407398)
+
+[How browsers work](https://web.dev/howbrowserswork/) 注意：生肉
+
+### Google Blog
+
+[Round-up of web browser internals resources](https://developer.chrome.com/blog/round-up-of-web-browser-internals-resources/) 主要收集web浏览器内部工作原理的资源。
+
+- Inside look at modern web browser
+[Part 1](https://developer.chrome.com/blog/inside-browser-part1/)
+[Part 2](https://developer.chrome.com/blog/inside-browser-part2/)
+[Part 3](https://developer.chrome.com/blog/inside-browser-part3/)
+[Part 4](https://developer.chrome.com/blog/inside-browser-part4/)
+
 ## 事件循环(Event Loop)
 
 [一次弄懂Event Loop（彻底解决此类面试问题）](https://juejin.cn/post/6844903764202094606)
