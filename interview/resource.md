@@ -31,10 +31,10 @@ https://github.com/Rain120/Web-Study/issues/16
 [Round-up of web browser internals resources](https://developer.chrome.com/blog/round-up-of-web-browser-internals-resources/) 主要收集web浏览器内部工作原理的资源。
 
 - Inside look at modern web browser
-[Part 1](https://developer.chrome.com/blog/inside-browser-part1/)
-[Part 2](https://developer.chrome.com/blog/inside-browser-part2/)
-[Part 3](https://developer.chrome.com/blog/inside-browser-part3/)
-[Part 4](https://developer.chrome.com/blog/inside-browser-part4/)
+  - [Part 1](https://developer.chrome.com/blog/inside-browser-part1/)
+  - [Part 2](https://developer.chrome.com/blog/inside-browser-part2/)
+  - [Part 3](https://developer.chrome.com/blog/inside-browser-part3/)
+  - [Part 4](https://developer.chrome.com/blog/inside-browser-part4/)
 
 ## 事件循环(Event Loop)
 
