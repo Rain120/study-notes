@@ -10,7 +10,7 @@
 - 基于 Proxy 快照存储 + window 修改的实现
 - 基于 Proxy 代理拦截 + window 激活/卸载的实现
 - 基于普通对象快照存储的 window 属性 diff 实现
-- 基于 ShadowRealm 提案的实现
+- 基于 [ShadowRealm](https://github.com/tc39/proposal-shadowrealm) 提案的实现
 - 基于 with + eval 的简单实现
 - Webpack 5 Module Federation(模块联邦)
 
