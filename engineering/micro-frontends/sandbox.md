@@ -69,20 +69,65 @@ new ModuleFederationPlugin({
 
 ## 定义
 
-又称为 sandbox, 指一个允许你独立运行程序的虚拟环境。sandbox 可以隔离当前执行环境作用域和外部其他作用域，环境之间相互独立，互不影响。
+又称为 sandbox, 指一个允许你独立运行程序的虚拟环境。它能够有效地隔离、收集、清除应用在运行期间所产生的副作用，保证 **当前执行环境** 作用域和 **外部** 其他作用域相互独立，互不影响。
+
+比如说全局变量、全局事件、定时器、网络请求、localStorage、Style 样式、DOM 元素。
 
 ## 沙盒的优势
 
 - 开发者体验不到环境的区别
 - 运行没有环境差异
 
-## 怎么实现
-
-???
-
 ## 分类
 
+:::warning 前置
+通过 [Garfish](https://github.com/modern-js-dev/garfish) 的实现原理来分析，欢迎和我一起看代码
+:::
+
 ### 快照沙箱
+
+它主要是通过对全局的 **window 变量** 进行操作，大致执行步骤是
+
+1. 存储当前执行环境
+2. 执行具备有副作用的代码
+3. 恢复执行环境
+
+code path: `packages/browser-snapshot/src/sandbox.ts:L31`
+
+#### CSS styles
+
+```ts
+// github/garfish/packages/browser-snapshot/src/patchers/style.ts
+export class PatchStyle {
+  private domSnapshotBefore!: Snapshot;
+  private domSnapshotMutated!: SnapshotDiff | null;
+
+  public activate() {
+    // 记录当前dom节点、恢复之前dom节点副作用
+    this.domSnapshotBefore = Snapshot.take();
+
+    if (this.domSnapshotMutated)
+      this.headInterceptor.add(
+        this.domSnapshotMutated.created,
+        this.domSnapshotMutated.removed,
+      );
+  }
+
+  public deactivate() {
+    // 恢复沙盒运行前dom节点环境，并将差异值进行缓存
+    const domSnapshot = Snapshot.take();
+    this.domSnapshotMutated = domSnapshot.diff(this.domSnapshotBefore);
+
+    if (!this.domSnapshotMutated) return;
+    this.headInterceptor.remove(
+      this.domSnapshotMutated.created,
+      this.domSnapshotMutated.removed,
+    );
+  }
+
+  // ...
+}
+```
 
 ### Proxy(代理)沙箱
 
