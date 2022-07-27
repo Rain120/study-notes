@@ -46,10 +46,12 @@
     "@docusaurus/preset-classic": "^2.0.0-rc.1",
     "@docusaurus/theme-live-codeblock": "^2.0.0-rc.1",
     "@easyops-cn/docusaurus-search-local": "^0.23.0",
+    "@swc/core": "^1.2.219",
     "medium-zoom": "^1.0.6",
     "nodejieba": "^2.5.2",
     "plugin-image-zoom": "^1.1.0",
     "prettier": "^2.6.2",
-    "raw-loader": "^4.0.2"
+    "raw-loader": "^4.0.2",
+    "swc-loader": "^0.2.3"
   }
 }

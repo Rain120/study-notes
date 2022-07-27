@@ -1,3 +1,7 @@
+import CodeBlock from '@theme/CodeBlock';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # 沙箱
 
 ## 前言
@@ -94,7 +98,7 @@ new ModuleFederationPlugin({
 
 code path: `packages/browser-snapshot/src/sandbox.ts:L31`
 
-#### CSS styles
+#### CSS
 
 ```ts
 // github/garfish/packages/browser-snapshot/src/patchers/style.ts
@@ -129,8 +133,139 @@ export class PatchStyle {
 }
 ```
 
-### Proxy(代理)沙箱
+#### JS
 
+```ts
+const hasOwnProperty = Object.prototype.hasOwnProperty;
+function hasOwn(obj: any, key: PropertyKey): boolean {
+  return hasOwnProperty.call(obj, key);
+}
+
+export class PatchGlobalVal {
+  public snapshotOriginal = new Map();
+  private snapshotMutated: any = new Map();
+
+  // ...
+
+  // 1.Trigger hooks, life cycle willActivate enabled (going to)
+  // 2.Will disable the current group of other box, and triggers the switch life cycle
+  // 3.The current window object properties for caching
+  // 4.Restore the sandbox side effects during operation
+  public activate() {
+    // Recorded before the global environment, restore side effects of a variable
+    this.safeIterator((i: string) => {
+      this.snapshotOriginal.set(i, this.targetToProtect[i]);
+    });
+
+    this.snapshotMutated.forEach((val, mutateKey) => {
+      this.targetToProtect[mutateKey] = this.snapshotMutated.get(mutateKey);
+    });
+  }
+
+  // 1.Restore the sandbox during startup variables change, record the change record
+  // 2.Restore the sandbox during startup to delete variables, record the change record
+  public deactivate() {
+    const deleteMap: any = {};
+    const updateMap: any = {};
+    const addMap: any = {};
+
+    // Restore the sandbox before running Windows properties of environment, and difference value for caching
+    this.safeIterator((normalKey: string) => {
+      if (
+        this.snapshotOriginal.get(normalKey) !==
+        (this.targetToProtect[normalKey] as any)
+      ) {
+        this.snapshotMutated.set(normalKey, this.targetToProtect[normalKey]); // deleted key will be defined as undefined on
+        this.targetToProtect[normalKey] = this.snapshotOriginal.get(normalKey); // || this.targetToProtect[i]
+
+        // Collection of delete, modify variables
+        if (this.targetToProtect[normalKey] === undefined) {
+          addMap[normalKey] = this.snapshotMutated.get(normalKey);
+        } else {
+          updateMap[normalKey] = this.snapshotMutated.get(normalKey);
+        }
+      }
+      this.snapshotOriginal.delete(normalKey);
+    });
+
+    this.snapshotOriginal.forEach((val, deleteKey) => {
+      this.snapshotMutated.set(deleteKey, this.targetToProtect[deleteKey]);
+      this.targetToProtect[deleteKey] = this.snapshotOriginal.get(deleteKey);
+      deleteMap[deleteKey] = this.targetToProtect[deleteKey];
+    });
+  }
+
+  // ...
+}
+
+```
+
+### Proxy(VM)沙箱
+
+#### CSS
+
+```mdx-code-block
+<Tabs>
+<TabItem value="style">
+```
+
+```ts
+// github/garfish/packages/browser-vm/src/dynamicNode/processor.ts:L315
+// ...
+
+// The style node needs to be placed in the sandbox root container
+else if (this.is('style')) {
+  parentNode = this.findParentNodeInApp(context, 'head');
+
+  // highlight-start
+  const manager = new StyleManager(this.el.textContent);
+  manager.correctPath(baseUrl);
+  // highlight-end
+
+  if (styleScopeId) {
+    manager.setScope({
+      appName: namespace,
+      rootElId: styleScopeId(),
+    });
+  }
+  this.el.textContent = manager.transformCode(manager.styleCode);
+  convertedNode = this.el;
+  this.sandbox.dynamicStyleSheetElementSet.add(this.el);
+  this.monitorChangesOfStyle();
+}
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="link">
+```
+
+```ts
+// github/garfish/packages/browser-vm/src/dynamicNode/processor.ts:L331
+// ...
+
+// The link node of the request css needs to be changed to style node
+else if (this.is('link')) {
+  parentNode = this.findParentNodeInApp(context, 'head');
+  if (this.el.rel === 'stylesheet' && this.el.href) {
+    // highlight-start
+    convertedNode = this.addDynamicLinkNode((styleNode) =>
+      this.nativeAppend.call(parentNode, styleNode),
+    );
+    // highlight-end
+  } else {
+    convertedNode = this.el;
+    this.monitorChangesOfLinkNode();
+  }
+}
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
+
+#### JS
 
 ## 参考资料
 

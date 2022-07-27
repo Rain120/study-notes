@@ -1,7 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
+const lightCodeTheme = require('prism-react-renderer/themes/vsDark');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const { plugins } = require('./config/plugins');
 const presets = require('./config/presets');
@@ -24,6 +24,23 @@ const config = {
 
   plugins,
   presets,
+  webpack: {
+    jsLoader: (isServer) => ({
+      loader: require.resolve('swc-loader'),
+      options: {
+        jsc: {
+          parser: {
+            syntax: 'typescript',
+            tsx: true,
+          },
+          target: 'es2017',
+        },
+        module: {
+          type: isServer ? 'commonjs' : 'es6',
+        },
+      },
+    }),
+  },
 
   // themes: [],
 
@@ -55,6 +72,7 @@ const config = {
       imageZoom: {
         // CSS selector to apply the plugin to, defaults to '.markdown img'
         selector: '.markdown img',
+        delay: 1000,
         // Optional medium-zoom options
         // see: https://www.npmjs.com/package/medium-zoom#options
         options: {
