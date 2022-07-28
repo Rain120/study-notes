@@ -101,7 +101,7 @@ code path: `packages/browser-snapshot/src/sandbox.ts:L31`
 #### CSS
 
 ```ts
-// github/garfish/packages/browser-snapshot/src/patchers/style.ts
+// packages/browser-snapshot/src/patchers/style.ts
 export class PatchStyle {
   private domSnapshotBefore!: Snapshot;
   private domSnapshotMutated!: SnapshotDiff | null;
@@ -147,10 +147,14 @@ export class PatchGlobalVal {
 
   // ...
 
-  // 1.Trigger hooks, life cycle willActivate enabled (going to)
-  // 2.Will disable the current group of other box, and triggers the switch life cycle
-  // 3.The current window object properties for caching
-  // 4.Restore the sandbox side effects during operation
+  // 1. Trigger hooks, life cycle willActivate enabled (going to)
+  // 2. Will disable the current group of other box, and triggers the switch life cycle
+  // 3. The current window object properties for caching
+  // 4. Restore the sandbox side effects during operation
+  // 1. 触发钩，生命周期将 willActivate 启用
+  // 2. 将禁用当前的其他盒子，并触发开关生命周期
+  // 3. 当前窗口对象属性用于缓存
+  // 4. 运行过程中的沙盒副作用
   public activate() {
     // Recorded before the global environment, restore side effects of a variable
     this.safeIterator((i: string) => {
@@ -162,8 +166,10 @@ export class PatchGlobalVal {
     });
   }
 
-  // 1.Restore the sandbox during startup variables change, record the change record
-  // 2.Restore the sandbox during startup to delete variables, record the change record
+  // 1. 在启动变量更改期间的沙箱，记录变更记录
+  // 2. 在启动期间放置沙箱以删除变量，记录变更记录
+  // 1. Restore the sandbox during startup variables change, record the change record
+  // 2. Restore the sandbox during startup to delete variables, record the change record
   public deactivate() {
     const deleteMap: any = {};
     const updateMap: any = {};
@@ -200,17 +206,18 @@ export class PatchGlobalVal {
 
 ```
 
-### Proxy(VM)沙箱
+### VM沙箱
 
 #### CSS
 
 ```mdx-code-block
 <Tabs>
-<TabItem value="style">
+<TabItem value='style'>
 ```
 
 ```ts
-// github/garfish/packages/browser-vm/src/dynamicNode/processor.ts:L315
+// highlight-next-line
+// packages/browser-vm/src/dynamicNode/processor.ts:L315
 // ...
 
 // The style node needs to be placed in the sandbox root container
@@ -230,6 +237,8 @@ else if (this.is('style')) {
   }
   this.el.textContent = manager.transformCode(manager.styleCode);
   convertedNode = this.el;
+
+  // highlight-next-line
   this.sandbox.dynamicStyleSheetElementSet.add(this.el);
   this.monitorChangesOfStyle();
 }
@@ -237,11 +246,12 @@ else if (this.is('style')) {
 
 ```mdx-code-block
 </TabItem>
-<TabItem value="link">
+<TabItem value='link'>
 ```
 
 ```ts
-// github/garfish/packages/browser-vm/src/dynamicNode/processor.ts:L331
+// highlight-next-line
+// packages/browser-vm/src/dynamicNode/processor.ts:L331
 // ...
 
 // The link node of the request css needs to be changed to style node
@@ -262,10 +272,137 @@ else if (this.is('link')) {
 
 ```mdx-code-block
 </TabItem>
+<TabItem value='重新挂载 & 卸载CSS Rules'>
+```
+
+```ts
+// highlight-next-line
+// packages/browser-vm/src/dynamicNode/index.ts:L142
+export function recordStyledComponentCSSRules(
+  dynamicStyleSheetElementSet: Set<HTMLStyleElement>,
+  styledComponentCSSRulesMap: WeakMap<HTMLStyleElement, CSSRuleList>,
+) {
+  dynamicStyleSheetElementSet.forEach((styleElement) => {
+    if (isStyledComponentsLike(styleElement) && styleElement.sheet) {
+      // highlight-start
+      styledComponentCSSRulesMap.set(styleElement, styleElement.sheet.cssRules);
+      // highlight-end
+    }
+  });
+}
+
+export function rebuildCSSRules(
+  dynamicStyleSheetElementSet: Set<HTMLStyleElement>,
+  styledComponentCSSRulesMap: WeakMap<HTMLStyleElement, CSSRuleList>,
+) {
+  dynamicStyleSheetElementSet.forEach((styleElement) => {
+    const cssRules = styledComponentCSSRulesMap.get(styleElement);
+    if (cssRules && (isStyledComponentsLike(styleElement) || cssRules.length)) {
+      for (let i = 0; i < cssRules.length; i++) {
+        const cssRule = cssRules[i];
+        // highlight-start
+        // re-insert rules for styled-components element
+        styleElement.sheet?.insertRule(
+          cssRule.cssText,
+          styleElement.sheet?.cssRules.length,
+        );
+        // highlight-end
+      }
+    }
+  });
+}
+```
+
+```mdx-code-block
+</TabItem>
 </Tabs>
 ```
 
 #### JS
+
+```mdx-code-block
+<Tabs>
+<TabItem value='Execute Script'>
+```
+
+```ts
+// highlight-next-line
+// packages/browser-vm/src/dynamicNode/processor.ts：L139
+
+// Load dynamic js script
+private addDynamicScriptNode() {
+  const { src, type, crossOrigin } = this.el;
+  const isModule = type === 'module';
+  const code = this.el.textContent || this.el.text || '';
+
+  if (!type || isJsType({ src, type })) {
+    // The "src" higher priority
+    const { baseUrl, namespace } = this.sandbox.options;
+    if (src) {
+      const fetchUrl = baseUrl ? transformUrl(baseUrl, src) : src;
+      this.sandbox.loader
+        .load<JavaScriptManager>({
+          scope: namespace,
+          url: fetchUrl,
+          crossOrigin,
+          defaultContentType: type,
+        })
+        .then(
+          (manager) => {
+            if (manager.resourceManager) {
+              const {
+                resourceManager: { url, scriptCode },
+              } = manager;
+              // highlight-start
+              // 👇🏻 必须取到执行代码时不会触发到 `el.onerror` 事件
+              // It is necessary to ensure that the code execution error cannot trigger the `el.onerror` event
+              // 执行并劫持 script code
+              this.sandbox.execScript(scriptCode, {}, url, {
+                isModule,
+                noEntry: true,
+              });
+              // highlight-end
+            } else {
+              warn(
+                `Invalid resource type "${type}", "${src}" can't generate scriptManager`,
+              );
+            }
+            this.dispatchEvent('load');
+          },
+          (e) => {
+            __DEV__ && warn(e);
+            this.dispatchEvent('error', {
+              error: e,
+              filename: fetchUrl,
+            });
+          },
+        );
+    } else if (code) {
+      // highlight-start
+      this.sandbox.execScript(code, {}, baseUrl, { noEntry: true });
+      // highlight-end
+    }
+    // highlight-start
+    // 👇🏻 确保已删除正常的处理节点
+    // To ensure the processing node to normal has been removed
+    // 以注释的形式插入子容器中
+    const scriptCommentNode = this.DOMApis.createScriptCommentNode({
+      src,
+      code,
+    });
+    // highlight-end
+    this.el[__REMOVE_NODE__] = () =>
+      this.DOMApis.removeElement(scriptCommentNode);
+    return scriptCommentNode;
+  }
+  return this.el;
+}
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
 
 ## 参考资料
 
