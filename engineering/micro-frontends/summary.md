@@ -91,7 +91,7 @@ server {
     - mount
     - unmount
     
-    详细方案[参考](./lifecycle.md)
+    详细方案[参考](./lifecycle)
     :::
 
 -   预加载
@@ -100,7 +100,7 @@ server {
     :::
 
 -   沙箱隔离
-    :::tip [更多详情](./sandbox.md)
+    :::tip [更多详情](./sandbox)
     对 JavaScript和CSS进行代码隔离, 主要分为快照沙箱, Proxy(代理)沙箱。
     :::
 
@@ -112,7 +112,7 @@ server {
 
 -   路由
     :::tip 更多详情
-    监听 history or hash 的变化来进行处理, 详细方案[参考](./route.md)
+    监听 history or hash 的变化来进行处理, 详细方案[参考](./route)
     :::
 
 -   环境变量
