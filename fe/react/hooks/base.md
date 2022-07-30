@@ -84,7 +84,7 @@ sidebar_position: 1
 
 ## Hooks 生命周期对应 Class 组件类
 
-[Here](../lifecycle.mdx)
+[Here](../lifecycle)
 
 ## 函数组件与类组件的区别
 

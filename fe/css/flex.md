@@ -2,7 +2,7 @@
 
 ## Flex 项目属性
 
-[Flex 项目属性](./flex-item-properties.mdx)
+[Flex 项目属性](./flex-item-properties)
 
 ## 参考资料
 
