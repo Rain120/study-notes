@@ -10,7 +10,7 @@
 
 ## Webpack核心概念
 
-详见[Webpack 基础知识](./webpack-base.md)
+详见[Webpack 基础知识](./webpack-base)
 
 ## Webpack构建过程
 

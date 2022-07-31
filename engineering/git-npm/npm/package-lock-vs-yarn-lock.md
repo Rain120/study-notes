@@ -43,7 +43,7 @@
 
 ## 前置知识
 
-[版本信息](./npm-knowledge-reserve.md#版本信息)
+[版本信息](./npm-knowledge-reserve#版本信息)
 
 ## 为什么需要 lock 文件 ?
 

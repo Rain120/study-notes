@@ -1,6 +1,6 @@
 # Git Object 深入浅析
 
-前文 [Git 底层深入浅析 - 目录篇](./git-base-analysis.md)我们讲了`git`目录下的文件都是什么，最后我们来讲一下`git objects`。
+前文 [Git 底层深入浅析 - 目录篇](./git-base-analysis)我们讲了`git`目录下的文件都是什么，最后我们来讲一下`git objects`。
 
 ## 前置知识
 

@@ -118,7 +118,7 @@ shit
 
 **Note:** 我平常在提交之前会 review 一下自己改动的地方，比如说 console 要不要删啊，代码风格啊，能不能简单优化一些逻辑呀，blah，blah....
 
-[Google Code Review Developer Guide](https://github.com/google/eng-practices/blob/master/review/developer/index.md)
+[Google Code Review Developer Guide](https://github.com/google/eng-practices/blob/master/review/developer/index)
 
 ### Code
 

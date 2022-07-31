@@ -4,7 +4,7 @@
 
 为什么要写这个呢？因为一直以来就想学习更多`Git`的相关知识，然后也因为某次演讲和公司大佬的分享，所以我想把我学习到的和理解的分享给大家。如果你也想一起学习`Git`，那就来和我一起学习吧!! `Let's Go` 😁
 
-**Note**: 这个不太适合初学者，如果你想学习基础知识，请移步 [Git 官网](https://git-scm.com/) 以及[你必须知道的`Git`命令](./you-must-know-git-commands.md)
+**Note**: 这个不太适合初学者，如果你想学习基础知识，请移步 [Git 官网](https://git-scm.com/) 以及[你必须知道的`Git`命令](./you-must-know-git-commands)
 
 ## 前置知识
 
@@ -164,7 +164,7 @@ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(
 - `tree `: 对象存储` git` 仓库中的文件元数据信息, 包括文件名及目录结构信息等.
 - `blob `: 对应的是 `git `仓库中的文件内容.
 
-我们将在下节更详细的讲述 [git objects](./git-objects.md).
+我们将在下节更详细的讲述 [git objects](./git-objects).
 
 ## 参考资料
 

@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # Docker 命令
 
-- [容器root fs命令](./container-fs.md)
+- [容器root fs命令](./container-fs)
 
-- [本地镜像管理](./local-images-manage.md)
+- [本地镜像管理](./local-images-manage)
 
 ## 参考资料
 

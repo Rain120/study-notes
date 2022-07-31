@@ -97,7 +97,7 @@ git init lerna-repo && cd lerna-repo
 
 ## Lerna 常用命令
 
-[详见 Lerna 命令](./commands.md)
+[详见 Lerna 命令](./commands)
 
 ## 参考资料
 

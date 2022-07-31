@@ -257,4 +257,4 @@ npm install -D commander shelljs prompts
 
 [create-react-app](https://github.com/facebook/create-react-app)
 
-[遇到的问题及其解决方法](./build-cli/qa.md)
+[遇到的问题及其解决方法](./build-cli/qa)

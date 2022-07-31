@@ -443,7 +443,7 @@ observerWaterMark(dom: HTMLElement | null = this.dom) {
 
 单行注释 `//`
 
-更多可以转我另一篇文章 [一目了然的代码注释和技巧](./annotation.md)
+更多可以转我另一篇文章 [一目了然的代码注释和技巧](./annotation)
 
 ## 缩进
 
