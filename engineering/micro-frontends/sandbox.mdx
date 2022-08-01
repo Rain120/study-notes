@@ -6,22 +6,22 @@ import TabItem from '@theme/TabItem';
 
 ## 前言
 
-当多个子应用独立运行时，每个应用都会有自己的运行环境，这看起来很美好，对吧。但是运行在**宿主应用** 里应用，需要如何避免自身的环境被 **宿主应用** 影响，或者影响  **宿主应用**，即 **应用间运行时如何相互隔离**，比如说常见的如何实现JS隔离，CSS隔离。
+当多个子应用独立运行时，每个应用都会有自己的运行环境，这看起来很美好，对吧。但是运行在**宿主应用** 里应用，需要如何避免自身的环境被 **宿主应用** 影响，或者影响 **宿主应用**，即 **应用间运行时如何相互隔离**，比如说常见的如何实现 JS 隔离，CSS 隔离。
 
 一般的，常见的方案会有下面这些：
 
-- 基于 iframe + 消息通信的实现
-- 基于 Proxy 快照存储 + window 修改的实现
-- 基于 Proxy 代理拦截 + window 激活/卸载的实现
-- 基于普通对象快照存储的 window 属性 diff 实现
-- 基于 [ShadowRealm](https://github.com/tc39/proposal-shadowrealm) 提案的实现
-- 基于 with + eval 的简单实现
-- Webpack 5 Module Federation(模块联邦)
+-   基于 iframe + 消息通信的实现
+-   基于 Proxy 快照存储 + window 修改的实现
+-   基于 Proxy 代理拦截 + window 激活/卸载的实现
+-   基于普通对象快照存储的 window 属性 diff 实现
+-   基于 [ShadowRealm](https://github.com/tc39/proposal-shadowrealm) 提案的实现
+-   基于 with + eval 的简单实现
+-   Webpack 5 Module Federation(模块联邦)
 
 ## 为什么不选择 iframe
 
 ```ts
-const iframe  = document.createElement('iframe', { src: 'about:blank' });
+const iframe = document.createElement('iframe', {src: 'about:blank'});
 document.body.appendChild(iframe);
 const sandboxGlobal = iframe.contentWindow;
 ```
@@ -42,34 +42,34 @@ iframe 最大的特性就是提供了浏览器原生的硬隔离方案，不论�
 
 Module Federation 支持多个独立的构建可以组成一个应用程序，这些独立的构建之间不应该存在依赖关系，因此可以单独开发和部署它们。
 
-这个方案中有两个主体： Remote 和 Host ，可以把Remote理解为想要引入的子应用，把Host理解为主应用（但是一个应用既可以是Remote也可以是Host，并不矛盾）。
+这个方案中有两个主体： Remote 和 Host ，可以把 Remote 理解为想要引入的子应用，把 Host 理解为主应用 中的作用域（scope) 只有全局作用域（global scope) 、函数作用域（function scope) 以及从 ES6 开始才有的块级作用域（block scope) 。但是一个应用既可以是 Remote 也可以是 Host，并不矛盾) 。
 
 但是如果接入的应用对 **shared 依赖包** 有强依赖关系，就没办法使用这种方案，必须保持一致。
 
-Module Federation的核心在于ModuleFederationPlugin这个插件：
+Module Federation 的核心在于 ModuleFederationPlugin 这个插件：
 
 ```ts
 new ModuleFederationPlugin({
- name: "App1",
- library: { type: "var", name: "App1" },
- filename: "remoteEntry.js",
- remotes: {
-    app_02: 'App2',
-    app_03: 'App3',  
-},
-  exposes: {
-    antd: './src/antd',
-    button: './src/button',  
-},
-  shared: ['react', 'react-dom'],
-})
+    name: 'App1',
+    library: {type: 'var', name: 'App1'},
+    filename: 'remoteEntry.js',
+    remotes: {
+        app_02: 'App2',
+        app_03: 'App3',
+    },
+    exposes: {
+        antd: './src/antd',
+        button: './src/button',
+    },
+    shared: ['react', 'react-dom'],
+});
 ```
 
-- name，必须，唯一ID，作为输出的模块名，使用的时通过name/{expose}的方式使用；
-- library，必须，其中这里的name为作为umd的name。
-- remotes，可选，表示作为Host时，去消费哪些Remote。
-- exposes，可选，表示作为Remote时，export哪些属性被消费。
-- shared，可选，优先用Host的依赖，如果Host没有，再用自己的。
+-   name，必须，唯一 ID，作为输出的模块名，使用的时通过 name/{expose}的方式使用；
+-   library，必须，其中这里的 name 为作为 umd 的 name。
+-   remotes，可选，表示作为 Host 时，去消费哪些 Remote。
+-   exposes，可选，表示作为 Remote 时，export 哪些属性被消费。
+-   shared，可选，优先用 Host 的依赖，如果 Host 没有，再用自己的。
 
 ## 定义
 
@@ -79,10 +79,22 @@ new ModuleFederationPlugin({
 
 ## 沙盒的优势
 
-- 开发者体验不到环境的区别
-- 运行没有环境差异
+-   开发者体验不到环境的区别
+-   运行没有环境差异
 
 ## 分类
+
+一般的分为 **快照沙箱** 和 **VM 沙箱**。
+
+### 二者对比
+
+| 特性 | 快照 | VM |
+|--------|:--------:|:--------:|
+|子应用之间隔离| ✅ | ✅ |
+|主子应用隔离| ❌ | ✅ |
+|变量隔离| ✅ | ✅ |
+|样式隔离| ❌ | ✅ |
+|多实例隔离| ✅ | ✅ |
 
 :::warning 前置
 通过 [Garfish](https://github.com/modern-js-dev/garfish) 的实现原理来分析，欢迎和我一起看代码
@@ -103,33 +115,33 @@ code path: `packages/browser-snapshot/src/sandbox.ts:L31`
 ```ts
 // packages/browser-snapshot/src/patchers/style.ts
 export class PatchStyle {
-  private domSnapshotBefore!: Snapshot;
-  private domSnapshotMutated!: SnapshotDiff | null;
+    private domSnapshotBefore!: Snapshot;
+    private domSnapshotMutated!: SnapshotDiff | null;
 
-  public activate() {
-    // 记录当前dom节点、恢复之前dom节点副作用
-    this.domSnapshotBefore = Snapshot.take();
+    public activate() {
+        // 记录当前dom节点、恢复之前dom节点副作用
+        this.domSnapshotBefore = Snapshot.take();
 
-    if (this.domSnapshotMutated)
-      this.headInterceptor.add(
-        this.domSnapshotMutated.created,
-        this.domSnapshotMutated.removed,
-      );
-  }
+        if (this.domSnapshotMutated)
+            this.headInterceptor.add(
+                this.domSnapshotMutated.created,
+                this.domSnapshotMutated.removed
+            );
+    }
 
-  public deactivate() {
-    // 恢复沙盒运行前dom节点环境，并将差异值进行缓存
-    const domSnapshot = Snapshot.take();
-    this.domSnapshotMutated = domSnapshot.diff(this.domSnapshotBefore);
+    public deactivate() {
+        // 恢复沙盒运行前dom节点环境，并将差异值进行缓存
+        const domSnapshot = Snapshot.take();
+        this.domSnapshotMutated = domSnapshot.diff(this.domSnapshotBefore);
 
-    if (!this.domSnapshotMutated) return;
-    this.headInterceptor.remove(
-      this.domSnapshotMutated.created,
-      this.domSnapshotMutated.removed,
-    );
-  }
+        if (!this.domSnapshotMutated) return;
+        this.headInterceptor.remove(
+            this.domSnapshotMutated.created,
+            this.domSnapshotMutated.removed
+        );
+    }
 
-  // ...
+    // ...
 }
 ```
 
@@ -138,75 +150,164 @@ export class PatchStyle {
 ```ts
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 function hasOwn(obj: any, key: PropertyKey): boolean {
-  return hasOwnProperty.call(obj, key);
+    return hasOwnProperty.call(obj, key);
 }
 
 export class PatchGlobalVal {
-  public snapshotOriginal = new Map();
-  private snapshotMutated: any = new Map();
+    public snapshotOriginal = new Map();
+    private snapshotMutated: any = new Map();
 
-  // ...
+    // ...
 
-  // 1. Trigger hooks, life cycle willActivate enabled (going to)
-  // 2. Will disable the current group of other box, and triggers the switch life cycle
-  // 3. The current window object properties for caching
-  // 4. Restore the sandbox side effects during operation
-  // 1. 触发钩，生命周期将 willActivate 启用
-  // 2. 将禁用当前的其他盒子，并触发开关生命周期
-  // 3. 当前窗口对象属性用于缓存
-  // 4. 运行过程中的沙盒副作用
-  public activate() {
-    // Recorded before the global environment, restore side effects of a variable
-    this.safeIterator((i: string) => {
-      this.snapshotOriginal.set(i, this.targetToProtect[i]);
-    });
+    // 1. Trigger hooks, life cycle willActivate enabled (going to)
+    // 2. Will disable the current group of other box, and triggers the switch life cycle
+    // 3. The current window object properties for caching
+    // 4. Restore the sandbox side effects during operation
+    // 1. 触发钩，生命周期将 willActivate 启用
+    // 2. 将禁用当前的其他盒子，并触发开关生命周期
+    // 3. 当前窗口对象属性用于缓存
+    // 4. 运行过程中的沙盒副作用
+    public activate() {
+        // Recorded before the global environment, restore side effects of a variable
+        this.safeIterator((i: string) => {
+            this.snapshotOriginal.set(i, this.targetToProtect[i]);
+        });
 
-    this.snapshotMutated.forEach((val, mutateKey) => {
-      this.targetToProtect[mutateKey] = this.snapshotMutated.get(mutateKey);
-    });
-  }
+        this.snapshotMutated.forEach((val, mutateKey) => {
+            this.targetToProtect[mutateKey] = this.snapshotMutated.get(mutateKey);
+        });
+    }
 
-  // 1. 在启动变量更改期间的沙箱，记录变更记录
-  // 2. 在启动期间放置沙箱以删除变量，记录变更记录
-  // 1. Restore the sandbox during startup variables change, record the change record
-  // 2. Restore the sandbox during startup to delete variables, record the change record
-  public deactivate() {
-    const deleteMap: any = {};
-    const updateMap: any = {};
-    const addMap: any = {};
+    // 1. 在启动变量更改期间的沙箱，记录变更记录
+    // 2. 在启动期间放置沙箱以删除变量，记录变更记录
+    // 1. Restore the sandbox during startup variables change, record the change record
+    // 2. Restore the sandbox during startup to delete variables, record the change record
+    public deactivate() {
+        const deleteMap: any = {};
+        const updateMap: any = {};
+        const addMap: any = {};
 
-    // Restore the sandbox before running Windows properties of environment, and difference value for caching
-    this.safeIterator((normalKey: string) => {
-      if (
-        this.snapshotOriginal.get(normalKey) !==
-        (this.targetToProtect[normalKey] as any)
-      ) {
-        this.snapshotMutated.set(normalKey, this.targetToProtect[normalKey]); // deleted key will be defined as undefined on
-        this.targetToProtect[normalKey] = this.snapshotOriginal.get(normalKey); // || this.targetToProtect[i]
+        // Restore the sandbox before running Windows properties of environment, and difference value for caching
+        this.safeIterator((normalKey: string) => {
+            if (this.snapshotOriginal.get(normalKey) !== (this.targetToProtect[normalKey] as any)) {
+                this.snapshotMutated.set(normalKey, this.targetToProtect[normalKey]); // deleted key will be defined as undefined on
+                this.targetToProtect[normalKey] = this.snapshotOriginal.get(normalKey); // || this.targetToProtect[i]
 
-        // Collection of delete, modify variables
-        if (this.targetToProtect[normalKey] === undefined) {
-          addMap[normalKey] = this.snapshotMutated.get(normalKey);
-        } else {
-          updateMap[normalKey] = this.snapshotMutated.get(normalKey);
-        }
-      }
-      this.snapshotOriginal.delete(normalKey);
-    });
+                // Collection of delete, modify variables
+                if (this.targetToProtect[normalKey] === undefined) {
+                    addMap[normalKey] = this.snapshotMutated.get(normalKey);
+                } else {
+                    updateMap[normalKey] = this.snapshotMutated.get(normalKey);
+                }
+            }
+            this.snapshotOriginal.delete(normalKey);
+        });
 
-    this.snapshotOriginal.forEach((val, deleteKey) => {
-      this.snapshotMutated.set(deleteKey, this.targetToProtect[deleteKey]);
-      this.targetToProtect[deleteKey] = this.snapshotOriginal.get(deleteKey);
-      deleteMap[deleteKey] = this.targetToProtect[deleteKey];
-    });
-  }
+        this.snapshotOriginal.forEach((val, deleteKey) => {
+            this.snapshotMutated.set(deleteKey, this.targetToProtect[deleteKey]);
+            this.targetToProtect[deleteKey] = this.snapshotOriginal.get(deleteKey);
+            deleteMap[deleteKey] = this.targetToProtect[deleteKey];
+        });
+    }
 
-  // ...
+    // ...
 }
-
 ```
 
-### VM沙箱
+### VM 沙箱
+
+#### 原理
+
+在 JavaScript 中的作用域只有全局作用域（global scope）、函数作用域（function scope）以及从 ES6 开始才有的块级作用域（block scope）。
+
+如果要将一段代码中的变量、函数等的定义隔离出来，我们一般会通过这么几种方式来达到目的：
+```mdx-code-block
+<Tabs>
+<TabItem value='IIFE'>
+```
+:::note 自执行函数
+
+当函数变成立即执行的函数表达式时，表达式中的变量不能从外部访问，它拥有独立的词法作用域。不仅避免了外界访问 IIFE 中的变量，而且又不会污染全局作用域，弥补了 JavaScript 在 scope 方面的缺陷。
+
+```ts
+(function foo(){
+  const name = 'Rain120';
+
+  console.log(name);
+})();
+```
+:::
+
+```mdx-code-block
+</TabItem>
+<TabItem value='eval'>
+```
+
+:::note [eval](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/eval) 函数可将字符串转换为代码执行，并返回一个或多个值
+
+```ts
+const user = eval(
+  "({name: 'Rain120'})"
+);
+console.log(user.name);
+```
+
+Note:
+
+[永远不要使用 eval！](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/eval#don.27t_use_eval.21)
+
+:::
+
+```mdx-code-block
+</TabItem>
+<TabItem value='new Function'>
+```
+
+:::note [Function](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function) 构造函数创建一个新的 Function 对象。直接调用这个构造函数可用于动态创建函数。
+
+```ts
+const getUser = new Function(
+  "console.log({name: 'Rain120'})"
+);
+console.log(getUser());
+```
+
+Note:
+
+- 不能访问当前环境变量，但可以访问全局变量，安全性高
+- 只需要处理传入的字符串一次，后面重复执行都是同一个函数，而eval需要每次都处理，性能更高
+
+:::
+
+```mdx-code-block
+</TabItem>
+<TabItem value='with'>
+```
+
+:::note [with](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/with): 扩展一个语句的作用域链
+
+```ts
+var a, x, y;
+var r = 10;
+
+with (Math) {
+  a = PI * r * r;
+  x = r * cos(PI);
+  y = r * sin(PI / 2);
+}
+```
+
+Note:
+
+- with语句可以在不造成性能损失的情況下，减少变量的长度。
+- with语句使得程序在查找变量值时，都是先在指定的对象中查找。(with 是通过 in 来判断是否在当前作用域内的)
+
+:::
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
 
 #### CSS
 
@@ -279,37 +380,37 @@ else if (this.is('link')) {
 // highlight-next-line
 // packages/browser-vm/src/dynamicNode/index.ts:L142
 export function recordStyledComponentCSSRules(
-  dynamicStyleSheetElementSet: Set<HTMLStyleElement>,
-  styledComponentCSSRulesMap: WeakMap<HTMLStyleElement, CSSRuleList>,
+    dynamicStyleSheetElementSet: Set<HTMLStyleElement>,
+    styledComponentCSSRulesMap: WeakMap<HTMLStyleElement, CSSRuleList>
 ) {
-  dynamicStyleSheetElementSet.forEach((styleElement) => {
-    if (isStyledComponentsLike(styleElement) && styleElement.sheet) {
-      // highlight-start
-      styledComponentCSSRulesMap.set(styleElement, styleElement.sheet.cssRules);
-      // highlight-end
-    }
-  });
+    dynamicStyleSheetElementSet.forEach(styleElement => {
+        if (isStyledComponentsLike(styleElement) && styleElement.sheet) {
+            // highlight-start
+            styledComponentCSSRulesMap.set(styleElement, styleElement.sheet.cssRules);
+            // highlight-end
+        }
+    });
 }
 
 export function rebuildCSSRules(
-  dynamicStyleSheetElementSet: Set<HTMLStyleElement>,
-  styledComponentCSSRulesMap: WeakMap<HTMLStyleElement, CSSRuleList>,
+    dynamicStyleSheetElementSet: Set<HTMLStyleElement>,
+    styledComponentCSSRulesMap: WeakMap<HTMLStyleElement, CSSRuleList>
 ) {
-  dynamicStyleSheetElementSet.forEach((styleElement) => {
-    const cssRules = styledComponentCSSRulesMap.get(styleElement);
-    if (cssRules && (isStyledComponentsLike(styleElement) || cssRules.length)) {
-      for (let i = 0; i < cssRules.length; i++) {
-        const cssRule = cssRules[i];
-        // highlight-start
-        // re-insert rules for styled-components element
-        styleElement.sheet?.insertRule(
-          cssRule.cssText,
-          styleElement.sheet?.cssRules.length,
-        );
-        // highlight-end
-      }
-    }
-  });
+    dynamicStyleSheetElementSet.forEach(styleElement => {
+        const cssRules = styledComponentCSSRulesMap.get(styleElement);
+        if (cssRules && (isStyledComponentsLike(styleElement) || cssRules.length)) {
+            for (let i = 0; i < cssRules.length; i++) {
+                const cssRule = cssRules[i];
+                // highlight-start
+                // re-insert rules for styled-components element
+                styleElement.sheet?.insertRule(
+                    cssRule.cssText,
+                    styleElement.sheet?.cssRules.length
+                );
+                // highlight-end
+            }
+        }
+    });
 }
 ```
 
@@ -407,3 +508,5 @@ private addDynamicScriptNode() {
 ## 参考资料
 
 [Webpack 5 Module Federation(模块联邦)](https://webpack.js.org/concepts/module-federation/)
+
+[一文彻底搞懂前端沙箱](https://mp.weixin.qq.com/s/9uABusnrO-IDpXk3EFmdWA)
