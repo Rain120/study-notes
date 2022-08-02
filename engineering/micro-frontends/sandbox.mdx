@@ -21,12 +21,16 @@ import TabItem from '@theme/TabItem';
 ## 为什么不选择 iframe
 
 ```ts
-const iframe = document.createElement('iframe', {src: 'about:blank'});
+const iframe = document.createElement('iframe', {
+    src: 'about:blank',
+});
+
 document.body.appendChild(iframe);
+
 const sandboxGlobal = iframe.contentWindow;
 ```
 
-[iframe sandbox](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe#attr-sandbox)
+更多参考 [iframe sandbox](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe#attr-sandbox)
 
 :::tip [引用 Why Not Iframe](https://www.yuque.com/kuitos/gky7yw/gesexv)
 iframe 最大的特性就是提供了浏览器原生的硬隔离方案，不论是样式隔离、js 隔离这类问题统统都能被完美解决。但他的最大问题也在于他的隔离性无法被突破，导致应用间上下文无法被共享，随之带来的开发体验、产品体验的问题。
@@ -65,11 +69,11 @@ new ModuleFederationPlugin({
 });
 ```
 
--   name，必须，唯一 ID，作为输出的模块名，使用的时通过 name/{expose}的方式使用；
--   library，必须，其中这里的 name 为作为 umd 的 name。
--   remotes，可选，表示作为 Host 时，去消费哪些 Remote。
--   exposes，可选，表示作为 Remote 时，export 哪些属性被消费。
--   shared，可选，优先用 Host 的依赖，如果 Host 没有，再用自己的。
+-   **name:** 必须，唯一 ID，作为输出的模块名，使用的时通过 **name/{expose}** 的方式使用；
+-   **library**: 必须，其中这里的 name 为作为 umd 的 name。
+-   **remotes**: 可选，表示作为 Host 时，去消费哪些 Remote。
+-   **exposes**: 可选，表示作为 Remote 时，export 哪些属性被消费。
+-   **shared:** 可选，优先用 Host 的依赖，如果 Host 没有，再用自己的。
 
 ## 定义
 
@@ -88,16 +92,16 @@ new ModuleFederationPlugin({
 
 ### 二者对比
 
-| 特性 | 快照 | VM |
-|--------|:--------:|:--------:|
-|子应用之间隔离| ✅ | ✅ |
-|主子应用隔离| ❌ | ✅ |
-|变量隔离| ✅ | ✅ |
-|样式隔离| ❌ | ✅ |
-|多实例隔离| ✅ | ✅ |
+| 特性 | 快照 | VM  |
+| - | :-: | :-: |
+| 子应用之间隔离 |  ✅  | ✅  |
+| 主子应用隔离   |  ❌  | ✅  |
+| 变量隔离       |  ✅  | ✅  |
+| 样式隔离       |  ❌  | ✅  |
+| 多实例隔离     |  ✅  | ✅  |
 
 :::warning 前置
-通过 [Garfish](https://github.com/modern-js-dev/garfish) 的实现原理来分析，欢迎和我一起看代码
+本文会通过 [Garfish](https://github.com/modern-js-dev/garfish) 的实现原理来分析，欢迎和我一起看代码
 :::
 
 ### 快照沙箱
@@ -108,9 +112,12 @@ new ModuleFederationPlugin({
 2. 执行具备有副作用的代码
 3. 恢复执行环境
 
-code path: `packages/browser-snapshot/src/sandbox.ts:L31`
+**Fly to code path**: `packages/browser-snapshot/src/sandbox.ts:L31`
 
-#### CSS
+```mdx-code-block
+<Tabs>
+<TabItem value='CSS'>
+```
 
 ```ts
 // packages/browser-snapshot/src/patchers/style.ts
@@ -120,98 +127,107 @@ export class PatchStyle {
 
     public activate() {
         // 记录当前dom节点、恢复之前dom节点副作用
-        this.domSnapshotBefore = Snapshot.take();
+      this.domSnapshotBefore = Snapshot.take();
 
-        if (this.domSnapshotMutated)
-            this.headInterceptor.add(
-                this.domSnapshotMutated.created,
-                this.domSnapshotMutated.removed
-            );
+      if (this.domSnapshotMutated) {
+        this.headInterceptor.add(
+          this.domSnapshotMutated.created,
+          this.domSnapshotMutated.removed
+        );
+      }
     }
 
     public deactivate() {
-        // 恢复沙盒运行前dom节点环境，并将差异值进行缓存
-        const domSnapshot = Snapshot.take();
-        this.domSnapshotMutated = domSnapshot.diff(this.domSnapshotBefore);
+      // 恢复沙盒运行前dom节点环境，并将差异值进行缓存
+      const domSnapshot = Snapshot.take();
+      this.domSnapshotMutated = domSnapshot.diff(this.domSnapshotBefore);
 
-        if (!this.domSnapshotMutated) return;
-        this.headInterceptor.remove(
-            this.domSnapshotMutated.created,
-            this.domSnapshotMutated.removed
-        );
+      if (!this.domSnapshotMutated) return;
+      this.headInterceptor.remove(
+        this.domSnapshotMutated.created,
+        this.domSnapshotMutated.removed
+      );
     }
 
     // ...
 }
 ```
 
-#### JS
+```mdx-code-block
+</TabItem>
+<TabItem value='JS'>
+```
 
 ```ts
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 function hasOwn(obj: any, key: PropertyKey): boolean {
-    return hasOwnProperty.call(obj, key);
+  return hasOwnProperty.call(obj, key);
 }
 
 export class PatchGlobalVal {
-    public snapshotOriginal = new Map();
-    private snapshotMutated: any = new Map();
+  public snapshotOriginal = new Map();
+  private snapshotMutated: any = new Map();
 
-    // ...
+  // ...
 
-    // 1. Trigger hooks, life cycle willActivate enabled (going to)
-    // 2. Will disable the current group of other box, and triggers the switch life cycle
-    // 3. The current window object properties for caching
-    // 4. Restore the sandbox side effects during operation
-    // 1. 触发钩，生命周期将 willActivate 启用
-    // 2. 将禁用当前的其他盒子，并触发开关生命周期
-    // 3. 当前窗口对象属性用于缓存
-    // 4. 运行过程中的沙盒副作用
-    public activate() {
-        // Recorded before the global environment, restore side effects of a variable
-        this.safeIterator((i: string) => {
-            this.snapshotOriginal.set(i, this.targetToProtect[i]);
-        });
+  // 1. Trigger hooks, life cycle willActivate enabled (going to)
+  // 2. Will disable the current group of other box, and triggers the switch life cycle
+  // 3. The current window object properties for caching
+  // 4. Restore the sandbox side effects during operation
+  // 1. 触发钩，生命周期将 willActivate 启用
+  // 2. 将禁用当前的其他盒子，并触发开关生命周期
+  // 3. 当前窗口对象属性用于缓存
+  // 4. 运行过程中的沙盒副作用
+  public activate() {
+      // Recorded before the global environment, restore side effects of a variable
+      this.safeIterator((i: string) => {
+        this.snapshotOriginal.set(i, this.targetToProtect[i]);
+      });
 
-        this.snapshotMutated.forEach((val, mutateKey) => {
-            this.targetToProtect[mutateKey] = this.snapshotMutated.get(mutateKey);
-        });
-    }
+      this.snapshotMutated.forEach((val, mutateKey) => {
+        this.targetToProtect[mutateKey] = this.snapshotMutated.get(mutateKey);
+      });
+  }
 
-    // 1. 在启动变量更改期间的沙箱，记录变更记录
-    // 2. 在启动期间放置沙箱以删除变量，记录变更记录
-    // 1. Restore the sandbox during startup variables change, record the change record
-    // 2. Restore the sandbox during startup to delete variables, record the change record
-    public deactivate() {
-        const deleteMap: any = {};
-        const updateMap: any = {};
-        const addMap: any = {};
+  // 1. 在启动变量更改期间的沙箱，记录变更记录
+  // 2. 在启动期间放置沙箱以删除变量，记录变更记录
+  // 1. Restore the sandbox during startup variables change, record the change record
+  // 2. Restore the sandbox during startup to delete variables, record the change record
+  public deactivate() {
+      const deleteMap: any = {};
+      const updateMap: any = {};
+      const addMap: any = {};
 
-        // Restore the sandbox before running Windows properties of environment, and difference value for caching
-        this.safeIterator((normalKey: string) => {
-            if (this.snapshotOriginal.get(normalKey) !== (this.targetToProtect[normalKey] as any)) {
-                this.snapshotMutated.set(normalKey, this.targetToProtect[normalKey]); // deleted key will be defined as undefined on
-                this.targetToProtect[normalKey] = this.snapshotOriginal.get(normalKey); // || this.targetToProtect[i]
+      // Restore the sandbox before running Windows properties of environment, and difference value for caching
+      this.safeIterator((normalKey: string) => {
+        if (this.snapshotOriginal.get(normalKey) !== (this.targetToProtect[normalKey] as any)) {
+          this.snapshotMutated.set(normalKey, this.targetToProtect[normalKey]); // deleted key will be defined as undefined on
+          this.targetToProtect[normalKey] = this.snapshotOriginal.get(normalKey); // || this.targetToProtect[i]
 
-                // Collection of delete, modify variables
-                if (this.targetToProtect[normalKey] === undefined) {
-                    addMap[normalKey] = this.snapshotMutated.get(normalKey);
-                } else {
-                    updateMap[normalKey] = this.snapshotMutated.get(normalKey);
-                }
-            }
-            this.snapshotOriginal.delete(normalKey);
-        });
+          // Collection of delete, modify variables
+          if (this.targetToProtect[normalKey] === undefined) {
+              addMap[normalKey] = this.snapshotMutated.get(normalKey);
+          } else {
+              updateMap[normalKey] = this.snapshotMutated.get(normalKey);
+          }
+        }
+        this.snapshotOriginal.delete(normalKey);
+      });
 
-        this.snapshotOriginal.forEach((val, deleteKey) => {
-            this.snapshotMutated.set(deleteKey, this.targetToProtect[deleteKey]);
-            this.targetToProtect[deleteKey] = this.snapshotOriginal.get(deleteKey);
-            deleteMap[deleteKey] = this.targetToProtect[deleteKey];
-        });
-    }
+      this.snapshotOriginal.forEach((val, deleteKey) => {
+        this.snapshotMutated.set(deleteKey, this.targetToProtect[deleteKey]);
+        this.targetToProtect[deleteKey] = this.snapshotOriginal.get(deleteKey);
+        deleteMap[deleteKey] = this.targetToProtect[deleteKey];
+      });
+  }
 
-    // ...
+  // ...
 }
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
 ```
 
 ### VM 沙箱
@@ -221,21 +237,24 @@ export class PatchGlobalVal {
 在 JavaScript 中的作用域只有全局作用域（global scope）、函数作用域（function scope）以及从 ES6 开始才有的块级作用域（block scope）。
 
 如果要将一段代码中的变量、函数等的定义隔离出来，我们一般会通过这么几种方式来达到目的：
+
 ```mdx-code-block
 <Tabs>
 <TabItem value='IIFE'>
 ```
+
 :::note 自执行函数
 
 当函数变成立即执行的函数表达式时，表达式中的变量不能从外部访问，它拥有独立的词法作用域。不仅避免了外界访问 IIFE 中的变量，而且又不会污染全局作用域，弥补了 JavaScript 在 scope 方面的缺陷。
 
 ```ts
-(function foo(){
-  const name = 'Rain120';
+(function foo() {
+    const name = 'Rain120';
 
-  console.log(name);
+    console.log(name);
 })();
 ```
+
 :::
 
 ```mdx-code-block
@@ -246,9 +265,7 @@ export class PatchGlobalVal {
 :::note [eval](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/eval) 函数可将字符串转换为代码执行，并返回一个或多个值
 
 ```ts
-const user = eval(
-  "({name: 'Rain120'})"
-);
+const user = eval("({name: 'Rain120'})");
 console.log(user.name);
 ```
 
@@ -266,16 +283,14 @@ Note:
 :::note [Function](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function) 构造函数创建一个新的 Function 对象。直接调用这个构造函数可用于动态创建函数。
 
 ```ts
-const getUser = new Function(
-  "console.log({name: 'Rain120'})"
-);
+const getUser = new Function("console.log({name: 'Rain120'})");
 console.log(getUser());
 ```
 
 Note:
 
-- 不能访问当前环境变量，但可以访问全局变量，安全性高
-- 只需要处理传入的字符串一次，后面重复执行都是同一个函数，而eval需要每次都处理，性能更高
+-   不能访问当前环境变量，但可以访问全局变量，安全性高
+-   只需要处理传入的字符串一次，后面重复执行都是同一个函数，而 eval 需要每次都处理，性能更高
 
 :::
 
@@ -291,16 +306,16 @@ var a, x, y;
 var r = 10;
 
 with (Math) {
-  a = PI * r * r;
-  x = r * cos(PI);
-  y = r * sin(PI / 2);
+    a = PI * r * r;
+    x = r * cos(PI);
+    y = r * sin(PI / 2);
 }
 ```
 
 Note:
 
-- with语句可以在不造成性能损失的情況下，减少变量的长度。
-- with语句使得程序在查找变量值时，都是先在指定的对象中查找。(with 是通过 in 来判断是否在当前作用域内的)
+-   with 语句可以在不造成性能损失的情況下，减少变量的长度。
+-   with 语句使得程序在查找变量值时，都是先在指定的对象中查找。(with 是通过 in 来判断是否在当前作用域内的)
 
 :::
 
@@ -510,3 +525,5 @@ private addDynamicScriptNode() {
 [Webpack 5 Module Federation(模块联邦)](https://webpack.js.org/concepts/module-federation/)
 
 [一文彻底搞懂前端沙箱](https://mp.weixin.qq.com/s/9uABusnrO-IDpXk3EFmdWA)
+
+[沙箱机制](https://www.garfishjs.org/guide/sandbox)
