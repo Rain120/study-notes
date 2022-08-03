@@ -75,7 +75,7 @@ let rain120 = { name: "rain120" };
 
 ## 参考资料
 
-[Javascript 垃圾回收](../key-concept/garbage-collection.md)
+[Javascript 垃圾回收](../key-concept/garbage-collection)
 
 [ECMAScript 6 入门 - Set 和 Map 数据结构](https://es6.ruanyifeng.com/#docs/set-map)
 

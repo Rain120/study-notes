@@ -22,9 +22,9 @@
 
 `better-scroll`: `2.0.0-bate.2`
 
-- [基础组件Scroll开发](./scroll.md)
-- [Slider 组件开发](./slider.md) 
-- [Sticky 组件开发](./sticky.md)
+- [基础组件Scroll开发](./scroll)
+- [Slider 组件开发](./slider) 
+- [Sticky 组件开发](./sticky)
 - `SlideMenu`
 - `CascaMenu`
 - `Pullup`

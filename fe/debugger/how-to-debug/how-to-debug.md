@@ -2,9 +2,9 @@
 
 ## Debug
 
-- [几个调试小技巧](./a-few-debug-skills.md)
-- [console](./console.md)
-- [browser](./browser.md)
+- [几个调试小技巧](./a-few-debug-skills)
+- [console](./console)
+- [browser](./browser)
 
 ### 参考链接
 

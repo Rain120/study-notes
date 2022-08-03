@@ -184,7 +184,7 @@ JSXParser.parse("foo(<bar/>)", {ecmaVersion: 2020});
 
 ## EsTree规范
 
-[Here](./estree-spec.md)
+[Here](./estree-spec)
 
 ### 参考资料
 

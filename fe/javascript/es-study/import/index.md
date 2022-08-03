@@ -10,12 +10,12 @@ sidebar_position: 1
 
 ## 模块化
 
-- [模块化方案](../module.md)
+- [模块化方案](../module)
 
 ## import 相关
 
-- [import 全量引入](./import-full.md)
-- [import 异步引入](./import-async.md)
+- [import 全量引入](./import-full)
+- [import 异步引入](./import-async)
 
 ## 参考资料
 

@@ -58,27 +58,27 @@ sidebar_position: 1
 
 ## 常用的Hooks
 
-[useState()](./useState.md)
+[useState()](./useState)
 
-[useEffect()](./useEffect.md)
+[useEffect()](./useEffect)
 
-[useLayoutEffect()](./useLayoutEffect.md)
+[useLayoutEffect()](./useLayoutEffect)
 
-[useCallback()](./useCallback.md)
+[useCallback()](./useCallback)
 
-[useContext()](./useContext.md)
+[useContext()](./useContext)
 
-[useMemo()](./useMemo.md)
+[useMemo()](./useMemo)
 
-[useReducer()](./useReducer.md)
+[useReducer()](./useReducer)
 
-[useRef()](./useRef.md)
+[useRef()](./useRef)
 
-[React.forwardRef()](./forwardRef.md)
+[React.forwardRef()](./forwardRef)
 
-[useImperativeHandle()](./useImperativeHandle.md)
+[useImperativeHandle()](./useImperativeHandle)
 
-[useCustom 自定义Hooks](./useCustom.md)
+[useCustom 自定义Hooks](./useCustom)
 
 更多详见[Hooks索引](https://zh-hans.reactjs.org/docs/hooks-reference.html)
 

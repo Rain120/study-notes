@@ -8,7 +8,7 @@
 
 想要了解 `EC`，需要先了解一下几个概念
 
-- [作用域链`(Scope chain)`](./scope-chain.md)
+- [作用域链`(Scope chain)`](./scope-chain)
 - 执行上下文`(Execution Context or EC)`
 - 执行环境栈 `(Execution Context Stack or ECS)`
 - 变量对象`(Variable object，VO)`
@@ -16,7 +16,7 @@
 
 ## 作用域链 (Scope chain)
 
-[详见](./scope-chain.md)
+[详见](./scope-chain)
 
 ## 执行上下文 (Execution Context or EC)
 
@@ -41,13 +41,13 @@
     - **若遇到重复的变量名，不进行任何相关赋值操作，继续下一步**
 - 建立作用域链
 - 确定`this`指向
-  - 更多`this` 指向问题详见 [Javascript this](./this.md)
+  - 更多`this` 指向问题详见 [Javascript this](./this)
 
  `(ECMA 5 规范)`
 
 - 确定`this`指向
 
-  - 更多`this` 指向问题详见 [Javascript this](./this.md)
+  - 更多`this` 指向问题详见 [Javascript this](./this)
 
 - 创建词法环境 `(Lexical Environment)`
 
@@ -222,7 +222,7 @@ EC = {
 
 ### `this` 指向
 
-更对详见 [Javascript this](./this.md)
+更对详见 [Javascript this](./this)
 
 ## 参考资料
 

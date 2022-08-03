@@ -54,7 +54,7 @@ user.myName();
 
 ### 显式绑定
 
-通过`call()`、`apply()`、`bind()`方法把对象绑定到`this`上, 更多详见 [call, apply, bind](./call-apply-bind.md)
+通过`call()`、`apply()`、`bind()`方法把对象绑定到`this`上, 更多详见 [call, apply, bind](./call-apply-bind)
 
 ```javascript
 function getName() {
@@ -73,7 +73,7 @@ user.myName.apply();
 
 ### `new` 绑定
 
-通过构造函数调用, 更多详情请到[JavaScript new](./new.md)
+通过构造函数调用, 更多详情请到[JavaScript new](./new)
 
 ```javascript
 function User() {

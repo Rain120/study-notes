@@ -43,13 +43,13 @@
 
 ### 局部作用域(Local Scope)
 
-`JavaScript`的作用域是通过函数来定义的，所以每一个在函数内定义的变量只能拥有这个函数内的**局部作用域**  (除**闭包**外, 详见[Javascript 闭包](./closure.md))。
+`JavaScript`的作用域是通过函数来定义的，所以每一个在函数内定义的变量只能拥有这个函数内的**局部作用域**  (除**闭包**外, 详见[Javascript 闭包](./closure))。
 
 ### 块级作用域(block Statement)
 
 用于组合零个或多个语句，该块由一对大括号`{}`界定, 具体从[`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)中体现。
 
-关于 `var ` `let` `const`的生命周期请移步 [var let const function 生命周期](./var-let-const-function-lifecycle.md)
+关于 `var ` `let` `const`的生命周期请移步 [var let const function 生命周期](./var-let-const-function-lifecycle)
 
 **暂存死区**
 
@@ -195,7 +195,7 @@ function testConst() {
 
 ![execution-context-lifecycle.png](./images/execution-context-lifecycle.png)
 
-更多关于**执行上下文、变量对象**等上述的相关问题请转到 [Javascript 执行上下文](./execution-context.md) 阅读。
+更多关于**执行上下文、变量对象**等上述的相关问题请转到 [Javascript 执行上下文](./execution-context) 阅读。
 
 **作用域链是由当前环境与上层环境的一系列变量对象组成，它保证对执行环境有权访问的所有变量和函数的有序访问。**
 

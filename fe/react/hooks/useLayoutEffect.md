@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-参数列表与 [useEffect()](./useEffect.md) 一样
+参数列表与 [useEffect()](./useEffect) 一样
 
 **区别:**
 

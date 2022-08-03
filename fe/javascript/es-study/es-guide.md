@@ -5,12 +5,12 @@ sidebar_position: 1
 
 ## ECMAScript学习笔记
 
-- [类的Static学习](./static.md)
-- [Map Vs WeakMap, Set Vs WeakSet](./map-weakmap-set-weakset.md)
-- [模块化方案](./module.md)
-- [import 关键字](./import/index.md)
-  - [import全量引入](./import/import-full.md)
-  - [import 异步引入](./import/import-async.md)
+- [类的Static学习](./static)
+- [Map Vs WeakMap, Set Vs WeakSet](./map-weakmap-set-weakset)
+- [模块化方案](./module)
+- [import 关键字](./import/index)
+  - [import全量引入](./import/import-full)
+  - [import 异步引入](./import/import-async)
 
 ## 参考资料
 

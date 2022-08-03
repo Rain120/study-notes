@@ -39,7 +39,7 @@ Mac -> 开发 -> 用户代理 -> 其他
 
 ![chrome-user-agent-setting.png](./images/chrome-user-agent-setting.png)
 
-[常见的 User Agent](./browser-user-agent.md)
+[常见的 User Agent](./browser-user-agent)
 
 ### 参考
 
