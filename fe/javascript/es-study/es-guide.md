@@ -8,7 +8,7 @@ sidebar_position: 1
 - [类的Static学习](./static)
 - [Map Vs WeakMap, Set Vs WeakSet](./map-weakmap-set-weakset)
 - [模块化方案](./module)
-- [import 关键字](./import/index)
+- [import 关键字](./import/summary)
   - [import全量引入](./import/import-full)
   - [import 异步引入](./import/import-async)
 
