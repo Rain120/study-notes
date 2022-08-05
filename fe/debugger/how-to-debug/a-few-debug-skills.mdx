@@ -1,3 +1,7 @@
+import CodeBlock from '@theme/CodeBlock';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # 一些调试技巧
 
 ## HTML
@@ -6,15 +10,24 @@
 
 当你遇到 **拖拽DOM**， **Popover**，**Select** 等类似组件时，你是如何debugger?
 
-#### 拖拽类
+```mdx-code-block
+<Tabs>
+<TabItem value='拖拽类'>
+```
 
 ![find-float-dom.gif](./images/find-float-dom.gif)
 
-#### Select Options
+```mdx-code-block
+</TabItem>
+<TabItem value='Select Options'>
+```
 
 ![find-select-options-dom.gif](./images/find-select-options-dom.gif)
 
-#### 修改数据测试
+```mdx-code-block
+</TabItem>
+<TabItem value='修改数据测试'>
+```
 
 **contentEditable**
 
@@ -28,41 +41,71 @@ document.body.contentEditable = true
 
 ![edit-as-html.gif](./images/edit-as-html.gif)
 
-### Debugger
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
 
-#### Dom
+### Dom
 
 ![dom-break-on.png](./images/dom-break-on.png)
 
-##### Attribute Modifications
+```mdx-code-block
+<Tabs>
+<TabItem value='编辑属性(Attribute Modifications)'>
+```
 
 ![dom-debug-attr-modify.gif](./images/dom-debug-attr-modify.gif)
 
-##### Subtree Modifications
+```mdx-code-block
+</TabItem>
+<TabItem value='编辑子树(Subtree Modifications)'>
+```
 
 ![dom-debug-subtree-modifications.gif](./images/dom-debug-subtree-modifications.gif)
 
-##### Node Removal
+```mdx-code-block
+</TabItem>
+<TabItem value='Node移除操作(Node Removal)'>
+```
 
 ![dom-debug-node-removal.gif](./images/dom-debug-node-removal.gif)
 
-#### Javascript
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
 
-#### Log
+## Javascript
+
+### Log
+
+通过 window 来查看数据
 
 ![console-window.png](./images/console-window.png)
 
-##### Code Debug
+#### Code Debug
 
 ![devtools-sources.png](./images/devtools-sources.png)
 
-- IDE Debug
+```mdx-code-block
+<Tabs>
+<TabItem value='IDE Debug'>
+```
 
-  ![ide-debug.png](./images/ide-debug.png)
+![ide-debug.png](./images/ide-debug.png)
 
-- Devtools Debug
+```mdx-code-block
+</TabItem>
+<TabItem value='Devtools Debug'>
+```
 
-  ![sources-debug.png](./images/sources-debug.png)
+![sources-debug.png](./images/sources-debug.png)
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
 
 关于watch data 的相关操作
 
@@ -76,15 +119,12 @@ document.body.contentEditable = true
 
 ![devtools-edit-breakpoint.gif](./images/devtools-edit-breakpoint.gif)
 
-##### Find the errors position by the throw from the console
+#### Find the errors position by the throw from the console
 
 ![debug-with-throw-error.gif](./images/debug-with-throw-error.gif)
-
-
 
 #### 更多调试相关的资源
 
 [How I got better at debugging](http://jvns.ca/blog/2015/11/22/how-i-got-better-at-debugging/)
 
 [使用开发者工具进行性能检查的高级技巧](https://docs.google.com/document/d/1K-mKOqiUiSjgZTEscBLjtjd6E67oiK8H2ztOiq5tigk/pub)
-
