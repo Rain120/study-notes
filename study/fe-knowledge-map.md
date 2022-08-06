@@ -1,14 +1,14 @@
 #### HTML
 
-[HTML学习](./knowledge-map/fe/html.md)
+[HTML学习](./knowledge-map/fe/html)
 
 #### CSS
 
-[CSS - 从入门到放弃](./knowledge-map/fe/css.md)
+[CSS - 从入门到放弃](./knowledge-map/fe/css)
 
 #### JavaScript
 
-[JavaScript学习](./knowledge-map/fe/javascript.md)
+[JavaScript学习](./knowledge-map/fe/javascript)
 
 [Javascript测试最佳做法](https://testjavascript.com/) [Github](https://github.com/goldbergyoni/javascript-testing-best-practices)
 
@@ -16,7 +16,7 @@
 
 #### 浏览器相关
 
-[浏览器相关](./knowledge-map/fe/browser.md)
+[浏览器相关](./knowledge-map/fe/browser)
 
 ##### 相关文章
 
@@ -26,13 +26,13 @@
 
 #### Node.js
 
-[Nodejs 学习](./knowledge-map/fe/nodejs.md)
+[Nodejs 学习](./knowledge-map/fe/nodejs)
 
 [Node 中文文档](http://nodejs.cn/api/)
 
 #### 框架学习
 
-[框架学习之React & Vue](./knowledge-map/fe/react-vue.md)
+[框架学习之React & Vue](./knowledge-map/fe/react-vue)
 
 [How I Started in Web Development](https://codeburst.io/how-i-started-in-web-development-8f61da839e92)
 
@@ -48,5 +48,5 @@
 
 #### 数学学习
 
-[数学](./knowledge-map/fe/math.md)
+[数学](./knowledge-map/fe/math)
 

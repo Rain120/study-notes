@@ -1,6 +1,6 @@
 ### <span id="top">快速导航</span>
 
-[HTML学习](./knowledge-map/fe/html.md) | [CSS - 从入门到放弃](./knowledge-map/fe/css.md) | [JavaScript学习](./knowledge-map/fe/javascript.md) | [浏览器相关](./knowledge-map/fe/browser.md) | [Nodejs学习](./knowledge-map/fe/nodejs.md)| [框架学习之React & Vue](./knowledge-map/fe/react-vue.md)
+[HTML学习](./knowledge-map/fe/html) | [CSS - 从入门到放弃](./knowledge-map/fe/css) | [JavaScript学习](./knowledge-map/fe/javascript) | [浏览器相关](./knowledge-map/fe/browser) | [Nodejs学习](./knowledge-map/fe/nodejs)| [框架学习之React & Vue](./knowledge-map/fe/react-vue)
 
 
 
@@ -61,7 +61,7 @@
 
 <span id="q5">5</span>. **回流与重绘**
 
-   请先浏览并理解 [浏览器相关问题1](./browser.md#1)
+   请先浏览并理解 [浏览器相关问题1](./browser#1)
 
    ```javascript
    回流：
