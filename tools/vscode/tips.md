@@ -457,7 +457,7 @@ shift(⇧) + ctrl(⌃) + -
 }
 ```
 
-[更多 VS Code 配置](./settings.md)
+[更多 VS Code 配置](./settings)
 
 #### Debugger
 
