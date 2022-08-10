@@ -22,4 +22,6 @@
 
 ### 方式2
 
+进入设置
+
 ![change](../images/conflicts-mode-change.png)
