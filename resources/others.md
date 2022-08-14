@@ -31,11 +31,15 @@ sidebar_position: 10
 
 ### 短信验证码接收平台
 
-#### 2022-04-25
+#### 2022-08-14
 
 https://www.zusms.com/phone/china
 
 https://smsreceivefree.com/ US Canada
+
+https://free-sms-receive.com/
+
+https://www.clearcode.cn/
 
 ### 其他
 
