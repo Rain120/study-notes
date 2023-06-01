@@ -24,6 +24,8 @@
 
 `Voscreen`通过简短的视频剪辑帮助您提高英语水平。 在`Voscreen`视频学习环境中，学习和提高英语比以往更加有趣。
 
+https://tool.mingdawoo.com/: 查询近邻词汇
+
 ## 综合
 
 [中国大学MOOC](https://www.icourse163.org/)

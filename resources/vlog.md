@@ -41,3 +41,5 @@ sidebar_position: 8
 
 [Arctime](https://arctime.org/): 简单、强大、高效的跨平台字幕制作软件
 
+[zhaotaici](https://zhaotaici.cn/) 找台词
+
