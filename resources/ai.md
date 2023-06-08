@@ -1,5 +1,5 @@
 ---
-title: 葵花宝典系列 - AI相关网站
+title: AI相关网站
 sidebar_position: 2
 ---
 
@@ -23,3 +23,5 @@ https://smodin.io/translate-one-text-into-multiple-languages Translate one text 
 https://amymind.com/mindmap/new 生成脑图
 
 https://www.chartgpt.dev/ 生成一些chart
+
+https://ministers.ai/home

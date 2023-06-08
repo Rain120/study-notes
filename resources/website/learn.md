@@ -26,6 +26,10 @@
 
 https://tool.mingdawoo.com/: 查询近邻词汇
 
+https://www.trancy.org/zh-cn: 听力
+
+https://language.chinadaily.com.cn/: 阅读
+
 ## 综合
 
 [中国大学MOOC](https://www.icourse163.org/)

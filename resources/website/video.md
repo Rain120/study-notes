@@ -27,3 +27,5 @@
 [图片找番剧](https://trace.moe)
 
 [台词找电影](http://www.zhaotaici.cn)
+
+多平台视频下载: https://www.videofk.com
