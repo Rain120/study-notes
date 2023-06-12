@@ -8,7 +8,11 @@ title: Configuration
 {
     "tabnine.experimentalAutoImports": true,
     "todo-tree.tree.showScanModeButton": false,
+    "workbench.colorTheme": "Monokai",
     "workbench.iconTheme": "vscode-icons",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "window.commandCenter": true,
+    "easycode.userEmail": "038c00c0f8fd@drmail.in",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.fontSize": 16,
@@ -17,8 +21,7 @@ title: Configuration
         // 活动通知徽章的背景颜色。活动栏显示在最左边或右边，允许在侧边栏的视图之间切换。
         // "activityBarBadge.background": "#F44336",
         // 背景 色
-        // "editor.background": "#0f0909",
-        "editor.background": "#000000",
+        "editor.background": "#0f0909",
         // 当列表/树活动时所选项目的列表/树前景颜色。活动列表/树具有键盘焦点，非活动列表/树没有。
         // "list.activeSelectionForeground": "#F44336",
         // 当列表/树不活动时，所选项目的列表/树前景颜色。活动列表/树具有键盘焦点，非活动列表/树没有。
@@ -84,12 +87,14 @@ title: Configuration
     },
     "fileheader.configObj": {
         "createHeader": false,
-        "autoAdd": false
+        "autoAdd": false,
+        "autoAlready": false
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     // 解决 code helper 吃进程问题
     "files.exclude": {
@@ -123,10 +128,7 @@ title: Configuration
     "editor.columnSelection": false,
     "editor.multiCursorModifier": "alt",
     // TODO Tree Setting
-    // "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*(@?)($TAGS):|^\\s*- \\[ \\])",
-    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*(@?)($TAGS)",
-    // INFO: 忽略大小写
-    "todo-tree.regex.regexCaseSensitive": false,
+    // "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
     "todo-tree.tree.autoRefresh": true,
     "todo-tree.general.tags": [
         "TODO:",
@@ -138,26 +140,18 @@ title: Configuration
         "LINK_TO",
         "TAG",
         "N.B.",
-        "HACK",
-        "[ ]",
-        "[x]"
+        "HACK"
     ],
     "todo-tree.highlights.defaultHighlight": {
         "gutterIcon": true
         // "type": "text-and-comment"
     },
-    // icon: https://microsoft.github.io/vscode-codicons/dist/codicon.html
+    // LINK_TO: https://primer.style/octicons/
     "todo-tree.highlights.customHighlight": {
-        "[ ]": {
-            "background": "#F44336"
-        },
-        "[x]": {
-            "background": "#00de00"
-        },
         "TODO:": {
             "foreground": "#fff",
             "background": "#ffbd2a",
-            "iconColour": "#ffbd2a",
+            "iconColour": "#ffbd2a"
         },
         "HOTFIX:": {
             "foreground": "#fff",
@@ -222,11 +216,12 @@ title: Configuration
             "rulerLane": "full"
         }
     },
-    "editor.formatOnSave": true,
+    // "editor.formatOnSave": true,
+    "eslint.autoFixOnSave": false,
     /*  prettier的配置 */
     // "prettier.jsxSingleQuote": true,
     "prettier.useEditorConfig": false, // 忽略.editorconfig
-    "prettier.printWidth": 90, // 超过最大值换行
+    "prettier.printWidth": 100, // 超过最大值换行
     "prettier.tabWidth": 4, // 缩进字节数
     //  "prettier.tabWidth": 2, // 缩进字节数
     "prettier.useTabs": false, // 缩进不使用tab，使用空格
@@ -256,12 +251,11 @@ title: Configuration
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7dW1sO2VyO2JwbW47Zmxvd2NoYXJ0O2Jhc2ljO2Fycm93czJcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltcIm5vbmVcIixcIkZGRkZDQ1wiLFwiMzMzM0ZGXCIsXCIwMDAwMDBcIixcIjY2QjJGRlwiLFwiMDAwMEZGXCIsXCJFQTZCNjZcIixcIjk3RDA3N1wiLFwiMDA2NkNDXCJdLFwiZm9ybWF0V2lkdGhcIjoyNDAsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4MjcsXCJoZWlnaHRcIjoxMTY5fSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjRDREMEMwXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
     "timeline.pageSize": 0,
     "search.actionsPosition": "right",
     "cSpell.userWords": ["Mobx", "customizer"],
     "leetcode.endpoint": "leetcode-cn",
-    "leetcode.workspaceFolder": "/Users/zhongchao03/.leetcode",
+    "leetcode.workspaceFolder": "",
     "leetcode.defaultLanguage": "javascript",
     "auto-close-tag.activationOnLanguage": [
         "xml",
@@ -285,51 +279,54 @@ title: Configuration
         "plist"
     ],
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    // "[typescript]": {
-    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
-    // },
-    "editor.linkedEditing": true,
-    "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[less]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "commentTranslate.targetLanguage": "zh-CN",
-    "commentTranslate.multiLineMerge": true,
-    "commentTranslate.concise": true,
-    "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    },
-    "vscodeGoogleTranslate.preferredLanguage": "Chinese (Simplified)",
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "color-highlight.languages": ["*"],
-    "typescript.locale": "en",
-    "cSpell.enableFiletypes": ["typescriptreact"],
-    "workbench.colorTheme": "One Dark Pro",
-    "editor.inlineSuggest.enabled": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": true,
-        "plaintext": false,
-        "markdown": false
-    },
-    "workbench.editorAssociations": {
-        "*.sketch": "default"
-    },
-    "diffEditor.maxComputationTime": 0,
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "editor.renameOnType": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "explorer.confirmDelete": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false
+    },
+    "reactSnippets.settings.prettierEnabled": true,
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "editor.accessibilitySupport": "off",
+    "scm.defaultViewMode": "tree",
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.editorAssociations": {
+        "*.vsix": "default"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.unicodeHighlight.allowedLocales": {
+        "zh-hant": true
+    },
+    "workbench.editor.enablePreview": false,
+    "git.mergeEditor": false,
+    "editor.stickyScroll.enabled": true,
+    "extensions.supportUntrustedWorkspaces": {
+        "byted-ide.dev-environment-manager": {
+            "supported": true
+        }
+    },
+    "remote.SSH.defaultExtensions": [
+        "byted-ide.gallery"
+    ],
+    "Codegeex.Privacy": false
 }
-
 ```
 
