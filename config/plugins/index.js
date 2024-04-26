@@ -204,7 +204,7 @@ const plugins = pluginContentDocsConfigList
         ],
         'config-webpack-plugin',
         // 'plugin-image-zoom-local',
-        'plugin-image-zoom',
+        // 'plugin-image-zoom',
     ]);
 
 module.exports = {
