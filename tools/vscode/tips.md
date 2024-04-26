@@ -455,11 +455,11 @@ shift(⇧) + ctrl(⌃) + -
 
 [更多 VS Code 配置](./settings)
 
-### Debugger
+## Debugger
 
 [20 个 Chrome DevTools 调试技巧](https://blog.fundebug.com/2018/08/22/art-of-debugging-with-chrome-devtools/)
 
-### 参考资料
+## 参考资料
 
 [VS Code 中文文档](https://jeasonstudio.gitbooks.io/vscode-cn-doc/)
 
