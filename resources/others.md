@@ -15,19 +15,17 @@ sidebar_position: 10
 
 ### 临时邮箱、匿名邮箱
 
-[Moakt](https://www.moakt.com/): 一个临时邮箱，可以选择多个邮箱后缀
+https://www.moakt.com/
 
-[Fake Mail Generator](http://www.fakemailgenerator.com/): 打开自动生成邮箱的服务，不需注册，页面基于 AJAX，无需刷新。
+http://www.fakemailgenerator.com/
 
-[10 Minute Mail](http://10minutemail.com/): 提供 10 分钟的临时邮箱。
+http://10minutemail.com/
 
-[GuerrillaMail](http://www.guerrillamail.com/)
+https://temp-mail.org/zh/
 
-[obagg](http://od.obagg.com/)
+https://internxt.com/zh/temporary-email
 
-[odmail](http://t.odmail.cn/)
-
-[chacuo.net](http://24mail.chacuo.net/zhtw)
+http://24mail.chacuo.net/zhtw
 
 ### 短信验证码接收平台
 

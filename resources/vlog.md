@@ -21,6 +21,10 @@ sidebar_position: 8
 
 [Mixkit](https://mixkit.co/)
 
+[简视频](https://www.aewz.com/): 致力打造好用的视频创作导航
+
+[即时工具](https://www.67tool.com/): 各种工具集合
+
 ### 音频
 
 `TODO`
@@ -36,4 +40,6 @@ sidebar_position: 8
 ### 字幕
 
 [Arctime](https://arctime.org/): 简单、强大、高效的跨平台字幕制作软件
+
+[zhaotaici](https://zhaotaici.cn/) 找台词
 
