@@ -17,6 +17,7 @@ specifiers:
   file-loader: ^6.2.0
   medium-zoom: ^1.0.6
   nodejieba: ^2.5.2
+  plugin-image-zoom: ^1.1.0
   prettier: ^2.6.2
   prism-react-renderer: ^1.2.1
   raw-loader: ^4.0.2
@@ -50,6 +51,7 @@ devDependencies:
   '@swc/core': 1.2.219
   medium-zoom: 1.0.6
   nodejieba: 2.6.0
+  plugin-image-zoom: 1.2.0
   prettier: 2.6.2
   raw-loader: 4.0.2
   swc-loader: 0.2.3_@swc+core@1.2.219
@@ -9046,6 +9048,12 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 3.0.0
+    dev: true
+
+  /plugin-image-zoom/1.2.0:
+    resolution: {integrity: sha512-uVCjp4bXuli39gmBs+JQvXMtpfLL+5yWfRIKZyM41d3D9oxGBEHmRzDu9EgusIwmBrKJvF9QuOZENw/9s6G+Jw==}
+    dependencies:
+      medium-zoom: 1.0.6
     dev: true
 
   /postcss-calc/8.2.4_postcss@8.4.14:
