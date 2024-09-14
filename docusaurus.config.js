@@ -50,7 +50,7 @@ const config = {
       announcementBar: {
         id: "feature_release", // Any value that will identify this message.
         content: `
-          <a href='https://rain120.github.io/study-notes/engineering/coding/code-review'>Code Review</a> 
+          <a href='https://chaos-design.github.io/omnibox/'>Omnibox</a> 
           新上线，欢迎体验
         `,
         // 文章📚 
